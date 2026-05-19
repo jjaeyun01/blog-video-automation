@@ -11,8 +11,8 @@ from src.extractors.article_extractor import ArticleExtractor
 from src.extractors.text_cleaner import TextCleaner
 from src.extractors.wix_rss_discovery import WixRssDiscovery
 from src.media.subtitle_generator import SubtitleGenerator
-from src.media.tts_provider import DryRunTtsProvider, OpenAiTtsProvider
-from src.media.video_renderer import DryRunVideoRenderer, RemotionManifestRenderer
+from src.media.tts_provider import DryRunTtsProvider, LocalSayTtsProvider, OpenAiTtsProvider
+from src.media.video_renderer import DryRunVideoRenderer, FfmpegVideoRenderer, RemotionManifestRenderer
 from src.pipeline.orchestrator import BlogVideoPipeline
 from src.pipeline.storage import Storage
 from src.pipeline.time_tracker import TimeTracker
@@ -31,15 +31,15 @@ def main() -> None:
     )
     parser.add_argument(
         "--tts-provider",
-        choices=["dry-run", "openai"],
-        default="dry-run",
-        help="Use dry-run text voiceover or OpenAI TTS mp3 generation.",
+        choices=["dry-run", "local", "openai"],
+        default="local",
+        help="Use dry-run text voiceover, local macOS say, or OpenAI TTS mp3 generation.",
     )
     parser.add_argument(
         "--renderer",
-        choices=["dry-run", "remotion"],
-        default="dry-run",
-        help="Use dry-run manifest or prepare a Remotion render manifest.",
+        choices=["dry-run", "ffmpeg", "remotion"],
+        default="ffmpeg",
+        help="Use dry-run manifest, local FFmpeg MP4 render, or prepare a Remotion render manifest.",
     )
     args = parser.parse_args()
 
@@ -84,12 +84,19 @@ def build_pipeline(
         if script_provider == "openai"
         else ScriptGenerator(settings)
     )
-    tts = OpenAiTtsProvider(settings) if tts_provider == "openai" else DryRunTtsProvider()
-    video_renderer = (
-        RemotionManifestRenderer()
-        if renderer == "remotion"
-        else DryRunVideoRenderer()
-    )
+    if tts_provider == "openai":
+        tts = OpenAiTtsProvider(settings)
+    elif tts_provider == "local":
+        tts = LocalSayTtsProvider()
+    else:
+        tts = DryRunTtsProvider()
+
+    if renderer == "remotion":
+        video_renderer = RemotionManifestRenderer()
+    elif renderer == "ffmpeg":
+        video_renderer = FfmpegVideoRenderer()
+    else:
+        video_renderer = DryRunVideoRenderer()
 
     return BlogVideoPipeline(
         discovery=WixRssDiscovery(settings),

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import subprocess
 from pathlib import Path
 
 from src.ai.openai_client import OpenAiClient
@@ -11,6 +12,23 @@ class DryRunTtsProvider:
     def generate(self, script: VideoScript, output_dir: Path) -> Path:
         path = output_dir / "voiceover.txt"
         path.write_text(script.narration, encoding="utf-8")
+        return path
+
+
+class LocalSayTtsProvider:
+    def __init__(self, voice: str = "Yuna"):
+        self.voice = voice
+
+    def generate(self, script: VideoScript, output_dir: Path) -> Path:
+        text_path = output_dir / "voiceover.txt"
+        text_path.write_text(script.narration, encoding="utf-8")
+
+        path = output_dir / "voice.aiff"
+        command = ["say", "-v", self.voice, "-o", str(path), script.narration]
+        result = subprocess.run(command, capture_output=True, text=True)
+        if result.returncode != 0:
+            fallback = ["say", "-o", str(path), script.narration]
+            subprocess.run(fallback, check=True)
         return path
 
 
