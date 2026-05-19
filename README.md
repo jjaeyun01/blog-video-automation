@@ -1,25 +1,26 @@
 # FeverCoach Blog Video Automation
 
-Pipeline scaffold for turning FeverCoach blog posts into short-form video assets.
+Pipeline for turning FeverCoach blog posts into short-form video assets.
 
-The first version is intentionally runnable without paid API keys. It can:
+The default version is intentionally runnable without paid API keys. It can:
 
 - discover Korean blog posts from the FeverCoach RSS feed
 - load a local article text file
 - clean article text
 - generate a source-faithful short video script
 - split the script into scenes
+- generate Korean voiceover with macOS `say`
 - generate subtitle files
-- write a render manifest and time report
+- render a vertical MP4 with a speaking character animation
 
-Generated audio/video are dry-run placeholders until a real TTS and renderer are plugged in.
+For higher quality narration, OpenAI TTS can be enabled with an API key.
 
 ## Quick Start
 
 Use the included local sample article and render a real MP4 locally:
 
 ```bash
-python3 -m src.cli --input-file fevercoach_post.txt --limit 1
+python3 -m src.cli --input-file fevercoach_post.txt
 ```
 
 Discover posts from the FeverCoach Korean RSS feed:
@@ -36,13 +37,13 @@ The default path is fully local:
 
 1. Python creates article/script/scenes/subtitles.
 2. macOS `say` creates `voice.aiff`.
-3. FFmpeg renders `final_video.mp4`.
+3. FFmpeg renders a vertical `final_video.mp4` with a presenter-style character animation.
 
 The higher-quality production path is:
 
 1. Python pipeline creates article/script/scenes/subtitles/audio/render manifest.
 2. OpenAI writes a natural Korean short-form script and creates `voice.mp3`.
-3. FFmpeg renders the final vertical MP4, or Remotion renders a more customizable template.
+3. FFmpeg renders the final vertical character animation MP4, or Remotion prepares a more customizable template.
 
 Run the full production-prep pipeline:
 
@@ -51,7 +52,7 @@ python3 -m src.cli \
   --input-file fevercoach_post.txt \
   --script-provider openai \
   --tts-provider openai \
-  --renderer ffmpeg
+  --renderer character
 ```
 
 This generates:
@@ -66,6 +67,14 @@ output/jobs/<job_id>/
   render_manifest.json
   final_video.mp4
 ```
+
+Renderer options:
+
+- `--renderer character`: speaking person animation, default and recommended
+- `--renderer animated`: animated text-card video
+- `--renderer ffmpeg`: simpler static text-card video
+- `--renderer remotion`: write a manifest for the optional Remotion template
+- `--renderer dry-run`: write manifests only
 
 Use Remotion only when you want a more advanced motion template:
 
@@ -99,14 +108,14 @@ OPENAI_TTS_VOICE=alloy
 ## Architecture
 
 ```txt
-Discovery -> Extraction -> Cleaning -> Script -> Scenes -> Voice -> Subtitles -> Render Manifest
+Discovery -> Extraction -> Cleaning -> Script -> Scenes -> Voice -> Subtitles -> Character MP4
 ```
 
 Core modules:
 
 - `src/extractors`: RSS discovery, file/URL article extraction, text cleanup
 - `src/ai`: script and scene generation, safety checks
-- `src/media`: TTS placeholder, SRT generation, render manifest
+- `src/media`: TTS, SRT generation, FFmpeg character/card renderers, render manifest
 - `src/pipeline`: orchestration, storage, time tracking
 
 ## Safety

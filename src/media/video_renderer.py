@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import math
 import shutil
 import subprocess
 from textwrap import wrap
@@ -442,6 +443,186 @@ class AnimatedFfmpegVideoRenderer(FfmpegVideoRenderer):
         return image
 
 
+class CharacterFfmpegVideoRenderer(FfmpegVideoRenderer):
+    animation_fps = 10
+
+    def render(
+        self,
+        article: Article,
+        script: VideoScript,
+        voice_path: Path,
+        subtitles_path: Path,
+        output_dir: Path,
+    ) -> tuple[Path, Path]:
+        if not shutil.which("ffmpeg"):
+            raise RuntimeError(
+                "ffmpeg is required for --renderer character. Install it with: brew install ffmpeg"
+            )
+
+        final_path = output_dir / "final_video.mp4"
+        audio_duration = _probe_duration(voice_path) if voice_path.exists() else None
+        scene_durations = self._scene_durations(script, audio_duration)
+        segment_paths = self._render_character_segments(article, script, scene_durations, output_dir)
+        silent_video_path = self._concat_segments(segment_paths, output_dir)
+        self._mux_audio(silent_video_path, voice_path, final_path)
+
+        manifest_path = output_dir / "render_manifest.json"
+        manifest = {
+            "renderer": "character_ffmpeg",
+            "format": script.format,
+            "width": self.width,
+            "height": self.height,
+            "animation_fps": self.animation_fps,
+            "article": article.to_dict(),
+            "script": script.to_dict(),
+            "voice_path": str(voice_path),
+            "audio_duration_sec": audio_duration,
+            "subtitles_path": str(subtitles_path),
+            "segments": [str(path) for path in segment_paths],
+            "final_video_path": str(final_path),
+        }
+        manifest_path.write_text(
+            json.dumps(manifest, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        return manifest_path, final_path
+
+    def _render_character_segments(
+        self,
+        article: Article,
+        script: VideoScript,
+        scene_durations: list[float],
+        output_dir: Path,
+    ) -> list[Path]:
+        segments_dir = output_dir / "segments"
+        frames_root = output_dir / "character_frames"
+        segments_dir.mkdir(parents=True, exist_ok=True)
+        frames_root.mkdir(parents=True, exist_ok=True)
+
+        segment_paths: list[Path] = []
+        for scene, duration in zip(script.scenes, scene_durations):
+            scene_frame_dir = frames_root / f"scene_{scene.index:02}"
+            scene_frame_dir.mkdir(parents=True, exist_ok=True)
+            frame_count = max(2, int(duration * self.animation_fps))
+            for frame in range(frame_count):
+                progress = frame / max(1, frame_count - 1)
+                image = self._draw_character_frame(
+                    article.title,
+                    scene.index,
+                    scene.subtitle,
+                    scene.narration,
+                    script.disclaimer,
+                    progress,
+                    frame,
+                )
+                image.save(scene_frame_dir / f"frame_{frame:04}.png")
+
+            segment_path = segments_dir / f"character_segment_{scene.index:02}.mp4"
+            command = [
+                "ffmpeg",
+                "-y",
+                "-framerate",
+                str(self.animation_fps),
+                "-i",
+                str(scene_frame_dir / "frame_%04d.png"),
+                "-r",
+                "30",
+                "-c:v",
+                "libx264",
+                "-preset",
+                "medium",
+                "-crf",
+                "20",
+                "-pix_fmt",
+                "yuv420p",
+                str(segment_path),
+            ]
+            subprocess.run(command, check=True, capture_output=True)
+            segment_paths.append(segment_path)
+        return segment_paths
+
+    def _draw_character_frame(
+        self,
+        title: str,
+        index: int,
+        subtitle: str,
+        narration: str,
+        disclaimer: str,
+        progress: float,
+        frame: int,
+    ) -> Image.Image:
+        palettes = [
+            {"bg": "#FFF3E6", "accent": "#FF6B6B", "accent2": "#4ECDC4", "shirt": "#118AB2"},
+            {"bg": "#EAF7FF", "accent": "#118AB2", "accent2": "#FFD166", "shirt": "#7C3AED"},
+            {"bg": "#F3F0FF", "accent": "#7C3AED", "accent2": "#06D6A0", "shirt": "#0B8F8A"},
+            {"bg": "#ECFFF3", "accent": "#0B8F8A", "accent2": "#F7C948", "shirt": "#FF6B6B"},
+        ]
+        palette = palettes[(index - 1) % len(palettes)]
+        ink = "#17202A"
+        muted = "#506170"
+        image = Image.new("RGB", (self.width, self.height), palette["bg"])
+        draw = ImageDraw.Draw(image)
+
+        logo_font = _font(36)
+        title_font = _font(50)
+        bubble_font = _font(44)
+        body_font = _font(30)
+        small_font = _font(25)
+
+        pulse = math.sin(frame * 0.55)
+        bob = int(math.sin(frame * 0.42) * 10)
+        arm_wave = math.sin(frame * 0.7)
+        mouth_open = frame % 8 in {1, 2, 3, 6}
+
+        _draw_blob(draw, (780, 76), 270, palette["accent2"])
+        _draw_blob(draw, (-110, 1270), 330, palette["accent"])
+        _draw_sparkles(draw, index + frame // 8, palette["accent"], palette["accent2"])
+
+        draw.rounded_rectangle((56, 50, 122, 116), radius=18, fill=palette["accent"])
+        draw.text((80, 57), "F", font=logo_font, fill="#FFFFFF")
+        draw.text((146, 68), "FeverCoach", font=logo_font, fill=ink)
+
+        draw.rounded_rectangle((760, 64, 1006, 126), radius=31, fill="#FFFFFF")
+        draw.text((798, 80), f"Scene {index:02}", font=small_font, fill=palette["accent"])
+
+        title_box = (70, 170, 1010, 430)
+        draw.rounded_rectangle(title_box, radius=34, fill="#FFFFFF", outline="#E6EEF0", width=3)
+        clean_title = title.replace("Q:", "").strip()
+        _draw_wrapped(draw, clean_title, (112, 214), title_font, ink, max_chars=18, line_gap=12, max_lines=3)
+
+        bubble = (92, 500, 988, 965)
+        draw.rounded_rectangle((bubble[0] + 12, bubble[1] + 16, bubble[2] + 12, bubble[3] + 16), radius=42, fill="#000000")
+        image = _tint_shadow(image, (bubble[0] + 12, bubble[1] + 16, bubble[2] + 12, bubble[3] + 16), opacity=20)
+        draw = ImageDraw.Draw(image)
+        draw.rounded_rectangle(bubble, radius=42, fill="#FFFFFF", outline="#E6EEF0", width=3)
+        draw.polygon([(290, 965), (360, 965), (326, 1026)], fill="#FFFFFF", outline="#E6EEF0")
+
+        typed_chars = max(18, int(len(subtitle) * min(1.0, progress * 2.4)))
+        visible_subtitle = subtitle[:typed_chars]
+        if typed_chars < len(subtitle):
+            visible_subtitle = visible_subtitle.rstrip() + "..."
+        draw.rounded_rectangle((132, 536, 384, 598), radius=31, fill=palette["accent2"])
+        draw.text((162, 550), "핵심만 쉽게", font=small_font, fill=ink)
+        _draw_wrapped(draw, visible_subtitle, (132, 638), bubble_font, palette["accent"], max_chars=20, line_gap=14, max_lines=4)
+
+        caption_box = (92, 1028, 658, 1238)
+        draw.rounded_rectangle(caption_box, radius=30, fill="#F7FBFC")
+        _draw_wrapped(draw, narration, (130, 1060), body_font, muted, max_chars=19, line_gap=10, max_lines=4)
+
+        _draw_presenter(draw, center=(765, 1290 + bob), palette=palette, ink=ink, arm_wave=arm_wave, mouth_open=mouth_open)
+
+        meter_width = int(760 * progress)
+        draw.rounded_rectangle((160, 1772, 920, 1792), radius=10, fill="#DDE7EA")
+        draw.rounded_rectangle((160, 1772, 160 + meter_width, 1792), radius=10, fill=palette["accent"])
+        draw.line((64, 1810, 1016, 1810), fill="#DCE8EA", width=2)
+        _draw_wrapped(draw, disclaimer, (64, 1834), small_font, muted, max_chars=42, line_gap=8, max_lines=2)
+
+        if frame % 16 < 8:
+            draw.ellipse((884, 468, 904, 488), fill=palette["accent"])
+            draw.ellipse((916, 446, 930, 460), fill=palette["accent2"])
+        return image
+
+
 def _font(size: int) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
     candidates = [
         "/System/Library/Fonts/AppleSDGothicNeo.ttc",
@@ -511,6 +692,53 @@ def _draw_face(
     draw.ellipse((cx + 20, cy - 18, cx + 34, cy - 4), fill=ink)
     draw.arc((cx - 34, cy - 4, cx + 34, cy + 48), start=18, end=162, fill=ink, width=5)
     draw.arc((cx - 70, cy - 82, cx + 70, cy - 18), start=205, end=335, fill=ink, width=5)
+
+
+def _draw_presenter(
+    draw: ImageDraw.ImageDraw,
+    center: tuple[int, int],
+    palette: dict[str, str],
+    ink: str,
+    arm_wave: float,
+    mouth_open: bool,
+) -> None:
+    cx, cy = center
+    skin = "#FFE0BD"
+    hair = "#3A2A22"
+    pants = "#2B3A67"
+    shirt = palette["shirt"]
+    accent = palette["accent"]
+
+    draw.ellipse((cx - 180, cy + 260, cx + 180, cy + 300), fill="#D8E1E5")
+
+    draw.rounded_rectangle((cx - 92, cy + 52, cx + 92, cy + 280), radius=42, fill=shirt, outline=ink, width=5)
+    draw.rounded_rectangle((cx - 72, cy + 278, cx - 20, cy + 448), radius=24, fill=pants, outline=ink, width=4)
+    draw.rounded_rectangle((cx + 20, cy + 278, cx + 72, cy + 448), radius=24, fill=pants, outline=ink, width=4)
+    draw.rounded_rectangle((cx - 94, cy + 432, cx - 12, cy + 468), radius=18, fill=ink)
+    draw.rounded_rectangle((cx + 12, cy + 432, cx + 94, cy + 468), radius=18, fill=ink)
+
+    left_hand = (cx - 170, cy + 128 + int(arm_wave * 26))
+    right_hand = (cx + 170, cy + 92 - int(arm_wave * 42))
+    draw.line((cx - 82, cy + 96, left_hand[0], left_hand[1]), fill=ink, width=20)
+    draw.line((cx + 82, cy + 96, right_hand[0], right_hand[1]), fill=ink, width=20)
+    draw.ellipse((left_hand[0] - 26, left_hand[1] - 26, left_hand[0] + 26, left_hand[1] + 26), fill=skin, outline=ink, width=4)
+    draw.ellipse((right_hand[0] - 28, right_hand[1] - 28, right_hand[0] + 28, right_hand[1] + 28), fill=skin, outline=ink, width=4)
+    draw.line((right_hand[0] + 34, right_hand[1] - 28, right_hand[0] + 74, right_hand[1] - 56), fill=accent, width=8)
+    draw.line((right_hand[0] + 42, right_hand[1] + 0, right_hand[0] + 92, right_hand[1] - 4), fill=accent, width=8)
+
+    draw.ellipse((cx - 104, cy - 172, cx + 104, cy + 36), fill=skin, outline=ink, width=5)
+    draw.pieslice((cx - 116, cy - 198, cx + 116, cy - 36), start=188, end=352, fill=hair)
+    draw.ellipse((cx - 50, cy - 78, cx - 30, cy - 56), fill=ink)
+    draw.ellipse((cx + 30, cy - 78, cx + 50, cy - 56), fill=ink)
+    draw.arc((cx - 62, cy - 104, cx - 18, cy - 66), start=205, end=335, fill=ink, width=5)
+    draw.arc((cx + 18, cy - 104, cx + 62, cy - 66), start=205, end=335, fill=ink, width=5)
+    if mouth_open:
+        draw.ellipse((cx - 28, cy - 28, cx + 28, cy + 16), fill=ink)
+        draw.ellipse((cx - 16, cy - 8, cx + 16, cy + 16), fill="#FF8FA3")
+    else:
+        draw.arc((cx - 34, cy - 36, cx + 34, cy + 18), start=25, end=155, fill=ink, width=6)
+    draw.rounded_rectangle((cx - 54, cy + 74, cx + 54, cy + 106), radius=16, fill="#FFFFFF")
+    draw.text((cx - 34, cy + 76), "Dr", font=_font(24), fill=accent)
 
 
 def _tint_shadow(

@@ -14,6 +14,7 @@ from src.media.subtitle_generator import SubtitleGenerator
 from src.media.tts_provider import DryRunTtsProvider, LocalSayTtsProvider, OpenAiTtsProvider
 from src.media.video_renderer import (
     AnimatedFfmpegVideoRenderer,
+    CharacterFfmpegVideoRenderer,
     DryRunVideoRenderer,
     FfmpegVideoRenderer,
     RemotionManifestRenderer,
@@ -42,9 +43,9 @@ def main() -> None:
     )
     parser.add_argument(
         "--renderer",
-        choices=["dry-run", "ffmpeg", "animated", "remotion"],
-        default="animated",
-        help="Use dry-run, basic FFmpeg, animated FFmpeg MP4 render, or prepare a Remotion manifest.",
+        choices=["dry-run", "ffmpeg", "animated", "character", "remotion"],
+        default="character",
+        help="Use dry-run, basic FFmpeg, animated card, character animation, or prepare a Remotion manifest.",
     )
     args = parser.parse_args()
 
@@ -98,6 +99,8 @@ def build_pipeline(
 
     if renderer == "remotion":
         video_renderer = RemotionManifestRenderer()
+    elif renderer == "character":
+        video_renderer = CharacterFfmpegVideoRenderer()
     elif renderer == "animated":
         video_renderer = AnimatedFfmpegVideoRenderer()
     elif renderer == "ffmpeg":
