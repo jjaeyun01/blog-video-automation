@@ -7,7 +7,12 @@ import subprocess
 from textwrap import wrap
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+try:
+    from PIL import Image, ImageDraw, ImageFont
+except ModuleNotFoundError:
+    Image = None
+    ImageDraw = None
+    ImageFont = None
 
 from src.models import Article, VideoScript
 
@@ -203,6 +208,7 @@ class FfmpegVideoRenderer:
         subtitles_path: Path,
         output_dir: Path,
     ) -> tuple[Path, Path]:
+        _require_pillow()
         if not shutil.which("ffmpeg"):
             raise RuntimeError(
                 "ffmpeg is required for --renderer ffmpeg. Install it with: brew install ffmpeg"
@@ -535,6 +541,7 @@ class CharacterFfmpegVideoRenderer(FfmpegVideoRenderer):
         subtitles_path: Path,
         output_dir: Path,
     ) -> tuple[Path, Path]:
+        _require_pillow()
         if not shutil.which("ffmpeg"):
             raise RuntimeError(
                 "ffmpeg is required for --renderer character. Install it with: brew install ffmpeg"
@@ -853,6 +860,7 @@ class StoryFfmpegVideoRenderer(CharacterFfmpegVideoRenderer):
 
 
 def _font(size: int) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
+    _require_pillow()
     candidates = [
         "/System/Library/Fonts/AppleSDGothicNeo.ttc",
         "/System/Library/Fonts/Supplemental/Arial Unicode.ttf",
@@ -862,6 +870,13 @@ def _font(size: int) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
         if Path(candidate).exists():
             return ImageFont.truetype(candidate, size=size)
     return ImageFont.load_default()
+
+
+def _require_pillow() -> None:
+    if Image is None or ImageDraw is None or ImageFont is None:
+        raise RuntimeError(
+            "Pillow is required for local image/video rendering. Install it with: python3 -m pip install pillow"
+        )
 
 
 def _draw_blob(

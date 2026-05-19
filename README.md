@@ -17,6 +17,12 @@ For higher quality narration, OpenAI TTS can be enabled with an API key.
 
 ## Quick Start
 
+Install Python dependencies:
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
 Use the included local sample article and render a real MP4 locally:
 
 ```bash
