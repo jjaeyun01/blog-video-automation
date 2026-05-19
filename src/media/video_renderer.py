@@ -445,6 +445,9 @@ class AnimatedFfmpegVideoRenderer(FfmpegVideoRenderer):
 
 class CharacterFfmpegVideoRenderer(FfmpegVideoRenderer):
     animation_fps = 10
+    renderer_name = "character_ffmpeg"
+    frames_dir_name = "character_frames"
+    segment_prefix = "character_segment"
 
     def render(
         self,
@@ -468,7 +471,7 @@ class CharacterFfmpegVideoRenderer(FfmpegVideoRenderer):
 
         manifest_path = output_dir / "render_manifest.json"
         manifest = {
-            "renderer": "character_ffmpeg",
+            "renderer": self.renderer_name,
             "format": script.format,
             "width": self.width,
             "height": self.height,
@@ -495,7 +498,7 @@ class CharacterFfmpegVideoRenderer(FfmpegVideoRenderer):
         output_dir: Path,
     ) -> list[Path]:
         segments_dir = output_dir / "segments"
-        frames_root = output_dir / "character_frames"
+        frames_root = output_dir / self.frames_dir_name
         segments_dir.mkdir(parents=True, exist_ok=True)
         frames_root.mkdir(parents=True, exist_ok=True)
 
@@ -517,7 +520,7 @@ class CharacterFfmpegVideoRenderer(FfmpegVideoRenderer):
                 )
                 image.save(scene_frame_dir / f"frame_{frame:04}.png")
 
-            segment_path = segments_dir / f"character_segment_{scene.index:02}.mp4"
+            segment_path = segments_dir / f"{self.segment_prefix}_{scene.index:02}.mp4"
             command = [
                 "ffmpeg",
                 "-y",
@@ -620,6 +623,154 @@ class CharacterFfmpegVideoRenderer(FfmpegVideoRenderer):
         if frame % 16 < 8:
             draw.ellipse((884, 468, 904, 488), fill=palette["accent"])
             draw.ellipse((916, 446, 930, 460), fill=palette["accent2"])
+        return image
+
+
+class StoryFfmpegVideoRenderer(CharacterFfmpegVideoRenderer):
+    renderer_name = "story_ffmpeg"
+    frames_dir_name = "story_frames"
+    segment_prefix = "story_segment"
+
+    def _draw_character_frame(
+        self,
+        title: str,
+        index: int,
+        subtitle: str,
+        narration: str,
+        disclaimer: str,
+        progress: float,
+        frame: int,
+    ) -> Image.Image:
+        del title, disclaimer
+        palettes = [
+            {"wall": "#FFF1E5", "floor": "#FFE1D6", "accent": "#FF6B6B", "accent2": "#4ECDC4", "shirt": "#118AB2"},
+            {"wall": "#EAF7FF", "floor": "#D8EEF8", "accent": "#118AB2", "accent2": "#FFD166", "shirt": "#7C3AED"},
+            {"wall": "#F5F0FF", "floor": "#E4DCF8", "accent": "#7C3AED", "accent2": "#06D6A0", "shirt": "#0B8F8A"},
+            {"wall": "#ECFFF3", "floor": "#D9F4E6", "accent": "#0B8F8A", "accent2": "#F7C948", "shirt": "#FF6B6B"},
+        ]
+        palette = palettes[(index - 1) % len(palettes)]
+        ink = "#17202A"
+        muted = "#3D4C5C"
+        image = Image.new("RGB", (self.width, self.height), palette["wall"])
+        draw = ImageDraw.Draw(image)
+
+        subtitle_font = _font(40)
+        small_font = _font(26)
+
+        bob = int(math.sin(frame * 0.42) * 10)
+        arm_wave = math.sin(frame * 0.7)
+        baby_wave = math.sin(frame * 0.95)
+        mouth_a = frame % 10 in {1, 2, 3, 4}
+        mouth_b = frame % 12 in {6, 7, 8, 9}
+
+        _draw_story_room(draw, palette, index, frame)
+
+        scene_mode = (index - 1) % 4
+        if scene_mode == 0:
+            _draw_person(
+                draw,
+                center=(305, 1070 + bob),
+                palette={"shirt": "#FF8FA3", "accent": palette["accent"]},
+                ink=ink,
+                scale=1.05,
+                facing=1,
+                arm_wave=-arm_wave,
+                mouth_open=mouth_a,
+                hair="#5B3A29",
+            )
+            _draw_person(
+                draw,
+                center=(760, 1055 - bob // 2),
+                palette={"shirt": palette["shirt"], "accent": palette["accent2"]},
+                ink=ink,
+                scale=1.08,
+                facing=-1,
+                arm_wave=arm_wave,
+                mouth_open=mouth_b,
+                hair="#3A2A22",
+                doctor=True,
+            )
+            _draw_baby(
+                draw,
+                center=(535, 1390),
+                ink=ink,
+                accent=palette["accent2"],
+                arm_wave=baby_wave,
+                awake=True,
+            )
+        elif scene_mode == 1:
+            _draw_baby(
+                draw,
+                center=(540, 1110 + bob),
+                ink=ink,
+                accent=palette["accent2"],
+                arm_wave=baby_wave,
+                awake=True,
+                big=True,
+            )
+            _draw_motion_lines(draw, (660, 1000), palette["accent"])
+            _draw_person(
+                draw,
+                center=(230, 1280),
+                palette={"shirt": "#FF8FA3", "accent": palette["accent"]},
+                ink=ink,
+                scale=0.82,
+                facing=1,
+                arm_wave=arm_wave,
+                mouth_open=mouth_a,
+                hair="#5B3A29",
+            )
+        elif scene_mode == 2:
+            _draw_person(
+                draw,
+                center=(300, 1080 + bob),
+                palette={"shirt": "#FF8FA3", "accent": palette["accent"]},
+                ink=ink,
+                scale=1.0,
+                facing=1,
+                arm_wave=arm_wave,
+                mouth_open=mouth_a,
+                hair="#5B3A29",
+            )
+            _draw_person(
+                draw,
+                center=(775, 1070 - bob // 2),
+                palette={"shirt": palette["shirt"], "accent": palette["accent2"]},
+                ink=ink,
+                scale=1.0,
+                facing=-1,
+                arm_wave=-arm_wave,
+                mouth_open=mouth_b,
+                hair="#3A2A22",
+                doctor=True,
+            )
+            _draw_check_card(draw, (458, 650), palette, ink, progress)
+        else:
+            _draw_baby(
+                draw,
+                center=(360, 1190 + bob),
+                ink=ink,
+                accent=palette["accent2"],
+                arm_wave=baby_wave,
+                awake=True,
+                big=True,
+            )
+            _draw_person(
+                draw,
+                center=(755, 1170),
+                palette={"shirt": palette["shirt"], "accent": palette["accent"]},
+                ink=ink,
+                scale=0.96,
+                facing=-1,
+                arm_wave=arm_wave,
+                mouth_open=mouth_b,
+                hair="#3A2A22",
+                doctor=True,
+            )
+            _draw_heart_burst(draw, (560, 835), palette["accent"], palette["accent2"], frame)
+
+        _draw_progress_bar(draw, progress, palette["accent"])
+        _draw_subtitle(draw, subtitle or narration, subtitle_font, small_font, muted)
         return image
 
 
@@ -739,6 +890,191 @@ def _draw_presenter(
         draw.arc((cx - 34, cy - 36, cx + 34, cy + 18), start=25, end=155, fill=ink, width=6)
     draw.rounded_rectangle((cx - 54, cy + 74, cx + 54, cy + 106), radius=16, fill="#FFFFFF")
     draw.text((cx - 34, cy + 76), "Dr", font=_font(24), fill=accent)
+
+
+def _draw_story_room(
+    draw: ImageDraw.ImageDraw,
+    palette: dict[str, str],
+    index: int,
+    frame: int,
+) -> None:
+    del index
+    draw.rectangle((0, 0, 1080, 1280), fill=palette["wall"])
+    draw.rectangle((0, 1280, 1080, 1920), fill=palette["floor"])
+    draw.polygon((0, 1280, 1080, 1280, 1080, 1420, 0, 1510), fill="#FFFFFF")
+    draw.rounded_rectangle((735, 145, 1000, 430), radius=38, fill="#FFFFFF", outline="#D3E4E8", width=4)
+    draw.line((868, 145, 868, 430), fill="#D3E4E8", width=4)
+    draw.line((735, 286, 1000, 286), fill="#D3E4E8", width=4)
+    draw.ellipse((790, 200, 850, 260), fill=palette["accent2"])
+    draw.rounded_rectangle((90, 620, 310, 760), radius=40, fill="#FFFFFF", outline="#D3E4E8", width=4)
+    draw.arc((132, 654, 270, 728), start=0, end=180, fill=palette["accent"], width=8)
+    draw.line((140, 718, 248, 718), fill=palette["accent"], width=8)
+    lamp_glow = 12 + int((math.sin(frame * 0.3) + 1) * 8)
+    draw.ellipse((132 - lamp_glow, 654 - lamp_glow, 270 + lamp_glow, 728 + lamp_glow), outline="#FFE9A8", width=3)
+
+
+def _draw_person(
+    draw: ImageDraw.ImageDraw,
+    center: tuple[int, int],
+    palette: dict[str, str],
+    ink: str,
+    scale: float,
+    facing: int,
+    arm_wave: float,
+    mouth_open: bool,
+    hair: str,
+    doctor: bool = False,
+) -> None:
+    cx, cy = center
+    s = scale
+    skin = "#FFE0BD"
+    shirt = "#FFFFFF" if doctor else palette["shirt"]
+    pants = "#2B3A67"
+    accent = palette["accent"]
+
+    def p(dx: float, dy: float) -> tuple[int, int]:
+        return int(cx + dx * s), int(cy + dy * s)
+
+    draw.ellipse((*p(-126, 250), *p(126, 286)), fill="#C9D6DC")
+    draw.rounded_rectangle((*p(-68, 48), *p(68, 238)), radius=int(34 * s), fill=shirt, outline=ink, width=max(3, int(5 * s)))
+    if doctor:
+        draw.line((*p(-24, 56), *p(-24, 230)), fill="#DCE7EA", width=max(3, int(5 * s)))
+        draw.line((*p(24, 56), *p(24, 230)), fill="#DCE7EA", width=max(3, int(5 * s)))
+        draw.ellipse((*p(16, 94), *p(42, 120)), outline=accent, width=max(3, int(4 * s)))
+        draw.line((*p(29, 120), *p(58, 158)), fill=accent, width=max(3, int(4 * s)))
+    draw.rounded_rectangle((*p(-56, 236), *p(-16, 390)), radius=int(18 * s), fill=pants, outline=ink, width=max(3, int(4 * s)))
+    draw.rounded_rectangle((*p(16, 236), *p(56, 390)), radius=int(18 * s), fill=pants, outline=ink, width=max(3, int(4 * s)))
+    draw.rounded_rectangle((*p(-72, 378), *p(-8, 410)), radius=int(14 * s), fill=ink)
+    draw.rounded_rectangle((*p(8, 378), *p(72, 410)), radius=int(14 * s), fill=ink)
+
+    left_hand = p(-132, 112 + arm_wave * 24)
+    right_hand = p(132, 96 - arm_wave * 30)
+    if facing < 0:
+        left_hand, right_hand = right_hand, left_hand
+    draw.line((*p(-62, 88), *left_hand), fill=ink, width=max(10, int(17 * s)))
+    draw.line((*p(62, 88), *right_hand), fill=ink, width=max(10, int(17 * s)))
+    hand_r = int(22 * s)
+    draw.ellipse((left_hand[0] - hand_r, left_hand[1] - hand_r, left_hand[0] + hand_r, left_hand[1] + hand_r), fill=skin, outline=ink, width=max(3, int(4 * s)))
+    draw.ellipse((right_hand[0] - hand_r, right_hand[1] - hand_r, right_hand[0] + hand_r, right_hand[1] + hand_r), fill=skin, outline=ink, width=max(3, int(4 * s)))
+
+    draw.ellipse((*p(-78, -126), *p(78, 30)), fill=skin, outline=ink, width=max(3, int(5 * s)))
+    draw.pieslice((*p(-88, -148), *p(88, -28)), start=190, end=350, fill=hair)
+    eye_offset = 16 * facing
+    draw.ellipse((*p(-30 + eye_offset, -56), *p(-16 + eye_offset, -42)), fill=ink)
+    draw.ellipse((*p(30 + eye_offset, -56), *p(44 + eye_offset, -42)), fill=ink)
+    if mouth_open:
+        draw.ellipse((*p(-22 + eye_offset, -18), *p(22 + eye_offset, 10)), fill=ink)
+        draw.ellipse((*p(-12 + eye_offset, -4), *p(12 + eye_offset, 10)), fill="#FF8FA3")
+    else:
+        draw.arc((*p(-28 + eye_offset, -24), *p(28 + eye_offset, 16)), start=25, end=155, fill=ink, width=max(3, int(5 * s)))
+
+
+def _draw_baby(
+    draw: ImageDraw.ImageDraw,
+    center: tuple[int, int],
+    ink: str,
+    accent: str,
+    arm_wave: float,
+    awake: bool,
+    big: bool = False,
+) -> None:
+    cx, cy = center
+    s = 1.2 if big else 0.88
+    skin = "#FFE0BD"
+    onesie = "#FFE8F1"
+
+    def p(dx: float, dy: float) -> tuple[int, int]:
+        return int(cx + dx * s), int(cy + dy * s)
+
+    draw.ellipse((*p(-128, 190), *p(128, 226)), fill="#C9D6DC")
+    draw.rounded_rectangle((*p(-116, 74), *p(116, 214)), radius=int(54 * s), fill=onesie, outline=ink, width=max(3, int(5 * s)))
+    left_hand = p(-126, 84 - arm_wave * 38)
+    right_hand = p(126, 78 + arm_wave * 38)
+    draw.line((*p(-78, 104), *left_hand), fill=ink, width=max(9, int(15 * s)))
+    draw.line((*p(78, 104), *right_hand), fill=ink, width=max(9, int(15 * s)))
+    hand_r = int(24 * s)
+    draw.ellipse((left_hand[0] - hand_r, left_hand[1] - hand_r, left_hand[0] + hand_r, left_hand[1] + hand_r), fill=skin, outline=ink, width=max(3, int(4 * s)))
+    draw.ellipse((right_hand[0] - hand_r, right_hand[1] - hand_r, right_hand[0] + hand_r, right_hand[1] + hand_r), fill=skin, outline=ink, width=max(3, int(4 * s)))
+    draw.ellipse((*p(-88, -106), *p(88, 70)), fill=skin, outline=ink, width=max(3, int(5 * s)))
+    draw.arc((*p(-50, -136), *p(50, -76)), start=210, end=330, fill=ink, width=max(3, int(5 * s)))
+    if awake:
+        draw.ellipse((*p(-34, -42), *p(-18, -26)), fill=ink)
+        draw.ellipse((*p(18, -42), *p(34, -26)), fill=ink)
+        draw.arc((*p(-28, -20), *p(28, 24)), start=28, end=152, fill=ink, width=max(3, int(5 * s)))
+    else:
+        draw.arc((*p(-42, -50), *p(-12, -30)), start=0, end=180, fill=ink, width=max(3, int(4 * s)))
+        draw.arc((*p(12, -50), *p(42, -30)), start=0, end=180, fill=ink, width=max(3, int(4 * s)))
+    draw.ellipse((*p(-10, -8), *p(10, 12)), fill="#F7B7A3")
+    draw.rounded_rectangle((*p(-54, 110), *p(54, 140)), radius=int(16 * s), fill=accent)
+
+
+def _draw_motion_lines(draw: ImageDraw.ImageDraw, origin: tuple[int, int], color: str) -> None:
+    x, y = origin
+    draw.line((x, y, x + 86, y - 56), fill=color, width=8)
+    draw.line((x + 20, y + 54, x + 124, y + 38), fill=color, width=8)
+    draw.arc((x - 30, y - 120, x + 160, y + 70), start=295, end=50, fill=color, width=7)
+
+
+def _draw_check_card(
+    draw: ImageDraw.ImageDraw,
+    center: tuple[int, int],
+    palette: dict[str, str],
+    ink: str,
+    progress: float,
+) -> None:
+    cx, cy = center
+    draw.rounded_rectangle((cx - 170, cy - 120, cx + 170, cy + 120), radius=34, fill="#FFFFFF", outline="#D3E4E8", width=4)
+    for index in range(3):
+        y = cy - 72 + index * 70
+        active = progress > index * 0.26
+        fill = palette["accent"] if active else "#D3E4E8"
+        draw.ellipse((cx - 122, y - 18, cx - 86, y + 18), fill=fill)
+        if active:
+            draw.line((cx - 114, y, cx - 104, y + 10), fill="#FFFFFF", width=5)
+            draw.line((cx - 104, y + 10, cx - 90, y - 10), fill="#FFFFFF", width=5)
+        draw.rounded_rectangle((cx - 58, y - 10, cx + 112, y + 10), radius=10, fill="#EEF5F6")
+        draw.rounded_rectangle((cx - 58, y - 10, cx - 58 + int(170 * min(1, progress + index * 0.1)), y + 10), radius=10, fill=palette["accent2"])
+    draw.arc((cx - 204, cy - 154, cx + 204, cy + 154), start=210, end=330, fill=ink, width=5)
+
+
+def _draw_heart_burst(
+    draw: ImageDraw.ImageDraw,
+    center: tuple[int, int],
+    color_a: str,
+    color_b: str,
+    frame: int,
+) -> None:
+    cx, cy = center
+    pulse = int((math.sin(frame * 0.4) + 1) * 8)
+    for index, (dx, dy, color) in enumerate(
+        [(-90, -38, color_a), (78, -64, color_b), (-10, 64, color_a), (116, 28, color_a)]
+    ):
+        r = 16 + pulse + index * 2
+        x = cx + dx
+        y = cy + dy
+        draw.ellipse((x - r, y - r, x, y), fill=color)
+        draw.ellipse((x, y - r, x + r, y), fill=color)
+        draw.polygon([(x - r, y - r // 3), (x + r, y - r // 3), (x, y + r)], fill=color)
+
+
+def _draw_progress_bar(draw: ImageDraw.ImageDraw, progress: float, color: str) -> None:
+    draw.rounded_rectangle((180, 1648, 900, 1668), radius=10, fill="#DDE7EA")
+    draw.rounded_rectangle((180, 1648, 180 + int(720 * progress), 1668), radius=10, fill=color)
+
+
+def _draw_subtitle(
+    draw: ImageDraw.ImageDraw,
+    text: str,
+    subtitle_font: ImageFont.ImageFont,
+    small_font: ImageFont.ImageFont,
+    fill: str,
+) -> None:
+    del small_font
+    cleaned = " ".join(text.split())
+    box = (70, 1705, 1010, 1850)
+    draw.rounded_rectangle((box[0] + 8, box[1] + 10, box[2] + 8, box[3] + 10), radius=32, fill="#000000")
+    draw.rounded_rectangle(box, radius=32, fill="#FFFFFF")
+    _draw_wrapped(draw, cleaned, (112, 1738), subtitle_font, fill, max_chars=24, line_gap=12, max_lines=3)
 
 
 def _tint_shadow(

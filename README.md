@@ -11,7 +11,7 @@ The default version is intentionally runnable without paid API keys. It can:
 - split the script into scenes
 - generate Korean voiceover with macOS `say`
 - generate subtitle files
-- render a vertical MP4 with a speaking character animation
+- render a vertical MP4 with story-style character animation and subtitles
 
 For higher quality narration, OpenAI TTS can be enabled with an API key.
 
@@ -37,13 +37,13 @@ The default path is fully local:
 
 1. Python creates article/script/scenes/subtitles.
 2. macOS `say` creates `voice.aiff`.
-3. FFmpeg renders a vertical `final_video.mp4` with a presenter-style character animation.
+3. FFmpeg renders a vertical `final_video.mp4` with parent, doctor, and baby story scenes.
 
 The higher-quality production path is:
 
 1. Python pipeline creates article/script/scenes/subtitles/audio/render manifest.
 2. OpenAI writes a natural Korean short-form script and creates `voice.mp3`.
-3. FFmpeg renders the final vertical character animation MP4, or Remotion prepares a more customizable template.
+3. FFmpeg renders the final vertical story animation MP4, or Remotion prepares a more customizable template.
 
 Run the full production-prep pipeline:
 
@@ -52,7 +52,7 @@ python3 -m src.cli \
   --input-file fevercoach_post.txt \
   --script-provider openai \
   --tts-provider openai \
-  --renderer character
+  --renderer story
 ```
 
 This generates:
@@ -70,7 +70,8 @@ output/jobs/<job_id>/
 
 Renderer options:
 
-- `--renderer character`: speaking person animation, default and recommended
+- `--renderer story`: parent, doctor, and baby situation animation with subtitles only, default and recommended
+- `--renderer character`: presenter animation with on-screen explainer cards
 - `--renderer animated`: animated text-card video
 - `--renderer ffmpeg`: simpler static text-card video
 - `--renderer remotion`: write a manifest for the optional Remotion template
@@ -108,14 +109,14 @@ OPENAI_TTS_VOICE=alloy
 ## Architecture
 
 ```txt
-Discovery -> Extraction -> Cleaning -> Script -> Scenes -> Voice -> Subtitles -> Character MP4
+Discovery -> Extraction -> Cleaning -> Script -> Scenes -> Voice -> Subtitles -> Story MP4
 ```
 
 Core modules:
 
 - `src/extractors`: RSS discovery, file/URL article extraction, text cleanup
 - `src/ai`: script and scene generation, safety checks
-- `src/media`: TTS, SRT generation, FFmpeg character/card renderers, render manifest
+- `src/media`: TTS, SRT generation, FFmpeg story/character/card renderers, render manifest
 - `src/pipeline`: orchestration, storage, time tracking
 
 ## Safety

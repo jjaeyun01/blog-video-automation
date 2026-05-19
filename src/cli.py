@@ -18,6 +18,7 @@ from src.media.video_renderer import (
     DryRunVideoRenderer,
     FfmpegVideoRenderer,
     RemotionManifestRenderer,
+    StoryFfmpegVideoRenderer,
 )
 from src.pipeline.orchestrator import BlogVideoPipeline
 from src.pipeline.storage import Storage
@@ -43,9 +44,9 @@ def main() -> None:
     )
     parser.add_argument(
         "--renderer",
-        choices=["dry-run", "ffmpeg", "animated", "character", "remotion"],
-        default="character",
-        help="Use dry-run, basic FFmpeg, animated card, character animation, or prepare a Remotion manifest.",
+        choices=["dry-run", "ffmpeg", "animated", "character", "story", "remotion"],
+        default="story",
+        help="Use dry-run, basic FFmpeg, animated card, presenter, story animation, or prepare a Remotion manifest.",
     )
     args = parser.parse_args()
 
@@ -99,6 +100,8 @@ def build_pipeline(
 
     if renderer == "remotion":
         video_renderer = RemotionManifestRenderer()
+    elif renderer == "story":
+        video_renderer = StoryFfmpegVideoRenderer()
     elif renderer == "character":
         video_renderer = CharacterFfmpegVideoRenderer()
     elif renderer == "animated":
