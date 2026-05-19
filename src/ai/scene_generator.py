@@ -12,6 +12,9 @@ class SceneGenerator:
         self.settings = settings
 
     def generate(self, article: Article, script: VideoScript) -> list[Scene]:
+        if _is_dialogue_script(script):
+            return _dialogue_scenes(article, script, self.settings)
+
         sentences = _split_sentences(script.narration)
         chunks = _chunk_sentences(sentences, self.settings.max_scenes)
         duration = max(4.0, script.target_duration_sec / max(1, len(chunks)))
@@ -37,6 +40,36 @@ def _split_sentences(text: str) -> list[str]:
     return [part.strip() for part in parts if part.strip()]
 
 
+def _is_dialogue_script(script: VideoScript) -> bool:
+    return "부모:" in script.narration or "의사:" in script.narration
+
+
+def _dialogue_scenes(article: Article, script: VideoScript, settings: Settings) -> list[Scene]:
+    lines: list[tuple[str, str]] = []
+    for part in re.split(r"\s+(?=(?:부모|의사):)", script.narration):
+        match = re.match(r"^(부모|의사):\s*(.+)$", part.strip())
+        if match:
+            lines.append((match.group(1), match.group(2).strip()))
+
+    if not lines:
+        return []
+
+    duration = max(4.0, script.target_duration_sec / max(1, len(lines)))
+    scenes: list[Scene] = []
+    for index, (speaker, line) in enumerate(lines, start=1):
+        scenes.append(
+            Scene(
+                index=index,
+                duration_sec=round(duration, 2),
+                narration=f"{speaker}: {line}",
+                subtitle=_subtitle(line, max_chars=48),
+                visual_prompt=_dialogue_visual_prompt(article.title, speaker, line),
+                visual_type="dialogue",
+            )
+        )
+    return scenes
+
+
 def _chunk_sentences(sentences: list[str], max_chunks: int) -> list[list[str]]:
     if len(sentences) <= max_chunks:
         return [[sentence] for sentence in sentences]
@@ -54,4 +87,11 @@ def _visual_prompt(title: str, narration: str) -> str:
     return (
         "Clean warm pediatric health explainer visual, Korean mobile short-form style. "
         f"Topic: {title}. Scene meaning: {narration[:160]}"
+    )
+
+
+def _dialogue_visual_prompt(title: str, speaker: str, line: str) -> str:
+    return (
+        "Realistic Korean pediatric clinic conversation, warm natural lighting. "
+        f"Topic: {title}. Speaker: {speaker}. Dialogue meaning: {line[:160]}"
     )

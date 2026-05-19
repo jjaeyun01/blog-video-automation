@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import math
+import re
 import shutil
 import subprocess
 from textwrap import wrap
@@ -1216,10 +1217,8 @@ def _compact_for_avatar(text: str, max_chars: int = 1800) -> str:
 
 def _dialogue_from_scenes(script: VideoScript) -> list[dict[str, str]]:
     dialogue: list[dict[str, str]] = []
-    speakers = ["parent", "doctor", "parent", "doctor"]
     for scene in script.scenes:
-        speaker = speakers[(scene.index - 1) % len(speakers)]
-        line = scene.narration if scene.narration else scene.subtitle
+        speaker, line = _parse_dialogue_line(scene.narration or scene.subtitle, scene.index)
         dialogue.append(
             {
                 "scene": str(scene.index),
@@ -1229,6 +1228,15 @@ def _dialogue_from_scenes(script: VideoScript) -> list[dict[str, str]]:
             }
         )
     return dialogue
+
+
+def _parse_dialogue_line(text: str, index: int) -> tuple[str, str]:
+    match = re.match(r"^(부모|의사):\s*(.+)$", text.strip())
+    if match:
+        speaker = "parent" if match.group(1) == "부모" else "doctor"
+        return speaker, match.group(2).strip()
+    speakers = ["parent", "doctor", "parent", "doctor"]
+    return speakers[(index - 1) % len(speakers)], text.strip()
 
 
 def _real_human_shot_list(script: VideoScript) -> list[dict[str, str]]:

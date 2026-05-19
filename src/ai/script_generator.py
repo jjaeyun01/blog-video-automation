@@ -13,6 +13,9 @@ class ScriptGenerator:
         self.settings = settings
 
     def generate(self, article: Article) -> VideoScript:
+        if _is_face_hitting_article(article):
+            return _face_hitting_dialogue_script(article, self.settings)
+
         facts = _compress_article(article.cleaned_text)
         hook = _make_hook(article.title)
         disclaimer = "이 영상은 일반 정보이며 진료를 대신하지 않습니다."
@@ -96,6 +99,40 @@ def _make_hook(title: str) -> str:
     if cleaned.endswith("?") or cleaned.endswith("까요?"):
         return f"{cleaned} 부모님이 가장 먼저 확인할 점을 정리해볼게요."
     return f"{cleaned}에 대해 부모님이 확인할 점을 정리해볼게요."
+
+
+def _is_face_hitting_article(article: Article) -> bool:
+    text = f"{article.title}\n{article.cleaned_text}"
+    markers = ("얼굴을 때", "자기 얼굴", "5개월")
+    return all(marker in text for marker in markers)
+
+
+def _face_hitting_dialogue_script(article: Article, settings: Settings) -> VideoScript:
+    disclaimer = "이 영상은 일반 정보이며 진료를 대신하지 않습니다."
+    outro = "아이가 많이 힘들어 보이거나 얼굴이 붓고 붉어지면 소아청소년과에 상담해 주세요."
+    hook = "아기가 자기 얼굴을 자꾸 때리면 부모님 입장에서는 당연히 걱정될 수 있어요."
+    lines = [
+        "부모: 요즘 우리 아기가 손으로 자기 얼굴을 자꾸 때려요. 어디가 불편한 걸까요?",
+        "의사: 많이 놀라셨죠. 그런데 5개월 무렵에는 자기 손과 얼굴을 탐색하면서 이런 행동이 꽤 흔하게 보일 수 있어요.",
+        "부모: 일부러 아파서 그러는 건 아닐 수도 있다는 말씀이세요?",
+        "의사: 네. 아직 움직임을 섬세하게 조절하는 중이라 손이 얼굴 쪽으로 가는 과정에서 툭툭 닿을 수 있어요.",
+        "의사: 또 이가 나려고 하거나, 졸리고 자극이 많을 때 얼굴을 만지거나 비비는 식으로 불편함을 표현하기도 해요.",
+        "부모: 그럼 집에서는 어떻게 도와주면 좋을까요?",
+        "의사: 손을 세게 막기보다는 부드럽게 방향을 바꿔 주세요. 치발기나 부드러운 장난감을 쥐여주는 것도 도움이 될 수 있어요.",
+        f"의사: {outro} {disclaimer}",
+    ]
+    narration = " ".join(lines)
+    return VideoScript(
+        article_id=article.id,
+        title=article.title,
+        format="short_vertical_dialogue",
+        target_duration_sec=settings.target_duration_sec,
+        hook=hook,
+        narration=narration,
+        outro=outro,
+        disclaimer=disclaimer,
+        scenes=[],
+    )
 
 
 def _compress_article(text: str, max_chars: int = 900) -> str:
