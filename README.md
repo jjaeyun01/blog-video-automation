@@ -72,10 +72,23 @@ Renderer options:
 
 - `--renderer story`: parent, doctor, and baby situation animation with subtitles only, default and recommended
 - `--renderer character`: presenter animation with on-screen explainer cards
+- `--renderer real-human`: prepare a HeyGen/Runway package for realistic human avatar generation
 - `--renderer animated`: animated text-card video
 - `--renderer ffmpeg`: simpler static text-card video
 - `--renderer remotion`: write a manifest for the optional Remotion template
 - `--renderer dry-run`: write manifests only
+
+To prepare the real-human package:
+
+```bash
+python3 -m src.cli --input-file fevercoach_post.txt --renderer real-human
+```
+
+This writes `real_human_video_package.json` with:
+
+- a HeyGen payload template for a realistic doctor avatar
+- a Runway conversation prompt for parent-doctor-baby scenes
+- a shot list and dialogue script for post-production
 
 Use Remotion only when you want a more advanced motion template:
 
@@ -95,6 +108,10 @@ Copy `.env.example` to `.env` if you want to add real providers later.
 ```bash
 OPENAI_API_KEY=
 ELEVENLABS_API_KEY=
+HEYGEN_API_KEY=
+HEYGEN_AVATAR_ID=
+HEYGEN_VOICE_ID=
+RUNWAY_API_KEY=
 ```
 
 For OpenAI-backed generation:
@@ -116,7 +133,7 @@ Core modules:
 
 - `src/extractors`: RSS discovery, file/URL article extraction, text cleanup
 - `src/ai`: script and scene generation, safety checks
-- `src/media`: TTS, SRT generation, FFmpeg story/character/card renderers, render manifest
+- `src/media`: TTS, SRT generation, FFmpeg story/character/card renderers, real-human provider package, render manifest
 - `src/pipeline`: orchestration, storage, time tracking
 
 ## Safety

@@ -17,6 +17,7 @@ from src.media.video_renderer import (
     CharacterFfmpegVideoRenderer,
     DryRunVideoRenderer,
     FfmpegVideoRenderer,
+    RealHumanPackageRenderer,
     RemotionManifestRenderer,
     StoryFfmpegVideoRenderer,
 )
@@ -44,9 +45,9 @@ def main() -> None:
     )
     parser.add_argument(
         "--renderer",
-        choices=["dry-run", "ffmpeg", "animated", "character", "story", "remotion"],
+        choices=["dry-run", "ffmpeg", "animated", "character", "story", "real-human", "remotion"],
         default="story",
-        help="Use dry-run, basic FFmpeg, animated card, presenter, story animation, or prepare a Remotion manifest.",
+        help="Use dry-run, FFmpeg, animated card, presenter, story animation, real-human package, or Remotion manifest.",
     )
     args = parser.parse_args()
 
@@ -100,6 +101,8 @@ def build_pipeline(
 
     if renderer == "remotion":
         video_renderer = RemotionManifestRenderer()
+    elif renderer == "real-human":
+        video_renderer = RealHumanPackageRenderer()
     elif renderer == "story":
         video_renderer = StoryFfmpegVideoRenderer()
     elif renderer == "character":

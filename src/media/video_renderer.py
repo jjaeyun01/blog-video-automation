@@ -113,6 +113,84 @@ class RemotionManifestRenderer:
         return manifest_path, final_path
 
 
+class RealHumanPackageRenderer:
+    def render(
+        self,
+        article: Article,
+        script: VideoScript,
+        voice_path: Path,
+        subtitles_path: Path,
+        output_dir: Path,
+    ) -> tuple[Path, Path]:
+        script_text = _compact_for_avatar(script.narration)
+        dialogue = _dialogue_from_scenes(script)
+        shot_list = _real_human_shot_list(script)
+        final_path = output_dir / "real_human_video.external.txt"
+        manifest_path = output_dir / "real_human_video_package.json"
+
+        package = {
+            "renderer": "real_human_package",
+            "goal": "Create a realistic human video from the blog script using an external avatar/video provider.",
+            "recommended_provider": "HeyGen for a real talking doctor avatar; Runway for generated conversation scenes.",
+            "article": article.to_dict(),
+            "script": script.to_dict(),
+            "voice_path": str(voice_path),
+            "subtitles_path": str(subtitles_path),
+            "provider_options": {
+                "heygen_single_avatar": {
+                    "use_when": "Most stable path for a real person speaking directly to camera.",
+                    "endpoint": "POST https://api.heygen.com/v2/videos",
+                    "required_env": ["HEYGEN_API_KEY", "HEYGEN_AVATAR_ID", "HEYGEN_VOICE_ID"],
+                    "payload_template": {
+                        "avatar_id": "${HEYGEN_AVATAR_ID}",
+                        "voice_id": "${HEYGEN_VOICE_ID}",
+                        "script": script_text,
+                        "title": article.title,
+                        "resolution": "1080p",
+                        "aspect_ratio": "9:16",
+                        "expressiveness": "medium",
+                        "motion_prompt": (
+                            "A warm Korean pediatric doctor speaks naturally to parents, "
+                            "gentle hand gestures, reassuring expression, clinic background."
+                        ),
+                        "background": {
+                            "type": "color",
+                            "value": "#F7FBFC",
+                        },
+                    },
+                },
+                "runway_conversation_scene": {
+                    "use_when": "Best fit when the final video should look like real people talking in a scene.",
+                    "model_hint": "gwm1_avatars for text conversation, or gen4.5/image-to-video for generated shots.",
+                    "conversation_prompt": _runway_conversation_prompt(article.title, dialogue),
+                },
+            },
+            "dialogue_script": dialogue,
+            "shot_list": shot_list,
+            "post_production": [
+                "Export the avatar/video clips from the provider.",
+                "Add the generated subtitles.srt as burned-in captions or platform captions.",
+                "Keep the medical disclaimer in the final caption or end card.",
+            ],
+        }
+        manifest_path.write_text(
+            json.dumps(package, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        final_path.write_text(
+            "\n".join(
+                [
+                    "This renderer prepares a real-human avatar/video package.",
+                    "Use real_human_video_package.json with HeyGen or Runway to generate the actual video.",
+                    "Local FFmpeg cannot create photorealistic speaking humans by itself.",
+                    "",
+                ]
+            ),
+            encoding="utf-8",
+        )
+        return manifest_path, final_path
+
+
 class FfmpegVideoRenderer:
     width = 1080
     height = 1920
@@ -1108,6 +1186,68 @@ def _probe_duration(path: Path) -> float | None:
         return float(result.stdout.strip())
     except ValueError:
         return None
+
+
+def _compact_for_avatar(text: str, max_chars: int = 1800) -> str:
+    cleaned = " ".join(text.split())
+    if len(cleaned) <= max_chars:
+        return cleaned
+    truncated = cleaned[:max_chars].rstrip()
+    sentence_end = max(truncated.rfind("."), truncated.rfind("?"), truncated.rfind("요."))
+    if sentence_end > max_chars * 0.65:
+        return truncated[: sentence_end + 1]
+    return truncated
+
+
+def _dialogue_from_scenes(script: VideoScript) -> list[dict[str, str]]:
+    dialogue: list[dict[str, str]] = []
+    speakers = ["parent", "doctor", "parent", "doctor"]
+    for scene in script.scenes:
+        speaker = speakers[(scene.index - 1) % len(speakers)]
+        line = scene.narration if scene.narration else scene.subtitle
+        dialogue.append(
+            {
+                "scene": str(scene.index),
+                "speaker": speaker,
+                "line": _compact_for_avatar(line, max_chars=240),
+                "caption": scene.subtitle,
+            }
+        )
+    return dialogue
+
+
+def _real_human_shot_list(script: VideoScript) -> list[dict[str, str]]:
+    shots: list[dict[str, str]] = []
+    templates = [
+        "Concerned parent in a bright pediatric clinic asks the doctor a question.",
+        "Close-up of a baby safely sitting on a soft mat, gently moving hands near the face.",
+        "Doctor responds calmly with natural eye contact and small hand gestures.",
+        "Parent nods while checking the baby gently and staying relaxed.",
+    ]
+    for scene in script.scenes:
+        shots.append(
+            {
+                "scene": str(scene.index),
+                "visual": templates[(scene.index - 1) % len(templates)],
+                "caption": scene.subtitle,
+                "duration_sec": str(scene.duration_sec),
+            }
+        )
+    return shots
+
+
+def _runway_conversation_prompt(title: str, dialogue: list[dict[str, str]]) -> str:
+    lines = "\n".join(
+        f"{item['speaker']}: {item['line']}"
+        for item in dialogue
+    )
+    return (
+        "Vertical 9:16 realistic Korean pediatric clinic conversation video. "
+        "A parent and a pediatric doctor talk naturally while a baby is safely visible nearby. "
+        "Warm lighting, clean clinic room, natural facial expressions, no on-screen explainer text, "
+        "only subtitles added in post-production. Topic: "
+        f"{title}\n\nDialogue:\n{lines}"
+    )
 
 
 def _draw_wrapped(
