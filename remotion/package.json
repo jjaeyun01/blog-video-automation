@@ -1,0 +1,18 @@
+{
+  "name": "fevercoach-remotion-renderer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "render": "remotion render src/Root.tsx BlogVideo"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.300",
+    "remotion": "^4.0.300",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.79",
+    "typescript": "^5.4.5"
+  }
+}
