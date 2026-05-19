@@ -12,7 +12,12 @@ from src.extractors.text_cleaner import TextCleaner
 from src.extractors.wix_rss_discovery import WixRssDiscovery
 from src.media.subtitle_generator import SubtitleGenerator
 from src.media.tts_provider import DryRunTtsProvider, LocalSayTtsProvider, OpenAiTtsProvider
-from src.media.video_renderer import DryRunVideoRenderer, FfmpegVideoRenderer, RemotionManifestRenderer
+from src.media.video_renderer import (
+    AnimatedFfmpegVideoRenderer,
+    DryRunVideoRenderer,
+    FfmpegVideoRenderer,
+    RemotionManifestRenderer,
+)
 from src.pipeline.orchestrator import BlogVideoPipeline
 from src.pipeline.storage import Storage
 from src.pipeline.time_tracker import TimeTracker
@@ -37,9 +42,9 @@ def main() -> None:
     )
     parser.add_argument(
         "--renderer",
-        choices=["dry-run", "ffmpeg", "remotion"],
-        default="ffmpeg",
-        help="Use dry-run manifest, local FFmpeg MP4 render, or prepare a Remotion render manifest.",
+        choices=["dry-run", "ffmpeg", "animated", "remotion"],
+        default="animated",
+        help="Use dry-run, basic FFmpeg, animated FFmpeg MP4 render, or prepare a Remotion manifest.",
     )
     args = parser.parse_args()
 
@@ -93,6 +98,8 @@ def build_pipeline(
 
     if renderer == "remotion":
         video_renderer = RemotionManifestRenderer()
+    elif renderer == "animated":
+        video_renderer = AnimatedFfmpegVideoRenderer()
     elif renderer == "ffmpeg":
         video_renderer = FfmpegVideoRenderer()
     else:

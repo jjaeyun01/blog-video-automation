@@ -309,6 +309,139 @@ class FfmpegVideoRenderer:
         return scene_durations
 
 
+class AnimatedFfmpegVideoRenderer(FfmpegVideoRenderer):
+    def _render_segments(
+        self,
+        frame_paths: list[Path],
+        scene_durations: list[float],
+        output_dir: Path,
+    ) -> list[Path]:
+        segments_dir = output_dir / "segments"
+        segments_dir.mkdir(parents=True, exist_ok=True)
+        segment_paths: list[Path] = []
+        for index, (frame_path, duration) in enumerate(zip(frame_paths, scene_durations), start=1):
+            segment_path = segments_dir / f"animated_segment_{index:02}.mp4"
+            frames = max(1, int(duration * 30))
+            zoom_direction = "+0.00028" if index % 2 else "-0.00022"
+            zoom_expr = (
+                "min(zoom+0.00028,1.035)"
+                if zoom_direction.startswith("+")
+                else "max(1.035-on*0.00022,1.0)"
+            )
+            fade_out_start = max(0.1, duration - 0.35)
+            filter_chain = (
+                f"scale={self.width}:{self.height},"
+                f"zoompan=z='{zoom_expr}':"
+                "x='iw/2-(iw/zoom/2)':"
+                "y='ih/2-(ih/zoom/2)':"
+                f"d={frames}:s={self.width}x{self.height}:fps=30,"
+                "fade=t=in:st=0:d=0.35,"
+                f"fade=t=out:st={fade_out_start:.2f}:d=0.35,"
+                "format=yuv420p"
+            )
+            command = [
+                "ffmpeg",
+                "-y",
+                "-loop",
+                "1",
+                "-i",
+                str(frame_path),
+                "-vf",
+                filter_chain,
+                "-t",
+                f"{duration:.3f}",
+                "-c:v",
+                "libx264",
+                "-preset",
+                "medium",
+                "-crf",
+                "20",
+                str(segment_path),
+            ]
+            subprocess.run(command, check=True, capture_output=True)
+            segment_paths.append(segment_path)
+        return segment_paths
+
+    def _draw_scene(
+        self,
+        title: str,
+        index: int,
+        subtitle: str,
+        narration: str,
+        disclaimer: str,
+    ) -> Image.Image:
+        palettes = [
+            {"bg": "#FFF7E8", "card": "#FFFFFF", "accent": "#FF6B6B", "accent2": "#4ECDC4", "ink": "#17202A"},
+            {"bg": "#EAF7FF", "card": "#FFFFFF", "accent": "#118AB2", "accent2": "#FFD166", "ink": "#17202A"},
+            {"bg": "#F2F0FF", "card": "#FFFFFF", "accent": "#7C3AED", "accent2": "#06D6A0", "ink": "#17202A"},
+            {"bg": "#ECFFF3", "card": "#FFFFFF", "accent": "#0B8F8A", "accent2": "#F7C948", "ink": "#17202A"},
+        ]
+        palette = palettes[(index - 1) % len(palettes)]
+        muted = "#506170"
+        image = Image.new("RGB", (self.width, self.height), palette["bg"])
+        draw = ImageDraw.Draw(image)
+
+        title_font = _font(58)
+        subtitle_font = _font(46)
+        body_font = _font(34)
+        small_font = _font(27)
+        logo_font = _font(36)
+        number_font = _font(96)
+
+        _draw_blob(draw, (780, 80), 300, palette["accent2"], 0.55)
+        _draw_blob(draw, (-120, 1260), 360, palette["accent"], 0.35)
+        _draw_sparkles(draw, index, palette["accent"], palette["accent2"])
+
+        draw.rounded_rectangle((64, 54, 126, 116), radius=18, fill=palette["accent"])
+        draw.text((85, 60), "F", font=logo_font, fill="#FFFFFF")
+        draw.text((148, 68), "FeverCoach", font=logo_font, fill=palette["ink"])
+
+        draw.rounded_rectangle((760, 214, 948, 402), radius=94, fill=palette["accent2"])
+        _draw_face(draw, (854, 308), 82, palette["ink"])
+        draw.rounded_rectangle((760, 420, 948, 470), radius=25, fill="#FFFFFF")
+        draw.text((804, 426), "CHECK", font=small_font, fill=palette["accent"])
+
+        card = (68, 210, 1012, 1766)
+        shadow = (82, 226, 1026, 1782)
+        image = _tint_shadow(image, shadow, opacity=22)
+        draw = ImageDraw.Draw(image)
+        draw.rounded_rectangle(card, radius=46, fill=palette["card"], outline="#E6EEF0", width=4)
+
+        draw.rounded_rectangle((126, 278, 352, 342), radius=32, fill=palette["accent2"])
+        draw.text((152, 292), "오늘의 포인트", font=small_font, fill=palette["ink"])
+
+        draw.text((760, 278), f"{index:02}", font=number_font, fill="#EEF2F4")
+
+        y = 392
+        clean_title = title.replace("Q:", "").strip()
+        y = _draw_wrapped(draw, clean_title, (126, y), title_font, palette["ink"], max_chars=16, line_gap=14, max_lines=3)
+        draw.rounded_rectangle((126, y + 18, 266, y + 30), radius=6, fill=palette["accent"])
+        y += 72
+
+        draw.rounded_rectangle((126, y, 950, y + 246), radius=34, fill="#F6FAFB")
+        _draw_wrapped(draw, subtitle, (164, y + 34), subtitle_font, palette["accent"], max_chars=19, line_gap=14, max_lines=3)
+        y += 286
+
+        _draw_wrapped(draw, narration, (126, y), body_font, muted, max_chars=25, line_gap=14, max_lines=10)
+
+        progress_left = 126
+        progress_top = 1654
+        for dot in range(7):
+            fill = palette["accent"] if dot < index else "#DDE7EA"
+            draw.ellipse(
+                (
+                    progress_left + dot * 48,
+                    progress_top,
+                    progress_left + dot * 48 + 22,
+                    progress_top + 22,
+                ),
+                fill=fill,
+            )
+        draw.line((64, 1810, 1016, 1810), fill="#DCE8EA", width=2)
+        _draw_wrapped(draw, disclaimer, (64, 1834), small_font, muted, max_chars=42, line_gap=8, max_lines=2)
+        return image
+
+
 def _font(size: int) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
     candidates = [
         "/System/Library/Fonts/AppleSDGothicNeo.ttc",
@@ -319,6 +452,76 @@ def _font(size: int) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
         if Path(candidate).exists():
             return ImageFont.truetype(candidate, size=size)
     return ImageFont.load_default()
+
+
+def _draw_blob(
+    draw: ImageDraw.ImageDraw,
+    xy: tuple[int, int],
+    size: int,
+    fill: str,
+    opacity: float = 1.0,
+) -> None:
+    del opacity
+    x, y = xy
+    draw.ellipse((x, y, x + size, y + size), fill=fill)
+
+
+def _draw_sparkles(
+    draw: ImageDraw.ImageDraw,
+    seed: int,
+    color_a: str,
+    color_b: str,
+) -> None:
+    points = [
+        (110, 180), (938, 160), (934, 728), (96, 920),
+        (880, 1210), (160, 1500), (980, 1540), (520, 118),
+    ]
+    for index, (x, y) in enumerate(points):
+        color = color_a if (index + seed) % 2 else color_b
+        radius = 10 + ((index + seed) % 4) * 5
+        if index % 3 == 0:
+            draw.rounded_rectangle((x, y, x + radius * 4, y + radius), radius=radius // 2, fill=color)
+        elif index % 3 == 1:
+            draw.ellipse((x, y, x + radius * 2, y + radius * 2), fill=color)
+        else:
+            draw.polygon(
+                [
+                    (x + radius, y),
+                    (x + radius * 1.35, y + radius * 0.65),
+                    (x + radius * 2, y + radius),
+                    (x + radius * 1.35, y + radius * 1.35),
+                    (x + radius, y + radius * 2),
+                    (x + radius * 0.65, y + radius * 1.35),
+                    (x, y + radius),
+                    (x + radius * 0.65, y + radius * 0.65),
+                ],
+                fill=color,
+            )
+
+
+def _draw_face(
+    draw: ImageDraw.ImageDraw,
+    center: tuple[int, int],
+    radius: int,
+    ink: str,
+) -> None:
+    cx, cy = center
+    draw.ellipse((cx - radius, cy - radius, cx + radius, cy + radius), fill="#FFE4C7", outline=ink, width=4)
+    draw.ellipse((cx - 34, cy - 18, cx - 20, cy - 4), fill=ink)
+    draw.ellipse((cx + 20, cy - 18, cx + 34, cy - 4), fill=ink)
+    draw.arc((cx - 34, cy - 4, cx + 34, cy + 48), start=18, end=162, fill=ink, width=5)
+    draw.arc((cx - 70, cy - 82, cx + 70, cy - 18), start=205, end=335, fill=ink, width=5)
+
+
+def _tint_shadow(
+    image: Image.Image,
+    box: tuple[int, int, int, int],
+    opacity: int,
+) -> Image.Image:
+    overlay = Image.new("RGBA", image.size, (0, 0, 0, 0))
+    overlay_draw = ImageDraw.Draw(overlay)
+    overlay_draw.rounded_rectangle(box, radius=46, fill=(0, 0, 0, opacity))
+    return Image.alpha_composite(image.convert("RGBA"), overlay).convert("RGB")
 
 
 def _probe_duration(path: Path) -> float | None:
