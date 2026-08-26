@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "slug": "oc43-persistent-cough",
+  "title": "두 달째 안 낫는 가래기침, 범인은 나야 나!",
+  "source": "이번 주 FeverCoach 블로그 URL",
+  "language": "ko",
+  "character_image": "../inputs/oc43_character_master_v2.png",
+  "aspect_ratio": "9:16",
+  "resolution": "720p",
+  "fps": 30,
+  "disclaimer": "이 영상은 일반적인 건강 정보이며 진단이나 처방을 대신하지 않습니다.",
+  "scenes": [
+    {
+      "index": 1,
+      "title": "억울한 등장",
+      "mode": "i2v",
+      "timeline_seconds": 8,
+      "generation_seconds": 8,
+      "narration": "저 때문에 두 달째 기침한다고 항생제를 계속 먹이고 계신가요? 억울해서 나왔습니다!",
+      "subtitle": "두 달째 기침, 정말 OC43 때문일까?",
+      "prompt": "Animate only the exact blue OC43 character from the reference image. The character nervously sweats, blinks once, wipes its forehead, then points toward the camera with a frustrated expression. Its mouth remains naturally closed; it does not speak or lip-sync because narration will be added as voice-over. Close-up with a subtle zoom-in, same warm pediatric clinic background and soft studio lighting. Preserve the exact blue body, red spikes, multicolored dots, eyes, eyelashes, limbs, proportions, and soft 3D texture. Ambient room foley only, no dialogue, no voice, no music. Do not create any writing or signs.",
+      "negative_prompt": "text, subtitles, logo, watermark, deformation, extra limbs, character redesign"
+    },
+    {
+      "index": 2,
+      "title": "정체 공개",
+      "mode": "i2v",
+      "timeline_seconds": 10,
+      "generation_seconds": 8,
+      "narration": "저는 코로나19가 아니라 흔한 감기 바이러스 코로나 OC43이에요. 중요한 건 바이러스라는 점이에요.",
+      "subtitle": "OC43는 흔한 감기 바이러스",
+      "prompt": "Animate only the exact blue OC43 character from the reference image. It holds a magnifying glass, gently moves it toward its own red spikes, and points to itself with the other hand. It blinks once and keeps its mouth naturally closed; no speaking and no lip-sync because narration will be voice-over. Stable medium shot, same clean pediatric clinic background, bright soft lighting. Preserve the exact blue body, red spikes, multicolored dots, eyes, eyelashes, limbs, proportions, and texture. Ambient room foley only, no dialogue, no voice, no music. No card, no writing, no symbols.",
+      "negative_prompt": "text, subtitles, logo, watermark, deformation, extra limbs, character redesign"
+    },
+    {
+      "index": 3,
+      "title": "항생제의 역할",
+      "mode": "i2v",
+      "timeline_seconds": 10,
+      "generation_seconds": 8,
+      "narration": "항생제는 세균 감염에 쓰는 약이라 바이러스 자체에는 효과가 없어요. 처방 변경은 반드시 담당 의사와 상의하세요.",
+      "subtitle": "항생제는 바이러스를 치료하지 않아요",
+      "prompt": "Animate only the exact blue OC43 character from the reference image. Several red-and-white antibiotic capsules move past the character without touching it, then continue toward small simple bacteria icons far in the background. The character calmly steps aside and gestures that the capsules do not target it. Keep its mouth closed; no speaking and no lip-sync because narration will be voice-over. Dynamic but readable side-tracking camera, clean pediatric medical laboratory background, bright soft lighting. Preserve the exact character identity, colors, red spikes, dots, face, limbs, proportions, and texture. Soft whoosh foley only, no dialogue, no voice, no music. No writing or symbols.",
+      "negative_prompt": "text, subtitles, logo, watermark, gore, green virus character, replacement character, deformation, extra limbs, character redesign"
+    },
+    {
+      "index": 4,
+      "title": "예민해진 기관지",
+      "mode": "t2v",
+      "timeline_seconds": 12,
+      "generation_seconds": 8,
+      "narration": "감염이 지나간 뒤에도 기관지가 한동안 예민하면 열 없이 기침만 이어질 수 있어요. 다른 원인도 있어 진료가 필요할 수 있습니다.",
+      "subtitle": "감염 뒤 기관지가 예민할 수 있어요",
+      "prompt": "A medically clear child-friendly 3D cutaway inside a soft pink bronchial airway. The airway lining is mildly irritated after a viral infection. One tiny feather-like particle lightly touches the wall, and the airway gently contracts once in a visible cough reflex before relaxing. No virus character appears in this insert shot. Slow forward camera movement, centered airway tunnel, soft pink and coral palette, clean educational environment, gentle volumetric lighting. Subtle breathing and soft cough-reflex foley only, no dialogue, no voice, no music. No writing.",
+      "negative_prompt": "text, subtitles, logo, watermark, blood, gore, frightening anatomy"
+    },
+    {
+      "index": 5,
+      "title": "생활 관리",
+      "mode": "i2v",
+      "timeline_seconds": 12,
+      "generation_seconds": 8,
+      "narration": "실내가 너무 건조하지 않게 하고 물을 자주 주세요. 꿀은 돌이 지난 아이에게만 고려하고 증상에 맞게 진료받으세요.",
+      "subtitle": "적절한 습도 · 수분 섭취 · 돌 이후 꿀",
+      "prompt": "Animate only the exact blue OC43 character from the reference image. In one continuous readable action, it points first to a visible humidifier releasing a thin mist, then to a warm water cup, then to a small honey jar. It keeps its mouth closed; no speaking and no lip-sync because narration will be voice-over. Gentle gestures, slow camera pan, cozy uncluttered home environment, warm soft lighting. Preserve the exact blue body, red spikes, multicolored dots, face, limbs, proportions, and texture. Quiet humidifier and room foley only, no dialogue, no voice, no music. No writing or labels.",
+      "negative_prompt": "text, subtitles, logo, watermark, deformation, extra limbs, character redesign"
+    },
+    {
+      "index": 6,
+      "title": "전문의 상담",
+      "mode": "i2v",
+      "timeline_seconds": 8,
+      "generation_seconds": 8,
+      "narration": "기침이 오래 지속되거나 숨이 차고 쌕쌕거린다면 소아청소년과 전문의와 꼭 상담하세요. 안녕!",
+      "subtitle": "오래 지속되거나 호흡이 힘들면 진료",
+      "prompt": "Animate only the exact blue OC43 character from the reference image. It points toward a clearly recognizable but text-free pediatric clinic entrance with a simple medical cross icon, then turns back and waves goodbye once. It keeps its mouth closed; no speaking and no lip-sync because narration will be voice-over. Gentle zoom-out, reassuring clinic environment, warm evening light. Preserve the exact blue body, red spikes, multicolored dots, face, limbs, proportions, and texture. Soft clinic ambience only, no dialogue, no voice, no music. No writing or labels.",
+      "negative_prompt": "text, subtitles, logo, watermark, deformation, extra limbs, character redesign"
+    }
+  ]
+}
