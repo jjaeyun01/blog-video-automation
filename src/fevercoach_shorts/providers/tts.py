@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import base64
 import hashlib
 import json
 import subprocess
@@ -17,6 +18,10 @@ from ..settings import Settings
 
 
 _AUDIO_PROCESSING_VERSION = 2
+FEVERCOACH_TTS_VOICE = "Kore"
+_VOICE_PROFILE_VERSION = 3
+_VOICE_TEMPERATURE = 0.0
+_MAX_DURATION_REGENERATION_ATTEMPTS = 3
 
 
 class TtsProvider(Protocol):
@@ -36,23 +41,37 @@ class GeminiTtsProvider:
     ):
         if not settings.gemini_api_key:
             raise ValueError("GEMINI_API_KEY is required for Gemini TTS.")
-        self.client = client or genai.Client(api_key=settings.gemini_api_key)
+        self.client = client or genai.Client(
+            api_key=settings.gemini_api_key,
+            http_options=types.HttpOptions(
+                timeout=60_000,
+                retry_options=types.HttpRetryOptions(attempts=1),
+            ),
+        )
         self.model = settings.gemini_tts_model
-        self.voice = settings.gemini_tts_voice
+        # One canonical narrator is shared by every FeverCoach production.
+        self.voice = FEVERCOACH_TTS_VOICE
         self.language = language
         self.sleep = sleep
         self.max_attempts = max(1, max_attempts)
-        self.cache_key = f"gemini:{self.model}:{self.voice}:{language}"
+        self.cache_key = (
+            f"gemini:{self.model}:{self.voice}:{language}:"
+            f"profile-{_VOICE_PROFILE_VERSION}:temperature-{_VOICE_TEMPERATURE}"
+        )
 
     def synthesize(self, scene: SceneSpec, output_path: Path) -> None:
         last_error: Exception | None = None
         for attempt in range(1, self.max_attempts + 1):
             try:
+                if self.model.startswith("gemini-3.1-"):
+                    self._synthesize_streaming(scene, output_path)
+                    return
                 response = self.client.models.generate_content(
                     model=self.model,
                     contents=f"{_tts_direction(self.language)}\n{scene.narration}",
                     config=types.GenerateContentConfig(
                         response_modalities=["AUDIO"],
+                        temperature=_VOICE_TEMPERATURE,
                         speech_config=types.SpeechConfig(
                             voice_config=types.VoiceConfig(
                                 prebuilt_voice_config=types.PrebuiltVoiceConfig(voice_name=self.voice)
@@ -84,6 +103,29 @@ class GeminiTtsProvider:
             f"Gemini TTS failed for scene {scene.index} after {self.max_attempts} attempts: "
             f"{last_error}"
         ) from last_error
+
+    def _synthesize_streaming(self, scene: SceneSpec, output_path: Path) -> None:
+        """Receive 3.1 TTS incrementally so long audio cannot hit a header timeout."""
+        stream = self.client.interactions.create(
+            model=self.model,
+            input=f"{_tts_direction(self.language)}\n{scene.narration}",
+            response_format={"type": "audio"},
+            generation_config={"speech_config": [{"voice": self.voice}]},
+            stream=True,
+            timeout=60.0,
+        )
+        chunks: list[bytes] = []
+        for event in stream:
+            delta = getattr(event, "delta", None)
+            if getattr(delta, "type", None) != "audio":
+                continue
+            data = getattr(delta, "data", None)
+            if not data:
+                continue
+            chunks.append(base64.b64decode(data) if isinstance(data, str) else data)
+        if not chunks:
+            raise RuntimeError("Gemini streaming TTS returned an empty audio response.")
+        _write_audio(b"".join(chunks), "audio/L16", output_path)
 
 
 class ElevenLabsTtsProvider:
@@ -121,9 +163,18 @@ def create_tts_provider(name: str, settings: Settings, language: str = "ko") -> 
 
 def _tts_direction(language: str) -> str:
     directions = {
-        "ko": "자연스럽고 따뜻하며 또렷한 한국어 소아 건강 교육 나레이션으로 읽어주세요:",
-        "es": "Lee con una voz cálida, natural y clara, como narración educativa de salud pediátrica en español latinoamericano neutro:",
-        "en": "Read in a warm, natural, and clear US English pediatric health education narration style:",
+        "ko": (
+            "FeverCoach의 고정 성인 여성 내레이터로, 따뜻하고 또렷한 한국어 건강 교육 톤과 "
+            "일정한 속도로 읽어주세요:"
+        ),
+        "es": (
+            "Use the fixed FeverCoach adult female narrator. Read warmly and clearly in neutral "
+            "Latin American Spanish at a steady pace:"
+        ),
+        "en": (
+            "Use the fixed FeverCoach adult female narrator. Read warmly and clearly in US English "
+            "at a steady pace:"
+        ),
     }
     if language not in directions:
         raise ValueError(f"Unsupported TTS language: {language}")
@@ -146,23 +197,58 @@ def build_timeline_audio(
     aligned_paths: list[Path] = []
 
     for scene in spec.scenes:
-        fingerprint = _audio_fingerprint(scene, provider.cache_key)
+        raw_fingerprint = _raw_audio_fingerprint(scene, provider.cache_key)
+        alignment_fingerprint = _audio_fingerprint(scene, provider.cache_key)
         raw_path = raw_dir / f"scene_{scene.index:02}.mp3"
         aligned_path = aligned_dir / f"scene_{scene.index:02}.mp3"
         entry = manifest["scenes"].get(str(scene.index), {})
-        # A raw file without a matching manifest cannot be trusted: the previous
-        # attempt may have failed because that exact narration was too long, and
-        # the script may since have changed. Regenerate rather than reusing stale TTS.
-        needs_synthesis = entry.get("fingerprint") != fingerprint or not raw_path.exists()
+        legacy_timeline = entry.get("timeline_seconds")
+        legacy_fingerprint = (
+            _legacy_audio_fingerprint(
+                scene.narration, int(legacy_timeline), provider.cache_key
+            )
+            if legacy_timeline is not None
+            else None
+        )
+        raw_is_current = (
+            entry.get("raw_fingerprint") == raw_fingerprint
+            or (
+                legacy_fingerprint is not None
+                and entry.get("fingerprint") == legacy_fingerprint
+            )
+        )
+        # Timeline-only edits must reuse the exact same voice take. A raw file
+        # without any matching content fingerprint remains untrusted.
+        needs_synthesis = not raw_is_current or not raw_path.exists()
+        duration: float | None = None
         if needs_synthesis:
-            provider.synthesize(scene, raw_path)
+            for synthesis_attempt in range(1, _MAX_DURATION_REGENERATION_ATTEMPTS + 1):
+                provider.synthesize(scene, raw_path)
+                duration = _probe_duration(raw_path)
+                entry = {
+                    **entry,
+                    "raw_fingerprint": raw_fingerprint,
+                    "raw_seconds": round(duration, 3),
+                }
+                manifest["scenes"][str(scene.index)] = entry
+                _write_json(manifest_path, manifest)
+                if duration / scene.timeline_seconds <= 1.5:
+                    break
+                if synthesis_attempt == _MAX_DURATION_REGENERATION_ATTEMPTS:
+                    raise ValueError(
+                        f"Scene {scene.index} narration is {duration:.1f}s but the timeline is "
+                        f"{scene.timeline_seconds}s after {synthesis_attempt} TTS attempts; "
+                        "automatic speed-up would sound unnatural. Shorten the narration."
+                    )
         needs_alignment = (
             needs_synthesis
             or not aligned_path.exists()
             or entry.get("processing_version") != _AUDIO_PROCESSING_VERSION
+            or entry.get("alignment_fingerprint") != alignment_fingerprint
+            or int(entry.get("timeline_seconds", -1)) != scene.timeline_seconds
         )
         if needs_alignment:
-            duration = _probe_duration(raw_path)
+            duration = duration if duration is not None else _probe_duration(raw_path)
             speed = duration / scene.timeline_seconds
             if speed > 1.5:
                 raise ValueError(
@@ -180,7 +266,9 @@ def build_timeline_audio(
                 ]
             )
             manifest["scenes"][str(scene.index)] = {
-                "fingerprint": fingerprint,
+                "fingerprint": alignment_fingerprint,
+                "raw_fingerprint": raw_fingerprint,
+                "alignment_fingerprint": alignment_fingerprint,
                 "raw_seconds": round(duration, 3),
                 "speed_factor": round(max(1.0, speed), 4),
                 "processing_version": _AUDIO_PROCESSING_VERSION,
@@ -222,7 +310,18 @@ def _write_audio(data: bytes, mime_type: str, output_path: Path) -> None:
 
 
 def _audio_fingerprint(scene: SceneSpec, provider_key: str) -> str:
-    value = f"{provider_key}\n{scene.timeline_seconds}\n{scene.narration}"
+    return _legacy_audio_fingerprint(scene.narration, scene.timeline_seconds, provider_key)
+
+
+def _raw_audio_fingerprint(scene: SceneSpec, provider_key: str) -> str:
+    value = f"{provider_key}\n{scene.narration}"
+    return hashlib.sha256(value.encode("utf-8")).hexdigest()
+
+
+def _legacy_audio_fingerprint(
+    narration: str, timeline_seconds: int, provider_key: str
+) -> str:
+    value = f"{provider_key}\n{timeline_seconds}\n{narration}"
     return hashlib.sha256(value.encode("utf-8")).hexdigest()
 
 

@@ -23,6 +23,8 @@ class SceneSpec:
     include_character: bool = False
     overlays: list[dict] = field(default_factory=list)
     caption_chunks: list[str] = field(default_factory=list)
+    narrative_role: str = "explanation"
+    shot_design: dict = field(default_factory=dict)
 
     def to_dict(self, base_dir: Path | None = None) -> dict:
         data = asdict(self)
@@ -36,7 +38,7 @@ class ProductionSpec:
     slug: str
     title: str
     source: str
-    character_image: Path
+    character_image: Path | None
     scenes: list[SceneSpec]
     language: str = "ko"
     aspect_ratio: str = "9:16"
@@ -46,19 +48,27 @@ class ProductionSpec:
     schema_version: int = 1
     metadata: dict = field(default_factory=dict)
 
+    @property
+    def final_video_filename(self) -> str:
+        """Return a descriptive, language-qualified filename for the final export."""
+        return f"{self.slug}_{self.language.upper()}.mp4"
+
     @classmethod
     def load(cls, path: Path, check_files: bool = True) -> "ProductionSpec":
         source_path = path.resolve()
         data = json.loads(source_path.read_text(encoding="utf-8"))
         base_dir = source_path.parent
-        character_image = _resolve_path(data["character_image"], base_dir)
+        character_value = data.get("character_image")
+        character_image = (
+            _resolve_path(character_value, base_dir) if character_value else None
+        )
         scenes: list[SceneSpec] = []
         for position, raw in enumerate(data.get("scenes", []), start=1):
             mode = str(raw.get("mode", "t2v")).lower()
             image_value = raw.get("image")
             image = _resolve_path(image_value, base_dir) if image_value else None
             asset_prompt = str(raw.get("asset_prompt", "")).strip()
-            if mode == "i2v" and image is None and not asset_prompt:
+            if mode == "i2v" and image is None and not asset_prompt and character_image:
                 image = character_image
             narration = str(raw.get("narration", "")).strip()
             caption_chunks = [
@@ -91,6 +101,8 @@ class ProductionSpec:
                     include_character=bool(raw.get("include_character", False)),
                     overlays=list(raw.get("overlays", [])),
                     caption_chunks=caption_chunks or [narration],
+                    narrative_role=str(raw.get("narrative_role", "explanation")).strip(),
+                    shot_design=dict(raw.get("shot_design", {})),
                 )
             )
         spec = cls(
@@ -112,6 +124,8 @@ class ProductionSpec:
 
     def validate(self, check_files: bool = True) -> None:
         errors: list[str] = []
+        advanced_visuals = self.metadata.get("visual_system") == "fevercoach-explainer-v3"
+        camera_profiles: list[str] = []
         if not self.slug:
             errors.append("slug is required")
         if self.aspect_ratio != "9:16":
@@ -123,6 +137,9 @@ class ProductionSpec:
         indexes = [scene.index for scene in self.scenes]
         if indexes != list(range(1, len(self.scenes) + 1)):
             errors.append("scene indexes must be consecutive from 1")
+        character_concept = self.metadata.get("character_concept")
+        if self.character_image is None and not isinstance(character_concept, dict):
+            errors.append("character_image or metadata.character_concept is required")
         for scene in self.scenes:
             if scene.mode not in {"t2v", "i2v"}:
                 errors.append(f"scene {scene.index}: mode must be t2v or i2v")
@@ -130,6 +147,9 @@ class ProductionSpec:
                 errors.append(f"scene {scene.index}: generation_seconds must be 4, 6, or 8")
             if not scene.narration or not scene.prompt:
                 errors.append(f"scene {scene.index}: narration and prompt are required")
+            route_error = _medication_route_error(scene)
+            if route_error:
+                errors.append(f"scene {scene.index}: {route_error}")
             if scene.mode == "i2v" and scene.image is None and not scene.asset_prompt:
                 errors.append(f"scene {scene.index}: i2v requires an image or asset_prompt")
             if check_files and scene.mode == "i2v" and scene.image and not scene.image.exists():
@@ -139,6 +159,38 @@ class ProductionSpec:
                     "label", "arrow", "dimension", "threshold", "cross"
                 }:
                     errors.append(f"scene {scene.index}: invalid overlay type")
+            if advanced_visuals:
+                required_design = {
+                    "camera_profile", "beat_one", "beat_two", "payoff_frame",
+                    "depth_layers", "overlay_safe_zone", "sound_cues", "transition_out",
+                }
+                missing_design = required_design - set(scene.shot_design)
+                if missing_design:
+                    errors.append(
+                        f"scene {scene.index}: shot_design is missing "
+                        + ", ".join(sorted(missing_design))
+                    )
+                profile = str(scene.shot_design.get("camera_profile", ""))
+                allowed_profiles = {
+                    "lateral_reveal", "macro_dive", "top_down_drop", "parallax_arc",
+                    "pov_travel", "comparison_track", "xray_push", "hero_pullback",
+                }
+                if profile not in allowed_profiles:
+                    errors.append(f"scene {scene.index}: invalid camera_profile")
+                camera_profiles.append(profile)
+                if not scene.medical_claim:
+                    errors.append(f"scene {scene.index}: medical_claim is required")
+                if not scene.narrative_role:
+                    errors.append(f"scene {scene.index}: narrative_role is required")
+        if advanced_visuals:
+            for position in range(1, len(camera_profiles)):
+                if camera_profiles[position] == camera_profiles[position - 1]:
+                    errors.append(
+                        f"scenes {position} and {position + 1}: adjacent camera_profile must differ"
+                    )
+            character_scenes = sum(scene.include_character for scene in self.scenes)
+            if not 2 <= character_scenes <= 4:
+                errors.append("advanced visual plan must use the character in 2 to 4 scenes")
         if errors:
             raise ValueError("Invalid production spec:\n- " + "\n- ".join(errors))
 
@@ -153,7 +205,10 @@ class ProductionSpec:
             "title": self.title,
             "source": self.source,
             "language": self.language,
-            "character_image": _display_path(self.character_image, base_dir),
+            "character_image": (
+                _display_path(self.character_image, base_dir)
+                if self.character_image else None
+            ),
             "aspect_ratio": self.aspect_ratio,
             "resolution": self.resolution,
             "fps": self.fps,
@@ -183,6 +238,44 @@ def _display_path(path: Path, base_dir: Path | None) -> str:
         except ValueError:
             pass
     return str(path)
+
+
+def _medication_route_error(scene: SceneSpec) -> str | None:
+    """Block syringe visuals unless the scene explicitly depicts a non-oral injection."""
+    visual_text = " ".join(
+        (
+            scene.title,
+            scene.narration,
+            scene.medical_claim,
+            scene.asset_prompt,
+            scene.prompt,
+            json.dumps(scene.shot_design, ensure_ascii=False),
+        )
+    ).casefold()
+    syringe_terms = ("syringe", "주사기", "jeringa")
+    if not any(term in visual_text for term in syringe_terms):
+        return None
+
+    oral_syringe_terms = (
+        "oral syringe", "needleless syringe", "needle-free syringe", "dosing syringe",
+        "syringe aimed toward", "syringe into", "syringe to the mouth", "syringe near the mouth",
+        "경구용 주사기", "바늘 없는 주사기", "주사기를 입", "주사기로 약을 먹",
+        "jeringa oral", "jeringa sin aguja", "jeringa hacia la boca",
+    )
+    if any(term in visual_text for term in oral_syringe_terms):
+        return "a syringe in or near the mouth is forbidden for every oral-medication scene"
+
+    route_context = visual_text
+    for term in syringe_terms:
+        route_context = route_context.replace(term, "")
+    injection_terms = (
+        "injection", "inject", "intramuscular", "intravenous", "iv site", "iv line",
+        "vaccination", "vaccine", "주사", "근육", "정맥", "접종", "inyección",
+        "inyectar", "intramuscular", "intravenosa", "vacuna",
+    )
+    if not any(term in route_context for term in injection_terms):
+        return "a syringe is allowed only when the source and scene explicitly require an injection"
+    return None
 
 
 def _normalized_text(value: str) -> str:

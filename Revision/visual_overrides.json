@@ -1,0 +1,19 @@
+{
+  "infant-cold-vomiting-feeding": {
+    "8": {
+      "include_character": false,
+      "asset_prompt": "A fully dressed caregiver sits securely in a chair holding a fully clothed seven-month-old infant upright against the caregiver's chest after feeding. One forearm supports the baby's bottom and trunk; the other hand gently supports the baby's upper back, head and neck. The baby's legs rest on the caregiver's lap. Both caregiver and infant are clearly visible from waist up. No standing infant, table, bottle, medicine, cup, timer, text or numbers. Calm warm pediatric educational 3D illustration, portrait 9:16.",
+      "prompt": "A calm seated caregiver continues to hold a seven-month-old baby upright against their chest. The caregiver's arms securely support the baby's bottom, trunk, upper back, head and neck throughout the shot. The baby's legs rest on the caregiver's lap. Gentle breathing and a slow camera push-in only. Do not place the baby on a table, leave the baby standing, or remove supporting hands. No bottle, medicine, timer, text or numbers.",
+      "shot_design": {
+        "camera_profile": "lateral_reveal",
+        "beat_one": "Caregiver seated with baby upright against chest, fully supported.",
+        "beat_two": "Slow camera move reveals secure arm and hand support around trunk, upper back, head and neck.",
+        "payoff_frame": "Baby remains calmly held upright on caregiver's lap.",
+        "depth_layers": "Foreground: caregiver supporting arm. Midground: supported baby. Background: soft neutral room.",
+        "overlay_safe_zone": "upper right quadrant",
+        "sound_cues": "none",
+        "transition_out": "gentle fade"
+      }
+    }
+  }
+}

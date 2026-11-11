@@ -23,7 +23,14 @@ def main() -> None:
     source = plan_parser.add_mutually_exclusive_group(required=True)
     source.add_argument("--url")
     source.add_argument("--article-file", type=Path)
-    plan_parser.add_argument("--character-image", type=Path, required=True)
+    plan_parser.add_argument(
+        "--character-image",
+        type=Path,
+        help=(
+            "Optional existing character reference. If omitted, Gemini selects a "
+            "representative object from the article and creates one automatically."
+        ),
+    )
     plan_parser.add_argument("--output", type=Path, required=True)
     plan_parser.add_argument(
         "--languages", nargs="+", choices=["ko", "es", "en"],
@@ -33,7 +40,10 @@ def main() -> None:
 
     build_parser = subparsers.add_parser("build", help="Generate clips, narration, subtitles, and final MP4.")
     build_parser.add_argument("--config", type=Path, nargs="+", required=True)
-    build_parser.add_argument("--tts-provider", choices=["gemini", "elevenlabs"], default="gemini")
+    build_parser.add_argument(
+        "--tts-provider", choices=["gemini"], default="gemini",
+        help="Locked FeverCoach narrator profile (Gemini Kore).",
+    )
     build_parser.add_argument("--plan-only", action="store_true")
     build_parser.add_argument("--clips-only", action="store_true")
 

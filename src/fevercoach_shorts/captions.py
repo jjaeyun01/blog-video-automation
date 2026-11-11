@@ -9,6 +9,9 @@ from PIL import Image, ImageDraw, ImageFont
 from .models import ProductionSpec
 
 
+_CAPTION_CENTER_Y_RATIO = 0.64
+
+
 def render_caption_images(
     spec: ProductionSpec,
     output_dir: Path,
@@ -57,8 +60,9 @@ def _caption_layer(
     )
     line_height = round(font.size * 1.3)
     text_height = line_height * len(lines)
-    box_top = height - 175 - text_height
-    y = box_top
+    # Keep captions just below the visual midpoint, matching the reference
+    # Shorts style while leaving the bottom UI/safe area unobstructed.
+    y = round(height * _CAPTION_CENTER_Y_RATIO - text_height / 2)
     for line in lines:
         bounds = draw.textbbox((0, 0), line, font=font, stroke_width=4)
         text_width = bounds[2] - bounds[0]
@@ -182,7 +186,9 @@ def _draw_overlays(
         line_width = max(3, int(overlay.get("line_width", 7)))
         start = _point(overlay.get("from", [0.25, 0.35]), width, height)
         end = _point(overlay.get("to", [0.75, 0.35]), width, height)
-        if kind in {"arrow", "dimension", "threshold"}:
+        # Threshold lines behind text look like strikethroughs, while generic
+        # crosses over medical objects are ambiguous. Those types are text-only.
+        if kind in {"arrow", "dimension"}:
             draw.line([start, end], fill=color, width=line_width)
         if kind == "arrow":
             _arrow_head(draw, start, end, color, line_width)
@@ -192,11 +198,6 @@ def _draw_overlays(
             px, py = -dy / length * 18, dx / length * 18
             draw.line([(start[0] - px, start[1] - py), (start[0] + px, start[1] + py)], fill=color, width=line_width)
             draw.line([(end[0] - px, end[1] - py), (end[0] + px, end[1] + py)], fill=color, width=line_width)
-        elif kind == "cross":
-            center = _point(overlay.get("position", [0.5, 0.4]), width, height)
-            size = int(float(overlay.get("size", 0.13)) * width)
-            draw.line([(center[0] - size, center[1] - size), (center[0] + size, center[1] + size)], fill=color, width=line_width * 2)
-            draw.line([(center[0] + size, center[1] - size), (center[0] - size, center[1] + size)], fill=color, width=line_width * 2)
         text = str(overlay.get("text", "")).strip()
         if text:
             position = _point(

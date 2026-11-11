@@ -115,7 +115,7 @@ class ShortsRenderer:
             silent_path,
         )
 
-        output_path = job_dir / "final_shorts.mp4"
+        output_path = job_dir / spec.final_video_filename
         dubbed_concat_path = job_dir / "dubbed_concat.txt"
         dubbed_concat_path.write_text(
             "\n".join(f"file '{path.resolve()}'" for path in dubbed) + "\n",

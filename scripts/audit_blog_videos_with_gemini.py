@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 import subprocess
 import time
 from collections import Counter
@@ -16,15 +17,21 @@ from google.genai import types
 
 from fevercoach_shorts.article import load_article
 from fevercoach_shorts.models import ProductionSpec
+from fevercoach_shorts.review_rules import (
+    SUBMISSION_FEEDBACK_CALIBRATION_RULES, REVIEW_GUIDELINE_VERSION, extend_review_schema,
+)
 from fevercoach_shorts.settings import Settings
 
+
+_CALIBRATION_STATUS = {"type": "string", "enum": ["PASS", "FAIL", "NOT_APPLICABLE"]}
 
 AUDIT_SCHEMA: dict[str, Any] = {
     "type": "object",
     "required": [
         "video_id", "language", "overall_verdict", "medical_accuracy",
         "source_fidelity", "av_integrity", "medication_route_review", "issues",
-        "review_summary_ko", "requires_human_medical_review",
+        "review_summary_ko", "requires_human_medical_review", "calibration_checks",
+        "scene_av_checks",
     ],
     "properties": {
         "video_id": {"type": "string"},
@@ -39,6 +46,51 @@ AUDIT_SCHEMA: dict[str, Any] = {
         "speaker_voice_consistent": {"type": "boolean"},
         "korean_hallucination_detected": {"type": "boolean"},
         "unexpected_generated_text_detected": {"type": "boolean"},
+        "calibration_checks": {
+            "type": "object",
+            "required": [
+                "speech_completion", "caption_clause_coverage", "medication_timing",
+                "triage_adequacy", "respiratory_red_flags", "high_fever_age_context",
+                "sleep_vs_lethargy", "dehydration_guidance", "multilingual_integrity",
+                "evidence_ko",
+            ],
+            "properties": {
+                "speech_completion": _CALIBRATION_STATUS,
+                "caption_clause_coverage": _CALIBRATION_STATUS,
+                "medication_timing": _CALIBRATION_STATUS,
+                "triage_adequacy": _CALIBRATION_STATUS,
+                "respiratory_red_flags": _CALIBRATION_STATUS,
+                "high_fever_age_context": _CALIBRATION_STATUS,
+                "sleep_vs_lethargy": _CALIBRATION_STATUS,
+                "dehydration_guidance": _CALIBRATION_STATUS,
+                "multilingual_integrity": _CALIBRATION_STATUS,
+                "evidence_ko": {"type": "string"},
+            },
+        },
+        "scene_av_checks": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "scene", "timestamp", "spoken_transcript", "speech_complete",
+                    "visible_caption_transcript", "caption_covers_speech",
+                    "numbers_and_units_match", "declared_language_only",
+                    "caption_timing_readable", "findings_ko",
+                ],
+                "properties": {
+                    "scene": {"type": "integer", "minimum": 1, "maximum": 10},
+                    "timestamp": {"type": "string"},
+                    "spoken_transcript": {"type": "string"},
+                    "speech_complete": {"type": "boolean"},
+                    "visible_caption_transcript": {"type": "string"},
+                    "caption_covers_speech": {"type": "boolean"},
+                    "numbers_and_units_match": {"type": "boolean"},
+                    "declared_language_only": {"type": "boolean"},
+                    "caption_timing_readable": {"type": "boolean"},
+                    "findings_ko": {"type": "string"},
+                },
+            },
+        },
         "medication_route_review": {
             "type": "array",
             "items": {
@@ -77,7 +129,9 @@ AUDIT_SCHEMA: dict[str, Any] = {
                             "NUMERIC_ERROR", "MEDICATION_ROUTE_ERROR", "ANATOMY_ERROR",
                             "TTS_CAPTION_MISMATCH", "TRANSLATION_ERROR", "KOREAN_HALLUCINATION",
                             "GENERATED_TEXT_ERROR", "VOICE_INCONSISTENCY", "AUDIO_VIDEO_ERROR",
-                            "OTHER_VISUAL_ERROR",
+                            "OTHER_VISUAL_ERROR", "INCOMPLETE_SPEECH", "CAPTION_OMISSION",
+                            "TRIAGE_OMISSION", "MEDICATION_TIMING_RISK",
+                            "CLINICAL_DISTINCTION_MISSING",
                         ],
                     },
                     "timestamp": {"type": "string"},
@@ -95,6 +149,9 @@ AUDIT_SCHEMA: dict[str, Any] = {
         "limitations_ko": {"type": "array", "items": {"type": "string"}},
     },
 }
+
+
+extend_review_schema(AUDIT_SCHEMA)
 
 
 def main() -> None:
@@ -136,19 +193,25 @@ def main() -> None:
 
         for language in languages:
             video_id = f"{post['key']}.{language}"
+            config_path = args.config_dir / f"{post['key']}.production.{language}.json"
+            spec = ProductionSpec.load(config_path)
+            video_path = settings.jobs_dir / spec.slug / language / spec.final_video_filename
             raw_path = output / "raw" / f"{video_id}.json"
             if raw_path.exists() and not args.force:
                 try:
                     result = json.loads(raw_path.read_text(encoding="utf-8"))
-                    results.append(result)
-                    print(f"SKIP {video_id}", flush=True)
-                    continue
+                    metadata = result.get("audit_metadata", {})
+                    if (metadata.get("review_guideline_version") == REVIEW_GUIDELINE_VERSION
+                            and metadata.get("model") == model and video_path.is_file()
+                            and metadata.get("video_sha256") == sha256(video_path)
+                            and metadata.get("config_sha256") == sha256(config_path)
+                            and metadata.get("source_sha256") == hashlib.sha256(article_text.encode()).hexdigest()):
+                        results.append(result)
+                        print(f"SKIP {video_id}", flush=True)
+                        continue
                 except json.JSONDecodeError:
                     pass
 
-            config_path = args.config_dir / f"{post['key']}.production.{language}.json"
-            spec = ProductionSpec.load(config_path)
-            video_path = settings.jobs_dir / spec.slug / language / "final_shorts.mp4"
             local_check = inspect_local_artifacts(spec, video_path, settings.jobs_dir / spec.slug / language)
             (output / "local_checks" / f"{video_id}.json").write_text(
                 json.dumps(local_check, ensure_ascii=False, indent=2), encoding="utf-8"
@@ -167,9 +230,12 @@ def main() -> None:
                     client, model, uploaded, prompt, video_id, language, args.max_attempts
                 )
                 result["audit_metadata"] = {
+                    "review_guideline_version": REVIEW_GUIDELINE_VERSION,
                     "model": model,
                     "video": str(video_path.resolve()),
                     "config": str(config_path.resolve()),
+                    "config_sha256": sha256(config_path),
+                    "source_sha256": hashlib.sha256(article_text.encode()).hexdigest(),
                     "source_url": post["url"],
                     "audited_at": datetime.now(timezone.utc).isoformat(),
                     "video_sha256": sha256(video_path),
@@ -210,14 +276,17 @@ def build_prompt(
     scene_data = [
         {
             "scene": scene.index,
-            "time": f"{(scene.index - 1) * 6:02d}-{scene.index * 6:02d}s",
+            "time_seconds": [
+                sum(getattr(item, "timeline_seconds", 6) for item in spec.scenes[:position]),
+                sum(getattr(item, "timeline_seconds", 6) for item in spec.scenes[:position + 1]),
+            ],
             "narration": scene.narration,
             "caption_chunks": scene.caption_chunks,
             "medical_claim": scene.medical_claim,
             "visual_prompt": scene.prompt,
             "overlays": scene.overlays,
         }
-        for scene in spec.scenes
+        for position, scene in enumerate(spec.scenes)
     ]
     return f"""You are a conservative pediatric medical content auditor and audiovisual QA reviewer.
 Audit the attached FINAL 60-second video itself, including every visible frame, burned-in caption,
@@ -226,6 +295,8 @@ the expected production specification below. Return only the requested JSON.
 
 Audit identity: {video_id}
 Language: {spec.language}
+Distribution country (not inferred from language): {getattr(spec, 'metadata', {}).get('distribution_country', 'unknown')}
+Review guideline version: {REVIEW_GUIDELINE_VERSION}
 
 Mandatory review rules:
 1. Source fidelity: flag facts, thresholds, diagnoses, treatment claims, or certainty not supported
@@ -233,11 +304,13 @@ Mandatory review rules:
 2. Independent medical safety: flag dangerous, misleading, obsolete, overly broad, or internally
    inconsistent pediatric advice even if it appears in the source. Distinguish a definite error
    from a reasonable simplification. Do not invent a problem just to be cautious.
-3. Medication route: inspect every medicine-related visual. A needleless oral dosing syringe placed
-   toward the mouth is CORRECT for liquid oral medicine and must not be called an injection. Flag a
-   route mismatch only when a needle, injection site, IV line, intramuscular action, or other clear
-   parenteral context depicts medicine intended to be swallowed, or vice versa. Also flag kitchen
-   spoons presented as calibrated dosing tools.
+3. Medication route (strict FeverCoach publishing rule): inspect every medicine-related visual.
+   Any syringe in or near a mouth is an automatic FAIL, including a needleless oral dosing syringe.
+   Swallowed medicine must appear as an age-appropriate tablet/capsule when supported by the source,
+   or liquid medicine sipped from a purpose-made dosing cup. A needle and syringe are allowed only
+   when the source explicitly requires injection and must point to an appropriate skin, muscle, or IV
+   site, never the mouth. Generic words such as give, administer, dose, medicine, or medication do
+   not establish an injection route. Also flag kitchen spoons presented as dosing tools.
 4. Hallucination: transcribe what is actually spoken. Compare it with the expected narration and
    visible captions. For Korean, explicitly detect added, omitted, garbled, or semantically changed
    Korean TTS. Do not treat ordinary pronunciation variation as hallucination.
@@ -254,6 +327,32 @@ Mandatory review rules:
 10. This is a screening audit, not final physician approval. Set requires_human_medical_review true
     for any medical issue or uncertain high-impact claim.
 
+Reviewer-derived regression checklist:
+{SUBMISSION_FEEDBACK_CALIBRATION_RULES}
+
+Before choosing the verdict, fill every calibration_checks field. Use NOT_APPLICABLE only when the
+topic is absent. Judge the actual final audio and burned-in captions—not just the expected JSON.
+For caption coverage, compare every spoken medical clause, negation, number, interval, red flag, and
+recommended action with what actually appears on screen. A clipped or unfinished spoken sentence is
+INCOMPLETE_SPEECH. A missing safety-relevant caption clause is CAPTION_OMISSION. Unsupported two-hour
+alternating antipyretic advice is MEDICATION_TIMING_RISK. Missing care urgency that could delay
+evaluation is TRIAGE_OMISSION.
+
+Mandatory scene-by-scene audiovisual pass:
+- Return exactly ten scene_av_checks entries, one for each scene in chronological order.
+- Transcribe what is actually audible and what is actually visible; never copy the expected text
+  into these fields unless you confirmed it in the final video.
+- Listen through each scene transition. Mark speech_complete false for a cut-off final syllable,
+  unfinished grammar, abandoned clause, abrupt edit, or missing end of the planned sentence.
+- caption_covers_speech is false when any spoken medical condition, negation, number, unit, interval,
+  red flag, uncertainty qualifier, or recommended action is absent from the visible captions.
+- numbers_and_units_match requires spoken audio, visible captions, and expected narration to agree.
+  Check 2 versus 12, ranges, decimals, °C, hours, days, kilograms, and milliliters carefully.
+- declared_language_only is false for unintended Korean in English/Spanish, unintended English or
+  Spanish in Korean, garbled phonemes, encoding artifacts, or a mid-video language switch.
+- caption_timing_readable is false for captions that appear too late, vanish before their words are
+  spoken, overlap the next clause, are clipped off-screen, or fail to appear at all.
+
 SOURCE ARTICLE (Korean clinician-reviewed content):
 {article_text[:18000]}
 
@@ -268,13 +367,19 @@ DETERMINISTIC LOCAL MEDIA CHECKS:
 def upload_and_wait(client: genai.Client, path: Path, max_attempts: int):
     last_error: Exception | None = None
     for attempt in range(1, max_attempts + 1):
+        uploaded = None
         try:
             uploaded = client.files.upload(
                 file=path, config=types.UploadFileConfig(mime_type="video/mp4")
             )
+            processing_deadline = time.monotonic() + 300
             while str(getattr(uploaded, "state", "")) in {
                 "FileState.PROCESSING", "PROCESSING"
             }:
+                if time.monotonic() >= processing_deadline:
+                    raise TimeoutError(
+                        f"Gemini file processing exceeded 300 seconds for {path.name}"
+                    )
                 time.sleep(5)
                 uploaded = client.files.get(name=uploaded.name)
             state = str(getattr(uploaded, "state", ""))
@@ -283,6 +388,11 @@ def upload_and_wait(client: genai.Client, path: Path, max_attempts: int):
             return uploaded
         except Exception as error:
             last_error = error
+            if uploaded is not None:
+                try:
+                    client.files.delete(name=uploaded.name)
+                except Exception:
+                    pass
             if attempt < max_attempts:
                 time.sleep(min(2 ** attempt, 20))
     raise RuntimeError(f"Video upload failed after {max_attempts} attempts: {last_error}")
@@ -312,6 +422,7 @@ def request_audit(
             if not response.text:
                 raise RuntimeError("Gemini returned an empty audit response.")
             result = json.loads(response.text)
+            validate_scene_av_checks(result)
             result["video_id"] = video_id
             result["language"] = language
             return result
@@ -320,6 +431,17 @@ def request_audit(
             if attempt < max_attempts:
                 time.sleep(min(2 ** attempt, 20))
     raise RuntimeError(f"Gemini audit failed after {max_attempts} attempts: {last_error}")
+
+
+def validate_scene_av_checks(result: dict[str, Any]) -> None:
+    """Reject audits that did not independently account for all ten final scenes."""
+    checks = result.get("scene_av_checks", [])
+    scenes = [int(item.get("scene", 0)) for item in checks]
+    if scenes != list(range(1, 11)):
+        raise RuntimeError(
+            "Gemini returned an invalid scene_av_checks order; "
+            f"expected 1..10 exactly once, received {scenes}"
+        )
 
 
 def inspect_local_artifacts(
@@ -372,7 +494,59 @@ def inspect_local_artifacts(
             if "transparent_corners" in item
         ),
         "video_sha256": sha256(video_path),
+        "reviewer_feedback_focus": reviewer_feedback_focus(spec),
     }
+
+
+def reviewer_feedback_focus(spec: ProductionSpec) -> list[dict[str, Any]]:
+    """Surface feedback-derived risk topics without making a medical verdict locally."""
+    patterns = {
+        "TWO_HOUR_ALTERNATING_MEDICINE": (
+            r"(?:2\s*(?:시간|hours?|horas?)[^.]{0,80}(?:교차|alternat|alternar))|"
+            r"(?:(?:교차|alternat|alternar)[^.]{0,80}2\s*(?:시간|hours?|horas?))"
+        ),
+        "VERY_HIGH_FEVER_40C": r"40\s*(?:°\s*)?(?:c|도|grados?)",
+        "RESPIRATORY_RED_FLAGS": (
+            r"호흡|숨쉬|쌕쌕|쇳소리|천명|흉부\s*함몰|breath|wheez|stridor|retraction|"
+            r"respira|sibilan|estridor|retracci"
+        ),
+        "SLEEP_VS_LETHARGY": r"기면|깨우|반응|letharg|difficult\s+to\s+wake|somnol|despertar|responde",
+        "DEHYDRATION_OR_POOR_INTAKE": (
+            r"탈수|수분\s*섭취|소변량|못\s*마|dehydrat|unable\s+to\s+drink|urine|"
+            r"deshidrat|no\s+puede\s+beber|orina"
+        ),
+        "NEW_OR_MIGRATING_PAIN": (
+            r"가슴\s*통증|흉통|귀\s*통증|통증\s*부위|chest\s+pain|ear\s+pain|"
+            r"dolor\s+(?:de\s+)?pecho|dolor\s+de\s+o[ií]do"
+        ),
+        "TWELVE_HOUR_INTERVAL": r"12\s*(?:시간|hours?|horas?)",
+        "DRUG_SPECIFIC_REDOSING": r"토하|토하면|구토|재투여|재복용|vomit|redose|repeat.*dose|v[oó]mit|repetir.*dosis",
+        "CROSS_SCENE_URGENCY": r"저녁|내일|6\s*시간|tonight|tomorrow|six\s+hours|esta\s+noche|mañana|seis\s+horas",
+        "DOSE_CONCENTRATION_CONTEXT": r"밀리리터|농도|\bml\b|concentration|concentraci[oó]n",
+        "SAFE_SLEEP_AND_SWALLOWING": r"베개|이불|수면|삼킬|pillow|blanket|sleep|swallow|almohada|manta|dormir|tragar",
+        "EMERGENCY_LOCALE": r"119|911|112|응급|emergency|emergencia",
+        "TREATMENT_CLAIM_UNCERTAINTY": r"스테로이드|항바이러스|이온음료|steroid|antiviral|sports\s+drink|esteroide|deportiva",
+        "FEED_REFUSAL_WAIT": r"수유\s*거부|분유\s*거부|12\s*시간|refus.{0,15}feed|no\s+come|rechaz.{0,15}aliment",
+        "FORMULA_AMOUNT_VS_CONCENTRATION": r"분유|희석|formula|dilut|f[oó]rmula|dilui",
+        "POWDER_MEDICINE_STORAGE": r"가루\s*약|가루\s*해열|분말|powder|polvo|냉장|refriger",
+        "NASAL_IRRIGATION_POSTURE": r"코\s*세척|비강\s*세척|nasal\s*(?:rinse|irrigat)|lavado\s+nasal|irrigaci[oó]n\s+nasal",
+        "CASE_TIMELINE_REASSESSMENT": r"퇴원|폐렴|10\s*일|3\s*주|discharg|pneumonia|three\s+weeks|alta|neumon[ií]a",
+        "MEDICINE_STOP_RESTART": r"다시\s*먹|중단|재복용|restart|resume|stop|reanudar|suspender",
+    }
+    focus: list[dict[str, Any]] = []
+    for scene in spec.scenes:
+        text = " ".join(
+            [scene.title, scene.narration, scene.medical_claim, getattr(scene, 'prompt', '')]
+            + [str(value) for value in scene.caption_chunks]
+            + [str(value) for value in getattr(scene, 'overlays', [])]
+        )
+        matches = [
+            label for label, pattern in patterns.items()
+            if re.search(pattern, text, flags=re.IGNORECASE)
+        ]
+        if matches:
+            focus.append({"scene": scene.index, "checks": matches})
+    return focus
 
 
 def write_aggregate(
@@ -433,6 +607,16 @@ def write_aggregate(
                 f"- **{issue.get('severity')} / {issue.get('category')} / "
                 f"{issue.get('timestamp')}**: {issue.get('problem_ko')} "
                 f"(수정: {issue.get('recommended_fix_ko')})"
+            )
+        checks = result.get("calibration_checks", {})
+        failed_checks = [
+            name for name, status in checks.items()
+            if name != "evidence_ko" and status == "FAIL"
+        ]
+        if failed_checks:
+            lines.append(
+                f"- **피드백 회귀 체크 실패**: {', '.join(failed_checks)} — "
+                f"{checks.get('evidence_ko', '')}"
             )
         if not result.get("issues"):
             lines.append("- 감지된 이슈 없음")

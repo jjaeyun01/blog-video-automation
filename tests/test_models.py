@@ -9,6 +9,54 @@ from fevercoach_shorts.models import ProductionSpec
 
 
 class ProductionSpecTest(unittest.TestCase):
+    def test_rejects_syringe_used_for_oral_medicine(self) -> None:
+        data = json.loads(Path("examples/oc43.production.json").read_text(encoding="utf-8"))
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "character.png").write_bytes(b"image")
+            data["character_image"] = "character.png"
+            data["scenes"][0]["prompt"] = (
+                "A parent gives liquid medicine with a needleless oral dosing syringe "
+                "aimed toward the inside of the cheek."
+            )
+            path = root / "production.json"
+            path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+
+            with self.assertRaisesRegex(ValueError, "syringe in or near the mouth"):
+                ProductionSpec.load(path)
+
+    def test_allows_syringe_for_explicit_non_oral_injection(self) -> None:
+        data = json.loads(Path("examples/oc43.production.json").read_text(encoding="utf-8"))
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "character.png").write_bytes(b"image")
+            data["character_image"] = "character.png"
+            data["scenes"][0]["narration"] = "A clinician gives the prescribed injection."
+            data["scenes"][0]["prompt"] = (
+                "A clinician uses a syringe for an intramuscular injection into the upper arm skin."
+            )
+            path = root / "production.json"
+            path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+
+            spec = ProductionSpec.load(path)
+
+            self.assertEqual(spec.scenes[0].index, 1)
+
+    def test_final_video_filename_contains_topic_and_language(self) -> None:
+        data = json.loads(Path("examples/oc43.production.json").read_text(encoding="utf-8"))
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "character.png").write_bytes(b"image")
+            data["character_image"] = "character.png"
+            data["slug"] = "child-fever-topic"
+            data["language"] = "en"
+            path = root / "production.json"
+            path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+
+            spec = ProductionSpec.load(path)
+
+            self.assertEqual(spec.final_video_filename, "child-fever-topic_EN.mp4")
+
     def test_caption_chunks_fall_back_when_they_do_not_match_tts(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -107,6 +155,37 @@ class ProductionSpecTest(unittest.TestCase):
             path = root / "invalid.json"
             path.write_text(json.dumps(example, ensure_ascii=False), encoding="utf-8")
             with self.assertRaisesRegex(ValueError, "60 seconds"):
+                ProductionSpec.load(path)
+
+    def test_rejects_repeated_adjacent_camera_profiles_in_advanced_plan(self) -> None:
+        data = json.loads(Path("examples/oc43.production.json").read_text(encoding="utf-8"))
+        data["metadata"] = {"visual_system": "fevercoach-explainer-v3"}
+        profiles = [
+            "lateral_reveal", "lateral_reveal", "macro_dive",
+            "top_down_drop", "xray_push", "hero_pullback",
+        ]
+        for index, (scene, profile) in enumerate(zip(data["scenes"], profiles)):
+            scene["medical_claim"] = f"Supported claim {index + 1}"
+            scene["narrative_role"] = "mechanism"
+            scene["include_character"] = index < 2
+            scene["shot_design"] = {
+                "camera_profile": profile,
+                "beat_one": "Reveal the context.",
+                "beat_two": "Move to the focal target.",
+                "payoff_frame": "Hold on the relationship.",
+                "depth_layers": "foreground, subject, background",
+                "overlay_safe_zone": "upper-right quadrant",
+                "sound_cues": ["quiet room air"],
+                "transition_out": "follow the subject",
+            }
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "character.png").write_bytes(b"image")
+            data["character_image"] = "character.png"
+            path = root / "invalid-camera-plan.json"
+            path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+
+            with self.assertRaisesRegex(ValueError, "adjacent camera_profile must differ"):
                 ProductionSpec.load(path)
 
 

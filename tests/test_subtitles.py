@@ -6,7 +6,13 @@ import unittest
 from pathlib import Path
 
 from fevercoach_shorts.models import ProductionSpec
-from fevercoach_shorts.captions import _caption_layer, _fit_caption, _font, _wrap
+from fevercoach_shorts.captions import (
+    _CAPTION_CENTER_Y_RATIO,
+    _caption_layer,
+    _fit_caption,
+    _font,
+    _wrap,
+)
 from fevercoach_shorts.renderer import _caption_timings
 from fevercoach_shorts.subtitles import write_srt
 from PIL import Image, ImageDraw
@@ -26,6 +32,17 @@ class SubtitleTest(unittest.TestCase):
 
         self.assertEqual(layer.getpixel((20, 1800))[3], 0)
         self.assertGreater(max(pixel[3] for pixel in layer.getdata()), 0)
+
+        alpha_bounds = layer.getchannel("A").getbbox()
+        self.assertIsNotNone(alpha_bounds)
+        assert alpha_bounds is not None
+        caption_center_y = (alpha_bounds[1] + alpha_bounds[3]) / 2
+        self.assertAlmostEqual(
+            caption_center_y / layer.height,
+            _CAPTION_CENTER_Y_RATIO,
+            delta=0.03,
+        )
+        self.assertLess(alpha_bounds[3], round(layer.height * 0.72))
 
     def test_caption_timing_tracks_spoken_text_length(self) -> None:
         timings = _caption_timings(["짧게", "조금 더 긴 문장입니다"], 6)

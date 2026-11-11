@@ -26,7 +26,13 @@ class VeoGenerator:
         sleep: Callable[[float], None] = time.sleep,
         max_generation_attempts: int = 5,
     ):
-        self.client = client or genai.Client(api_key=api_key)
+        self.client = client or genai.Client(
+            api_key=api_key,
+            http_options=types.HttpOptions(
+                timeout=120_000,
+                retry_options=types.HttpRetryOptions(attempts=1),
+            ),
+        )
         self.model = model
         self.fallback_model = fallback_model
         self.poll_interval_seconds = max(5, poll_interval_seconds)
@@ -67,7 +73,11 @@ class VeoGenerator:
             )
             request_model = self.fallback_model if exhausted_primary else self.model
             try:
-                operation = self._submit(scene, spec, request_model)
+                operation = (
+                    self._submit_with_quota_retry(scene, spec, request_model, status=status)
+                    if request_model == self.fallback_model
+                    else self._submit(scene, spec, request_model)
+                )
             except Exception as error:
                 if (
                     self.fallback_model
@@ -75,7 +85,9 @@ class VeoGenerator:
                     and _is_quota_error(error)
                 ):
                     request_model = self.fallback_model
-                    operation = self._submit(scene, spec, request_model)
+                    operation = self._submit_with_quota_retry(
+                        scene, spec, request_model, status=status
+                    )
                     status(
                         f"Scene {scene.index}: primary submission quota exhausted; "
                         f"submitted with {request_model}"
@@ -112,7 +124,13 @@ class VeoGenerator:
                             entry.get("request_model") or self.model
                         )
                         try:
-                            operation = self._submit(scene, spec, request_model)
+                            operation = (
+                                self._submit_with_quota_retry(
+                                    scene, spec, request_model, status=status
+                                )
+                                if request_model == self.fallback_model
+                                else self._submit(scene, spec, request_model)
+                            )
                         except Exception as error:
                             if (
                                 self.fallback_model
@@ -120,7 +138,9 @@ class VeoGenerator:
                                 and _is_quota_error(error)
                             ):
                                 request_model = self.fallback_model
-                                operation = self._submit(scene, spec, request_model)
+                                operation = self._submit_with_quota_retry(
+                                    scene, spec, request_model, status=status
+                                )
                                 status(
                                     f"Scene {scene.index}: primary retry quota exhausted; "
                                     f"submitted with {request_model}"
@@ -250,6 +270,30 @@ class VeoGenerator:
         if scene.mode == "i2v":
             request["image"] = types.Image.from_file(location=str(scene.image))
         return self.client.models.generate_videos(**request)
+
+    def _submit_with_quota_retry(
+        self,
+        scene: SceneSpec,
+        spec: ProductionSpec,
+        model: str,
+        *,
+        status: Callable[[str], None],
+        max_quota_attempts: int = 6,
+    ):
+        """Wait out short Veo rate-limit windows without losing resumable work."""
+        for attempt in range(1, max_quota_attempts + 1):
+            try:
+                return self._submit(scene, spec, model)
+            except Exception as error:
+                if not _is_quota_error(error) or attempt >= max_quota_attempts:
+                    raise
+                delay = min(30 * attempt, 120)
+                status(
+                    f"Scene {scene.index}: {model} quota busy; retrying submission "
+                    f"in {delay}s ({attempt}/{max_quota_attempts})"
+                )
+                self.sleep(delay)
+        raise RuntimeError("unreachable quota retry state")
 
 
 def write_generation_plan(spec: ProductionSpec, model: str, job_dir: Path) -> Path:

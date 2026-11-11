@@ -1,0 +1,148 @@
+{
+  "baby-40c-fever-no-other-symptoms": {
+    "ko": {
+      "1": "생후 3개월 미만에서 38도 이상이면 즉시 진료받으세요.",
+      "2": "생후 3~6개월에 39도 이상이면 신속한 진료가 필요합니다.",
+      "5": "나이가 큰 아이도 40도 넘는 열이 반복되거나 3일 넘게 열이 나면 진료받으세요.",
+      "6": "나이가 큰 아이는 활력이 좋아도 악화 신호를 살피며 집에서 돌보세요.",
+      "8": "해열제는 아이가 불편할 때만 쓰고, 약별 연령·체중·투여 간격을 확인하세요."
+    },
+    "en": {
+      "1": "Under three months, a fever of 38°C or more needs immediate medical care.",
+      "2": "At three to six months, 39°C or more needs prompt medical assessment.",
+      "5": "Repeated fever over 40°C, or fever lasting three days, needs medical review.",
+      "6": "For older active children, monitor closely at home and seek care if they worsen.",
+      "8": "Use a fever reducer only if your child is uncomfortable, following its age, weight, and dosing instructions."
+    },
+    "es": {
+      "1": "Menor de tres meses con 38°C o más: busque atención médica inmediata.",
+      "2": "De tres a seis meses con 39°C o más: busque evaluación médica pronto.",
+      "5": "Fiebre repetida sobre 40°C, o que dure tres días, necesita evaluación médica.",
+      "6": "En niños mayores activos, vigile en casa y consulte si empeoran.",
+      "8": "Use un antipirético solo si hay malestar y siga las indicaciones de edad, peso e intervalo de cada medicamento."
+    }
+  },
+  "baby-enteritis-medicine-stop": {
+    "ko": {
+      "5": "증상이 나아져도 처방약 중단 여부는 처방한 의료진이나 약사에게 먼저 확인하세요.",
+      "6": "변이 정상이고 복통이 없어도, 남은 약의 복용 계획을 의료진과 확인하세요.",
+      "7": "복통이나 설사가 다시 생기면 약을 임의로 재시작하지 말고 의료진에게 문의하세요.",
+      "9": "심해지는 복통, 반복 구토, 혈변 또는 탈수 징후가 있으면 진료를 받으세요. 묽은 변 세 번만으로 응급은 아닙니다."
+    },
+    "en": {
+      "5": "Even if symptoms improve, ask the prescriber or pharmacist before stopping the prescribed medicine.",
+      "6": "Normal stools and no pain do not replace checking the remaining treatment plan with your clinician.",
+      "7": "If pain or diarrhea returns, do not restart the medicine on your own; contact your clinician.",
+      "9": "Seek care for worsening pain, repeated vomiting, bloody stool, or dehydration. Three loose stools alone are not an emergency."
+    },
+    "es": {
+      "5": "Aunque mejore, consulte al médico o farmacéutico antes de suspender el medicamento recetado.",
+      "6": "Si las heces son normales y no hay dolor, confirme igualmente el plan de tratamiento con su médico.",
+      "7": "Si vuelven el dolor o la diarrea, no reinicie el medicamento por su cuenta; consulte al médico.",
+      "9": "Busque atención por dolor creciente, vómitos repetidos, sangre en heces o deshidratación. Tres deposiciones blandas solas no son una urgencia."
+    }
+  },
+  "baby-fever-threshold": {
+    "ko": {"7": "손발 온도만으로 안심하지 말고, 체온과 수유·활력·호흡 상태를 함께 확인하세요."},
+    "en": {"7": "Warm hands or feet alone do not rule out illness; check temperature, feeding, alertness, and breathing."},
+    "es": {"7": "Las manos o pies tibios no descartan enfermedad; revise temperatura, alimentación, respuesta y respiración."}
+  },
+  "influenza-a-high-fever-management": {
+    "ko": {
+      "4": "독감약을 먹어도 열이 24~48시간 안에 반드시 떨어지는 것은 아니에요.",
+      "5": "약을 시작한 뒤에도 아이의 전반적인 상태와 수분 섭취를 계속 살펴보세요.",
+      "6": "불편할 때 해열제 한 종류를 우선 쓰세요. 교차 복용은 의료진과 정한 약별 간격과 용량을 기록하며 하세요.",
+      "8": "탈수가 걱정되면 경구수액제를 조금씩 주세요. 스포츠음료는 같은 대안이 아닙니다."
+    },
+    "en": {
+      "4": "Antiviral treatment does not guarantee that fever will fall within 24 to 48 hours.",
+      "5": "After starting treatment, keep watching your child's overall condition and fluid intake.",
+      "6": "Use one fever reducer first for discomfort. Alternate only with a clinician's plan, recording each drug's dose and timing; ask before ibuprofen under six months.",
+      "8": "For dehydration, offer small amounts of oral rehydration solution. Sports drinks are not an equivalent substitute."
+    },
+    "es": {
+      "4": "El antiviral no garantiza que la fiebre baje en 24 a 48 horas.",
+      "5": "Tras iniciar el tratamiento, siga observando el estado general y la hidratación del niño.",
+      "6": "Use primero un solo antipirético si hay malestar. Alterne solo con un plan médico que indique dosis e intervalos; consulte antes de dar ibuprofeno a menores de seis meses.",
+      "8": "Ante riesgo de deshidratación, ofrezca solución de rehidratación oral en pequeñas cantidades. La bebida deportiva no la sustituye."
+    }
+  },
+  "mycoplasma-pneumonia-fever-reassessment": {
+    "ko": {
+      "6": "퇴원 뒤 38.5도 열이 반복되면 다시 진료받으세요.",
+      "7": "열이 오래가면 진찰 뒤 필요한 검사를 결정합니다.",
+      "9": "퇴원 뒤 열이 반복되면 증상을 기록해 재진을 받으세요."
+    },
+    "en": {
+      "6": "Repeated 38.5°C fever after discharge needs reassessment.",
+      "7": "If fever persists, a clinician can decide whether further tests are needed.",
+      "9": "If fever recurs after discharge, record symptoms and arrange reassessment."
+    },
+    "es": {
+      "6": "La fiebre repetida de 38,5°C tras el alta requiere reevaluación.",
+      "7": "Si la fiebre persiste, el médico decidirá si hacen falta más pruebas.",
+      "9": "Si reaparece la fiebre tras el alta, anote síntomas y pida reevaluación."
+    }
+  },
+  "pediatric-fever-alternating-meds": {
+    "ko": {
+      "3": "두 해열제를 동시에 먹이거나 정해진 시간마다 교차하지 마세요. 계속 불편하면 의료진과 상의하세요.",
+      "4": "다른 성분이라도 약마다 최소 간격과 하루 최대량이 달라, 복용 시간을 기록해야 합니다.",
+      "5": "40킬로그램 아이도 타이레놀 시럽 용량은 제품 농도와 처방에 따라 달라집니다.",
+      "6": "약병의 성분·농도·1회 용량·하루 최대량을 확인하고, 불확실하면 약사에게 물어보세요.",
+      "8": "먹는 시럽은 아이를 앉힌 상태에서 전용 계량컵으로 정확히 재어 먹이세요. 주사기로 입에 넣지 마세요."
+    },
+    "en": {
+      "3": "Do not give both fever medicines together or alternate on a fixed schedule. Ask a clinician if discomfort persists.",
+      "4": "These drugs have different minimum intervals and daily limits. Record every dose and time.",
+      "5": "Even for a 40-kilogram child, the Tylenol syrup volume depends on the product concentration and directions.",
+      "6": "Check the active ingredient, concentration, single dose, and daily maximum on the label; ask a pharmacist if unsure.",
+      "8": "For oral syrup, seat the child and measure with a proper open-rimmed dosing cup. Never put a syringe into the mouth."
+    },
+    "es": {
+      "3": "No administre ambos antipiréticos juntos ni los alterne por horario fijo. Consulte si persiste el malestar.",
+      "4": "Cada fármaco tiene un intervalo mínimo y un límite diario distinto; anote cada dosis y hora.",
+      "5": "Incluso con 40 kilos, el volumen de jarabe de Tylenol depende de la concentración y las indicaciones del producto.",
+      "6": "Revise principio activo, concentración, dosis y máximo diario; ante dudas, consulte al farmacéutico.",
+      "8": "Para un jarabe oral, siente al niño y mida con un vasito dosificador abierto. Nunca introduzca una jeringa en la boca."
+    }
+  },
+  "pediatric-fever-sleep": {
+    "ko": {"6": "깨우기 어렵다면 즉시 진료받고, 완전히 깬 뒤에만 수분을 주세요."},
+    "en": {"6": "If hard to wake, seek urgent care. Offer fluids only when fully alert."},
+    "es": {"6": "Si cuesta despertarlo, busque atención urgente. Dé líquidos solo cuando esté completamente alerta."}
+  },
+  "pediatric-tamiflu-dosing-flexibility": {
+    "ko": {
+      "3": "첫날 복용 시간을 바꾸어야 한다면, 임의로 간격을 줄이지 말고 처방 의료진이나 약사와 상의하세요.",
+      "5": "오후 2시에 첫 복용했다면 다음 복용 시각은 처방 의료진이나 약사에게 확인하세요.",
+      "6": "다음 날 복용 시각도 처방받은 전체 일정에 맞추어 의료진과 확인하세요.",
+      "8": "타미플루를 먹고 토했다면 언제 얼마나 토했는지 기록하고, 재투여 전에 의료진이나 약사에게 문의하세요."
+    },
+    "en": {
+      "3": "If the first day's dose timing must change, do not shorten the interval on your own; ask the prescriber or pharmacist.",
+      "5": "If the first dose was at 2 PM, confirm the next dose time with the prescriber or pharmacist.",
+      "6": "Confirm the next day's dosing times as part of the full prescribed schedule.",
+      "8": "If your child vomits after oseltamivir, note when and how much, and ask a clinician or pharmacist before repeating a dose."
+    },
+    "es": {
+      "3": "Si debe cambiar el horario del primer día, no acorte el intervalo por su cuenta; consulte al médico o farmacéutico.",
+      "5": "Si la primera dosis fue a las dos de la tarde, confirme la hora siguiente con el médico o farmacéutico.",
+      "6": "Confirme también las tomas del día siguiente dentro del plan completo recetado.",
+      "8": "Si el niño vomita tras tomar oseltamivir, anote cuándo y cuánto, y consulte antes de repetir la dosis."
+    }
+  },
+  "infant-cold-vomiting-feeding": {
+    "ko": {"6": "토한 뒤에도 분유나 모유를 소량씩 자주 주세요. 4~6시간 쉬는 것은 이유식 이야기이며 수분 수유를 중단하라는 뜻이 아닙니다."},
+    "en": {"6": "After vomiting, keep offering small frequent formula or breast-milk feeds. The 4-to-6-hour pause applies to solids, not fluids."},
+    "es": {
+      "6": "Tras vomitar, siga ofreciendo pequeñas tomas frecuentes de fórmula o leche materna. La pausa de 4 a 6 horas es para sólidos, no para líquidos.",
+      "8": "Tras vomitar, sostenga al bebé erguido unos 30 minutos, con la cabeza y el tronco bien apoyados."
+    }
+  },
+  "persistent-nasal-congestion-reassessment": {
+    "ko": {"7": "코막힘이 오래가면 주치의 진찰 후, 비내시경 등 필요한 검사를 선택적으로 상의하세요. CT가 모두에게 필요한 것은 아닙니다."},
+    "en": {"7": "If congestion persists, discuss a targeted exam with the clinician. CT is not routinely needed for every child."},
+    "es": {"7": "Si persiste la congestión, consulte sobre una evaluación dirigida. La tomografía no es necesaria de rutina para todos los niños."}
+  }
+}

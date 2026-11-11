@@ -13,7 +13,9 @@ class Settings:
     gemini_video_model: str
     gemini_video_fallback_model: str | None
     gemini_tts_model: str
-    gemini_tts_voice: str
+    gemini_audit_model: str
+    gemini_audit_max_repair_rounds: int
+    gemini_audit_min_confidence: float
     veo_poll_interval_sec: int
     elevenlabs_api_key: str | None
     elevenlabs_model: str
@@ -31,8 +33,16 @@ class Settings:
             gemini_video_fallback_model=(
                 os.getenv("GEMINI_VIDEO_FALLBACK_MODEL", "veo-3.1-fast-generate-preview") or None
             ),
-            gemini_tts_model=os.getenv("GEMINI_TTS_MODEL", "gemini-2.5-flash-preview-tts"),
-            gemini_tts_voice=os.getenv("GEMINI_TTS_VOICE", "Kore"),
+            gemini_tts_model=os.getenv("GEMINI_TTS_MODEL", "gemini-3.1-flash-tts-preview"),
+            gemini_audit_model=os.getenv(
+                "GEMINI_AUDIT_MODEL", os.getenv("GEMINI_TEXT_MODEL", "gemini-2.5-flash")
+            ),
+            gemini_audit_max_repair_rounds=max(
+                1, int(os.getenv("GEMINI_AUDIT_MAX_REPAIR_ROUNDS", "2"))
+            ),
+            gemini_audit_min_confidence=min(
+                1.0, max(0.0, float(os.getenv("GEMINI_AUDIT_MIN_CONFIDENCE", "0.75")))
+            ),
             veo_poll_interval_sec=max(5, int(os.getenv("VEO_POLL_INTERVAL_SEC", "10"))),
             elevenlabs_api_key=os.getenv("ELEVENLABS_API_KEY") or None,
             elevenlabs_model=os.getenv("ELEVENLABS_MODEL", "eleven_multilingual_v2"),

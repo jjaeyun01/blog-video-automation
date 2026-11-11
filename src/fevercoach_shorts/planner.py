@@ -10,6 +10,10 @@ from google.genai import types
 
 from .article import Article
 from .models import ProductionSpec
+from .review_rules import (
+    HISTORICAL_FAIL_PREVENTION_RULES, SEPTEMBER_13_REVIEW_RULES, WEEK8_REVIEW_RULES,
+    JAEYOON_FAIL_ONLY_RULES,
+)
 from .safety import validate_medical_copy
 from .settings import Settings
 
@@ -67,22 +71,39 @@ class ScenePlanner:
     def create_multilingual(
         self,
         article: Article,
-        character_image: Path,
+        character_image: Path | None,
         output_path: Path,
         languages: tuple[str, ...] = ("ko", "es", "en"),
+        validation_feedback: str | None = None,
     ) -> dict[str, tuple[Path, ProductionSpec]]:
-        if not character_image.exists():
+        if character_image is not None and not character_image.exists():
             raise ValueError(f"Character image not found: {character_image}")
         unsupported = set(languages) - {"ko", "es", "en"}
         if unsupported:
             raise ValueError(f"Unsupported languages: {', '.join(sorted(unsupported))}")
-        mime_type = mimetypes.guess_type(character_image.name)[0] or "image/png"
+        contents: list[object] = [
+            _multilingual_planning_prompt(
+                article, languages, has_character_image=character_image is not None
+            )
+        ]
+        if validation_feedback:
+            contents.append(
+                "A previous production plan failed local validation. Return a complete corrected "
+                "plan grounded in the SAME source article; do not change medical facts to satisfy "
+                "format rules. Count include_character=true scenes: exactly 2 to 4 are permitted "
+                "across all 10 scenes, and all other prompts must omit the recurring character. "
+                "Fix these validation errors:\n" + validation_feedback
+            )
+        if character_image is not None:
+            mime_type = mimetypes.guess_type(character_image.name)[0] or "image/png"
+            contents.append(
+                types.Part.from_bytes(
+                    data=character_image.read_bytes(), mime_type=mime_type
+                )
+            )
         response = self.client.models.generate_content(
             model=self.settings.gemini_text_model,
-            contents=[
-                _multilingual_planning_prompt(article, languages),
-                types.Part.from_bytes(data=character_image.read_bytes(), mime_type=mime_type),
-            ],
+            contents=contents,
             config=types.GenerateContentConfig(
                 response_mime_type="application/json",
                 temperature=0.3,
@@ -91,6 +112,9 @@ class ScenePlanner:
         if not response.text:
             raise RuntimeError("Gemini did not return a multilingual scene plan.")
         plan = json.loads(response.text)
+        character_concept = _validate_character_concept(
+            plan.get("character_concept"), required=character_image is None
+        )
         slug = plan.get("slug") or _slugify(article.title)
         results: dict[str, tuple[Path, ProductionSpec]] = {}
         for language in languages:
@@ -107,7 +131,9 @@ class ScenePlanner:
                 "title": localized.get("title") or article.title,
                 "source": article.source,
                 "language": language,
-                "character_image": str(character_image.resolve()),
+                "character_image": (
+                    str(character_image.resolve()) if character_image is not None else None
+                ),
                 "aspect_ratio": "9:16",
                 "resolution": "720p",
                 "fps": 30,
@@ -116,7 +142,10 @@ class ScenePlanner:
                     "multilingual": True,
                     "languages": list(languages),
                     "medical_facts": list(plan.get("medical_facts", [])),
-                    "visual_system": "fevercoach-explainer-v2",
+                    "source_excerpt": article.text[:16000],
+                    "visual_system": "fevercoach-explainer-v3",
+                    "character_mode": "provided" if character_image else "automatic",
+                    "character_concept": character_concept,
                 },
                 "scenes": [],
             }
@@ -145,6 +174,8 @@ class ScenePlanner:
                         "negative_prompt": _negative_prompt(visual.get("negative_prompt", "")),
                         "visual_type": visual.get("visual_type", "general"),
                         "medical_claim": visual.get("medical_claim", ""),
+                        "narrative_role": visual.get("narrative_role", "explanation"),
+                        "shot_design": _sanitize_shot_design(visual.get("shot_design", {})),
                         "asset_prompt": _text_free_visual_prompt(visual.get("asset_prompt", "")),
                         "include_character": bool(visual.get("include_character", False)),
                         "overlays": overlays,
@@ -194,6 +225,11 @@ Rules:
 - Avoid Pixar and other trademarked style names. Describe the visual traits directly.
 - negative_prompt must include text, subtitles, logo, watermark, deformation, extra limbs.
 
+Reviewer-derived medical and visual constraints:
+{SEPTEMBER_13_REVIEW_RULES}
+{WEEK8_REVIEW_RULES}
+{JAEYOON_FAIL_ONLY_RULES}
+
 Article title: {article.title}
 Article source: {article.source}
 Article content:
@@ -201,10 +237,21 @@ Article content:
 """
 
 
-def _multilingual_planning_prompt(article: Article, languages: tuple[str, ...]) -> str:
+def _multilingual_planning_prompt(
+    article: Article,
+    languages: tuple[str, ...],
+    has_character_image: bool = True,
+) -> str:
     requested = ", ".join(languages)
     schema = {
         "slug": "lowercase-url-slug",
+        "character_concept": {
+            "subject": "one concrete object, organism, or anatomical subject",
+            "source_basis": "why this subject is central to the article",
+            "visual_identity": "recognizable shape and medically relevant features",
+            "primary_color": "one stable dominant color",
+            "surface_texture": "one stable tactile material description",
+        },
         "medical_facts": [
             {
                 "claim": "source-grounded medical claim",
@@ -218,14 +265,25 @@ def _multilingual_planning_prompt(article: Article, languages: tuple[str, ...]) 
                 "timeline_seconds": 6,
                 "generation_seconds": 6,
                 "visual_type": "quantity|location|mechanism|comparison|sequence|red_flag|hook",
+                "narrative_role": "hook|context|misconception|mechanism|evidence|decision|action|red_flag|takeaway",
                 "medical_claim": "one source-grounded claim only",
                 "include_character": False,
+                "shot_design": {
+                    "camera_profile": "lateral_reveal|macro_dive|top_down_drop|parallax_arc|pov_travel|comparison_track|xray_push|hero_pullback",
+                    "beat_one": "0.0-1.5 second establishing camera move",
+                    "beat_two": "1.5-4.5 second subject-focused camera move and action",
+                    "payoff_frame": "4.5-6.0 second clear final hold",
+                    "depth_layers": "distinct foreground, midground, and background elements",
+                    "overlay_safe_zone": "uncluttered screen region for code-rendered data",
+                    "sound_cues": "two or three precise diegetic sounds",
+                    "transition_out": "visual direction that motivates the next cut",
+                },
                 "asset_prompt": "English prompt for one clean text-free 9:16 reference image",
                 "prompt": "English I2V prompt with one bounded action and locked camera",
                 "negative_prompt": "text, numbers, labels, dialogue, logo, deformation",
                 "overlays": [
                     {
-                        "type": "dimension|arrow|threshold|label|cross",
+                        "type": "dimension|arrow|label",
                         "from": [0.25, 0.35],
                         "to": [0.75, 0.35],
                         "label_position": [0.5, 0.25],
@@ -251,10 +309,21 @@ def _multilingual_planning_prompt(article: Article, languages: tuple[str, ...]) 
             for language in languages
         },
     }
+    character_instruction = (
+        "An existing character reference image is attached. Describe its stable visual identity "
+        "in character_concept and preserve that supplied character."
+        if has_character_image
+        else
+        "No character image is attached. Select one concrete representative object, organism, "
+        "medicine form, or anatomical subject explicitly grounded in the article. It must be the "
+        "single best visual embodiment of the topic and suitable for transformation into a reusable "
+        "anthropomorphic character. Do not select a patient, child, clinician, or abstract concept."
+    )
     return f"""You are the medical fact checker and visual director for FeverCoach.
 Produce localized versions of one precise, clean, 60-second pediatric health explainer.
 
-Return one JSON object only. Use the attached character image as the recurring character.
+Return one JSON object only.
+{character_instruction}
 Create shared visuals and localized copy for these language codes: {requested}.
 
 The top-level JSON format must be:
@@ -267,34 +336,67 @@ testimonial, or contains headings such as 질문/답변:
 - Never turn a number mentioned only in the question into a general rule or recommendation.
 - Preserve case-specific details as case-specific; do not generalize them to every child.
 
-Then create exactly 10 shared scenes.
+Character concept rules:
+- character_concept.subject must name exactly one tangible subject central to the article.
+- Write every character_concept value as a concise English visual description even when the article is Korean.
+- Keep its identity medically recognizable through stable shape, color, and surface features.
+- The later renderer will make it an angry, expressive 3D anthropomorphic character.
+- Do not request any visible text, number, unit, symbol, sign, logo, or watermark on the character.
+- Do not mention named animation studios, franchises, copyrighted characters, or living artists.
+
+Then create exactly 10 shared scenes. Build a medical retention arc rather than a list of facts.
 Every scene has timeline_seconds 6 and generation_seconds 6. Use these narrative roles:
-1. visual hook showing the main question or surprising threshold
-2. locate the relevant body part or clinical context
-3. explain the core disease mechanism with a clean cutaway
-4. show what the treatment is intended to do
-5. visualize the article's most important time or temperature threshold
-6. show one quantity, comparison, or decision point only when the source supports it
-7. show why reassessment may be needed without asserting a diagnosis
-8. show safe supportive care as a short sequence
-9. show urgent red flags with clear individual symbols
-10. return to the whole context and recommend appropriate pediatric consultation
+1. hook: show the most visually surprising source-supported consequence or question immediately
+2. context: locate the body system, medicine, symptom, or clinical situation
+3. misconception: stage the tempting assumption as a question, never as a medical fact
+4. mechanism: reveal what is actually happening with a clean cutaway or causal visualization
+5. evidence: visualize the article's most important supported threshold, time, or comparison
+6. decision: contrast two paths and show why context changes the appropriate next step
+7. reassessment: show what new information a clinician may need without asserting a diagnosis
+8. action: show a safe source-supported action as a short physical sequence
+9. red_flag: isolate urgent warning signs without gore or panic
+10. takeaway: resolve the opening question and recommend appropriate pediatric consultation
+
+Narrative rules:
+- Every scene must advance the question raised by the previous scene.
+- Use problem -> tempting assumption -> mechanism reveal -> evidence -> decision -> action -> takeaway.
+- Put one open loop in scenes 1-3 and resolve it no later than scene 5.
+- Do not manufacture conflict, failed treatment, history, or a reversal not supported by the article.
+- narration must explain the medical claim; camera spectacle may never replace or contradict it.
 
 Visual direction rules:
 - Each scene communicates one variable or causal relationship only.
 - Choose the visual_type from hook, location, mechanism, quantity, comparison, sequence, red_flag.
+- Fill every shot_design field. Adjacent scenes must not repeat camera_profile.
+- Design each six-second shot as exactly two camera beats plus a readable payoff hold:
+  beat one from 0.0-1.5 seconds, beat two from 1.5-4.5 seconds, hold from 4.5-6.0 seconds.
+- Choose camera movement for meaning: lateral reveal for comparison, macro dive or POV travel for
+  mechanism, top-down drop for spatial relationships, parallax arc for a hero object, x-ray push for
+  internal anatomy, and hero pullback for the final synthesis.
+- Use clear foreground, midground, and background separation with one dominant focal target.
+- Motion should feel energetic but physically plausible. No handheld shake, random orbit, crash zoom,
+  whip pan, spinning camera, or more than two camera moves in one shot.
+- Reserve the final 1.5 seconds for a stable frame that makes the medical relationship easy to read.
 - asset_prompt creates a clean, text-free, vertical 9:16 still image tailored to this article.
 - Set include_character true only when the recurring character improves comprehension; use it in 2-4 scenes,
   not in anatomy cutaways, calibrated measurements, or red-flag diagrams.
 - Every prompt is image-to-video. Animate one subject only with a measurable start and end state.
-- Keep the camera locked or use a slow push-in of no more than 8 percent.
-- State which objects remain completely stationary. Finish the action within 4 seconds and hold.
-- Use clean 3D pediatric medical education visuals: neutral gray, cream, pale teal; red-orange for
-  warnings and dimensions; blue for fluid, cooling, or airflow.
+- State which objects remain completely stationary. Finish subject motion within 4.5 seconds and hold.
+- Use polished semi-stylized 3D medical visualization halfway between clean modeled illustration and
+  restrained photorealism: smooth geometry, tactile material detail, soft contact shadows, subtle
+  ambient occlusion, cinematic depth, and clean daylight. Avoid a flat gray wash.
+- Use cream, pale teal, clean blue, natural anatomical pink, and warm amber. Pure saturated red is
+  reserved for deterministic code-rendered measurement or warning overlays and must not be generated
+  into the scene, except when it is an inseparable color of the locked recurring character.
 - Never generate text, numbers, units, labels, arrows, captions, signs, dialogue, voice, or music.
 - Do not put quoted words or values in asset_prompt or prompt. Never ask a thermometer, calendar,
   clock, chart, bottle, or screen to display, show, read, or mark a value; keep it blank and unmarked.
-- Accurate numbers, units, arrows, brackets, and threshold marks belong only in overlays.
+- Accurate numbers and units belong in simple text-only label overlays. Use arrows or dimension
+  brackets only when their endpoints identify a specific anatomical location or measured distance.
+- Never use a generic X/cross over a medical object. Never draw a line through or directly behind
+  an overlay label; it can be mistaken for cancellation or strikethrough.
+- shot_design.overlay_safe_zone must reserve clean negative space for those later code overlays; the
+  asset and video prompts must not draw the overlay themselves.
 - Overlay coordinates are normalized 0..1 and must remain above y=0.72 to avoid captions.
 - Use exact source values. Never invent a dose, duration, temperature, percentage, or diagnosis.
 - Do not convert mass to volume unless the source explicitly provides the substance and conversion.
@@ -302,6 +404,11 @@ Visual direction rules:
 - Avoid gore, frightening anatomy, trademarked styles, clutter, and decorative motion.
 
 Localization and safety rules:
+{HISTORICAL_FAIL_PREVENTION_RULES}
+{SEPTEMBER_13_REVIEW_RULES}
+{WEEK8_REVIEW_RULES}
+{JAEYOON_FAIL_ONLY_RULES}
+
 - Each localization must have exactly 10 scene entries matching the shared visuals by position.
 - Write ko naturally in Korean, es naturally in neutral Latin American Spanish, and en naturally in US English.
 - Localize meaning rather than translating word-for-word. Keep each narration natural within 6 seconds:
@@ -312,8 +419,13 @@ Localization and safety rules:
   omitting, or changing words.
 - overlay_labels localize only the exact vector labels requested by text_key. Preserve numeric values and units.
 - Preserve the same medical meaning and safety qualifications in every language.
-- End every language with appropriate pediatric consultation advice.
-- Character prompts keep the mouth naturally closed and request no speaking or lip-sync.
+- End the final scene of every language with explicit pediatric consultation advice.
+  To make that instruction unambiguous, the final narration must naturally contain
+  at least one of these terms in the matching language: Korean "진료", English
+  "pediatrician", Spanish "pediatra". Do not leave the consultation advice only in
+  the disclaimer or title; it must be spoken in scene 10.
+- Character motion prompts preserve the supplied/generated character exactly. They may hold its
+  wide-open angry expression, but must request no speaking, mouth animation, dialogue, or lip-sync.
 - Do not diagnose, promise outcomes, recommend stopping prescribed medicine, or state certainty.
 - Every negative_prompt must include text, numbers, subtitles, logo, watermark, dialogue, voice,
   deformation, extra limbs, and character redesign.
@@ -324,6 +436,24 @@ Article source: {article.source}
 Article content:
 {article.text[:16000]}
 """
+
+
+def _validate_character_concept(value: object, required: bool) -> dict:
+    if not isinstance(value, dict):
+        if required:
+            raise ValueError("Gemini response is missing character_concept.")
+        return {}
+    concept = {
+        key: str(value.get(key, "")).strip()
+        for key in (
+            "subject", "source_basis", "visual_identity", "primary_color", "surface_texture"
+        )
+    }
+    if required and any(not concept[key] for key in ("subject", "visual_identity")):
+        raise ValueError(
+            "Automatic character_concept requires subject and visual_identity."
+        )
+    return concept
 
 
 def _language_output_path(path: Path, language: str) -> Path:
@@ -360,11 +490,79 @@ def _text_free_visual_prompt(value: object) -> str:
         flags=re.IGNORECASE,
     )
     prompt = re.sub(r"(['\"])\s*[xX]\s*\1", "warning glow", prompt)
+    # Strip common numeric drawing requests even when the planning model ignores
+    # the overlay contract. Exact values are composited later by Pillow.
+    prompt = re.sub(
+        r"\b(?:exactly\s+)?\d+(?:\.\d+)?(?:\s*[-~–]\s*\d+(?:\.\d+)?)?\s+drops?\b",
+        "a few uncounted clear drops",
+        prompt,
+        flags=re.IGNORECASE,
+    )
+    prompt = re.sub(
+        r"\b\d+(?:\.\d+)?(?:\s*[-~–]\s*\d+(?:\.\d+)?)?\s+days?\b",
+        "an unmarked calendar interval",
+        prompt,
+        flags=re.IGNORECASE,
+    )
+    prompt = re.sub(
+        r"\b\d+(?:\.\d+)?(?:\s*[-~–]\s*\d+(?:\.\d+)?)?\s*(?:°\s*C|%)",
+        "an unlabeled threshold",
+        prompt,
+        flags=re.IGNORECASE,
+    )
+    prompt = re.sub(
+        r"\b\d+(?:\.\d+)?(?:\s*[-~–]\s*\d+(?:\.\d+)?)?\s+(?:hours?|minutes?|seconds?|times?|breaths?(?:\s*/\s*min(?:ute)?)?)\b",
+        "an unlabeled interval",
+        prompt,
+        flags=re.IGNORECASE,
+    )
+    prompt = re.sub(
+        r"(['\"])[^'\"]+\1",
+        "a completely blank and unmarked surface",
+        prompt,
+    )
+    prompt = re.sub(
+        r"\bwith\s+(?:black|white|red|blue)\s+text\b",
+        "with a completely blank surface",
+        prompt,
+        flags=re.IGNORECASE,
+    )
     return (
         f"{prompt} All screens, calendars, charts, medicine containers, clock faces, "
         "and signs remain completely blank and unmarked. Render no text, letters, "
         "digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks."
     )
+
+
+def _sanitize_shot_design(value: object) -> dict:
+    if not isinstance(value, dict):
+        return {}
+    result = dict(value)
+    for key in ("beat_one", "beat_two", "payoff_frame", "depth_layers", "transition_out"):
+        if key not in result:
+            continue
+        text = str(result[key])
+        text = re.sub(
+            r"\b(?:exactly\s+)?\d+(?:\.\d+)?(?:\s*[-~–]\s*\d+(?:\.\d+)?)?\s+drops?\b",
+            "a few uncounted clear drops",
+            text,
+            flags=re.IGNORECASE,
+        )
+        text = re.sub(
+            r"\b\d+(?:\.\d+)?(?:\s*[-~–]\s*\d+(?:\.\d+)?)?\s+days?\b",
+            "an unmarked calendar interval",
+            text,
+            flags=re.IGNORECASE,
+        )
+        text = re.sub(
+            r"\b\d+(?:\.\d+)?(?:\s*[-~–]\s*\d+(?:\.\d+)?)?\s*(?:°\s*C|%)",
+            "an unlabeled threshold",
+            text,
+            flags=re.IGNORECASE,
+        )
+        text = re.sub(r"(['\"])[^'\"]+\1", "an unmarked surface", text)
+        result[key] = text
+    return result
 
 
 def _negative_prompt(value: object) -> str:
@@ -385,6 +583,10 @@ def _negative_prompt(value: object) -> str:
 
 def _normalize_overlay(value: dict) -> dict:
     overlay = dict(value)
+    # Legacy/generated threshold and cross graphics are visually ambiguous.
+    # Preserve their localized text but normalize them to text-only labels.
+    if overlay.get("type") in {"threshold", "cross"}:
+        overlay["type"] = "label"
     for key in ("from", "to", "position", "label_position"):
         point = overlay.get(key)
         if isinstance(point, list) and len(point) == 2:
@@ -395,13 +597,6 @@ def _normalize_overlay(value: dict) -> dict:
                 ]
             except (TypeError, ValueError):
                 overlay[key] = [0.5, 0.25]
-    if overlay.get("type") == "threshold" and "from" in overlay and "to" in overlay:
-        start, end = overlay["from"], overlay["to"]
-        if abs(start[0] - end[0]) < 0.08:
-            center_x = (start[0] + end[0]) / 2
-            center_y = min(start[1], end[1])
-            overlay["from"] = [max(0.08, center_x - 0.18), center_y]
-            overlay["to"] = [min(0.92, center_x + 0.18), center_y]
     return overlay
 
 
