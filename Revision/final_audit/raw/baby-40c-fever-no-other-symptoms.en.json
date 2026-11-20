@@ -1,0 +1,363 @@
+{
+  "video_id": "baby-40c-fever-no-other-symptoms.en",
+  "language": "en",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "PASS",
+  "av_integrity": "PASS",
+  "spoken_transcript": "Under three months, a fever of 38°C or more needs immediate medical care. At three to six months, 39°C or more needs prompt medical assessment. If your child is sleeping comfortably, there's no need to wake them for antipyretics. Antipyretics reduce fever and discomfort, helping your child rest and recover. Repeated fever over 40°C, or fever lasting three days, needs medical review. For older active children, monitor closely at home and seek care if they worsen. Look for rashes, ear or neck pain, and changes in urine output. Use a fever reducer only if your child is uncomfortable, following its age, weight, and dosing instructions. For febrile seizure, decreased consciousness, no urination for 8+ hours, or rash with joint pain, go to the ER. Keep monitoring your child; if fever persists or worsens, consult your pediatrician.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "NOT_APPLICABLE",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "NOT_APPLICABLE",
+    "high_fever_age_context": "PASS",
+    "sleep_vs_lethargy": "PASS",
+    "dehydration_guidance": "PASS",
+    "multilingual_integrity": "NOT_APPLICABLE",
+    "evidence_ko": "",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "NOT_APPLICABLE",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "PASS",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "NOT_APPLICABLE",
+    "treatment_claim_uncertainty": "NOT_APPLICABLE",
+    "simultaneous_and_alternating_antipyretics": "NOT_APPLICABLE",
+    "infant_feeding_and_formula": "NOT_APPLICABLE",
+    "medicine_storage_and_restart": "NOT_APPLICABLE",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "NOT_APPLICABLE"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "Under three months, a fever of 38°C or more needs immediate medical care.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Under three months, a fever of 38°C or more needs immediate medical care.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:06",
+      "spoken_transcript": "At three to six months, 39°C or more needs prompt medical assessment.",
+      "speech_complete": true,
+      "visible_caption_transcript": "At three to six months, 39°C or more needs prompt medical assessment.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:12",
+      "spoken_transcript": "If your child is sleeping comfortably, there's no need to wake them for antipyretics.",
+      "speech_complete": true,
+      "visible_caption_transcript": "If your child is sleeping comfortably, there's no need to wake them for antipyretics.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:18",
+      "spoken_transcript": "Antipyretics reduce fever and discomfort, helping your child rest and recover.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Antipyretics reduce fever and discomfort, helping your child rest and recover.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:24",
+      "spoken_transcript": "Repeated fever over 40°C, or fever lasting three days, needs medical review.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Repeated fever over 40°C, or fever lasting three days, needs medical review.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:30",
+      "spoken_transcript": "For older active children, monitor closely at home and seek care if they worsen.",
+      "speech_complete": true,
+      "visible_caption_transcript": "For older active children, monitor closely at home and seek care if they worsen.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:36",
+      "spoken_transcript": "Look for rashes, ear or neck pain, and changes in urine output.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Look for rashes, ear or neck pain, and changes in urine output.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:42",
+      "spoken_transcript": "Use a fever reducer only if your child is uncomfortable, following its age, weight, and dosing instructions.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Use a fever reducer only if your child is uncomfortable, following its age, weight, and dosing instructions.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:48",
+      "spoken_transcript": "For febrile seizure, decreased consciousness, no urination for 8+ hours, or rash with joint pain, go to the ER.",
+      "speech_complete": true,
+      "visible_caption_transcript": "For febrile seizure, decreased consciousness, no urination for 8+ hours, or rash with joint pain, go to the ER.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:55",
+      "spoken_transcript": "Keep monitoring your child; if fever persists or worsens, consult your pediatrician.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Keep monitoring your child; if fever persists or worsens, consult your pediatrician.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    }
+  ],
+  "medication_route_review": [
+    {
+      "timestamp": "00:06",
+      "depicted_item": "liquid medicine",
+      "depicted_route": "oral (dosing cup)",
+      "intended_route": "oral",
+      "is_error": false,
+      "reason_ko": "",
+      "confidence": 1.0
+    },
+    {
+      "timestamp": "00:30",
+      "depicted_item": "liquid medicine",
+      "depicted_route": "oral (dosing cup)",
+      "intended_route": "oral",
+      "is_error": false,
+      "reason_ko": "",
+      "confidence": 1.0
+    },
+    {
+      "timestamp": "00:42",
+      "depicted_item": "liquid medicine",
+      "depicted_route": "oral (dosing cup)",
+      "intended_route": "oral",
+      "is_error": false,
+      "reason_ko": "",
+      "confidence": 1.0
+    },
+    {
+      "timestamp": "00:55",
+      "depicted_item": "liquid medicine",
+      "depicted_route": "oral (dosing cup)",
+      "intended_route": "oral",
+      "is_error": false,
+      "reason_ko": "",
+      "confidence": 1.0
+    }
+  ],
+  "issues": [],
+  "review_summary_ko": "이 영상은 소아 발열에 대한 지침을 정확하게 전달하며, 연령별 진료 필요 기준, 해열제 사용 시점, 응급 상황 징후 등을 포함합니다. 시각 자료는 적절하며, 오디오와 캡션은 일관되고 완전합니다. 의학적, 출처 관련 또는 시청각 무결성 문제는 발견되지 않았습니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-40c-fever-no-other-symptoms/en/baby-40c-fever-no-other-symptoms_EN.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-40c-fever-no-other-symptoms/en/production.snapshot.json",
+    "audited_at": "2026-09-22T06:48:38.085372+00:00",
+    "video_sha256": "b783f69e22ecab2e28dceca9faf30aa4acd30b26adac841293ec281c02191ed3",
+    "snapshot_sha256": "fc067b946d898da40f67123103013f747091c21b0ba8e33e1c8a2b29c7a194aa",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 24,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "b783f69e22ecab2e28dceca9faf30aa4acd30b26adac841293ec281c02191ed3",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 1,
+          "checks": [
+            "VERY_HIGH_FEVER_40C"
+          ]
+        },
+        {
+          "scene": 2,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 3,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 5,
+          "checks": [
+            "VERY_HIGH_FEVER_40C"
+          ]
+        },
+        {
+          "scene": 7,
+          "checks": [
+            "DEHYDRATION_OR_POOR_INTAKE"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "EMERGENCY_LOCALE"
+          ]
+        },
+        {
+          "scene": 10,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [
+        "38",
+        "39",
+        "40",
+        "8"
+      ],
+      "srt_number_tokens": [
+        "38",
+        "39",
+        "40",
+        "8"
+      ],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 7.28,
+          "timeline_seconds": 6,
+          "speed_factor": 1.2133,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 7.56,
+          "timeline_seconds": 6,
+          "speed_factor": 1.26,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 5.64,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 5.92,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 7.76,
+          "timeline_seconds": 6,
+          "speed_factor": 1.2933,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 5.96,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 5.84,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 8.12,
+          "timeline_seconds": 6,
+          "speed_factor": 1.3533,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 9.4,
+          "timeline_seconds": 7,
+          "speed_factor": 1.3429,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 6.6,
+          "timeline_seconds": 5,
+          "speed_factor": 1.32,
+          "requires_close_listen": true
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

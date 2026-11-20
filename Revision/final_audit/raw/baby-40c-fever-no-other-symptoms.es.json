@@ -1,0 +1,366 @@
+{
+  "video_id": "baby-40c-fever-no-other-symptoms.es",
+  "language": "es",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "PASS",
+  "av_integrity": "PASS",
+  "spoken_transcript": "Menor de tres meses con 38°C o más: busque atención médica inmediata. De tres a seis meses con 39°C o más: busque evaluación médica pronto. Si su hijo duerme cómodamente, no es necesario despertarlo para darle antipiréticos. Los antipiréticos reducen la fiebre y el malestar, ayudando a su hijo a recuperarse. Fiebre repetida sobre 40°C, o que dure tres días, necesita evaluación médica. En niños mayores activos, vigile en casa y consulte si empeoran. Busque erupciones, dolor de oído o cuello, y cambios en la producción de orina. Use un antipirético solo si hay malestar y siga las indicaciones de edad, peso e intervalo de cada medicamento. Por convulsión febril, anuria por 8+ horas, o erupción con dolor articular, vaya a urgencias. Siga monitoreando a su hijo; si la fiebre persiste o empeora, consulte a su pediatra.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "PASS",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "NOT_APPLICABLE",
+    "high_fever_age_context": "PASS",
+    "sleep_vs_lethargy": "PASS",
+    "dehydration_guidance": "PASS",
+    "multilingual_integrity": "PASS",
+    "evidence_ko": "비디오는 스페인어로 제작되었으며, 모든 의학적 조언은 제공된 출처와 일치하며 연령별 발열 기준 및 의료 조치 시점에 대한 정보가 정확하게 전달됩니다. 약물 투여는 안전한 계량컵을 통해 이루어집니다. 시각적 요소와 음성, 캡션 모두 일관되고 정확합니다.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "NOT_APPLICABLE",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "PASS",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "NOT_APPLICABLE",
+    "treatment_claim_uncertainty": "NOT_APPLICABLE",
+    "simultaneous_and_alternating_antipyretics": "PASS",
+    "infant_feeding_and_formula": "NOT_APPLICABLE",
+    "medicine_storage_and_restart": "NOT_APPLICABLE",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "PASS"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "0:00-0:06",
+      "spoken_transcript": "Menor de tres meses con 38°C o más: busque atención médica inmediata.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Menor de tres meses con 38°C o más: busque atención médica inmediata.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션은 3개월 미만 영아의 38°C 이상 발열에 대한 즉각적인 의료 조치를 권고합니다. 오버레이 40°C는 일반적인 고열을 나타내며, 특정 연령별 기준과 직접적으로 충돌하지는 않습니다."
+    },
+    {
+      "scene": 2,
+      "timestamp": "0:06-0:12",
+      "spoken_transcript": "De tres a seis meses con 39°C o más: busque evaluación médica pronto.",
+      "speech_complete": true,
+      "visible_caption_transcript": "De tres a seis meses con 39°C o más: busque evaluación médica pronto.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션은 3~6개월 영아의 39°C 이상 발열에 대한 신속한 의료 평가를 권고합니다. 아이가 계량컵으로 약을 마시는 모습이 안전하게 묘사되었습니다."
+    },
+    {
+      "scene": 3,
+      "timestamp": "0:12-0:18",
+      "spoken_transcript": "Si su hijo duerme cómodamente, no es necesario despertarlo para darle antipiréticos.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Si su hijo duerme cómodamente, no es necesario despertarlo para darle antipiréticos.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션은 아이가 편안하게 자고 있다면 해열제를 주기 위해 깨울 필요가 없다고 설명합니다. 시각적으로 아이가 안전하게 잠들어 있는 모습이 묘사되었습니다."
+    },
+    {
+      "scene": 4,
+      "timestamp": "0:18-0:24",
+      "spoken_transcript": "Los antipiréticos reducen la fiebre y el malestar, ayudando a su hijo a recuperarse.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Los antipiréticos reducen la fiebre y el malestar, ayudando a su hijo a recuperarse.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션은 해열제가 발열과 불편함을 줄여 아이의 회복을 돕는다고 설명합니다. 시각적으로는 체온계와 함께 열이 줄어드는 효과를 보여줍니다."
+    },
+    {
+      "scene": 5,
+      "timestamp": "0:24-0:30",
+      "spoken_transcript": "Fiebre repetida sobre 40°C, o que dure tres días, necesita evaluación médica.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Fiebre repetida sobre 40°C, o que dure tres días, necesita evaluación médica.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션은 40°C 이상의 반복적인 발열 또는 3일 이상 지속되는 발열의 경우 의료 평가가 필요하다고 명시합니다. 시각적으로 3일이 강조된 달력이 표시됩니다."
+    },
+    {
+      "scene": 6,
+      "timestamp": "0:30-0:36",
+      "spoken_transcript": "En niños mayores activos, vigile en casa y consulte si empeoran.",
+      "speech_complete": true,
+      "visible_caption_transcript": "En niños mayores activos, vigile en casa y consulte si empeoran.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션은 활동적인 큰 아이의 경우 집에서 관찰하고 상태가 악화되면 상담하라고 조언합니다. 아이가 계량컵으로 약을 마시는 모습이 안전하게 묘사되었습니다."
+    },
+    {
+      "scene": 7,
+      "timestamp": "0:36-0:42",
+      "spoken_transcript": "Busque erupciones, dolor de oído o cuello, y cambios en la producción de orina.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Busque erupciones, dolor de oído o cuello, y cambios en la producción de orina.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션은 발진, 귀 또는 목 통증, 소변량 변화와 같은 다른 증상을 관찰하도록 지시합니다. 시각적으로 아이의 피부, 귀/목 부위가 강조됩니다."
+    },
+    {
+      "scene": 8,
+      "timestamp": "0:42-0:48",
+      "spoken_transcript": "Use un antipirético solo si hay malestar y siga las indicaciones de edad, peso e intervalo de cada medicamento.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Use un antipirético solo si hay malestar y siga las indicaciones de edad, peso e intervalo de cada medicamento.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션은 불편함이 있을 때만 해열제를 사용하고, 각 약물의 연령, 체중, 투여 간격 지침을 따르도록 강조합니다. 아이가 계량컵으로 약을 마시는 모습이 안전하게 묘사되었습니다."
+    },
+    {
+      "scene": 9,
+      "timestamp": "0:48-0:54",
+      "spoken_transcript": "Por convulsión febril, anuria por 8+ horas, o erupción con dolor articular, vaya a urgencias.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Por convulsión febril, anuria por 8+ horas, o erupción con dolor articular, vaya a urgencias.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션은 열성 경련, 8시간 이상 무뇨, 관절통을 동반한 발진의 경우 즉시 응급실에 가야 한다고 경고합니다. 시각적으로 해당 신체 부위가 강조됩니다."
+    },
+    {
+      "scene": 10,
+      "timestamp": "0:54-1:00",
+      "spoken_transcript": "Siga monitoreando a su hijo; si la fiebre persiste o empeora, consulte a su pediatra.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Siga monitoreando a su hijo; si la fiebre persiste o empeora, consulte a su pediatra.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션은 아이의 상태를 계속 모니터링하고, 열이 지속되거나 악화되면 소아과 의사와 상담하도록 권고합니다. 아이가 계량컵으로 약을 마시는 모습이 안전하게 묘사되었습니다."
+    }
+  ],
+  "medication_route_review": [
+    {
+      "timestamp": "0:06-0:12",
+      "depicted_item": "liquid medicine",
+      "depicted_route": "oral (dosing cup)",
+      "intended_route": "oral (dosing cup)",
+      "is_error": false,
+      "reason_ko": "아이가 계량컵으로 액체 약을 안전하게 마시는 모습이 묘사되었습니다.",
+      "confidence": 1.0
+    },
+    {
+      "timestamp": "0:30-0:36",
+      "depicted_item": "liquid medicine",
+      "depicted_route": "oral (dosing cup)",
+      "intended_route": "oral (dosing cup)",
+      "is_error": false,
+      "reason_ko": "아이가 계량컵으로 액체 약을 안전하게 마시는 모습이 묘사되었습니다.",
+      "confidence": 1.0
+    },
+    {
+      "timestamp": "0:42-0:48",
+      "depicted_item": "liquid medicine",
+      "depicted_route": "oral (dosing cup)",
+      "intended_route": "oral (dosing cup)",
+      "is_error": false,
+      "reason_ko": "아이가 계량컵으로 액체 약을 안전하게 마시는 모습이 묘사되었습니다.",
+      "confidence": 1.0
+    },
+    {
+      "timestamp": "0:54-1:00",
+      "depicted_item": "liquid medicine",
+      "depicted_route": "oral (dosing cup)",
+      "intended_route": "oral (dosing cup)",
+      "is_error": false,
+      "reason_ko": "아이가 계량컵으로 액체 약을 안전하게 마시는 모습이 묘사되었습니다.",
+      "confidence": 1.0
+    }
+  ],
+  "issues": [],
+  "review_summary_ko": "이 비디오는 스페인어로 제작되었으며, 영아 및 어린이의 발열 관리 및 응급 상황에 대한 명확하고 안전한 지침을 제공합니다. 모든 의학적 조언은 제공된 출처와 일치하며, 연령별 발열 기준 및 의료 조치 시점에 대한 정보가 정확하게 전달됩니다. 약물 투여는 항상 안전한 계량컵을 통해 이루어지며, 시각적 요소와 음성, 캡션 모두 일관되고 정확합니다. 한국어 환각이나 예상치 못한 생성된 텍스트는 감지되지 않았습니다. 전반적으로 의료 정확성, 출처 충실도 및 시청각 무결성 측면에서 높은 품질을 유지합니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-40c-fever-no-other-symptoms/es/baby-40c-fever-no-other-symptoms_ES.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-40c-fever-no-other-symptoms/es/production.snapshot.json",
+    "audited_at": "2026-09-22T06:48:41.826305+00:00",
+    "video_sha256": "e10d13cdd9896d262e28d800bcd0d83a30c1b41920025bd19683a1d3dabdb654",
+    "snapshot_sha256": "1e2fd5a7f7a048252746f641c86510c91620c0448a67b6ae17988e3f826f704a",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 24,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "e10d13cdd9896d262e28d800bcd0d83a30c1b41920025bd19683a1d3dabdb654",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 1,
+          "checks": [
+            "VERY_HIGH_FEVER_40C",
+            "CASE_TIMELINE_REASSESSMENT"
+          ]
+        },
+        {
+          "scene": 2,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 3,
+          "checks": [
+            "SLEEP_VS_LETHARGY",
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 5,
+          "checks": [
+            "VERY_HIGH_FEVER_40C"
+          ]
+        },
+        {
+          "scene": 7,
+          "checks": [
+            "DEHYDRATION_OR_POOR_INTAKE",
+            "NEW_OR_MIGRATING_PAIN"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "EMERGENCY_LOCALE"
+          ]
+        },
+        {
+          "scene": 10,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [
+        "38",
+        "39",
+        "40",
+        "8"
+      ],
+      "srt_number_tokens": [
+        "38",
+        "39",
+        "40",
+        "8"
+      ],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 7.12,
+          "timeline_seconds": 6,
+          "speed_factor": 1.1867,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 7.12,
+          "timeline_seconds": 6,
+          "speed_factor": 1.1867,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 6.16,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0267,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 6.12,
+          "timeline_seconds": 6,
+          "speed_factor": 1.02,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 7.28,
+          "timeline_seconds": 6,
+          "speed_factor": 1.2133,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 5.64,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 6.6,
+          "timeline_seconds": 6,
+          "speed_factor": 1.1,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 8.96,
+          "timeline_seconds": 6,
+          "speed_factor": 1.4933,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 8.72,
+          "timeline_seconds": 6,
+          "speed_factor": 1.4533,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 6.68,
+          "timeline_seconds": 6,
+          "speed_factor": 1.1133,
+          "requires_close_listen": false
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

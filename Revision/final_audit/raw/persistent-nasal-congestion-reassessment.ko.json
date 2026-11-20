@@ -1,0 +1,292 @@
+{
+  "video_id": "persistent-nasal-congestion-reassessment.ko",
+  "language": "ko",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "PASS",
+  "av_integrity": "PASS",
+  "spoken_transcript": "열이나 기침 없이 끈적한 콧물이 3개월 지속되면 재평가하세요. 코막힘은 부비동 외에도 다양한 원인으로 발생할 수 있습니다. 계속 항생제만 바꾸는 것은 근본적인 해결책이 아닐 수 있습니다. 아데노이드 비대나 비용종 같은 구조적 문제가 코막힘의 원인일 수 있습니다. 3개월 이상 지속되는 코막힘은 다른 원인을 찾아야 할 중요한 신호입니다. 항생제 교체보다 증상의 근본 원인을 재평가하는 것이 우선입니다. 코막힘이 오래가면 주치의 진찰 후, 비내시경 등 필요한 검사를 선택적으로 상의하세요. CT가 모두에게 필요한 것은 아닙니다. 하루 2~3회 생리식염수 코 세척으로 끈적한 콧물 배출을 돕습니다. 멸균수나 끓여 식힌 물을 사용하고 기구 위생에 유의하세요. 38도 이상 발열, 얼굴 부기나 통증, 시력 변화는 즉시 진료가 필요합니다. 지속되는 코막힘은 소아청소년과 진료를 통해 근본 원인을 찾아야 합니다.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "NOT_APPLICABLE",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "PASS",
+    "high_fever_age_context": "PASS",
+    "sleep_vs_lethargy": "NOT_APPLICABLE",
+    "dehydration_guidance": "NOT_APPLICABLE",
+    "multilingual_integrity": "PASS",
+    "evidence_ko": "모든 음성 및 캡션이 명확하고 완전하며, 의학적 정보가 정확하게 전달되었습니다.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "NOT_APPLICABLE",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "NOT_APPLICABLE",
+    "safe_sleep_and_swallowing": "NOT_APPLICABLE",
+    "mechanism_and_diagnostic_limits": "PASS",
+    "treatment_claim_uncertainty": "PASS",
+    "simultaneous_and_alternating_antipyretics": "NOT_APPLICABLE",
+    "infant_feeding_and_formula": "NOT_APPLICABLE",
+    "medicine_storage_and_restart": "NOT_APPLICABLE",
+    "age_appropriate_nasal_care": "PASS",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "PASS"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "열이나 기침 없이 끈적한 콧물이 3개월 지속되면 재평가하세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "열이나 기침 없이 끈적한 콧물이 3개월 지속되면재평가하세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:06",
+      "spoken_transcript": "코막힘은 부비동 외에도 다양한 원인으로 발생할 수 있습니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "코막힘은 부비동 외에도다양한 원인으로 발생할 수 있습니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:12",
+      "spoken_transcript": "계속 항생제만 바꾸는 것은 근본적인 해결책이 아닐 수 있습니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "계속 항생제만 바꾸는 것은근본적인 해결책이 아닐 수 있습니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:18",
+      "spoken_transcript": "아데노이드 비대나 비용종 같은 구조적 문제가 코막힘의 원인일 수 있습니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "아데노이드 비대나 비용종 같은구조적 문제가 코막힘의 원인일 수 있습니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:24",
+      "spoken_transcript": "3개월 이상 지속되는 코막힘은 다른 원인을 찾아야 할 중요한 신호입니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "3개월 이상 지속되는 코막힘은다른 원인을 찾아야 할 중요한 신호입니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:29",
+      "spoken_transcript": "항생제 교체보다 증상의 근본 원인을 재평가하는 것이 우선입니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "항생제 교체보다증상의 근본 원인을 재평가하는 것이 우선입니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:33",
+      "spoken_transcript": "코막힘이 오래가면 주치의 진찰 후, 비내시경 등 필요한 검사를 선택적으로 상의하세요. CT가 모두에게 필요한 것은 아닙니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "코막힘이 오래가면 주치의 진찰 후, 비내시경 등 필요한 검사를 선택적으로 상의하세요. CT가 모두에게 필요한 것은 아닙니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:41",
+      "spoken_transcript": "하루 2~3회 생리식염수 코 세척으로 끈적한 콧물 배출을 돕습니다. 멸균수나 끓여 식힌 물을 사용하고 기구 위생에 유의하세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "하루 2~3회 생리식염수 코 세척으로끈적한 콧물 배출을 돕습니다.멸균수나 끓여 식힌 물을 사용하고 기구 위생에 유의하세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "비강 세척 자세가 적절하게 묘사됨 (아이가 싱크대 위로 몸을 숙이고 머리를 앞으로 기울인 자세)."
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:49",
+      "spoken_transcript": "38도 이상 발열, 얼굴 부기나 통증, 시력 변화는 즉시 진료가 필요합니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "38도 이상 발열, 얼굴 부기나 통증,시력 변화는즉시 진료가 필요합니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:55",
+      "spoken_transcript": "지속되는 코막힘은 소아청소년과 진료를 통해 근본 원인을 찾아야 합니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "지속되는 코막힘은소아청소년과 진료를 통해근본 원인을 찾아야 합니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    }
+  ],
+  "medication_route_review": [],
+  "issues": [],
+  "review_summary_ko": "이 영상은 소아청소년과 진료 지침에 따라 코막힘의 원인 재평가 및 적절한 관리법을 정확하게 전달합니다. 의학적 정보는 원본 자료에 충실하며, 시각 및 청각적 요소 모두 높은 품질을 유지합니다. 특히 비강 세척 자세는 안전하고 적절하게 묘사되었습니다. 전반적으로 모든 검토 항목에서 'PASS'를 받았습니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/persistent-nasal-congestion-reassessment/ko/persistent-nasal-congestion-reassessment_KO.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/persistent-nasal-congestion-reassessment/ko/production.snapshot.json",
+    "audited_at": "2026-09-22T06:57:24.814101+00:00",
+    "video_sha256": "84a64d11218f9287de5e259964248557b7555017e78f2909209bbf48f3d3e898",
+    "snapshot_sha256": "eba0405352d42bfc474f5bbacedd236b5a7e86df0031c8c782f1d323679cb602",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 24,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "84a64d11218f9287de5e259964248557b7555017e78f2909209bbf48f3d3e898",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 1,
+          "checks": [
+            "CASE_TIMELINE_REASSESSMENT"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "NASAL_IRRIGATION_POSTURE"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [
+        "3",
+        "3",
+        "2",
+        "3",
+        "38"
+      ],
+      "srt_number_tokens": [
+        "3",
+        "3",
+        "2",
+        "3",
+        "38"
+      ],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 6.16,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0267,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 5.56,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 5.2,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 6.28,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0467,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 6.32,
+          "timeline_seconds": 5,
+          "speed_factor": 1.264,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 5.72,
+          "timeline_seconds": 4,
+          "speed_factor": 1.43,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 11.32,
+          "timeline_seconds": 8,
+          "speed_factor": 1.415,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 11.76,
+          "timeline_seconds": 8,
+          "speed_factor": 1.47,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 7.76,
+          "timeline_seconds": 6,
+          "speed_factor": 1.2933,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 6.6,
+          "timeline_seconds": 5,
+          "speed_factor": 1.32,
+          "requires_close_listen": true
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

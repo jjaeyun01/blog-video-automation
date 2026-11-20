@@ -1,0 +1,68 @@
+{
+  "repairs": [
+    {
+      "scene": 5,
+      "corrected_medical_claim": "If pre-mixing is unavoidable, follow product instructions or consult a pharmacist.",
+      "corrected_narration": "Si es inevitable premezclar, siga las instrucciones del producto o consulte a un farmacéutico.",
+      "caption_chunks": [
+        "Si es inevitable premezclar,",
+        "siga las instrucciones del producto o consulte a un farmacéutico."
+      ],
+      "replace_overlays": true,
+      "overlays": [],
+      "regenerate_visual": true,
+      "visual_prompt_addendum": "Remove the subtle visual timer and any elements emphasizing a limited time window. Instead, the visual should subtly suggest the importance of consulting specific product instructions or a pharmacist for pre-mixed medicine.",
+      "reason_ko": "약명·제형 확인 없이 미리 탄 가루 해열제를 '1~2시간 내 복용하고 냉장 보관'하도록 공통 기준을 제시하는 것은 제품·조제 구성에 따라 안정성과 보관법이 달라 부적절합니다. 복용 직전 혼합하거나 약사에게 해당 약의 방법을 확인하도록 수정합니다."
+    },
+    {
+      "scene": 6,
+      "corrected_medical_claim": "Administer immediately after mixing, or follow product instructions or consult a pharmacist if pre-mixing is unavoidable.",
+      "corrected_narration": "Idealmente, prepare el medicamento justo antes de usar. Si no, siga las instrucciones del producto o consulte a un farmacéutico.",
+      "caption_chunks": [
+        "Idealmente, prepare el medicamento justo antes de usar.",
+        "Si no, siga las instrucciones del producto o consulte a un farmacéutico."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": true,
+      "visual_prompt_addendum": "Remove visual cues for refrigeration and an opaque container on the right path. Instead, the right path should visually represent the need to follow specific product instructions or consult a pharmacist if pre-mixing is unavoidable.",
+      "reason_ko": "약명·제형 확인 없이 미리 탄 가루 해열제를 '1~2시간 내 복용하고 냉장 보관'하도록 공통 기준을 제시하는 것은 제품·조제 구성에 따라 안정성과 보관법이 달라 부적절합니다. 복용 직전 혼합하거나 약사에게 해당 약의 방법을 확인하도록 수정합니다."
+    },
+    {
+      "scene": 8,
+      "corrected_medical_claim": "",
+      "corrected_narration": "",
+      "caption_chunks": [],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "해당 장면의 내용은 '복용 직전 혼합' 및 '물의 양과 온도'에 대한 것으로, 이는 QA에서 적절하다고 판단된 부분입니다. 따라서 수정이 필요 없습니다."
+    }
+  ],
+  "video_id": "powdered-fever-reducer-premix.es",
+  "model": "gemini-2.5-flash",
+  "source_issues": [
+    {
+      "scene": 5,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초 전후: 약명·제형 확인 없이 미리 탄 가루 해열제를 '1~2시간 내 복용하고 냉장 보관'하도록 공통 기준을 제시합니다. 제품·조제 구성에 따라 안정성과 보관법이 달라 이 임의 기준을 삭제하고, 복용 직전 혼합하거나 약사에게 해당 약의 방법을 확인하도록 수정해 주세요. 추가 노트: 직전 혼합을 권하는 핵심은 적절합니다. 물의 양과 온도 역시 해당 제품 설명서를 따르고, 한 번에 다 먹을 수 있는 소량에 섞어 남은 약이 없는지 확인하는 장면을 권합니다.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-18.mp4"
+    },
+    {
+      "scene": 6,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초 전후: 약명·제형 확인 없이 미리 탄 가루 해열제를 '1~2시간 내 복용하고 냉장 보관'하도록 공통 기준을 제시합니다. 제품·조제 구성에 따라 안정성과 보관법이 달라 이 임의 기준을 삭제하고, 복용 직전 혼합하거나 약사에게 해당 약의 방법을 확인하도록 수정해 주세요. 추가 노트: 직전 혼합을 권하는 핵심은 적절합니다. 물의 양과 온도 역시 해당 제품 설명서를 따르고, 한 번에 다 먹을 수 있는 소량에 섞어 남은 약이 없는지 확인하는 장면을 권합니다.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-18.mp4"
+    },
+    {
+      "scene": 8,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초 전후: 약명·제형 확인 없이 미리 탄 가루 해열제를 '1~2시간 내 복용하고 냉장 보관'하도록 공통 기준을 제시합니다. 제품·조제 구성에 따라 안정성과 보관법이 달라 이 임의 기준을 삭제하고, 복용 직전 혼합하거나 약사에게 해당 약의 방법을 확인하도록 수정해 주세요. 추가 노트: 직전 혼합을 권하는 핵심은 적절합니다. 물의 양과 온도 역시 해당 제품 설명서를 따르고, 한 번에 다 먹을 수 있는 소량에 섞어 남은 약이 없는지 확인하는 장면을 권합니다.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-18.mp4"
+    }
+  ]
+}

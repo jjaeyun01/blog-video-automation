@@ -14,3 +14,11 @@ inputs/*
 audits/
 output/
 outputs/
+
+# Local generated media and production caches
+.DS_Store
+completed_shorts/
+Revision/work_jobs/
+Revision/videos/
+Revision/pass_repair/**/*.mp4
+Revision/pass_repair/*.mp4

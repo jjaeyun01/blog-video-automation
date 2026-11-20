@@ -1,0 +1,162 @@
+{
+  "repairs": [
+    {
+      "scene": 3,
+      "corrected_medical_claim": "If fever persists after administering Brufen, Tylenol can be given as an alternating medication, but simultaneous administration of both is not recommended.",
+      "corrected_narration": "부루펜 복용 후에도 열이 지속된다면 타이레놀 교차 복용은 가능하지만, 두 약을 동시에 먹이는 것은 권장하지 않습니다.",
+      "caption_chunks": [
+        "부루펜 복용 후에도 열이 지속된다면",
+        "타이레놀 교차 복용은 가능하지만,",
+        "두 약을 동시에 먹이는 것은 권장하지 않습니다."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "의료 오류: 동시 복용에 대한 오해를 방지하고 교차 복용 조건을 명확히 하기 위함입니다."
+    },
+    {
+      "scene": 4,
+      "corrected_medical_claim": "Ibuprofen and acetaminophen work through different mechanisms in the body to reduce fever, allowing for alternating use when necessary.",
+      "corrected_narration": "이는 두 약이 몸속에서 열을 내리는 방식이 다르기 때문입니다.",
+      "caption_chunks": [
+        "이는 두 약이 몸속에서",
+        "열을 내리는 방식이",
+        "다르기 때문입니다."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "의료 오류: 동시 복용에 대한 오해를 방지하고 교차 복용 조건을 명확히 하기 위함입니다."
+    },
+    {
+      "scene": 5,
+      "corrected_medical_claim": "For a child weighing 40kg, the recommended dose of Tylenol syrup (at a 32mg/mL concentration) is 15mL.",
+      "corrected_narration": "40kg 아이에게 32mg/mL 농도 타이레놀 시럽 15밀리리터가 권장됩니다.",
+      "caption_chunks": [
+        "40kg 아이에게",
+        "32mg/mL 농도",
+        "타이레놀 시럽 15밀리리터가 권장됩니다."
+      ],
+      "replace_overlays": true,
+      "overlays": [
+        {
+          "type": "label",
+          "text": "15mL",
+          "color": "#007BFF",
+          "from": [
+            0.04,
+            0.06
+          ],
+          "to": [
+            0.04,
+            0.06
+          ],
+          "label_position": [
+            0.75,
+            0.68
+          ]
+        }
+      ],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "의료 오류: 타이레놀 시럽의 농도를 명확히 하여 정확한 용량 정보를 제공하기 위함입니다."
+    },
+    {
+      "scene": 6,
+      "corrected_medical_claim": "Always confirm the acetaminophen concentration and the maximum daily dose on the medicine bottle.",
+      "corrected_narration": "반드시 약병에 표시된 아세트아미노펜 농도와 하루 최대 복용량을 확인하세요.",
+      "caption_chunks": [
+        "반드시 약병에 표시된",
+        "아세트아미노펜 농도와",
+        "하루 최대 복용량을 확인하세요."
+      ],
+      "replace_overlays": true,
+      "overlays": [
+        {
+          "type": "label",
+          "text": "32mg/mL 확인",
+          "color": "#E5482F",
+          "from": [
+            0.04,
+            0.06
+          ],
+          "to": [
+            0.04,
+            0.06
+          ],
+          "label_position": [
+            0.5,
+            0.68
+          ]
+        }
+      ],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "의료 오류: 약병의 농도뿐만 아니라 하루 최대 복용량도 확인해야 함을 명확히 하기 위함입니다."
+    },
+    {
+      "scene": 8,
+      "corrected_medical_claim": "Administer medication using a purpose-made dosing cup to an upright child, aiming towards the inside of the cheek for accurate and safe delivery.",
+      "corrected_narration": "투약용 전용 계량컵로 아이를 앉힌 후 볼 안쪽에 넣어 먹이세요.",
+      "caption_chunks": [
+        "투약용 전용 계량컵로",
+        "아이를 앉힌 후",
+        "볼 안쪽에 넣어 먹이세요."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": true,
+      "visual_prompt_addendum": "Ensure the child is administered medicine using only an open-rimmed purpose-made dosing cup. No syringes, plungers, needles, or injection-like devices are to be shown near the mouth.",
+      "reason_ko": "시각적 안전 오류: 경구 투약 시 주사기 대신 전용 계량컵을 사용하도록 시각적 요소를 수정하기 위함입니다."
+    }
+  ],
+  "video_id": "pediatric-fever-alternating-meds.ko",
+  "model": "gemini-2.5-flash",
+  "source_issues": [
+    {
+      "scene": 3,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "11~23초: '함께 또는 번갈아 먹여도 되나요?'라는 질문 뒤에 작용 방식이 다르다는 설명만 있어, 동시 복용을 허용하는 것으로 오해할 수 있습니다. 두 약 동시 투여는 권하지 않으며, 단일제를 우선하고 교차복용은 지속되는 불편감·약별 간격/최대량을 확인한 계획에 한하도록 명확히 답해 주세요. 추가 노트: 40kg에 Tylenol 15mL는 32mg/mL 제품이라면 480mg(12mg/kg)로 계산상 과량은 아닙니다. 농도를 읽기 쉽게 함께 표시하고, 제품별 최대량도 확인하도록 해 주세요. 계량컵과 경구용 주사기의 사용 설명·그림을 혼동하지 않게 맞춰 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-20.mp4"
+    },
+    {
+      "scene": 4,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "11~23초: '함께 또는 번갈아 먹여도 되나요?'라는 질문 뒤에 작용 방식이 다르다는 설명만 있어, 동시 복용을 허용하는 것으로 오해할 수 있습니다. 두 약 동시 투여는 권하지 않으며, 단일제를 우선하고 교차복용은 지속되는 불편감·약별 간격/최대량을 확인한 계획에 한하도록 명확히 답해 주세요. 추가 노트: 40kg에 Tylenol 15mL는 32mg/mL 제품이라면 480mg(12mg/kg)로 계산상 과량은 아닙니다. 농도를 읽기 쉽게 함께 표시하고, 제품별 최대량도 확인하도록 해 주세요. 계량컵과 경구용 주사기의 사용 설명·그림을 혼동하지 않게 맞춰 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-20.mp4"
+    },
+    {
+      "scene": 5,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "11~23초: '함께 또는 번갈아 먹여도 되나요?'라는 질문 뒤에 작용 방식이 다르다는 설명만 있어, 동시 복용을 허용하는 것으로 오해할 수 있습니다. 두 약 동시 투여는 권하지 않으며, 단일제를 우선하고 교차복용은 지속되는 불편감·약별 간격/최대량을 확인한 계획에 한하도록 명확히 답해 주세요. 추가 노트: 40kg에 Tylenol 15mL는 32mg/mL 제품이라면 480mg(12mg/kg)로 계산상 과량은 아닙니다. 농도를 읽기 쉽게 함께 표시하고, 제품별 최대량도 확인하도록 해 주세요. 계량컵과 경구용 주사기의 사용 설명·그림을 혼동하지 않게 맞춰 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-20.mp4"
+    },
+    {
+      "scene": 6,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "11~23초: '함께 또는 번갈아 먹여도 되나요?'라는 질문 뒤에 작용 방식이 다르다는 설명만 있어, 동시 복용을 허용하는 것으로 오해할 수 있습니다. 두 약 동시 투여는 권하지 않으며, 단일제를 우선하고 교차복용은 지속되는 불편감·약별 간격/최대량을 확인한 계획에 한하도록 명확히 답해 주세요. 추가 노트: 40kg에 Tylenol 15mL는 32mg/mL 제품이라면 480mg(12mg/kg)로 계산상 과량은 아닙니다. 농도를 읽기 쉽게 함께 표시하고, 제품별 최대량도 확인하도록 해 주세요. 계량컵과 경구용 주사기의 사용 설명·그림을 혼동하지 않게 맞춰 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-20.mp4"
+    },
+    {
+      "scene": 8,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "11~23초: '함께 또는 번갈아 먹여도 되나요?'라는 질문 뒤에 작용 방식이 다르다는 설명만 있어, 동시 복용을 허용하는 것으로 오해할 수 있습니다. 두 약 동시 투여는 권하지 않으며, 단일제를 우선하고 교차복용은 지속되는 불편감·약별 간격/최대량을 확인한 계획에 한하도록 명확히 답해 주세요. 추가 노트: 40kg에 Tylenol 15mL는 32mg/mL 제품이라면 480mg(12mg/kg)로 계산상 과량은 아닙니다. 농도를 읽기 쉽게 함께 표시하고, 제품별 최대량도 확인하도록 해 주세요. 계량컵과 경구용 주사기의 사용 설명·그림을 혼동하지 않게 맞춰 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-20.mp4"
+    },
+    {
+      "scene": 8,
+      "category": "OTHER_VISUAL_ERROR",
+      "severity": "high",
+      "problem_ko": "사람 검토에서 지적된 시각적 안전 오류를 제거해야 합니다.",
+      "visual_prompt_addendum": "If depicting oral liquid medicine, use a clearly open-rimmed medicine cup at the lips. No syringe, plunger, needle, or injection motion near the mouth.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-20.mp4"
+    }
+  ]
+}

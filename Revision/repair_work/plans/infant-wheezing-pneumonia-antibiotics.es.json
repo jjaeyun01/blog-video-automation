@@ -1,0 +1,118 @@
+{
+  "repairs": [
+    {
+      "scene": 1,
+      "corrected_medical_claim": "If cold symptoms fluctuate for 2 weeks and then wheezing or rattling starts in the afternoon and worsens by evening, it suggests airway narrowing or worsening inflammation. In 7-month-old infants, airways are narrow, so symptoms can worsen quickly; changes in breathing sounds require rapid assessment.",
+      "corrected_narration": "Si las sibilancias de su bebé comienzan o empeoran, se requiere una evaluación rápida.",
+      "caption_chunks": [
+        "Si las sibilancias de su bebé",
+        "comienzan o empeoran,",
+        "se requiere una evaluación rápida."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "악화되는 영아의 호흡음 변화에 대한 신속한 평가의 중요성을 강조하기 위해 '오늘 저녁'과 같은 지연 표현을 제거하고 '신속한 평가'로 통일했습니다."
+    },
+    {
+      "scene": 4,
+      "corrected_medical_claim": "",
+      "corrected_narration": "",
+      "caption_chunks": [],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "이 장면의 내용은 의학적 사실과 일치하며, '오늘 저녁'과 같은 지연 표현이 포함되어 있지 않아 수정이 필요 없습니다."
+    },
+    {
+      "scene": 6,
+      "corrected_medical_claim": "If wheezing continues or worsens, even without the emergency symptoms, an urgent visit to an emergency room or night clinic pediatrician is necessary.",
+      "corrected_narration": "Si las sibilancias continúan o empeoran, visite urgentemente una sala de emergencias o pediatra de guardia.",
+      "caption_chunks": [
+        "Si las sibilancias continúan o empeoran,",
+        "visite urgentemente una sala de emergencias",
+        "o pediatra de guardia."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "악화되는 호흡음 변화에 대한 신속한 평가의 중요성을 강조하기 위해 '오늘 저녁'과 같은 지연 표현을 제거하고 '긴급하게' 방문하도록 수정했습니다."
+    },
+    {
+      "scene": 7,
+      "corrected_medical_claim": "",
+      "corrected_narration": "",
+      "caption_chunks": [],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "이 장면의 내용은 의학적 사실과 일치하며, '오늘 저녁'과 같은 지연 표현이 포함되어 있지 않아 수정이 필요 없습니다."
+    },
+    {
+      "scene": 9,
+      "corrected_medical_claim": "Immediate emergency care (call 119) is needed if the infant shows any of these symptoms: lips or fingernails turn blue (cyanosis), ribs or collarbone sink in with each breath (retractions), breathing too fast to feed or weak cry, or the child is lethargic and cannot make eye contact.",
+      "corrected_narration": "Si los labios o uñas se ponen azules, o ve retracciones, llame al 911 inmediatamente.",
+      "caption_chunks": [
+        "Si los labios o uñas se ponen azules,",
+        "o ve retracciones,",
+        "llame al 911 inmediatamente."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": true,
+      "visual_prompt_addendum": "Show safe infant sleep: baby supine on a firm flat bare crib mattress, with no pillow, wedge, loose blanket, or raised mattress. No unsafe sleep pose.",
+      "reason_ko": "기존 내레이션은 청색증과 함몰 호흡이라는 핵심적인 위급 증상을 간결하게 전달하고 있으며, 장면 길이를 고려할 때 추가적인 증상을 포함하기 어렵습니다. '911'은 미국 배포를 위한 적절한 긴급 전화번호입니다. 영아의 안전한 수면 환경을 시각적으로 정확하게 표현하기 위해 베개, 느슨한 이불 등 안전하지 않은 요소를 제거하도록 시각적 프롬프트에 추가했습니다."
+    }
+  ],
+  "video_id": "infant-wheezing-pneumonia-antibiotics.es",
+  "model": "gemini-2.5-flash",
+  "source_issues": [
+    {
+      "scene": 1,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요. 추가 노트: 쌕쌕거림과 들이쉴 때 나는 협착음을 혼용하지 않도록 정리해 주세요. 응급번호는 배포 국가에 맞추고 영아 침대의 베개·느슨한 이불도 제거한 장면으로 바꿔 주세요.",
+      "evidence": "Jaeyoon-Lee-0907-set3-Spanish.mp4"
+    },
+    {
+      "scene": 4,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요. 추가 노트: 쌕쌕거림과 들이쉴 때 나는 협착음을 혼용하지 않도록 정리해 주세요. 응급번호는 배포 국가에 맞추고 영아 침대의 베개·느슨한 이불도 제거한 장면으로 바꿔 주세요.",
+      "evidence": "Jaeyoon-Lee-0907-set3-Spanish.mp4"
+    },
+    {
+      "scene": 6,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요. 추가 노트: 쌕쌕거림과 들이쉴 때 나는 협착음을 혼용하지 않도록 정리해 주세요. 응급번호는 배포 국가에 맞추고 영아 침대의 베개·느슨한 이불도 제거한 장면으로 바꿔 주세요.",
+      "evidence": "Jaeyoon-Lee-0907-set3-Spanish.mp4"
+    },
+    {
+      "scene": 7,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요. 추가 노트: 쌕쌕거림과 들이쉴 때 나는 협착음을 혼용하지 않도록 정리해 주세요. 응급번호는 배포 국가에 맞추고 영아 침대의 베개·느슨한 이불도 제거한 장면으로 바꿔 주세요.",
+      "evidence": "Jaeyoon-Lee-0907-set3-Spanish.mp4"
+    },
+    {
+      "scene": 9,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요. 추가 노트: 쌕쌕거림과 들이쉴 때 나는 협착음을 혼용하지 않도록 정리해 주세요. 응급번호는 배포 국가에 맞추고 영아 침대의 베개·느슨한 이불도 제거한 장면으로 바꿔 주세요.",
+      "evidence": "Jaeyoon-Lee-0907-set3-Spanish.mp4"
+    },
+    {
+      "scene": 9,
+      "category": "OTHER_VISUAL_ERROR",
+      "severity": "high",
+      "problem_ko": "사람 검토에서 지적된 시각적 안전 오류를 제거해야 합니다.",
+      "visual_prompt_addendum": "Show safe infant sleep: baby supine on a firm flat bare crib mattress, with no pillow, wedge, loose blanket, or raised mattress. No unsafe sleep pose.",
+      "evidence": "Jaeyoon-Lee-0907-set3-Spanish.mp4"
+    }
+  ]
+}

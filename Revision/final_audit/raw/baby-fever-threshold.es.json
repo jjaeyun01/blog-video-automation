@@ -1,0 +1,328 @@
+{
+  "video_id": "baby-fever-threshold.es",
+  "language": "es",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "PASS",
+  "av_integrity": "PASS",
+  "spoken_transcript": "Una temperatura de 38 grados Celsius o más en un bebé se considera fiebre. A los 5 meses, la temperatura normal va de 36.5 a 37.5 grados. Hasta 37.5 grados es normal; la fiebre comienza a los 38 grados Celsius. El exceso de ropa o un ambiente cálido pueden elevar temporalmente la temperatura del bebé. La temperatura ambiente recomendada para un bebé es de 22 a 24 grados Celsius. Si el bebé está bien, una temperatura ligeramente alta puede ser normal. Pero si está irritable o letárgico, consulte a un pediatra. Las manos o pies tibios no descartan enfermedad; revise temperatura, alimentación, respuesta y respiración. Ajuste la ropa de su bebé según el ambiente y su condición, evitando abrigarlo o desabrigarlo en exceso. Irritabilidad, letargo, disminución de la alimentación, tos, secreción nasal, vómitos o diarrea requieren atención médica. Si la temperatura es 38 grados o más, o empeora, consulte a un pediatra.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "NOT_APPLICABLE",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "NOT_APPLICABLE",
+    "high_fever_age_context": "PASS",
+    "sleep_vs_lethargy": "PASS",
+    "dehydration_guidance": "NOT_APPLICABLE",
+    "multilingual_integrity": "PASS",
+    "evidence_ko": "영상은 5개월 아기의 정상 체온 범위와 발열 기준, 그리고 소아과 진료가 필요한 증상들을 명확하게 설명합니다. 안전한 수면 환경 및 아기 상태 모니터링에 대한 지침도 포함되어 있습니다.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "NOT_APPLICABLE",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "NOT_APPLICABLE",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "PASS",
+    "treatment_claim_uncertainty": "NOT_APPLICABLE",
+    "simultaneous_and_alternating_antipyretics": "NOT_APPLICABLE",
+    "infant_feeding_and_formula": "PASS",
+    "medicine_storage_and_restart": "NOT_APPLICABLE",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "PASS"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "Una temperatura de 38 grados Celsius o más en un bebé se considera fiebre.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Una temperatura de 38 grados Celsius o más en un bebé se considera fiebre.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "온도계가 38도 이상을 열로 간주한다고 설명합니다."
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:06",
+      "spoken_transcript": "A los 5 meses, la temperatura normal va de 36.5 a 37.5 grados.",
+      "speech_complete": true,
+      "visible_caption_transcript": "A los 5 meses, la temperatura normal va de 36.5 a 37.5 grados.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "5개월 아기의 정상 체온 범위가 36.5도에서 37.5도임을 설명합니다. 안전한 수면 환경이 묘사되었습니다."
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:12",
+      "spoken_transcript": "Hasta 37.5 grados es normal; la fiebre comienza a los 38 grados Celsius.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Hasta 37.5 grados es normal; la fiebre comienza a los 38 grados Celsius.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "37.5도까지는 정상이며 38도부터 열로 간주됨을 설명합니다."
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:17",
+      "spoken_transcript": "El exceso de ropa o un ambiente cálido pueden elevar temporalmente la temperatura del bebé.",
+      "speech_complete": true,
+      "visible_caption_transcript": "El exceso de ropa o un ambiente cálido pueden elevar temporalmente la temperatura del bebé.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "과도한 옷이나 따뜻한 환경이 아기 체온을 일시적으로 높일 수 있음을 설명합니다."
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:22",
+      "spoken_transcript": "La temperatura ambiente recomendada para un bebé es de 22 a 24 grados Celsius.",
+      "speech_complete": true,
+      "visible_caption_transcript": "La temperatura ambiente recomendada para un bebé es de 22 a 24 grados Celsius.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "아기를 위한 권장 실내 온도가 22~24도임을 설명합니다."
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:27",
+      "spoken_transcript": "Si el bebé está bien, una temperatura ligeramente alta puede ser normal. Pero si está irritable o letárgico, consulte a un pediatra.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Si el bebé está bien, una temperatura ligeramente alta puede ser normal. Pero si está irritable o letárgico, consulte a un pediatra.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "아기가 괜찮으면 약간 높은 체온도 정상일 수 있지만, 짜증을 내거나 무기력하면 소아과 의사와 상담해야 함을 설명합니다. 아기의 상태 대비가 명확합니다."
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:35",
+      "spoken_transcript": "Las manos o pies tibios no descartan enfermedad; revise temperatura, alimentación, respuesta y respiración.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Las manos o pies tibios no descartan enfermedad; revise temperatura, alimentación, respuesta y respiración.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "손발이 따뜻하다고 해서 질병이 배제되는 것은 아니며, 체온, 수유, 반응, 호흡을 확인해야 함을 설명합니다. 안전한 아기 놀이 환경이 묘사되었습니다."
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:42",
+      "spoken_transcript": "Ajuste la ropa de su bebé según el ambiente y su condición, evitando abrigarlo o desabrigarlo en exceso.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Ajuste la ropa de su bebé según el ambiente y su condición, evitando abrigarlo o desabrigarlo en exceso.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "아기의 옷차림을 환경과 상태에 맞게 조절하고, 너무 과하게 입히거나 벗기지 않도록 주의해야 함을 설명합니다. 안전한 수면 환경이 묘사되었습니다."
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:47",
+      "spoken_transcript": "Irritabilidad, letargo, disminución de la alimentación, tos, secreción nasal, vómitos o diarrea requieren atención médica.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Irritabilidad, letargo, disminución de la alimentación, tos, secreción nasal, vómitos o diarrea requieren atención médica.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "짜증, 무기력, 수유량 감소, 기침, 콧물, 구토, 설사 등의 증상이 나타나면 의료적 진찰이 필요함을 설명합니다."
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:55",
+      "spoken_transcript": "Si la temperatura es 38 grados o más, o empeora, consulte a un pediatra.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Si la temperatura es 38 grados o más, o empeora, consulte a un pediatra.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "체온이 38도 이상이거나 악화되면 소아과 의사와 상담해야 함을 설명합니다."
+    }
+  ],
+  "medication_route_review": [],
+  "issues": [],
+  "review_summary_ko": "이 영상은 5개월 아기의 체온 기준과 발열 시 대처법에 대해 정확하고 명확한 정보를 제공합니다. 아기의 정상 체온 범위, 발열 기준, 그리고 소아과 진료가 필요한 증상들을 잘 설명하고 있습니다. 과도한 옷차림이나 실내 온도 조절에 대한 실용적인 조언도 포함되어 있습니다. 시각 자료는 내용을 잘 보완하며, 안전한 수면 환경 묘사 등 의료 안전 지침을 준수합니다. 음성, 자막, 영상 모두 일관되고 정확합니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-fever-threshold/es/baby-fever-threshold_ES.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-fever-threshold/es/production.snapshot.json",
+    "audited_at": "2026-09-22T06:50:45.237926+00:00",
+    "video_sha256": "868cb12bad816a04eb4f3ce82a4051b046b360a2bb737654a7a5e59e599b110d",
+    "snapshot_sha256": "955c12a6a018532730cce8c9bd2aea1424b40aa5c6474575047ae85d84f73ea5",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 29,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "868cb12bad816a04eb4f3ce82a4051b046b360a2bb737654a7a5e59e599b110d",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 2,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 4,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 6,
+          "checks": [
+            "SLEEP_VS_LETHARGY",
+            "DRUG_SPECIFIC_REDOSING",
+            "CASE_TIMELINE_REASSESSMENT"
+          ]
+        },
+        {
+          "scene": 7,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "SLEEP_VS_LETHARGY",
+            "DRUG_SPECIFIC_REDOSING"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [
+        "38",
+        "5",
+        "36.5",
+        "37.5",
+        "37.5",
+        "38",
+        "22",
+        "24",
+        "38"
+      ],
+      "srt_number_tokens": [
+        "38",
+        "5",
+        "36.5",
+        "37.5",
+        "37.5",
+        "38",
+        "22",
+        "24",
+        "38"
+      ],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 6.4,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0667,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 8.4,
+          "timeline_seconds": 6,
+          "speed_factor": 1.4,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 7.0,
+          "timeline_seconds": 5,
+          "speed_factor": 1.4,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 6.52,
+          "timeline_seconds": 5,
+          "speed_factor": 1.304,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 6.96,
+          "timeline_seconds": 5,
+          "speed_factor": 1.392,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 10.68,
+          "timeline_seconds": 8,
+          "speed_factor": 1.335,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 9.6,
+          "timeline_seconds": 7,
+          "speed_factor": 1.3714,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 7.36,
+          "timeline_seconds": 5,
+          "speed_factor": 1.472,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 11.88,
+          "timeline_seconds": 8,
+          "speed_factor": 1.485,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 6.72,
+          "timeline_seconds": 5,
+          "speed_factor": 1.344,
+          "requires_close_listen": true
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

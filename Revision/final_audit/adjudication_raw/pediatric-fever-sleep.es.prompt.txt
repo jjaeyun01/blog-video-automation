@@ -1,0 +1,79 @@
+Independently adjudicate a disputed finding from a pediatric short's first Gemini audit.
+Be conservative, but do not amplify a false-positive accusation. Judge the *specific finding*,
+not whether the whole video is perfect. A finding about omitted content needs proof that the
+omission creates a materially unsafe instruction in this topic. A source article may itself contain
+unsafe advice; independent safety takes priority. If the supplied transcript is insufficient to
+verify an audiovisual claim, recommend WARN. Respond in Korean using the JSON schema.
+Review ONLY the CURRENT revised script below. The human FAIL feedback describes an OLD video and
+must not itself determine the revised video's status. If FIRST AUDIT FINDINGS is empty but a
+dimension was WARN, adjudicate that dimension from the first audit summary and limitations.
+
+VIDEO ID: pediatric-fever-sleep.es
+ACTUAL FINAL SCRIPT:
+Scene 1: Si su hijo no responde al intentar despertarlo enérgicamente, vaya a urgencias de inmediato.
+Scene 2: Dormir más tras fiebre alta puede ser parte de la recuperación.
+Scene 3: Después de la fiebre, el sueño prolongado puede ser normal para la recuperación, pero observe si es inusualmente difícil de despertar o si su respuesta es reducida.
+Scene 4: Verifique la respiración regular, el color normal de la cara y los labios, y una postura natural.
+Scene 5: Si su hijo está inusualmente difícil de despertar o su respuesta es reducida, evalúelo de inmediato.
+Scene 6: Si cuesta despertarlo, busque atención urgente. Dé líquidos solo cuando esté completamente alerta.
+Scene 7: Ofrezca agua y no suspenda antibióticos recetados sin consejo médico.
+Scene 8: Dé los medicamentos recetados exactamente como se indicaron.
+Scene 9: Vaya a urgencias por falta de respuesta, respiración irregular, piel azul o letargo severo.
+Scene 10: Si el letargo persiste o le preocupa después de un sueño adecuado, consulte a su pediatra para un reexamen.
+FIRST AUDIT FINDINGS:
+[]
+FIRST AUDIT OVERALL/DIMENSIONS: PASS / PASS / WARN / PASS
+FIRST AUDIT SUMMARY: 이 비디오는 스페인어로 된 소아과 발열 및 수면 관련 콘텐츠입니다. 전반적으로 의학적으로 정확하고 시청각적으로 완전합니다. 특히, 출처에서 제시된 '고열 후 3-4시간의 깊은 잠은 정상'이라는 문구를 생략하고, '깨우기 어렵거나 반응이 감소하면 즉시 평가'하도록 권고하여, 소아과 안전 지침에 따라 응급 상황에 대한 조언을 강화했습니다. 이는 출처 충실도 측면에서는 차이가 있지만, 의학적 정확도와 환자 안전 측면에서는 긍정적인 개선입니다. 약물 투여 방식(컵 사용) 및 수면 자세(유아 아님)는 적절하게 묘사되었습니다. 전반적으로 안전하고 신뢰할 수 있는 콘텐츠입니다.
+FIRST AUDIT LIMITATIONS: ["비디오는 출처에서 언급된 '고열 후 3-4시간 정도의 깊은 잠은 정상적'이라는 정보를 생략했습니다. 이는 안전을 위해 대처 지침을 강화한 것으로 판단됩니다.", "비디오는 '깨우기 어렵거나 반응이 감소하면 즉시 평가'하도록 권고하여, 출처의 '6시간 가까이 깨지 않는다면 깨워 물을 먹여보라'는 지침보다 더 보수적이고 즉각적인 조언을 제공합니다. 이는 안전을 위한 긍정적인 변경입니다."]
+HUMAN FAIL FEEDBACK THAT MOTIVATED THE REVISION:
+12–35초의 ‘3–4시간 깊은 잠은 정상, 6시간 가까이 깨지 않으면 확인’과 46–60초의 ‘6시간 이상 처짐/다음 날에도 지속되면 진료’는 근거 있는 안전 판별 기준이 아닙니다. 수면 시간으로 정상 여부를 정하지 말고, 평소와 달리 깨우기 어렵거나 반응이 떨어지면 시간과 관계없이 즉시 평가받도록 고쳐 주세요. 추가 노트: 처음에 무반응 시 응급실을 권하더라도 뒤의 시간 기준이 판단을 혼란스럽게 합니다. 정상적으로 깨고 반응하는 회복기 피로와 의식 저하를 구분하고, 물은 충분히 깨어 안전하게 삼킬 수 있을 때만 먹이도록 안내해 주세요.
+SOURCE ARTICLE EXCERPT:
+의학 감수:
+안상현, MD
+콘텐츠 편집:
+김명찬, MD
+이 게시물은 실제 의료 검토자의 질의응답 경험을 각색한 것입니다. 이 콘텐츠는 정보 제공 목적으로만 제공되며 의학적 조언을 구성하지 않습니다. 건강 관련 문제나 건강 또는 치료와 관련된 결정을 내리기 전에 항상 자격을 갖춘 의료 전문가와 상담하시기 바랍니다.
+질문:
+최근 아이가 병원에서 목이 조금 붓고 콧물이 있다는 진단을 받아 항생제와 해열제를 처방받았습니다. 새벽에 열이 40도까지 올라가서 해열제를 먹였고, 다행히 오늘 점심 무렵부터는 정상 체온으로 떨어졌습니다. 밥도 잘 먹고 잘 놀 정도로 컨디션은 아주 좋았습니다.
+그런데 오후 3시부터 낮잠을 자기 시작하더니 지금까지 잠에 취한 듯 일어나지를 못합니다. 깨우면 짜증을 내면서 계속 자려고만 하는데, 고열 이후 이렇게 길게 낮잠을 자도 괜찮은 건가요?
+답변:
+고열을 앓고 난 후 아이가 평소보다 길게 낮잠을 자면 많이 걱정되시겠지만, 이는 몸이 회복하기 위한 자연스러운 과정일 수 있습니다.
+현재 아이의 상태는 긍정적인 신호가 많습니다. 체온이 정상으로 돌아왔고 낮 동안 컨디션이 좋았다는 점을 고려할 때, 40도에 달하는 고열을 겪은 후 소모된 체력을 회복하기 위해 깊은 잠이 필요한 상태로 보입니다. 또한, 깨웠을 때 짜증을 낸다는 것은 아이의 의식이 있다는 증거이므로 당장 크게 걱정하지 않으셔도 됩니다.
+다만, 아이가 자는 동안 다음 사항들을 확인해 주시기 바랍니다.
+1분간 관찰했을 때 호흡이 규칙적이고 안정적인지
+얼굴색과 입술색이 평소처럼 정상적인지
+몸이 비정상적으로 축 늘어지지 않고 자연스러운 수면 자세를 취하고 있는지
+일반적으로 고열 후 3~4시간 정도의 깊은 잠은 정상적입니다. 하지만 6시간 가까이 깨지 않는다면 아이를 확실하게 깨워 의식을 확인하고, 탈수 예방을 위해 물이라도 조금씩 먹여보시는 것이 좋습니다. 또한 처방받으신 항생제는 임의로 중단하지 마시고 꾸준히 복용하게 해주세요.
+🚨 다음과 같은 증상이 나타나면 즉시 응급실로 가셔야 합니다:
+• 강하게 깨워도 전혀 반응이 없는 경우
+• 호흡이 불규칙하거나 비정상적으로 빠른 경우
+• 입술이나 얼굴이 창백해지거나 파랗게 변하는 청색증이 나타나는 경우
+• 6시간 이상 전혀 깨어나지 못하고 처지는 경우
+충분히 수면을 취한 후 내일 아침에도 아이가 기력이 없거나 처짐 증상이 지속된다면, 소아청소년과에 방문하여 다시 진료를 받아보시기를 권장합니다.
+아이의 건강을 모니터링할 때 더 명확한 안내와 안심을 위해, FeverCoach 앱이 항상 도움을 드립니다.
+fevercoach.us
+Apple App Store
+Google Play
+🌐 다른 언어로 보기:
+English
+·
+Español
+ADJUDICATED RULES AND PRIMARY-SOURCE FACTS:
+NICE NG143 https://www.nice.org.uk/guidance/ng143/chapter/recommendations : use antipyretics for
+distress, do not give paracetamol and ibuprofen simultaneously; only consider alternating if
+distress persists or recurs before next dose. A short video need not reproduce every source detail.
+The same NICE guidance treats a child with fever who does not wake, or if roused does not stay awake,
+as high risk; a clock-based "wait 3-4/6 hours" reassurance is not a safe replacement for checking
+responsiveness. A more conservative seek-care instruction is not an unsafe source contradiction.
+Medicines for Children https://www.medicinesforchildren.org.uk/medicines/oseltamivir-for-influenza-flu/ :
+for oseltamivir specifically, vomiting less than 30 minutes after a dose permits repeating the same
+dose; after more than 30 minutes, do not repeat. The source article's one-hour repeat rule differs.
+Asking the prescriber or pharmacist before giving an additional dose is conservative and does not
+itself tell a parent to omit a regular scheduled dose.
+FeverCoach reviewer adjudication: omission from a 60-second short is not CAPTION_OMISSION unless
+spoken information is absent from visible captions. Do not classify an unrelated source detail as a
+high-risk omission if the video does not advise stopping or contradicting that treatment. Do not
+force an unsafe source instruction back into a revision just for source fidelity. Three loose stools
+alone are not always an emergency; assess blood, severe pain, repeated watery diarrhea, dehydration,
+and appearance in context. A short video need not list every red flag if the decisive escalation is
+still present. Distinguish a recommendation from a warning against an action.

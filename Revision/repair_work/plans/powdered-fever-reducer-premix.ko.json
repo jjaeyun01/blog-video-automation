@@ -1,0 +1,71 @@
+{
+  "repairs": [
+    {
+      "scene": 5,
+      "corrected_medical_claim": "Powdered fever reducer should be mixed with water immediately before administration; if pre-mixing is considered, consult a pharmacist for specific product instructions.",
+      "corrected_narration": "가루 해열제는 복용 직전에 타서 바로 먹이는 것이 가장 좋으며, 부득이한 경우 약사에게 확인하세요.",
+      "caption_chunks": [
+        "가루 해열제는 복용 직전에 타서 바로 먹이는 것이 가장 좋으며,",
+        "부득이한 경우 약사에게 확인하세요."
+      ],
+      "replace_overlays": true,
+      "overlays": [],
+      "regenerate_visual": true,
+      "visual_prompt_addendum": "Remove the visual timer. Instead, a subtle question mark or a generic pharmacist icon appears above the container, indicating the need to consult a pharmacist for specific instructions.",
+      "reason_ko": "약명·제형 확인 없이 미리 탄 가루 해열제를 '1~2시간 내 복용하고 냉장 보관'하도록 공통 기준을 제시하는 것은 제품별 안정성과 보관법이 달라 임의 기준이 될 수 있습니다. 복용 직전 혼합하거나 약사에게 해당 약의 방법을 확인하도록 수정했습니다. 시각적 타이머는 이 임의 기준을 강조하므로 재생성합니다."
+    },
+    {
+      "scene": 6,
+      "corrected_medical_claim": "Administer immediately after mixing, or consult a pharmacist for specific product instructions if pre-mixing is considered.",
+      "corrected_narration": "가루 해열제는 복용 직전에 타서 바로 먹이는 것이 가장 좋으며, 부득이한 경우 약사에게 확인하세요.",
+      "caption_chunks": [
+        "가루 해열제는 복용 직전에 타서 바로 먹이는 것이 가장 좋으며,",
+        "부득이한 경우 약사에게 확인하세요."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": true,
+      "visual_prompt_addendum": "On the right path, remove visual cues for refrigeration and opaque container. Instead, show the character with a subtle question mark or a generic pharmacist icon nearby, representing the need to consult a pharmacist for specific instructions if pre-mixing is considered.",
+      "reason_ko": "약명·제형 확인 없이 미리 탄 가루 해열제를 '1~2시간 내 복용하고 냉장 보관'하도록 공통 기준을 제시하는 것은 제품별 안정성과 보관법이 달라 임의 기준이 될 수 있습니다. 복용 직전 혼합하거나 약사에게 해당 약의 방법을 확인하도록 수정했습니다. 시각적 '조건부 미리 타두기' 경로는 이 임의 기준을 암시하므로 재생성합니다."
+    },
+    {
+      "scene": 8,
+      "corrected_medical_claim": "Mix with lukewarm or room temperature water immediately before administering.",
+      "corrected_narration": "복용 직전에 미지근하거나 실온의 물에 타서 바로 먹이는 것이 가장 좋습니다.",
+      "caption_chunks": [
+        "복용 직전에 미지근하거나 실온의 물에 타서",
+        "바로 먹이는 것이 가장 좋습니다."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "이 장면의 내레이션은 '복용 직전에 미지근하거나 실온의 물에 타서 바로 먹이는 것이 가장 좋습니다'로, 가루 해열제 복용의 올바른 방법을 제시하고 있습니다. 이는 QA 피드백의 '직전 혼합을 권하는 핵심은 적절합니다'와 일치하며, 미리 타두는 것에 대한 임의 기준을 제시하지 않으므로 내러티브 및 시각적 변경이 필요하지 않습니다."
+    }
+  ],
+  "video_id": "powdered-fever-reducer-premix.ko",
+  "model": "gemini-2.5-flash",
+  "source_issues": [
+    {
+      "scene": 5,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초 전후: 약명·제형 확인 없이 미리 탄 가루 해열제를 '1~2시간 내 복용하고 냉장 보관'하도록 공통 기준을 제시합니다. 제품·조제 구성에 따라 안정성과 보관법이 달라 이 임의 기준을 삭제하고, 복용 직전 혼합하거나 약사에게 해당 약의 방법을 확인하도록 수정해 주세요. 추가 노트: 직전 혼합을 권하는 핵심은 적절합니다. 물의 양과 온도 역시 해당 제품 설명서를 따르고, 한 번에 다 먹을 수 있는 소량에 섞어 남은 약이 없는지 확인하는 장면을 권합니다.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-18.mp4"
+    },
+    {
+      "scene": 6,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초 전후: 약명·제형 확인 없이 미리 탄 가루 해열제를 '1~2시간 내 복용하고 냉장 보관'하도록 공통 기준을 제시합니다. 제품·조제 구성에 따라 안정성과 보관법이 달라 이 임의 기준을 삭제하고, 복용 직전 혼합하거나 약사에게 해당 약의 방법을 확인하도록 수정해 주세요. 추가 노트: 직전 혼합을 권하는 핵심은 적절합니다. 물의 양과 온도 역시 해당 제품 설명서를 따르고, 한 번에 다 먹을 수 있는 소량에 섞어 남은 약이 없는지 확인하는 장면을 권합니다.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-18.mp4"
+    },
+    {
+      "scene": 8,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초 전후: 약명·제형 확인 없이 미리 탄 가루 해열제를 '1~2시간 내 복용하고 냉장 보관'하도록 공통 기준을 제시합니다. 제품·조제 구성에 따라 안정성과 보관법이 달라 이 임의 기준을 삭제하고, 복용 직전 혼합하거나 약사에게 해당 약의 방법을 확인하도록 수정해 주세요. 추가 노트: 직전 혼합을 권하는 핵심은 적절합니다. 물의 양과 온도 역시 해당 제품 설명서를 따르고, 한 번에 다 먹을 수 있는 소량에 섞어 남은 약이 없는지 확인하는 장면을 권합니다.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-18.mp4"
+    }
+  ]
+}

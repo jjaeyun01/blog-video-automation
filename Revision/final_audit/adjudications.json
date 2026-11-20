@@ -1,0 +1,35 @@
+{
+  "baby-enteritis-medicine-stop.en": {
+    "status": "PASS",
+    "basis": "second_gemini",
+    "reason_ko": "2차 Gemini가 1차의 '무른 변 3회만으로 응급은 아니다' 지적을 원 피드백 기준과 위험징후 문맥에 비추어 무효로 재판정했습니다. 1차 장면 9의 numbers_and_units_match=false도 음성·자막 숫자 불일치가 아니라 출처 해석을 잘못 넣은 것입니다."
+  },
+  "baby-enteritis-medicine-stop.ko": {
+    "status": "PASS",
+    "basis": "second_gemini",
+    "reason_ko": "2차 Gemini가 처방약 중단·재시작을 임의로 지시하지 않고 의료진에게 확인하도록 한 수정안을 더 보수적이고 안전하다고 재판정했습니다."
+  },
+  "pediatric-fever-alternating-meds.en": {
+    "status": "PASS",
+    "basis": "second_gemini",
+    "reason_ko": "2차 Gemini가 중이염 항생제 지침의 생략만으로 해열제 교차 복용 영상이 안전하지 않다고 볼 근거는 없다고 재판정했습니다. 영상은 항생제 중단을 권하지 않습니다."
+  },
+  "pediatric-tamiflu-dosing-flexibility.es": {
+    "status": "PASS",
+    "basis": "second_gemini",
+    "reason_ko": "2차 Gemini가 구토 후 추가 복용 전에 처방 의료진·약사에게 확인하도록 한 안내를 보수적이고 안전하다고 재판정했습니다. 원문의 일률적 1시간 재투여는 오셀타미비르 약물별 30분 기준과 상충합니다.",
+    "reference": "https://www.medicinesforchildren.org.uk/medicines/oseltamivir-for-influenza-flu/"
+  },
+  "pediatric-tamiflu-dosing-flexibility.ko": {
+    "status": "PASS",
+    "basis": "second_gemini",
+    "reason_ko": "새 영상의 오셀타미비르 구토 후 30분 기준은 약물별 지침에 부합하며, 원문 블로그의 일률적 1시간 기준보다 안전하다고 2차 Gemini가 재판정했습니다.",
+    "reference": "https://www.medicinesforchildren.org.uk/medicines/oseltamivir-for-influenza-flu/"
+  },
+  "pediatric-fever-sleep.es": {
+    "status": "PASS",
+    "basis": "second_gemini",
+    "reason_ko": "2차 Gemini가 원문의 수면 시간에 따른 안심 기준을 제거하고 깨우기 어려움·반응 저하 시 즉시 진료를 안내한 변경을 안전한 수정으로 판정했습니다. 1차 출처 충실도 WARN은 의학적 결함이 아닙니다.",
+    "reference": "https://www.nice.org.uk/guidance/ng143/chapter/recommendations"
+  }
+}

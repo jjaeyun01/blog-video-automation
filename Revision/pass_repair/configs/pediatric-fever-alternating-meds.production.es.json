@@ -1,0 +1,542 @@
+{
+  "schema_version": 1,
+  "slug": "pediatric-fever-alternating-meds",
+  "title": "Fiebre Pediátrica: Guía para Alternar Medicamentos",
+  "source": "https://www.fevercoach.us/ko/post/40kg-타이레놀-시럽-용량-교차복용",
+  "language": "es",
+  "character_image": null,
+  "aspect_ratio": "9:16",
+  "resolution": "720p",
+  "fps": 30,
+  "disclaimer": "Esta información no sustituye el consejo médico. Consulte siempre a un profesional de la salud calificado.",
+  "metadata": {
+    "multilingual": true,
+    "languages": [
+      "ko",
+      "en",
+      "es"
+    ],
+    "medical_facts": [
+      {
+        "claim": "If fever persists after administering Brufen (ibuprofen/dexibuprofen), Tylenol (acetaminophen) can be given as an additional or alternating medication, as they contain different active ingredients.",
+        "numeric_values": [],
+        "safety_qualification": "This applies when the fever persists despite the initial medication."
+      },
+      {
+        "claim": "For a child weighing 40kg, the recommended dose of Tylenol syrup (at a 32mg/mL concentration) is 15mL, which corresponds to 480mg of acetaminophen.",
+        "numeric_values": [
+          "40kg",
+          "32mg/mL",
+          "15mL",
+          "480mg"
+        ],
+        "safety_qualification": "Always confirm the acetaminophen concentration on the specific medicine bottle. The effective dose range is 400-600mg (12.5-19mL)."
+      },
+      {
+        "claim": "Tylenol (acetaminophen) can be administered every 4 to 6 hours, with a maximum of 5 doses per day.",
+        "numeric_values": [
+          "4 hours",
+          "6 hours",
+          "5 doses"
+        ],
+        "safety_qualification": "Ensure proper dosing intervals are maintained."
+      },
+      {
+        "claim": "When alternating with Brufen (ibuprofen/dexibuprofen), ensure a minimum interval of 6 to 8 hours between doses of Brufen itself.",
+        "numeric_values": [
+          "6 hours",
+          "8 hours"
+        ],
+        "safety_qualification": "This interval applies to doses of the same active ingredient (Brufen)."
+      },
+      {
+        "claim": "Antibiotics prescribed for otitis media should be taken for the entire prescribed duration and not stopped prematurely.",
+        "numeric_values": [],
+        "safety_qualification": "Discontinuing antibiotics early can lead to incomplete treatment."
+      },
+      {
+        "claim": "Consult a pediatrician if fever persists for more than 48 hours despite alternating antipyretics, or if the child's ear pain worsens.",
+        "numeric_values": [
+          "48 hours"
+        ],
+        "safety_qualification": "These are signs that require professional medical evaluation."
+      },
+      {
+        "claim": "Use a dosing syringe or measuring cup provided by the pharmacy for accurate medication administration.",
+        "numeric_values": [],
+        "safety_qualification": "Accurate measurement is crucial for safe and effective dosing."
+      }
+    ],
+    "source_excerpt": "의학 감수:\n안상현, MD\n콘텐츠 편집:\n김명찬, MD\n이 게시물은 실제 의료 검토자의 질의응답 경험을 각색한 것입니다. 이 콘텐츠는 정보 제공 목적으로만 제공되며 의학적 조언을 구성하지 않습니다. 건강 관련 문제나 건강 또는 치료와 관련된 결정을 내리기 전에 항상 자격을 갖춘 의료 전문가와 상담하시기 바랍니다.\n질문:\n아이가 중이염으로 항생제와 약을 먹고 있습니다. 병원에서 처방해주신 부루펜 계열 해열제를 먹였는데 열이 안 떨어져서요. 평소에는 알약을 먹는데 지금 집에 타이레놀 알약이 없고 시럽(물약)만 있습니다. 지금 바로 타이레놀 시럽으로 추가 복용(교차 복용)을 해도 될까요? 아이 체중이 40kg인데 용량을 어느 정도 먹이면 될지 궁금합니다.\n답변:\n안녕하세요. 아이가 중이염 치료 중인데 열이 내리지 않아 걱정이 많으시겠습니다.\n결론부터 말씀드리면, 부루펜 복용 후 열이 떨어지지 않는다면 타이레놀 추가 복용(교차 복용)이 가능합니다. 부루펜(이부프로펜/덱시부프로펜)과 타이레놀(아세트아미노펜)은 서로 다른 해열제 성분이므로, 마지막 부루펜 복용 후에도 열이 지속된다면 타이레놀을 먹이실 수 있습니다.\n40kg 아이의 타이레놀 시럽 권장 용량\n• 필요 성분량: 400~600mg\n• 타이레놀 시럽(32mg/mL 농도 기준): 12.5~19mL\n• 권장 복용량: 15mL (480mg)\n• 복용 간격: 4~6시간 간격 (하루 최대 5회까지만 복용 가능)\n정확한 투약을 위해 약국에서 받은 투약용 주사기나 계량컵을 사용하여 용량을 맞춰주시기 바랍니다.\n⚠️ 복용 시 주의 및 확인사항\n가지고 계신 해열제 병에 '아세트아미노펜 32mg/mL'라고 표시되어 있는지 농도를 반드시 확인해 주세요.\n처방받은 부루펜 계열 약과 교대로 주셔도 되지만, 같은 성분인 부루펜은 다음 복용까지 최소 6~8시간의 간격을 유지하셔야 합니다.\n마지막으로, 중이염 치료를 위한 항생제는 임의로 중단하지 마시고 처방받은 기간 동안 끝까지 복용해야 합니다. 해열제를 교차 복용했음에도 열이 48시간 이상 지속되거나 아이가 호소하는 귀 통증이 더 심해진다면, 정확한 귀 상태와 발열 원인 평가를 위해 소아청소년과에 방문하여 재진료를 받으시길 권장합니다.\n아이의 건강을 모니터링할 때 더 명확한 안내와 안심을 위해, FeverCoach 앱이 항상 도움을 드립니다.\nfevercoach.us\nApple App Store\nGoogle Play\n🌐 다른 언어로 보기:\nEnglish\n·\nEspañol",
+    "visual_system": "fevercoach-explainer-v3",
+    "character_mode": "automatic",
+    "character_concept": {
+      "subject": "Medicine Syrup Bottle",
+      "source_basis": "The article details specific dosages and concentrations for Tylenol syrup, making the syrup bottle a central and tangible element.",
+      "visual_identity": "A child-friendly, translucent amber syrup bottle with a clear, blank measuring cap and smooth, rounded edges.",
+      "primary_color": "Translucent amber",
+      "surface_texture": "Smooth, polished plastic"
+    }
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "title": "Cuando la Fiebre Persiste",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "¿Preocupado si la fiebre de su hijo no baja después de la medicación?",
+      "subtitle": "¿Preocupado si la fiebre de su hijo no baja después de la medicación?",
+      "prompt": "A childa completely blank and unmarked surfaces slightly flushed forehead in the background, looking uncomfortable. The child's hand and thermometer remain mostly stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "red_flag",
+      "medical_claim": "Fever may persist despite initial antipyretic medication.",
+      "asset_prompt": "A childa completely blank and unmarked surfaces slightly flushed forehead in the background. Clean, medical illustration style. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [
+        {
+          "type": "label",
+          "from": [
+            0.04,
+            0.06
+          ],
+          "to": [
+            0.04,
+            0.06
+          ],
+          "label_position": [
+            0.5,
+            0.68
+          ],
+          "color": "#E5482F",
+          "text": "39.5°C"
+        }
+      ],
+      "caption_chunks": [
+        "¿Preocupado si la fiebre de su hijo",
+        "no baja después de la medicación?"
+      ],
+      "narrative_role": "hook",
+      "shot_design": {
+        "camera_profile": "macro_dive",
+        "beat_one": "0.0-1.5 second establishing camera move: A digital thermometer displaying a high temperature (e.g., an unlabeled threshold) in a child's hand, filling the midground.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: Camera slowly dives into the thermometer screen, showing the temperature value clearly, then subtly shifts focus to a child's forehead in the background, looking uncomfortable.",
+        "payoff_frame": "4.5-6.0 second clear final hold: A stable close-up on the child's slightly flushed forehead, conveying persistent fever.",
+        "depth_layers": "Foreground: blurred fingers holding thermometer. Midground: clear digital thermometer. Background: child's face.",
+        "overlay_safe_zone": "Upper left quadrant, clear of the child's face and thermometer screen.",
+        "sound_cues": "soft electronic beep, gentle sigh",
+        "transition_out": "A soft fade to white, suggesting a shift in focus."
+      }
+    },
+    {
+      "index": 2,
+      "title": "Dos Ingredientes Diferentes",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Ibuprofeno y paracetamol son tipos diferentes de antifebriles.",
+      "subtitle": "Ibuprofeno y paracetamol son tipos diferentes de antifebriles.",
+      "prompt": "A translucent amber medicine syrup bottle stands in the midground. A distinctively shaped blue medicine bottle slides in from the left and stops beside the amber bottle. Both bottles remain stationary after sliding. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "comparison",
+      "medical_claim": "Ibuprofen (Brufen) and acetaminophen (Tylenol) are different types of fever reducers.",
+      "asset_prompt": "Two distinct medicine syrup bottles, one translucent amber and one blue, standing side-by-side on a clean white surface. Clean, medical illustration style. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [
+        {
+          "type": "label",
+          "from": [
+            0.04,
+            0.06
+          ],
+          "to": [
+            0.04,
+            0.06
+          ],
+          "label_position": [
+            0.25,
+            0.68
+          ],
+          "color": "#007BFF",
+          "text": "Tylenol (Paracetamol)"
+        },
+        {
+          "type": "label",
+          "from": [
+            0.04,
+            0.06
+          ],
+          "to": [
+            0.04,
+            0.06
+          ],
+          "label_position": [
+            0.75,
+            0.68
+          ],
+          "color": "#007BFF",
+          "text": "Brufen (Ibuprofeno)"
+        }
+      ],
+      "caption_chunks": [
+        "Ibuprofeno y paracetamol son",
+        "tipos diferentes de antifebriles."
+      ],
+      "narrative_role": "context",
+      "shot_design": {
+        "camera_profile": "lateral_reveal",
+        "beat_one": "0.0-1.5 second establishing camera move: A single translucent amber medicine syrup bottle (the character) stands prominently in the midground.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: A second, distinctively shaped blue medicine bottle (representing ibuprofen) slides in from the left, stopping beside the amber bottle, creating a clear comparison.",
+        "payoff_frame": "4.5-6.0 second clear final hold: Both bottles stand side-by-side, clearly distinct in shape and color, on a clean white surface.",
+        "depth_layers": "Foreground: subtle reflection on the surface. Midground: two medicine bottles. Background: soft, blurred medical environment.",
+        "overlay_safe_zone": "Upper right quadrant, clear of the bottles.",
+        "sound_cues": "gentle slide, soft click",
+        "transition_out": "A quick, clean cut to the next scene."
+      }
+    },
+    {
+      "index": 3,
+      "title": "¿Es Seguro Alternar?",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "No administre ambos antipiréticos juntos ni los alterne por horario fijo. Consulte si persiste el malestar.",
+      "subtitle": "No administre ambos antipiréticos juntos ni los alterne por horario fijo. Consulte si persiste el malestar.",
+      "prompt": "Two distinct medicine syrup bottles, one amber and one blue, stand slightly separated. A stylized, glowing question mark materializes and hovers between them. The camera slowly arcs around the bottles and question mark. The bottles remain stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "hook",
+      "medical_claim": "No administre ambos antipiréticos juntos ni los alterne por horario fijo. Consulte si persiste el malestar.",
+      "asset_prompt": "Two distinct medicine syrup bottles, one amber and one blue, standing slightly separated on a clean surface, with a stylized question mark hovering between them. Clean, medical illustration style. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "No administre ambos antipiréticos juntos ni los alterne por horario fijo. Consulte si persiste el malestar."
+      ],
+      "narrative_role": "misconception",
+      "shot_design": {
+        "camera_profile": "parallax_arc",
+        "beat_one": "0.0-1.5 second establishing camera move: The two distinct medicine bottles from the previous scene are centered, slightly separated.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: A stylized, glowing question mark materializes and hovers between the two bottles, as the camera arcs slowly around them, emphasizing the uncertainty.",
+        "payoff_frame": "4.5-6.0 second clear final hold: The question mark is clearly visible between the two stationary bottles, framed from a slightly elevated angle.",
+        "depth_layers": "Foreground: subtle light reflections. Midground: two medicine bottles and a glowing question mark. Background: soft, blurred light.",
+        "overlay_safe_zone": "Upper center, above the question mark.",
+        "sound_cues": "gentle hum, soft chime",
+        "transition_out": "A subtle zoom out, preparing for an internal view."
+      }
+    },
+    {
+      "index": 4,
+      "title": "Mecanismos Distintos",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Cada fármaco tiene un intervalo mínimo y un límite diario distinto; anote cada dosis y hora.",
+      "subtitle": "Cada fármaco tiene un intervalo mínimo y un límite diario distinto; anote cada dosis y hora.",
+      "prompt": "A stylized, transparent human torso. Two distinct, colored energy pathways (blue and amber) animate simultaneously, originating from the mouth area and traveling to different, simplified internal target areas, both resulting in a subtle a completely blank and unmarked surface effect. The torso remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "mechanism",
+      "medical_claim": "Cada fármaco tiene un intervalo mínimo y un límite diario distinto; anote cada dosis y hora.",
+      "asset_prompt": "A stylized, transparent human torso showing simplified internal body systems, with two distinct, colored energy pathways originating from the mouth area and traveling to different internal target areas. Clean, medical illustration style. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "Cada fármaco tiene un intervalo mínimo y un límite diario distinto; anote cada dosis y hora."
+      ],
+      "narrative_role": "mechanism",
+      "shot_design": {
+        "camera_profile": "xray_push",
+        "beat_one": "0.0-1.5 second establishing camera move: A stylized, transparent human torso, showing a simplified internal body system.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: Two distinct, colored energy pathways (e.g., blue for ibuprofen, amber for acetaminophen) animate simultaneously, originating from the mouth area and traveling to different, simplified internal target areas (e.g., one to a nerve center, one to a blood vessel network), both resulting in a subtle an unmarked surface effect.",
+        "payoff_frame": "4.5-6.0 second clear final hold: Both pathways are fully illuminated, showing their distinct routes and target areas within the transparent torso.",
+        "depth_layers": "Foreground: subtle glow from pathways. Midground: transparent human torso with internal pathways. Background: dark, abstract medical background.",
+        "overlay_safe_zone": "Upper left and right quadrants, clear of the torso.",
+        "sound_cues": "soft pulsing, gentle whoosh",
+        "transition_out": "A smooth dissolve to a close-up on a specific object."
+      }
+    },
+    {
+      "index": 5,
+      "title": "Dosis de Tylenol para Niño de 40kg",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Incluso con 40 kilos, el volumen de jarabe de Tylenol depende de la concentración y las indicaciones del producto.",
+      "subtitle": "Incluso con 40 kilos, el volumen de jarabe de Tylenol depende de la concentración y las indicaciones del producto.",
+      "prompt": "Vertical 9:16 polished semi-stylized 3D pediatric medical scene about Dosis de Tylenol para Niño de 40kg. A calm upright child holds a small purpose-made translucent medicine dosing cup with a small amount of amber liquid. The child lifts the open cup to the lips, takes one gentle sip, lowers it, and swallows comfortably. A caregiver supports the child without holding any dosing implement. The medicine bottle remains closed on a distant table. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth. Keep every child fully clothed and the mood reassuring. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync, syringe, oral syringe, dosing syringe, plunger, needle, injection device, dropper, pipette, tube at mouth, medicine applicator at mouth",
+      "image": null,
+      "visual_type": "quantity",
+      "medical_claim": "Incluso con 40 kilos, el volumen de jarabe de Tylenol depende de la concentración y las indicaciones del producto.",
+      "asset_prompt": "Clean text-free vertical 9:16 reference image for Dosis de Tylenol para Niño de 40kg. An upright fully clothed child holds a small purpose-made translucent medicine dosing cup containing a little amber liquid. The cup is below the chin and clearly cup-shaped with a wide open rim. The caregiver's hands are empty. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth. Soft clinical daylight, reassuring 3D illustration. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [
+        {
+          "type": "label",
+          "text": "15mL (32mg/mL)",
+          "color": "#007BFF",
+          "from": [
+            0.04,
+            0.06
+          ],
+          "to": [
+            0.04,
+            0.06
+          ],
+          "label_position": [
+            0.75,
+            0.68
+          ]
+        }
+      ],
+      "caption_chunks": [
+        "Incluso con 40 kilos, el volumen de jarabe de Tylenol depende de la concentración y las indicaciones del producto."
+      ],
+      "narrative_role": "evidence",
+      "shot_design": {
+        "camera_profile": "top_down_drop",
+        "beat_one": "0.0-1.5 seconds: establish a calm, fully clothed upright child and caregiver.",
+        "beat_two": "1.5-4.5 seconds: the child independently lifts a wide open-rimmed medicine dosing cup, takes one small sip, and lowers it. The caregiver's hands remain empty.",
+        "payoff_frame": "4.5-6.0 seconds: hold on the child comfortable beside the lowered cup.",
+        "depth_layers": "Cup in foreground, child in midground, softly blurred room behind.",
+        "overlay_safe_zone": "Upper left quadrant remains visually quiet.",
+        "sound_cues": "Soft cup movement and one gentle swallow; no dialogue.",
+        "transition_out": "Slow reassuring pullback."
+      }
+    },
+    {
+      "index": 6,
+      "title": "Verifique la Concentración",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Revise principio activo, concentración, dosis y máximo diario; ante dudas, consulte al farmacéutico.",
+      "subtitle": "Revise principio activo, concentración, dosis y máximo diario; ante dudas, consulte al farmacéutico.",
+      "prompt": "The character (a translucent amber medicine syrup bottle) stands on a counter, its blank label facing the camera. A finger gently taps the blank label area, and the camera slowly zooms in on this area. The bottle remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "red_flag",
+      "medical_claim": "Revise principio activo, concentración, dosis y máximo diario; ante dudas, consulte al farmacéutico.",
+      "asset_prompt": "The character (a translucent amber medicine syrup bottle) stands on a counter, with a blank label facing the camera. A finger gently points to the label area. Clean, medical illustration style. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [
+        {
+          "type": "label",
+          "from": [
+            0.04,
+            0.06
+          ],
+          "to": [
+            0.04,
+            0.06
+          ],
+          "label_position": [
+            0.5,
+            0.68
+          ],
+          "color": "#E5482F",
+          "text": "Verificar 32mg/mL"
+        }
+      ],
+      "caption_chunks": [
+        "Revise principio activo, concentración, dosis y máximo diario; ante dudas, consulte al farmacéutico."
+      ],
+      "narrative_role": "decision",
+      "shot_design": {
+        "camera_profile": "pov_travel",
+        "beat_one": "0.0-1.5 second establishing camera move: The character (amber syrup bottle) stands on a counter, its blank label facing the camera.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: A finger gently taps the blank label area on the bottle, and the camera slowly zooms in on this area, emphasizing the importance of checking. The bottle remains stationary.",
+        "payoff_frame": "4.5-6.0 second clear final hold: A close-up on the blank label area of the bottle, with the finger still pointing, highlighting the space where concentration information should be.",
+        "depth_layers": "Foreground: finger. Midground: character bottle's label. Background: blurred counter.",
+        "overlay_safe_zone": "Upper center, above the label area.",
+        "sound_cues": "soft tap, gentle hum",
+        "transition_out": "A rapid cut to a different, abstract visual."
+      }
+    },
+    {
+      "index": 7,
+      "title": "Respete los Intervalos",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Dé Tylenol cada 4 a 6 horas, y Brufen cada 6 a 8 horas.",
+      "subtitle": "Dé Tylenol cada 4 a 6 horas, y Brufen cada 6 a 8 horas.",
+      "prompt": "Two stylized, blank clock faces, one with an amber border and one with a blue border, are presented side-by-side. On the amber clock, a segment from 4 to an unlabeled interval illuminates. Simultaneously, on the blue clock, a segment from 6 to an unlabeled interval illuminates. The camera tracks smoothly between the two clocks. The clocks remain stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "comparison",
+      "medical_claim": "Tylenol can be given every 4-6 hours, while Brufen needs 6-8 hours between doses.",
+      "asset_prompt": "Two stylized, blank clock faces, one with an amber border and one with a blue border, presented side-by-side. Clean, medical illustration style. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [
+        {
+          "type": "label",
+          "from": [
+            0.04,
+            0.06
+          ],
+          "to": [
+            0.04,
+            0.06
+          ],
+          "label_position": [
+            0.25,
+            0.68
+          ],
+          "color": "#007BFF",
+          "text": "Intervalo de 4-6 horas"
+        },
+        {
+          "type": "label",
+          "from": [
+            0.04,
+            0.06
+          ],
+          "to": [
+            0.04,
+            0.06
+          ],
+          "label_position": [
+            0.75,
+            0.68
+          ],
+          "color": "#007BFF",
+          "text": "Intervalo de 6-8 horas"
+        }
+      ],
+      "caption_chunks": [
+        "Dé Tylenol cada 4 a 6 horas,",
+        "y Brufen cada 6 a 8 horas."
+      ],
+      "narrative_role": "reassessment",
+      "shot_design": {
+        "camera_profile": "comparison_track",
+        "beat_one": "0.0-1.5 second establishing camera move: Two stylized, blank clock faces are presented side-by-side, each with a distinct color border (e.g., amber for Tylenol, blue for Brufen).",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: On the amber clock, a segment from 4 to 6 hours illuminates. Simultaneously, on the blue clock, a segment from 6 to 8 hours illuminates, clearly showing the different recommended intervals. The camera tracks smoothly between the two clocks.",
+        "payoff_frame": "4.5-6.0 second clear final hold: Both clocks are visible, with their respective interval segments brightly lit, emphasizing the distinct timing.",
+        "depth_layers": "Foreground: subtle glow from illuminated segments. Midground: two stylized clock faces. Background: clean, neutral backdrop.",
+        "overlay_safe_zone": "Upper center, above the clocks.",
+        "sound_cues": "soft tick-tock, gentle chime",
+        "transition_out": "A smooth zoom out, revealing a wider scene."
+      }
+    },
+    {
+      "index": 8,
+      "title": "Administración Correcta",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Dé el medicamento líquido indicado lentamente en un vaso dosificador.",
+      "subtitle": "Dé el medicamento líquido indicado lentamente en un vaso dosificador.",
+      "prompt": "Vertical 9:16 polished semi-stylized 3D pediatric medical scene about Administración Correcta. A calm upright child holds a small purpose-made translucent medicine dosing cup with a small amount of amber liquid. The child lifts the open cup to the lips, takes one gentle sip, lowers it, and swallows comfortably. A caregiver supports the child without holding any dosing implement. The medicine bottle remains closed on a distant table. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth. Keep every child fully clothed and the mood reassuring. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync, syringe, oral syringe, dosing syringe, plunger, needle, injection device, dropper, pipette, tube at mouth, medicine applicator at mouth, syringe, oral syringe, dosing syringe, plunger, needle, dropper, pipette, tube at mouth, medicine applicator at mouth",
+      "image": null,
+      "visual_type": "sequence",
+      "medical_claim": "Para un jarabe oral, siente al niño y mida con un vasito dosificador abierto. Nunca introduzca una vaso dosificador específico en la boca.",
+      "asset_prompt": "Clean text-free vertical 9:16 reference image for Administración Correcta. An upright fully clothed child holds a small purpose-made translucent medicine dosing cup containing a little amber liquid. The cup is below the chin and clearly cup-shaped with a wide open rim. The caregiver's hands are empty. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth. Soft clinical daylight, reassuring 3D illustration. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "Dé el medicamento líquido indicado lentamente en un vaso dosificador."
+      ],
+      "narrative_role": "action",
+      "shot_design": {
+        "camera_profile": "hero_pullback",
+        "beat_one": "0.0-1.5 seconds: establish a calm, fully clothed upright child and caregiver.",
+        "beat_two": "1.5-4.5 seconds: the child independently lifts a wide open-rimmed medicine dosing cup, takes one small sip, and lowers it. The caregiver's hands remain empty.",
+        "payoff_frame": "4.5-6.0 seconds: hold on the child comfortable beside the lowered cup.",
+        "depth_layers": "Cup in foreground, child in midground, softly blurred room behind.",
+        "overlay_safe_zone": "Upper left quadrant remains visually quiet.",
+        "sound_cues": "Soft cup movement and one gentle swallow; no dialogue.",
+        "transition_out": "Slow reassuring pullback."
+      }
+    },
+    {
+      "index": 9,
+      "title": "Cuándo Consultar al Médico",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Si la fiebre dura más de 48 horas o el dolor de oído empeora, vea a un pediatra.",
+      "subtitle": "Si la fiebre dura más de 48 horas o el dolor de oído empeora, vea a un pediatra.",
+      "prompt": "A stylized calendar page with the current day marked. The camera smoothly travels across the calendar, highlighting two consecutive days with a subtle red glow. Then, the view transitions to a stylized, transparent ear, where a subtle, pulsing red glow appears within the middle ear area. The calendar and ear remain stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "red_flag",
+      "medical_claim": "Consult a pediatrician if fever persists for over 48 hours or ear pain worsens.",
+      "asset_prompt": "A stylized calendar page with two consecutive days highlighted in red. Next to it, a transparent, anatomical illustration of an ear with a subtle red glow in the middle ear area. Clean, medical illustration style. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [
+        {
+          "type": "label",
+          "from": [
+            0.04,
+            0.06
+          ],
+          "to": [
+            0.04,
+            0.06
+          ],
+          "label_position": [
+            0.75,
+            0.68
+          ],
+          "color": "#E5482F",
+          "text": "Más de 48 horas"
+        }
+      ],
+      "caption_chunks": [
+        "Si la fiebre dura más de 48 horas",
+        "o el dolor de oído empeora,",
+        "vea a un pediatra."
+      ],
+      "narrative_role": "red_flag",
+      "shot_design": {
+        "camera_profile": "pov_travel",
+        "beat_one": "0.0-1.5 second establishing camera move: A stylized calendar page, with the current day marked, in the midground.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: The camera smoothly travels across the calendar, highlighting two consecutive days (representing 48 hours) with a subtle red glow. Then, the view transitions to a stylized, transparent ear, where a subtle, pulsing red glow appears within the middle ear area, indicating worsening pain.",
+        "payoff_frame": "4.5-6.0 second clear final hold: The transparent ear is clearly visible, with the pulsing red glow in the middle ear, emphasizing the warning sign.",
+        "depth_layers": "Foreground: subtle glow. Midground: calendar, then transparent ear. Background: blurred, neutral background.",
+        "overlay_safe_zone": "Upper right quadrant, clear of the ear.",
+        "sound_cues": "soft pulse, gentle throb",
+        "transition_out": "A quick, decisive cut to the final scene."
+      }
+    },
+    {
+      "index": 10,
+      "title": "Consulte a su Pediatra",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Si tiene inquietudes o los síntomas no mejoran, consulte a su pediatra.",
+      "subtitle": "Si tiene inquietudes o los síntomas no mejoran, consulte a su pediatra.",
+      "prompt": "The character (a translucent amber medicine syrup bottle) stands confidently. A stylized, friendly clinic icon (a building with a cross) slides in from the right and stops next to the character. The character subtly turns to face the clinic icon. The clinic icon remains stationary after sliding. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "takeaway",
+      "medical_claim": "Always consult your pediatrician for persistent concerns or worsening symptoms.",
+      "asset_prompt": "The character (a translucent amber medicine syrup bottle) stands confidently. A stylized, friendly clinic icon (a building with a cross) is next to it. Clean, medical illustration style. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "Si tiene inquietudes",
+        "o los síntomas no mejoran,",
+        "consulte a su pediatra."
+      ],
+      "narrative_role": "takeaway",
+      "shot_design": {
+        "camera_profile": "lateral_reveal",
+        "beat_one": "0.0-1.5 second establishing camera move: The character (amber syrup bottle) stands confidently in the center of the frame, looking reassuring.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: A stylized, friendly clinic icon (e.g., a building with a cross) slides in from the right, stopping next to the character, creating a clear visual path towards professional help. The character subtly turns to face the clinic icon.",
+        "payoff_frame": "4.5-6.0 second clear final hold: The character and the clinic icon stand side-by-side, clearly indicating the recommendation for consultation.",
+        "depth_layers": "Foreground: subtle ground texture. Midground: character bottle and clinic icon. Background: soft, bright, reassuring light.",
+        "overlay_safe_zone": "Upper center, above the character and icon.",
+        "sound_cues": "gentle whoosh, soft reassuring tone",
+        "transition_out": "A slow fade to black, concluding the explainer."
+      }
+    }
+  ]
+}

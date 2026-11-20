@@ -1,0 +1,58 @@
+{
+  "video_id": "pediatric-fever-alternating-meds.es",
+  "overall_verdict": "FAIL",
+  "reviewer": "Sam",
+  "human_feedback": [
+    {
+      "filename": "Jaeyoon-Lee-week8-Spanish-20.mp4",
+      "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+      "reason_ko": "11~23초: '함께 또는 번갈아 먹여도 되나요?'라는 질문 뒤에 작용 방식이 다르다는 설명만 있어, 동시 복용을 허용하는 것으로 오해할 수 있습니다. 두 약 동시 투여는 권하지 않으며, 단일제를 우선하고 교차복용은 지속되는 불편감·약별 간격/최대량을 확인한 계획에 한하도록 명확히 답해 주세요.",
+      "additional_ko": "추가 노트: 40kg에 Tylenol 15mL는 32mg/mL 제품이라면 480mg(12mg/kg)로 계산상 과량은 아닙니다. 농도를 읽기 쉽게 함께 표시하고, 제품별 최대량도 확인하도록 해 주세요. 계량컵과 경구용 주사기의 사용 설명·그림을 혼동하지 않게 맞춰 주세요."
+    }
+  ],
+  "issues": [
+    {
+      "scene": 3,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "11~23초: '함께 또는 번갈아 먹여도 되나요?'라는 질문 뒤에 작용 방식이 다르다는 설명만 있어, 동시 복용을 허용하는 것으로 오해할 수 있습니다. 두 약 동시 투여는 권하지 않으며, 단일제를 우선하고 교차복용은 지속되는 불편감·약별 간격/최대량을 확인한 계획에 한하도록 명확히 답해 주세요. 추가 노트: 40kg에 Tylenol 15mL는 32mg/mL 제품이라면 480mg(12mg/kg)로 계산상 과량은 아닙니다. 농도를 읽기 쉽게 함께 표시하고, 제품별 최대량도 확인하도록 해 주세요. 계량컵과 경구용 주사기의 사용 설명·그림을 혼동하지 않게 맞춰 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-20.mp4"
+    },
+    {
+      "scene": 4,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "11~23초: '함께 또는 번갈아 먹여도 되나요?'라는 질문 뒤에 작용 방식이 다르다는 설명만 있어, 동시 복용을 허용하는 것으로 오해할 수 있습니다. 두 약 동시 투여는 권하지 않으며, 단일제를 우선하고 교차복용은 지속되는 불편감·약별 간격/최대량을 확인한 계획에 한하도록 명확히 답해 주세요. 추가 노트: 40kg에 Tylenol 15mL는 32mg/mL 제품이라면 480mg(12mg/kg)로 계산상 과량은 아닙니다. 농도를 읽기 쉽게 함께 표시하고, 제품별 최대량도 확인하도록 해 주세요. 계량컵과 경구용 주사기의 사용 설명·그림을 혼동하지 않게 맞춰 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-20.mp4"
+    },
+    {
+      "scene": 5,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "11~23초: '함께 또는 번갈아 먹여도 되나요?'라는 질문 뒤에 작용 방식이 다르다는 설명만 있어, 동시 복용을 허용하는 것으로 오해할 수 있습니다. 두 약 동시 투여는 권하지 않으며, 단일제를 우선하고 교차복용은 지속되는 불편감·약별 간격/최대량을 확인한 계획에 한하도록 명확히 답해 주세요. 추가 노트: 40kg에 Tylenol 15mL는 32mg/mL 제품이라면 480mg(12mg/kg)로 계산상 과량은 아닙니다. 농도를 읽기 쉽게 함께 표시하고, 제품별 최대량도 확인하도록 해 주세요. 계량컵과 경구용 주사기의 사용 설명·그림을 혼동하지 않게 맞춰 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-20.mp4"
+    },
+    {
+      "scene": 6,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "11~23초: '함께 또는 번갈아 먹여도 되나요?'라는 질문 뒤에 작용 방식이 다르다는 설명만 있어, 동시 복용을 허용하는 것으로 오해할 수 있습니다. 두 약 동시 투여는 권하지 않으며, 단일제를 우선하고 교차복용은 지속되는 불편감·약별 간격/최대량을 확인한 계획에 한하도록 명확히 답해 주세요. 추가 노트: 40kg에 Tylenol 15mL는 32mg/mL 제품이라면 480mg(12mg/kg)로 계산상 과량은 아닙니다. 농도를 읽기 쉽게 함께 표시하고, 제품별 최대량도 확인하도록 해 주세요. 계량컵과 경구용 주사기의 사용 설명·그림을 혼동하지 않게 맞춰 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-20.mp4"
+    },
+    {
+      "scene": 8,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "11~23초: '함께 또는 번갈아 먹여도 되나요?'라는 질문 뒤에 작용 방식이 다르다는 설명만 있어, 동시 복용을 허용하는 것으로 오해할 수 있습니다. 두 약 동시 투여는 권하지 않으며, 단일제를 우선하고 교차복용은 지속되는 불편감·약별 간격/최대량을 확인한 계획에 한하도록 명확히 답해 주세요. 추가 노트: 40kg에 Tylenol 15mL는 32mg/mL 제품이라면 480mg(12mg/kg)로 계산상 과량은 아닙니다. 농도를 읽기 쉽게 함께 표시하고, 제품별 최대량도 확인하도록 해 주세요. 계량컵과 경구용 주사기의 사용 설명·그림을 혼동하지 않게 맞춰 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-20.mp4"
+    },
+    {
+      "scene": 8,
+      "category": "OTHER_VISUAL_ERROR",
+      "severity": "high",
+      "problem_ko": "사람 검토에서 지적된 시각적 안전 오류를 제거해야 합니다.",
+      "visual_prompt_addendum": "If depicting oral liquid medicine, use a clearly open-rimmed medicine cup at the lips. No syringe, plunger, needle, or injection motion near the mouth.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-20.mp4"
+    }
+  ]
+}

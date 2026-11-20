@@ -1,0 +1,10 @@
+{
+  "video_id": "pediatric-tamiflu-dosing-flexibility.ko",
+  "finding_valid": false,
+  "safety_severity": "none",
+  "recommended_status": "PASS",
+  "rationale_ko": "영상에서 구토 시 약 재복용 기준을 '30분 안에 토하면'으로 제시한 것은 소스 문서의 '1시간 이내'와 다르지만, 오셀타미비르(타미플루)에 대한 최신 의학적 가이드라인(예: Medicines for Children)에 따르면 30분 이내 구토 시 재복용이 허용되며 30분 이후에는 재복용하지 않는 것이 더 정확하고 안전한 지침입니다. 따라서 영상의 내용은 의학적으로 더 안전하고 정확한 정보를 제공하고 있으며, 소스 문서의 1시간 기준을 따르지 않은 것이 문제가 되지 않습니다. 오히려 소스의 1시간 기준은 오셀타미비르에 대해 덜 정확할 수 있습니다.",
+  "evidence_ko": "영상 스크립트 Scene 8: '먹고 30분 안에 토하면 같은 용량을 다시 주고, 그 뒤면 다음 복용까지 기다리세요. 또 토하면 문의하세요.' ADJUDICATED RULES 및 Medicines for Children 가이드라인에 따르면 오셀타미비르의 경우 복용 후 30분 미만 구토 시 재복용이 허용되며, 30분 초과 시에는 재복용하지 않습니다. 이는 소스 문서의 '1시간 이내' 기준과 다르지만, 영상의 30분 기준이 더 안전하고 정확합니다.",
+  "model": "gemini-2.5-flash",
+  "first_audit_verdict": "PASS"
+}

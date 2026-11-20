@@ -1,0 +1,446 @@
+{
+  "schema_version": 1,
+  "slug": "baby-formula-refusal-cold",
+  "title": "Baby Formula Refusal: When to See a Doctor",
+  "source": "https://www.fevercoach.us/ko/post/아기-감기-분유-거부-공복-시간",
+  "language": "en",
+  "character_image": null,
+  "aspect_ratio": "9:16",
+  "resolution": "720p",
+  "fps": 30,
+  "disclaimer": "This content is provided for informational purposes only and does not constitute medical advice. Always consult a qualified healthcare professional before making any health-related decisions or decisions about your health or treatment.",
+  "metadata": {
+    "multilingual": true,
+    "languages": [
+      "ko",
+      "en",
+      "es"
+    ],
+    "medical_facts": [
+      {
+        "claim": "Reduced formula intake (e.g., from 1000ml to 580ml) significantly increases dehydration risk in a 6-month-old.",
+        "numeric_values": [
+          "1000ml",
+          "580ml",
+          "6 months"
+        ],
+        "safety_qualification": "significant reduction in intake, requires attention"
+      },
+      {
+        "claim": "Dehydration signs in infants include less than one wet diaper in 8 hours, dry lips/tongue, or lack of tears when crying.",
+        "numeric_values": [
+          "8 hours"
+        ],
+        "safety_qualification": "observe for these signs at home"
+      },
+      {
+        "claim": "To encourage feeding during illness, offer small amounts (30-50ml) frequently (every 30 minutes).",
+        "numeric_values": [
+          "30ml",
+          "50ml",
+          "30 minutes"
+        ],
+        "safety_qualification": "if refusing larger amounts due to illness"
+      },
+      {
+        "claim": "Warm formula to body temperature for easier swallowing if a sore throat is suspected.",
+        "numeric_values": [],
+        "safety_qualification": "if cough causes sore throat discomfort"
+      },
+      {
+        "claim": "Seek immediate medical attention if an infant refuses feeding for over 12 hours, has no urination for over 8 hours, is lethargic, or shows signs of severe dehydration (very dry lips, sunken eyes/fontanelle).",
+        "numeric_values": [
+          "12 hours",
+          "8 hours"
+        ],
+        "safety_qualification": "urgent medical consultation recommended"
+      }
+    ],
+    "source_excerpt": "의학 감수:\n안상현, MD\n콘텐츠 편집:\n김명찬, MD\n이 게시물은 실제 의료 검토자의 질의응답 경험을 각색한 것입니다. 이 콘텐츠는 정보 제공 목적으로만 제공되며 의학적 조언을 구성하지 않습니다. 건강 관련 문제나 건강 또는 치료와 관련된 결정을 내리기 전에 항상 자격을 갖춘 의료 전문가와 상담하시기 바랍니다.\n질문:\n6개월 된 아기가 미열과 심한 기침, 콧물 등 감기 증상으로 인해 이유식을 중단한 상태입니다. 분유도 어제부터 평소 먹던 양의 반으로 줄었고(평소 1000ml 정도 먹는데 어제는 580ml 먹었습니다), 오늘 새벽 12시 40분쯤 80ml를 먹은 이후로 지금 11시간째 전혀 먹지 않고 있습니다. 원래는 새벽에도 1~2번은 먹던 아이입니다.\n기침이 심해서 목이 아파 안 먹는 것 같은데, 아기들은 공복 상태가 몇 시간까지 괜찮은가요? 어제 병원에 다녀오긴 했는데 다시 가봐야 할까요? 설사를 한 번 하고 조금 놀기도 했지만, 아파서 그런지 안겨서 계속 잠만 자려고 합니다.\n답변:\n6개월 아기가 11시간째 분유를 먹지 않고 있어 부모님께서 정말 걱정이 많으실 것 같습니다. 아기들이 감기에 걸렸을 때 식욕 부진이 오는 것은 흔한 일이지만, 현재 말씀해주신 수유량 감소는 주의가 필요한 수준입니다.\n우선 가정에서 아기의 탈수 증상이 없는지 확인해 보시는 것이 중요합니다.\n지난 8시간 동안 기저귀를 적실 정도의 소변을 보았는지 확인해 주세요.\n입술이나 혀가 마르지 않고 촉촉한지, 울 때 눈물이 잘 나는지 관찰해 주시기 바랍니다.\n수유를 위해 지금 당장 시도해 볼 수 있는 방법은 다음과 같습니다.\n한 번에 많이 먹이기보다 30~50ml씩 소량으로 30분 간격으로 자주 수유를 시도해 보세요.\n기침으로 인해 목이 아파 삼키기 힘들어할 수 있으므로, 분유를 체온 정도로 미지근하게 타서 주시면 목 넘김이 수월할 수 있습니다.\n젖병을 거부한다면 스푼이나 컵을 이용해 천천히 먹여보는 것도 방법입니다.\n수분 보충을 위해 약국에서 영유아용 전해질 용액을 구입하여 먹이실 수도 있습니다.\n하지만 평소 1000ml를 먹던 아기가 580ml로 섭취량이 줄어든 것은 탈수의 위험이 높은 유의미한 감소입니다. 특히 다음과 같은 증상이 있다면 지체하지 말고 오늘 다시 병원에 방문하셔야 합니다.\n수유 거부가 12시간 이상 지속되는 경우\n8시간 이상 소변을 전혀 보지 않는 경우\n아기가 계속 처지고 반응이 약한 경우\n입술이 바짝 마르고 눈이나 대천문이 푹 꺼져 보이는 경우\n현재 아기가 안겨서 잠만 자려고 하는 등 평소보다 처지는 모습을 보이고 있고 수유를 못한 시간도 길어지고 있으므로, 아기의 안전과 탈수 예방을 위해 오늘 중으로 소아청소년과를 재방문하시기를 바랍니다. 만약 일반 진료 시간이 끝났다면 야간 진료 병원이나 응급실을 방문하여 정확한 진찰과 필요한 조치를 받으시기를 권장합니다.\n아이의 건강을 모니터링할 때 더 명확한 안내와 안심을 위해, FeverCoach 앱이 항상 도움을 드립니다.\nfevercoach.us\nApple App Store\nGoogle Play\n🌐 다른 언어로 보기:\nEnglish\n·\nEspañol",
+    "visual_system": "fevercoach-explainer-v3",
+    "character_mode": "automatic",
+    "character_concept": {
+      "subject": "Baby Formula Bottle",
+      "source_basis": "The central object of concern and intervention in the article, directly related to the baby's nutrition and hydration during illness.",
+      "visual_identity": "A classic, smooth, translucent baby bottle with a soft, clear silicone nipple. It has clear, but unmarked, volume lines on its side.",
+      "primary_color": "Soft, translucent pale blue",
+      "surface_texture": "Smooth, glossy plastic for the bottle, soft, matte silicone for the nipple."
+    }
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "title": "Reduced Formula Intake",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "When a baby refuses formula, reduced intake needs attention and can lead to dehydration.",
+      "subtitle": "When a baby refuses formula, reduced intake needs attention and can lead to dehydration.",
+      "prompt": "A clean, semi-stylized 3D rendering of an anthropomorphic baby formula bottle character, pale blue and translucent, with a clear silicone nipple. It is standing upright, initially full of white liquid. The background is a soft, blurred nursery. The liquid inside the bottle rapidly drains from full to mostly empty, leaving the bottle character looking sad and concerned. The bottle itself remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "red_flag",
+      "medical_claim": "Reduced formula intake significantly increases dehydration risk in a 6-month-old.",
+      "asset_prompt": "A clean, semi-stylized 3D rendering of an anthropomorphic baby formula bottle character, pale blue and translucent, with a clear silicone nipple. It is standing upright, initially full of white liquid. The background is a soft, blurred nursery. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [
+        {
+          "type": "dimension",
+          "from": [
+            0.25,
+            0.35
+          ],
+          "to": [
+            0.75,
+            0.35
+          ],
+          "label_position": [
+            0.5,
+            0.25
+          ],
+          "color": "#E5482F",
+          "text": "Reduced Intake"
+        }
+      ],
+      "caption_chunks": [
+        "When a baby refuses formula, reduced intake needs attention",
+        "and can lead to dehydration."
+      ],
+      "narrative_role": "hook",
+      "shot_design": {
+        "camera_profile": "lateral_reveal",
+        "beat_one": "0.0-1.5 second establishing shot of the full bottle character.",
+        "beat_two": "1.5-4.5 second formula rapidly drains from the bottle, leaving it mostly empty. The bottle character looks sad.",
+        "payoff_frame": "4.5-6.0 second hold on the mostly empty, sad bottle with the drained liquid level clearly visible.",
+        "depth_layers": "Foreground: the bottle character. Midground: a soft, blurred background of a nursery. Background: gentle, ambient light.",
+        "overlay_safe_zone": "uncluttered screen region at the top-center for data.",
+        "sound_cues": "gentle pouring sound, soft sigh",
+        "transition_out": "The bottle slowly fades, drawing attention to the next scene."
+      }
+    },
+    {
+      "index": 2,
+      "title": "Cold and Appetite Loss",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Colds often reduce a baby's appetite, but reduced intake requires attention.",
+      "subtitle": "Colds often reduce a baby's appetite, but reduced intake requires attention.",
+      "prompt": "A clean, semi-stylized 3D rendering of an anthropomorphic baby formula bottle character, pale blue and translucent, with a clear silicone nipple. A small, soft baby hand gently pushes the bottle character away. The bottle looks slightly dejected. The bottle and hand are the only moving elements. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "context",
+      "medical_claim": "Appetite loss is common with colds, but reduced intake requires attention.",
+      "asset_prompt": "A clean, semi-stylized 3D rendering of an anthropomorphic baby formula bottle character, pale blue and translucent, with a clear silicone nipple. A small, soft baby hand is gently approaching it. The background is a blurred, warm nursery interior. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "Colds often reduce a baby's appetite,",
+        "but reduced intake requires attention."
+      ],
+      "narrative_role": "context",
+      "shot_design": {
+        "camera_profile": "parallax_arc",
+        "beat_one": "0.0-1.5 second gentle arc around the bottle character.",
+        "beat_two": "1.5-4.5 second a small, soft baby hand gently pushes the bottle character away. The bottle looks slightly dejected.",
+        "payoff_frame": "4.5-6.0 second hold on the bottle character being pushed away, with the baby's hand visible.",
+        "depth_layers": "Foreground: baby's hand. Midground: the bottle character. Background: blurred, warm nursery interior.",
+        "overlay_safe_zone": "uncluttered screen region at the top-center for data.",
+        "sound_cues": "soft whimper, gentle push sound",
+        "transition_out": "The scene gently blurs and shifts to the next."
+      }
+    },
+    {
+      "index": 3,
+      "title": "How Long Without Feeding?",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "How long can a baby go without feeding before it becomes a concern?",
+      "subtitle": "How long can a baby go without feeding before it becomes a concern?",
+      "prompt": "A clean, semi-stylized 3D rendering of two anthropomorphic baby formula bottle characters, pale blue and translucent, with clear silicone nipples. One is full and looks happy, the other is mostly empty and looks sad. They are side-by-side on a clean, neutral surface. A subtle, glowing question mark appears and hovers between the two bottles. The bottles remain stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "comparison",
+      "medical_claim": "Normally, babies feed regularly, even overnight. Prolonged refusal is concerning.",
+      "asset_prompt": "A clean, semi-stylized 3D rendering of two anthropomorphic baby formula bottle characters, pale blue and translucent, with clear silicone nipples. One is full and looks happy, the other is mostly empty and looks sad. They are side-by-side on a clean, neutral surface. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "How long can a baby go without feeding",
+        "before it becomes a concern?"
+      ],
+      "narrative_role": "misconception",
+      "shot_design": {
+        "camera_profile": "comparison_track",
+        "beat_one": "0.0-1.5 second camera tracks left, revealing a full, happy bottle character.",
+        "beat_two": "1.5-4.5 second camera tracks right, revealing a mostly empty, sad bottle character next to the first. A subtle question mark appears between them.",
+        "payoff_frame": "4.5-6.0 second hold on both bottle characters, emphasizing the contrast and the question mark.",
+        "depth_layers": "Foreground: two bottle characters. Midground: a soft, neutral background. Background: subtle light gradient.",
+        "overlay_safe_zone": "uncluttered screen region at the top-center for data.",
+        "sound_cues": "gentle chime, soft questioning hum",
+        "transition_out": "The scene fades to white, preparing for an internal view."
+      }
+    },
+    {
+      "index": 4,
+      "title": "Sore Throat and Swallowing",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "A severe cough can make a baby's throat sore, making swallowing painful.",
+      "subtitle": "A severe cough can make a baby's throat sore, making swallowing painful.",
+      "prompt": "A clean, semi-stylized 3D medical illustration of a baby's head in profile, with an x-ray view focused on the throat area. The tonsils and pharynx are slightly inflamed with a soft pinkish-red hue. A subtle, gentle ripple effect emanates from the inflamed area, indicating discomfort. The head remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "mechanism",
+      "medical_claim": "Coughing can cause a sore throat, making swallowing difficult.",
+      "asset_prompt": "A clean, semi-stylized 3D medical illustration of a baby's head in profile, with an x-ray view focused on the throat area. The tonsils and pharynx are slightly inflamed with a soft pinkish-red hue. No text or labels. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "A severe cough can make a baby's throat sore,",
+        "making swallowing painful."
+      ],
+      "narrative_role": "mechanism",
+      "shot_design": {
+        "camera_profile": "xray_push",
+        "beat_one": "0.0-1.5 second establishing shot of a baby's head in profile, then an x-ray effect begins.",
+        "beat_two": "1.5-4.5 second x-ray push into the baby's throat, revealing slightly inflamed, pinkish-red tonsils and pharynx. A subtle, gentle ripple effect indicates discomfort from coughing.",
+        "payoff_frame": "4.5-6.0 second hold on the inflamed throat, showing the discomfort.",
+        "depth_layers": "Foreground: x-ray view of throat. Midground: outline of baby's head. Background: soft, anatomical background.",
+        "overlay_safe_zone": "uncluttered screen region at the top-center for data.",
+        "sound_cues": "soft cough, subtle discomfort sound",
+        "transition_out": "The x-ray view fades out, returning to a normal perspective."
+      }
+    },
+    {
+      "index": 5,
+      "title": "Refusal Over 12 Hours",
+      "mode": "i2v",
+      "timeline_seconds": 8,
+      "generation_seconds": 6,
+      "narration": "Seek medical help if a young infant refuses feeding for many hours, has not urinated in 8 hours, is lethargic, or shows signs of dehydration.",
+      "subtitle": "Seek medical help if a young infant refuses feeding for many hours, has not urinated in 8 hours, is lethargic, or shows signs of dehydration.",
+      "prompt": "A slow camera orbit around twelve identical blank pale-blue time tokens arranged in a complete circle beside a baby bottle. No clock face, hands, digital display, counting animation, text, numbers, or symbols. The tokens remain stationary and unmarked.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "quantity",
+      "medical_claim": "For young infants, seek medical attention earlier than 12 hours if feeding refusal is prolonged, or if they have not urinated in 8 hours, are lethargic, or show signs of dehydration.",
+      "asset_prompt": "A clean non-graphic tabletop arrangement of twelve identical blank pale-blue time tokens in a complete circle beside a baby bottle. No clock, clock face, hands, digital display, text, numbers, labels, or symbols.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "Seek medical help if a young infant refuses feeding for many hours,",
+        "has not urinated in 8 hours, is lethargic, or shows signs of dehydration."
+      ],
+      "narrative_role": "evidence",
+      "shot_design": {
+        "camera_profile": "macro_dive",
+        "beat_one": "0.0-1.5 second macro shot of a digital clock face, initially showing an unmarked surface.",
+        "beat_two": "1.5-4.5 second the clock rapidly counts up, focusing on the hour digit, until it reaches an unmarked surface.",
+        "payoff_frame": "4.5-6.0 second hold on the digital clock displaying an unmarked surface clearly.",
+        "depth_layers": "Foreground: digital clock. Midground: blurred background of a bedside table. Background: soft, ambient light.",
+        "overlay_safe_zone": "uncluttered screen region at the top-center for data.",
+        "sound_cues": "digital ticking, soft chime",
+        "transition_out": "The clock display fades to black, then cuts to the next scene."
+      }
+    },
+    {
+      "index": 6,
+      "title": "Small, Frequent Feeds",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Instead of large feeds, offer small amounts more often, adjusted to your baby's usual intake and what they can accept.",
+      "subtitle": "Instead of large feeds, offer small amounts more often, adjusted to your baby's usual intake and what they can accept.",
+      "prompt": "Vertical 9:16 polished semi-stylized 3D pediatric medical scene about Small, Frequent Feeds. Show two clearly separate, non-contact treatment symbols: a standard IV fluid bag with tubing already connected to a properly dressed child's forearm by a small clinical adhesive dressing, and a purpose-made translucent dosing cup containing a small amount of amber liquid medicine resting on a table. No puncture action is shown. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth. Keep every child fully clothed and the mood reassuring. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync, syringe, oral syringe, dosing syringe, plunger, needle, dropper, pipette, tube at mouth, medicine applicator at mouth",
+      "image": null,
+      "visual_type": "comparison",
+      "medical_claim": "To encourage feeding during illness, offer small, frequent amounts adjusted to the infant's usual intake and acceptance.",
+      "asset_prompt": "Clean text-free vertical 9:16 reference image for Small, Frequent Feeds. An upright fully clothed child holds a small purpose-made translucent medicine dosing cup containing a little amber liquid. The cup is below the chin and clearly cup-shaped with a wide open rim. The caregiver's hands are empty. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth. Soft clinical daylight, reassuring 3D illustration. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "Instead of large feeds,",
+        "offer small amounts more often, adjusted to your baby's usual intake and what they can accept."
+      ],
+      "narrative_role": "decision",
+      "shot_design": {
+        "camera_profile": "top_down_drop",
+        "beat_one": "0.0-1.5 seconds: establish a calm, fully clothed upright child and caregiver.",
+        "beat_two": "1.5-4.5 seconds: the child independently lifts a wide open-rimmed medicine dosing cup, takes one small sip, and lowers it. The caregiver's hands remain empty.",
+        "payoff_frame": "4.5-6.0 seconds: hold on the child comfortable beside the lowered cup.",
+        "depth_layers": "Cup in foreground, child in midground, softly blurred room behind.",
+        "overlay_safe_zone": "Upper left quadrant remains visually quiet.",
+        "sound_cues": "Soft cup movement and one gentle swallow; no dialogue.",
+        "transition_out": "Slow reassuring pullback."
+      }
+    },
+    {
+      "index": 7,
+      "title": "Check for Dehydration",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Check for dehydration: no wet diaper in eight hours, dry lips, or no tears when crying.",
+      "subtitle": "Check for dehydration: no wet diaper in eight hours, dry lips, or no tears when crying.",
+      "prompt": "A gentle camera move across a clean dry baby diaper, then a neutral pediatric hydration teaching card with simple blank icons for dry lips and absent tears. No medicine bottle or container is present. No distressed child is shown. Render no text, numbers, labels, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "sequence",
+      "medical_claim": "Dehydration signs include less than one wet diaper in 8 hours, dry lips/tongue, or lack of tears when crying.",
+      "asset_prompt": "A clean non-graphic hydration teaching display with a dry baby diaper and simple blank icons for dry lips and absent tears. No medicine bottle, medicine container, distressed child, text, numbers, labels, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [
+        {
+          "type": "label",
+          "from": [
+            0.5,
+            0.18
+          ],
+          "to": [
+            0.5,
+            0.18
+          ],
+          "label_position": [
+            0.5,
+            0.18
+          ],
+          "color": "#E5482F",
+          "text": "8 hours"
+        }
+      ],
+      "caption_chunks": [
+        "Check for dehydration: no wet diaper in eight hours,",
+        "dry lips, or no tears when crying."
+      ],
+      "narrative_role": "reassessment",
+      "shot_design": {
+        "camera_profile": "pov_travel",
+        "beat_one": "0.0-1.5 second POV travel over a dry baby diaper.",
+        "beat_two": "1.5-4.5 second POV travel to a close-up of a baby's slightly dry lips, then to a baby crying without visible tears.",
+        "payoff_frame": "4.5-6.0 second hold on the baby's face, showing the absence of tears.",
+        "depth_layers": "Foreground: diaper/lips/face. Midground: blurred baby body. Background: soft, neutral bedding.",
+        "overlay_safe_zone": "uncluttered screen region at the top-center for data.",
+        "sound_cues": "rustling diaper, soft sniffle, quiet cry",
+        "transition_out": "The scene quickly cuts to a new focus."
+      }
+    },
+    {
+      "index": 8,
+      "title": "Warm Formula and Method",
+      "mode": "i2v",
+      "timeline_seconds": 5,
+      "generation_seconds": 6,
+      "narration": "Warm formula to body temperature, or use a spoon or cup if the bottle is refused.",
+      "subtitle": "Warm formula to body temperature, or use a spoon or cup if the bottle is refused.",
+      "prompt": "A baby bottle containing prepared liquid formula is warmed in a bowl of warm water. A small clean spoon and cup each hold only smooth liquid formula. No formula powder, powder scoop, dry granules, needle, syringe, injection, or IV. All surfaces are blank and unmarked.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "sequence",
+      "medical_claim": "Warm formula to body temperature; use a spoon or cup if the bottle is refused.",
+      "asset_prompt": "A clean tabletop scene with a baby bottle of prepared liquid formula in warm water, plus a spoon and cup holding only smooth liquid formula. No powder, powder scoop, dry granules, needle, syringe, injection, IV, text, or labels.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "Warm formula to body temperature,",
+        "or use a spoon or cup if the bottle is refused."
+      ],
+      "narrative_role": "action",
+      "shot_design": {
+        "camera_profile": "lateral_reveal",
+        "beat_one": "0.0-1.5 second a baby bottle is gently placed into a bowl of warm water.",
+        "beat_two": "1.5-4.5 second a small, clean spoon with formula is gently offered to an unseen baby's mouth.",
+        "payoff_frame": "4.5-6.0 second hold on the spoon being offered, showing the gentle approach.",
+        "depth_layers": "Foreground: bottle/spoon. Midground: bowl/baby's face. Background: soft, domestic setting.",
+        "overlay_safe_zone": "uncluttered screen region at the top-center for data.",
+        "sound_cues": "gentle splash, soft clink of spoon",
+        "transition_out": "The scene dissolves into the next, focusing on warning signs."
+      }
+    },
+    {
+      "index": 9,
+      "title": "Urgent Warning Signs",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Urgent signs: no wet diaper for eight hours, lethargy, very dry lips, or sunken eyes.",
+      "subtitle": "Urgent signs: no wet diaper for eight hours, lethargy, very dry lips, or sunken eyes.",
+      "prompt": "A clean, semi-stylized 3D rendering of a composite image. The camera macro dives onto a completely dry baby diaper. Then, it pulls back slightly to show a baby lying still, eyes half-closed, unresponsive, and then a close-up of very dry, cracked lips. All elements remain stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "red_flag",
+      "medical_claim": "Urgent signs include no urination for 8+ hours, lethargy, very dry lips, or sunken eyes/fontanelle.",
+      "asset_prompt": "A clean, semi-stylized 3D rendering of a composite image: a completely dry baby diaper, a baby lying still with eyes half-closed and unresponsive, and a close-up of very dry, cracked lips. No text or labels. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [
+        {
+          "type": "label",
+          "from": [
+            0.5,
+            0.18
+          ],
+          "to": [
+            0.5,
+            0.18
+          ],
+          "label_position": [
+            0.5,
+            0.18
+          ],
+          "color": "#E5482F",
+          "text": "8 hours"
+        }
+      ],
+      "caption_chunks": [
+        "Urgent signs: no wet diaper for eight hours,",
+        "lethargy, very dry lips, or sunken eyes."
+      ],
+      "narrative_role": "red_flag",
+      "shot_design": {
+        "camera_profile": "macro_dive",
+        "beat_one": "0.0-1.5 second macro dive onto a completely dry baby diaper.",
+        "beat_two": "1.5-4.5 second camera pulls back slightly to show a baby lying still, eyes half-closed, unresponsive, then a close-up of very dry, cracked lips.",
+        "payoff_frame": "4.5-6.0 second hold on the composite of these urgent signs.",
+        "depth_layers": "Foreground: dry diaper/babyan unmarked surfaces body. Background: blurred bedding.",
+        "overlay_safe_zone": "uncluttered screen region at the top-center for data.",
+        "sound_cues": "silence, soft, shallow breathing",
+        "transition_out": "The scene quickly fades to a bright, hopeful setting."
+      }
+    },
+    {
+      "index": 10,
+      "title": "Consult Your Pediatrician",
+      "mode": "i2v",
+      "timeline_seconds": 5,
+      "generation_seconds": 6,
+      "narration": "If your baby shows these urgent signs or concerns persist, consult your pediatrician immediately.",
+      "subtitle": "If your baby shows these urgent signs or concerns persist, consult your pediatrician immediately.",
+      "prompt": "A clean, semi-stylized 3D rendering of an anthropomorphic baby formula bottle character, pale blue and translucent, with a clear silicone nipple, looking reassuring. A gentle camera pullback reveals the bottle character standing in a bright, clean pediatric clinic waiting area. The bottle character remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "takeaway",
+      "medical_claim": "If concerns persist, especially with lethargy or prolonged refusal, consult a pediatrician.",
+      "asset_prompt": "A clean, semi-stylized 3D rendering of an anthropomorphic baby formula bottle character, pale blue and translucent, with a clear silicone nipple, looking reassuring. It is standing in a bright, clean pediatric clinic waiting area. No text or labels. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "If your baby shows these urgent signs",
+        "or concerns persist, consult your pediatrician immediately."
+      ],
+      "narrative_role": "takeaway",
+      "shot_design": {
+        "camera_profile": "hero_pullback",
+        "beat_one": "0.0-1.5 second close-up on the anthropomorphic bottle character, looking reassuring.",
+        "beat_two": "1.5-4.5 second gentle camera pullback reveals the bottle character standing in a bright, clean pediatric clinic waiting area.",
+        "payoff_frame": "4.5-6.0 second hold on the bottle character in the clinic setting, emphasizing professional help.",
+        "depth_layers": "Foreground: bottle character. Midground: clinic waiting area elements (chairs, plants). Background: blurred clinic reception desk.",
+        "overlay_safe_zone": "uncluttered screen region at the top-center for data.",
+        "sound_cues": "soft, reassuring chime, distant clinic sounds",
+        "transition_out": "The scene gently fades to black."
+      }
+    }
+  ]
+}

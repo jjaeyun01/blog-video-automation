@@ -1,0 +1,150 @@
+{
+  "duration_seconds": 60.021029,
+  "width": 1080,
+  "height": 1920,
+  "has_audio": true,
+  "scene_count": 10,
+  "captions_equal_expected_narration": true,
+  "caption_images_checked": 23,
+  "all_caption_image_corners_transparent": true,
+  "video_sha256": "1a992002cb3e64bcaf877623654a057eed1704db4daebc7df368b12540000073",
+  "reviewer_feedback_focus": [
+    {
+      "scene": 3,
+      "checks": [
+        "SAFE_SLEEP_AND_SWALLOWING"
+      ]
+    },
+    {
+      "scene": 4,
+      "checks": [
+        "TREATMENT_CLAIM_UNCERTAINTY"
+      ]
+    },
+    {
+      "scene": 5,
+      "checks": [
+        "DEHYDRATION_OR_POOR_INTAKE"
+      ]
+    },
+    {
+      "scene": 6,
+      "checks": [
+        "SAFE_SLEEP_AND_SWALLOWING"
+      ]
+    },
+    {
+      "scene": 8,
+      "checks": [
+        "DEHYDRATION_OR_POOR_INTAKE"
+      ]
+    },
+    {
+      "scene": 9,
+      "checks": [
+        "RESPIRATORY_RED_FLAGS",
+        "NEW_OR_MIGRATING_PAIN",
+        "EMERGENCY_LOCALE"
+      ]
+    },
+    {
+      "scene": 10,
+      "checks": [
+        "SLEEP_VS_LETHARGY"
+      ]
+    }
+  ],
+  "srt_exists": true,
+  "srt_semantically_expected_by_normalized_text": true,
+  "expected_number_tokens": [
+    "24",
+    "48",
+    "24",
+    "48",
+    "24",
+    "26",
+    "8"
+  ],
+  "srt_number_tokens": [
+    "24",
+    "48",
+    "24",
+    "48",
+    "24",
+    "26",
+    "8"
+  ],
+  "srt_numbers_match_expected": true,
+  "audio_scene_timing": [
+    {
+      "scene": 1,
+      "raw_seconds": 4.44,
+      "timeline_seconds": 4,
+      "speed_factor": 1.11,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 2,
+      "raw_seconds": 3.36,
+      "timeline_seconds": 4,
+      "speed_factor": 1.0,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 3,
+      "raw_seconds": 7.04,
+      "timeline_seconds": 6,
+      "speed_factor": 1.1733,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 4,
+      "raw_seconds": 7.4,
+      "timeline_seconds": 6,
+      "speed_factor": 1.2333,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 5,
+      "raw_seconds": 7.04,
+      "timeline_seconds": 6,
+      "speed_factor": 1.1733,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 6,
+      "raw_seconds": 9.72,
+      "timeline_seconds": 8,
+      "speed_factor": 1.215,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 7,
+      "raw_seconds": 5.84,
+      "timeline_seconds": 6,
+      "speed_factor": 1.0,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 8,
+      "raw_seconds": 7.56,
+      "timeline_seconds": 6,
+      "speed_factor": 1.26,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 9,
+      "raw_seconds": 9.88,
+      "timeline_seconds": 8,
+      "speed_factor": 1.235,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 10,
+      "raw_seconds": 6.28,
+      "timeline_seconds": 6,
+      "speed_factor": 1.0467,
+      "requires_close_listen": false
+    }
+  ]
+}

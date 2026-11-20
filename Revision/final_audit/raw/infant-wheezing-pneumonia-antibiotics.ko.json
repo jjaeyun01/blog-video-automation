@@ -1,0 +1,351 @@
+{
+  "video_id": "infant-wheezing-pneumonia-antibiotics.ko",
+  "language": "ko",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "PASS",
+  "av_integrity": "PASS",
+  "spoken_transcript": "아기에게 쇳소리가 나고 점점 심해진다면 기도가 좁아졌다는 신호일 수 있으므로 빠른 평가가 중요합니다. 7개월 영아는 기도가 좁아 증상이 빠르게 악화될 수 있어 빠른 평가가 중요합니다. 항생제는 세균 감염에만 효과적이며, 바이러스 감기나 세기관지염에는 도움이 되지 않습니다. 기도가 좁아지거나 염증이 악화되면 숨 쉴 때 쌕쌕거리는 소리가 날 수 있으며, 빠른 평가가 중요합니다. 의사는 청진과 산소포화도 측정으로 세기관지염, 크룹, 폐렴 여부를 판단합니다. 쇳소리가 계속되거나 심해진다면 즉시 응급실이나 야간진료 소아과를 방문하세요. 병원 방문 전까지 실내 습도를 40에서 60%로 유지하고, 아이가 안전하게 삼킬 수 있을 때 수분을 자주 섭취하게 해주세요. 아이를 안아 상체를 세워주고, 목과 가슴 부위의 옷을 느슨하게 풀어주세요. 입술이나 손톱이 파래지거나 함몰 호흡이 보이면 즉시 119에 전화해야 합니다. 호흡 변화는 신속한 대처가 중요하므로, 정확한 평가를 위해 지금 바로 소아과 진료를 받으세요.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "NOT_APPLICABLE",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "PASS",
+    "high_fever_age_context": "NOT_APPLICABLE",
+    "sleep_vs_lethargy": "PASS",
+    "dehydration_guidance": "PASS",
+    "multilingual_integrity": "PASS",
+    "evidence_ko": "영상 내 모든 음성 및 자막이 의료적 권고 사항을 정확히 전달하며, 긴급 상황에 대한 명확한 지침을 제공합니다.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "NOT_APPLICABLE",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "PASS",
+    "emergency_locale": "PASS",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "PASS",
+    "treatment_claim_uncertainty": "PASS",
+    "simultaneous_and_alternating_antipyretics": "NOT_APPLICABLE",
+    "infant_feeding_and_formula": "PASS",
+    "medicine_storage_and_restart": "NOT_APPLICABLE",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "PASS"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "아기에게 쇳소리가 나고 점점 심해진다면 기도가 좁아졌다는 신호일 수 있으므로 빠른 평가가 중요합니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "아기에게 쇳소리가 나고 점점 심해진다면기도가 좁아졌다는 신호일 수 있으므로빠른 평가가 중요합니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "아기가 자고 있는 모습과 함께 기도가 좁아지는 애니메이션이 나타나며, 쇳소리가 심해질 경우 빠른 평가가 중요하다고 설명합니다."
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:06",
+      "spoken_transcript": "7개월 영아는 기도가 좁아 증상이 빠르게 악화될 수 있어 빠른 평가가 중요합니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "7개월 영아는 기도가 좁아증상이 빠르게 악화될 수 있어빠른 평가가 중요합니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "7개월 영아의 흉부 X-ray 애니메이션과 함께 기도가 좁아 증상이 빠르게 악화될 수 있으므로 빠른 평가가 중요하다고 설명합니다."
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:12",
+      "spoken_transcript": "항생제는 세균 감염에만 효과적이며, 바이러스 감기나 세기관지염에는 도움이 되지 않습니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "항생제는 세균 감염에만 효과적이며,바이러스 감기나 세기관지염에는도움이 되지 않습니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "의인화된 기관지 캐릭터가 세균과 바이러스 사이에서 혼란스러워하는 모습과 함께 항생제가 세균 감염에만 효과적이며 바이러스 감기나 세기관지염에는 도움이 되지 않는다고 설명합니다."
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:18",
+      "spoken_transcript": "기도가 좁아지거나 염증이 악화되면 숨 쉴 때 쌕쌕거리는 소리가 날 수 있으며, 빠른 평가가 중요합니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "기도가 좁아지거나 염증이 악화되면숨 쉴 때 쌕쌕거리는 소리가 날 수 있으며,빠른 평가가 중요합니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "기관지 내부를 따라 이동하는 카메라 뷰가 기관지 벽이 좁아지고 염증이 생기는 모습을 보여주며, 쌕쌕거리는 소리가 날 수 있고 빠른 평가가 중요하다고 설명합니다."
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:24",
+      "spoken_transcript": "의사는 청진과 산소포화도 측정으로 세기관지염, 크룹, 폐렴 여부를 판단합니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "의사는 청진과 산소포화도 측정으로세기관지염, 크룹, 폐렴 여부를 판단합니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "청진기와 산소포화도 측정기가 놓인 의료 트레이가 보이며, 의사가 이러한 도구로 세기관지염, 크룹, 폐렴 여부를 판단한다고 설명합니다."
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:30",
+      "spoken_transcript": "쇳소리가 계속되거나 심해진다면 즉시 응급실이나 야간진료 소아과를 방문하세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "쇳소리가 계속되거나 심해진다면즉시 응급실이나야간진료 소아과를 방문하세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "의인화된 기관지 캐릭터가 집과 병원 갈림길에서 병원 쪽으로 향하는 모습과 함께 쇳소리가 심해지면 응급실이나 야간진료 소아과를 방문하라고 안내합니다."
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:35",
+      "spoken_transcript": "병원 방문 전까지 실내 습도를 40에서 60%로 유지하고, 아이가 안전하게 삼킬 수 있을 때 수분을 자주 섭취하게 해주세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "병원 방문 전까지 실내 습도를 40에서 60%로 유지하고,아이가 안전하게 삼킬 수 있을 때수분을 자주 섭취하게 해주세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "가습기가 작동하는 아이 방의 모습과 함께 병원 방문 전까지 실내 습도를 40-60%로 유지하고, 아이가 안전하게 삼킬 수 있을 때 수분을 자주 섭취하게 하라고 안내합니다."
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:43",
+      "spoken_transcript": "아이를 안아 상체를 세워주고, 목과 가슴 부위의 옷을 느슨하게 풀어주세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "아이를 안아 상체를 세워주고,목과 가슴 부위의 옷을느슨하게 풀어주세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "의인화된 기관지 캐릭터가 아기를 안고 상체를 세워주는 모습과 함께 목과 가슴 부위의 옷을 느슨하게 풀어주라고 안내합니다."
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:48",
+      "spoken_transcript": "입술이나 손톱이 파래지거나 함몰 호흡이 보이면 즉시 119에 전화해야 합니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "입술이나 손톱이 파래지거나함몰 호흡이 보이면즉시 119에 전화해야 합니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "아기가 침대에 누워있는 모습에서 입술과 손톱이 파래지고 함몰 호흡이 나타나는 애니메이션과 함께 즉시 119에 전화해야 한다고 안내합니다."
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:54",
+      "spoken_transcript": "호흡 변화는 신속한 대처가 중요하므로, 정확한 평가를 위해 지금 바로 소아과 진료를 받으세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "호흡 변화는 신속한 대처가 중요하므로,정확한 평가를 위해지금 바로 소아과 진료를 받으세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "의인화된 기관지 캐릭터가 의료 환경에서 자신감 있게 서서 시청자에게 제스처를 취하며, 호흡 변화에 대한 신속한 대처와 소아과 진료의 중요성을 강조합니다."
+    }
+  ],
+  "medication_route_review": [],
+  "issues": [
+    {
+      "severity": "low",
+      "category": "OTHER_VISUAL_ERROR",
+      "timestamp": "00:43",
+      "scene": 8,
+      "evidence": "Scene 8 depicts an anthropomorphic bronchiole character holding a baby-like bronchiole character to loosen clothes.",
+      "problem_ko": "의인화된 기관지 캐릭터가 아기를 안고 옷을 느슨하게 해주는 모습이 실제 사람의 모습이 아니어서 일부 시청자에게는 다소 추상적으로 느껴질 수 있습니다.",
+      "source_comparison_ko": "원문은 \"아이를 안아서 상체를 세워주고, 목과 가슴 부위의 옷을 느슨하게 풀어주세요.\"라고 지시하며, 시각적 표현 방식에 대한 구체적인 지침은 없습니다.",
+      "recommended_fix_ko": "가능하면 실제 사람 부모가 아기를 안고 옷을 느슨하게 해주는 모습으로 변경하여 시각적 명확성을 높일 수 있습니다.",
+      "confidence": 0.3
+    }
+  ],
+  "review_summary_ko": "본 영상은 영아의 쇳소리 및 호흡 곤란 증상에 대한 중요한 정보를 제공하며, 의료적 정확성과 소스 충실도, 시청각 무결성 측면에서 모두 우수합니다. 7개월 영아의 기도 특성, 항생제 사용의 제한, 응급 상황의 징후 및 대처 방법, 병원 방문 전 가정에서의 관리법 등 핵심 내용이 명확하게 전달됩니다. 음성, 자막, 시각 자료 모두 일관성 있고 정확하며, 안전 관련 지침이 충분히 포함되어 있습니다. 전반적으로 환아 보호자에게 유익하고 안전한 정보를 제공하는 고품질 콘텐츠입니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [
+    "영상에 등장하는 의인화된 기관지 캐릭터가 아기를 안는 장면(00:43)은 의료적 지침을 전달하는 데 있어 다소 추상적인 시각적 표현일 수 있습니다. 이는 명확한 오류는 아니지만, 일부 시청자에게는 실제 상황과의 연결성이 떨어질 수 있습니다."
+  ],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/infant-wheezing-pneumonia-antibiotics/ko/infant-wheezing-pneumonia-antibiotics_KO.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/infant-wheezing-pneumonia-antibiotics/ko/production.snapshot.json",
+    "audited_at": "2026-09-22T06:52:44.844360+00:00",
+    "video_sha256": "740079a6d624be1d99be0dd935f196fa6bed8ed797e31d8d1414279b754b3bb6",
+    "snapshot_sha256": "5fb1a6d5ed91a273ccad4879a46f2709609324ca7ddf3be3bc055595156b7767",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 29,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "740079a6d624be1d99be0dd935f196fa6bed8ed797e31d8d1414279b754b3bb6",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 1,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "CROSS_SCENE_URGENCY"
+          ]
+        },
+        {
+          "scene": 2,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS"
+          ]
+        },
+        {
+          "scene": 4,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS"
+          ]
+        },
+        {
+          "scene": 5,
+          "checks": [
+            "CASE_TIMELINE_REASSESSMENT"
+          ]
+        },
+        {
+          "scene": 6,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "EMERGENCY_LOCALE"
+          ]
+        },
+        {
+          "scene": 7,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING",
+            "FORMULA_AMOUNT_VS_CONCENTRATION"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "SAFE_SLEEP_AND_SWALLOWING",
+            "EMERGENCY_LOCALE"
+          ]
+        },
+        {
+          "scene": 10,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [
+        "7",
+        "40",
+        "60",
+        "119"
+      ],
+      "srt_number_tokens": [
+        "7",
+        "40",
+        "60",
+        "119"
+      ],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 8.52,
+          "timeline_seconds": 6,
+          "speed_factor": 1.42,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 6.96,
+          "timeline_seconds": 6,
+          "speed_factor": 1.16,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 8.16,
+          "timeline_seconds": 6,
+          "speed_factor": 1.36,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 8.68,
+          "timeline_seconds": 6,
+          "speed_factor": 1.4467,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 8.32,
+          "timeline_seconds": 6,
+          "speed_factor": 1.3867,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 7.48,
+          "timeline_seconds": 5,
+          "speed_factor": 1.496,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 11.28,
+          "timeline_seconds": 8,
+          "speed_factor": 1.41,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 6.8,
+          "timeline_seconds": 5,
+          "speed_factor": 1.36,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 7.0,
+          "timeline_seconds": 6,
+          "speed_factor": 1.1667,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 7.88,
+          "timeline_seconds": 6,
+          "speed_factor": 1.3133,
+          "requires_close_listen": true
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

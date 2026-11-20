@@ -1,0 +1,324 @@
+{
+  "video_id": "pediatric-tamiflu-dosing-flexibility.en",
+  "language": "en",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "PASS",
+  "av_integrity": "PASS",
+  "spoken_transcript": "Do not forcibly wake your child at 2 AM to administer flu medication. Oseltamivir, like Tamiflu, is typically taken twice daily, at 12-hour intervals. If the first day's dose timing must change, do not shorten the interval on your own; ask the prescriber or pharmacist. Sufficient sleep and rest are as crucial for flu recovery as the medication. If the first dose was at 2 PM, confirm the next dose time with the prescriber or pharmacist. Confirm the next day's dosing times as part of the full prescribed schedule. Starting medication within the first 48 hours inhibits viral replication most effectively. If your child vomits after oseltamivir, note when and how much, and ask a clinician or pharmacist before repeating a dose. Persistent high fever for 3 days, breathing difficulties, or worsening condition require medical attention. If symptoms worsen or other issues arise, consult your pediatrician without hesitation.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "PASS",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "PASS",
+    "high_fever_age_context": "PASS",
+    "sleep_vs_lethargy": "PASS",
+    "dehydration_guidance": "NOT_APPLICABLE",
+    "multilingual_integrity": "PASS",
+    "evidence_ko": "영상은 영어로만 제공되며, 음성 및 자막 모두 영어로 일관되게 제공됩니다.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "NOT_APPLICABLE",
+    "drug_specific_redosing": "PASS",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "NOT_APPLICABLE",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "NOT_APPLICABLE",
+    "treatment_claim_uncertainty": "NOT_APPLICABLE",
+    "simultaneous_and_alternating_antipyretics": "NOT_APPLICABLE",
+    "infant_feeding_and_formula": "NOT_APPLICABLE",
+    "medicine_storage_and_restart": "NOT_APPLICABLE",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "NOT_APPLICABLE"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "Do not forcibly wake your child at 2 AM to administer flu medication.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Do not forcibly wake your childat 2 AM to administer flu medication.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "아이를 새벽 2시에 독감약 복용을 위해 억지로 깨우지 말라는 내용. 자막과 음성 일치."
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:06",
+      "spoken_transcript": "Oseltamivir, like Tamiflu, is typically taken twice daily, at 12-hour intervals.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Oseltamivir, like Tamiflu, is typically taken twice daily,at 12-hour intervals.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "오셀타미비르(타미플루)는 12시간 간격으로 하루 두 번 복용하는 것이 일반적이라는 내용. 자막과 음성 일치."
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:12",
+      "spoken_transcript": "If the first day's dose timing must change, do not shorten the interval on your own; ask the prescriber or pharmacist.",
+      "speech_complete": true,
+      "visible_caption_transcript": "If the first day's dose timing must change, do not shorten the interval on your own; ask the prescriber or pharmacist.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "첫날 복용 시간 변경 시 임의로 간격을 줄이지 말고 처방의나 약사에게 문의하라는 내용. 자막과 음성 일치."
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:18",
+      "spoken_transcript": "Sufficient sleep and rest are as crucial for flu recovery as the medication.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Sufficient sleep and rest are as crucialfor flu recovery as the medication.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "독감 회복에 충분한 수면과 휴식이 약만큼 중요하다고 강조하는 내용. 자막과 음성 일치."
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:24",
+      "spoken_transcript": "If the first dose was at 2 PM, confirm the next dose time with the prescriber or pharmacist.",
+      "speech_complete": true,
+      "visible_caption_transcript": "If the first dose was at 2 PM, confirm the next dose time with the prescriber or pharmacist.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "첫 복용이 오후 2시였다면 다음 복용 시간을 처방의나 약사에게 확인하라는 내용. 자막과 음성 일치."
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:30",
+      "spoken_transcript": "Confirm the next day's dosing times as part of the full prescribed schedule.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Confirm the next day's dosing times as part of the full prescribed schedule.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "다음 날 복용 시간을 전체 처방 스케줄에 맞춰 확인하라는 내용. 자막과 음성 일치."
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:36",
+      "spoken_transcript": "Starting medication within the first 48 hours inhibits viral replication most effectively.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Starting medication within the first 48 hoursinhibits viral replication most effectively.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "증상 발생 후 48시간 이내에 약 복용을 시작하는 것이 바이러스 증식 억제에 가장 효과적이라는 내용. 자막과 음성 일치."
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:42",
+      "spoken_transcript": "If your child vomits after oseltamivir, note when and how much, and ask a clinician or pharmacist before repeating a dose.",
+      "speech_complete": true,
+      "visible_caption_transcript": "If your child vomits after oseltamivir, note when and how much, and ask a clinician or pharmacist before repeating a dose.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "오셀타미비르 복용 후 구토 시 재복용 전 의료 전문가와 상담하라는 내용. 아이가 계량컵으로 약을 마시는 모습. 자막과 음성 일치."
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:48",
+      "spoken_transcript": "Persistent high fever for 3 days, breathing difficulties, or worsening condition require medical attention.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Persistent high fever for 3 days, breathing difficulties,or worsening condition require medical attention.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "3일 이상 고열 지속, 호흡 곤란, 컨디션 악화 시 의료 진료가 필요하다는 내용. 4분할 화면으로 각 증상을 시각화. 자막과 음성 일치."
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:54",
+      "spoken_transcript": "If symptoms worsen or other issues arise, consult your pediatrician without hesitation.",
+      "speech_complete": true,
+      "visible_caption_transcript": "If symptoms worsen or other issues arise,consult your pediatrician without hesitation.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "증상이 악화되거나 다른 이상이 발생하면 소아청소년과 의사와 상담하라는 내용. 자막과 음성 일치."
+    }
+  ],
+  "medication_route_review": [
+    {
+      "timestamp": "00:43",
+      "depicted_item": "Liquid medicine",
+      "depicted_route": "Oral (dosing cup)",
+      "intended_route": "Oral",
+      "is_error": false,
+      "reason_ko": "아이가 계량컵으로 액체 약을 마시는 모습이 적절함.",
+      "confidence": 1.0
+    }
+  ],
+  "issues": [],
+  "review_summary_ko": "이 영상은 독감 치료제(타미플루/오셀타미비르) 복용 시 유연한 초기 복용 시간 조정, 충분한 수면의 중요성, 48시간 이내 약 복용 시작의 중요성, 구토 시 재복용 지침, 그리고 의료 전문가에게 즉시 진료를 받아야 할 위험 신호들을 명확하고 안전하게 전달합니다. 모든 의학적 정보는 출처에 충실하며, 시청각적 무결성도 우수합니다. 약물 투여 경로는 적절하게 묘사되었습니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-tamiflu-dosing-flexibility/en/pediatric-tamiflu-dosing-flexibility_EN.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-tamiflu-dosing-flexibility/en/production.snapshot.json",
+    "audited_at": "2026-09-22T06:56:45.492810+00:00",
+    "video_sha256": "31134e0bf40eb5fb1110b20483e17637a59fcee1d381739b6e0aa496955d0f68",
+    "snapshot_sha256": "9a056a7526c4db036b7928b27add6a640e9c3000242e8a1f0807eb3c16038923",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 20,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "31134e0bf40eb5fb1110b20483e17637a59fcee1d381739b6e0aa496955d0f68",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 1,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 2,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 4,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "DRUG_SPECIFIC_REDOSING",
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "SLEEP_VS_LETHARGY",
+            "DRUG_SPECIFIC_REDOSING"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [
+        "2",
+        "12",
+        "2",
+        "48",
+        "3"
+      ],
+      "srt_number_tokens": [
+        "2",
+        "12",
+        "2",
+        "48",
+        "3"
+      ],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 5.4,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 6.8,
+          "timeline_seconds": 6,
+          "speed_factor": 1.1333,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 8.52,
+          "timeline_seconds": 6,
+          "speed_factor": 1.42,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 6.04,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0067,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 7.0,
+          "timeline_seconds": 6,
+          "speed_factor": 1.1667,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 5.04,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 7.36,
+          "timeline_seconds": 6,
+          "speed_factor": 1.2267,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 8.96,
+          "timeline_seconds": 6,
+          "speed_factor": 1.4933,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 8.48,
+          "timeline_seconds": 6,
+          "speed_factor": 1.4133,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 6.8,
+          "timeline_seconds": 6,
+          "speed_factor": 1.1333,
+          "requires_close_listen": false
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

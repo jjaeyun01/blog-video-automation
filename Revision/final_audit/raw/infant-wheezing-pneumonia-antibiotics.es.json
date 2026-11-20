@@ -1,0 +1,330 @@
+{
+  "video_id": "infant-wheezing-pneumonia-antibiotics.es",
+  "language": "es",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "PASS",
+  "av_integrity": "PASS",
+  "spoken_transcript": "Si las sibilancias de su bebé comienzan o empeoran, se requiere una evaluación rápida. Las vías respiratorias estrechas de un bebé de 7 meses significan que los síntomas pueden empeorar rápido; una evaluación rápida es vital. Los antibióticos solo funcionan para infecciones bacterianas, no para resfriados virales o bronquiolitis. Vías respiratorias estrechas o inflamadas pueden causar sibilancias cuando su bebé respira. Los médicos usan auscultación y saturación de oxígeno para diagnosticar bronquiolitis, crup o neumonía. Si las sibilancias continúan o empeoran, visite urgentemente una sala de emergencias o pediatra de guardia. Mantenga la humedad interior entre 40 y 60% y ofrezca líquidos frecuentemente antes de su visita. Sostenga a su bebé erguido y afloje la ropa alrededor de su cuello y pecho. Si los labios o uñas se ponen azules, o ve retracciones, llame al 911 inmediatamente. Los cambios en la respiración requieren acción rápida. Busque la evaluación de un pediatra de inmediato.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "NOT_APPLICABLE",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "PASS",
+    "high_fever_age_context": "NOT_APPLICABLE",
+    "sleep_vs_lethargy": "PASS",
+    "dehydration_guidance": "PASS",
+    "multilingual_integrity": "PASS",
+    "evidence_ko": "모든 음성 및 캡션이 소스 및 안전 지침을 준수합니다.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "NOT_APPLICABLE",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "PASS",
+    "emergency_locale": "PASS",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "PASS",
+    "treatment_claim_uncertainty": "PASS",
+    "simultaneous_and_alternating_antipyretics": "NOT_APPLICABLE",
+    "infant_feeding_and_formula": "PASS",
+    "medicine_storage_and_restart": "NOT_APPLICABLE",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "PASS"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "Si las sibilancias de su bebé comienzan o empeoran, se requiere una evaluación rápida.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Si las sibilancias de su bebé comienzan o empeoran, se requiere una evaluación rápida.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "아기가 침대에서 자고 있고, 내부 장기(기관, 폐)가 강조되어 빛나고 있습니다. 음성 및 캡션은 정확합니다."
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:06",
+      "spoken_transcript": "Las vías respiratorias estrechas de un bebé de 7 meses significan que los síntomas pueden empeorar rápido; una evaluación rápida es vital.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Las vías respiratorias estrechas de un bebé de 7 meses significan que los síntomas pueden empeorar rápido; una evaluación rápida es vital.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "7개월 아기가 앉아 있고, 흉부 X-레이 뷰로 호흡기가 보입니다. 음성 및 캡션은 정확합니다."
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:13",
+      "spoken_transcript": "Los antibióticos solo funcionan para infecciones bacterianas, no para resfriados virales o bronquiolitis.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Los antibióticos solo funcionan para infecciones bacterianas, no para resfriados virales o bronquiolitis.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "의인화된 세기관지 캐릭터가 혼란스러워 보이며, 주변에 세균과 바이러스가 있습니다. 음성 및 캡션은 정확합니다."
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:19",
+      "spoken_transcript": "Vías respiratorias estrechas o inflamadas pueden causar sibilancias cuando su bebé respira.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Vías respiratorias estrechas o inflamadas pueden causar sibilancias cuando su bebé respira.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "기관지 내부를 따라 카메라가 이동하며, 기관지가 좁아지고 염증이 생기는 것을 보여줍니다. 음성 및 캡션은 정확합니다."
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:24",
+      "spoken_transcript": "Los médicos usan auscultación y saturación de oxígeno para diagnosticar bronquiolitis, crup o neumonía.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Los médicos usan auscultación y saturación de oxígeno para diagnosticar bronquiolitis, crup o neumonía.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "의료용 쟁반 위에 청진기와 맥박 산소 측정기가 놓여 있고, 청진기 센서가 강조되어 있습니다. 음성 및 캡션은 정확합니다."
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:30",
+      "spoken_transcript": "Si las sibilancias continúan o empeoran, visite urgentemente una sala de emergencias o pediatra de guardia.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Si las sibilancias continúan o empeoran, visite urgentemente una sala de emergencias o pediatra de guardia.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "의인화된 세기관지 캐릭터가 집을 걱정스럽게 바라본 후 진료소 건물로 걸어갑니다. 음성 및 캡션은 정확합니다."
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:36",
+      "spoken_transcript": "Mantenga la humedad interior entre 40 y 60% y ofrezca líquidos frecuentemente antes de su visita.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Mantenga la humedad interior entre 40 y 60% y ofrezca líquidos frecuentemente antes de su visita.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "가습기가 아이 방에서 미스트를 내뿜고 있으며, 습도 게이지 오버레이가 40-60%를 보여줍니다. 음성 및 캡션은 정확합니다."
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:42",
+      "spoken_transcript": "Sostenga a su bebé erguido y afloje la ropa alrededor de su cuello y pecho.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Sostenga a su bebé erguido y afloje la ropa alrededor de su cuello y pecho.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "아기가 똑바로 안겨 있고, 목과 가슴 주변의 옷이 느슨해지는 것을 보여줍니다. 음성 및 캡션은 정확합니다."
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:48",
+      "spoken_transcript": "Si los labios o uñas se ponen azules, o ve retracciones, llame al 911 inmediatamente.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Si los labios o uñas se ponen azules, o ve retracciones, llame al 911 inmediatamente.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "아기가 침대에서 자고 있으며, 입술과 손톱이 파랗게 변하고 흉부 함몰 호흡이 나타납니다. 아기는 안전한 수면 자세를 취하고 있습니다. 음성 및 캡션은 정확합니다."
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:54",
+      "spoken_transcript": "Los cambios en la respiración requieren acción rápida. Busque la evaluación de un pediatra de inmediato.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Los cambios en la respiración requieren acción rápida. Busque la evaluación de un pediatra de inmediato.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "의인화된 세기관지 캐릭터가 의료 환경에서 확고한 표정으로 안심시키는 제스처를 취합니다. 음성 및 캡션은 정확합니다."
+    }
+  ],
+  "medication_route_review": [],
+  "issues": [],
+  "review_summary_ko": "이 비디오는 영아의 쌕쌕거림, 신속한 평가의 중요성, 항생제의 제한적인 역할, 그리고 응급 징후에 대한 정보를 정확하게 전달합니다. 음성, 캡션, 시각 자료는 일관되며 안전 지침을 준수합니다. 스페인어권 시청자를 위해 제작 사양에 따라 911이 사용되었으며, 안전한 영아 수면 자세가 묘사되었습니다. 전반적으로 의료적 정확성, 출처 충실도 및 시청각 무결성 측면에서 문제가 없습니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/infant-wheezing-pneumonia-antibiotics/es/infant-wheezing-pneumonia-antibiotics_ES.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/infant-wheezing-pneumonia-antibiotics/es/production.snapshot.json",
+    "audited_at": "2026-09-22T06:53:09.000433+00:00",
+    "video_sha256": "77c69a954c26ece748485bfbf314d53e40da52830307eed806d7e1481877ec87",
+    "snapshot_sha256": "cf639398a1e0c3c2ca89fa577c5b31ecd647534492106e449e09dfef4a7f9e98",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 30,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "77c69a954c26ece748485bfbf314d53e40da52830307eed806d7e1481877ec87",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 1,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS"
+          ]
+        },
+        {
+          "scene": 2,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS"
+          ]
+        },
+        {
+          "scene": 4,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS"
+          ]
+        },
+        {
+          "scene": 5,
+          "checks": [
+            "CASE_TIMELINE_REASSESSMENT"
+          ]
+        },
+        {
+          "scene": 6,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "EMERGENCY_LOCALE"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "SLEEP_VS_LETHARGY",
+            "SAFE_SLEEP_AND_SWALLOWING",
+            "EMERGENCY_LOCALE"
+          ]
+        },
+        {
+          "scene": 10,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [
+        "7",
+        "40",
+        "60",
+        "911"
+      ],
+      "srt_number_tokens": [
+        "7",
+        "40",
+        "60",
+        "911"
+      ],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 6.56,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0933,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 10.4,
+          "timeline_seconds": 7,
+          "speed_factor": 1.4857,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 7.72,
+          "timeline_seconds": 6,
+          "speed_factor": 1.2867,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 6.88,
+          "timeline_seconds": 5,
+          "speed_factor": 1.376,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 8.44,
+          "timeline_seconds": 6,
+          "speed_factor": 1.4067,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 8.28,
+          "timeline_seconds": 6,
+          "speed_factor": 1.38,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 8.68,
+          "timeline_seconds": 6,
+          "speed_factor": 1.4467,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 5.56,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 8.24,
+          "timeline_seconds": 6,
+          "speed_factor": 1.3733,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 7.6,
+          "timeline_seconds": 6,
+          "speed_factor": 1.2667,
+          "requires_close_listen": true
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

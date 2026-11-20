@@ -1,0 +1,58 @@
+{
+  "video_id": "infant-wheezing-pneumonia-antibiotics.en",
+  "overall_verdict": "FAIL",
+  "reviewer": "Sam",
+  "human_feedback": [
+    {
+      "filename": "Jaeyoon-Lee-0907-set3-English.mp4",
+      "feedback_file": "/Users/jaeyoonlee/.codex/attachments/6dae6324-39a7-401c-9d2c-5db661cb5027/pasted-text.txt",
+      "reason_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요.",
+      "additional_ko": "추가 노트: 47–53초 음성은 ‘call 119 immediately’만 들리고 어떤 증상일 때인지 설명이 빠져 있습니다. 청색증·함몰호흡 조건을 음성에도 복원하고 응급번호는 배포 국가에 맞춰 주세요. 영아 수면 장면의 베개·느슨한 침구도 수정이 필요합니다."
+    }
+  ],
+  "issues": [
+    {
+      "scene": 1,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요. 추가 노트: 47–53초 음성은 ‘call 119 immediately’만 들리고 어떤 증상일 때인지 설명이 빠져 있습니다. 청색증·함몰호흡 조건을 음성에도 복원하고 응급번호는 배포 국가에 맞춰 주세요. 영아 수면 장면의 베개·느슨한 침구도 수정이 필요합니다.",
+      "evidence": "Jaeyoon-Lee-0907-set3-English.mp4"
+    },
+    {
+      "scene": 4,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요. 추가 노트: 47–53초 음성은 ‘call 119 immediately’만 들리고 어떤 증상일 때인지 설명이 빠져 있습니다. 청색증·함몰호흡 조건을 음성에도 복원하고 응급번호는 배포 국가에 맞춰 주세요. 영아 수면 장면의 베개·느슨한 침구도 수정이 필요합니다.",
+      "evidence": "Jaeyoon-Lee-0907-set3-English.mp4"
+    },
+    {
+      "scene": 6,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요. 추가 노트: 47–53초 음성은 ‘call 119 immediately’만 들리고 어떤 증상일 때인지 설명이 빠져 있습니다. 청색증·함몰호흡 조건을 음성에도 복원하고 응급번호는 배포 국가에 맞춰 주세요. 영아 수면 장면의 베개·느슨한 침구도 수정이 필요합니다.",
+      "evidence": "Jaeyoon-Lee-0907-set3-English.mp4"
+    },
+    {
+      "scene": 7,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요. 추가 노트: 47–53초 음성은 ‘call 119 immediately’만 들리고 어떤 증상일 때인지 설명이 빠져 있습니다. 청색증·함몰호흡 조건을 음성에도 복원하고 응급번호는 배포 국가에 맞춰 주세요. 영아 수면 장면의 베개·느슨한 침구도 수정이 필요합니다.",
+      "evidence": "Jaeyoon-Lee-0907-set3-English.mp4"
+    },
+    {
+      "scene": 9,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요. 추가 노트: 47–53초 음성은 ‘call 119 immediately’만 들리고 어떤 증상일 때인지 설명이 빠져 있습니다. 청색증·함몰호흡 조건을 음성에도 복원하고 응급번호는 배포 국가에 맞춰 주세요. 영아 수면 장면의 베개·느슨한 침구도 수정이 필요합니다.",
+      "evidence": "Jaeyoon-Lee-0907-set3-English.mp4"
+    },
+    {
+      "scene": 9,
+      "category": "OTHER_VISUAL_ERROR",
+      "severity": "high",
+      "problem_ko": "사람 검토에서 지적된 시각적 안전 오류를 제거해야 합니다.",
+      "visual_prompt_addendum": "Show safe infant sleep: baby supine on a firm flat bare crib mattress, with no pillow, wedge, loose blanket, or raised mattress. No unsafe sleep pose.",
+      "evidence": "Jaeyoon-Lee-0907-set3-English.mp4"
+    }
+  ]
+}

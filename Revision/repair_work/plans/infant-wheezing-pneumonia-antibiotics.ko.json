@@ -1,0 +1,129 @@
+{
+  "repairs": [
+    {
+      "scene": 1,
+      "corrected_medical_claim": "2주간 감기 증상이 오락가락하다가 오늘 오후부터 숨 쉴 때 쇳소리가 시작되고 저녁에 더 심해졌다면, 기도가 좁아지거나 염증이 악화되었을 가능성이 있으며, 7개월 영아는 증상이 빠르게 악화될 수 있으므로 호흡 소리의 변화는 빠른 평가가 중요합니다.",
+      "corrected_narration": "아기에게 쇳소리가 나고 점점 심해진다면 기도가 좁아졌다는 신호일 수 있으므로 빠른 평가가 중요합니다.",
+      "caption_chunks": [
+        "아기에게 쇳소리가 나고",
+        "점점 심해진다면",
+        "기도가 좁아졌다는 신호일 수 있으므로",
+        "빠른 평가가 중요합니다."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "악화되는 영아의 호흡음 변화에 대한 빠른 평가의 중요성을 강조하기 위해 수정되었습니다."
+    },
+    {
+      "scene": 4,
+      "corrected_medical_claim": "기도가 좁아지거나 염증이 악화되었을 가능성이 있으며, 7개월 영아는 증상이 빠르게 악화될 수 있으므로 호흡 소리의 변화는 빠른 평가가 중요합니다.",
+      "corrected_narration": "기도가 좁아지거나 염증이 악화되면 숨 쉴 때 쌕쌕거리는 소리가 날 수 있으며, 빠른 평가가 중요합니다.",
+      "caption_chunks": [
+        "기도가 좁아지거나",
+        "염증이 악화되면",
+        "숨 쉴 때 쌕쌕거리는 소리가 날 수 있으며,",
+        "빠른 평가가 중요합니다."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "악화되는 영아의 호흡음 변화에 대한 빠른 평가의 중요성을 강조하기 위해 수정되었습니다."
+    },
+    {
+      "scene": 6,
+      "corrected_medical_claim": "쇳소리가 계속되거나 점점 심해진다면, 즉시 응급실이나 야간진료를 하는 소아과를 방문하셔야 합니다.",
+      "corrected_narration": "쇳소리가 계속되거나 심해진다면 즉시 응급실이나 야간진료 소아과를 방문하세요.",
+      "caption_chunks": [
+        "쇳소리가 계속되거나 심해진다면",
+        "즉시 응급실이나",
+        "야간진료 소아과를 방문하세요."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "악화되는 영아의 호흡음 변화에 대한 빠른 평가의 중요성을 강조하기 위해 '오늘 저녁'이라는 지연 표현을 '즉시'로 수정했습니다."
+    },
+    {
+      "scene": 7,
+      "corrected_medical_claim": "병원에 가는 동안 아이를 안아서 상체를 세워주고, 목과 가슴 부위의 옷을 느슨하게 풀어주세요. 가습기나 욕실의 수증기를 이용해 실내 습도를 40~60%로 유지해 주세요. 아이가 안전하게 삼킬 수 있을 때 5~10분 간격으로 모유, 분유, 물 등 수분을 소량씩 자주 섭취하게 해주세요.",
+      "corrected_narration": "병원 방문 전까지 실내 습도를 40에서 60%로 유지하고, 아이가 안전하게 삼킬 수 있을 때 수분을 자주 섭취하게 해주세요.",
+      "caption_chunks": [
+        "병원 방문 전까지 실내 습도를",
+        "40에서 60%로 유지하고,",
+        "아이가 안전하게 삼킬 수 있을 때",
+        "수분을 자주 섭취하게 해주세요."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "수분 공급 시 아이가 안전하게 삼킬 수 있는 상태인지 확인하도록 안전 지침을 추가했습니다."
+    },
+    {
+      "scene": 9,
+      "corrected_medical_claim": "입술이나 손톱이 파랗게 변함(청색증), 숨을 쉴 때마다 갈비뼈 아래나 빗장뼈 아래가 쏙쏙 들어감(함몰 호흡), 숨이 너무 가빠서 젖병이나 이유식을 먹지 못하거나 울음소리가 약해짐, 아이가 축 늘어지고 눈 맞춤을 하지 못함 중 하나라도 보인다면 즉시 119에 전화하십시오.",
+      "corrected_narration": "입술이나 손톱이 파래지거나 함몰 호흡이 보이면 즉시 119에 전화해야 합니다.",
+      "caption_chunks": [
+        "입술이나 손톱이 파래지거나",
+        "함몰 호흡이 보이면",
+        "즉시 119에 전화해야 합니다."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": true,
+      "visual_prompt_addendum": "Show safe infant sleep: baby supine on a firm flat bare crib mattress, with no pillow, wedge, loose blanket, or raised mattress. No unsafe sleep pose.",
+      "reason_ko": "영아의 안전한 수면 환경을 시각적으로 정확하게 표현하고, 위급 증상 발생 시 즉시 119에 전화해야 한다는 의료적 지침을 명확히 하기 위해 수정되었습니다."
+    }
+  ],
+  "video_id": "infant-wheezing-pneumonia-antibiotics.ko",
+  "model": "gemini-2.5-flash",
+  "source_issues": [
+    {
+      "scene": 1,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요. 추가 노트: 기관지의 천명음과 상기도 협착음을 구분해 주세요. 영아 침대의 베개·느슨한 이불도 제거한 장면으로 수정하고, 수분 공급은 아이가 안전하게 삼킬 수 있을 때만 안내해 주세요.",
+      "evidence": "Jaeyoon-Lee-0907-set3-Korean.mp4"
+    },
+    {
+      "scene": 4,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요. 추가 노트: 기관지의 천명음과 상기도 협착음을 구분해 주세요. 영아 침대의 베개·느슨한 이불도 제거한 장면으로 수정하고, 수분 공급은 아이가 안전하게 삼킬 수 있을 때만 안내해 주세요.",
+      "evidence": "Jaeyoon-Lee-0907-set3-Korean.mp4"
+    },
+    {
+      "scene": 6,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요. 추가 노트: 기관지의 천명음과 상기도 협착음을 구분해 주세요. 영아 침대의 베개·느슨한 이불도 제거한 장면으로 수정하고, 수분 공급은 아이가 안전하게 삼킬 수 있을 때만 안내해 주세요.",
+      "evidence": "Jaeyoon-Lee-0907-set3-Korean.mp4"
+    },
+    {
+      "scene": 7,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요. 추가 노트: 기관지의 천명음과 상기도 협착음을 구분해 주세요. 영아 침대의 베개·느슨한 이불도 제거한 장면으로 수정하고, 수분 공급은 아이가 안전하게 삼킬 수 있을 때만 안내해 주세요.",
+      "evidence": "Jaeyoon-Lee-0907-set3-Korean.mp4"
+    },
+    {
+      "scene": 9,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요. 추가 노트: 기관지의 천명음과 상기도 협착음을 구분해 주세요. 영아 침대의 베개·느슨한 이불도 제거한 장면으로 수정하고, 수분 공급은 아이가 안전하게 삼킬 수 있을 때만 안내해 주세요.",
+      "evidence": "Jaeyoon-Lee-0907-set3-Korean.mp4"
+    },
+    {
+      "scene": 9,
+      "category": "OTHER_VISUAL_ERROR",
+      "severity": "high",
+      "problem_ko": "사람 검토에서 지적된 시각적 안전 오류를 제거해야 합니다.",
+      "visual_prompt_addendum": "Show safe infant sleep: baby supine on a firm flat bare crib mattress, with no pillow, wedge, loose blanket, or raised mattress. No unsafe sleep pose.",
+      "evidence": "Jaeyoon-Lee-0907-set3-Korean.mp4"
+    }
+  ]
+}

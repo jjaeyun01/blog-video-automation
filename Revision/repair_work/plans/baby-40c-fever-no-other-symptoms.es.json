@@ -1,0 +1,116 @@
+{
+  "repairs": [
+    {
+      "scene": 1,
+      "corrected_medical_claim": "While a high fever, such as 40°C, can occur in a child without other respiratory symptoms, infants under 3 months with a fever of 38°C or higher require immediate medical assessment, and those 3-6 months with 39°C or higher need prompt assessment.",
+      "corrected_narration": "Un bebé puede tener 40°C sin otros síntomas, pero si tiene menos de 3 meses y 38°C o más, busque atención inmediata.",
+      "caption_chunks": [
+        "Un bebé puede tener 40°C sin otros síntomas,",
+        "pero si tiene menos de 3 meses y 38°C o más,",
+        "busque atención inmediata."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "연령 제한 없이 고열 관리 지침을 제공하여 어린 영아에게 오해를 줄 수 있는 의학적 오류를 수정합니다. 생후 3개월 미만 38°C 이상은 즉시 평가가 필요하다는 예외를 명확히 추가합니다."
+    },
+    {
+      "scene": 2,
+      "corrected_medical_claim": "Fever is the body's natural response, and if an older child is active, it may not be severe; however, infants under 3 months with 38°C or more, or 3-6 months with 39°C or more, need prompt medical assessment.",
+      "corrected_narration": "La fiebre es una defensa natural, pero si su bebé tiene menos de 3 meses y 38°C o más, busque atención médica.",
+      "caption_chunks": [
+        "La fiebre es una defensa natural,",
+        "pero si su bebé tiene menos de 3 meses y 38°C o más,",
+        "busque atención médica."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "연령 제한 없이 고열 관리 지침을 제공하여 어린 영아에게 오해를 줄 수 있는 의학적 오류를 수정합니다. 생후 3개월 미만 38°C 이상은 즉시 평가가 필요하다는 예외를 명확히 추가합니다."
+    },
+    {
+      "scene": 5,
+      "corrected_medical_claim": "For older children, if an unexplained high fever persists for 3 days or more, or if repeated fevers exceed 40°C, a medical visit is needed. Infants under 3 months with 38°C or more, or 3-6 months with 39°C or more, need prompt assessment.",
+      "corrected_narration": "Si una fiebre alta sin causa dura 3 días o más en un niño mayor, o si supera los 40°C repetidamente, busque atención médica.",
+      "caption_chunks": [
+        "Si una fiebre alta sin causa dura 3 días o más en un niño mayor,",
+        "o si supera los 40°C repetidamente,",
+        "busque atención médica."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "연령 제한 없이 고열 관리 지침을 제공하여 어린 영아에게 오해를 줄 수 있는 의학적 오류를 수정합니다. 나이가 큰 아이도 반복되는 40°C 초과 고열은 바로 의료진과 상의하도록 안내해야 합니다."
+    },
+    {
+      "scene": 6,
+      "corrected_medical_claim": "For older children, if they are eating, playing, and sleeping well despite fever, home management may be appropriate. However, infants under 3 months with 38°C or more, or 3-6 months with 39°C or more, need prompt medical assessment.",
+      "corrected_narration": "Si un niño mayor come, juega y duerme bien, el manejo en casa puede ser adecuado.",
+      "caption_chunks": [
+        "Si un niño mayor come, juega y duerme bien,",
+        "el manejo en casa puede ser adecuado."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "연령 제한 없이 고열 관리 지침을 제공하여 어린 영아에게 오해를 줄 수 있는 의학적 오류를 수정합니다. 이 지침이 '어린이'에게 적용됨을 명확히 합니다."
+    },
+    {
+      "scene": 8,
+      "corrected_medical_claim": "Administer acetaminophen or ibuprofen when the child is uncomfortable, following dosage guidelines and respecting their specific 4 to 6-hour intervals, and ensure frequent small sips of fluids to prevent dehydration.",
+      "corrected_narration": "Dé acetaminofén o ibuprofeno cada 4 a 6 horas si está incómodo, y asegure líquidos frecuentes.",
+      "caption_chunks": [
+        "Dé acetaminofén o ibuprofeno cada 4 a 6 horas si está incómodo,",
+        "y asegure líquidos frecuentes."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "해열제 투여 간격에 대한 일반화된 지침이 약물 이름을 명시하지 않아 오해를 줄 수 있는 의학적 오류를 수정합니다. 아세트아미노펜과 이부프로펜을 구분하여 명확한 정보를 제공합니다."
+    }
+  ],
+  "video_id": "baby-40c-fever-no-other-symptoms.es",
+  "model": "gemini-2.5-flash",
+  "source_issues": [
+    {
+      "scene": 1,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "0–11초·24–35초의 ‘아기 40도 고열도 활력이 좋으면 집에서 관리, 3일 이상이면 진료’는 연령 제한이 없어 어린 영아도 기다려도 되는 것으로 오해할 수 있습니다. 생후 3개월 미만 38도 이상은 즉시 평가, 3–6개월 39도 이상은 신속한 평가가 필요하다는 예외를 앞부분에 명확히 넣어 주세요. 추가 노트: 42–47초 ‘해열제 4–6시간 간격’은 약 이름 없이 일반화하지 말고 아세트아미노펜과 이부프로펜을 구분해 주세요. 나이가 큰 아이도 반복되는 40도 초과 고열은 바로 의료진과 상의하도록 안내해야 합니다. / 0–11초·24–35초의 ‘아기 40도 고열도 활력이 좋으면 집에서 관리, 3일 이상이면 진료’는 연령 제한이 없어 어린 영아도 기다려도 되는 것으로 오해할 수 있습니다. 생후 3개월 미만 38도 이상은 즉시 평가, 3–6개월 39도 이상은 신속한 평가가 필요하다는 예외를 앞부분에 명확히 넣어 주세요. 추가 노트: 42–47초 ‘해열제 4–6시간 간격’은 약 이름 없이 일반화하지 말고 아세트아미노펜과 이부프로펜을 구분해 주세요. 나이가 큰 아이도 반복되는 40도 초과 고열은 바로 의료진과 상의하도록 안내해야 합니다. 434행과 이 v1 파일은 SHA-256이 같아 수정본이 아닌 동일 파일로 확인됐습니다. 중복 때문이 아니라 위 의학적 안내 때문에 F입니다.",
+      "evidence": "Jaeyoon-Lee-0907-set4-Spanish.mp4, Jaeyoon-Lee-0907-set4-Spanish-v1.mp4"
+    },
+    {
+      "scene": 2,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "0–11초·24–35초의 ‘아기 40도 고열도 활력이 좋으면 집에서 관리, 3일 이상이면 진료’는 연령 제한이 없어 어린 영아도 기다려도 되는 것으로 오해할 수 있습니다. 생후 3개월 미만 38도 이상은 즉시 평가, 3–6개월 39도 이상은 신속한 평가가 필요하다는 예외를 앞부분에 명확히 넣어 주세요. 추가 노트: 42–47초 ‘해열제 4–6시간 간격’은 약 이름 없이 일반화하지 말고 아세트아미노펜과 이부프로펜을 구분해 주세요. 나이가 큰 아이도 반복되는 40도 초과 고열은 바로 의료진과 상의하도록 안내해야 합니다. / 0–11초·24–35초의 ‘아기 40도 고열도 활력이 좋으면 집에서 관리, 3일 이상이면 진료’는 연령 제한이 없어 어린 영아도 기다려도 되는 것으로 오해할 수 있습니다. 생후 3개월 미만 38도 이상은 즉시 평가, 3–6개월 39도 이상은 신속한 평가가 필요하다는 예외를 앞부분에 명확히 넣어 주세요. 추가 노트: 42–47초 ‘해열제 4–6시간 간격’은 약 이름 없이 일반화하지 말고 아세트아미노펜과 이부프로펜을 구분해 주세요. 나이가 큰 아이도 반복되는 40도 초과 고열은 바로 의료진과 상의하도록 안내해야 합니다. 434행과 이 v1 파일은 SHA-256이 같아 수정본이 아닌 동일 파일로 확인됐습니다. 중복 때문이 아니라 위 의학적 안내 때문에 F입니다.",
+      "evidence": "Jaeyoon-Lee-0907-set4-Spanish.mp4, Jaeyoon-Lee-0907-set4-Spanish-v1.mp4"
+    },
+    {
+      "scene": 5,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "0–11초·24–35초의 ‘아기 40도 고열도 활력이 좋으면 집에서 관리, 3일 이상이면 진료’는 연령 제한이 없어 어린 영아도 기다려도 되는 것으로 오해할 수 있습니다. 생후 3개월 미만 38도 이상은 즉시 평가, 3–6개월 39도 이상은 신속한 평가가 필요하다는 예외를 앞부분에 명확히 넣어 주세요. 추가 노트: 42–47초 ‘해열제 4–6시간 간격’은 약 이름 없이 일반화하지 말고 아세트아미노펜과 이부프로펜을 구분해 주세요. 나이가 큰 아이도 반복되는 40도 초과 고열은 바로 의료진과 상의하도록 안내해야 합니다. / 0–11초·24–35초의 ‘아기 40도 고열도 활력이 좋으면 집에서 관리, 3일 이상이면 진료’는 연령 제한이 없어 어린 영아도 기다려도 되는 것으로 오해할 수 있습니다. 생후 3개월 미만 38도 이상은 즉시 평가, 3–6개월 39도 이상은 신속한 평가가 필요하다는 예외를 앞부분에 명확히 넣어 주세요. 추가 노트: 42–47초 ‘해열제 4–6시간 간격’은 약 이름 없이 일반화하지 말고 아세트아미노펜과 이부프로펜을 구분해 주세요. 나이가 큰 아이도 반복되는 40도 초과 고열은 바로 의료진과 상의하도록 안내해야 합니다. 434행과 이 v1 파일은 SHA-256이 같아 수정본이 아닌 동일 파일로 확인됐습니다. 중복 때문이 아니라 위 의학적 안내 때문에 F입니다.",
+      "evidence": "Jaeyoon-Lee-0907-set4-Spanish.mp4, Jaeyoon-Lee-0907-set4-Spanish-v1.mp4"
+    },
+    {
+      "scene": 6,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "0–11초·24–35초의 ‘아기 40도 고열도 활력이 좋으면 집에서 관리, 3일 이상이면 진료’는 연령 제한이 없어 어린 영아도 기다려도 되는 것으로 오해할 수 있습니다. 생후 3개월 미만 38도 이상은 즉시 평가, 3–6개월 39도 이상은 신속한 평가가 필요하다는 예외를 앞부분에 명확히 넣어 주세요. 추가 노트: 42–47초 ‘해열제 4–6시간 간격’은 약 이름 없이 일반화하지 말고 아세트아미노펜과 이부프로펜을 구분해 주세요. 나이가 큰 아이도 반복되는 40도 초과 고열은 바로 의료진과 상의하도록 안내해야 합니다. / 0–11초·24–35초의 ‘아기 40도 고열도 활력이 좋으면 집에서 관리, 3일 이상이면 진료’는 연령 제한이 없어 어린 영아도 기다려도 되는 것으로 오해할 수 있습니다. 생후 3개월 미만 38도 이상은 즉시 평가, 3–6개월 39도 이상은 신속한 평가가 필요하다는 예외를 앞부분에 명확히 넣어 주세요. 추가 노트: 42–47초 ‘해열제 4–6시간 간격’은 약 이름 없이 일반화하지 말고 아세트아미노펜과 이부프로펜을 구분해 주세요. 나이가 큰 아이도 반복되는 40도 초과 고열은 바로 의료진과 상의하도록 안내해야 합니다. 434행과 이 v1 파일은 SHA-256이 같아 수정본이 아닌 동일 파일로 확인됐습니다. 중복 때문이 아니라 위 의학적 안내 때문에 F입니다.",
+      "evidence": "Jaeyoon-Lee-0907-set4-Spanish.mp4, Jaeyoon-Lee-0907-set4-Spanish-v1.mp4"
+    },
+    {
+      "scene": 8,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "0–11초·24–35초의 ‘아기 40도 고열도 활력이 좋으면 집에서 관리, 3일 이상이면 진료’는 연령 제한이 없어 어린 영아도 기다려도 되는 것으로 오해할 수 있습니다. 생후 3개월 미만 38도 이상은 즉시 평가, 3–6개월 39도 이상은 신속한 평가가 필요하다는 예외를 앞부분에 명확히 넣어 주세요. 추가 노트: 42–47초 ‘해열제 4–6시간 간격’은 약 이름 없이 일반화하지 말고 아세트아미노펜과 이부프로펜을 구분해 주세요. 나이가 큰 아이도 반복되는 40도 초과 고열은 바로 의료진과 상의하도록 안내해야 합니다. / 0–11초·24–35초의 ‘아기 40도 고열도 활력이 좋으면 집에서 관리, 3일 이상이면 진료’는 연령 제한이 없어 어린 영아도 기다려도 되는 것으로 오해할 수 있습니다. 생후 3개월 미만 38도 이상은 즉시 평가, 3–6개월 39도 이상은 신속한 평가가 필요하다는 예외를 앞부분에 명확히 넣어 주세요. 추가 노트: 42–47초 ‘해열제 4–6시간 간격’은 약 이름 없이 일반화하지 말고 아세트아미노펜과 이부프로펜을 구분해 주세요. 나이가 큰 아이도 반복되는 40도 초과 고열은 바로 의료진과 상의하도록 안내해야 합니다. 434행과 이 v1 파일은 SHA-256이 같아 수정본이 아닌 동일 파일로 확인됐습니다. 중복 때문이 아니라 위 의학적 안내 때문에 F입니다.",
+      "evidence": "Jaeyoon-Lee-0907-set4-Spanish.mp4, Jaeyoon-Lee-0907-set4-Spanish-v1.mp4"
+    }
+  ]
+}

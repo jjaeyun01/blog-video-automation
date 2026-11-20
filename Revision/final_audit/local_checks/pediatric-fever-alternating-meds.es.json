@@ -1,0 +1,141 @@
+{
+  "duration_seconds": 60.021029,
+  "width": 1080,
+  "height": 1920,
+  "has_audio": true,
+  "scene_count": 10,
+  "captions_equal_expected_narration": true,
+  "caption_images_checked": 25,
+  "all_caption_image_corners_transparent": true,
+  "video_sha256": "0f738d55566c432dd85f790b384305e97b07bb55242ebbb1a23a753a3068061c",
+  "reviewer_feedback_focus": [
+    {
+      "scene": 2,
+      "checks": [
+        "MEDICINE_STOP_RESTART"
+      ]
+    },
+    {
+      "scene": 5,
+      "checks": [
+        "DOSE_CONCENTRATION_CONTEXT",
+        "SAFE_SLEEP_AND_SWALLOWING"
+      ]
+    },
+    {
+      "scene": 6,
+      "checks": [
+        "DOSE_CONCENTRATION_CONTEXT"
+      ]
+    },
+    {
+      "scene": 8,
+      "checks": [
+        "SAFE_SLEEP_AND_SWALLOWING"
+      ]
+    },
+    {
+      "scene": 9,
+      "checks": [
+        "NEW_OR_MIGRATING_PAIN"
+      ]
+    },
+    {
+      "scene": 10,
+      "checks": [
+        "MEDICINE_STOP_RESTART"
+      ]
+    }
+  ],
+  "srt_exists": true,
+  "srt_semantically_expected_by_normalized_text": true,
+  "expected_number_tokens": [
+    "40",
+    "4",
+    "6",
+    "6",
+    "8",
+    "48"
+  ],
+  "srt_number_tokens": [
+    "40",
+    "4",
+    "6",
+    "6",
+    "8",
+    "48"
+  ],
+  "srt_numbers_match_expected": true,
+  "audio_scene_timing": [
+    {
+      "scene": 1,
+      "raw_seconds": 4.88,
+      "timeline_seconds": 6,
+      "speed_factor": 1.0,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 2,
+      "raw_seconds": 4.68,
+      "timeline_seconds": 6,
+      "speed_factor": 1.0,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 3,
+      "raw_seconds": 8.64,
+      "timeline_seconds": 6,
+      "speed_factor": 1.44,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 4,
+      "raw_seconds": 7.76,
+      "timeline_seconds": 6,
+      "speed_factor": 1.2933,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 5,
+      "raw_seconds": 8.28,
+      "timeline_seconds": 6,
+      "speed_factor": 1.38,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 6,
+      "raw_seconds": 8.92,
+      "timeline_seconds": 6,
+      "speed_factor": 1.4867,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 7,
+      "raw_seconds": 6.6,
+      "timeline_seconds": 6,
+      "speed_factor": 1.1,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 8,
+      "raw_seconds": 5.92,
+      "timeline_seconds": 6,
+      "speed_factor": 1.0,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 9,
+      "raw_seconds": 6.84,
+      "timeline_seconds": 6,
+      "speed_factor": 1.14,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 10,
+      "raw_seconds": 5.4,
+      "timeline_seconds": 6,
+      "speed_factor": 1.0,
+      "requires_close_listen": false
+    }
+  ]
+}

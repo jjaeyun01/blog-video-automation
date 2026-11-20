@@ -1,0 +1,346 @@
+{
+  "video_id": "baby-formula-refusal-cold.ko",
+  "language": "ko",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "PASS",
+  "av_integrity": "PASS",
+  "spoken_transcript": "아기가 분유를 거부해 섭취량이 줄면 주의가 필요하고 탈수로 이어질 수 있습니다. 감기는 아기의 식욕을 떨어뜨리지만, 섭취량 감소는 주의가 필요합니다. 아기가 얼마나 오래 먹지 않아도 괜찮을까요? 언제 걱정해야 할까요? 심한 기침은 아기의 목을 아프게 하여 삼키기 어렵게 만듭니다. 아기가 평소보다 쳐지거나 8시간 이상 소변을 보지 못하는 등 탈수 증상을 보인다면, 12시간이 되지 않았더라도 즉시 진료를 받아야 합니다. 한 번에 많이 주기보다 아기가 받아먹는 정도에 맞춰 소량씩 자주 수유를 시도해 보세요. 탈수 확인: 8시간 내 소변 없음, 마른 입술, 울 때 눈물 없음. 분유를 체온 정도로 데우고, 젖병 거부 시 숟가락이나 컵을 사용하세요. 8시간 이상 소변 없음, 처짐, 마른 입술, 함몰된 눈은 응급 징후입니다. 이러한 응급 징후가 있거나 우려가 지속되면 소아청소년과 진료를 받으세요.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "NOT_APPLICABLE",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "PASS",
+    "high_fever_age_context": "NOT_APPLICABLE",
+    "sleep_vs_lethargy": "PASS",
+    "dehydration_guidance": "PASS",
+    "multilingual_integrity": "NOT_APPLICABLE",
+    "evidence_ko": "",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "NOT_APPLICABLE",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "PASS",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "PASS",
+    "treatment_claim_uncertainty": "NOT_APPLICABLE",
+    "simultaneous_and_alternating_antipyretics": "NOT_APPLICABLE",
+    "infant_feeding_and_formula": "PASS",
+    "medicine_storage_and_restart": "NOT_APPLICABLE",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "NOT_APPLICABLE"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "아기가 분유를 거부해 섭취량이 줄면 주의가 필요하고 탈수로 이어질 수 있습니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "아기가 분유를 거부해 섭취량이 줄면 주의가 필요하고탈수로 이어질 수 있습니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막 내용이 일치하며, 시각적 요소도 내용과 부합합니다."
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:06",
+      "spoken_transcript": "감기는 아기의 식욕을 떨어뜨리지만, 섭취량 감소는 주의가 필요합니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "감기는 아기의 식욕을 떨어뜨리지만,섭취량 감소는 주의가 필요합니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막 내용이 일치하며, 아기 손이 젖병을 미는 시각적 표현이 식욕 부진을 잘 나타냅니다."
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:12",
+      "spoken_transcript": "아기가 얼마나 오래 먹지 않아도 괜찮을까요? 언제 걱정해야 할까요?",
+      "speech_complete": true,
+      "visible_caption_transcript": "아기가 얼마나 오래 먹지 않아도 괜찮을까요?언제 걱정해야 할까요?",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막 내용이 일치하며, 물음표 시각 효과가 질문의 의미를 강조합니다."
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:18",
+      "spoken_transcript": "심한 기침은 아기의 목을 아프게 하여 삼키기 어렵게 만듭니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "심한 기침은 아기의 목을 아프게 하여삼키기 어렵게 만듭니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막 내용이 일치하며, 목 부위의 염증을 시각적으로 잘 표현했습니다."
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:23",
+      "spoken_transcript": "아기가 평소보다 쳐지거나 8시간 이상 소변을 보지 못하는 등 탈수 증상을 보인다면, 12시간이 되지 않았더라도 즉시 진료를 받아야 합니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "아기가 평소보다 쳐지거나8시간 이상 소변을 보지 못하는 등 탈수 증상을 보인다면,12시간이 되지 않았더라도 즉시 진료를 받아야 합니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막 내용이 일치하며, 탈수 증상 및 즉시 진료 필요성에 대한 중요한 정보를 정확히 전달합니다."
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:32",
+      "spoken_transcript": "한 번에 많이 주기보다 아기가 받아먹는 정도에 맞춰 소량씩 자주 수유를 시도해 보세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "한 번에 많이 주기보다아기가 받아먹는 정도에 맞춰소량씩 자주 수유를 시도해 보세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막 내용이 일치하며, 아기에게 젖병을 주는 시각적 표현이 적절합니다."
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:38",
+      "spoken_transcript": "탈수 확인: 8시간 내 소변 없음, 마른 입술, 울 때 눈물 없음.",
+      "speech_complete": true,
+      "visible_caption_transcript": "탈수 확인: 8시간 내 소변 없음,마른 입술, 울 때 눈물 없음.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막 내용이 일치하며, 탈수 증상 아이콘과 8시간 오버레이가 정보를 명확히 전달합니다."
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:44",
+      "spoken_transcript": "분유를 체온 정도로 데우고, 젖병 거부 시 숟가락이나 컵을 사용하세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "분유를 체온 정도로 데우고,젖병 거부 시 숟가락이나 컵을 사용하세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막 내용이 일치하며, 젖병을 데우고 숟가락과 컵을 사용하는 시각적 표현이 적절합니다."
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:49",
+      "spoken_transcript": "8시간 이상 소변 없음, 처짐, 마른 입술, 함몰된 눈은 응급 징후입니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "8시간 이상 소변 없음, 처짐,마른 입술, 함몰된 눈은 응급 징후입니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막 내용이 일치하며, 응급 징후에 대한 시각적 요소들이 명확하게 제시됩니다."
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:55",
+      "spoken_transcript": "이러한 응급 징후가 있거나 우려가 지속되면 소아청소년과 진료를 받으세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "이러한 응급 징후가 있거나우려가 지속되면 소아청소년과 진료를 받으세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막 내용이 일치하며, 소아청소년과 진료를 권장하는 내용이 잘 전달됩니다."
+    }
+  ],
+  "medication_route_review": [],
+  "issues": [],
+  "review_summary_ko": "제공된 영상은 아기의 분유 거부 및 탈수 증상에 대한 정보를 정확하고 명확하게 전달합니다. 의학적 내용은 원본 자료와 일치하며, 시각적 요소와 음성, 자막 모두 일관성 있게 잘 구현되었습니다. 특별한 오류나 안전 문제는 발견되지 않았습니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-formula-refusal-cold/ko/baby-formula-refusal-cold_KO.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-formula-refusal-cold/ko/production.snapshot.json",
+    "audited_at": "2026-09-22T07:54:24.219866+00:00",
+    "video_sha256": "3c7f4c611603e772a275e2e19efaf8ce7722610a67c8ada986dd60bb8342bdae",
+    "snapshot_sha256": "f45e6fa19660fca6a4deca03d0e1210dff76ae103119b6b0c412b906f92ee848",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 22,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "3c7f4c611603e772a275e2e19efaf8ce7722610a67c8ada986dd60bb8342bdae",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 1,
+          "checks": [
+            "DEHYDRATION_OR_POOR_INTAKE",
+            "FORMULA_AMOUNT_VS_CONCENTRATION"
+          ]
+        },
+        {
+          "scene": 2,
+          "checks": [
+            "FORMULA_AMOUNT_VS_CONCENTRATION"
+          ]
+        },
+        {
+          "scene": 3,
+          "checks": [
+            "FORMULA_AMOUNT_VS_CONCENTRATION"
+          ]
+        },
+        {
+          "scene": 4,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 5,
+          "checks": [
+            "SLEEP_VS_LETHARGY",
+            "DEHYDRATION_OR_POOR_INTAKE",
+            "TWELVE_HOUR_INTERVAL",
+            "FEED_REFUSAL_WAIT"
+          ]
+        },
+        {
+          "scene": 6,
+          "checks": [
+            "FORMULA_AMOUNT_VS_CONCENTRATION"
+          ]
+        },
+        {
+          "scene": 7,
+          "checks": [
+            "DEHYDRATION_OR_POOR_INTAKE"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "FORMULA_AMOUNT_VS_CONCENTRATION",
+            "POWDER_MEDICINE_STORAGE"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "SLEEP_VS_LETHARGY",
+            "EMERGENCY_LOCALE"
+          ]
+        },
+        {
+          "scene": 10,
+          "checks": [
+            "SLEEP_VS_LETHARGY",
+            "EMERGENCY_LOCALE",
+            "FORMULA_AMOUNT_VS_CONCENTRATION"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [
+        "8",
+        "12",
+        "8",
+        "8"
+      ],
+      "srt_number_tokens": [
+        "8",
+        "12",
+        "8",
+        "8"
+      ],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 7.08,
+          "timeline_seconds": 6,
+          "speed_factor": 1.18,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 6.24,
+          "timeline_seconds": 6,
+          "speed_factor": 1.04,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 5.92,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 5.32,
+          "timeline_seconds": 5,
+          "speed_factor": 1.064,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 12.36,
+          "timeline_seconds": 9,
+          "speed_factor": 1.3733,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 7.64,
+          "timeline_seconds": 6,
+          "speed_factor": 1.2733,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 8.36,
+          "timeline_seconds": 6,
+          "speed_factor": 1.3933,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 6.4,
+          "timeline_seconds": 5,
+          "speed_factor": 1.28,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 8.56,
+          "timeline_seconds": 6,
+          "speed_factor": 1.4267,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 6.08,
+          "timeline_seconds": 5,
+          "speed_factor": 1.216,
+          "requires_close_listen": false
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

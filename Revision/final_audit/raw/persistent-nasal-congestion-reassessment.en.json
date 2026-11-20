@@ -1,0 +1,307 @@
+{
+  "video_id": "persistent-nasal-congestion-reassessment.en",
+  "language": "en",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "PASS",
+  "av_integrity": "PASS",
+  "spoken_transcript": "Re-evaluate sticky discharge lasting 3 months without fever or cough. Nasal congestion can stem from various causes beyond just sinus infections. Continuously changing antibiotics may not address the underlying problem. Enlarged adenoids or nasal polyps can physically block nasal passages. Three months of congestion with sticky discharge despite antibiotics needs cause re-evaluation. Re-evaluating the root cause is more important than just switching antibiotics. If congestion persists, discuss a targeted exam with the clinician. CT is not routinely needed for every child. Saline nasal irrigation 2-3 times daily with sterile water helps clear sticky discharge. Fever above 38°C, facial swelling or pain, or vision changes need immediate care. For persistent congestion, consult your pediatrician to find the underlying cause.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "NOT_APPLICABLE",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "NOT_APPLICABLE",
+    "high_fever_age_context": "PASS",
+    "sleep_vs_lethargy": "NOT_APPLICABLE",
+    "dehydration_guidance": "NOT_APPLICABLE",
+    "multilingual_integrity": "PASS",
+    "evidence_ko": "모든 음성, 캡션, 오버레이 내용이 원문과 일치하며, 의학적으로 안전하고 정확함. 특히 비강 세척 시 자세 및 물의 종류에 대한 지침을 시각적으로 잘 준수함.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "NOT_APPLICABLE",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "NOT_APPLICABLE",
+    "safe_sleep_and_swallowing": "NOT_APPLICABLE",
+    "mechanism_and_diagnostic_limits": "PASS",
+    "treatment_claim_uncertainty": "PASS",
+    "simultaneous_and_alternating_antipyretics": "NOT_APPLICABLE",
+    "infant_feeding_and_formula": "NOT_APPLICABLE",
+    "medicine_storage_and_restart": "NOT_APPLICABLE",
+    "age_appropriate_nasal_care": "PASS",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "PASS"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "Re-evaluate sticky discharge lasting 3 months without fever or cough.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Re-evaluate sticky discharge lasting 3 months without fever or cough.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "끈적한 콧물이 3개월 이상 지속되고 열이나 기침이 없는 경우 재평가가 필요하다는 내용이 음성, 캡션, 오버레이에 모두 정확하게 표현됨."
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:06",
+      "spoken_transcript": "Nasal congestion can stem from various causes beyond just sinus infections.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Nasal congestion can stem from various causes beyond just sinus infections.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "코막힘이 부비동염 외 다른 원인에서 비롯될 수 있다는 내용이 음성 및 캡션에 정확하게 표현됨."
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:12",
+      "spoken_transcript": "Continuously changing antibiotics may not address the underlying problem.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Continuously changing antibiotics may not address the underlying problem.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "항생제를 계속 바꾸는 것이 근본적인 문제를 해결하지 못할 수 있다는 내용이 음성 및 캡션에 정확하게 표현됨."
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:18",
+      "spoken_transcript": "Enlarged adenoids or nasal polyps can physically block nasal passages.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Enlarged adenoids or nasal polyps can physically block nasal passages.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "비대해진 아데노이드나 비강 용종이 코 통로를 물리적으로 막을 수 있다는 내용이 음성 및 캡션에 정확하게 표현됨."
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:24",
+      "spoken_transcript": "Three months of congestion with sticky discharge despite antibiotics needs cause re-evaluation.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Three months of congestion with sticky discharge despite antibiotics needs cause re-evaluation.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "항생제 치료에도 불구하고 3개월간 끈적한 콧물과 코막힘이 지속되면 원인 재평가가 필요하다는 내용이 음성, 캡션, 오버레이에 모두 정확하게 표현됨."
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:30",
+      "spoken_transcript": "Re-evaluating the root cause is more important than just switching antibiotics.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Re-evaluating the root cause is more important than just switching antibiotics.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "항생제 교체보다 근본 원인 재평가가 더 중요하다는 내용이 음성 및 캡션에 정확하게 표현됨."
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:36",
+      "spoken_transcript": "If congestion persists, discuss a targeted exam with the clinician. CT is not routinely needed for every child.",
+      "speech_complete": true,
+      "visible_caption_transcript": "If congestion persists, discuss a targeted exam with the clinician. CT is not routinely needed for every child.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "코막힘이 지속되면 주치의와 정밀 검사를 논의해야 하며, CT가 모든 아이에게 일상적으로 필요한 것은 아니라는 내용이 음성 및 캡션에 정확하게 표현됨."
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:42",
+      "spoken_transcript": "Saline nasal irrigation 2-3 times daily with sterile water helps clear sticky discharge.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Saline nasal irrigation 2-3 times daily with sterile water helps clear sticky discharge.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "생리식염수 비강 세척을 하루 2~3회 시행하여 끈적한 분비물을 제거하는 데 도움이 된다는 내용이 음성 및 캡션에 정확하게 표현됨. 시각적으로도 적절한 자세와 방법을 보여줌."
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:48",
+      "spoken_transcript": "Fever above 38°C, facial swelling or pain, or vision changes need immediate care.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Fever above 38°C, facial swelling or pain, or vision changes need immediate care.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "38도 이상의 발열, 얼굴 부기 또는 통증, 시력 변화 시 즉시 의료 처치가 필요하다는 내용이 음성, 캡션, 오버레이에 모두 정확하게 표현됨."
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:54",
+      "spoken_transcript": "For persistent congestion, consult your pediatrician to find the underlying cause.",
+      "speech_complete": true,
+      "visible_caption_transcript": "For persistent congestion, consult your pediatrician to find the underlying cause.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "지속적인 코막힘의 경우 소아과 의사와 상담하여 근본 원인을 찾아야 한다는 내용이 음성 및 캡션에 정확하게 표현됨."
+    }
+  ],
+  "medication_route_review": [
+    {
+      "timestamp": "00:42",
+      "depicted_item": "Saline nasal irrigation bottle",
+      "depicted_route": "Nasal irrigation",
+      "intended_route": "Nasal irrigation",
+      "is_error": false,
+      "reason_ko": "비강 세척 병을 사용하여 코를 세척하는 모습이 적절하게 묘사됨. 아이는 싱크대 위로 몸을 숙이고 있어 안전한 자세를 보여줌.",
+      "confidence": 1.0
+    }
+  ],
+  "issues": [],
+  "review_summary_ko": "이 비디오는 3개월 이상 지속되는 코막힘과 끈적한 콧물 증상에 대한 재평가의 중요성을 강조하며, 항생제 교체보다는 근본 원인 파악에 초점을 맞출 것을 권장합니다. 비대해진 아데노이드나 비강 용종과 같은 다른 원인들을 제시하고, 주치의와의 상담을 통해 비내시경, 알레르기 검사, CT 등 추가 검사의 필요성을 논의할 것을 제안합니다. 또한, 생리식염수 비강 세척과 같은 가정 관리법을 소개하고, 38도 이상의 발열, 얼굴 부기, 시력 변화 등 즉시 병원 진료가 필요한 위험 신호를 명확히 안내합니다. 모든 의학적 정보는 원문 출처에 충실하며, 시각적 표현과 음성, 캡션 모두 정확하고 일관성 있게 제공됩니다. 특히 비강 세척 장면은 안전하고 적절한 자세를 보여주어 교육적 가치가 높습니다. 전반적으로 의학적 정확성, 출처 충실도, 시청각 무결성 모두 우수합니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/persistent-nasal-congestion-reassessment/en/persistent-nasal-congestion-reassessment_EN.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/persistent-nasal-congestion-reassessment/en/production.snapshot.json",
+    "audited_at": "2026-09-22T06:57:30.117250+00:00",
+    "video_sha256": "ec92d292d0dbea0c2368feb730cdbe45010e5db28409672deb9224b640dc6629",
+    "snapshot_sha256": "26f2831993f891683cf920a671262f90436532349bca5df64b332c1ba1500666",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 23,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "ec92d292d0dbea0c2368feb730cdbe45010e5db28409672deb9224b640dc6629",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 1,
+          "checks": [
+            "CASE_TIMELINE_REASSESSMENT"
+          ]
+        },
+        {
+          "scene": 5,
+          "checks": [
+            "CASE_TIMELINE_REASSESSMENT"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "NASAL_IRRIGATION_POSTURE",
+            "CASE_TIMELINE_REASSESSMENT"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [
+        "3",
+        "2",
+        "3",
+        "38"
+      ],
+      "srt_number_tokens": [
+        "3",
+        "2",
+        "3",
+        "38"
+      ],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 5.96,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 5.44,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 5.6,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 6.04,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0067,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 7.6,
+          "timeline_seconds": 6,
+          "speed_factor": 1.2667,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 5.76,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 8.92,
+          "timeline_seconds": 6,
+          "speed_factor": 1.4867,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 7.68,
+          "timeline_seconds": 6,
+          "speed_factor": 1.28,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 8.56,
+          "timeline_seconds": 6,
+          "speed_factor": 1.4267,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 5.88,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

@@ -1,0 +1,381 @@
+{
+  "schema_version": 1,
+  "slug": "powdered-fever-reducer-premix",
+  "title": "가루 해열제, 미리 타두면 안 돼요!",
+  "source": "https://www.fevercoach.us/ko/post/가루-해열제-미리-물에-타두기",
+  "language": "ko",
+  "character_image": null,
+  "aspect_ratio": "9:16",
+  "resolution": "720p",
+  "fps": 30,
+  "disclaimer": "이 콘텐츠는 정보 제공 목적으로만 제공되며 의학적 조언을 구성하지 않습니다. 건강 관련 문제나 건강 또는 치료와 관련된 결정을 내리기 전에 항상 자격을 갖춘 의료 전문가와 상담하시기 바랍니다.",
+  "metadata": {
+    "multilingual": true,
+    "languages": [
+      "ko",
+      "en",
+      "es"
+    ],
+    "medical_facts": [
+      {
+        "claim": "Powdered fever reducer should be mixed with water immediately before administration.",
+        "numeric_values": [],
+        "safety_qualification": "Mixing in advance can reduce efficacy or alter the medicine."
+      },
+      {
+        "claim": "If pre-mixing is unavoidable, administer within 1-2 hours and refrigerate in an opaque container, shaking well before use.",
+        "numeric_values": [
+          "1-2 hours"
+        ],
+        "safety_qualification": "This is an exception; immediate preparation is always preferred for optimal effect and safety."
+      },
+      {
+        "claim": "Mix powdered medicine with lukewarm or room temperature water; avoid hot water as it can damage ingredients.",
+        "numeric_values": [],
+        "safety_qualification": "Use lukewarm or room temperature water, not hot water."
+      },
+      {
+        "claim": "Medicine ingredients can degrade, lose stability, or become unevenly concentrated when dissolved in water over time.",
+        "numeric_values": [],
+        "safety_qualification": "These are the reasons why pre-mixing is discouraged."
+      },
+      {
+        "claim": "If fever persists or the child's condition worsens after correct administration, consult a pediatrician.",
+        "numeric_values": [],
+        "safety_qualification": "This is a clear instruction for when to seek professional help."
+      }
+    ],
+    "source_excerpt": "의학 감수:\n안상현, MD\n콘텐츠 편집:\n김명찬, MD\n이 게시물은 실제 의료 검토자의 질의응답 경험을 각색한 것입니다. 이 콘텐츠는 정보 제공 목적으로만 제공되며 의학적 조언을 구성하지 않습니다. 건강 관련 문제나 건강 또는 치료와 관련된 결정을 내리기 전에 항상 자격을 갖춘 의료 전문가와 상담하시기 바랍니다.\n질문:\n아이에게 먹일 가루 해열제를 미리 물에 타 놓았다가 나중에 복용시켜도 괜찮을까요? 혹시라도 미리 타두면 약 효과가 떨어지거나 변질될까 봐 걱정되어서 질문드립니다.\n답변:\n결론부터 말씀드리면, 가루 해열제는 미리 물에 타두지 마시고 복용 직전에 타서 바로 먹이는 것이 가장 좋습니다. 미리 물에 섞어둘 경우 약의 효과가 떨어지거나 변질될 우려가 있습니다.\n가루 해열제를 바로 타서 먹여야 하는 주요 이유는 다음과 같습니다.\n성분 변질: 약 성분이 물에 녹은 상태로 시간이 지나면 분해되거나 변질될 위험이 있습니다.\n안정성 저하: 빛, 온도, 공기 등에 장시간 노출되면서 약의 안정성이 떨어질 수 있습니다.\n농도 불균일: 가루가 바닥에 가라앉아 농도가 불균일해지므로 정확한 용량을 투여하기 어려워집니다.\n올바른 가루약 복용 및 보관 방법은 다음과 같습니다.\n가루약은 조제 받은 포장 그대로 보관하시고, 먹일 때 개봉하시기 바랍니다.\n복용 직전에 미지근하거나 실온의 물에 타서 바로 먹이시는 것이 좋습니다. (너무 뜨거운 물은 약 성분을 손상시킬 수 있으니 주의해 주세요.)\n만약 외출이나 수면 등 부득이하게 미리 타두어야만 하는 상황이라면, 다음의 주의사항을 반드시 지켜주세요.\n물에 탄 후 최대 1~2시간 이내에 복용해야 하며, 냉장 보관을 해야 합니다.\n불투명한 용기에 담아 빛을 차단해 주세요.\n먹이기 직전에 가라앉은 가루가 없도록 충분히 잘 흔들어 섞어주셔야 합니다.\n약의 온전한 효과와 아이의 안전을 위해 가급적 복용 직전에 조제하여 먹이시기를 권장합니다. 올바른 복용 후에도 열이 지속되거나 아이의 컨디션이 저하된다면, 소아청소년과에 방문하여 전문의의 진료를 받아보시길 바랍니다.\n아이의 건강을 모니터링할 때 더 명확한 안내와 안심을 위해, FeverCoach 앱이 항상 도움을 드립니다.\nfevercoach.us\nApple App Store\nGoogle Play\n🌐 다른 언어로 보기:\nEnglish\n·\nEspañol",
+    "visual_system": "fevercoach-explainer-v3",
+    "character_mode": "automatic",
+    "character_concept": {
+      "subject": "powdered medicine granule",
+      "source_basis": "The article focuses on the proper preparation and storage of powdered fever reducers, emphasizing the stability and efficacy of the medicine's active ingredients, which are in granular form.",
+      "visual_identity": "A small, multifaceted, crystalline granule, slightly irregular in shape, with a smooth, polished surface. It appears robust and intact when stable, and shows subtle signs of degradation when unstable.",
+      "primary_color": "pale blue",
+      "surface_texture": "smooth, polished, slightly translucent crystalline"
+    }
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "title": "미리 타두면 약효가 떨어져요",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "가루 해열제를 미리 물에 타두면 약효가 떨어지거나 변질될 수 있습니다.",
+      "subtitle": "가루 해열제를 미리 물에 타두면 약효가 떨어지거나 변질될 수 있습니다.",
+      "prompt": "A clear glass of water on a clean, light surface. A small amount of white powder is gently sprinkled into the water, dissolving initially, then slowly forming a cloudy, slightly separated layer at the bottom over time. The glass remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "red_flag",
+      "medical_claim": "Mixing powdered fever reducer in advance can reduce its efficacy or alter the medicine.",
+      "asset_prompt": "A clean, vertical 9:16 still image of a clear glass of water on a light surface, with a small amount of white powder sprinkled into it, just beginning to dissolve and settle. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "가루 해열제를 미리 물에 타두면",
+        "약효가 떨어지거나 변질될 수 있습니다."
+      ],
+      "narrative_role": "hook",
+      "shot_design": {
+        "camera_profile": "macro_dive",
+        "beat_one": "0.0-1.5 second establishing camera move: A clear glass of water sits on a clean, light surface.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: A small amount of white powder is gently sprinkled into the water, dissolving initially, then slowly forming a cloudy, slightly separated layer at the bottom over time.",
+        "payoff_frame": "4.5-6.0 second clear final hold: The glass shows a distinct, settled layer of altered medicine at the bottom, with the water above it looking less uniform.",
+        "depth_layers": "Foreground: the glass rim. Midground: the dissolving powder and water. Background: a soft, out-of-focus wall.",
+        "overlay_safe_zone": "top_left",
+        "sound_cues": "gentle sprinkle, subtle fizz, soft settling",
+        "transition_out": "The camera slowly pulls back, blurring the glass as it transitions to the next scene."
+      }
+    },
+    {
+      "index": 2,
+      "title": "원래 포장 그대로 보관하세요",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "가루약은 조제 받은 포장 그대로 보관하는 것이 가장 좋습니다.",
+      "subtitle": "가루약은 조제 받은 포장 그대로 보관하는 것이 가장 좋습니다.",
+      "prompt": "A sealed, white medicine packet rests on a smooth, pale surface. The camera arcs slowly around the packet, revealing the pale blue powdered medicine granule character peeking out from a tiny, almost invisible seam in the packaging, looking secure and contained. The packet remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "location",
+      "medical_claim": "Powdered medicine should be stored in its original packaging.",
+      "asset_prompt": "A clean, vertical 9:16 still image of a sealed, white medicine packet on a smooth, pale surface. The pale blue powdered medicine granule character is peeking out from a tiny seam. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "가루약은 조제 받은 포장 그대로",
+        "보관하는 것이 가장 좋습니다."
+      ],
+      "narrative_role": "context",
+      "shot_design": {
+        "camera_profile": "parallax_arc",
+        "beat_one": "0.0-1.5 second establishing camera move: A clean, white medicine packet, still sealed, rests on a smooth, pale surface.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: The camera arcs slowly around the medicine packet, revealing the character (powdered medicine granule) peeking out from a tiny, almost invisible seam in the packaging, looking secure and contained.",
+        "payoff_frame": "4.5-6.0 second clear final hold: The character is clearly visible, looking content and stable within the sealed packet, emphasizing its protection.",
+        "depth_layers": "Foreground: a subtle blur of the table edge. Midground: the medicine packet with the character. Background: a soft, out-of-focus shelf.",
+        "overlay_safe_zone": "top_right",
+        "sound_cues": "soft rustle, gentle hum",
+        "transition_out": "The camera continues its arc, smoothly transitioning to the next scene."
+      }
+    },
+    {
+      "index": 3,
+      "title": "농도가 불균일해져요",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "미리 타두면 가루가 가라앉아 농도가 불균일해져 정확한 용량 투여가 어렵습니다.",
+      "subtitle": "미리 타두면 가루가 가라앉아 농도가 불균일해져 정확한 용량 투여가 어렵습니다.",
+      "prompt": "Two identical, clear, small medicine cups are shown side-by-side on a clean counter. The camera tracks laterally, focusing on the left cup which contains freshly mixed, uniformly dissolved white medicine. Then it tracks to the right cup, which contains pre-mixed medicine, showing visible powder settled at the bottom, with the liquid above it appearing clearer. The cups remain stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "comparison",
+      "medical_claim": "Pre-mixing can lead to uneven concentration, making accurate dosing difficult.",
+      "asset_prompt": "A clean, vertical 9:16 still image showing two identical, clear, small medicine cups side-by-side. The left cup has uniformly dissolved white medicine. The right cup has white powder visibly settled at the bottom. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "미리 타두면 가루가 가라앉아",
+        "농도가 불균일해져 정확한 용량 투여가 어렵습니다."
+      ],
+      "narrative_role": "misconception",
+      "shot_design": {
+        "camera_profile": "comparison_track",
+        "beat_one": "0.0-1.5 second establishing camera move: Two identical, clear, small medicine cups are shown side-by-side on a clean counter.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: The camera tracks laterally, focusing on the left cup which contains freshly mixed, uniformly dissolved medicine. Then it tracks to the right cup, which contains pre-mixed medicine, showing visible powder settled at the bottom, with the liquid above it appearing clearer.",
+        "payoff_frame": "4.5-6.0 second clear final hold: Both cups are visible, clearly contrasting the uniform mixture on the left with the settled, uneven mixture on the right.",
+        "depth_layers": "Foreground: the counter edge. Midground: the two medicine cups. Background: a blurred kitchen or clinic wall.",
+        "overlay_safe_zone": "top_center",
+        "sound_cues": "gentle liquid swirl, soft clink",
+        "transition_out": "The camera slowly zooms out, blurring the cups as it transitions."
+      }
+    },
+    {
+      "index": 4,
+      "title": "성분이 변질될 수 있어요",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "물에 녹은 약 성분은 시간이 지나면서 빛, 온도, 공기에 의해 변질될 위험이 있습니다.",
+      "subtitle": "물에 녹은 약 성분은 시간이 지나면서 빛, 온도, 공기에 의해 변질될 위험이 있습니다.",
+      "prompt": "A clear glass of water with the pale blue powdered medicine granule character floating uniformly within it. The camera performs an x-ray push into the liquid, showing the character slowly changing shape, becoming less defined, and subtly breaking apart into smaller, less effective fragments over time. The glass remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "mechanism",
+      "medical_claim": "Medicine ingredients can degrade or alter when dissolved in water over time due to light, temperature, and air.",
+      "asset_prompt": "A clean, vertical 9:16 still image of a clear glass of water. The pale blue powdered medicine granule character is floating uniformly within the water, looking robust. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "물에 녹은 약 성분은 시간이 지나면서",
+        "빛, 온도, 공기에 의해 변질될 위험이 있습니다."
+      ],
+      "narrative_role": "mechanism",
+      "shot_design": {
+        "camera_profile": "xray_push",
+        "beat_one": "0.0-1.5 second establishing camera move: A clear glass of water with the character (powdered medicine granule) floating uniformly within it.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: The camera performs an x-ray push into the liquid, showing the character slowly changing shape, becoming less defined, and subtly breaking apart into smaller, less effective fragments over time, as if exposed to unseen elements.",
+        "payoff_frame": "4.5-6.0 second clear final hold: The character is visibly degraded, with small, irregular fragments floating around it, emphasizing the breakdown.",
+        "depth_layers": "Foreground: the inner surface of the glass. Midground: the character and its degrading fragments. Background: a blurred light source suggesting ambient light.",
+        "overlay_safe_zone": "top_left",
+        "sound_cues": "subtle fizzing, soft crackle",
+        "transition_out": "The x-ray view fades out, revealing a solid surface for the next scene."
+      }
+    },
+    {
+      "index": 5,
+      "title": "최대 1에서 2시간 이내 복용",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "가루 해열제는 복용 직전에 타서 바로 먹이는 것이 가장 좋으며, 부득이한 경우 약사에게 확인하세요.",
+      "subtitle": "가루 해열제는 복용 직전에 타서 바로 먹이는 것이 가장 좋으며, 부득이한 경우 약사에게 확인하세요.",
+      "prompt": "A small, opaque, child-safe container of pre-mixed medicine sits on a clean surface. The camera drops down, focusing on the container. A subtle visual timer (like a soft glow expanding around the container) indicates the passage of time, from a completely blank and unmarked surface to a completely blank and unmarked surface state, emphasizing the limited window. The container remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks. FINAL QA REPAIR: Remove the pre-mixed medicine container and visual timer. Instead, depict a generic, unopened medicine package on a clean surface, with a subtle visual cue emphasizing the importance of reading product-specific instructions or consulting a healthcare professional. Remove the subtle visual timer and any elements emphasizing a limited time window. Instead, the visual should subtly suggest the importance of consulting specific product instructions or a pharmacist for pre-mixed medicine. Remove the visual timer. Instead, a subtle question mark or a generic pharmacist icon appears above the container, indicating the need to consult a pharmacist for specific instructions. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "quantity",
+      "medical_claim": "Powdered fever reducer should be mixed with water immediately before administration; if pre-mixing is considered, consult a pharmacist for specific product instructions.",
+      "asset_prompt": "A clean, vertical 9:16 still image of a small, opaque, child-safe container of pre-mixed medicine on a clean surface. A subtle visual timer around it indicates the a completely blank and unmarked surface state. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks. FINAL QA REPAIR: Remove the pre-mixed medicine container and visual timer. Instead, depict a generic, unopened medicine package on a clean surface, with a subtle visual cue emphasizing the importance of reading product-specific instructions or consulting a healthcare professional. Remove the subtle visual timer and any elements emphasizing a limited time window. Instead, the visual should subtly suggest the importance of consulting specific product instructions or a pharmacist for pre-mixed medicine. Remove the visual timer. Instead, a subtle question mark or a generic pharmacist icon appears above the container, indicating the need to consult a pharmacist for specific instructions. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "가루 해열제는 복용 직전에 타서 바로 먹이는 것이 가장 좋으며,",
+        "부득이한 경우 약사에게 확인하세요."
+      ],
+      "narrative_role": "evidence",
+      "shot_design": {
+        "camera_profile": "top_down_drop",
+        "beat_one": "0.0-1.5 second establishing camera move: A small, opaque, child-safe container of pre-mixed medicine sits on a clean surface.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: The camera drops down, focusing on the container. A subtle visual timer (like a soft glow expanding around the container) indicates the passage of time, from an unmarked surface to an unmarked surface state, emphasizing the limited window.",
+        "payoff_frame": "4.5-6.0 second clear final hold: The container is clearly visible, with the an unmarked surface visual cue prominent, indicating the time limit has passed.",
+        "depth_layers": "Foreground: the container lid. Midground: the container itself. Background: a blurred refrigerator door or cool surface.",
+        "overlay_safe_zone": "top_right",
+        "sound_cues": "soft ticking, gentle hum",
+        "transition_out": "The camera lifts away from the container, revealing a wider scene."
+      }
+    },
+    {
+      "index": 6,
+      "title": "바로 타서 먹이는 것이 좋아요",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "가루 해열제는 복용 직전에 타서 바로 먹이는 것이 가장 좋으며, 부득이한 경우 약사에게 확인하세요.",
+      "subtitle": "가루 해열제는 복용 직전에 타서 바로 먹이는 것이 가장 좋으며, 부득이한 경우 약사에게 확인하세요.",
+      "prompt": "A split screen shows two distinct paths. The pale blue powdered medicine granule character is shown on the left path, looking vibrant and effective, representing immediate use. Then, the camera tracks laterally to the right path, where the character looks slightly less vibrant but still intact, surrounded by visual cues for refrigeration and an opaque container, representing pre-mixing with conditions. The paths remain stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks. FINAL QA REPAIR: Modify the right path of the split screen to remove visual cues for refrigeration and an opaque container. Instead, the right path should depict a parent consulting a pharmacist or carefully reading a product label for specific instructions, contrasting with the left path showing immediate mixing. Remove visual cues for refrigeration and an opaque container on the right path. Instead, the right path should visually represent the need to follow specific product instructions or consult a pharmacist if pre-mixing is unavoidable. On the right path, remove visual cues for refrigeration and opaque container. Instead, show the character with a subtle question mark or a generic pharmacist icon nearby, representing the need to consult a pharmacist for specific instructions if pre-mixing is considered. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "decision",
+      "medical_claim": "Administer immediately after mixing, or consult a pharmacist for specific product instructions if pre-mixing is considered.",
+      "asset_prompt": "A clean, vertical 9:16 still image showing two distinct paths. The left path shows the pale blue powdered medicine granule character looking vibrant, with a a completely blank and unmarked surface visual. The right path shows the character looking slightly less vibrant, with visual cues for refrigeration and an opaque container. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks. FINAL QA REPAIR: Modify the right path of the split screen to remove visual cues for refrigeration and an opaque container. Instead, the right path should depict a parent consulting a pharmacist or carefully reading a product label for specific instructions, contrasting with the left path showing immediate mixing. Remove visual cues for refrigeration and an opaque container on the right path. Instead, the right path should visually represent the need to follow specific product instructions or consult a pharmacist if pre-mixing is unavoidable. On the right path, remove visual cues for refrigeration and opaque container. Instead, show the character with a subtle question mark or a generic pharmacist icon nearby, representing the need to consult a pharmacist for specific instructions if pre-mixing is considered. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "가루 해열제는 복용 직전에 타서 바로 먹이는 것이 가장 좋으며,",
+        "부득이한 경우 약사에게 확인하세요."
+      ],
+      "narrative_role": "decision",
+      "shot_design": {
+        "camera_profile": "lateral_reveal",
+        "beat_one": "0.0-1.5 second establishing camera move: A split screen or two distinct paths are shown, one leading to an unmarked surface and the other to an unmarked surface.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: The character (powdered medicine granule) is shown on the an unmarked surface path, looking vibrant and effective. Then, the camera tracks laterally to the an unmarked surface path, where the character looks slightly less vibrant but still intact, surrounded by visual cues for refrigeration and opaque container.",
+        "payoff_frame": "4.5-6.0 second clear final hold: Both paths are clearly visible, with the character on each, illustrating the two choices and their associated conditions.",
+        "depth_layers": "Foreground: a subtle divider between paths. Midground: the character and path elements. Background: a blurred, neutral background.",
+        "overlay_safe_zone": "top_center",
+        "sound_cues": "soft whoosh, gentle click",
+        "transition_out": "The camera pulls back, showing the decision point fading into the distance."
+      }
+    },
+    {
+      "index": 7,
+      "title": "아이의 상태를 지켜보세요",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "약 복용 후에도 아이의 컨디션을 지속적으로 모니터링하는 것이 중요합니다.",
+      "subtitle": "약 복용 후에도 아이의 컨디션을 지속적으로 모니터링하는 것이 중요합니다.",
+      "prompt": "A parenta completely blank and unmarked surfaces forehead, checking for warmth. The camera (POV of the parent) slowly travels from the child's forehead to their face, observing their expression. The child looks slightly tired but not in distress, then subtly shifts to a more alert but still unwell look, indicating a need for continued monitoring. The child remains mostly still. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "sequence",
+      "medical_claim": "Monitor the child's condition after administration.",
+      "asset_prompt": "A clean, vertical 9:16 still image from a parenta completely blank and unmarked surfaces forehead being gently touched by a hand, with the child's face in soft focus, looking slightly tired. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "약 복용 후에도",
+        "아이의 컨디션을 지속적으로 모니터링하는 것이 중요합니다."
+      ],
+      "narrative_role": "reassessment",
+      "shot_design": {
+        "camera_profile": "pov_travel",
+        "beat_one": "0.0-1.5 second establishing camera move: A parentan unmarked surfaces forehead, checking for warmth.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: The camera (POV of the parent) slowly travels from the child's forehead to their face, observing their expression. The child looks slightly tired but not in distress, then subtly shifts to a more alert but still unwell look, indicating a need for continued monitoring.",
+        "payoff_frame": "4.5-6.0 second clear final hold: The child's face is in soft focus, showing a mild, slightly concerned expression, prompting continued observation.",
+        "depth_layers": "Foreground: the parentan unmarked surfaces face. Background: a blurred, comforting home environment.",
+        "overlay_safe_zone": "top_left",
+        "sound_cues": "soft sigh, gentle breathing",
+        "transition_out": "The POV shifts, moving away from the child's face."
+      }
+    },
+    {
+      "index": 8,
+      "title": "미지근한 물에 바로 타서 먹이세요",
+      "mode": "i2v",
+      "timeline_seconds": 5,
+      "generation_seconds": 6,
+      "narration": "복용 직전에 미지근하거나 실온의 물에 타서 바로 먹이는 것이 가장 좋습니다.",
+      "subtitle": "복용 직전에 미지근하거나 실온의 물에 타서 바로 먹이는 것이 가장 좋습니다.",
+      "prompt": "Vertical 9:16 polished semi-stylized 3D pediatric medical scene about 미지근한 물에 바로 타서 먹이세요. A calm upright child holds a small purpose-made translucent medicine dosing cup with a small amount of amber liquid. The child lifts the open cup to the lips, takes one gentle sip, lowers it, and swallows comfortably. A caregiver supports the child without holding any dosing implement. The medicine bottle remains closed on a distant table. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth. Keep every child fully clothed and the mood reassuring. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks. FINAL QA REPAIR: Modify the visual to show a caregiver mixing powdered medicine in a small, purpose-made dosing cup with water, ensuring all powder is dissolved and no residue remains. Emphasize following product instructions for water amount and temperature. The child is present but not actively consuming the medicine in this scene. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync, syringe, oral syringe, dosing syringe, plunger, needle, dropper, pipette, tube at mouth, medicine applicator at mouth, syringe, oral syringe, dosing syringe, plunger, needle, dropper, pipette, tube at mouth, medicine applicator at mouth, syringe, oral syringe, dosing syringe, plunger, needle, dropper, pipette, tube at mouth, medicine applicator at mouth, syringe, oral syringe, dosing syringe, plunger, needle, dropper, pipette, tube at mouth, medicine applicator at mouth",
+      "image": null,
+      "visual_type": "sequence",
+      "medical_claim": "Mix with lukewarm or room temperature water immediately before administering.",
+      "asset_prompt": "Clean text-free vertical 9:16 reference image for 미지근한 물에 바로 타서 먹이세요. An upright fully clothed child holds a small purpose-made translucent medicine dosing cup containing a little amber liquid. The cup is below the chin and clearly cup-shaped with a wide open rim. The caregiver's hands are empty. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth. Soft clinical daylight, reassuring 3D illustration. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks. FINAL QA REPAIR: Modify the visual to show a caregiver mixing powdered medicine in a small, purpose-made dosing cup with water, ensuring all powder is dissolved and no residue remains. Emphasize following product instructions for water amount and temperature. The child is present but not actively consuming the medicine in this scene. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "복용 직전에 미지근하거나 실온의 물에 타서",
+        "바로 먹이는 것이 가장 좋습니다."
+      ],
+      "narrative_role": "action",
+      "shot_design": {
+        "camera_profile": "hero_pullback",
+        "beat_one": "0.0-1.5 seconds: establish a calm, fully clothed upright child and caregiver.",
+        "beat_two": "1.5-4.5 seconds: the child independently lifts a wide open-rimmed medicine dosing cup, takes one small sip, and lowers it. The caregiver's hands remain empty.",
+        "payoff_frame": "4.5-6.0 seconds: hold on the child comfortable beside the lowered cup.",
+        "depth_layers": "Cup in foreground, child in midground, softly blurred room behind.",
+        "overlay_safe_zone": "Upper left quadrant remains visually quiet.",
+        "sound_cues": "Soft cup movement and one gentle swallow; no dialogue.",
+        "transition_out": "Slow reassuring pullback."
+      }
+    },
+    {
+      "index": 9,
+      "title": "열이 지속되면 진료받으세요",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "올바른 복용 후에도 열이 지속되거나 아이의 컨디션이 저하되면 진료를 받으세요.",
+      "subtitle": "올바른 복용 후에도 열이 지속되거나 아이의 컨디션이 저하되면 진료를 받으세요.",
+      "prompt": "A child is lying down, looking restless and uncomfortable. The camera slowly dives into a close-up of the childa completely blank and unmarked surfaces general unwell appearance, not specific symptoms. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, gore, panic, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "red_flag",
+      "medical_claim": "If fever persists or the child's condition worsens, seek professional medical advice.",
+      "asset_prompt": "A clean, vertical 9:16 still image of a child's face in soft focus, looking restless and uncomfortable, with slightly flushed cheeks and a furrowed brow. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "올바른 복용 후에도 열이 지속되거나",
+        "아이의 컨디션이 저하되면 진료를 받으세요."
+      ],
+      "narrative_role": "red_flag",
+      "shot_design": {
+        "camera_profile": "macro_dive",
+        "beat_one": "0.0-1.5 second establishing camera move: A child is lying down, looking restless and uncomfortable.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: The camera slowly dives into a close-up of the childan unmarked surfaces general unwell appearance, not specific symptoms.",
+        "payoff_frame": "4.5-6.0 second clear final hold: The child's face is in soft focus, clearly conveying discomfort or worsening condition without being alarming or graphic.",
+        "depth_layers": "Foreground: a soft blanket edge. Midground: the child's face. Background: a blurred pillow.",
+        "overlay_safe_zone": "top_left",
+        "sound_cues": "soft whimper, restless rustle",
+        "transition_out": "The image slowly blurs and transitions to a brighter, more hopeful scene."
+      }
+    },
+    {
+      "index": 10,
+      "title": "안전을 위해 바로 조제하세요",
+      "mode": "i2v",
+      "timeline_seconds": 7,
+      "generation_seconds": 6,
+      "narration": "약효와 아이의 안전을 위해 가급적 복용 직전에 조제하고, 필요시 소아청소년과 진료를 받으세요.",
+      "subtitle": "약효와 아이의 안전을 위해 가급적 복용 직전에 조제하고, 필요시 소아청소년과 진료를 받으세요.",
+      "prompt": "The pale blue powdered medicine granule character is shown looking robust and effective, floating in a freshly mixed, uniform liquid. The camera arcs around the vibrant character, then smoothly transitions to show a clear, inviting path leading to the entrance of a modern, child-friendly pediatrician's office. The character remains vibrant, and the office building is stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "hook",
+      "medical_claim": "For optimal effect and safety, always prepare powdered medicine right before use and consult a pediatrician if concerns arise.",
+      "asset_prompt": "A clean, vertical 9:16 still image of the pale blue powdered medicine granule character looking robust and effective, floating in a freshly mixed, uniform liquid. In the background, a clear path leads to a modern, child-friendly pediatrician's office. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "약효와 아이의 안전을 위해 가급적 복용 직전에 조제하고,",
+        "필요시 소아청소년과 진료를 받으세요."
+      ],
+      "narrative_role": "takeaway",
+      "shot_design": {
+        "camera_profile": "parallax_arc",
+        "beat_one": "0.0-1.5 second establishing camera move: The character (powdered medicine granule) is shown looking robust and effective, floating in a freshly mixed, uniform liquid.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: The camera arcs around the vibrant character, then smoothly transitions to show a clear, inviting path leading to the entrance of a modern, child-friendly pediatrician's office.",
+        "payoff_frame": "4.5-6.0 second clear final hold: The entrance of the pediatrician's office is clearly visible, conveying a sense of professional care and reassurance.",
+        "depth_layers": "Foreground: the vibrant character. Midground: the path to the office. Background: the pediatrician's office building.",
+        "overlay_safe_zone": "top_right",
+        "sound_cues": "gentle chime, soft footsteps",
+        "transition_out": "The scene gently fades to black, signifying conclusion."
+      }
+    }
+  ]
+}

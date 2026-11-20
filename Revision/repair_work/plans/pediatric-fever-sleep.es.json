@@ -1,0 +1,113 @@
+{
+  "repairs": [
+    {
+      "scene": 3,
+      "corrected_medical_claim": "고열을 앓고 난 후 아이가 평소보다 길게 낮잠을 자면 많이 걱정되시겠지만, 이는 몸이 회복하기 위한 자연스러운 과정일 수 있습니다.",
+      "corrected_narration": "Después de la fiebre, el sueño prolongado puede ser normal para la recuperación, pero observe si es inusualmente difícil de despertar o si su respuesta es reducida.",
+      "caption_chunks": [
+        "Después de la fiebre, el sueño prolongado puede ser normal para la recuperación,",
+        "pero observe si es inusualmente difícil de despertar o si su respuesta es reducida."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "수면 시간으로 정상 여부를 정하지 않고, 평소와 달리 깨우기 어렵거나 반응이 떨어지는 경우를 구분하도록 수정했습니다."
+    },
+    {
+      "scene": 5,
+      "corrected_medical_claim": "6시간 가까이 깨지 않는다면 아이를 확실하게 깨워 의식을 확인하고...",
+      "corrected_narration": "Si su hijo está inusualmente difícil de despertar o su respuesta es reducida, evalúelo de inmediato.",
+      "caption_chunks": [
+        "Si su hijo está inusualmente difícil de despertar o su respuesta es reducida,",
+        "evalúelo de inmediato."
+      ],
+      "replace_overlays": true,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "수면 시간 기준을 제거하고, 평소와 달리 깨우기 어렵거나 반응이 떨어지는 경우 즉시 평가하도록 수정했습니다. 시간 기반 오버레이를 제거했습니다."
+    },
+    {
+      "scene": 6,
+      "corrected_medical_claim": "6시간 가까이 깨지 않는다면 아이를 확실하게 깨워 의식을 확인하고, 탈수 예방을 위해 물이라도 조금씩 먹여보시는 것이 좋습니다.",
+      "corrected_narration": "Si es difícil de despertar o su respuesta es reducida, despierte a su hijo y, si está lo suficientemente despierto para tragar, ofrezca agua.",
+      "caption_chunks": [
+        "Si es difícil de despertar o su respuesta es reducida,",
+        "despierte a su hijo y, si está lo suficientemente despierto para tragar, ofrezca agua."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "수면 시간 기준을 제거하고, 평소와 달리 깨우기 어렵거나 반응이 떨어지는 경우 깨우도록 수정했습니다. 물은 충분히 깨어 안전하게 삼킬 수 있을 때만 먹이도록 안내를 추가했습니다."
+    },
+    {
+      "scene": 9,
+      "corrected_medical_claim": "🚨 다음과 같은 증상이 나타나면 즉시 응급실로 가셔야 합니다: 강하게 깨워도 전혀 반응이 없는 경우, 호흡이 불규칙하거나 비정상적으로 빠른 경우, 입술이나 얼굴이 창백해지거나 파랗게 변하는 청색증이 나타나는 경우, 6시간 이상 전혀 깨어나지 못하고 처지는 경우",
+      "corrected_narration": "Vaya a urgencias por falta de respuesta, respiración irregular, piel azul o letargo severo.",
+      "caption_chunks": [
+        "Vaya a urgencias por falta de respuesta, respiración irregular,",
+        "piel azul o letargo severo."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "수면 시간 기준을 제거하고, 반응 없음 또는 심한 처짐 증상 시 즉시 응급실로 가도록 수정했습니다."
+    },
+    {
+      "scene": 10,
+      "corrected_medical_claim": "충분히 수면을 취한 후 내일 아침에도 아이가 기력이 없거나 처짐 증상이 지속된다면, 소아청소년과에 방문하여 다시 진료를 받아보시기를 권장합니다.",
+      "corrected_narration": "Si el letargo persiste o le preocupa después de un sueño adecuado, consulte a su pediatra para un reexamen.",
+      "caption_chunks": [
+        "Si el letargo persiste o le preocupa después de un sueño adecuado,",
+        "consulte a su pediatra para un reexamen."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "심한 처짐 증상과 구분하여, 충분한 수면 후에도 처짐 증상이 지속되거나 우려되는 경우 소아청소년과에 방문하도록 수정했습니다. '다음 날 아침'이라는 시간 기준을 제거했습니다."
+    }
+  ],
+  "video_id": "pediatric-fever-sleep.es",
+  "model": "gemini-2.5-flash",
+  "source_issues": [
+    {
+      "scene": 3,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "12–35초의 ‘3–4시간 깊은 잠은 정상, 6시간 가까이 깨지 않으면 확인’과 46–60초의 ‘6시간 이상 처짐/다음 날에도 지속되면 진료’는 근거 있는 안전 판별 기준이 아닙니다. 수면 시간으로 정상 여부를 정하지 말고, 평소와 달리 깨우기 어렵거나 반응이 떨어지면 시간과 관계없이 즉시 평가받도록 고쳐 주세요. 추가 노트: 처음에 무반응 시 응급실을 권하더라도 뒤의 시간 기준이 판단을 혼란스럽게 합니다. 정상적으로 깨고 반응하는 회복기 피로와 의식 저하를 구분하고, 물은 충분히 깨어 안전하게 삼킬 수 있을 때만 먹이도록 안내해 주세요.",
+      "evidence": "Jaeyoon-Lee-0907-set6-Spanish.mp4"
+    },
+    {
+      "scene": 5,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "12–35초의 ‘3–4시간 깊은 잠은 정상, 6시간 가까이 깨지 않으면 확인’과 46–60초의 ‘6시간 이상 처짐/다음 날에도 지속되면 진료’는 근거 있는 안전 판별 기준이 아닙니다. 수면 시간으로 정상 여부를 정하지 말고, 평소와 달리 깨우기 어렵거나 반응이 떨어지면 시간과 관계없이 즉시 평가받도록 고쳐 주세요. 추가 노트: 처음에 무반응 시 응급실을 권하더라도 뒤의 시간 기준이 판단을 혼란스럽게 합니다. 정상적으로 깨고 반응하는 회복기 피로와 의식 저하를 구분하고, 물은 충분히 깨어 안전하게 삼킬 수 있을 때만 먹이도록 안내해 주세요.",
+      "evidence": "Jaeyoon-Lee-0907-set6-Spanish.mp4"
+    },
+    {
+      "scene": 6,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "12–35초의 ‘3–4시간 깊은 잠은 정상, 6시간 가까이 깨지 않으면 확인’과 46–60초의 ‘6시간 이상 처짐/다음 날에도 지속되면 진료’는 근거 있는 안전 판별 기준이 아닙니다. 수면 시간으로 정상 여부를 정하지 말고, 평소와 달리 깨우기 어렵거나 반응이 떨어지면 시간과 관계없이 즉시 평가받도록 고쳐 주세요. 추가 노트: 처음에 무반응 시 응급실을 권하더라도 뒤의 시간 기준이 판단을 혼란스럽게 합니다. 정상적으로 깨고 반응하는 회복기 피로와 의식 저하를 구분하고, 물은 충분히 깨어 안전하게 삼킬 수 있을 때만 먹이도록 안내해 주세요.",
+      "evidence": "Jaeyoon-Lee-0907-set6-Spanish.mp4"
+    },
+    {
+      "scene": 9,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "12–35초의 ‘3–4시간 깊은 잠은 정상, 6시간 가까이 깨지 않으면 확인’과 46–60초의 ‘6시간 이상 처짐/다음 날에도 지속되면 진료’는 근거 있는 안전 판별 기준이 아닙니다. 수면 시간으로 정상 여부를 정하지 말고, 평소와 달리 깨우기 어렵거나 반응이 떨어지면 시간과 관계없이 즉시 평가받도록 고쳐 주세요. 추가 노트: 처음에 무반응 시 응급실을 권하더라도 뒤의 시간 기준이 판단을 혼란스럽게 합니다. 정상적으로 깨고 반응하는 회복기 피로와 의식 저하를 구분하고, 물은 충분히 깨어 안전하게 삼킬 수 있을 때만 먹이도록 안내해 주세요.",
+      "evidence": "Jaeyoon-Lee-0907-set6-Spanish.mp4"
+    },
+    {
+      "scene": 10,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "12–35초의 ‘3–4시간 깊은 잠은 정상, 6시간 가까이 깨지 않으면 확인’과 46–60초의 ‘6시간 이상 처짐/다음 날에도 지속되면 진료’는 근거 있는 안전 판별 기준이 아닙니다. 수면 시간으로 정상 여부를 정하지 말고, 평소와 달리 깨우기 어렵거나 반응이 떨어지면 시간과 관계없이 즉시 평가받도록 고쳐 주세요. 추가 노트: 처음에 무반응 시 응급실을 권하더라도 뒤의 시간 기준이 판단을 혼란스럽게 합니다. 정상적으로 깨고 반응하는 회복기 피로와 의식 저하를 구분하고, 물은 충분히 깨어 안전하게 삼킬 수 있을 때만 먹이도록 안내해 주세요.",
+      "evidence": "Jaeyoon-Lee-0907-set6-Spanish.mp4"
+    }
+  ]
+}

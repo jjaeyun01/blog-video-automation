@@ -1,0 +1,84 @@
+Independently adjudicate a disputed finding from a pediatric short's first Gemini audit.
+Be conservative, but do not amplify a false-positive accusation. Judge the *specific finding*,
+not whether the whole video is perfect. A finding about omitted content needs proof that the
+omission creates a materially unsafe instruction in this topic. A source article may itself contain
+unsafe advice; independent safety takes priority. If the supplied transcript is insufficient to
+verify an audiovisual claim, recommend WARN. Respond in Korean using the JSON schema.
+
+VIDEO ID: influenza-a-high-fever-management.ko
+ACTUAL FINAL SCRIPT:
+Scene 1: A형 독감은 고열을 동반하는 것이 특징입니다.
+Scene 2: 이 바이러스는 고열을 유발하며 아이를 힘들게 할 수 있습니다.
+Scene 3: 해열제를 먹여도 처음 24~48시간은 열이 잘 안 떨어질 수 있습니다.
+Scene 4: 독감약을 먹어도 열이 24~48시간 안에 반드시 떨어지는 것은 아니에요.
+Scene 5: 약을 시작한 뒤에도 아이의 전반적인 상태와 수분 섭취를 계속 살펴보세요.
+Scene 6: 불편할 때 해열제 한 종류를 우선 쓰세요. 교차 복용은 의료진과 정한 약별 간격과 용량을 기록하며 하세요.
+Scene 7: 실내 온도를 24~26도로 유지하고 얇은 옷을 입혀주세요.
+Scene 8: 탈수가 걱정되면 경구수액제를 조금씩 주세요. 스포츠음료는 같은 대안이 아닙니다.
+Scene 9: 호흡 곤란, 의식 저하, 8시간 이상 소변 없음 등은 응급 상황입니다.
+Scene 10: 증상이 호전되지 않거나 아이가 처지면 소아청소년과 진료를 받으세요.
+FIRST AUDIT FINDINGS:
+[
+  {
+    "severity": "low",
+    "category": "CAPTION_OMISSION",
+    "timestamp": "00:48",
+    "scene": 9,
+    "evidence": "음성 및 캡션은 '호흡 곤란, 의식 저하, 8시간 이상 소변 없음 등은 응급 상황입니다.'라고 언급합니다. 그러나 원문에는 응급 상황 징후로 '가슴 통증을 호소할 때'도 명시되어 있으나, 영상에서는 누락되었습니다.",
+    "problem_ko": "응급 상황 징후 중 '가슴 통증'이 음성 및 캡션에서 누락되었습니다.",
+    "source_comparison_ko": "원문에는 '호흡 곤란이 있거나 가슴 통증을 호소할 때'가 응급 상황으로 명시되어 있으나, 영상에서는 '호흡 곤란'만 언급하고 '가슴 통증'은 누락되었습니다.",
+    "recommended_fix_ko": "음성 및 캡션에 '가슴 통증'을 추가하여 응급 상황 징후를 완전하게 전달해야 합니다.",
+    "confidence": 1.0
+  }
+]
+HUMAN FAIL FEEDBACK THAT MOTIVATED THE REVISION:
+약 25–35초에 ‘6개월 이상은 아세트아미노펜 후 2–3시간 뒤 이부프로펜 교차복용’을 일반 지침처럼 제시합니다. 불편감이 지속되는지, 각 약의 최소 간격·1일 총량을 어떻게 지킬지 없어 투약 혼선과 과량 위험이 있습니다. 단일 약 우선으로 바꾸고 교차 사용이 필요하면 의료진이 정한 복용 계획을 따르도록 해 주세요. 추가 노트: 항바이러스제 후 24–48시간 내 해열을 보장하는 표현은 개인차가 있음을 반영해 주세요. 수분 보충의 ‘이온음료’는 경구수분보충액(ORS)과 같은 것으로 안내하지 말고, 영아는 모유·분유를 기본으로 설명해 주세요. 실내 온도 숫자만으로 Fail 판정하지는 않았습니다.
+25~35초 전후: acetaminophen 후 2~3시간 뒤 ibuprofen 교차복용을 제시하지만, 불편감 지속 여부와 각 약의 최소 간격·하루 최대량·투여 기록에 대한 안전 조건이 없습니다. 고열 수치만으로 정례 교차복용하도록 읽히지 않게, 단일제 우선 및 필요한 경우 의료진과 정한 약별 계획을 따르도록 수정해 주세요. 추가 노트: 2~3시간이라는 숫자 자체가 모든 상황에서 금지라는 의미는 아닙니다. 독감약을 먹으면 반드시 24~48시간 안에 열이 잡힌다는 인상도 완화해 주세요. 탈수 보충 시 스포츠음료와 경구수액제(ORS)를 동등하게 제시하지 않도록 해 주세요.
+SOURCE ARTICLE EXCERPT:
+의학 감수:
+안상현, MD
+콘텐츠 편집:
+김명찬, MD
+이 게시물은 실제 의료 검토자의 질의응답 경험을 각색한 것입니다. 이 콘텐츠는 정보 제공 목적으로만 제공되며 의학적 조언을 구성하지 않습니다. 건강 관련 문제나 건강 또는 치료와 관련된 결정을 내리기 전에 항상 자격을 갖춘 의료 전문가와 상담하시기 바랍니다.
+질문:
+오늘 아이가 병원에서 A형 독감 진단을 받았습니다. 처방받은 해열제와 1회 복용하는 독감 약을 받아왔는데, 열이 너무 심하게 나서 우선 해열제부터 먹였습니다. 하지만 열이 떨어지기는커녕 39.7도에서 39.9도까지 계속 오르기만 해서 너무 무서운 마음에 결국 독감 약도 먹였습니다. 독감 때문에 열이 이렇게 안 떨어질 수도 있는 건가요? 어떻게 대처해야 하는지 궁금합니다.
+답변:
+A형 독감 진단을 받은 아이가 고열로 힘들어해서 많이 걱정되셨겠습니다.
+우선 독감 약을 먹이신 것은 아주 잘하셨습니다. 독감의 경우 해열제를 복용하더라도 처음 24~48시간 동안은 열이 잘 떨어지지 않는 것이 일반적입니다. 특히 A형 독감은 고열이 동반되는 것이 특징입니다.
+처방받으신 독감 약을 복용하신 후 24~48시간 이내에 서서히 열이 떨어지기 시작할 것입니다. 그 전까지는 아래의 방법으로 아이의 열을 조절하고 편안해지도록 돕는 것에 집중해 주시기 바랍니다.
+[현재 가정에서 할 수 있는 대처 방법]
+• 해열제 교차 복용: 아세트아미노펜(타이레놀 등) 복용 후에도 열이 떨어지지 않는다면, 2~3시간 뒤에 이부프로펜이나 덱시부프로펜(부루펜 등) 성분의 해열제를 교차로 먹이실 수 있습니다. (단, 생후 6개월 이상인 경우에만 가능합니다.)
+• 충분한 수분 섭취: 고열로 인한 탈수를 막기 위해 10~15분 간격으로 물이나 이온 음료를 조금씩 마시게 해주세요.
+• 가벼운 옷차림: 얇은 옷을 한 겹만 입혀 열이 원활하게 발산되도록 해주세요.
+• 시원한 환경 유지: 실내 온도는 24~26도 정도로 쾌적하게 유지하는 것이 좋습니다.
+다만, 아이에게 다음의 증상이 나타난다면 지체하지 마시고 즉시 응급실로 방문하셔야 합니다.
+[응급실 방문이 필요한 응급 증상]
+• 호흡 곤란이 있거나 가슴 통증을 호소할 때
+• 의식이 흐려지거나 불러도 대답을 잘 하지 못할 때
+• 8시간 이상 소변을 보지 않는 등 심한 탈수 징후가 있을 때
+• 열성 경련을 일으킬 때
+독감으로 인한 고열은 며칠간 지속될 수 있으니, 안내해 드린 대처법을 따르시면서 아이의 상태를 주의 깊게 지켜보시기 바랍니다. 만약 시간이 지나도 증상이 호전되지 않거나 아이가 너무 처진다면, 지체하지 마시고 다시 소아청소년과에 방문하여 진료를 받으시길 권장합니다.
+아이의 건강을 모니터링할 때 더 명확한 안내와 안심을 위해, FeverCoach 앱이 항상 도움을 드립니다.
+fevercoach.us
+Apple App Store
+Google Play
+🌐 다른 언어로 보기:
+English
+·
+Español
+ADJUDICATED RULES AND PRIMARY-SOURCE FACTS:
+NICE NG143 https://www.nice.org.uk/guidance/ng143/chapter/recommendations : use antipyretics for
+distress, do not give paracetamol and ibuprofen simultaneously; only consider alternating if
+distress persists or recurs before next dose. A short video need not reproduce every source detail.
+Medicines for Children https://www.medicinesforchildren.org.uk/medicines/oseltamivir-for-influenza-flu/ :
+for oseltamivir specifically, vomiting less than 30 minutes after a dose permits repeating the same
+dose; after more than 30 minutes, do not repeat. The source article's one-hour repeat rule differs.
+Asking the prescriber or pharmacist before giving an additional dose is conservative and does not
+itself tell a parent to omit a regular scheduled dose.
+FeverCoach reviewer adjudication: omission from a 60-second short is not CAPTION_OMISSION unless
+spoken information is absent from visible captions. Do not classify an unrelated source detail as a
+high-risk omission if the video does not advise stopping or contradicting that treatment. Do not
+force an unsafe source instruction back into a revision just for source fidelity. Three loose stools
+alone are not always an emergency; assess blood, severe pain, repeated watery diarrhea, dehydration,
+and appearance in context. A short video need not list every red flag if the decisive escalation is
+still present. Distinguish a recommendation from a warning against an action.

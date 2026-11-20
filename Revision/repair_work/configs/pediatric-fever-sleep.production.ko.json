@@ -1,0 +1,391 @@
+{
+  "schema_version": 1,
+  "slug": "pediatric-fever-sleep",
+  "title": "아기 고열 후 잠만 자요: 대처법",
+  "source": "https://www.fevercoach.us/ko/post/아기-고열-후-잠만-자는-아이",
+  "language": "ko",
+  "character_image": null,
+  "aspect_ratio": "9:16",
+  "resolution": "720p",
+  "fps": 30,
+  "disclaimer": "이 콘텐츠는 정보 제공 목적으로만 제공되며 의학적 조언을 구성하지 않습니다. 건강 관련 문제나 건강 또는 치료와 관련된 결정을 내리기 전에 항상 자격을 갖춘 의료 전문가와 상담하시기 바랍니다.",
+  "metadata": {
+    "multilingual": true,
+    "languages": [
+      "ko",
+      "en",
+      "es"
+    ],
+    "medical_facts": [
+      {
+        "claim": "고열 후 3~4시간 정도의 깊은 잠은 정상적입니다.",
+        "numeric_values": [
+          "3 hours",
+          "4 hours"
+        ],
+        "safety_qualification": "하지만 6시간 가까이 깨지 않는다면 아이를 확실하게 깨워 의식을 확인하고, 탈수 예방을 위해 물이라도 조금씩 먹여보시는 것이 좋습니다."
+      },
+      {
+        "claim": "새벽에 열이 40도까지 올라가서 해열제를 먹였고, 다행히 오늘 점심 무렵부터는 정상 체온으로 떨어졌습니다.",
+        "numeric_values": [
+          "40°C"
+        ],
+        "safety_qualification": "현재 아이의 상태는 긍정적인 신호가 많습니다. 체온이 정상으로 돌아왔고 낮 동안 컨디션이 좋았다는 점을 고려할 때..."
+      },
+      {
+        "claim": "🚨 다음과 같은 증상이 나타나면 즉시 응급실로 가셔야 합니다: 강하게 깨워도 전혀 반응이 없는 경우, 호흡이 불규칙하거나 비정상적으로 빠른 경우, 입술이나 얼굴이 창백해지거나 파랗게 변하는 청색증이 나타나는 경우, 6시간 이상 전혀 깨어나지 못하고 처지는 경우",
+        "numeric_values": [
+          "6 hours"
+        ],
+        "safety_qualification": "즉시 응급실로 가셔야 합니다."
+      },
+      {
+        "claim": "충분히 수면을 취한 후 내일 아침에도 아이가 기력이 없거나 처짐 증상이 지속된다면, 소아청소년과에 방문하여 다시 진료를 받아보시기를 권장합니다.",
+        "numeric_values": [],
+        "safety_qualification": "소아청소년과에 방문하여 다시 진료를 받아보시기를 권장합니다."
+      },
+      {
+        "claim": "처방받으신 항생제는 임의로 중단하지 마시고 꾸준히 복용하게 해주세요.",
+        "numeric_values": [],
+        "safety_qualification": "임의로 중단하지 마시고 꾸준히 복용하게 해주세요."
+      }
+    ],
+    "source_excerpt": "의학 감수:\n안상현, MD\n콘텐츠 편집:\n김명찬, MD\n이 게시물은 실제 의료 검토자의 질의응답 경험을 각색한 것입니다. 이 콘텐츠는 정보 제공 목적으로만 제공되며 의학적 조언을 구성하지 않습니다. 건강 관련 문제나 건강 또는 치료와 관련된 결정을 내리기 전에 항상 자격을 갖춘 의료 전문가와 상담하시기 바랍니다.\n질문:\n최근 아이가 병원에서 목이 조금 붓고 콧물이 있다는 진단을 받아 항생제와 해열제를 처방받았습니다. 새벽에 열이 40도까지 올라가서 해열제를 먹였고, 다행히 오늘 점심 무렵부터는 정상 체온으로 떨어졌습니다. 밥도 잘 먹고 잘 놀 정도로 컨디션은 아주 좋았습니다.\n그런데 오후 3시부터 낮잠을 자기 시작하더니 지금까지 잠에 취한 듯 일어나지를 못합니다. 깨우면 짜증을 내면서 계속 자려고만 하는데, 고열 이후 이렇게 길게 낮잠을 자도 괜찮은 건가요?\n답변:\n고열을 앓고 난 후 아이가 평소보다 길게 낮잠을 자면 많이 걱정되시겠지만, 이는 몸이 회복하기 위한 자연스러운 과정일 수 있습니다.\n현재 아이의 상태는 긍정적인 신호가 많습니다. 체온이 정상으로 돌아왔고 낮 동안 컨디션이 좋았다는 점을 고려할 때, 40도에 달하는 고열을 겪은 후 소모된 체력을 회복하기 위해 깊은 잠이 필요한 상태로 보입니다. 또한, 깨웠을 때 짜증을 낸다는 것은 아이의 의식이 있다는 증거이므로 당장 크게 걱정하지 않으셔도 됩니다.\n다만, 아이가 자는 동안 다음 사항들을 확인해 주시기 바랍니다.\n1분간 관찰했을 때 호흡이 규칙적이고 안정적인지\n얼굴색과 입술색이 평소처럼 정상적인지\n몸이 비정상적으로 축 늘어지지 않고 자연스러운 수면 자세를 취하고 있는지\n일반적으로 고열 후 3~4시간 정도의 깊은 잠은 정상적입니다. 하지만 6시간 가까이 깨지 않는다면 아이를 확실하게 깨워 의식을 확인하고, 탈수 예방을 위해 물이라도 조금씩 먹여보시는 것이 좋습니다. 또한 처방받으신 항생제는 임의로 중단하지 마시고 꾸준히 복용하게 해주세요.\n🚨 다음과 같은 증상이 나타나면 즉시 응급실로 가셔야 합니다:\n• 강하게 깨워도 전혀 반응이 없는 경우\n• 호흡이 불규칙하거나 비정상적으로 빠른 경우\n• 입술이나 얼굴이 창백해지거나 파랗게 변하는 청색증이 나타나는 경우\n• 6시간 이상 전혀 깨어나지 못하고 처지는 경우\n충분히 수면을 취한 후 내일 아침에도 아이가 기력이 없거나 처짐 증상이 지속된다면, 소아청소년과에 방문하여 다시 진료를 받아보시기를 권장합니다.\n아이의 건강을 모니터링할 때 더 명확한 안내와 안심을 위해, FeverCoach 앱이 항상 도움을 드립니다.\nfevercoach.us\nApple App Store\nGoogle Play\n🌐 다른 언어로 보기:\nEnglish\n·\nEspañol",
+    "visual_system": "fevercoach-explainer-v3",
+    "character_mode": "automatic",
+    "character_concept": {
+      "subject": "water droplet",
+      "source_basis": "Hydration and small sips of water are central to safely monitoring a child recovering after fever.",
+      "visual_identity": "A small rounded water droplet with a smooth translucent body, simple expressive eyes, and short arms and legs.",
+      "primary_color": "clean blue",
+      "surface_texture": "smooth translucent water"
+    }
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "title": "아이가 깨어나지 못할 때",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "아이가 강하게 깨워도 전혀 반응이 없다면 즉시 응급실로 가세요.",
+      "subtitle": "아이가 강하게 깨워도 전혀 반응이 없다면 즉시 응급실로 가세요.",
+      "prompt": "POV shot, slowly approaching a child sleeping deeply in a bed, the child remains completely still and unresponsive. The bed railing is in the foreground, the child in the midground, and a soft bedroom wall in the background. The child remains completely stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "red_flag",
+      "medical_claim": "강하게 깨워도 전혀 반응이 없는 경우",
+      "asset_prompt": "A child sleeping deeply in a bed, completely still and unresponsive, viewed from a slightly elevated POV. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "아이가 강하게 깨워도",
+        "전혀 반응이 없다면",
+        "즉시 응급실로 가세요."
+      ],
+      "narrative_role": "hook",
+      "shot_design": {
+        "camera_profile": "pov_travel",
+        "beat_one": "0.0-1.5 second establishing camera move: POV slowly approaches a child's bed.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: Camera moves closer to the child's face, observing their stillness.",
+        "payoff_frame": "4.5-6.0 second clear final hold: Close-up on the child's completely still, unresponsive face.",
+        "depth_layers": "Foreground: blurry bed railing. Midground: child sleeping. Background: soft bedroom wall.",
+        "overlay_safe_zone": "Top left quadrant, clear of the child's face.",
+        "sound_cues": "soft, distant, irregular breathing; faint, urgent tone",
+        "transition_out": "Fade to black."
+      }
+    },
+    {
+      "index": 2,
+      "title": "회복을 위한 자연스러운 과정",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "고열 후 긴 낮잠은 몸이 회복하기 위한 자연스러운 과정일 수 있습니다.",
+      "subtitle": "고열 후 긴 낮잠은 몸이 회복하기 위한 자연스러운 과정일 수 있습니다.",
+      "prompt": "X-ray push into a stylized childa completely blank and unmarked surfaces outer body outline is in the foreground, internal organs with energy flow in the midground, and a soft internal light in the background. The child's body remains completely stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "mechanism",
+      "medical_claim": "고열을 앓고 난 후 아이가 평소보다 길게 낮잠을 자면 많이 걱정되시겠지만, 이는 몸이 회복하기 위한 자연스러운 과정일 수 있습니다.",
+      "asset_prompt": "A stylized child's body in X-ray view, showing internal heat dissipating and a gentle, glowing energy flowing within the torso. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "고열 후 긴 낮잠은",
+        "몸이 회복하기 위한",
+        "자연스러운 과정일 수 있습니다."
+      ],
+      "narrative_role": "context",
+      "shot_design": {
+        "camera_profile": "xray_push",
+        "beat_one": "0.0-1.5 second establishing camera move: X-ray view begins on the child's outer body.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: Camera pushes into the torso, showing internal heat dissipating and gentle energy flowing.",
+        "payoff_frame": "4.5-6.0 second clear final hold: Internal view of calming energy flow within the child's core.",
+        "depth_layers": "Foreground: faint outline of skin. Midground: internal organs with energy flow. Background: soft, glowing internal light.",
+        "overlay_safe_zone": "Top right quadrant, clear of the child's body.",
+        "sound_cues": "gentle, calming hum; soft internal energy sounds",
+        "transition_out": "Dissolve to next scene."
+      }
+    },
+    {
+      "index": 3,
+      "title": "정상적인 수면과 우려되는 수면",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "고열 후 아이가 평소보다 길게 자더라도, 깨웠을 때 잘 반응하면 회복 과정일 수 있습니다.",
+      "subtitle": "고열 후 아이가 평소보다 길게 자더라도, 깨웠을 때 잘 반응하면 회복 과정일 수 있습니다.",
+      "prompt": "Lateral reveal shot, showing two side-by-side scenes: on the left, a child sleeping peacefully, on the right, a child sleeping but with subtle signs of distress (e.g., slightly furrowed brow, restless posture). Both children remain completely stationary. A soft blanket edge is in the foreground, the children in the midground, and a muted bedroom wall in the background. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "comparison",
+      "medical_claim": "고열 후 아이가 평소보다 길게 낮잠을 자면 많이 걱정되시겠지만, 이는 몸이 회복하기 위한 자연스러운 과정일 수 있습니다.",
+      "asset_prompt": "Two sleeping children side-by-side in beds, one appears peaceful and calm, the other shows subtle signs of distress like a slightly furrowed brow. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "고열 후 아이가 평소보다 길게 자더라도,",
+        "깨웠을 때 잘 반응하면 회복 과정일 수 있습니다."
+      ],
+      "narrative_role": "misconception",
+      "shot_design": {
+        "camera_profile": "lateral_reveal",
+        "beat_one": "0.0-1.5 second establishing camera move: Camera starts on one sleeping child.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: Camera smoothly tracks laterally to reveal a second sleeping child next to the first.",
+        "payoff_frame": "4.5-6.0 second clear final hold: Both children visible, one peaceful, one subtly distressed.",
+        "depth_layers": "Foreground: soft blanket edge. Midground: two children sleeping side-by-side. Background: muted bedroom wall.",
+        "overlay_safe_zone": "Top center, between the two children.",
+        "sound_cues": "gentle, rhythmic breathing; slight restless rustling",
+        "transition_out": "Wipe to next scene."
+      }
+    },
+    {
+      "index": 4,
+      "title": "자는 동안 아이 상태 확인",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "호흡, 얼굴색, 입술색, 그리고 자세가 정상적인지 확인하세요.",
+      "subtitle": "호흡, 얼굴색, 입술색, 그리고 자세가 정상적인지 확인하세요.",
+      "prompt": "Macro dive into a childa completely blank and unmarked surfaces face in the midground, and a soft pillow in the background. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "mechanism",
+      "medical_claim": "1분간 관찰했을 때 호흡이 규칙적이고 안정적인지, 얼굴색과 입술색이 평소처럼 정상적인지, 몸이 비정상적으로 축 늘어지지 않고 자연스러운 수면 자세를 취하고 있는지",
+      "asset_prompt": "A close-up of a child's sleeping face, focusing on the gentle rise and fall of the chest and normal lip color. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "호흡, 얼굴색, 입술색,",
+        "그리고 자세가 정상적인지 확인하세요."
+      ],
+      "narrative_role": "mechanism",
+      "shot_design": {
+        "camera_profile": "macro_dive",
+        "beat_one": "0.0-1.5 second establishing camera move: Camera starts on the child's upper chest.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: Camera slowly dives into a close-up of the child's face, focusing on breathing and lip color.",
+        "payoff_frame": "4.5-6.0 second clear final hold: Extreme close-up on the child's lips and nose, showing normal color and subtle breathing.",
+        "depth_layers": "Foreground: blurry blanket. Midground: child's face. Background: soft pillow.",
+        "overlay_safe_zone": "Top left quadrant, clear of the child's face.",
+        "sound_cues": "clear, gentle, rhythmic breathing; soft, steady heartbeat",
+        "transition_out": "Push to next scene."
+      }
+    },
+    {
+      "index": 5,
+      "title": "수면 시간: 정상 vs. 우려",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "아이가 평소와 달리 깨우기 어렵거나 반응이 떨어진다면 즉시 평가받아야 합니다.",
+      "subtitle": "아이가 평소와 달리 깨우기 어렵거나 반응이 떨어진다면 즉시 평가받아야 합니다.",
+      "prompt": "Top-down drop toward a sleeping child in a calm bedroom. A soft bedside glow shifts from reassuring pale teal to warm amber as a parent gently reaches toward the child's shoulder to check responsiveness. The child, bed, and room remain stationary until this single gentle checking motion. No timekeeping object or display appears. All surfaces remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "quantity",
+      "medical_claim": "깨웠을 때 짜증을 낸다는 것은 아이의 의식이 있다는 증거이므로 당장 크게 걱정하지 않으셔도 됩니다.",
+      "asset_prompt": "A top-down view of a child sleeping in a calm bedroom while a parent gently reaches toward the child's shoulder to check responsiveness. Soft pale teal light transitions toward warm amber at the edge of the scene. No timekeeping object or display appears. All surfaces remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "아이가 평소와 달리 깨우기 어렵거나",
+        "반응이 떨어진다면 즉시 평가받아야 합니다."
+      ],
+      "narrative_role": "evidence",
+      "shot_design": {
+        "camera_profile": "top_down_drop",
+        "beat_one": "Camera slowly drops toward a top-down view of the sleeping child as the room remains calm.",
+        "beat_two": "The bedside glow shifts from pale teal to warm amber while a parent makes one gentle responsiveness check at the shoulder.",
+        "payoff_frame": "A stable top-down view of the child and the parent's gentle checking hand in warm amber light.",
+        "depth_layers": "Foreground: parent's hand. Midground: sleeping child and bedding. Background: softly lit bedroom floor.",
+        "overlay_safe_zone": "Top right quadrant, clear of the child and parent's hand.",
+        "sound_cues": "quiet room ambience; soft fabric movement",
+        "transition_out": "Cross-dissolve."
+      }
+    },
+    {
+      "index": 6,
+      "title": "깨울 때와 물 주기",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "깨우기 어렵다면 즉시 진료받고, 완전히 깬 뒤에만 수분을 주세요.",
+      "subtitle": "깨우기 어렵다면 즉시 진료받고, 완전히 깬 뒤에만 수분을 주세요.",
+      "prompt": "Comparison track shot, showing two diverging paths: one path shows a child continuing to sleep undisturbed, the other path shows a parent gently rousing a child and offering a small cup of water. A small anthropomorphic blue water droplet character is positioned next to the cup, looking encouraging. The background remains stationary. The parent and child perform their actions smoothly. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks. FINAL QA REPAIR: Ensure the child is depicted as sufficiently awake and upright to safely drink from the cup. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "comparison",
+      "medical_claim": "깨우기 어렵다면 즉시 진료받고, 완전히 깬 뒤에만 수분을 주세요.",
+      "asset_prompt": "Two diverging paths: one shows a child continuing to sleep undisturbed, the other shows a parent gently rousing a child and offering a small cup of water. A small anthropomorphic blue water droplet character is near the cup. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks. FINAL QA REPAIR: Ensure the child is depicted as sufficiently awake and upright to safely drink from the cup. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "깨우기 어렵다면 즉시 진료받고, 완전히 깬 뒤에만 수분을 주세요."
+      ],
+      "narrative_role": "decision",
+      "shot_design": {
+        "camera_profile": "comparison_track",
+        "beat_one": "0.0-1.5 second establishing camera move: Camera starts on a path showing undisturbed sleep.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: Camera tracks laterally to reveal a diverging path where a parent gently rouses a child and offers water.",
+        "payoff_frame": "4.5-6.0 second clear final hold: Both paths clearly visible, contrasting inaction with gentle intervention.",
+        "depth_layers": "Foreground: dividing line between paths. Midground: two distinct scenes. Background: soft, blurred environment.",
+        "overlay_safe_zone": "Top center, above the dividing line.",
+        "sound_cues": "soft, gentle rustling; small sip sound",
+        "transition_out": "Slide left."
+      }
+    },
+    {
+      "index": 7,
+      "title": "탈수 예방 및 약 복용",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "탈수 예방을 위해 물을 먹이고, 처방받은 항생제는 임의로 중단하지 마세요.",
+      "subtitle": "탈수 예방을 위해 물을 먹이고, 처방받은 항생제는 임의로 중단하지 마세요.",
+      "prompt": "Parallax arc around a child sitting upright and taking small sips of water from a cup, then reveal a closed amber prescription medicine bottle with a completely blank label. A small anthropomorphic blue water droplet character stands beside the water cup. The bottle stays closed and stationary while the child completes one smooth sip. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "sequence",
+      "medical_claim": "탈수 예방을 위해 물이라도 조금씩 먹여보시는 것이 좋습니다. 또한 처방받으신 항생제는 임의로 중단하지 마시고 꾸준히 복용하게 해주세요.",
+      "asset_prompt": "A child sitting upright and taking small sips of water from a cup. A closed amber prescription medicine bottle with a completely blank label rests nearby, and a small anthropomorphic blue water droplet character stands beside the cup. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "탈수 예방을 위해 물을 먹이고,",
+        "처방받은 항생제는",
+        "임의로 중단하지 마세요."
+      ],
+      "narrative_role": "reassessment",
+      "shot_design": {
+        "camera_profile": "parallax_arc",
+        "beat_one": "0.0-1.5 second establishing camera move: Camera arcs around a child taking sips of water.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: The arc continues, revealing a medicine bottle appearing next to the child.",
+        "payoff_frame": "4.5-6.0 second clear final hold: Child with water, medicine bottle, and character clearly visible.",
+        "depth_layers": "Foreground: childan unmarked surfaces face, medicine bottle. Background: soft room interior.",
+        "overlay_safe_zone": "Top right quadrant, clear of the child and bottle.",
+        "sound_cues": "gentle sipping; soft clink of a bottle",
+        "transition_out": "Arc out."
+      }
+    },
+    {
+      "index": 8,
+      "title": "안전한 약물 투여",
+      "mode": "i2v",
+      "timeline_seconds": 5,
+      "generation_seconds": 6,
+      "narration": "처방받은 약은 의료 전문가의 지시에 따라 안전하게 투여하세요.",
+      "subtitle": "처방받은 약은 의료 전문가의 지시에 따라 안전하게 투여하세요.",
+      "prompt": "Hero pullback shot, starting close on a small transparent purpose-made medicine dosing cup containing amber liquid medicine, then pulling back as an upright child lifts the cup to the lips, takes one calm sip, and swallows. A parent supports the cup from below, and a small anthropomorphic blue water droplet character watches nearby. The bottle remains closed and stationary in the background. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "sequence",
+      "medical_claim": "처방받으신 항생제는 임의로 중단하지 마시고 꾸준히 복용하게 해주세요.",
+      "asset_prompt": "An upright child holding a small transparent purpose-made medicine dosing cup containing amber liquid medicine at the lips, with a parent supporting the cup from below. A small anthropomorphic blue water droplet character watches nearby. A closed medicine bottle with a completely blank label rests in the background. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "처방받은 약은",
+        "의료 전문가의 지시에 따라",
+        "안전하게 투여하세요."
+      ],
+      "narrative_role": "action",
+      "shot_design": {
+        "camera_profile": "hero_pullback",
+        "beat_one": "0.0-1.5 second establishing camera move: Camera starts close on the purpose-made medicine dosing cup.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: Camera pulls back as an upright child takes one calm sip of liquid medicine from the cup while a parent supports it.",
+        "payoff_frame": "4.5-6.0 second clear final hold: Full view of the safe medicine administration, child swallowing calmly.",
+        "depth_layers": "Foreground: parent's supporting arm. Midground: child and medicine dosing cup. Background: soft, warm room.",
+        "overlay_safe_zone": "Top left quadrant, clear of faces and the dosing cup.",
+        "sound_cues": "soft cup movement; gentle swallow",
+        "transition_out": "Zoom out."
+      }
+    },
+    {
+      "index": 9,
+      "title": "즉시 응급실로 가야 할 징후",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "강하게 깨워도 반응이 없거나, 호흡이 불규칙하거나, 청색증이 나타나면 즉시 응급실로 가세요.",
+      "subtitle": "강하게 깨워도 반응이 없거나, 호흡이 불규칙하거나, 청색증이 나타나면 즉시 응급실로 가세요.",
+      "prompt": "Slow push toward a fully clothed child with short brown hair resting safely in bed while a concerned parent watches the child's breathing and prepares to seek urgent care. The camera moves from the covered upper chest toward the face, then holds on the parent's attentive observation. The child's hair, opaque pajamas, bed, and room remain consistent and stationary. All surfaces remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "red_flag",
+      "medical_claim": "강하게 깨워도 전혀 반응이 없는 경우, 호흡이 불규칙하거나 비정상적으로 빠른 경우, 입술이나 얼굴이 창백해지거나 파랗게 변하는 청색증이 나타나는 경우",
+      "asset_prompt": "A fully clothed child with short brown hair resting safely in bed, framed from the covered upper chest to the face, while a concerned parent attentively observes the child's breathing and prepares to seek urgent care. Use warm amber edge lighting without depicting distress graphically. All surfaces remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "강하게 깨워도 반응이 없거나,",
+        "호흡이 불규칙하거나,",
+        "청색증이 나타나면 즉시 응급실로 가세요."
+      ],
+      "narrative_role": "red_flag",
+      "shot_design": {
+        "camera_profile": "xray_push",
+        "beat_one": "0.0-1.5 second establishing camera move: X-ray view starts on the child's chest.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: Camera pushes into the head and chest, showing rapid, irregular breathing and faint blue lips.",
+        "payoff_frame": "4.5-6.0 second clear final hold: Close-up X-ray view of the child's head and chest, highlighting distress signs.",
+        "depth_layers": "Foreground: faint outline of skin. Midground: internal structures with distress indicators. Background: dark, urgent glow.",
+        "overlay_safe_zone": "Top left quadrant, clear of the child's face.",
+        "sound_cues": "rapid, shallow breathing; faint, urgent tone",
+        "transition_out": "Hard cut."
+      }
+    },
+    {
+      "index": 10,
+      "title": "소아청소년과 진료 시기",
+      "mode": "i2v",
+      "timeline_seconds": 7,
+      "generation_seconds": 6,
+      "narration": "충분히 회복 수면을 취한 후에도 아이가 기력이 없거나 처짐이 지속되면 소아청소년과 진료를 권장합니다.",
+      "subtitle": "충분히 회복 수면을 취한 후에도 아이가 기력이 없거나 처짐이 지속되면 소아청소년과 진료를 권장합니다.",
+      "prompt": "Hero pullback, starting with a parent gently observing a child sleeping peacefully, then smoothly transitioning to a calm, clean pediatric clinic waiting area. The parent and child remain stationary in the initial shot, then the clinic scene is static. The parent's hand is in the foreground, the child/clinic in the midground, and the bedroom/clinic wall in the background. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "takeaway",
+      "medical_claim": "충분히 수면을 취한 후 내일 아침에도 아이가 기력이 없거나 처짐 증상이 지속된다면, 소아청소년과에 방문하여 다시 진료를 받아보시기를 권장합니다.",
+      "asset_prompt": "A parent gently checking on a child sleeping peacefully, then a smooth transition to a calm, clean pediatric clinic waiting area. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "충분히 회복 수면을 취한 후에도",
+        "아이가 기력이 없거나 처짐이 지속되면",
+        "소아청소년과 진료를 권장합니다."
+      ],
+      "narrative_role": "takeaway",
+      "shot_design": {
+        "camera_profile": "hero_pullback",
+        "beat_one": "0.0-1.5 second establishing camera move: Camera starts on a parent gently observing a child.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: Camera smoothly pulls back and transitions to a calm pediatric clinic waiting area.",
+        "payoff_frame": "4.5-6.0 second clear final hold: Wide shot of a clean, welcoming pediatric clinic.",
+        "depth_layers": "Foreground: parent's hand. Midground: child sleeping, then clinic waiting area. Background: soft bedroom, then clinic wall.",
+        "overlay_safe_zone": "Top center, clear of any people or clinic elements.",
+        "sound_cues": "gentle, reassuring hum; soft, welcoming clinic ambiance",
+        "transition_out": "Fade to black."
+      }
+    }
+  ]
+}

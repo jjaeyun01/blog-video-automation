@@ -1,0 +1,184 @@
+{
+  "repairs": [
+    {
+      "scene": 5,
+      "corrected_medical_claim": "For a sick baby, prioritize formula by reducing the amount per feeding to two-thirds of the usual volume, but increase the feeding frequency, prepared at normal concentration as per product instructions.",
+      "corrected_narration": "분유는 제품 표시대로 정상 농도로 타고, 1회 먹이는 양을 평소의 3분의 2로 줄여 자주 먹여주세요.",
+      "caption_chunks": [
+        "분유는 제품 표시대로 정상 농도로 타고,",
+        "1회 먹이는 양을 평소의 3분의 2로 줄여",
+        "자주 먹여주세요."
+      ],
+      "replace_overlays": false,
+      "overlays": [
+        {
+          "type": "dimension",
+          "text": "2/3",
+          "color": "#E5482F",
+          "from": [
+            0.25,
+            0.6
+          ],
+          "to": [
+            0.75,
+            0.6
+          ],
+          "label_position": [
+            0.5,
+            0.68
+          ]
+        }
+      ],
+      "regenerate_visual": true,
+      "visual_prompt_addendum": "Show a correctly prepared normal-strength formula bottle; do not show dilution or changing the powder-to-water ratio.",
+      "reason_ko": "분유 수유량 지침의 모호성(농도 vs. 1회 수유량)을 명확히 하고, 시각적 혼동을 유발하는 액체 방울 묘사를 수정하기 위함입니다."
+    },
+    {
+      "scene": 6,
+      "corrected_medical_claim": "After a baby vomits, rest the stomach for 4 to 6 hours. If the baby then shows a desire to eat, start with small amounts of diluted baby food.",
+      "corrected_narration": "구토 후 4시간에서 6시간 위장을 쉬게 한 뒤, 아이가 원하면 묽은 이유식을 소량만 주세요.",
+      "caption_chunks": [
+        "구토 후 4시간에서 6시간",
+        "위장을 쉬게 한 뒤,",
+        "아이가 원하면 묽은 이유식을 소량만 주세요."
+      ],
+      "replace_overlays": false,
+      "overlays": [
+        {
+          "type": "label",
+          "text": "4-6시간",
+          "color": "#E5482F",
+          "from": [
+            0.5,
+            0.68
+          ],
+          "to": [
+            0.5,
+            0.68
+          ],
+          "label_position": [
+            0.5,
+            0.68
+          ]
+        }
+      ],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "'묽게'라는 표현이 이유식을 의미하는지 불명확하여, '묽은 이유식'으로 명확히 하여 오해를 방지하기 위함입니다."
+    },
+    {
+      "scene": 8,
+      "corrected_medical_claim": "Hold your baby upright for 30 minutes after vomiting, ensuring head and trunk are supported.",
+      "corrected_narration": "구토 후 30분 정도 아기의 목과 몸통을 받쳐 상체를 세워 안아주세요.",
+      "caption_chunks": [
+        "구토 후 30분 정도",
+        "아기의 목과 몸통을 받쳐",
+        "상체를 세워 안아주세요."
+      ],
+      "replace_overlays": false,
+      "overlays": [
+        {
+          "type": "label",
+          "text": "30분",
+          "color": "#E5482F",
+          "from": [
+            0.5,
+            0.68
+          ],
+          "to": [
+            0.5,
+            0.68
+          ],
+          "label_position": [
+            0.5,
+            0.68
+          ]
+        }
+      ],
+      "regenerate_visual": true,
+      "visual_prompt_addendum": "Show a caregiver holding an infant upright with head and neck securely supported. Do not show unsupported dangling or unsafe sleep positioning.",
+      "reason_ko": "구토 후 아기를 안는 자세에 대한 안전 지침(목과 몸통 지지)을 명확히 전달하기 위함입니다."
+    },
+    {
+      "scene": 9,
+      "corrected_medical_claim": "A persistent fever above 38°C needs medical attention.",
+      "corrected_narration": "38°C 이상 발열이 지속되면 진료가 필요해요.",
+      "caption_chunks": [
+        "38°C 이상 발열이",
+        "지속되면",
+        "진료가 필요해요."
+      ],
+      "replace_overlays": false,
+      "overlays": [
+        {
+          "type": "label",
+          "text": "38°C",
+          "color": "#E5482F",
+          "from": [
+            0.5,
+            0.68
+          ],
+          "to": [
+            0.5,
+            0.68
+          ],
+          "label_position": [
+            0.5,
+            0.68
+          ]
+        }
+      ],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "해당 장면의 QA 지적 사항은 다른 장면의 내용이 잘못 복사된 것으로, 본 장면의 내용에는 수정이 필요하지 않습니다."
+    }
+  ],
+  "video_id": "infant-cold-vomiting-feeding.ko",
+  "model": "gemini-2.5-flash",
+  "source_issues": [
+    {
+      "scene": 5,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초: '분유를 평소의 2/3로 줄인다'고만 하여 1회 수유량인지 조제 농도인지 불명확하고, 젖병에 액체를 떨어뜨리는 그림이 혼동을 더합니다. '제품 표시대로 정상 농도로 타고, 1회 먹이는 양을 줄여 더 자주'로 수정하고 용량을 보여주는 그림으로 교체해 주세요. 분유 희석을 명시적으로 지시했다고 단정한 판정은 아닙니다. 추가 노트: 한국어의 '4~6시간 쉬게 한 뒤 묽게'는 무엇을 묽게 하는지 불명확하므로 이유식인지 명시해 주세요. 모유/분유·적절한 수분까지 끊는 것으로 오해되지 않게 구분하고, 반복 구토 시 소량 수분/ORS 및 진료를 안내해 주세요. 세워 안기는 목·몸통을 받치는 자세로 표현해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-25.mp4"
+    },
+    {
+      "scene": 5,
+      "category": "OTHER_VISUAL_ERROR",
+      "severity": "high",
+      "problem_ko": "사람 검토에서 지적된 시각적 안전 오류를 제거해야 합니다.",
+      "visual_prompt_addendum": "Show a correctly prepared normal-strength formula bottle; do not show dilution or changing the powder-to-water ratio.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-25.mp4"
+    },
+    {
+      "scene": 6,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초: '분유를 평소의 2/3로 줄인다'고만 하여 1회 수유량인지 조제 농도인지 불명확하고, 젖병에 액체를 떨어뜨리는 그림이 혼동을 더합니다. '제품 표시대로 정상 농도로 타고, 1회 먹이는 양을 줄여 더 자주'로 수정하고 용량을 보여주는 그림으로 교체해 주세요. 분유 희석을 명시적으로 지시했다고 단정한 판정은 아닙니다. 추가 노트: 한국어의 '4~6시간 쉬게 한 뒤 묽게'는 무엇을 묽게 하는지 불명확하므로 이유식인지 명시해 주세요. 모유/분유·적절한 수분까지 끊는 것으로 오해되지 않게 구분하고, 반복 구토 시 소량 수분/ORS 및 진료를 안내해 주세요. 세워 안기는 목·몸통을 받치는 자세로 표현해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-25.mp4"
+    },
+    {
+      "scene": 8,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초: '분유를 평소의 2/3로 줄인다'고만 하여 1회 수유량인지 조제 농도인지 불명확하고, 젖병에 액체를 떨어뜨리는 그림이 혼동을 더합니다. '제품 표시대로 정상 농도로 타고, 1회 먹이는 양을 줄여 더 자주'로 수정하고 용량을 보여주는 그림으로 교체해 주세요. 분유 희석을 명시적으로 지시했다고 단정한 판정은 아닙니다. 추가 노트: 한국어의 '4~6시간 쉬게 한 뒤 묽게'는 무엇을 묽게 하는지 불명확하므로 이유식인지 명시해 주세요. 모유/분유·적절한 수분까지 끊는 것으로 오해되지 않게 구분하고, 반복 구토 시 소량 수분/ORS 및 진료를 안내해 주세요. 세워 안기는 목·몸통을 받치는 자세로 표현해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-25.mp4"
+    },
+    {
+      "scene": 8,
+      "category": "OTHER_VISUAL_ERROR",
+      "severity": "high",
+      "problem_ko": "사람 검토에서 지적된 시각적 안전 오류를 제거해야 합니다.",
+      "visual_prompt_addendum": "Show a caregiver holding an infant upright with head and neck securely supported. Do not show unsupported dangling or unsafe sleep positioning.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-25.mp4"
+    },
+    {
+      "scene": 9,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초: '분유를 평소의 2/3로 줄인다'고만 하여 1회 수유량인지 조제 농도인지 불명확하고, 젖병에 액체를 떨어뜨리는 그림이 혼동을 더합니다. '제품 표시대로 정상 농도로 타고, 1회 먹이는 양을 줄여 더 자주'로 수정하고 용량을 보여주는 그림으로 교체해 주세요. 분유 희석을 명시적으로 지시했다고 단정한 판정은 아닙니다. 추가 노트: 한국어의 '4~6시간 쉬게 한 뒤 묽게'는 무엇을 묽게 하는지 불명확하므로 이유식인지 명시해 주세요. 모유/분유·적절한 수분까지 끊는 것으로 오해되지 않게 구분하고, 반복 구토 시 소량 수분/ORS 및 진료를 안내해 주세요. 세워 안기는 목·몸통을 받치는 자세로 표현해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-25.mp4"
+    }
+  ]
+}

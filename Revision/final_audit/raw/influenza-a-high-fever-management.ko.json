@@ -1,0 +1,347 @@
+{
+  "video_id": "influenza-a-high-fever-management.ko",
+  "language": "ko",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "PASS",
+  "av_integrity": "PASS",
+  "spoken_transcript": "A형 독감은 고열을 동반하는 것이 특징입니다. 독감 바이러스는 아이를 힘들게 합니다. 해열제를 먹여도 처음 24에서 48시간은 열이 잘 안 떨어질 수 있습니다. 독감약을 먹어도 열이 24에서 48시간 안에 반드시 떨어지는 것은 아니에요. 약을 시작한 뒤에도 아이의 전반적인 상태와 수분 섭취를 계속 살펴보세요. 불편할 때 해열제 한 종류를 우선 쓰세요. 교차 복용은 의료진과 정한 약별 간격과 용량을 기록하며 하세요. 실내 온도를 24에서 26도로 유지하고 얇은 옷을 입혀주세요. 탈수가 걱정되면 경구수액제를 조금씩 주세요. 스포츠음료는 같은 대안이 아닙니다. 호흡 곤란·가슴 통증·열성 경련·의식 저하·8시간 넘게 소변이 없으면 응급실로 가세요. 증상이 호전되지 않거나 아이가 처지면 소아청소년과 진료를 받으세요.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "PASS",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "PASS",
+    "high_fever_age_context": "NOT_APPLICABLE",
+    "sleep_vs_lethargy": "PASS",
+    "dehydration_guidance": "PASS",
+    "multilingual_integrity": "NOT_APPLICABLE",
+    "evidence_ko": "영상 내용은 소아청소년과 전문의의 의학 감수를 거친 원문 내용을 충실히 따르고 있으며, 특히 해열제 교차 복용에 대한 지침은 의료진과의 상담을 강조하여 안전성을 높였습니다. 모든 안전 관련 정보가 명확하게 전달되었습니다.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "NOT_APPLICABLE",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "NOT_APPLICABLE",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "NOT_APPLICABLE",
+    "treatment_claim_uncertainty": "PASS",
+    "simultaneous_and_alternating_antipyretics": "PASS",
+    "infant_feeding_and_formula": "NOT_APPLICABLE",
+    "medicine_storage_and_restart": "NOT_APPLICABLE",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "NOT_APPLICABLE"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "A형 독감은 고열을 동반하는 것이 특징입니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "A형 독감은 고열을 동반하는 것이 특징입니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성, 자막, 오버레이(39.7°C) 모두 일치하며, 영상 내용이 원문과 일치합니다."
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:04",
+      "spoken_transcript": "독감 바이러스는 아이를 힘들게 합니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "독감 바이러스는 아이를 힘들게 합니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막 내용이 원문과 일치하며, 시각적 표현도 적절합니다."
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:08",
+      "spoken_transcript": "해열제를 먹여도 처음 24에서 48시간은 열이 잘 안 떨어질 수 있습니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "해열제를 먹여도 처음 24~48시간은 열이 잘 안 떨어질 수 있습니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성, 자막, 시각적 표현(컵으로 약 복용) 모두 원문 및 안전 지침과 일치합니다. 숫자와 단위도 정확합니다."
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:14",
+      "spoken_transcript": "독감약을 먹어도 열이 24에서 48시간 안에 반드시 떨어지는 것은 아니에요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "독감약을 먹어도 열이 24~48시간 안에 반드시 떨어지는 것은 아니에요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성, 자막 내용이 원문과 일치하며, 시각적 표현도 적절합니다. 숫자와 단위도 정확합니다."
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:20",
+      "spoken_transcript": "약을 시작한 뒤에도 아이의 전반적인 상태와 수분 섭취를 계속 살펴보세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "약을 시작한 뒤에도 아이의 전반적인 상태와 수분 섭취를 계속 살펴보세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성, 자막, 오버레이(24시간 ~ 48시간) 모두 원문과 일치하며, 시각적 표현도 적절합니다. 숫자와 단위도 정확합니다."
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:26",
+      "spoken_transcript": "불편할 때 해열제 한 종류를 우선 쓰세요. 교차 복용은 의료진과 정한 약별 간격과 용량을 기록하며 하세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "불편할 때 해열제 한 종류를 우선 쓰세요. 교차 복용은 의료진과 정한 약별 간격과 용량을 기록하며 하세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성, 자막, 시각적 표현(컵으로 약 복용) 모두 원문 및 안전 지침과 일치합니다. 특히 교차 복용에 대한 지침이 의료진 상담을 강조하여 안전성을 높였습니다."
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:34",
+      "spoken_transcript": "실내 온도를 24에서 26도로 유지하고 얇은 옷을 입혀주세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "실내 온도를 24~26도로 유지하고 얇은 옷을 입혀주세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성, 자막, 오버레이(24°C ~ 26°C) 모두 원문과 일치하며, 시각적 표현도 적절합니다. 숫자와 단위도 정확합니다."
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:40",
+      "spoken_transcript": "탈수가 걱정되면 경구수액제를 조금씩 주세요. 스포츠음료는 같은 대안이 아닙니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "탈수가 걱정되면 경구수액제를 조금씩 주세요. 스포츠음료는 같은 대안이 아닙니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성, 자막, 오버레이(10분 ~ 15분) 모두 원문과 일치하며, 시각적 표현도 적절합니다. 숫자와 단위도 정확합니다."
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:46",
+      "spoken_transcript": "호흡 곤란·가슴 통증·열성 경련·의식 저하·8시간 넘게 소변이 없으면 응급실로 가세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "호흡 곤란·가슴 통증·열성 경련·의식 저하·8시간 넘게 소변이 없으면 응급실로 가세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성, 자막, 오버레이(8시간 이상) 모두 원문과 일치하며, 응급 상황에 대한 명확한 지침을 제공합니다. 숫자와 단위도 정확합니다."
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:54",
+      "spoken_transcript": "증상이 호전되지 않거나 아이가 처지면 소아청소년과 진료를 받으세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "증상이 호전되지 않거나 아이가 처지면 소아청소년과 진료를 받으세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막 내용이 원문과 일치하며, 시각적 표현도 적절합니다."
+    }
+  ],
+  "medication_route_review": [
+    {
+      "timestamp": "00:08",
+      "depicted_item": "해열제",
+      "depicted_route": "경구 (컵으로 마심)",
+      "intended_route": "경구",
+      "is_error": false,
+      "reason_ko": "아이가 목적에 맞는 계량컵으로 약을 마시는 모습이 안전하게 묘사되었습니다.",
+      "confidence": 1.0
+    },
+    {
+      "timestamp": "00:26",
+      "depicted_item": "해열제",
+      "depicted_route": "경구 (컵으로 마심)",
+      "intended_route": "경구",
+      "is_error": false,
+      "reason_ko": "아이가 목적에 맞는 계량컵으로 약을 마시는 모습이 안전하게 묘사되었습니다.",
+      "confidence": 1.0
+    }
+  ],
+  "issues": [],
+  "review_summary_ko": "이 영상은 A형 독감으로 인한 고열 관리법에 대해 정확하고 안전한 정보를 제공합니다. 원문 내용에 충실하며, 특히 해열제 교차 복용 지침을 의료진과의 상담을 강조하는 방향으로 수정하여 안전성을 높였습니다. 시청각적 요소와 자막, 음성 모두 일관되고 명확하게 정보를 전달하며, 의학적 오류나 시각적 오류는 발견되지 않았습니다. 전반적으로 높은 품질의 콘텐츠입니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/influenza-a-high-fever-management/ko/influenza-a-high-fever-management_KO.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/influenza-a-high-fever-management/ko/production.snapshot.json",
+    "audited_at": "2026-09-22T07:49:36.638597+00:00",
+    "video_sha256": "1a992002cb3e64bcaf877623654a057eed1704db4daebc7df368b12540000073",
+    "snapshot_sha256": "5f83de5fc148bde589108cddf44eb90c2fc9bd8a844d246ff9b27e82ce3ac595",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 23,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "1a992002cb3e64bcaf877623654a057eed1704db4daebc7df368b12540000073",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 3,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 4,
+          "checks": [
+            "TREATMENT_CLAIM_UNCERTAINTY"
+          ]
+        },
+        {
+          "scene": 5,
+          "checks": [
+            "DEHYDRATION_OR_POOR_INTAKE"
+          ]
+        },
+        {
+          "scene": 6,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "DEHYDRATION_OR_POOR_INTAKE"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "NEW_OR_MIGRATING_PAIN",
+            "EMERGENCY_LOCALE"
+          ]
+        },
+        {
+          "scene": 10,
+          "checks": [
+            "SLEEP_VS_LETHARGY"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [
+        "24",
+        "48",
+        "24",
+        "48",
+        "24",
+        "26",
+        "8"
+      ],
+      "srt_number_tokens": [
+        "24",
+        "48",
+        "24",
+        "48",
+        "24",
+        "26",
+        "8"
+      ],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 4.44,
+          "timeline_seconds": 4,
+          "speed_factor": 1.11,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 3.36,
+          "timeline_seconds": 4,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 7.04,
+          "timeline_seconds": 6,
+          "speed_factor": 1.1733,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 7.4,
+          "timeline_seconds": 6,
+          "speed_factor": 1.2333,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 7.04,
+          "timeline_seconds": 6,
+          "speed_factor": 1.1733,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 9.72,
+          "timeline_seconds": 8,
+          "speed_factor": 1.215,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 5.84,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 7.56,
+          "timeline_seconds": 6,
+          "speed_factor": 1.26,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 9.88,
+          "timeline_seconds": 8,
+          "speed_factor": 1.235,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 6.28,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0467,
+          "requires_close_listen": false
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

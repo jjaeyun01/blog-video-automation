@@ -1,0 +1,344 @@
+{
+  "video_id": "infant-cold-vomiting-feeding.es",
+  "language": "es",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "PASS",
+  "av_integrity": "PASS",
+  "spoken_transcript": "Vómitos continuos e incapacidad para beber requieren atención urgente. Un resfriado viral puede irritar el estómago del bebé, causando vómitos. ¿Debería ofrecer papilla, fórmula o solo arroz con agua? La fórmula proporciona hidratación y calorías vitales para bebés enfermos. Prepare la fórmula a concentración normal, pero reduzca la cantidad por toma a dos tercios y alimente con más frecuencia. Tras vomitar, siga ofreciendo pequeñas tomas frecuentes de fórmula o leche materna. La pausa de 4 a 6 horas es para sólidos, no para líquidos. Letargo o poco contacto visual son señales de advertencia serias. Tras vomitar, sostenga al bebé erguido unos 30 minutos, con la cabeza y el tronco bien apoyados. Fiebre de 38°C o más en bebés menores de 3 meses, o persistente en cualquier edad, requiere atención médica. Si los síntomas empeoran, consulte a su pediatra sin demora.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "NOT_APPLICABLE",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "PASS",
+    "high_fever_age_context": "PASS",
+    "sleep_vs_lethargy": "PASS",
+    "dehydration_guidance": "PASS",
+    "multilingual_integrity": "PASS",
+    "evidence_ko": "모든 안전 관련 지침, 숫자, 조건이 음성 및 캡션에 명확하게 포함되어 있으며, 언어 일관성도 유지됩니다.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "PASS",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "NOT_APPLICABLE",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "PASS",
+    "treatment_claim_uncertainty": "NOT_APPLICABLE",
+    "simultaneous_and_alternating_antipyretics": "NOT_APPLICABLE",
+    "infant_feeding_and_formula": "PASS",
+    "medicine_storage_and_restart": "NOT_APPLICABLE",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "PASS"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "Vómitos continuos e incapacidad para beber requieren atención urgente.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Vómitos continuos e incapacidad para beber requieren atención urgente.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 일치하며, 시각적 요소는 구토 및 수분 섭취 불능을 잘 표현합니다."
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:06",
+      "spoken_transcript": "Un resfriado viral puede irritar el estómago del bebé, causando vómitos.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Un resfriado viral puede irritar el estómago del bebé, causando vómitos.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 일치하며, 아기 인체 해부도와 걱정하는 젖병 캐릭터가 바이러스 감기로 인한 위장 자극을 시각적으로 잘 나타냅니다."
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:12",
+      "spoken_transcript": "¿Debería ofrecer papilla, fórmula o solo arroz con agua?",
+      "speech_complete": true,
+      "visible_caption_transcript": "¿Debería ofrecer papilla, fórmula o solo arroz con agua?",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 일치하며, 이유식, 분유, 쌀죽을 나타내는 시각적 요소가 질문과 잘 부합합니다."
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:18",
+      "spoken_transcript": "La fórmula proporciona hidratación y calorías vitales para bebés enfermos.",
+      "speech_complete": true,
+      "visible_caption_transcript": "La fórmula proporciona hidratación y calorías vitales para bebés enfermos.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 일치하며, 젖병 안의 물방울과 별 모양 아이콘이 수분과 칼로리 공급을 시각적으로 잘 표현합니다."
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:23",
+      "spoken_transcript": "Prepare la fórmula a concentración normal, pero reduzca la cantidad por toma a dos tercios y alimente con más frecuencia.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Prepare la fórmula a concentración normal, pero reduzca la cantidad por toma a dos tercios y alimente con más frecuencia.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 일치합니다. 시각적으로 젖병에 분유를 따르는 모습과 2/3 표시가 나타나며, 이후 작은 물방울이 자주 떨어지는 모습은 '정상 농도로 준비하되, 섭취량을 2/3로 줄이고 더 자주 먹이라'는 지침을 잘 표현합니다. 'dilution'이 아닌 'reduced amount per feed'를 시각적으로 잘 나타냅니다."
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:29",
+      "spoken_transcript": "Tras vomitar, siga ofreciendo pequeñas tomas frecuentes de fórmula o leche materna. La pausa de 4 a 6 horas es para sólidos, no para líquidos.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Tras vomitar, siga ofreciendo pequeñas tomas frecuentes de fórmula o leche materna. La pausa de 4 a 6 horas es para sólidos, no para líquidos.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 일치합니다. 시계와 묽은 이유식 그릇이 나타나며, 4-6시간 표시는 고형식에 대한 휴식 시간을 명확히 합니다. 액체 섭취는 계속해야 한다는 점이 잘 전달됩니다."
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:37",
+      "spoken_transcript": "Letargo o poco contacto visual son señales de advertencia serias.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Letargo o poco contacto visual son señales de advertencia serias.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 일치하며, 잠든 아기의 표정이 점차 무표정하고 반응이 없는 모습으로 변하는 시각적 표현이 기면 또는 눈 맞춤 불량을 잘 나타냅니다."
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:42",
+      "spoken_transcript": "Tras vomitar, sostenga al bebé erguido unos 30 minutos, con la cabeza y el tronco bien apoyados.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Tras vomitar, sostenga al bebé erguido unos 30 minutos, con la cabeza y el tronco bien apoyados.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 일치하며, 보호자가 아기를 30분 동안 똑바로 안고 있는 모습이 구토 후 자세 지침을 잘 따릅니다. 아기의 머리와 몸통이 잘 지지됩니다."
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:48",
+      "spoken_transcript": "Fiebre de 38°C o más en bebés menores de 3 meses, o persistente en cualquier edad, requiere atención médica.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Fiebre de 38°C o más en bebés menores de 3 meses, o persistente en cualquier edad, requiere atención médica.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 일치하며, 체온계 화면이 붉게 변하며 38°C 이상 발열 경고를 시각적으로 잘 표현합니다. 3개월 미만 아기 또는 지속적인 발열에 대한 의료 조치 필요성이 명확합니다."
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:55",
+      "spoken_transcript": "Si los síntomas empeoran, consulte a su pediatra sin demora.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Si los síntomas empeoran, consulte a su pediatra sin demora.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 일치하며, 젖병 캐릭터가 의료 십자가를 가리키며 증상 악화 시 소아과 의사 상담을 권유하는 시각적 표현이 적절합니다."
+    }
+  ],
+  "medication_route_review": [],
+  "issues": [],
+  "review_summary_ko": "이 영상은 7개월 아기의 감기 및 구토 증상에 대한 수유 및 대처 방법을 다룹니다. 분유 농도를 정상으로 유지하고 섭취량을 줄여 자주 먹이는 방법, 구토 후 고형식 섭취 시 4-6시간 휴식, 그리고 기면, 호흡 곤란, 3개월 미만 38°C 이상 발열 등 응급 상황 시 즉시 소아과 진료를 받아야 한다는 중요한 안전 지침을 명확하게 전달합니다. 음성, 캡션, 시각적 요소 모두 일관되고 정확하며, 의학적 오류나 시각적 환각, 오디오-비디오 불일치는 발견되지 않았습니다. 모든 필수 검사 항목을 통과했습니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/infant-cold-vomiting-feeding/es/infant-cold-vomiting-feeding_ES.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/infant-cold-vomiting-feeding/es/production.snapshot.json",
+    "audited_at": "2026-09-22T06:52:26.923900+00:00",
+    "video_sha256": "4617ca1f22bc93db08183cd482704cea5992f45d0c64301ef1004b442ce997e5",
+    "snapshot_sha256": "4af147cd1abee52e9d90380e2fbb5d66d83e9dc8072c4e2c9c5d131e993c0750",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 30,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "4617ca1f22bc93db08183cd482704cea5992f45d0c64301ef1004b442ce997e5",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 1,
+          "checks": [
+            "DRUG_SPECIFIC_REDOSING"
+          ]
+        },
+        {
+          "scene": 2,
+          "checks": [
+            "DRUG_SPECIFIC_REDOSING"
+          ]
+        },
+        {
+          "scene": 3,
+          "checks": [
+            "FORMULA_AMOUNT_VS_CONCENTRATION"
+          ]
+        },
+        {
+          "scene": 4,
+          "checks": [
+            "FORMULA_AMOUNT_VS_CONCENTRATION"
+          ]
+        },
+        {
+          "scene": 5,
+          "checks": [
+            "DOSE_CONCENTRATION_CONTEXT",
+            "FORMULA_AMOUNT_VS_CONCENTRATION",
+            "POWDER_MEDICINE_STORAGE"
+          ]
+        },
+        {
+          "scene": 6,
+          "checks": [
+            "DRUG_SPECIFIC_REDOSING",
+            "FORMULA_AMOUNT_VS_CONCENTRATION"
+          ]
+        },
+        {
+          "scene": 7,
+          "checks": [
+            "SLEEP_VS_LETHARGY"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "DRUG_SPECIFIC_REDOSING"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "MEDICINE_STOP_RESTART"
+          ]
+        },
+        {
+          "scene": 10,
+          "checks": [
+            "DRUG_SPECIFIC_REDOSING"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [
+        "4",
+        "6",
+        "30",
+        "38",
+        "3"
+      ],
+      "srt_number_tokens": [
+        "4",
+        "6",
+        "30",
+        "38",
+        "3"
+      ],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 5.96,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 5.84,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 5.24,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 5.92,
+          "timeline_seconds": 5,
+          "speed_factor": 1.184,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 8.76,
+          "timeline_seconds": 6,
+          "speed_factor": 1.46,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 11.32,
+          "timeline_seconds": 8,
+          "speed_factor": 1.415,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 5.4,
+          "timeline_seconds": 5,
+          "speed_factor": 1.08,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 7.64,
+          "timeline_seconds": 6,
+          "speed_factor": 1.2733,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 10.16,
+          "timeline_seconds": 7,
+          "speed_factor": 1.4514,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 4.6,
+          "timeline_seconds": 5,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

@@ -1,0 +1,1378 @@
+{
+  "updated_at": "2026-09-22T07:58:19.814225+00:00",
+  "target_count": 39,
+  "revised_count": 39,
+  "entries": [
+    {
+      "slug": "baby-40c-fever-no-other-symptoms",
+      "language": "en",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-0907-set4-English.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/6dae6324-39a7-401c-9d2c-5db661cb5027/pasted-text.txt",
+          "reason_ko": "0–11초·24–35초의 ‘아기 40도 고열도 활력이 좋으면 집에서 관리, 3일 이상이면 진료’는 연령 제한이 없어 어린 영아도 기다려도 되는 것으로 오해할 수 있습니다. 생후 3개월 미만 38도 이상은 즉시 평가, 3–6개월 39도 이상은 신속한 평가가 필요하다는 예외를 앞부분에 명확히 넣어 주세요.",
+          "additional_ko": "추가 노트: 42–47초 ‘해열제 4–6시간 간격’은 약 이름 없이 일반화하지 말고 아세트아미노펜과 이부프로펜을 구분해 주세요. 나이가 큰 아이도 반복되는 40도 초과 고열은 바로 의료진과 상의하도록 안내해야 합니다."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/baby-40c-fever-no-other-symptoms/en/baby-40c-fever-no-other-symptoms_EN.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/baby-40c-fever-no-other-symptoms_EN.mp4",
+      "sha256": "b783f69e22ecab2e28dceca9faf30aa4acd30b26adac841293ec281c02191ed3",
+      "original_sha256": "8b9a5b821d6eb4803c5508986ebea3d0d2886ce1ff99837425224c0242da2bda",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 24,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/baby-40c-fever-no-other-symptoms.en.json",
+      "adjudication": null
+    },
+    {
+      "slug": "baby-40c-fever-no-other-symptoms",
+      "language": "es",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-0907-set4-Spanish.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/6dae6324-39a7-401c-9d2c-5db661cb5027/pasted-text.txt",
+          "reason_ko": "0–11초·24–35초의 ‘아기 40도 고열도 활력이 좋으면 집에서 관리, 3일 이상이면 진료’는 연령 제한이 없어 어린 영아도 기다려도 되는 것으로 오해할 수 있습니다. 생후 3개월 미만 38도 이상은 즉시 평가, 3–6개월 39도 이상은 신속한 평가가 필요하다는 예외를 앞부분에 명확히 넣어 주세요.",
+          "additional_ko": "추가 노트: 42–47초 ‘해열제 4–6시간 간격’은 약 이름 없이 일반화하지 말고 아세트아미노펜과 이부프로펜을 구분해 주세요. 나이가 큰 아이도 반복되는 40도 초과 고열은 바로 의료진과 상의하도록 안내해야 합니다."
+        },
+        {
+          "filename": "Jaeyoon-Lee-0907-set4-Spanish-v1.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/6dae6324-39a7-401c-9d2c-5db661cb5027/pasted-text.txt",
+          "reason_ko": "0–11초·24–35초의 ‘아기 40도 고열도 활력이 좋으면 집에서 관리, 3일 이상이면 진료’는 연령 제한이 없어 어린 영아도 기다려도 되는 것으로 오해할 수 있습니다. 생후 3개월 미만 38도 이상은 즉시 평가, 3–6개월 39도 이상은 신속한 평가가 필요하다는 예외를 앞부분에 명확히 넣어 주세요.",
+          "additional_ko": "추가 노트: 42–47초 ‘해열제 4–6시간 간격’은 약 이름 없이 일반화하지 말고 아세트아미노펜과 이부프로펜을 구분해 주세요. 나이가 큰 아이도 반복되는 40도 초과 고열은 바로 의료진과 상의하도록 안내해야 합니다. 434행과 이 v1 파일은 SHA-256이 같아 수정본이 아닌 동일 파일로 확인됐습니다. 중복 때문이 아니라 위 의학적 안내 때문에 F입니다."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/baby-40c-fever-no-other-symptoms/es/baby-40c-fever-no-other-symptoms_ES.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/baby-40c-fever-no-other-symptoms_ES.mp4",
+      "sha256": "e10d13cdd9896d262e28d800bcd0d83a30c1b41920025bd19683a1d3dabdb654",
+      "original_sha256": "ce39cc0bde335925db8603e3302373722aa88e443fec8ae1d59fb24ec255994c",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 24,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/baby-40c-fever-no-other-symptoms.es.json",
+      "adjudication": null
+    },
+    {
+      "slug": "baby-40c-fever-no-other-symptoms",
+      "language": "ko",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-0907-set4-Korean.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/6dae6324-39a7-401c-9d2c-5db661cb5027/pasted-text.txt",
+          "reason_ko": "0–11초·24–35초의 ‘아기 40도 고열도 활력이 좋으면 집에서 관리, 3일 이상이면 진료’는 연령 제한이 없어 어린 영아도 기다려도 되는 것으로 오해할 수 있습니다. 생후 3개월 미만 38도 이상은 즉시 평가, 3–6개월 39도 이상은 신속한 평가가 필요하다는 예외를 앞부분에 명확히 넣어 주세요.",
+          "additional_ko": "추가 노트: 42–47초 ‘해열제 4–6시간 간격’은 약 이름 없이 일반화하지 말고 아세트아미노펜과 이부프로펜을 구분해 주세요. 나이가 큰 아이도 반복되는 40도 초과 고열은 바로 의료진과 상의하도록 안내해야 합니다."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/baby-40c-fever-no-other-symptoms/ko/baby-40c-fever-no-other-symptoms_KO.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/baby-40c-fever-no-other-symptoms_KO.mp4",
+      "sha256": "5fbd3c71aba71926d3a2bd80acf5191e810993bcb9d92e65a29fb5d4675ee2ec",
+      "original_sha256": "2ee9d699247eb6c7a6d6624389dc5efef9d11b1c4b568ff7beacad97df464c83",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 23,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/baby-40c-fever-no-other-symptoms.ko.json",
+      "adjudication": null,
+      "previous_sha256": "b649fe3558fe8af21cc92af1eda0ab1401cb506d603d3083ff83bd641e859160"
+    },
+    {
+      "slug": "baby-enteritis-medicine-stop",
+      "language": "en",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-English-21.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "23~41초: 약명·성분·처방 조건을 밝히지 않은 채 좋아지면 중단하고 복통/설사가 재발하면 다음 진료까지 다시 먹이도록 지시합니다. '장운동 조절약' 전체에 같은 중단·재개법을 적용할 수 없습니다. 해당 약과 처방 계획을 명시하고 재발 시 임의 재투약보다 처방의·약사에게 확인하도록 수정해 주세요.",
+          "additional_ko": "추가 노트: 하루 묽은 변 3회만으로 항상 응급상황이라는 인상도 피하고 혈변, 심한 통증, 탈수, 의식/활동 저하 등과 구분해 주세요. 관찰 중 악화 시 진료 안내는 유지해 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/baby-enteritis-medicine-stop/en/baby-enteritis-medicine-stop_EN.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/baby-enteritis-medicine-stop_EN.mp4",
+      "sha256": "364d8ae1d59b71cff6b47bcece6ce0ddfeb3db24cf49c45683f948d73be60d3a",
+      "original_sha256": "f1eff1739a817a3f5d63b7ea0f67c9a55d6937a784bed59b0fcbcea1d50f956d",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 20,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/baby-enteritis-medicine-stop.en.json",
+      "adjudication": {
+        "status": "PASS",
+        "basis": "second_gemini",
+        "reason_ko": "2차 Gemini가 1차의 '무른 변 3회만으로 응급은 아니다' 지적을 원 피드백 기준과 위험징후 문맥에 비추어 무효로 재판정했습니다. 1차 장면 9의 numbers_and_units_match=false도 음성·자막 숫자 불일치가 아니라 출처 해석을 잘못 넣은 것입니다."
+      }
+    },
+    {
+      "slug": "baby-enteritis-medicine-stop",
+      "language": "es",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-Spanish-21.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "23~41초: 약명·성분·처방 조건을 밝히지 않은 채 좋아지면 중단하고 복통/설사가 재발하면 다음 진료까지 다시 먹이도록 지시합니다. '장운동 조절약' 전체에 같은 중단·재개법을 적용할 수 없습니다. 해당 약과 처방 계획을 명시하고 재발 시 임의 재투약보다 처방의·약사에게 확인하도록 수정해 주세요.",
+          "additional_ko": "추가 노트: 하루 묽은 변 3회만으로 항상 응급상황이라는 인상도 피하고 혈변, 심한 통증, 탈수, 의식/활동 저하 등과 구분해 주세요. 관찰 중 악화 시 진료 안내는 유지해 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/baby-enteritis-medicine-stop/es/baby-enteritis-medicine-stop_ES.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/baby-enteritis-medicine-stop_ES.mp4",
+      "sha256": "f7872af6e67df92b6a5364a926004508dca479ed859d8b14e7ce15c764ce7f5a",
+      "original_sha256": "caa84d5a91e022495fa5a82ce76a4c93418cf6115d6aa63be0facf06fad4deda",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 20,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/baby-enteritis-medicine-stop.es.json",
+      "adjudication": null
+    },
+    {
+      "slug": "baby-enteritis-medicine-stop",
+      "language": "ko",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-Korean-21.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "23~41초: 약명·성분·처방 조건을 밝히지 않은 채 좋아지면 중단하고 복통/설사가 재발하면 다음 진료까지 다시 먹이도록 지시합니다. '장운동 조절약' 전체에 같은 중단·재개법을 적용할 수 없습니다. 해당 약과 처방 계획을 명시하고 재발 시 임의 재투약보다 처방의·약사에게 확인하도록 수정해 주세요.",
+          "additional_ko": "추가 노트: 하루 묽은 변 3회만으로 항상 응급상황이라는 인상도 피하고 혈변, 심한 통증, 탈수, 의식/활동 저하 등과 구분해 주세요. 관찰 중 악화 시 진료 안내는 유지해 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/baby-enteritis-medicine-stop/ko/baby-enteritis-medicine-stop_KO.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/baby-enteritis-medicine-stop_KO.mp4",
+      "sha256": "860c42831c00ebbc0fd4021d995c277006611979ee4014f7d25293bc542d75d5",
+      "original_sha256": "f75641204cf745a54ab995841887add07cb7c987c6be132e2876b85c3db6b650",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 20,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/baby-enteritis-medicine-stop.ko.json",
+      "adjudication": {
+        "status": "PASS",
+        "basis": "second_gemini",
+        "reason_ko": "2차 Gemini가 처방약 중단·재시작을 임의로 지시하지 않고 의료진에게 확인하도록 한 수정안을 더 보수적이고 안전하다고 재판정했습니다."
+      }
+    },
+    {
+      "slug": "baby-fever-threshold",
+      "language": "en",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-English-15.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "41~47초 전후: '어른보다 한 겹 적게'를 영아의 일반적 옷차림 원칙으로 제시하는 것은 부정확합니다. 환경과 아기 상태에 맞춰 과도하게 싸거나 벗기지 않도록 바꿔 주세요. 5개월 아기 주변의 베개·푹신한 둘레·느슨한 이불 장면도 안전한 수면 환경으로 교체가 필요합니다.",
+          "additional_ko": "추가 노트: 38도 이상 발열 및 상태 악화 시 진료 안내는 적절합니다. 손발의 온도만으로 전신 상태가 안전하다고 판단하지 않도록 보완해 주세요. 실제 저체온증이나 질식이 발생했다는 지적은 아닙니다."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/baby-fever-threshold/en/baby-fever-threshold_EN.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/baby-fever-threshold_EN.mp4",
+      "sha256": "a5724022bb425de852bb95c91d9f9acb771e964e0d17c96d9142fe46be57f000",
+      "original_sha256": "6f5c03c11af7b290a3a8728996df0bf719a7e49ab40be64d0c80c8b415b29a31",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 30,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/baby-fever-threshold.en.json",
+      "adjudication": null
+    },
+    {
+      "slug": "baby-fever-threshold",
+      "language": "es",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-Spanish-15.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "41~47초 전후: '어른보다 한 겹 적게'를 영아의 일반적 옷차림 원칙으로 제시하는 것은 부정확합니다. 환경과 아기 상태에 맞춰 과도하게 싸거나 벗기지 않도록 바꿔 주세요. 5개월 아기 주변의 베개·푹신한 둘레·느슨한 이불 장면도 안전한 수면 환경으로 교체가 필요합니다.",
+          "additional_ko": "추가 노트: 38도 이상 발열 및 상태 악화 시 진료 안내는 적절합니다. 손발의 온도만으로 전신 상태가 안전하다고 판단하지 않도록 보완해 주세요. 실제 저체온증이나 질식이 발생했다는 지적은 아닙니다."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/baby-fever-threshold/es/baby-fever-threshold_ES.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/baby-fever-threshold_ES.mp4",
+      "sha256": "868cb12bad816a04eb4f3ce82a4051b046b360a2bb737654a7a5e59e599b110d",
+      "original_sha256": "ed480b3e29f307795e988441866123893c79627b7ec315784d10771dbf58472d",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 29,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/baby-fever-threshold.es.json",
+      "adjudication": null
+    },
+    {
+      "slug": "baby-fever-threshold",
+      "language": "ko",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-Korean-15.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "41~47초 전후: '어른보다 한 겹 적게'를 영아의 일반적 옷차림 원칙으로 제시하는 것은 부정확합니다. 환경과 아기 상태에 맞춰 과도하게 싸거나 벗기지 않도록 바꿔 주세요. 5개월 아기 주변의 베개·푹신한 둘레·느슨한 이불 장면도 안전한 수면 환경으로 교체가 필요합니다.",
+          "additional_ko": "추가 노트: 38도 이상 발열 및 상태 악화 시 진료 안내는 적절합니다. 손발의 온도만으로 전신 상태가 안전하다고 판단하지 않도록 보완해 주세요. 실제 저체온증이나 질식이 발생했다는 지적은 아닙니다."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/baby-fever-threshold/ko/baby-fever-threshold_KO.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/baby-fever-threshold_KO.mp4",
+      "sha256": "331cc97e0f2316a89cee9c0aa5f52bcba5a21a1b156e0770ec8e27da50a58731",
+      "original_sha256": "08e005910685b7f768a6d33ec21881175f573987f43627925853163d9c77d363",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 27,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/baby-fever-threshold.ko.json",
+      "adjudication": null,
+      "previous_sha256": "c6159551b9649d92465b78ea5820ab39501343ba748bc8a55d4030b7977c142d"
+    },
+    {
+      "slug": "baby-formula-refusal-cold",
+      "language": "en",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-English-13.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "23~29초: 월령 구분 없이 '12시간 이상 수유 거부 시 진료'를 기준으로 제시하면, 어린 영아가 거의 먹지 못하는 상황을 너무 오래 관찰하게 할 수 있습니다. 어린 월령·평소 대비 섭취 감소·소변·활동성을 함께 보며 거의 못 먹거나 처지면 더 일찍 진료하도록 수정해 주세요.",
+          "additional_ko": "추가 노트: 8시간 무뇨 등 이미 포함된 탈수 경고는 유지해 주세요. 30~50mL씩 30분마다도 모든 월령의 영아에게 고정 적용하기보다 평소 수유량과 받아먹는 정도에 맞춘 소량·빈번한 수유로 표현해 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/baby-formula-refusal-cold/en/baby-formula-refusal-cold_EN.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/baby-formula-refusal-cold_EN.mp4",
+      "sha256": "0b2db77ee2e0e5520b40132ce82f705447aa1461891a175468f66e09e502a5a0",
+      "original_sha256": "e79a5741500c82c0f04390dbcb13d558fb84b08da2304a65fee26ff47c541659",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 20,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/baby-formula-refusal-cold.en.json",
+      "adjudication": null,
+      "previous_sha256": "dff7f58a8f8bd49a64c559400b28fc0ec9750570b14972c4f6081a47602661ce"
+    },
+    {
+      "slug": "baby-formula-refusal-cold",
+      "language": "es",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-Spanish-13.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "23~29초: 월령 구분 없이 '12시간 이상 수유 거부 시 진료'를 기준으로 제시하면, 어린 영아가 거의 먹지 못하는 상황을 너무 오래 관찰하게 할 수 있습니다. 어린 월령·평소 대비 섭취 감소·소변·활동성을 함께 보며 거의 못 먹거나 처지면 더 일찍 진료하도록 수정해 주세요.",
+          "additional_ko": "추가 노트: 8시간 무뇨 등 이미 포함된 탈수 경고는 유지해 주세요. 30~50mL씩 30분마다도 모든 월령의 영아에게 고정 적용하기보다 평소 수유량과 받아먹는 정도에 맞춘 소량·빈번한 수유로 표현해 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/baby-formula-refusal-cold/es/baby-formula-refusal-cold_ES.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/baby-formula-refusal-cold_ES.mp4",
+      "sha256": "67491c1c030c702dd0d7bd3c47d67e6dbe0dad31a6e89dbe4464c18677be6d5c",
+      "original_sha256": "932e6f44016c70a4ade321200945cab52a8ab3ac4743b6aa93a54cc071b428fe",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 22,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/baby-formula-refusal-cold.es.json",
+      "adjudication": null,
+      "previous_sha256": "044e26f950fc868a06abf0b80ff5a34c4acc34ae8845801265e2707760dd8a56"
+    },
+    {
+      "slug": "baby-formula-refusal-cold",
+      "language": "ko",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-Korean-13.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "23~29초: 월령 구분 없이 '12시간 이상 수유 거부 시 진료'를 기준으로 제시하면, 어린 영아가 거의 먹지 못하는 상황을 너무 오래 관찰하게 할 수 있습니다. 어린 월령·평소 대비 섭취 감소·소변·활동성을 함께 보며 거의 못 먹거나 처지면 더 일찍 진료하도록 수정해 주세요.",
+          "additional_ko": "추가 노트: 8시간 무뇨 등 이미 포함된 탈수 경고는 유지해 주세요. 30~50mL씩 30분마다도 모든 월령의 영아에게 고정 적용하기보다 평소 수유량과 받아먹는 정도에 맞춘 소량·빈번한 수유로 표현해 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/baby-formula-refusal-cold/ko/baby-formula-refusal-cold_KO.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/baby-formula-refusal-cold_KO.mp4",
+      "sha256": "3c7f4c611603e772a275e2e19efaf8ce7722610a67c8ada986dd60bb8342bdae",
+      "original_sha256": "e5a9033bcd88077c83f250ed2f8cad8e10d1a02d0e66155af8768d146071c164",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 22,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/baby-formula-refusal-cold.ko.json",
+      "adjudication": null,
+      "previous_sha256": "063b05e164a533e0611771760fedb801e53800e43c917f9be956ebb8c30d0d39"
+    },
+    {
+      "slug": "infant-cold-vomiting-feeding",
+      "language": "en",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-English-26.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "23~29초: '분유를 평소의 2/3로 줄인다'고만 하여 1회 수유량인지 조제 농도인지 불명확하고, 젖병에 액체를 떨어뜨리는 그림이 혼동을 더합니다. '제품 표시대로 정상 농도로 타고, 1회 먹이는 양을 줄여 더 자주'로 수정하고 용량을 보여주는 그림으로 교체해 주세요. 분유 희석을 명시적으로 지시했다고 단정한 판정은 아닙니다.",
+          "additional_ko": "추가 노트: 'before diluted solids'는 고형식 재개에 관한 표현이므로 '4~6시간 수분 완전 금식 지시'라는 Gemini 지적은 채택하지 않았습니다. 그동안의 모유/분유·연령에 맞는 수분 공급은 명확히 해 주세요. 세워 안기는 목·몸통을 받치는 자세로, 3개월 미만 38도는 즉시 진료로 보완해 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/infant-cold-vomiting-feeding/en/infant-cold-vomiting-feeding_EN.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/infant-cold-vomiting-feeding_EN.mp4",
+      "sha256": "3fcc50b148909edac08cafea6c68ff762e31e0d4d1b583d3b7825bada03df032",
+      "original_sha256": "4857f1f685f1a39950c90215ee507e774ec5ac1a4652f2e331d834a5e57f5646",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 30,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/infant-cold-vomiting-feeding.en.json",
+      "adjudication": null
+    },
+    {
+      "slug": "infant-cold-vomiting-feeding",
+      "language": "es",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-Spanish-25.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "23~29초: '분유를 평소의 2/3로 줄인다'고만 하여 1회 수유량인지 조제 농도인지 불명확하고, 젖병에 액체를 떨어뜨리는 그림이 혼동을 더합니다. '제품 표시대로 정상 농도로 타고, 1회 먹이는 양을 줄여 더 자주'로 수정하고 용량을 보여주는 그림으로 교체해 주세요. 분유 희석을 명시적으로 지시했다고 단정한 판정은 아닙니다.",
+          "additional_ko": "추가 노트: 4~6시간 대기는 고형식 재개에 관한 문장이므로 '수분을 완전히 끊으라고 했다'는 Gemini 지적은 채택하지 않았습니다. 다만 그동안의 모유/분유·연령에 맞는 수분 공급은 명확히 해 주세요. 세워 안기는 목·몸통을 받치는 자세로 표현하고 3개월 미만 38도는 즉시 진료하도록 보완해 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/infant-cold-vomiting-feeding/es/infant-cold-vomiting-feeding_ES.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/infant-cold-vomiting-feeding_ES.mp4",
+      "sha256": "4617ca1f22bc93db08183cd482704cea5992f45d0c64301ef1004b442ce997e5",
+      "original_sha256": "235f1c99cda4a8323c3e6ac16b1e5055eb97bc4b2988819465bca0f284cf22d6",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 30,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/infant-cold-vomiting-feeding.es.json",
+      "adjudication": null
+    },
+    {
+      "slug": "infant-cold-vomiting-feeding",
+      "language": "ko",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-Korean-25.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "23~29초: '분유를 평소의 2/3로 줄인다'고만 하여 1회 수유량인지 조제 농도인지 불명확하고, 젖병에 액체를 떨어뜨리는 그림이 혼동을 더합니다. '제품 표시대로 정상 농도로 타고, 1회 먹이는 양을 줄여 더 자주'로 수정하고 용량을 보여주는 그림으로 교체해 주세요. 분유 희석을 명시적으로 지시했다고 단정한 판정은 아닙니다.",
+          "additional_ko": "추가 노트: 한국어의 '4~6시간 쉬게 한 뒤 묽게'는 무엇을 묽게 하는지 불명확하므로 이유식인지 명시해 주세요. 모유/분유·적절한 수분까지 끊는 것으로 오해되지 않게 구분하고, 반복 구토 시 소량 수분/ORS 및 진료를 안내해 주세요. 세워 안기는 목·몸통을 받치는 자세로 표현해 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/infant-cold-vomiting-feeding/ko/infant-cold-vomiting-feeding_KO.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/infant-cold-vomiting-feeding_KO.mp4",
+      "sha256": "849fd46dafc318795c7d370b3e0b8ea607429d8ef7a2a219e8167abafc5c7a58",
+      "original_sha256": "c61bd65a654215e2d8779621d8034e3e91fdc26ca37bfa06c26d3c7756d7008b",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 30,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/infant-cold-vomiting-feeding.ko.json",
+      "adjudication": null
+    },
+    {
+      "slug": "infant-wheezing-pneumonia-antibiotics",
+      "language": "en",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-0907-set3-English.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/6dae6324-39a7-401c-9d2c-5db661cb5027/pasted-text.txt",
+          "reason_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요.",
+          "additional_ko": "추가 노트: 47–53초 음성은 ‘call 119 immediately’만 들리고 어떤 증상일 때인지 설명이 빠져 있습니다. 청색증·함몰호흡 조건을 음성에도 복원하고 응급번호는 배포 국가에 맞춰 주세요. 영아 수면 장면의 베개·느슨한 침구도 수정이 필요합니다."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/infant-wheezing-pneumonia-antibiotics/en/infant-wheezing-pneumonia-antibiotics_EN.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/infant-wheezing-pneumonia-antibiotics_EN.mp4",
+      "sha256": "057c3e7f955ce1be8960577bba83f32ca599f7fb857dd9f88c6a2c65ebe9c925",
+      "original_sha256": "d3b23e9bbb695af20a58fa17d76e913e69426adb0719355446a81f562649a42f",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 30,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/infant-wheezing-pneumonia-antibiotics.en.json",
+      "adjudication": null
+    },
+    {
+      "slug": "infant-wheezing-pneumonia-antibiotics",
+      "language": "es",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-0907-set3-Spanish.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/6dae6324-39a7-401c-9d2c-5db661cb5027/pasted-text.txt",
+          "reason_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요.",
+          "additional_ko": "추가 노트: 쌕쌕거림과 들이쉴 때 나는 협착음을 혼용하지 않도록 정리해 주세요. 응급번호는 배포 국가에 맞추고 영아 침대의 베개·느슨한 이불도 제거한 장면으로 바꿔 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/infant-wheezing-pneumonia-antibiotics/es/infant-wheezing-pneumonia-antibiotics_ES.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/infant-wheezing-pneumonia-antibiotics_ES.mp4",
+      "sha256": "77c69a954c26ece748485bfbf314d53e40da52830307eed806d7e1481877ec87",
+      "original_sha256": "cc3c5673e840a5c0e460d15f4479b8947d509607d572d3aa8a83878c026e356f",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 30,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/infant-wheezing-pneumonia-antibiotics.es.json",
+      "adjudication": null
+    },
+    {
+      "slug": "infant-wheezing-pneumonia-antibiotics",
+      "language": "ko",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-0907-set3-Korean.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/6dae6324-39a7-401c-9d2c-5db661cb5027/pasted-text.txt",
+          "reason_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요.",
+          "additional_ko": "추가 노트: 기관지의 천명음과 상기도 협착음을 구분해 주세요. 영아 침대의 베개·느슨한 이불도 제거한 장면으로 수정하고, 수분 공급은 아이가 안전하게 삼킬 수 있을 때만 안내해 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/infant-wheezing-pneumonia-antibiotics/ko/infant-wheezing-pneumonia-antibiotics_KO.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/infant-wheezing-pneumonia-antibiotics_KO.mp4",
+      "sha256": "740079a6d624be1d99be0dd935f196fa6bed8ed797e31d8d1414279b754b3bb6",
+      "original_sha256": "bd2b46d4801d9ea610313a1e3fda0e58795fe902ee0e715ca2c95aee23c798dd",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 29,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/infant-wheezing-pneumonia-antibiotics.ko.json",
+      "adjudication": null
+    },
+    {
+      "slug": "influenza-a-high-fever-management",
+      "language": "en",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-0907-set7-English.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/6dae6324-39a7-401c-9d2c-5db661cb5027/pasted-text.txt",
+          "reason_ko": "약 25–35초에 ‘6개월 이상은 아세트아미노펜 후 2–3시간 뒤 이부프로펜 교차복용’을 일반 지침처럼 제시합니다. 불편감이 지속되는지, 각 약의 최소 간격·1일 총량을 어떻게 지킬지 없어 투약 혼선과 과량 위험이 있습니다. 단일 약 우선으로 바꾸고 교차 사용이 필요하면 의료진이 정한 복용 계획을 따르도록 해 주세요.",
+          "additional_ko": "추가 노트: 항바이러스제 후 24–48시간 내 해열을 보장하는 표현은 개인차가 있음을 반영해 주세요. 수분 보충의 ‘이온음료’는 경구수분보충액(ORS)과 같은 것으로 안내하지 말고, 영아는 모유·분유를 기본으로 설명해 주세요. 실내 온도 숫자만으로 Fail 판정하지는 않았습니다."
+        },
+        {
+          "filename": "Jaeyoon-Lee-week8-English-10.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "25~35초 전후: acetaminophen 후 2~3시간 뒤 ibuprofen 교차복용을 제시하지만, 불편감 지속 여부와 각 약의 최소 간격·하루 최대량·투여 기록에 대한 안전 조건이 없습니다. 고열 수치만으로 정례 교차복용하도록 읽히지 않게, 단일제 우선 및 필요한 경우 의료진과 정한 약별 계획을 따르도록 수정해 주세요.",
+          "additional_ko": "추가 노트: 한국어·스페인어와 달리 이 영어판에는 ibuprofen의 6개월 미만 자가투여 제한이 빠져 있어 보완이 필요합니다. 독감약 후 24~48시간 내 해열을 보장하지 말고, 탈수 보충 시 스포츠음료와 ORS를 구별해 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/influenza-a-high-fever-management/en/influenza-a-high-fever-management_EN.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/influenza-a-high-fever-management_EN.mp4",
+      "sha256": "82717ebf431f04616629b2b911fe8102a4badc94320a02ba74bf3a3d542d99ae",
+      "original_sha256": "88f3f58eb6980a14630840a8295889addee7e9c215775d439ceb71233abadcc1",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 28,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/influenza-a-high-fever-management.en.json",
+      "adjudication": null
+    },
+    {
+      "slug": "influenza-a-high-fever-management",
+      "language": "es",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-0907-set7-Spanish.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/6dae6324-39a7-401c-9d2c-5db661cb5027/pasted-text.txt",
+          "reason_ko": "약 25–35초에 ‘6개월 이상은 아세트아미노펜 후 2–3시간 뒤 이부프로펜 교차복용’을 일반 지침처럼 제시합니다. 불편감이 지속되는지, 각 약의 최소 간격·1일 총량을 어떻게 지킬지 없어 투약 혼선과 과량 위험이 있습니다. 단일 약 우선으로 바꾸고 교차 사용이 필요하면 의료진이 정한 복용 계획을 따르도록 해 주세요.",
+          "additional_ko": "추가 노트: 항바이러스제 후 24–48시간 내 해열을 보장하는 표현은 개인차가 있음을 반영해 주세요. 수분 보충의 ‘이온음료’는 경구수분보충액(ORS)과 같은 것으로 안내하지 말고, 영아는 모유·분유를 기본으로 설명해 주세요. 실내 온도 숫자만으로 Fail 판정하지는 않았습니다."
+        },
+        {
+          "filename": "Jaeyoon-Lee-week8-Spanish-10.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "25~35초 전후: acetaminophen 후 2~3시간 뒤 ibuprofen 교차복용을 제시하지만, 불편감 지속 여부와 각 약의 최소 간격·하루 최대량·투여 기록에 대한 안전 조건이 없습니다. 고열 수치만으로 정례 교차복용하도록 읽히지 않게, 단일제 우선 및 필요한 경우 의료진과 정한 약별 계획을 따르도록 수정해 주세요.",
+          "additional_ko": "추가 노트: 2~3시간이라는 숫자 자체가 모든 상황에서 금지라는 의미는 아닙니다. 독감약을 먹으면 반드시 24~48시간 안에 열이 잡힌다는 인상도 완화해 주세요. 탈수 보충 시 스포츠음료와 경구수액제(ORS)를 동등하게 제시하지 않도록 해 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/influenza-a-high-fever-management/es/influenza-a-high-fever-management_ES.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/influenza-a-high-fever-management_ES.mp4",
+      "sha256": "79af8fdcbb1a5fb408d5d16e5f5209c2782bc1ab97aaf4b3883980b382e9bdb3",
+      "original_sha256": "f479a54c91178b4618b3c3d9b01765393e72e03eaf7d3f7e272109a71b601fa7",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 29,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/influenza-a-high-fever-management.es.json",
+      "adjudication": null
+    },
+    {
+      "slug": "influenza-a-high-fever-management",
+      "language": "ko",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-0907-set7-Korean.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/6dae6324-39a7-401c-9d2c-5db661cb5027/pasted-text.txt",
+          "reason_ko": "약 25–35초에 ‘6개월 이상은 아세트아미노펜 후 2–3시간 뒤 이부프로펜 교차복용’을 일반 지침처럼 제시합니다. 불편감이 지속되는지, 각 약의 최소 간격·1일 총량을 어떻게 지킬지 없어 투약 혼선과 과량 위험이 있습니다. 단일 약 우선으로 바꾸고 교차 사용이 필요하면 의료진이 정한 복용 계획을 따르도록 해 주세요.",
+          "additional_ko": "추가 노트: 항바이러스제 후 24–48시간 내 해열을 보장하는 표현은 개인차가 있음을 반영해 주세요. 수분 보충의 ‘이온음료’는 경구수분보충액(ORS)과 같은 것으로 안내하지 말고, 영아는 모유·분유를 기본으로 설명해 주세요. 실내 온도 숫자만으로 Fail 판정하지는 않았습니다."
+        },
+        {
+          "filename": "Jaeyoon-Lee-week8-Korean-10.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "25~35초 전후: acetaminophen 후 2~3시간 뒤 ibuprofen 교차복용을 제시하지만, 불편감 지속 여부와 각 약의 최소 간격·하루 최대량·투여 기록에 대한 안전 조건이 없습니다. 고열 수치만으로 정례 교차복용하도록 읽히지 않게, 단일제 우선 및 필요한 경우 의료진과 정한 약별 계획을 따르도록 수정해 주세요.",
+          "additional_ko": "추가 노트: 2~3시간이라는 숫자 자체가 모든 상황에서 금지라는 의미는 아닙니다. 독감약을 먹으면 반드시 24~48시간 안에 열이 잡힌다는 인상도 완화해 주세요. 탈수 보충 시 스포츠음료와 경구수액제(ORS)를 동등하게 제시하지 않도록 해 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/influenza-a-high-fever-management/ko/influenza-a-high-fever-management_KO.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/influenza-a-high-fever-management_KO.mp4",
+      "sha256": "1a992002cb3e64bcaf877623654a057eed1704db4daebc7df368b12540000073",
+      "original_sha256": "9dc34f3b714e92b32bff166923d6a358ec670fd358ef0f85d67fbbf96f49ed75",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 23,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/influenza-a-high-fever-management.ko.json",
+      "adjudication": null,
+      "previous_sha256": "b6e4c65f3e11ba2e63fd592494d6788845803753a828867107cb5f5b3b1fd01d"
+    },
+    {
+      "slug": "mycoplasma-pneumonia-fever-reassessment",
+      "language": "en",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-English-29.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "도입 및 23~41초: 퇴원 후 10일 시점의 발열, 3주 발열 후 X-ray/혈액검사를 강조해 그때까지 기다려도 되는 기준으로 오해할 수 있습니다. 폐렴 치료 후 새로 나거나 지속되는 발열은 경과와 호흡·섭취·활동 상태에 따라 더 일찍 재평가하고, 악화 시 즉시 진료하도록 바꿔 주세요. 검사 종류와 시점은 진찰 결과로 결정해야 합니다.",
+          "additional_ko": "추가 노트: 10일/3주는 특정 사례의 경과라면 그 점을 명시하고 일반적인 대기 기준으로 제시하지 마세요. 모든 아이에게 일정 시간이 지나면 X-ray와 혈액검사를 의무적으로 하라는 수정도 적절하지 않습니다. 해열제는 고정 시간표보다 불편감과 약별 용법에 맞춰 사용하도록 해 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/mycoplasma-pneumonia-fever-reassessment/en/mycoplasma-pneumonia-fever-reassessment_EN.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/mycoplasma-pneumonia-fever-reassessment_EN.mp4",
+      "sha256": "11aa7fa85405d24b189b08c1a3ee263dd78c147f3127d06eab6225d7a85eab21",
+      "original_sha256": "e852a5ff412c474ecd1a5a9a29eba0ce8ee54230fe234b4b313250b2c53c72fc",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 30,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/mycoplasma-pneumonia-fever-reassessment.en.json",
+      "adjudication": null
+    },
+    {
+      "slug": "mycoplasma-pneumonia-fever-reassessment",
+      "language": "es",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-Spanish-29.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "도입 및 23~41초: 퇴원 후 10일 시점의 발열, 3주 발열 후 X-ray/혈액검사를 강조해 그때까지 기다려도 되는 기준으로 오해할 수 있습니다. 폐렴 치료 후 새로 나거나 지속되는 발열은 경과와 호흡·섭취·활동 상태에 따라 더 일찍 재평가하고, 악화 시 즉시 진료하도록 바꿔 주세요. 검사 종류와 시점은 진찰 결과로 결정해야 합니다.",
+          "additional_ko": "추가 노트: 10일/3주는 특정 사례의 경과라면 그 점을 명시하고 일반적인 대기 기준으로 제시하지 마세요. 모든 아이에게 일정 시간이 지나면 X-ray와 혈액검사를 의무적으로 하라는 수정도 적절하지 않습니다. 해열제는 고정 시간표보다 불편감과 약별 용법에 맞춰 사용하도록 해 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/mycoplasma-pneumonia-fever-reassessment/es/mycoplasma-pneumonia-fever-reassessment_ES.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/mycoplasma-pneumonia-fever-reassessment_ES.mp4",
+      "sha256": "49eddc4a48af58bec1145eb4c45f7ce8518faef9a4229e7f8d0238973ba1173c",
+      "original_sha256": "0fe66f19af4ae9b0426ddee7cd24d8e400ec11a8c8153eee1ac31d2d18589eb1",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 29,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/mycoplasma-pneumonia-fever-reassessment.es.json",
+      "adjudication": null
+    },
+    {
+      "slug": "mycoplasma-pneumonia-fever-reassessment",
+      "language": "ko",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-Korean-29.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "도입 및 23~41초: 퇴원 후 10일 시점의 발열, 3주 발열 후 X-ray/혈액검사를 강조해 그때까지 기다려도 되는 기준으로 오해할 수 있습니다. 폐렴 치료 후 새로 나거나 지속되는 발열은 경과와 호흡·섭취·활동 상태에 따라 더 일찍 재평가하고, 악화 시 즉시 진료하도록 바꿔 주세요. 검사 종류와 시점은 진찰 결과로 결정해야 합니다.",
+          "additional_ko": "추가 노트: 10일/3주는 특정 사례의 경과라면 그 점을 명시하고 일반적인 대기 기준으로 제시하지 마세요. 모든 아이에게 일정 시간이 지나면 X-ray와 혈액검사를 의무적으로 하라는 수정도 적절하지 않습니다. 해열제는 고정 시간표보다 불편감과 약별 용법에 맞춰 사용하도록 해 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/mycoplasma-pneumonia-fever-reassessment/ko/mycoplasma-pneumonia-fever-reassessment_KO.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/mycoplasma-pneumonia-fever-reassessment_KO.mp4",
+      "sha256": "3df78c7495cc6fb85802ae5030ee1ab2b95391463e81e3b30c8751c4ddcdd181",
+      "original_sha256": "e5ad79eae13c92b6476569e9f2b75cbcf868c2c5ac1700306c43f24768a634f2",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 30,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/mycoplasma-pneumonia-fever-reassessment.ko.json",
+      "adjudication": null
+    },
+    {
+      "slug": "pediatric-fever-alternating-meds",
+      "language": "en",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-English-20.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "11~23초: '함께 또는 번갈아 먹여도 되나요?'라는 질문 뒤에 작용 방식이 다르다는 설명만 있어, 동시 복용을 허용하는 것으로 오해할 수 있습니다. 두 약 동시 투여는 권하지 않으며, 단일제를 우선하고 교차복용은 지속되는 불편감·약별 간격/최대량을 확인한 계획에 한하도록 명확히 답해 주세요.",
+          "additional_ko": "추가 노트: 40kg에 Tylenol 15mL는 32mg/mL 제품이라면 480mg(12mg/kg)로 계산상 과량은 아닙니다. 농도를 읽기 쉽게 함께 표시하고, 제품별 최대량도 확인하도록 해 주세요. 계량컵과 경구용 주사기의 사용 설명·그림을 혼동하지 않게 맞춰 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/pediatric-fever-alternating-meds/en/pediatric-fever-alternating-meds_EN.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/pediatric-fever-alternating-meds_EN.mp4",
+      "sha256": "14b40ebd1f9b6e2c6de1fb8508275940f1e60402c802d4e91993ea80620e49c1",
+      "original_sha256": "c07b3109e2b16533709e5af1a6f4723be983efb2c53ae95bd0eaf716cd119c73",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 24,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/pediatric-fever-alternating-meds.en.json",
+      "adjudication": {
+        "status": "PASS",
+        "basis": "second_gemini",
+        "reason_ko": "2차 Gemini가 중이염 항생제 지침의 생략만으로 해열제 교차 복용 영상이 안전하지 않다고 볼 근거는 없다고 재판정했습니다. 영상은 항생제 중단을 권하지 않습니다."
+      }
+    },
+    {
+      "slug": "pediatric-fever-alternating-meds",
+      "language": "es",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-Spanish-20.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "11~23초: '함께 또는 번갈아 먹여도 되나요?'라는 질문 뒤에 작용 방식이 다르다는 설명만 있어, 동시 복용을 허용하는 것으로 오해할 수 있습니다. 두 약 동시 투여는 권하지 않으며, 단일제를 우선하고 교차복용은 지속되는 불편감·약별 간격/최대량을 확인한 계획에 한하도록 명확히 답해 주세요.",
+          "additional_ko": "추가 노트: 40kg에 Tylenol 15mL는 32mg/mL 제품이라면 480mg(12mg/kg)로 계산상 과량은 아닙니다. 농도를 읽기 쉽게 함께 표시하고, 제품별 최대량도 확인하도록 해 주세요. 계량컵과 경구용 주사기의 사용 설명·그림을 혼동하지 않게 맞춰 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/pediatric-fever-alternating-meds/es/pediatric-fever-alternating-meds_ES.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/pediatric-fever-alternating-meds_ES.mp4",
+      "sha256": "0f738d55566c432dd85f790b384305e97b07bb55242ebbb1a23a753a3068061c",
+      "original_sha256": "b4a2a3f3e46b5593732c05964075794c3326d88abf5e203b076440c983be1690",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 25,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/pediatric-fever-alternating-meds.es.json",
+      "adjudication": null
+    },
+    {
+      "slug": "pediatric-fever-alternating-meds",
+      "language": "ko",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-Korean-20.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "11~23초: '함께 또는 번갈아 먹여도 되나요?'라는 질문 뒤에 작용 방식이 다르다는 설명만 있어, 동시 복용을 허용하는 것으로 오해할 수 있습니다. 두 약 동시 투여는 권하지 않으며, 단일제를 우선하고 교차복용은 지속되는 불편감·약별 간격/최대량을 확인한 계획에 한하도록 명확히 답해 주세요.",
+          "additional_ko": "추가 노트: 40kg에 Tylenol 15mL는 32mg/mL 제품이라면 480mg(12mg/kg)로 계산상 과량은 아닙니다. 농도를 읽기 쉽게 함께 표시하고, 제품별 최대량도 확인하도록 해 주세요. 계량컵과 경구용 주사기의 사용 설명·그림을 혼동하지 않게 맞춰 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/pediatric-fever-alternating-meds/ko/pediatric-fever-alternating-meds_KO.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/pediatric-fever-alternating-meds_KO.mp4",
+      "sha256": "aa867d1c84750848fb0da7699fd03baa9e661a0948898bb5ff2d13157f0128c2",
+      "original_sha256": "33bd0c7a14ff6f6df18a8e43f5c96cdc19b82092c45570c21e3ae4ea0db85191",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 28,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/pediatric-fever-alternating-meds.ko.json",
+      "adjudication": null,
+      "previous_sha256": "54bdedebbf8d528eb36680b3836aa28315d7fb51f0d8885140e179cc418ad470"
+    },
+    {
+      "slug": "pediatric-fever-sleep",
+      "language": "en",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-0907-set6-English.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/6dae6324-39a7-401c-9d2c-5db661cb5027/pasted-text.txt",
+          "reason_ko": "12–35초의 ‘3–4시간 깊은 잠은 정상, 6시간 가까이 깨지 않으면 확인’과 46–60초의 ‘6시간 이상 처짐/다음 날에도 지속되면 진료’는 근거 있는 안전 판별 기준이 아닙니다. 수면 시간으로 정상 여부를 정하지 말고, 평소와 달리 깨우기 어렵거나 반응이 떨어지면 시간과 관계없이 즉시 평가받도록 고쳐 주세요.",
+          "additional_ko": "추가 노트: 처음에 무반응 시 응급실을 권하더라도 뒤의 시간 기준이 판단을 혼란스럽게 합니다. 정상적으로 깨고 반응하는 회복기 피로와 의식 저하를 구분하고, 물은 충분히 깨어 안전하게 삼킬 수 있을 때만 먹이도록 안내해 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/pediatric-fever-sleep/en/pediatric-fever-sleep_EN.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/pediatric-fever-sleep_EN.mp4",
+      "sha256": "72fb3bf14a97e7af5f1ab9e072ef49d4a080ec4182b8b2b429cf311d7b1d46be",
+      "original_sha256": "322d1c8cc1ef1edc29709ba71dd86f6b4fdf532d037f62eb2dbf3c53d90408bf",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 26,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/pediatric-fever-sleep.en.json",
+      "adjudication": null
+    },
+    {
+      "slug": "pediatric-fever-sleep",
+      "language": "es",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-0907-set6-Spanish.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/6dae6324-39a7-401c-9d2c-5db661cb5027/pasted-text.txt",
+          "reason_ko": "12–35초의 ‘3–4시간 깊은 잠은 정상, 6시간 가까이 깨지 않으면 확인’과 46–60초의 ‘6시간 이상 처짐/다음 날에도 지속되면 진료’는 근거 있는 안전 판별 기준이 아닙니다. 수면 시간으로 정상 여부를 정하지 말고, 평소와 달리 깨우기 어렵거나 반응이 떨어지면 시간과 관계없이 즉시 평가받도록 고쳐 주세요.",
+          "additional_ko": "추가 노트: 처음에 무반응 시 응급실을 권하더라도 뒤의 시간 기준이 판단을 혼란스럽게 합니다. 정상적으로 깨고 반응하는 회복기 피로와 의식 저하를 구분하고, 물은 충분히 깨어 안전하게 삼킬 수 있을 때만 먹이도록 안내해 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/pediatric-fever-sleep/es/pediatric-fever-sleep_ES.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/pediatric-fever-sleep_ES.mp4",
+      "sha256": "16bd9356ead9ad38fe0b4fc052b775d61e788856efca58cde0e5c9b08bf0379f",
+      "original_sha256": "16e69d1457a9484d19b938208484648aa02b69e4ac07dd61960e3bbdb98a3df0",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 24,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/pediatric-fever-sleep.es.json",
+      "adjudication": {
+        "status": "PASS",
+        "basis": "second_gemini",
+        "reason_ko": "2차 Gemini가 원문의 수면 시간에 따른 안심 기준을 제거하고 깨우기 어려움·반응 저하 시 즉시 진료를 안내한 변경을 안전한 수정으로 판정했습니다. 1차 출처 충실도 WARN은 의학적 결함이 아닙니다.",
+        "reference": "https://www.nice.org.uk/guidance/ng143/chapter/recommendations"
+      }
+    },
+    {
+      "slug": "pediatric-fever-sleep",
+      "language": "ko",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-0907-set6-Korean.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/6dae6324-39a7-401c-9d2c-5db661cb5027/pasted-text.txt",
+          "reason_ko": "12–35초의 ‘3–4시간 깊은 잠은 정상, 6시간 가까이 깨지 않으면 확인’과 46–60초의 ‘6시간 이상 처짐/다음 날에도 지속되면 진료’는 근거 있는 안전 판별 기준이 아닙니다. 수면 시간으로 정상 여부를 정하지 말고, 평소와 달리 깨우기 어렵거나 반응이 떨어지면 시간과 관계없이 즉시 평가받도록 고쳐 주세요.",
+          "additional_ko": "추가 노트: 처음에 무반응 시 응급실을 권하더라도 뒤의 시간 기준이 판단을 혼란스럽게 합니다. 정상적으로 깨고 반응하는 회복기 피로와 의식 저하를 구분하고, 물은 충분히 깨어 안전하게 삼킬 수 있을 때만 먹이도록 안내해 주세요."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/pediatric-fever-sleep/ko/pediatric-fever-sleep_KO.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/pediatric-fever-sleep_KO.mp4",
+      "sha256": "30ec08bce0e339993c7bd6266e638fd074115866ca107364483483d4c899b986",
+      "original_sha256": "664737e48cd1e4e31c5213c78f505dc471f6a7ed7ef0389f0540a709ae397e5f",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 28,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/pediatric-fever-sleep.ko.json",
+      "adjudication": null
+    },
+    {
+      "slug": "pediatric-tamiflu-dosing-flexibility",
+      "language": "en",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-0907-set8-English.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/6dae6324-39a7-401c-9d2c-5db661cb5027/pasted-text.txt",
+          "reason_ko": "41–48초의 ‘복용 후 1시간 이내 토하면 즉시 1회 용량을 다시 먹인다’는 약제 확인 없는 일괄 재투여 지시여서 수정이 필요합니다. 오셀타미비르 소아 안내는 30분 미만 구토와 30분 이후를 구분하므로, 일부 흡수된 약을 추가 투여할 수 있습니다. 약명·처방 지침을 명시하고 반복 구토나 재복용이 불확실하면 의사·약사에게 확인하도록 고쳐 주세요.",
+          "additional_ko": "추가 노트: ‘독감약은 모두 하루 2회, 12시간 간격’으로 일반화하지 말고 오셀타미비르 치료 상황임을 명시해 주세요. 첫날의 간격 조정도 처방 의료진·약사와 확인하도록 안내해 주세요. 30분 기준 역시 모든 약에 공통 적용하는 규칙은 아닙니다."
+        },
+        {
+          "filename": "Jaeyoon-Lee-week8-English-11.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "41~47초 전후: '1시간 이내 토하면 즉시 다시 복용'을 약명·상황 구분 없이 일괄 지시합니다. 이미 일부 흡수된 경우 중복투여가 될 수 있습니다. 오셀타미비르 소아 복약 안내는 구토 시점 30분 전후를 구분하므로, 약명을 한정하고 설명서에 따른 재투여 및 반복 구토 시 상담으로 수정해 주세요.",
+          "additional_ko": "추가 노트: 모든 독감 치료제가 하루 2회·5일 요법인 것은 아닙니다. 오셀타미비르를 설명하는 영상이라면 이를 명시하고 첫날 복용 일정은 처방의·약사와 확인하도록 해 주세요. '1시간 기준에 근거가 전혀 없다'는 단정이 아니라 모든 약·상황에 자동 적용하는 안내가 문제입니다."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/pediatric-tamiflu-dosing-flexibility/en/pediatric-tamiflu-dosing-flexibility_EN.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/pediatric-tamiflu-dosing-flexibility_EN.mp4",
+      "sha256": "31134e0bf40eb5fb1110b20483e17637a59fcee1d381739b6e0aa496955d0f68",
+      "original_sha256": "e2a2d353214b5666e2624792b1f8ee418681474770f110d20647cf117da370dc",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 20,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/pediatric-tamiflu-dosing-flexibility.en.json",
+      "adjudication": null
+    },
+    {
+      "slug": "pediatric-tamiflu-dosing-flexibility",
+      "language": "es",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-0907-set8-Spanish.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/6dae6324-39a7-401c-9d2c-5db661cb5027/pasted-text.txt",
+          "reason_ko": "41–48초의 ‘복용 후 1시간 이내 토하면 즉시 1회 용량을 다시 먹인다’는 약제 확인 없는 일괄 재투여 지시여서 수정이 필요합니다. 오셀타미비르 소아 안내는 30분 미만 구토와 30분 이후를 구분하므로, 일부 흡수된 약을 추가 투여할 수 있습니다. 약명·처방 지침을 명시하고 반복 구토나 재복용이 불확실하면 의사·약사에게 확인하도록 고쳐 주세요.",
+          "additional_ko": "추가 노트: ‘독감약은 모두 하루 2회, 12시간 간격’으로 일반화하지 말고 오셀타미비르 치료 상황임을 명시해 주세요. 첫날의 간격 조정도 처방 의료진·약사와 확인하도록 안내해 주세요. 30분 기준 역시 모든 약에 공통 적용하는 규칙은 아닙니다."
+        },
+        {
+          "filename": "Jaeyoon-Lee-week8-Spanish-11.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "41~47초 전후: '1시간 이내 토하면 즉시 다시 복용'을 약명·상황 구분 없이 일괄 지시합니다. 이미 일부 흡수된 경우 중복투여가 될 수 있습니다. 오셀타미비르 소아 복약 안내는 구토 시점 30분 전후를 구분하므로, 약명을 한정하고 설명서에 따른 재투여 및 반복 구토 시 상담으로 수정해 주세요.",
+          "additional_ko": "추가 노트: 모든 독감 치료제가 하루 2회·5일 요법인 것은 아닙니다. 오셀타미비르를 설명하는 영상이라면 이를 명시하고 첫날 복용 일정은 처방의·약사와 확인하도록 해 주세요. '1시간 기준에 근거가 전혀 없다'는 단정이 아니라 모든 약·상황에 자동 적용하는 안내가 문제입니다."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/pediatric-tamiflu-dosing-flexibility/es/pediatric-tamiflu-dosing-flexibility_ES.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/pediatric-tamiflu-dosing-flexibility_ES.mp4",
+      "sha256": "a9c330273e9acbffb082f86e522c44e88dde1843439e96e5ca37576ede5aeae9",
+      "original_sha256": "d543e26beac214b36065c97d7b38c93e242b2a084cd2ae39397868a8f4467360",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 21,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/pediatric-tamiflu-dosing-flexibility.es.json",
+      "adjudication": {
+        "status": "PASS",
+        "basis": "second_gemini",
+        "reason_ko": "2차 Gemini가 구토 후 추가 복용 전에 처방 의료진·약사에게 확인하도록 한 안내를 보수적이고 안전하다고 재판정했습니다. 원문의 일률적 1시간 재투여는 오셀타미비르 약물별 30분 기준과 상충합니다.",
+        "reference": "https://www.medicinesforchildren.org.uk/medicines/oseltamivir-for-influenza-flu/"
+      }
+    },
+    {
+      "slug": "pediatric-tamiflu-dosing-flexibility",
+      "language": "ko",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-0907-set8-Korean.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/6dae6324-39a7-401c-9d2c-5db661cb5027/pasted-text.txt",
+          "reason_ko": "41–48초의 ‘복용 후 1시간 이내 토하면 즉시 1회 용량을 다시 먹인다’는 약제 확인 없는 일괄 재투여 지시여서 수정이 필요합니다. 오셀타미비르 소아 안내는 30분 미만 구토와 30분 이후를 구분하므로, 일부 흡수된 약을 추가 투여할 수 있습니다. 약명·처방 지침을 명시하고 반복 구토나 재복용이 불확실하면 의사·약사에게 확인하도록 고쳐 주세요.",
+          "additional_ko": "추가 노트: ‘독감약은 모두 하루 2회, 12시간 간격’으로 일반화하지 말고 오셀타미비르 치료 상황임을 명시해 주세요. 첫날의 간격 조정도 처방 의료진·약사와 확인하도록 안내해 주세요. 30분 기준 역시 모든 약에 공통 적용하는 규칙은 아닙니다."
+        },
+        {
+          "filename": "Jaeyoon-Lee-week8-Korean-11.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "41~47초 전후: '1시간 이내 토하면 즉시 다시 복용'을 약명·상황 구분 없이 일괄 지시합니다. 이미 일부 흡수된 경우 중복투여가 될 수 있습니다. 오셀타미비르 소아 복약 안내는 구토 시점 30분 전후를 구분하므로, 약명을 한정하고 설명서에 따른 재투여 및 반복 구토 시 상담으로 수정해 주세요.",
+          "additional_ko": "추가 노트: 모든 독감 치료제가 하루 2회·5일 요법인 것은 아닙니다. 오셀타미비르를 설명하는 영상이라면 이를 명시하고 첫날 복용 일정은 처방의·약사와 확인하도록 해 주세요. '1시간 기준에 근거가 전혀 없다'는 단정이 아니라 모든 약·상황에 자동 적용하는 안내가 문제입니다."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/pediatric-tamiflu-dosing-flexibility/ko/pediatric-tamiflu-dosing-flexibility_KO.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/pediatric-tamiflu-dosing-flexibility_KO.mp4",
+      "sha256": "4b0e84e6afa754ae2aa3fd00f0f23b8371e52df505d5ad7e66a2d47ebae19d2b",
+      "original_sha256": "213a1cd58746aefc4c3e9207059063e46e38e6d82378380d879194b137aff083",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 21,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/pediatric-tamiflu-dosing-flexibility.ko.json",
+      "adjudication": {
+        "status": "PASS",
+        "basis": "second_gemini",
+        "reason_ko": "새 영상의 오셀타미비르 구토 후 30분 기준은 약물별 지침에 부합하며, 원문 블로그의 일률적 1시간 기준보다 안전하다고 2차 Gemini가 재판정했습니다.",
+        "reference": "https://www.medicinesforchildren.org.uk/medicines/oseltamivir-for-influenza-flu/"
+      },
+      "previous_sha256": "eacc48f573594c833d9d49ceafc6db7a81e64275299b05db157fb1eebd980ad1"
+    },
+    {
+      "slug": "persistent-nasal-congestion-reassessment",
+      "language": "en",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-English-22.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "41~48초: 아이가 등을 대고 누워 머리를 뒤로 젖힌 상태에서 코에 세척병을 대는 시연입니다. 보호자가 따라 하기 쉬운 술기 장면이므로, 협조 가능한 아이가 세면대 쪽으로 몸을 기울이고 제품·의료진 지시에 맞춰 세척하는 자세로 교체해 주세요. 어린 영아의 점적·흡인과 병을 이용한 세척도 구별해야 합니다.",
+          "additional_ko": "추가 노트: 장기 코막힘의 원인을 재평가하자는 메시지는 적절합니다. 적절한 멸균/증류수 또는 끓여 식힌 물로 준비한 식염수와 기구 위생을 안내해 주세요. CT는 필요 시 의료진이 결정하며 일률적으로 시행하는 검사가 아닙니다. 영상만으로 실제 압력이나 흡인성 폐렴 발생을 단정하지 않았습니다."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/persistent-nasal-congestion-reassessment/en/persistent-nasal-congestion-reassessment_EN.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/persistent-nasal-congestion-reassessment_EN.mp4",
+      "sha256": "ec92d292d0dbea0c2368feb730cdbe45010e5db28409672deb9224b640dc6629",
+      "original_sha256": "14e6bc5494eee4e46fba4e69b7705238563316e19e6736e38514d54e7d25d45c",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 23,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/persistent-nasal-congestion-reassessment.en.json",
+      "adjudication": null
+    },
+    {
+      "slug": "persistent-nasal-congestion-reassessment",
+      "language": "es",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-Spanish-22.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "41~48초: 아이가 등을 대고 누워 머리를 뒤로 젖힌 상태에서 코에 세척병을 대는 시연입니다. 보호자가 따라 하기 쉬운 술기 장면이므로, 협조 가능한 아이가 세면대 쪽으로 몸을 기울이고 제품·의료진 지시에 맞춰 세척하는 자세로 교체해 주세요. 어린 영아의 점적·흡인과 병을 이용한 세척도 구별해야 합니다.",
+          "additional_ko": "추가 노트: 장기 코막힘의 원인을 재평가하자는 메시지는 적절합니다. 적절한 멸균/증류수 또는 끓여 식힌 물로 준비한 식염수와 기구 위생을 안내해 주세요. CT는 필요 시 의료진이 결정하며 일률적으로 시행하는 검사가 아닙니다. 영상만으로 실제 압력이나 흡인성 폐렴 발생을 단정하지 않았습니다."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/persistent-nasal-congestion-reassessment/es/persistent-nasal-congestion-reassessment_ES.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/persistent-nasal-congestion-reassessment_ES.mp4",
+      "sha256": "1db36ab99dd70b92723d3981fa0a999abf37e8f86f1e6f63f98249e603c7b59c",
+      "original_sha256": "77ecc4012936ba1c519963fc166fe1c074134825cca46649e91ae239251555ce",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 24,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/persistent-nasal-congestion-reassessment.es.json",
+      "adjudication": null
+    },
+    {
+      "slug": "persistent-nasal-congestion-reassessment",
+      "language": "ko",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-Korean-22.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "41~48초: 아이가 등을 대고 누워 머리를 뒤로 젖힌 상태에서 코에 세척병을 대는 시연입니다. 보호자가 따라 하기 쉬운 술기 장면이므로, 협조 가능한 아이가 세면대 쪽으로 몸을 기울이고 제품·의료진 지시에 맞춰 세척하는 자세로 교체해 주세요. 어린 영아의 점적·흡인과 병을 이용한 세척도 구별해야 합니다.",
+          "additional_ko": "추가 노트: 장기 코막힘의 원인을 재평가하자는 메시지는 적절합니다. 적절한 멸균/증류수 또는 끓여 식힌 물로 준비한 식염수와 기구 위생을 안내해 주세요. CT는 필요 시 의료진이 결정하며 일률적으로 시행하는 검사가 아닙니다. 영상만으로 실제 압력이나 흡인성 폐렴 발생을 단정하지 않았습니다."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/persistent-nasal-congestion-reassessment/ko/persistent-nasal-congestion-reassessment_KO.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/persistent-nasal-congestion-reassessment_KO.mp4",
+      "sha256": "84a64d11218f9287de5e259964248557b7555017e78f2909209bbf48f3d3e898",
+      "original_sha256": "4dc19b759cc6709632213cc4f5dffc1080c01050ff8f48d6bd2124c80ddb2ead",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 24,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/persistent-nasal-congestion-reassessment.ko.json",
+      "adjudication": null
+    },
+    {
+      "slug": "powdered-fever-reducer-premix",
+      "language": "en",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-English-18.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "23~29초 전후: 약명·제형 확인 없이 미리 탄 가루 해열제를 '1~2시간 내 복용하고 냉장 보관'하도록 공통 기준을 제시합니다. 제품·조제 구성에 따라 안정성과 보관법이 달라 이 임의 기준을 삭제하고, 복용 직전 혼합하거나 약사에게 해당 약의 방법을 확인하도록 수정해 주세요.",
+          "additional_ko": "추가 노트: 직전 혼합을 권하는 핵심은 적절합니다. 물의 양과 온도 역시 해당 제품 설명서를 따르고, 한 번에 다 먹을 수 있는 소량에 섞어 남은 약이 없는지 확인하는 장면을 권합니다."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/powdered-fever-reducer-premix/en/powdered-fever-reducer-premix_EN.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/powdered-fever-reducer-premix_EN.mp4",
+      "sha256": "d4a6f973ab6f54274a3f04ea753421fd6d3b47a4e1266dddc88f8b773bf0fac4",
+      "original_sha256": "9a62752734308b9b4aa604bb2bda609ea132133f3eee9ad98182ea9a3f94fa8f",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 20,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/powdered-fever-reducer-premix.en.json",
+      "adjudication": null
+    },
+    {
+      "slug": "powdered-fever-reducer-premix",
+      "language": "es",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-Spanish-18.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "23~29초 전후: 약명·제형 확인 없이 미리 탄 가루 해열제를 '1~2시간 내 복용하고 냉장 보관'하도록 공통 기준을 제시합니다. 제품·조제 구성에 따라 안정성과 보관법이 달라 이 임의 기준을 삭제하고, 복용 직전 혼합하거나 약사에게 해당 약의 방법을 확인하도록 수정해 주세요.",
+          "additional_ko": "추가 노트: 직전 혼합을 권하는 핵심은 적절합니다. 물의 양과 온도 역시 해당 제품 설명서를 따르고, 한 번에 다 먹을 수 있는 소량에 섞어 남은 약이 없는지 확인하는 장면을 권합니다."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/powdered-fever-reducer-premix/es/powdered-fever-reducer-premix_ES.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/powdered-fever-reducer-premix_ES.mp4",
+      "sha256": "0c1539fd04546d5e7ab9d5d6f443d5dd4b8c24fc30eaf6c50d73c1022948b41e",
+      "original_sha256": "c126ed795f77e55c8a3b941aca87dde6041f1714aff607ce77c8c69173715a4d",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 20,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/powdered-fever-reducer-premix.es.json",
+      "adjudication": null
+    },
+    {
+      "slug": "powdered-fever-reducer-premix",
+      "language": "ko",
+      "feedback": [
+        {
+          "filename": "Jaeyoon-Lee-week8-Korean-18.mp4",
+          "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+          "reason_ko": "23~29초 전후: 약명·제형 확인 없이 미리 탄 가루 해열제를 '1~2시간 내 복용하고 냉장 보관'하도록 공통 기준을 제시합니다. 제품·조제 구성에 따라 안정성과 보관법이 달라 이 임의 기준을 삭제하고, 복용 직전 혼합하거나 약사에게 해당 약의 방법을 확인하도록 수정해 주세요.",
+          "additional_ko": "추가 노트: 직전 혼합을 권하는 핵심은 적절합니다. 물의 양과 온도 역시 해당 제품 설명서를 따르고, 한 번에 다 먹을 수 있는 소량에 섞어 남은 약이 없는지 확인하는 장면을 권합니다."
+        }
+      ],
+      "source_video": "/Users/jaeyoonlee/FeverCoach/jobs/powdered-fever-reducer-premix/ko/powdered-fever-reducer-premix_KO.mp4",
+      "status": "REVISED",
+      "output_video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/powdered-fever-reducer-premix_KO.mp4",
+      "sha256": "e8b723df2d6c302cb6c9f53e5d66044363ef1a89741b5fd32471dca08ba9aac2",
+      "original_sha256": "759e319ddf6cee386c602be3569d76a37b61f137e0f8d91fc77680dbd8f29610",
+      "media": {
+        "duration_seconds": 60.021,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "width": 1080,
+        "height": 1920
+      },
+      "caption_checks": {
+        "scene_count": 10,
+        "caption_images_checked": 20,
+        "captions_match_narration": true,
+        "transparent_caption_corners": true
+      },
+      "review_status": "PASS",
+      "gemini_audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/powdered-fever-reducer-premix.ko.json",
+      "adjudication": null
+    }
+  ],
+  "final_audit_summary": {
+    "updated_at": "2026-09-22T07:59:07.099602+00:00",
+    "counts": {
+      "PASS": 39
+    },
+    "report": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/final_pass_report.md"
+  }
+}

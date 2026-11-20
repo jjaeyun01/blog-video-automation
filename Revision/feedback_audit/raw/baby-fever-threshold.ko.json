@@ -1,0 +1,52 @@
+{
+  "video_id": "baby-fever-threshold.ko",
+  "overall_verdict": "FAIL",
+  "reviewer": "Sam",
+  "human_feedback": [
+    {
+      "filename": "Jaeyoon-Lee-week8-Korean-15.mp4",
+      "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+      "reason_ko": "41~47초 전후: '어른보다 한 겹 적게'를 영아의 일반적 옷차림 원칙으로 제시하는 것은 부정확합니다. 환경과 아기 상태에 맞춰 과도하게 싸거나 벗기지 않도록 바꿔 주세요. 5개월 아기 주변의 베개·푹신한 둘레·느슨한 이불 장면도 안전한 수면 환경으로 교체가 필요합니다.",
+      "additional_ko": "추가 노트: 38도 이상 발열 및 상태 악화 시 진료 안내는 적절합니다. 손발의 온도만으로 전신 상태가 안전하다고 판단하지 않도록 보완해 주세요. 실제 저체온증이나 질식이 발생했다는 지적은 아닙니다."
+    }
+  ],
+  "issues": [
+    {
+      "scene": 2,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "41~47초 전후: '어른보다 한 겹 적게'를 영아의 일반적 옷차림 원칙으로 제시하는 것은 부정확합니다. 환경과 아기 상태에 맞춰 과도하게 싸거나 벗기지 않도록 바꿔 주세요. 5개월 아기 주변의 베개·푹신한 둘레·느슨한 이불 장면도 안전한 수면 환경으로 교체가 필요합니다. 추가 노트: 38도 이상 발열 및 상태 악화 시 진료 안내는 적절합니다. 손발의 온도만으로 전신 상태가 안전하다고 판단하지 않도록 보완해 주세요. 실제 저체온증이나 질식이 발생했다는 지적은 아닙니다.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-15.mp4"
+    },
+    {
+      "scene": 2,
+      "category": "OTHER_VISUAL_ERROR",
+      "severity": "high",
+      "problem_ko": "사람 검토에서 지적된 시각적 안전 오류를 제거해야 합니다.",
+      "visual_prompt_addendum": "Show safe infant sleep only: flat firm bare crib mattress, baby on back, no pillow or loose blanket.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-15.mp4"
+    },
+    {
+      "scene": 7,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "41~47초 전후: '어른보다 한 겹 적게'를 영아의 일반적 옷차림 원칙으로 제시하는 것은 부정확합니다. 환경과 아기 상태에 맞춰 과도하게 싸거나 벗기지 않도록 바꿔 주세요. 5개월 아기 주변의 베개·푹신한 둘레·느슨한 이불 장면도 안전한 수면 환경으로 교체가 필요합니다. 추가 노트: 38도 이상 발열 및 상태 악화 시 진료 안내는 적절합니다. 손발의 온도만으로 전신 상태가 안전하다고 판단하지 않도록 보완해 주세요. 실제 저체온증이나 질식이 발생했다는 지적은 아닙니다.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-15.mp4"
+    },
+    {
+      "scene": 8,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "41~47초 전후: '어른보다 한 겹 적게'를 영아의 일반적 옷차림 원칙으로 제시하는 것은 부정확합니다. 환경과 아기 상태에 맞춰 과도하게 싸거나 벗기지 않도록 바꿔 주세요. 5개월 아기 주변의 베개·푹신한 둘레·느슨한 이불 장면도 안전한 수면 환경으로 교체가 필요합니다. 추가 노트: 38도 이상 발열 및 상태 악화 시 진료 안내는 적절합니다. 손발의 온도만으로 전신 상태가 안전하다고 판단하지 않도록 보완해 주세요. 실제 저체온증이나 질식이 발생했다는 지적은 아닙니다.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-15.mp4"
+    },
+    {
+      "scene": 8,
+      "category": "OTHER_VISUAL_ERROR",
+      "severity": "high",
+      "problem_ko": "사람 검토에서 지적된 시각적 안전 오류를 제거해야 합니다.",
+      "visual_prompt_addendum": "Show safe infant sleep only: flat firm bare crib mattress, baby on back, no pillow or loose blanket.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-15.mp4"
+    }
+  ]
+}

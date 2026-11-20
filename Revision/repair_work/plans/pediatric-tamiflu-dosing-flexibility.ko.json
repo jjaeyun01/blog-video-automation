@@ -1,0 +1,186 @@
+{
+  "repairs": [
+    {
+      "scene": 2,
+      "corrected_medical_claim": "Oseltamivir (Tamiflu) is typically administered twice daily, with a 12-hour interval, but specific dosing instructions should be confirmed with a doctor or pharmacist.",
+      "corrected_narration": "타미플루(오셀타미비르)는 하루 2회, 12시간 간격 복용이 원칙이나, 처방 의료진 또는 약사와 확인하세요.",
+      "caption_chunks": [
+        "타미플루(오셀타미비르)는 하루 2회,",
+        "12시간 간격 복용이 원칙이나,",
+        "처방 의료진 또는 약사와 확인하세요."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "독감약 일반화 오류: 오셀타미비르임을 명시하고 처방 의료진/약사 확인 안내 추가."
+    },
+    {
+      "scene": 3,
+      "corrected_medical_claim": "For the child's sleep, the first day's Oseltamivir dosing schedule can be flexibly adjusted, but this should be confirmed with a doctor or pharmacist.",
+      "corrected_narration": "하지만 아이의 수면을 위해 첫날 오셀타미비르 복용 시간은 유동적으로 조정할 수 있으며, 처방 의료진 또는 약사와 확인하세요.",
+      "caption_chunks": [
+        "하지만 아이의 수면을 위해",
+        "첫날 오셀타미비르 복용 시간은",
+        "유동적으로 조정할 수 있으며,",
+        "처방 의료진 또는 약사와 확인하세요."
+      ],
+      "replace_overlays": false,
+      "overlays": [
+        {
+          "type": "label",
+          "text": "오후 2시, 새벽 2시",
+          "color": "#E5482F",
+          "label_position": [
+            0.25,
+            0.68
+          ]
+        },
+        {
+          "type": "label",
+          "text": "오후 2시, 밤 10시",
+          "color": "#2F80ED",
+          "label_position": [
+            0.75,
+            0.68
+          ]
+        }
+      ],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "첫날 복용 시간 조정 시 처방 의료진/약사 확인 안내 추가."
+    },
+    {
+      "scene": 5,
+      "corrected_medical_claim": "If the first Oseltamivir dose is taken at 2 PM, a second dose around 10-11 PM is appropriate for the first day, but this schedule should be confirmed with a doctor or pharmacist.",
+      "corrected_narration": "오후 2시 첫 오셀타미비르 복용 시, 밤 10시에서 11시경 두 번째 복용이 적절하나, 처방 의료진 또는 약사와 확인하세요.",
+      "caption_chunks": [
+        "오후 2시 첫 오셀타미비르 복용 시,",
+        "밤 10시에서 11시경 두 번째 복용이 적절하나,",
+        "처방 의료진 또는 약사와 확인하세요."
+      ],
+      "replace_overlays": false,
+      "overlays": [
+        {
+          "type": "label",
+          "text": "오후 2시",
+          "color": "#2F80ED",
+          "label_position": [
+            0.2,
+            0.68
+          ]
+        },
+        {
+          "type": "label",
+          "text": "밤 10시-11시",
+          "color": "#2F80ED",
+          "label_position": [
+            0.8,
+            0.68
+          ]
+        },
+        {
+          "type": "dimension",
+          "text": "8-9시간 간격",
+          "color": "#2F80ED",
+          "from": [
+            0.2,
+            0.68
+          ],
+          "to": [
+            0.8,
+            0.68
+          ],
+          "label_position": [
+            0.5,
+            0.68
+          ]
+        }
+      ],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "첫날 복용 시간 예시 시 처방 의료진/약사 확인 안내 추가."
+    },
+    {
+      "scene": 6,
+      "corrected_medical_claim": "From tomorrow, for Oseltamivir, take regularly at 8 AM and 8 PM, maintaining a 12-hour interval, as directed by your doctor or pharmacist for the full regimen.",
+      "corrected_narration": "내일부터는 오셀타미비르를 아침 8시, 저녁 8시로 12시간 간격을 맞춰 규칙적으로 복용하며, 처방 의료진 또는 약사와 전체 복용 일정을 확인하세요.",
+      "caption_chunks": [
+        "내일부터는 오셀타미비르를 아침 8시, 저녁 8시로",
+        "12시간 간격을 맞춰 규칙적으로 복용하며,",
+        "처방 의료진 또는 약사와 전체 복용 일정을 확인하세요."
+      ],
+      "replace_overlays": false,
+      "overlays": [
+        {
+          "type": "label",
+          "text": "아침 8시, 저녁 8시",
+          "color": "#2F80ED",
+          "label_position": [
+            0.8,
+            0.68
+          ]
+        }
+      ],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "오셀타미비르임을 명시하고 전체 복용 일정에 대한 처방 의료진/약사 확인 안내 추가."
+    },
+    {
+      "scene": 8,
+      "corrected_medical_claim": "For Oseltamivir, if the child vomits less than 30 minutes after taking the medication, re-administer the same dose. If vomiting occurs 30 minutes or more after, do not repeat the dose; continue with the next scheduled dose. For repeated vomiting or uncertainty, consult a doctor or pharmacist.",
+      "corrected_narration": "오셀타미비르 복용 후 30분 이내 토했다면 같은 용량을 다시 먹이고, 30분 이후라면 다음 복용 시간에 맞춰 주세요. 반복 구토나 불확실한 경우, 의사 또는 약사와 상담하세요.",
+      "caption_chunks": [
+        "오셀타미비르 복용 후 30분 이내 토했다면",
+        "같은 용량을 다시 먹이고, 30분 이후라면",
+        "다음 복용 시간에 맞춰 주세요.",
+        "반복 구토나 불확실한 경우,",
+        "의사 또는 약사와 상담하세요."
+      ],
+      "replace_overlays": true,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "구토 시 재복용 지침 오류: 오셀타미비르의 30분 기준을 명시하고 반복 구토 시 의사/약사 상담 안내 추가. 기존 '1시간 이내' 오버레이 제거."
+    }
+  ],
+  "video_id": "pediatric-tamiflu-dosing-flexibility.ko",
+  "model": "gemini-2.5-flash",
+  "source_issues": [
+    {
+      "scene": 2,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "41–48초의 ‘복용 후 1시간 이내 토하면 즉시 1회 용량을 다시 먹인다’는 약제 확인 없는 일괄 재투여 지시여서 수정이 필요합니다. 오셀타미비르 소아 안내는 30분 미만 구토와 30분 이후를 구분하므로, 일부 흡수된 약을 추가 투여할 수 있습니다. 약명·처방 지침을 명시하고 반복 구토나 재복용이 불확실하면 의사·약사에게 확인하도록 고쳐 주세요. 추가 노트: ‘독감약은 모두 하루 2회, 12시간 간격’으로 일반화하지 말고 오셀타미비르 치료 상황임을 명시해 주세요. 첫날의 간격 조정도 처방 의료진·약사와 확인하도록 안내해 주세요. 30분 기준 역시 모든 약에 공통 적용하는 규칙은 아닙니다. / 41~47초 전후: '1시간 이내 토하면 즉시 다시 복용'을 약명·상황 구분 없이 일괄 지시합니다. 이미 일부 흡수된 경우 중복투여가 될 수 있습니다. 오셀타미비르 소아 복약 안내는 구토 시점 30분 전후를 구분하므로, 약명을 한정하고 설명서에 따른 재투여 및 반복 구토 시 상담으로 수정해 주세요. 추가 노트: 모든 독감 치료제가 하루 2회·5일 요법인 것은 아닙니다. 오셀타미비르를 설명하는 영상이라면 이를 명시하고 첫날 복용 일정은 처방의·약사와 확인하도록 해 주세요. '1시간 기준에 근거가 전혀 없다'는 단정이 아니라 모든 약·상황에 자동 적용하는 안내가 문제입니다.",
+      "evidence": "Jaeyoon-Lee-0907-set8-Korean.mp4, Jaeyoon-Lee-week8-Korean-11.mp4"
+    },
+    {
+      "scene": 3,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "41–48초의 ‘복용 후 1시간 이내 토하면 즉시 1회 용량을 다시 먹인다’는 약제 확인 없는 일괄 재투여 지시여서 수정이 필요합니다. 오셀타미비르 소아 안내는 30분 미만 구토와 30분 이후를 구분하므로, 일부 흡수된 약을 추가 투여할 수 있습니다. 약명·처방 지침을 명시하고 반복 구토나 재복용이 불확실하면 의사·약사에게 확인하도록 고쳐 주세요. 추가 노트: ‘독감약은 모두 하루 2회, 12시간 간격’으로 일반화하지 말고 오셀타미비르 치료 상황임을 명시해 주세요. 첫날의 간격 조정도 처방 의료진·약사와 확인하도록 안내해 주세요. 30분 기준 역시 모든 약에 공통 적용하는 규칙은 아닙니다. / 41~47초 전후: '1시간 이내 토하면 즉시 다시 복용'을 약명·상황 구분 없이 일괄 지시합니다. 이미 일부 흡수된 경우 중복투여가 될 수 있습니다. 오셀타미비르 소아 복약 안내는 구토 시점 30분 전후를 구분하므로, 약명을 한정하고 설명서에 따른 재투여 및 반복 구토 시 상담으로 수정해 주세요. 추가 노트: 모든 독감 치료제가 하루 2회·5일 요법인 것은 아닙니다. 오셀타미비르를 설명하는 영상이라면 이를 명시하고 첫날 복용 일정은 처방의·약사와 확인하도록 해 주세요. '1시간 기준에 근거가 전혀 없다'는 단정이 아니라 모든 약·상황에 자동 적용하는 안내가 문제입니다.",
+      "evidence": "Jaeyoon-Lee-0907-set8-Korean.mp4, Jaeyoon-Lee-week8-Korean-11.mp4"
+    },
+    {
+      "scene": 5,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "41–48초의 ‘복용 후 1시간 이내 토하면 즉시 1회 용량을 다시 먹인다’는 약제 확인 없는 일괄 재투여 지시여서 수정이 필요합니다. 오셀타미비르 소아 안내는 30분 미만 구토와 30분 이후를 구분하므로, 일부 흡수된 약을 추가 투여할 수 있습니다. 약명·처방 지침을 명시하고 반복 구토나 재복용이 불확실하면 의사·약사에게 확인하도록 고쳐 주세요. 추가 노트: ‘독감약은 모두 하루 2회, 12시간 간격’으로 일반화하지 말고 오셀타미비르 치료 상황임을 명시해 주세요. 첫날의 간격 조정도 처방 의료진·약사와 확인하도록 안내해 주세요. 30분 기준 역시 모든 약에 공통 적용하는 규칙은 아닙니다. / 41~47초 전후: '1시간 이내 토하면 즉시 다시 복용'을 약명·상황 구분 없이 일괄 지시합니다. 이미 일부 흡수된 경우 중복투여가 될 수 있습니다. 오셀타미비르 소아 복약 안내는 구토 시점 30분 전후를 구분하므로, 약명을 한정하고 설명서에 따른 재투여 및 반복 구토 시 상담으로 수정해 주세요. 추가 노트: 모든 독감 치료제가 하루 2회·5일 요법인 것은 아닙니다. 오셀타미비르를 설명하는 영상이라면 이를 명시하고 첫날 복용 일정은 처방의·약사와 확인하도록 해 주세요. '1시간 기준에 근거가 전혀 없다'는 단정이 아니라 모든 약·상황에 자동 적용하는 안내가 문제입니다.",
+      "evidence": "Jaeyoon-Lee-0907-set8-Korean.mp4, Jaeyoon-Lee-week8-Korean-11.mp4"
+    },
+    {
+      "scene": 6,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "41–48초의 ‘복용 후 1시간 이내 토하면 즉시 1회 용량을 다시 먹인다’는 약제 확인 없는 일괄 재투여 지시여서 수정이 필요합니다. 오셀타미비르 소아 안내는 30분 미만 구토와 30분 이후를 구분하므로, 일부 흡수된 약을 추가 투여할 수 있습니다. 약명·처방 지침을 명시하고 반복 구토나 재복용이 불확실하면 의사·약사에게 확인하도록 고쳐 주세요. 추가 노트: ‘독감약은 모두 하루 2회, 12시간 간격’으로 일반화하지 말고 오셀타미비르 치료 상황임을 명시해 주세요. 첫날의 간격 조정도 처방 의료진·약사와 확인하도록 안내해 주세요. 30분 기준 역시 모든 약에 공통 적용하는 규칙은 아닙니다. / 41~47초 전후: '1시간 이내 토하면 즉시 다시 복용'을 약명·상황 구분 없이 일괄 지시합니다. 이미 일부 흡수된 경우 중복투여가 될 수 있습니다. 오셀타미비르 소아 복약 안내는 구토 시점 30분 전후를 구분하므로, 약명을 한정하고 설명서에 따른 재투여 및 반복 구토 시 상담으로 수정해 주세요. 추가 노트: 모든 독감 치료제가 하루 2회·5일 요법인 것은 아닙니다. 오셀타미비르를 설명하는 영상이라면 이를 명시하고 첫날 복용 일정은 처방의·약사와 확인하도록 해 주세요. '1시간 기준에 근거가 전혀 없다'는 단정이 아니라 모든 약·상황에 자동 적용하는 안내가 문제입니다.",
+      "evidence": "Jaeyoon-Lee-0907-set8-Korean.mp4, Jaeyoon-Lee-week8-Korean-11.mp4"
+    },
+    {
+      "scene": 8,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "41–48초의 ‘복용 후 1시간 이내 토하면 즉시 1회 용량을 다시 먹인다’는 약제 확인 없는 일괄 재투여 지시여서 수정이 필요합니다. 오셀타미비르 소아 안내는 30분 미만 구토와 30분 이후를 구분하므로, 일부 흡수된 약을 추가 투여할 수 있습니다. 약명·처방 지침을 명시하고 반복 구토나 재복용이 불확실하면 의사·약사에게 확인하도록 고쳐 주세요. 추가 노트: ‘독감약은 모두 하루 2회, 12시간 간격’으로 일반화하지 말고 오셀타미비르 치료 상황임을 명시해 주세요. 첫날의 간격 조정도 처방 의료진·약사와 확인하도록 안내해 주세요. 30분 기준 역시 모든 약에 공통 적용하는 규칙은 아닙니다. / 41~47초 전후: '1시간 이내 토하면 즉시 다시 복용'을 약명·상황 구분 없이 일괄 지시합니다. 이미 일부 흡수된 경우 중복투여가 될 수 있습니다. 오셀타미비르 소아 복약 안내는 구토 시점 30분 전후를 구분하므로, 약명을 한정하고 설명서에 따른 재투여 및 반복 구토 시 상담으로 수정해 주세요. 추가 노트: 모든 독감 치료제가 하루 2회·5일 요법인 것은 아닙니다. 오셀타미비르를 설명하는 영상이라면 이를 명시하고 첫날 복용 일정은 처방의·약사와 확인하도록 해 주세요. '1시간 기준에 근거가 전혀 없다'는 단정이 아니라 모든 약·상황에 자동 적용하는 안내가 문제입니다.",
+      "evidence": "Jaeyoon-Lee-0907-set8-Korean.mp4, Jaeyoon-Lee-week8-Korean-11.mp4"
+    }
+  ]
+}

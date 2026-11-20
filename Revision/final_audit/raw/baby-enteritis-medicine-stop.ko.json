@@ -1,0 +1,351 @@
+{
+  "video_id": "baby-enteritis-medicine-stop.ko",
+  "language": "ko",
+  "overall_verdict": "WARN",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "WARN",
+  "av_integrity": "PASS",
+  "spoken_transcript": "아이가 나아지면 약을 언제 끊을 수 있을까요? 처방받으신 포리부틴드라이시럽은 위장관 운동을 조절하는 약입니다. 증상 호전은 좋지만, 면밀한 관찰이 중요합니다. 장 운동의 자연스러운 수축을 부드럽게 조절합니다. 증상이 나아져도 처방약 중단 여부는 처방한 의료진이나 약사에게 먼저 확인하세요. 변이 정상이고 복통이 없어도, 남은 약의 복용 계획을 의료진과 확인하세요. 복통이나 설사가 다시 생기면 약을 임의로 재시작하지 말고 의료진에게 문의하세요. 정해진 양의 액상 약은 전용 계량컵으로 천천히 복용하게 하세요. 심해지는 복통, 반복 구토, 혈변 또는 탈수 징후가 있으면 진료를 받으세요. 묽은 변 세 번만으로 응급은 아닙니다. 아이를 잘 관찰하고 궁금한 점은 소아과 의사에게 진료받으세요.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "NOT_APPLICABLE",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "NOT_APPLICABLE",
+    "high_fever_age_context": "NOT_APPLICABLE",
+    "sleep_vs_lethargy": "NOT_APPLICABLE",
+    "dehydration_guidance": "PASS",
+    "multilingual_integrity": "PASS",
+    "evidence_ko": "영상 전반에 걸쳐 음성, 자막, 시각적 요소가 일관되고 정확하게 제공됩니다. 의학적 정보는 출처에 기반하며 안전 지침을 따릅니다.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "NOT_APPLICABLE",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "NOT_APPLICABLE",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "PASS",
+    "treatment_claim_uncertainty": "PASS",
+    "simultaneous_and_alternating_antipyretics": "NOT_APPLICABLE",
+    "infant_feeding_and_formula": "NOT_APPLICABLE",
+    "medicine_storage_and_restart": "PASS",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "NOT_APPLICABLE"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "0:00",
+      "spoken_transcript": "아이가 나아지면 약을 언제 끊을 수 있을까요?",
+      "speech_complete": true,
+      "visible_caption_transcript": "아이가 나아지면 약을 언제 끊을 수 있을까요?",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막이 일치하며, 영상 내용과 일관됩니다."
+    },
+    {
+      "scene": 2,
+      "timestamp": "0:06",
+      "spoken_transcript": "처방받으신 포리부틴드라이시럽은 위장관 운동을 조절하는 약입니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "처방받으신 포리부틴드라이시럽은 위장관 운동을 조절하는 약입니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막이 일치하며, 영상 내용과 일관됩니다."
+    },
+    {
+      "scene": 3,
+      "timestamp": "0:12",
+      "spoken_transcript": "증상 호전은 좋지만, 면밀한 관찰이 중요합니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "증상 호전은 좋지만, 면밀한 관찰이 중요합니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막이 일치하며, 영상 내용과 일관됩니다."
+    },
+    {
+      "scene": 4,
+      "timestamp": "0:18",
+      "spoken_transcript": "장 운동의 자연스러운 수축을 부드럽게 조절합니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "장 운동의 자연스러운 수축을 부드럽게 조절합니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막이 일치하며, 영상 내용과 일관됩니다."
+    },
+    {
+      "scene": 5,
+      "timestamp": "0:24",
+      "spoken_transcript": "증상이 나아져도 처방약 중단 여부는 처방한 의료진이나 약사에게 먼저 확인하세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "증상이 나아져도 처방약 중단 여부는 처방한 의료진이나 약사에게 먼저 확인하세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막이 일치하며, 영상 내용과 일관됩니다."
+    },
+    {
+      "scene": 6,
+      "timestamp": "0:30",
+      "spoken_transcript": "변이 정상이고 복통이 없어도, 남은 약의 복용 계획을 의료진과 확인하세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "변이 정상이고 복통이 없어도, 남은 약의 복용 계획을 의료진과 확인하세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막이 일치하며, 영상 내용과 일관됩니다."
+    },
+    {
+      "scene": 7,
+      "timestamp": "0:36",
+      "spoken_transcript": "복통이나 설사가 다시 생기면 약을 임의로 재시작하지 말고 의료진에게 문의하세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "복통이나 설사가 다시 생기면 약을 임의로 재시작하지 말고 의료진에게 문의하세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막이 일치하며, 영상 내용과 일관됩니다."
+    },
+    {
+      "scene": 8,
+      "timestamp": "0:42",
+      "spoken_transcript": "정해진 양의 액상 약은 전용 계량컵으로 천천히 복용하게 하세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "정해진 양의 액상 약은 전용 계량컵으로 천천히 복용하게 하세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막이 일치하며, 영상 내용과 일관됩니다."
+    },
+    {
+      "scene": 9,
+      "timestamp": "0:47",
+      "spoken_transcript": "심해지는 복통, 반복 구토, 혈변 또는 탈수 징후가 있으면 진료를 받으세요. 묽은 변 세 번만으로 응급은 아닙니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "심해지는 복통, 반복 구토, 혈변 또는 탈수 징후가 있으면 진료를 받으세요. 묽은 변 세 번만으로 응급은 아닙니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막이 일치하며, 영상 내용과 일관됩니다. '묽은 변 세 번'이라는 숫자 정보도 정확하게 전달됩니다."
+    },
+    {
+      "scene": 10,
+      "timestamp": "0:55",
+      "spoken_transcript": "아이를 잘 관찰하고 궁금한 점은 소아과 의사에게 진료받으세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "아이를 잘 관찰하고 궁금한 점은 소아과 의사에게 진료받으세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 자막이 일치하며, 영상 내용과 일관됩니다."
+    }
+  ],
+  "medication_route_review": [
+    {
+      "timestamp": "0:42",
+      "depicted_item": "액상 약",
+      "depicted_route": "경구 (계량컵으로 복용)",
+      "intended_route": "경구",
+      "is_error": false,
+      "reason_ko": "전용 계량컵으로 액상 약을 복용하는 모습이 안전하게 묘사되었습니다.",
+      "confidence": 1.0
+    }
+  ],
+  "issues": [
+    {
+      "severity": "low",
+      "category": "SOURCE_CONTRADICTION",
+      "timestamp": "0:30",
+      "scene": 6,
+      "evidence": "음성: '변이 정상이고 복통이 없어도, 남은 약의 복용 계획을 의료진과 확인하세요.' 출처: '정상적인 변을 보고 복통이 없다면 약을 계속 중단하셔도 됩니다.'",
+      "problem_ko": "증상이 호전되어 정상 변을 보고 복통이 없을 경우, 출처는 약 복용을 계속 중단해도 된다고 명시하지만, 영상은 남은 약의 복용 계획을 의료진과 확인하라고 권고합니다.",
+      "source_comparison_ko": "출처는 약 중단을 지속할 수 있다고 하지만, 영상은 의료진과의 확인을 권장하여 더 보수적인 접근을 취합니다.",
+      "recommended_fix_ko": "출처의 내용에 더 가깝게 '변이 정상이고 복통이 없다면 약을 계속 중단하셔도 됩니다.'로 수정하거나, 영상의 보수적인 접근을 유지할 경우 출처와 다름을 명확히 인지해야 합니다. 현재 영상의 내용은 의학적으로 안전합니다.",
+      "confidence": 0.9
+    },
+    {
+      "severity": "low",
+      "category": "SOURCE_CONTRADICTION",
+      "timestamp": "0:36",
+      "scene": 7,
+      "evidence": "음성: '복통이나 설사가 다시 생기면 약을 임의로 재시작하지 말고 의료진에게 문의하세요.' 출처: '만약 복통이나 설사 증상이 다시 재발한다면, 월요일 병원 진료 전까지 남은 약을 다시 복용시키시면 됩니다.'",
+      "problem_ko": "복통이나 설사가 재발할 경우, 출처는 월요일 병원 진료 전까지 남은 약을 다시 복용시키라고 명시하지만, 영상은 임의로 재시작하지 말고 의료진에게 문의하라고 권고합니다.",
+      "source_comparison_ko": "출처는 특정 상황에서 약 재복용을 지시하지만, 영상은 의료진에게 문의하도록 하여 더 보수적인 접근을 취합니다.",
+      "recommended_fix_ko": "출처의 내용에 더 가깝게 '복통이나 설사가 다시 생기면 월요일 병원 진료 전까지 남은 약을 다시 복용시키세요.'로 수정하거나, 영상의 보수적인 접근을 유지할 경우 출처와 다름을 명확히 인지해야 합니다. 현재 영상의 내용은 의학적으로 안전합니다.",
+      "confidence": 0.9
+    }
+  ],
+  "review_summary_ko": "이 영상은 아이의 장염약 중단 시점에 대한 질문에 답하며, 포리부틴드라이시럽의 작용 방식과 증상 호전 시 약 중단 및 재발 시 대처법, 그리고 즉시 진료가 필요한 위험 징후를 설명합니다. 전반적으로 음성, 자막, 시각적 요소가 일관되고 명확하게 제공됩니다. 의학적 내용은 출처에 기반하며 안전 지침을 따릅니다. 다만, 약 중단 및 재시작에 대한 일부 지침이 출처의 내용과 다소 다르게 표현되었으나, 이는 더 보수적인 접근으로 의학적으로 안전합니다. 약물 복용 경로는 전용 계량컵을 사용하여 안전하게 묘사되었습니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-enteritis-medicine-stop/ko/baby-enteritis-medicine-stop_KO.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-enteritis-medicine-stop/ko/production.snapshot.json",
+    "audited_at": "2026-09-22T06:49:55.060686+00:00",
+    "video_sha256": "860c42831c00ebbc0fd4021d995c277006611979ee4014f7d25293bc542d75d5",
+    "snapshot_sha256": "4c62f4a3365f6df8fa55a50330f9b5cace329bf1a25781e2733c0ecab2e2571f",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 20,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "860c42831c00ebbc0fd4021d995c277006611979ee4014f7d25293bc542d75d5",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 1,
+          "checks": [
+            "MEDICINE_STOP_RESTART"
+          ]
+        },
+        {
+          "scene": 3,
+          "checks": [
+            "MEDICINE_STOP_RESTART"
+          ]
+        },
+        {
+          "scene": 4,
+          "checks": [
+            "POWDER_MEDICINE_STORAGE"
+          ]
+        },
+        {
+          "scene": 5,
+          "checks": [
+            "MEDICINE_STOP_RESTART"
+          ]
+        },
+        {
+          "scene": 6,
+          "checks": [
+            "MEDICINE_STOP_RESTART"
+          ]
+        },
+        {
+          "scene": 7,
+          "checks": [
+            "SLEEP_VS_LETHARGY"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "DEHYDRATION_OR_POOR_INTAKE",
+            "DRUG_SPECIFIC_REDOSING",
+            "EMERGENCY_LOCALE"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [],
+      "srt_number_tokens": [],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 4.44,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 5.96,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 4.88,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 4.56,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 7.28,
+          "timeline_seconds": 6,
+          "speed_factor": 1.2133,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 6.72,
+          "timeline_seconds": 6,
+          "speed_factor": 1.12,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 6.8,
+          "timeline_seconds": 6,
+          "speed_factor": 1.1333,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 5.88,
+          "timeline_seconds": 5,
+          "speed_factor": 1.176,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 12.0,
+          "timeline_seconds": 8,
+          "speed_factor": 1.5,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 5.64,
+          "timeline_seconds": 5,
+          "speed_factor": 1.128,
+          "requires_close_listen": false
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

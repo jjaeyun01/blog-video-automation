@@ -1,0 +1,102 @@
+{
+  "model": "gemini-2.5-flash",
+  "generated_at": "2026-09-22T07:57:28.668569+00:00",
+  "completed_videos": 39,
+  "failed_requests": [],
+  "scene_logs": 390,
+  "invalid_scene_logs": [],
+  "verdict_counts": {
+    "PASS": 35,
+    "WARN": 3,
+    "FAIL": 1
+  },
+  "issue_category_counts": {
+    "SOURCE_CONTRADICTION": 4,
+    "CLINICAL_DISTINCTION_MISSING": 1,
+    "OTHER_VISUAL_ERROR": 1,
+    "TRIAGE_OMISSION": 1
+  },
+  "issue_severity_counts": {
+    "low": 4,
+    "medium": 1,
+    "high": 2
+  },
+  "scene_check_failure_counts": {
+    "numbers_and_units_match": 1
+  },
+  "scene_check_affected_video_counts": {
+    "numbers_and_units_match": 1
+  },
+  "calibration_failure_counts": {
+    "caption_clause_coverage": 1,
+    "triage_adequacy": 2,
+    "drug_specific_redosing": 1
+  },
+  "deterministic_srt_mismatch_videos": [],
+  "tts_caption_av_issues": [],
+  "medical_visual_and_triage_issues": [
+    {
+      "video_id": "baby-enteritis-medicine-stop.ko",
+      "scene": 6,
+      "timestamp": "0:30",
+      "severity": "low",
+      "category": "SOURCE_CONTRADICTION",
+      "problem_ko": "증상이 호전되어 정상 변을 보고 복통이 없을 경우, 출처는 약 복용을 계속 중단해도 된다고 명시하지만, 영상은 남은 약의 복용 계획을 의료진과 확인하라고 권고합니다.",
+      "recommended_fix_ko": "출처의 내용에 더 가깝게 '변이 정상이고 복통이 없다면 약을 계속 중단하셔도 됩니다.'로 수정하거나, 영상의 보수적인 접근을 유지할 경우 출처와 다름을 명확히 인지해야 합니다. 현재 영상의 내용은 의학적으로 안전합니다."
+    },
+    {
+      "video_id": "baby-enteritis-medicine-stop.ko",
+      "scene": 7,
+      "timestamp": "0:36",
+      "severity": "low",
+      "category": "SOURCE_CONTRADICTION",
+      "problem_ko": "복통이나 설사가 재발할 경우, 출처는 월요일 병원 진료 전까지 남은 약을 다시 복용시키라고 명시하지만, 영상은 임의로 재시작하지 말고 의료진에게 문의하라고 권고합니다.",
+      "recommended_fix_ko": "출처의 내용에 더 가깝게 '복통이나 설사가 다시 생기면 월요일 병원 진료 전까지 남은 약을 다시 복용시키세요.'로 수정하거나, 영상의 보수적인 접근을 유지할 경우 출처와 다름을 명확히 인지해야 합니다. 현재 영상의 내용은 의학적으로 안전합니다."
+    },
+    {
+      "video_id": "baby-enteritis-medicine-stop.en",
+      "scene": 9,
+      "timestamp": "00:48",
+      "severity": "medium",
+      "category": "CLINICAL_DISTINCTION_MISSING",
+      "problem_ko": "원문에서는 '하루 3회 이상 묽은 설사를 반복하는 경우'를 지체 없이 소아과 의사에게 진료를 받아야 하는 긴급 상황으로 명시하고 있습니다. 영상의 'Three loose stools alone are not an emergency'라는 문구는 '묽은 설사'와 '무른 변'의 구분을 모호하게 하여, 부모가 심각한 설사 증상을 경미하게 오인하고 진료를 지연할 위험이 있습니다.",
+      "recommended_fix_ko": "캡션과 음성에서 'Three loose stools alone are not an emergency' 대신, 원문의 의미를 살려 'Three loose stools alone are not necessarily an emergency, but seek care for repeated watery diarrhea 3 or more times a day'와 같이 구체적인 긴급 상황 기준을 명확히 언급해야 합니다. 또는 'Three loose stools alone are not an emergency, but consult your clinician if diarrhea is watery or frequent (3 or more times a day)'와 같이 수정하여 임상적 구분을 명확히 해야 합니다."
+    },
+    {
+      "video_id": "infant-wheezing-pneumonia-antibiotics.ko",
+      "scene": 8,
+      "timestamp": "00:43",
+      "severity": "low",
+      "category": "OTHER_VISUAL_ERROR",
+      "problem_ko": "의인화된 기관지 캐릭터가 아기를 안고 옷을 느슨하게 해주는 모습이 실제 사람의 모습이 아니어서 일부 시청자에게는 다소 추상적으로 느껴질 수 있습니다.",
+      "recommended_fix_ko": "가능하면 실제 사람 부모가 아기를 안고 옷을 느슨하게 해주는 모습으로 변경하여 시각적 명확성을 높일 수 있습니다."
+    },
+    {
+      "video_id": "pediatric-fever-alternating-meds.en",
+      "scene": 1,
+      "timestamp": "0:00",
+      "severity": "high",
+      "category": "TRIAGE_OMISSION",
+      "problem_ko": "영상에서 중이염 치료를 위한 항생제를 처방받은 기간 동안 끝까지 복용해야 한다는 중요한 지침이 누락되었습니다. 이는 환자가 임의로 항생제 복용을 중단할 위험을 높여 치료 실패나 합병증으로 이어질 수 있습니다.",
+      "recommended_fix_ko": "영상의 내레이션과 캡션에 항생제 복용 지침(예: \"중이염 치료를 위한 항생제는 의사의 지시대로 끝까지 복용해야 합니다.\")을 추가해야 합니다."
+    },
+    {
+      "video_id": "pediatric-tamiflu-dosing-flexibility.ko",
+      "scene": 8,
+      "timestamp": "00:40",
+      "severity": "low",
+      "category": "SOURCE_CONTRADICTION",
+      "problem_ko": "구토 시 약 재복용 기준 시간이 소스(1시간 이내)와 다릅니다.",
+      "recommended_fix_ko": "소스 내용과 일치시키거나, 오셀타미비르에 대한 최신 의학적 가이드라인(예: Medicines for Children)을 명확히 인용하여 30분 기준을 설명하는 것이 좋습니다."
+    },
+    {
+      "video_id": "pediatric-tamiflu-dosing-flexibility.es",
+      "scene": 8,
+      "timestamp": "00:43",
+      "severity": "high",
+      "category": "SOURCE_CONTRADICTION",
+      "problem_ko": "영상에서 구토 후 약 복용 재개에 대해 \"다시 복용하기 전에 상담하라\"고 조언하지만, 원문 출처는 오셀타미비르 복용 후 1시간 이내 구토 시 \"즉시 1회 용량을 다시 먹여야 한다\"고 명시적으로 지시합니다. 이는 약물별 재복용 지침에 대한 중요한 불일치입니다.",
+      "recommended_fix_ko": "영상의 조언을 원문 출처의 지침에 따라 \"오셀타미비르 복용 후 1시간 이내에 구토한 경우 즉시 1회 용량을 다시 복용하십시오. 1시간 이후에 구토했거나 반복적으로 구토하는 경우 의사 또는 약사와 상담하십시오.\"와 같이 수정해야 합니다."
+    }
+  ]
+}

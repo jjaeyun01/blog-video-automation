@@ -1,0 +1,563 @@
+{
+  "updated_at": "2026-09-22T06:34:31.375216+00:00",
+  "model": "gemini-2.5-flash",
+  "failed_video_count": 3,
+  "prepared": {
+    "baby-40c-fever-no-other-symptoms": {
+      "configs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/baby-40c-fever-no-other-symptoms.production.ko.json",
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/baby-40c-fever-no-other-symptoms.production.en.json",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/baby-40c-fever-no-other-symptoms.production.es.json"
+      },
+      "failed_languages": [
+        "en",
+        "es",
+        "ko"
+      ],
+      "copy_scenes": {
+        "es": [
+          1,
+          2,
+          5,
+          6,
+          8
+        ],
+        "en": [
+          1,
+          2,
+          5,
+          6,
+          8
+        ],
+        "ko": [
+          1,
+          2,
+          5,
+          6,
+          8
+        ]
+      },
+      "visual_scenes": []
+    },
+    "baby-enteritis-medicine-stop": {
+      "configs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/baby-enteritis-medicine-stop.production.ko.json",
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/baby-enteritis-medicine-stop.production.en.json",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/baby-enteritis-medicine-stop.production.es.json"
+      },
+      "failed_languages": [
+        "en",
+        "es",
+        "ko"
+      ],
+      "copy_scenes": {
+        "en": [
+          2,
+          5,
+          6,
+          7,
+          9
+        ],
+        "es": [
+          2,
+          5,
+          6,
+          7,
+          9
+        ],
+        "ko": [
+          2,
+          5,
+          6,
+          7,
+          9
+        ]
+      },
+      "visual_scenes": []
+    },
+    "baby-fever-threshold": {
+      "configs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/baby-fever-threshold.production.ko.json",
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/baby-fever-threshold.production.en.json",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/baby-fever-threshold.production.es.json"
+      },
+      "failed_languages": [
+        "en",
+        "es",
+        "ko"
+      ],
+      "copy_scenes": {
+        "en": [
+          2,
+          7,
+          8
+        ],
+        "es": [
+          2,
+          7,
+          8
+        ],
+        "ko": [
+          2,
+          7,
+          8
+        ]
+      },
+      "visual_scenes": [
+        2,
+        7,
+        8
+      ]
+    },
+    "baby-formula-refusal-cold": {
+      "configs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/baby-formula-refusal-cold.production.ko.json",
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/baby-formula-refusal-cold.production.en.json",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/baby-formula-refusal-cold.production.es.json"
+      },
+      "failed_languages": [
+        "en",
+        "es",
+        "ko"
+      ],
+      "copy_scenes": {
+        "en": [
+          5,
+          6
+        ],
+        "es": [
+          5,
+          6
+        ],
+        "ko": [
+          5,
+          6
+        ]
+      },
+      "visual_scenes": [
+        6
+      ]
+    },
+    "infant-cold-vomiting-feeding": {
+      "configs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/infant-cold-vomiting-feeding.production.ko.json",
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/infant-cold-vomiting-feeding.production.en.json",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/infant-cold-vomiting-feeding.production.es.json"
+      },
+      "failed_languages": [
+        "en",
+        "es",
+        "ko"
+      ],
+      "copy_scenes": {
+        "es": [
+          5,
+          6,
+          8,
+          9
+        ],
+        "en": [
+          5,
+          6,
+          8,
+          9
+        ],
+        "ko": [
+          5,
+          6,
+          8,
+          9
+        ]
+      },
+      "visual_scenes": [
+        5,
+        8
+      ]
+    },
+    "infant-wheezing-pneumonia-antibiotics": {
+      "configs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/infant-wheezing-pneumonia-antibiotics.production.ko.json",
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/infant-wheezing-pneumonia-antibiotics.production.en.json",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/infant-wheezing-pneumonia-antibiotics.production.es.json"
+      },
+      "failed_languages": [
+        "en",
+        "es",
+        "ko"
+      ],
+      "copy_scenes": {
+        "en": [
+          1,
+          4,
+          6,
+          7,
+          9
+        ],
+        "es": [
+          1,
+          6,
+          9
+        ],
+        "ko": [
+          1,
+          4,
+          6,
+          7,
+          9
+        ]
+      },
+      "visual_scenes": [
+        9
+      ]
+    },
+    "influenza-a-high-fever-management": {
+      "configs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/influenza-a-high-fever-management.production.ko.json",
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/influenza-a-high-fever-management.production.en.json",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/influenza-a-high-fever-management.production.es.json"
+      },
+      "failed_languages": [
+        "en",
+        "es",
+        "ko"
+      ],
+      "copy_scenes": {
+        "en": [
+          4,
+          5,
+          6,
+          8
+        ],
+        "es": [
+          4,
+          5,
+          6,
+          8
+        ],
+        "ko": [
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "visual_scenes": []
+    },
+    "mycoplasma-pneumonia-fever-reassessment": {
+      "configs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/mycoplasma-pneumonia-fever-reassessment.production.ko.json",
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/mycoplasma-pneumonia-fever-reassessment.production.en.json",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/mycoplasma-pneumonia-fever-reassessment.production.es.json"
+      },
+      "failed_languages": [
+        "en",
+        "es",
+        "ko"
+      ],
+      "copy_scenes": {
+        "en": [
+          1,
+          5,
+          6,
+          7,
+          9
+        ],
+        "ko": [
+          1,
+          5,
+          6,
+          7,
+          9
+        ],
+        "es": [
+          1,
+          5,
+          6,
+          7,
+          9
+        ]
+      },
+      "visual_scenes": []
+    },
+    "pediatric-fever-alternating-meds": {
+      "configs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/pediatric-fever-alternating-meds.production.ko.json",
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/pediatric-fever-alternating-meds.production.en.json",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/pediatric-fever-alternating-meds.production.es.json"
+      },
+      "failed_languages": [
+        "en",
+        "es",
+        "ko"
+      ],
+      "copy_scenes": {
+        "en": [
+          3,
+          4,
+          5,
+          6,
+          8
+        ],
+        "es": [
+          3,
+          4,
+          5,
+          6,
+          8
+        ],
+        "ko": [
+          3,
+          4,
+          5,
+          6,
+          8
+        ]
+      },
+      "visual_scenes": [
+        8
+      ]
+    },
+    "pediatric-fever-sleep": {
+      "configs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/pediatric-fever-sleep.production.ko.json",
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/pediatric-fever-sleep.production.en.json",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/pediatric-fever-sleep.production.es.json"
+      },
+      "failed_languages": [
+        "en",
+        "es",
+        "ko"
+      ],
+      "copy_scenes": {
+        "es": [
+          3,
+          5,
+          6,
+          9,
+          10
+        ],
+        "en": [
+          3,
+          5,
+          6,
+          9,
+          10
+        ],
+        "ko": [
+          3,
+          5,
+          6,
+          9,
+          10
+        ]
+      },
+      "visual_scenes": [
+        6
+      ]
+    },
+    "pediatric-tamiflu-dosing-flexibility": {
+      "configs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/pediatric-tamiflu-dosing-flexibility.production.ko.json",
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/pediatric-tamiflu-dosing-flexibility.production.en.json",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/pediatric-tamiflu-dosing-flexibility.production.es.json"
+      },
+      "failed_languages": [
+        "en",
+        "es",
+        "ko"
+      ],
+      "copy_scenes": {
+        "en": [
+          2,
+          3,
+          5,
+          6,
+          8
+        ],
+        "es": [
+          2,
+          3,
+          5,
+          6,
+          8
+        ],
+        "ko": [
+          2,
+          3,
+          5,
+          6,
+          8
+        ]
+      },
+      "visual_scenes": []
+    },
+    "persistent-nasal-congestion-reassessment": {
+      "configs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/persistent-nasal-congestion-reassessment.production.ko.json",
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/persistent-nasal-congestion-reassessment.production.en.json",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/persistent-nasal-congestion-reassessment.production.es.json"
+      },
+      "failed_languages": [
+        "en",
+        "es",
+        "ko"
+      ],
+      "copy_scenes": {
+        "en": [
+          7,
+          8
+        ],
+        "es": [
+          7,
+          8
+        ],
+        "ko": [
+          7,
+          8
+        ]
+      },
+      "visual_scenes": [
+        8
+      ]
+    },
+    "powdered-fever-reducer-premix": {
+      "configs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/powdered-fever-reducer-premix.production.ko.json",
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/powdered-fever-reducer-premix.production.en.json",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/repair_work/configs/powdered-fever-reducer-premix.production.es.json"
+      },
+      "failed_languages": [
+        "en",
+        "es",
+        "ko"
+      ],
+      "copy_scenes": {
+        "en": [
+          5,
+          6,
+          8
+        ],
+        "es": [
+          5,
+          6
+        ],
+        "ko": [
+          5,
+          6,
+          8
+        ]
+      },
+      "visual_scenes": [
+        5,
+        6,
+        8
+      ]
+    }
+  },
+  "results": {
+    "baby-40c-fever-no-other-symptoms": {
+      "status": "REBUILT",
+      "outputs": {
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-40c-fever-no-other-symptoms/en/baby-40c-fever-no-other-symptoms_EN.mp4",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-40c-fever-no-other-symptoms/es/baby-40c-fever-no-other-symptoms_ES.mp4",
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-40c-fever-no-other-symptoms/ko/baby-40c-fever-no-other-symptoms_KO.mp4"
+      }
+    },
+    "baby-enteritis-medicine-stop": {
+      "status": "REBUILT",
+      "outputs": {
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-enteritis-medicine-stop/en/baby-enteritis-medicine-stop_EN.mp4",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-enteritis-medicine-stop/es/baby-enteritis-medicine-stop_ES.mp4",
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-enteritis-medicine-stop/ko/baby-enteritis-medicine-stop_KO.mp4"
+      }
+    },
+    "baby-fever-threshold": {
+      "status": "REBUILT",
+      "outputs": {
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-fever-threshold/en/baby-fever-threshold_EN.mp4",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-fever-threshold/es/baby-fever-threshold_ES.mp4",
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-fever-threshold/ko/baby-fever-threshold_KO.mp4"
+      }
+    },
+    "baby-formula-refusal-cold": {
+      "status": "REBUILT",
+      "outputs": {
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-formula-refusal-cold/en/baby-formula-refusal-cold_EN.mp4",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-formula-refusal-cold/es/baby-formula-refusal-cold_ES.mp4",
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-formula-refusal-cold/ko/baby-formula-refusal-cold_KO.mp4"
+      }
+    },
+    "influenza-a-high-fever-management": {
+      "status": "REBUILT",
+      "outputs": {
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/influenza-a-high-fever-management/en/influenza-a-high-fever-management_EN.mp4",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/influenza-a-high-fever-management/es/influenza-a-high-fever-management_ES.mp4",
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/influenza-a-high-fever-management/ko/influenza-a-high-fever-management_KO.mp4"
+      }
+    },
+    "infant-cold-vomiting-feeding": {
+      "status": "REBUILT",
+      "outputs": {
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/infant-cold-vomiting-feeding/en/infant-cold-vomiting-feeding_EN.mp4",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/infant-cold-vomiting-feeding/es/infant-cold-vomiting-feeding_ES.mp4",
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/infant-cold-vomiting-feeding/ko/infant-cold-vomiting-feeding_KO.mp4"
+      }
+    },
+    "infant-wheezing-pneumonia-antibiotics": {
+      "status": "REBUILT",
+      "outputs": {
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/infant-wheezing-pneumonia-antibiotics/en/infant-wheezing-pneumonia-antibiotics_EN.mp4",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/infant-wheezing-pneumonia-antibiotics/es/infant-wheezing-pneumonia-antibiotics_ES.mp4",
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/infant-wheezing-pneumonia-antibiotics/ko/infant-wheezing-pneumonia-antibiotics_KO.mp4"
+      }
+    },
+    "mycoplasma-pneumonia-fever-reassessment": {
+      "status": "REBUILT",
+      "outputs": {
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/mycoplasma-pneumonia-fever-reassessment/en/mycoplasma-pneumonia-fever-reassessment_EN.mp4",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/mycoplasma-pneumonia-fever-reassessment/es/mycoplasma-pneumonia-fever-reassessment_ES.mp4",
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/mycoplasma-pneumonia-fever-reassessment/ko/mycoplasma-pneumonia-fever-reassessment_KO.mp4"
+      }
+    },
+    "pediatric-fever-sleep": {
+      "status": "REBUILT",
+      "outputs": {
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-fever-sleep/en/pediatric-fever-sleep_EN.mp4",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-fever-sleep/es/pediatric-fever-sleep_ES.mp4",
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-fever-sleep/ko/pediatric-fever-sleep_KO.mp4"
+      }
+    },
+    "pediatric-fever-alternating-meds": {
+      "status": "REBUILT",
+      "outputs": {
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-fever-alternating-meds/en/pediatric-fever-alternating-meds_EN.mp4",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-fever-alternating-meds/es/pediatric-fever-alternating-meds_ES.mp4",
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-fever-alternating-meds/ko/pediatric-fever-alternating-meds_KO.mp4"
+      }
+    },
+    "pediatric-tamiflu-dosing-flexibility": {
+      "status": "REBUILT",
+      "outputs": {
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-tamiflu-dosing-flexibility/en/pediatric-tamiflu-dosing-flexibility_EN.mp4",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-tamiflu-dosing-flexibility/es/pediatric-tamiflu-dosing-flexibility_ES.mp4",
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-tamiflu-dosing-flexibility/ko/pediatric-tamiflu-dosing-flexibility_KO.mp4"
+      }
+    },
+    "persistent-nasal-congestion-reassessment": {
+      "status": "REBUILT",
+      "outputs": {
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/persistent-nasal-congestion-reassessment/en/persistent-nasal-congestion-reassessment_EN.mp4",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/persistent-nasal-congestion-reassessment/es/persistent-nasal-congestion-reassessment_ES.mp4",
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/persistent-nasal-congestion-reassessment/ko/persistent-nasal-congestion-reassessment_KO.mp4"
+      }
+    },
+    "powdered-fever-reducer-premix": {
+      "status": "REBUILT",
+      "outputs": {
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/powdered-fever-reducer-premix/en/powdered-fever-reducer-premix_EN.mp4",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/powdered-fever-reducer-premix/es/powdered-fever-reducer-premix_ES.mp4",
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/powdered-fever-reducer-premix/ko/powdered-fever-reducer-premix_KO.mp4"
+      }
+    }
+  }
+}

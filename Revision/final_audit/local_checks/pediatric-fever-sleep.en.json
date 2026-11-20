@@ -1,0 +1,154 @@
+{
+  "duration_seconds": 60.021029,
+  "width": 1080,
+  "height": 1920,
+  "has_audio": true,
+  "scene_count": 10,
+  "captions_equal_expected_narration": true,
+  "caption_images_checked": 26,
+  "all_caption_image_corners_transparent": true,
+  "video_sha256": "72fb3bf14a97e7af5f1ab9e072ef49d4a080ec4182b8b2b429cf311d7b1d46be",
+  "reviewer_feedback_focus": [
+    {
+      "scene": 1,
+      "checks": [
+        "SLEEP_VS_LETHARGY",
+        "SAFE_SLEEP_AND_SWALLOWING",
+        "EMERGENCY_LOCALE"
+      ]
+    },
+    {
+      "scene": 3,
+      "checks": [
+        "SLEEP_VS_LETHARGY",
+        "SAFE_SLEEP_AND_SWALLOWING"
+      ]
+    },
+    {
+      "scene": 4,
+      "checks": [
+        "RESPIRATORY_RED_FLAGS",
+        "SAFE_SLEEP_AND_SWALLOWING"
+      ]
+    },
+    {
+      "scene": 5,
+      "checks": [
+        "SLEEP_VS_LETHARGY",
+        "SAFE_SLEEP_AND_SWALLOWING"
+      ]
+    },
+    {
+      "scene": 6,
+      "checks": [
+        "SAFE_SLEEP_AND_SWALLOWING"
+      ]
+    },
+    {
+      "scene": 7,
+      "checks": [
+        "DEHYDRATION_OR_POOR_INTAKE",
+        "MEDICINE_STOP_RESTART"
+      ]
+    },
+    {
+      "scene": 8,
+      "checks": [
+        "SAFE_SLEEP_AND_SWALLOWING",
+        "MEDICINE_STOP_RESTART"
+      ]
+    },
+    {
+      "scene": 9,
+      "checks": [
+        "RESPIRATORY_RED_FLAGS",
+        "SLEEP_VS_LETHARGY",
+        "EMERGENCY_LOCALE"
+      ]
+    },
+    {
+      "scene": 10,
+      "checks": [
+        "SLEEP_VS_LETHARGY",
+        "SAFE_SLEEP_AND_SWALLOWING"
+      ]
+    }
+  ],
+  "srt_exists": true,
+  "srt_semantically_expected_by_normalized_text": true,
+  "expected_number_tokens": [],
+  "srt_number_tokens": [],
+  "srt_numbers_match_expected": true,
+  "audio_scene_timing": [
+    {
+      "scene": 1,
+      "raw_seconds": 6.6,
+      "timeline_seconds": 6,
+      "speed_factor": 1.1,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 2,
+      "raw_seconds": 5.76,
+      "timeline_seconds": 6,
+      "speed_factor": 1.0,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 3,
+      "raw_seconds": 10.4,
+      "timeline_seconds": 7,
+      "speed_factor": 1.4857,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 4,
+      "raw_seconds": 6.32,
+      "timeline_seconds": 5,
+      "speed_factor": 1.264,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 5,
+      "raw_seconds": 10.6,
+      "timeline_seconds": 8,
+      "speed_factor": 1.325,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 6,
+      "raw_seconds": 6.48,
+      "timeline_seconds": 5,
+      "speed_factor": 1.296,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 7,
+      "raw_seconds": 5.96,
+      "timeline_seconds": 4,
+      "speed_factor": 1.49,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 8,
+      "raw_seconds": 3.68,
+      "timeline_seconds": 4,
+      "speed_factor": 1.0,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 9,
+      "raw_seconds": 11.4,
+      "timeline_seconds": 8,
+      "speed_factor": 1.425,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 10,
+      "raw_seconds": 10.36,
+      "timeline_seconds": 7,
+      "speed_factor": 1.48,
+      "requires_close_listen": true
+    }
+  ]
+}

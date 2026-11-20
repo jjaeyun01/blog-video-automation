@@ -1,0 +1,185 @@
+{
+  "repairs": [
+    {
+      "scene": 5,
+      "corrected_medical_claim": "For a sick baby, prioritize formula by preparing it at normal concentration, reducing the amount per feeding to two-thirds of the usual volume, and increasing the feeding frequency.",
+      "corrected_narration": "Prepare la fórmula a concentración normal, pero reduzca la cantidad por toma a dos tercios y alimente con más frecuencia.",
+      "caption_chunks": [
+        "Prepare la fórmula",
+        "a concentración normal,",
+        "reduzca la cantidad",
+        "por toma a dos tercios",
+        "y alimente con más frecuencia."
+      ],
+      "replace_overlays": false,
+      "overlays": [
+        {
+          "type": "dimension",
+          "text": "2/3",
+          "from": [
+            0.25,
+            0.6
+          ],
+          "to": [
+            0.75,
+            0.6
+          ],
+          "label_position": [
+            0.5,
+            0.68
+          ]
+        }
+      ],
+      "regenerate_visual": true,
+      "visual_prompt_addendum": "Show a correctly prepared normal-strength formula bottle; do not show dilution or changing the powder-to-water ratio. The liquid level should visibly decrease from full to the two-thirds mark, and then small, frequent feeds should be indicated without implying dilution.",
+      "reason_ko": "분유 조제 농도와 1회 수유량에 대한 혼동을 피하고, 정상 농도로 조제하되 1회 수유량을 줄여 자주 먹이도록 명확히 안내하며, 시각적으로도 희석을 암시하지 않도록 수정합니다."
+    },
+    {
+      "scene": 6,
+      "corrected_medical_claim": "After a baby vomits, rest the stomach for 4 to 6 hours before offering small amounts of diluted baby food, while continuing age-appropriate fluid intake like formula or breast milk.",
+      "corrected_narration": "Tras vomitar, descanse el estómago 4 a 6 horas antes de sólidos diluidos, manteniendo la hidratación con fórmula o leche materna.",
+      "caption_chunks": [
+        "Tras vomitar, descanse",
+        "el estómago 4 a 6 horas",
+        "antes de sólidos diluidos,",
+        "manteniendo la hidratación",
+        "con fórmula o leche materna."
+      ],
+      "replace_overlays": false,
+      "overlays": [
+        {
+          "type": "label",
+          "text": "4-6 horas",
+          "from": [
+            0.5,
+            0.68
+          ],
+          "to": [
+            0.5,
+            0.68
+          ],
+          "label_position": [
+            0.5,
+            0.68
+          ]
+        }
+      ],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "구토 후 고형식 재개 전 4~6시간 동안 위장을 쉬게 하는 동안에도 분유나 모유를 통한 수분 공급을 지속해야 함을 명확히 하기 위함입니다."
+    },
+    {
+      "scene": 8,
+      "corrected_medical_claim": "Hold your baby upright for 30 minutes after vomiting, ensuring head and neck are securely supported.",
+      "corrected_narration": "Mantenga a su bebé erguido durante 30 minutos después de vomitar.",
+      "caption_chunks": [
+        "Mantenga a su bebé erguido",
+        "durante 30 minutos",
+        "después de vomitar."
+      ],
+      "replace_overlays": false,
+      "overlays": [
+        {
+          "type": "label",
+          "text": "30 minutos",
+          "from": [
+            0.5,
+            0.68
+          ],
+          "to": [
+            0.5,
+            0.68
+          ],
+          "label_position": [
+            0.5,
+            0.68
+          ]
+        }
+      ],
+      "regenerate_visual": true,
+      "visual_prompt_addendum": "Show a caregiver holding an infant upright with head and neck securely supported. Do not show unsupported dangling or unsafe sleep positioning.",
+      "reason_ko": "아기를 세워 안을 때 머리와 몸통을 안전하게 지지하는 올바른 자세를 시각적으로 표현하여 안전 오류를 제거하기 위함입니다."
+    },
+    {
+      "scene": 9,
+      "corrected_medical_claim": "Seek pediatric consultation immediately if a baby under 3 months has a fever of 38°C or higher, or if a baby of any age has a persistent fever above 38°C.",
+      "corrected_narration": "Fiebre de 38°C o más en bebés menores de 3 meses, o persistente en cualquier edad, requiere atención médica.",
+      "caption_chunks": [
+        "Fiebre de 38°C o más",
+        "en bebés menores de 3 meses,",
+        "o persistente en cualquier edad,",
+        "requiere atención médica."
+      ],
+      "replace_overlays": false,
+      "overlays": [
+        {
+          "type": "label",
+          "text": "38°C",
+          "from": [
+            0.5,
+            0.68
+          ],
+          "to": [
+            0.5,
+            0.68
+          ],
+          "label_position": [
+            0.5,
+            0.68
+          ]
+        }
+      ],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "3개월 미만 영아의 38°C 이상 발열은 즉시 진료가 필요하며, 다른 연령의 경우 38°C 이상 발열이 지속될 때 의료 조치가 필요함을 명확히 안내하기 위함입니다."
+    }
+  ],
+  "video_id": "infant-cold-vomiting-feeding.es",
+  "model": "gemini-2.5-flash",
+  "source_issues": [
+    {
+      "scene": 5,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초: '분유를 평소의 2/3로 줄인다'고만 하여 1회 수유량인지 조제 농도인지 불명확하고, 젖병에 액체를 떨어뜨리는 그림이 혼동을 더합니다. '제품 표시대로 정상 농도로 타고, 1회 먹이는 양을 줄여 더 자주'로 수정하고 용량을 보여주는 그림으로 교체해 주세요. 분유 희석을 명시적으로 지시했다고 단정한 판정은 아닙니다. 추가 노트: 4~6시간 대기는 고형식 재개에 관한 문장이므로 '수분을 완전히 끊으라고 했다'는 Gemini 지적은 채택하지 않았습니다. 다만 그동안의 모유/분유·연령에 맞는 수분 공급은 명확히 해 주세요. 세워 안기는 목·몸통을 받치는 자세로 표현하고 3개월 미만 38도는 즉시 진료하도록 보완해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-25.mp4"
+    },
+    {
+      "scene": 5,
+      "category": "OTHER_VISUAL_ERROR",
+      "severity": "high",
+      "problem_ko": "사람 검토에서 지적된 시각적 안전 오류를 제거해야 합니다.",
+      "visual_prompt_addendum": "Show a correctly prepared normal-strength formula bottle; do not show dilution or changing the powder-to-water ratio.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-25.mp4"
+    },
+    {
+      "scene": 6,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초: '분유를 평소의 2/3로 줄인다'고만 하여 1회 수유량인지 조제 농도인지 불명확하고, 젖병에 액체를 떨어뜨리는 그림이 혼동을 더합니다. '제품 표시대로 정상 농도로 타고, 1회 먹이는 양을 줄여 더 자주'로 수정하고 용량을 보여주는 그림으로 교체해 주세요. 분유 희석을 명시적으로 지시했다고 단정한 판정은 아닙니다. 추가 노트: 4~6시간 대기는 고형식 재개에 관한 문장이므로 '수분을 완전히 끊으라고 했다'는 Gemini 지적은 채택하지 않았습니다. 다만 그동안의 모유/분유·연령에 맞는 수분 공급은 명확히 해 주세요. 세워 안기는 목·몸통을 받치는 자세로 표현하고 3개월 미만 38도는 즉시 진료하도록 보완해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-25.mp4"
+    },
+    {
+      "scene": 8,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초: '분유를 평소의 2/3로 줄인다'고만 하여 1회 수유량인지 조제 농도인지 불명확하고, 젖병에 액체를 떨어뜨리는 그림이 혼동을 더합니다. '제품 표시대로 정상 농도로 타고, 1회 먹이는 양을 줄여 더 자주'로 수정하고 용량을 보여주는 그림으로 교체해 주세요. 분유 희석을 명시적으로 지시했다고 단정한 판정은 아닙니다. 추가 노트: 4~6시간 대기는 고형식 재개에 관한 문장이므로 '수분을 완전히 끊으라고 했다'는 Gemini 지적은 채택하지 않았습니다. 다만 그동안의 모유/분유·연령에 맞는 수분 공급은 명확히 해 주세요. 세워 안기는 목·몸통을 받치는 자세로 표현하고 3개월 미만 38도는 즉시 진료하도록 보완해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-25.mp4"
+    },
+    {
+      "scene": 8,
+      "category": "OTHER_VISUAL_ERROR",
+      "severity": "high",
+      "problem_ko": "사람 검토에서 지적된 시각적 안전 오류를 제거해야 합니다.",
+      "visual_prompt_addendum": "Show a caregiver holding an infant upright with head and neck securely supported. Do not show unsupported dangling or unsafe sleep positioning.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-25.mp4"
+    },
+    {
+      "scene": 9,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초: '분유를 평소의 2/3로 줄인다'고만 하여 1회 수유량인지 조제 농도인지 불명확하고, 젖병에 액체를 떨어뜨리는 그림이 혼동을 더합니다. '제품 표시대로 정상 농도로 타고, 1회 먹이는 양을 줄여 더 자주'로 수정하고 용량을 보여주는 그림으로 교체해 주세요. 분유 희석을 명시적으로 지시했다고 단정한 판정은 아닙니다. 추가 노트: 4~6시간 대기는 고형식 재개에 관한 문장이므로 '수분을 완전히 끊으라고 했다'는 Gemini 지적은 채택하지 않았습니다. 다만 그동안의 모유/분유·연령에 맞는 수분 공급은 명확히 해 주세요. 세워 안기는 목·몸통을 받치는 자세로 표현하고 3개월 미만 38도는 즉시 진료하도록 보완해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-25.mp4"
+    }
+  ]
+}

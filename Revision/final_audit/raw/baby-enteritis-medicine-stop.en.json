@@ -1,0 +1,334 @@
+{
+  "video_id": "baby-enteritis-medicine-stop.en",
+  "language": "en",
+  "overall_verdict": "WARN",
+  "medical_accuracy": "WARN",
+  "source_fidelity": "WARN",
+  "av_integrity": "PASS",
+  "spoken_transcript": "When can you safely stop a child's medicine after symptoms improve? Foributin Dry Syrup helps regulate the digestive tract's movement. Feeling better is a good sign, but careful observation is still key. It gently guides the natural rhythmic contractions of the intestines. Even if symptoms improve, ask the prescriber or pharmacist before stopping the prescribed medicine. Normal stools and no pain do not replace checking the remaining treatment plan with your clinician. If pain or diarrhea returns, do not restart the medicine on your own; contact your clinician. Administer liquid medicine safely using a purpose-made dosing cup. Seek care for worsening pain, repeated vomiting, bloody stool, or dehydration. Three loose stools alone are not an emergency. Monitor your child closely and consult your pediatrician with any concerns.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "FAIL",
+    "medication_timing": "NOT_APPLICABLE",
+    "triage_adequacy": "FAIL",
+    "respiratory_red_flags": "NOT_APPLICABLE",
+    "high_fever_age_context": "NOT_APPLICABLE",
+    "sleep_vs_lethargy": "NOT_APPLICABLE",
+    "dehydration_guidance": "PASS",
+    "multilingual_integrity": "NOT_APPLICABLE",
+    "evidence_ko": "Scene 9에서 'Three loose stools alone are not an emergency'라고 언급되었으나, 원문에서는 '하루 3회 이상 묽은 설사를 반복하는 경우'를 지체 없이 소아과 의사에게 진료를 받아야 하는 기준으로 명시하고 있습니다. 'loose stools'와 'watery diarrhea 3 or more times a day' 사이의 임상적 구분이 명확하지 않아, 부모가 심각한 설사 증상을 경미하게 오인하여 진료를 지연할 가능성이 있습니다.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "NOT_APPLICABLE",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "NOT_APPLICABLE",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "PASS",
+    "treatment_claim_uncertainty": "PASS",
+    "simultaneous_and_alternating_antipyretics": "NOT_APPLICABLE",
+    "infant_feeding_and_formula": "NOT_APPLICABLE",
+    "medicine_storage_and_restart": "PASS",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "NOT_APPLICABLE"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "When can you safely stop a child's medicine after symptoms improve?",
+      "speech_complete": true,
+      "visible_caption_transcript": "When can you safely stop a child's medicine after symptoms improve?",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 정확하고 명확합니다."
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:06",
+      "spoken_transcript": "Foributin Dry Syrup helps regulate the digestive tract's movement.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Foributin Dry Syrup helps regulate the digestive tract's movement.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 정확하고 명확합니다."
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:12",
+      "spoken_transcript": "Feeling better is a good sign, but careful observation is still key.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Feeling better is a good sign, but careful observation is still key.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 정확하고 명확합니다."
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:18",
+      "spoken_transcript": "It gently guides the natural rhythmic contractions of the intestines.",
+      "speech_complete": true,
+      "visible_caption_transcript": "It gently guides the natural rhythmic contractions of the intestines.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 정확하고 명확합니다."
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:24",
+      "spoken_transcript": "Even if symptoms improve, ask the prescriber or pharmacist before stopping the prescribed medicine.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Even if symptoms improve, ask the prescriber or pharmacist before stopping the prescribed medicine.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 정확하고 명확합니다."
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:30",
+      "spoken_transcript": "Normal stools and no pain do not replace checking the remaining treatment plan with your clinician.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Normal stools and no pain do not replace checking the remaining treatment plan with your clinician.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 정확하고 명확합니다."
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:36",
+      "spoken_transcript": "If pain or diarrhea returns, do not restart the medicine on your own; contact your clinician.",
+      "speech_complete": true,
+      "visible_caption_transcript": "If pain or diarrhea returns, do not restart the medicine on your own; contact your clinician.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 정확하고 명확합니다."
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:42",
+      "spoken_transcript": "Administer liquid medicine safely using a purpose-made dosing cup.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Administer liquid medicine safely using a purpose-made dosing cup.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 정확하고 명확하며, 약물 투여 방식이 안전하게 묘사되었습니다."
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:48",
+      "spoken_transcript": "Seek care for worsening pain, repeated vomiting, bloody stool, or dehydration. Three loose stools alone are not an emergency.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Seek care for worsening pain, repeated vomiting, bloody stool, or dehydration. Three loose stools alone are not an emergency.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": false,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션의 내용은 일치하나, 'Three loose stools alone are not an emergency'라는 문구가 원문의 '하루 3회 이상 묽은 설사를 반복하는 경우'와 같은 긴급 상황 기준과 혼동될 수 있어 임상적 구분이 명확하지 않습니다. 이는 부모가 심각한 설사 증상을 경미하게 오인하여 진료를 지연할 위험이 있습니다."
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:55",
+      "spoken_transcript": "Monitor your child closely and consult your pediatrician with any concerns.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Monitor your child closely and consult your pediatrician with any concerns.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 정확하고 명확합니다."
+    }
+  ],
+  "medication_route_review": [
+    {
+      "timestamp": "00:42",
+      "depicted_item": "liquid medicine",
+      "depicted_route": "oral (sipped from cup)",
+      "intended_route": "oral (liquid medicine)",
+      "is_error": false,
+      "reason_ko": "액체 약물이 목적에 맞는 투약 컵을 사용하여 안전하게 투여되는 것으로 묘사되었습니다.",
+      "confidence": 1.0
+    }
+  ],
+  "issues": [
+    {
+      "severity": "medium",
+      "category": "CLINICAL_DISTINCTION_MISSING",
+      "timestamp": "00:48",
+      "scene": 9,
+      "evidence": "Spoken audio and visible caption: 'Three loose stools alone are not an emergency.'",
+      "problem_ko": "원문에서는 '하루 3회 이상 묽은 설사를 반복하는 경우'를 지체 없이 소아과 의사에게 진료를 받아야 하는 긴급 상황으로 명시하고 있습니다. 영상의 'Three loose stools alone are not an emergency'라는 문구는 '묽은 설사'와 '무른 변'의 구분을 모호하게 하여, 부모가 심각한 설사 증상을 경미하게 오인하고 진료를 지연할 위험이 있습니다.",
+      "source_comparison_ko": "원문은 '하루 3회 이상 묽은 설사를 반복하는 경우'를 즉시 진료가 필요한 기준으로 제시합니다. 영상은 '무른 변'에 대한 일반적인 진술을 하여, 원문의 긴급한 '묽은 설사' 기준과 혼동될 수 있습니다.",
+      "recommended_fix_ko": "캡션과 음성에서 'Three loose stools alone are not an emergency' 대신, 원문의 의미를 살려 'Three loose stools alone are not necessarily an emergency, but seek care for repeated watery diarrhea 3 or more times a day'와 같이 구체적인 긴급 상황 기준을 명확히 언급해야 합니다. 또는 'Three loose stools alone are not an emergency, but consult your clinician if diarrhea is watery or frequent (3 or more times a day)'와 같이 수정하여 임상적 구분을 명확히 해야 합니다.",
+      "confidence": 0.9
+    }
+  ],
+  "review_summary_ko": "전반적으로 영상은 장염약 중단 시기와 관련하여 유용한 정보를 제공하며, 약물 투여 방식도 안전하게 묘사되었습니다. 그러나 9번 장면에서 '무른 변'과 '묽은 설사'에 대한 임상적 구분이 명확하지 않아, 원문에서 제시하는 긴급한 '하루 3회 이상 묽은 설사' 상황을 부모가 경미하게 오인할 수 있는 위험이 있습니다. 이로 인해 적절한 시기에 의료적 도움을 요청하는 것이 지연될 가능성이 있어 수정이 필요합니다.",
+  "requires_human_medical_review": true,
+  "limitations_ko": [],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-enteritis-medicine-stop/en/baby-enteritis-medicine-stop_EN.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-enteritis-medicine-stop/en/production.snapshot.json",
+    "audited_at": "2026-09-22T06:49:25.009721+00:00",
+    "video_sha256": "364d8ae1d59b71cff6b47bcece6ce0ddfeb3db24cf49c45683f948d73be60d3a",
+    "snapshot_sha256": "70ecb540a368c98e3421e5cab990c5125057d7ad1c6f42adb45c4bbe102148e9",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 20,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "364d8ae1d59b71cff6b47bcece6ce0ddfeb3db24cf49c45683f948d73be60d3a",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 1,
+          "checks": [
+            "MEDICINE_STOP_RESTART"
+          ]
+        },
+        {
+          "scene": 3,
+          "checks": [
+            "MEDICINE_STOP_RESTART"
+          ]
+        },
+        {
+          "scene": 4,
+          "checks": [
+            "POWDER_MEDICINE_STORAGE"
+          ]
+        },
+        {
+          "scene": 5,
+          "checks": [
+            "MEDICINE_STOP_RESTART"
+          ]
+        },
+        {
+          "scene": 7,
+          "checks": [
+            "MEDICINE_STOP_RESTART"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "DEHYDRATION_OR_POOR_INTAKE",
+            "DRUG_SPECIFIC_REDOSING",
+            "EMERGENCY_LOCALE"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [],
+      "srt_number_tokens": [],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 4.8,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 5.0,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 5.48,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 5.12,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 7.0,
+          "timeline_seconds": 6,
+          "speed_factor": 1.1667,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 7.08,
+          "timeline_seconds": 6,
+          "speed_factor": 1.18,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 6.8,
+          "timeline_seconds": 6,
+          "speed_factor": 1.1333,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 5.28,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 10.28,
+          "timeline_seconds": 7,
+          "speed_factor": 1.4686,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 5.56,
+          "timeline_seconds": 5,
+          "speed_factor": 1.112,
+          "requires_close_listen": false
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

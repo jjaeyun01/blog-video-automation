@@ -1,0 +1,444 @@
+{
+  "schema_version": 1,
+  "slug": "persistent-nasal-congestion-reassessment",
+  "title": "Congestión Nasal Persistente: Más Allá de los Antibióticos",
+  "source": "https://www.fevercoach.us/ko/post/부비동염-완치-후-코막힘-항생제",
+  "language": "es",
+  "character_image": null,
+  "aspect_ratio": "9:16",
+  "resolution": "720p",
+  "fps": 30,
+  "disclaimer": "Este contenido es solo para fines informativos y no constituye asesoramiento médico. Siempre consulte a un profesional de la salud calificado antes de tomar cualquier decisión relacionada con la salud o el tratamiento.",
+  "metadata": {
+    "multilingual": true,
+    "languages": [
+      "ko",
+      "en",
+      "es"
+    ],
+    "medical_facts": [
+      {
+        "claim": "If nasal congestion and sticky nasal discharge (transparent to white) persist for 3 months or more, without fever or cough, and symptoms recur despite multiple antibiotic changes, re-evaluating the cause is a priority.",
+        "numeric_values": [
+          "3 months"
+        ],
+        "safety_qualification": "without fever or cough, despite multiple antibiotic changes"
+      },
+      {
+        "claim": "Immediate medical evaluation is needed if a child experiences fever above 38°C, facial/periorbital swelling and pain, vision changes or severe headache, recurrent nosebleeds or severe unilateral nasal congestion, or severe sleep apnea/snoring.",
+        "numeric_values": [
+          "38°C"
+        ],
+        "safety_qualification": "any of these symptoms"
+      },
+      {
+        "claim": "Saline nasal irrigation 2-3 times a day helps clear sticky secretions.",
+        "numeric_values": [
+          "2-3 times"
+        ],
+        "safety_qualification": "helps clear sticky secretions"
+      },
+      {
+        "claim": "Indoor humidity should be maintained at 40-60%, and bedding washed weekly at 60°C or higher.",
+        "numeric_values": [
+          "40-60%",
+          "weekly",
+          "60°C"
+        ],
+        "safety_qualification": "environmental management for allergic rhinitis"
+      },
+      {
+        "claim": "Antibiotics should be taken for the full prescribed duration to avoid resistance; consult a doctor before starting new antibiotics.",
+        "numeric_values": [],
+        "safety_qualification": "to avoid resistance, consult doctor before new antibiotics"
+      }
+    ],
+    "source_excerpt": "의학 감수:\n안상현, MD\n콘텐츠 편집:\n김명찬, MD\n이 게시물은 실제 의료 검토자의 질의응답 경험을 각색한 것입니다. 이 콘텐츠는 정보 제공 목적으로만 제공되며 의학적 조언을 구성하지 않습니다. 건강 관련 문제나 건강 또는 치료와 관련된 결정을 내리기 전에 항상 자격을 갖춘 의료 전문가와 상담하시기 바랍니다.\n질문:\n10월부터 코 증상이 있어서 부비동염(축농증) 진단을 받고 치료하여 엑스레이상으로는 깨끗해졌다는 완치 판정을 받았습니다. 그런데도 코 증상이 100% 낫지 않고 있습니다.\n소아청소년과와 이비인후과를 다니며 항생제를 여러 번 바꿔가며 처방받았는데, 나을 듯하면서도 코가 계속 막히고 그렁거리는 소리가 납니다. 열은 한 번도 나지 않았고 기침도 없습니다. 코를 풀면 색이 노랗지는 않은 끈적한 콧물이 나옵니다.\n궁금한 점은 4~5일 정도 약을 먹고 낫지 않으면 병원에서 계속 항생제를 바꿔주시는데, 완전히 나을 때까지 계속 항생제를 바꿔가며 먹어야 하는 건가요? 아니면 다른 추가 검사가 필요한 걸까요?\n답변:\n10월부터 이어진 코 증상으로 여러 치료를 받았음에도 완전히 낫지 않아 답답하고 걱정이 많으셨겠습니다.\n부비동염 치료 후 엑스레이상 호전되었음에도 코막힘과 끈적한 콧물(투명~흰색)이 3개월 이상 지속되고, 발열이나 기침이 없는 상태에서 여러 항생제 교체에도 증상이 반복되고 있다면, 현재 시점에서는 \"맞는 항생제를 계속 바꾸며 찾기\"보다는 \"왜 낫지 않는지 원인을 재평가\"하는 것이 우선입니다.\n현재 증상을 유발할 수 있는 다른 원인으로는 다음과 같은 것들을 고려해 볼 수 있습니다.\n알레르기 비염 동반: 집먼지진드기, 애완동물, 곰팡이 등에 의한 알레르기 반응\n아데노이드 비대: 코 뒤쪽 림프조직이 커져 분비물의 정상적인 배출을 방해하는 경우\n비용종(물혹) 또는 구조적 문제\n드물지만 면역 기능 저하 또는 섬모 운동 장애\n다음 병원 진료 시 주치의 선생님과 상의해 보실 내용:\n단순히 약만 교체하기보다는, 다음 진료 시 주치의 선생님과 아래의 내용들을 상의해 보시길 권장합니다.\n\"현재 시점에서 비내시경 검사나 알레르기 검사(혈액/피부반응)가 도움이 될까요?\"\n\"아데노이드 크기 확인이 필요한가요?\"\n\"항생제 외에 비강 스테로이드 스프레이나 항히스타민제 병용을 고려해 볼 수 있을까요?\"\n\"CT 등 추가 영상 검사가 필요한 상황인가요?\"\n이러한 상담을 거친 후, 필요하다면 소아 알레르기 전문의나 대학병원 소아이비인후과로의 진료 의뢰 및 협진을 단계적으로 고려해 볼 수 있습니다.\n가정에서 해주시면 좋은 관리법:\n생리식염수 비강 세척: 하루 2~3회 시행하여 끈적한 분비물이 원활하게 배출되도록 돕습니다.\n환경 관리: 실내 습도는 40~60%로 유지하고, 침구류는 주 1회 60도 이상의 온수로 세탁해 주세요.\n증상 일지 작성: 하루 중 언제 증상이 심해지는지, 특정 장소나 활동과의 연관성이 있는지, 콧물의 색깔과 양은 어떤지 기록해 두시면 진료에 큰 도움이 됩니다.\n항생제 복용 주의: 현재 처방받은 항생제는 임의로 중단하면 내성 위험이 있으므로 처방된 기간 끝까지 복용하셔야 합니다. 단, 새로운 항생제를 다시 시작하기 전에는 반드시 위에서 말씀드린 내용들에 대해 의사 선생님과 먼저 상의하시기 바랍니다.\n주의 신호 (즉시 병원 진료가 필요한 경우):\n만약 다음 중 하나라도 나타난다면 당일 즉시 병원을 방문하여 평가를 받아야 합니다.\n38도 이상의 발열이 동반될 때\n얼굴이나 눈 주위의 부기 및 통증이 발생할 때\n시력 변화나 심한 두통이 있을 때\n코피가 반복되거나 한쪽 코만 막힘이 심해질 때\n수면 중 무호흡이나 코골이가 심해질 때\n증상 일지 작성을 시작해 보시고, 다음 진료 시 주치의 선생님과 꼭 증상의 근본적인 원인을 좁혀가는 상담을 진행해 보시기를 권해드립니다.\n아이의 건강을 모니터링할 때 더 명확한 안내와 안심을 위해, FeverCoach 앱이 항상 도움을 드립니다.\nfevercoach.us\nApple App Store\nGoogle Play\n🌐 다른 언어로 보기:\nEnglish\n·\nEspañol",
+    "visual_system": "fevercoach-explainer-v3",
+    "character_mode": "automatic",
+    "character_concept": {
+      "subject": "mucus droplet",
+      "source_basis": "the article frequently mentions 'sticky nasal discharge' as a persistent symptom, even when X-rays are clear, making it a central, tangible manifestation of the problem.",
+      "visual_identity": "a smooth, slightly translucent, teardrop-shaped droplet with a subtle sheen, suggesting viscosity, and an expressive anthropomorphic face.",
+      "primary_color": "pale, translucent blue",
+      "surface_texture": "smooth, viscous, slightly gelatinous"
+    }
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "title": "Congestión Nasal por Más de 3 Meses",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Si la secreción nasal pegajosa persiste 3 meses sin fiebre ni tos, reevalúe.",
+      "subtitle": "Si la secreción nasal pegajosa persiste 3 meses sin fiebre ni tos, reevalúe.",
+      "prompt": "A macro dive into a child's nostril, showing a partially blocked nasal passage. Camera continues to push deeper, revealing thick, clear-to-white sticky mucus obstructing the passage, with subtle pulsing motion. The mucus remains stationary while the camera moves. Polished semi-stylized 3D medical visualization. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "red_flag",
+      "medical_claim": "Sticky nasal discharge persisting for 3 months without fever or cough warrants re-evaluation.",
+      "asset_prompt": "A close-up, clean, semi-stylized 3D rendering of a child's nasal passage, partially blocked by thick, clear-to-white sticky mucus. No text, numbers, or labels. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [
+        {
+          "type": "label",
+          "from": [
+            0.25,
+            0.35
+          ],
+          "to": [
+            0.75,
+            0.35
+          ],
+          "label_position": [
+            0.5,
+            0.25
+          ],
+          "color": "#E5482F",
+          "text": "3 meses"
+        }
+      ],
+      "caption_chunks": [
+        "Si la secreción nasal pegajosa persiste 3 meses",
+        "sin fiebre ni tos, reevalúe."
+      ],
+      "narrative_role": "hook",
+      "shot_design": {
+        "camera_profile": "macro_dive",
+        "beat_one": "0.0-1.5 second slow macro dive into a child's nostril, showing a partially blocked nasal passage.",
+        "beat_two": "1.5-4.5 second camera continues to push deeper, revealing thick, clear-to-white sticky mucus obstructing the passage, with subtle pulsing motion.",
+        "payoff_frame": "4.5-6.0 second hold on the sticky mucus, emphasizing the persistent blockage.",
+        "depth_layers": "clear foreground of nostril hairs, midground of mucus blockage, blurred background of the nasal cavity.",
+        "overlay_safe_zone": "upper right quadrant, clear of anatomical features.",
+        "sound_cues": "subtle, wet squishing sound, gentle, muffled breathing.",
+        "transition_out": "camera slowly pulls back slightly, then fades to black."
+      }
+    },
+    {
+      "index": 2,
+      "title": "Causas Ocultas de la Congestión Nasal",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "La congestión nasal puede tener varias causas, no solo infecciones de los senos paranasales.",
+      "subtitle": "La congestión nasal puede tener varias causas, no solo infecciones de los senos paranasales.",
+      "prompt": "An x-ray push into a child's head, revealing the nasal cavity and surrounding sinuses. Camera gently pans to highlight the interconnected sinus passages. A pale blue, anthropomorphic mucus droplet character looks confused and wiggles slightly, stuck within one sinus cavity. The head and sinuses remain stationary. Polished semi-stylized 3D medical visualization. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "location",
+      "medical_claim": "Persistent symptoms may be due to other causes like enlarged adenoids, nasal polyps, or allergic rhinitis, affecting the nasal cavity and sinuses.",
+      "asset_prompt": "A clean, semi-stylized 3D medical visualization of a child's head in an x-ray view, showing the nasal cavity and interconnected paranasal sinuses. A pale blue, anthropomorphic mucus droplet character is visible, looking stuck and confused within one of the sinus cavities. No text, numbers, or labels. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "La congestión nasal puede tener varias causas,",
+        "no solo infecciones de los senos paranasales."
+      ],
+      "narrative_role": "context",
+      "shot_design": {
+        "camera_profile": "xray_push",
+        "beat_one": "0.0-1.5 second slow x-ray push into a child's head, revealing the nasal cavity and surrounding sinuses.",
+        "beat_two": "1.5-4.5 second camera gently pans to highlight the interconnected sinus passages, with the mucus droplet character looking confused and stuck within one sinus cavity.",
+        "payoff_frame": "4.5-6.0 second hold on the character stuck in a sinus, emphasizing the internal location of the problem.",
+        "depth_layers": "foreground of translucent facial bone, midground of nasal cavity and sinuses, background of brain outline.",
+        "overlay_safe_zone": "upper left quadrant, clear of anatomical features.",
+        "sound_cues": "soft, resonant hum, gentle 'squish' as character wiggles.",
+        "transition_out": "camera slowly pulls back, then a quick, clean cut to the next scene."
+      }
+    },
+    {
+      "index": 3,
+      "title": "Cambiar Antibióticos No Es la Solución",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Cambiar antibióticos continuamente podría no resolver el problema subyacente.",
+      "subtitle": "Cambiar antibióticos continuamente podría no resolver el problema subyacente.",
+      "prompt": "A top-down view of a hand placing various unlabeled medicine bottles onto a surface. The hand repeatedly swaps out different bottles. A pale blue, anthropomorphic mucus droplet character watches from the side, looking increasingly frustrated and unchanged. The bottles and surface remain stationary. Polished semi-stylized 3D medical visualization. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "comparison",
+      "medical_claim": "Continuously changing antibiotics without re-evaluating the underlying cause may not resolve persistent symptoms.",
+      "asset_prompt": "A clean, semi-stylized 3D rendering from a top-down perspective, showing several distinct, unlabeled medicine bottles on a sterile white surface. A pale blue, anthropomorphic mucus droplet character is observing from the edge of the frame, looking frustrated. No text, numbers, or labels. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "Cambiar antibióticos continuamente",
+        "podría no resolver el problema subyacente."
+      ],
+      "narrative_role": "misconception",
+      "shot_design": {
+        "camera_profile": "top_down_drop",
+        "beat_one": "0.0-1.5 second top-down view of a hand placing various unlabeled medicine bottles onto a surface.",
+        "beat_two": "1.5-4.5 second the hand repeatedly swaps out different bottles, while the mucus droplet character watches from the side, looking increasingly frustrated and unchanged.",
+        "payoff_frame": "4.5-6.0 second hold on the collection of different, unlabeled medicine bottles, with the character still looking frustrated, emphasizing the lack of progress.",
+        "depth_layers": "foreground of hand, midground of medicine bottles, background of a clean, sterile surface.",
+        "overlay_safe_zone": "upper right quadrant, clear of objects.",
+        "sound_cues": "soft clinking of bottles, a frustrated sigh from the character.",
+        "transition_out": "camera quickly zooms out and cuts to the next scene."
+      }
+    },
+    {
+      "index": 4,
+      "title": "Problemas Estructurales como Adenoides Grandes",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Adenoides grandes o pólipos nasales pueden bloquear físicamente las vías nasales.",
+      "subtitle": "Adenoides grandes o pólipos nasales pueden bloquear físicamente las vías nasales.",
+      "prompt": "A POV travel through a normal, clear nasal passage. The camera then encounters a large, soft, pink adenoid tissue obstructing the posterior nasal cavity, slowly growing larger to emphasize its blockage. The nasal passage walls remain stationary. Polished semi-stylized 3D medical visualization. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "mechanism",
+      "medical_claim": "Persistent symptoms may be due to other causes like enlarged adenoids, nasal polyps, or allergic rhinitis, physically obstructing the nasal passage.",
+      "asset_prompt": "A clean, semi-stylized 3D medical visualization from a POV perspective, looking through a nasal passage towards an enlarged, soft, pink adenoid tissue obstructing the posterior nasal cavity. No text, numbers, or labels. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "Adenoides grandes o pólipos nasales",
+        "pueden bloquear físicamente las vías nasales."
+      ],
+      "narrative_role": "mechanism",
+      "shot_design": {
+        "camera_profile": "pov_travel",
+        "beat_one": "0.0-1.5 second POV travel through a normal, clear nasal passage.",
+        "beat_two": "1.5-4.5 second the camera then encounters a large, soft, pink adenoid tissue obstructing the posterior nasal cavity, slowly growing larger to emphasize its blockage.",
+        "payoff_frame": "4.5-6.0 second hold on the enlarged adenoid, clearly blocking the passage.",
+        "depth_layers": "foreground of nasal passage walls, midground of the adenoid obstruction, blurred background of the throat.",
+        "overlay_safe_zone": "upper left quadrant, clear of anatomical features.",
+        "sound_cues": "soft, muffled breathing, a gentle 'thump' as the obstruction becomes clear.",
+        "transition_out": "camera pulls back quickly, then fades to black."
+      }
+    },
+    {
+      "index": 5,
+      "title": "Síntomas que Duran Más de 3 Meses",
+      "mode": "i2v",
+      "timeline_seconds": 5,
+      "generation_seconds": 6,
+      "narration": "La congestión que dura más de 3 meses es una señal clave para buscar otras causas.",
+      "subtitle": "La congestión que dura más de 3 meses es una señal clave para buscar otras causas.",
+      "prompt": "A parallax arc around a simple, blank calendar. The calendar pages subtly turn forward, showing three months passing, with a soft glow highlighting the progression. The calendar remains stationary. Polished semi-stylized 3D medical visualization. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "quantity",
+      "medical_claim": "Congestion lasting more than 3 months is an important signal to investigate other causes.",
+      "asset_prompt": "A clean, semi-stylized 3D rendering of a simple, blank desk calendar, showing a month. No text, numbers, or labels on the calendar. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [
+        {
+          "type": "label",
+          "from": [
+            0.25,
+            0.35
+          ],
+          "to": [
+            0.75,
+            0.35
+          ],
+          "label_position": [
+            0.5,
+            0.25
+          ],
+          "color": "#E5482F",
+          "text": "3 meses"
+        }
+      ],
+      "caption_chunks": [
+        "La congestión que dura más de 3 meses",
+        "es una señal clave para buscar otras causas."
+      ],
+      "narrative_role": "evidence",
+      "shot_design": {
+        "camera_profile": "parallax_arc",
+        "beat_one": "0.0-1.5 second parallax arc around a simple, blank calendar, establishing its presence.",
+        "beat_two": "1.5-4.5 second the calendar pages subtly turn forward, showing three months passing, with a soft glow highlighting the progression.",
+        "payoff_frame": "4.5-6.0 second hold on the calendar, clearly showing the passage of three months, with the final month highlighted.",
+        "depth_layers": "foreground of blurred desk edge, midground of the calendar, background of a soft, out-of-focus room.",
+        "overlay_safe_zone": "upper center, clear of the calendar.",
+        "sound_cues": "soft rustling of pages, a gentle 'tick-tock' sound.",
+        "transition_out": "camera slowly pulls back, then a clean cut."
+      }
+    },
+    {
+      "index": 6,
+      "title": "Priorice Reevaluar la Causa",
+      "mode": "i2v",
+      "timeline_seconds": 5,
+      "generation_seconds": 6,
+      "narration": "Reevaluar la causa raíz es más importante que solo cambiar antibióticos.",
+      "subtitle": "Reevaluar la causa raíz es más importante que solo cambiar antibióticos.",
+      "prompt": "A comparison track shot showing two diverging paths on a clean, sterile floor. A pale blue, anthropomorphic mucus droplet character stands at the divergence, looking thoughtfully. The character then slowly turns towards the path associated with investigation. The paths and floor remain stationary. Polished semi-stylized 3D medical visualization. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "comparison",
+      "medical_claim": "Prioritize re-evaluating the cause rather than continuously changing antibiotics.",
+      "asset_prompt": "A clean, semi-stylized 3D rendering of two diverging paths on a sterile floor. A pale blue, anthropomorphic mucus droplet character stands at the divergence, looking thoughtful. One path is subtly associated with medicine bottles, the other with a magnifying glass. No text, numbers, or labels. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "Reevaluar la causa raíz es",
+        "más importante que solo cambiar antibióticos."
+      ],
+      "narrative_role": "decision",
+      "shot_design": {
+        "camera_profile": "comparison_track",
+        "beat_one": "0.0-1.5 second comparison track shot showing two diverging paths on a clean, sterile floor.",
+        "beat_two": "1.5-4.5 second the mucus droplet character stands at the divergence, looking thoughtfully at one path labeled an unmarked surface (implied by previous scenean unmarked surfaceRe-evaluate Causean unmarked surfaceRe-evaluate Cause' path.",
+        "payoff_frame": "4.5-6.0 second hold on the character facing the an unmarked surface path, emphasizing the decision.",
+        "depth_layers": "foreground of floor texture, midground of the diverging paths and character, background of a softly lit, ambiguous medical setting.",
+        "overlay_safe_zone": "upper center, clear of paths and character.",
+        "sound_cues": "a soft 'whoosh' as the character turns, gentle footsteps.",
+        "transition_out": "camera follows the chosen path, then cuts."
+      }
+    },
+    {
+      "index": 7,
+      "title": "Considere Pruebas Adicionales",
+      "mode": "i2v",
+      "timeline_seconds": 7,
+      "generation_seconds": 6,
+      "narration": "Si persiste la congestión, consulte sobre una evaluación dirigida. La tomografía no es necesaria de rutina para todos los niños.",
+      "subtitle": "Si persiste la congestión, consulte sobre una evaluación dirigida. La tomografía no es necesaria de rutina para todos los niños.",
+      "prompt": "A lateral reveal of a clean, stylized nasal endoscope. The endoscope smoothly slides off-screen, revealing a blood test tube, which then slides off to reveal a blank CT scan image. The medical tools slide horizontally across the frame. Polished semi-stylized 3D medical visualization. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "sequence",
+      "medical_claim": "Si persiste la congestión, consulte sobre una evaluación dirigida. La tomografía no es necesaria de rutina para todos los niños.",
+      "asset_prompt": "A clean, semi-stylized 3D rendering of a stylized nasal endoscope on a sterile surface. No text, numbers, or labels. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "Si persiste la congestión, consulte sobre una evaluación dirigida. La tomografía no es necesaria de rutina para todos los niños."
+      ],
+      "narrative_role": "reassessment",
+      "shot_design": {
+        "camera_profile": "lateral_reveal",
+        "beat_one": "0.0-1.5 second lateral reveal of a clean, stylized nasal endoscope.",
+        "beat_two": "1.5-4.5 second the endoscope smoothly slides off-screen, revealing a blood test tube, which then slides off to reveal a CT scan image (blank screen).",
+        "payoff_frame": "4.5-6.0 second hold on the blank CT scan image, representing advanced imaging.",
+        "depth_layers": "foreground of medical tools, midground of a sterile surface, background of a softly lit medical room.",
+        "overlay_safe_zone": "upper right quadrant, clear of medical tools.",
+        "sound_cues": "soft mechanical whir, gentle 'clink' of glass, a subtle 'beep' sound.",
+        "transition_out": "camera pulls back, then a clean cut."
+      }
+    },
+    {
+      "index": 8,
+      "title": "Lavado Nasal con Solución Salina",
+      "mode": "i2v",
+      "timeline_seconds": 8,
+      "generation_seconds": 6,
+      "narration": "El lavado nasal con solución salina 2-3 veces al día limpia secreción pegajosa, usando agua estéril o hervida y enfriada, y equipo limpio.",
+      "subtitle": "El lavado nasal con solución salina 2-3 veces al día limpia secreción pegajosa, usando agua estéril o hervida y enfriada, y equipo limpio.",
+      "prompt": "A top-down view of a childa completely blank and unmarked surfaces head and sink remain stationary. Polished semi-stylized 3D medical visualization. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks. FINAL QA REPAIR: Show age-appropriate gentle nasal saline care with the child upright and head neutral. Do not tilt the head far backward or force liquid into the nostril. Show age-appropriate gentle nasal saline care with the child upright and head neutral, leaning forward over a sink. Do not tilt the head far backward or force liquid into the nostril. Ensure the saline solution is prepared with sterile, distilled, or previously boiled and cooled water, and the device is clean. Show age-appropriate gentle nasal saline care with the child upright and head neutral, leaning forward over a sink. The saline solution should be prepared with sterile or boiled and cooled water. Ensure the nasal irrigation device appears clean and well-maintained. Do not tilt the head far backward or force liquid into the nostril. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "sequence",
+      "medical_claim": "Saline nasal irrigation 2-3 times a day helps clear sticky secretions, using sterile or boiled and cooled water and clean equipment.",
+      "asset_prompt": "A clean, semi-stylized 3D rendering from a top-down perspective, showing a child's head tilted over a sink. A hand holds a nasal irrigation bottle, ready to administer saline. No text, numbers, or labels on the bottle. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks. FINAL QA REPAIR: Show age-appropriate gentle nasal saline care with the child upright and head neutral. Do not tilt the head far backward or force liquid into the nostril. Show age-appropriate gentle nasal saline care with the child upright and head neutral, leaning forward over a sink. Do not tilt the head far backward or force liquid into the nostril. Ensure the saline solution is prepared with sterile, distilled, or previously boiled and cooled water, and the device is clean. Show age-appropriate gentle nasal saline care with the child upright and head neutral, leaning forward over a sink. The saline solution should be prepared with sterile or boiled and cooled water. Ensure the nasal irrigation device appears clean and well-maintained. Do not tilt the head far backward or force liquid into the nostril. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "El lavado nasal con solución salina",
+        "2-3 veces al día limpia secreción pegajosa,",
+        "usando agua estéril o hervida y enfriada, y equipo limpio."
+      ],
+      "narrative_role": "action",
+      "shot_design": {
+        "camera_profile": "top_down_drop",
+        "beat_one": "0.0-1.5 second top-down view of a child's head, tilted slightly over a sink.",
+        "beat_two": "1.5-4.5 second a hand gently introduces a saline solution from a nasal irrigation bottle into one nostril, showing the clear solution flowing through the nasal passage and out the other nostril into the sink.",
+        "payoff_frame": "4.5-6.0 second hold on the clear saline solution flowing, emphasizing the cleansing action.",
+        "depth_layers": "foreground of sink basin, midground of child's head and hand, background of bathroom wall.",
+        "overlay_safe_zone": "upper left quadrant, clear of the child's face.",
+        "sound_cues": "gentle splashing of water, soft, rhythmic breathing.",
+        "transition_out": "camera pulls back, then fades to black."
+      }
+    },
+    {
+      "index": 9,
+      "title": "Cuándo Buscar Atención Inmediata",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Urgencias por fiebre mayor de 38°C, hinchazón facial, dolor o cambios visuales.",
+      "subtitle": "Urgencias por fiebre mayor de 38°C, hinchazón facial, dolor o cambios visuales.",
+      "prompt": "A hero pullback from a childa completely blank and unmarked surfaces forehead, while the swelling around the eye becomes more pronounced. The child's head and thermometer remain stationary. Polished semi-stylized 3D medical visualization. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "red_flag",
+      "medical_claim": "Fever above 38°C, facial swelling, vision changes, or pain require prompt medical attention.",
+      "asset_prompt": "A clean, semi-stylized 3D rendering of a child's face with subtle swelling around one eye. A blank digital thermometer is held near the forehead. No text, numbers, or labels on the thermometer. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [
+        {
+          "type": "label",
+          "from": [
+            0.25,
+            0.35
+          ],
+          "to": [
+            0.75,
+            0.35
+          ],
+          "label_position": [
+            0.5,
+            0.25
+          ],
+          "color": "#E5482F",
+          "text": "38°C"
+        }
+      ],
+      "caption_chunks": [
+        "Urgencias por fiebre mayor de 38°C,",
+        "hinchazón facial, dolor o cambios visuales."
+      ],
+      "narrative_role": "red_flag",
+      "shot_design": {
+        "camera_profile": "hero_pullback",
+        "beat_one": "0.0-1.5 second hero pullback from a child's face, showing subtle swelling around one eye.",
+        "beat_two": "1.5-4.5 second the camera continues to pull back, revealing a digital thermometer (blank screen) held near the child's forehead, while the swelling around the eye becomes more pronounced.",
+        "payoff_frame": "4.5-6.0 second hold on the child's face with noticeable periorbital swelling, and the blank thermometer visible.",
+        "depth_layers": "foreground of childan unmarked surfaces face and thermometer, background of a softly blurred room.",
+        "overlay_safe_zone": "upper right quadrant, clear of the child's face and thermometer.",
+        "sound_cues": "a soft, concerned sigh, a gentle 'beep' from the thermometer.",
+        "transition_out": "quick, urgent cut to black."
+      }
+    },
+    {
+      "index": 10,
+      "title": "Consulte a Su Pediatra",
+      "mode": "i2v",
+      "timeline_seconds": 5,
+      "generation_seconds": 6,
+      "narration": "Para congestión persistente, consulte a su pediatra para encontrar la causa subyacente.",
+      "subtitle": "Para congestión persistente, consulte a su pediatra para encontrar la causa subyacente.",
+      "prompt": "A parallax arc around a now clear and open nasal passage. A pale blue, anthropomorphic mucus droplet character, now looking relieved and happy, floats freely within the clear passage, performing a small, joyful spin. The nasal passage remains stationary. Polished semi-stylized 3D medical visualization. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "hook",
+      "medical_claim": "Consult a pediatrician to discuss the fundamental cause of persistent symptoms and consider a symptom diary.",
+      "asset_prompt": "A clean, semi-stylized 3D medical visualization of a clear and open nasal passage. A pale blue, anthropomorphic mucus droplet character is floating happily within the passage. No text, numbers, or labels. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "Para congestión persistente,",
+        "consulte a su pediatra para",
+        "encontrar la causa subyacente."
+      ],
+      "narrative_role": "takeaway",
+      "shot_design": {
+        "camera_profile": "parallax_arc",
+        "beat_one": "0.0-1.5 second parallax arc around a now clear and open nasal passage.",
+        "beat_two": "1.5-4.5 second the mucus droplet character, now looking relieved and happy, floats freely within the clear passage, performing a small, joyful spin.",
+        "payoff_frame": "4.5-6.0 second hold on the happy character in the clear nasal passage, symbolizing resolution and well-being.",
+        "depth_layers": "foreground of clear nasal passage walls, midground of the character, background of a softly lit, healthy internal space.",
+        "overlay_safe_zone": "upper right quadrant, clear of the character.",
+        "sound_cues": "a soft, happy 'pop' sound, gentle, clear breathing.",
+        "transition_out": "camera slowly pulls back to reveal a wider, healthy view, then fades to black."
+      }
+    }
+  ]
+}

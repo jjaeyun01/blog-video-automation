@@ -1,0 +1,97 @@
+{
+  "repairs": [
+    {
+      "scene": 5,
+      "corrected_medical_claim": "Seek immediate medical attention if an infant is lethargic, barely eating, or refuses feeding for over 12 hours.",
+      "corrected_narration": "Si su bebé está letárgico, apenas come o rechaza la fórmula por más de doce horas, busque ayuda médica de inmediato.",
+      "caption_chunks": [
+        "Si su bebé está letárgico, apenas come",
+        "o rechaza la fórmula por más de doce horas,",
+        "busque ayuda médica de inmediato."
+      ],
+      "replace_overlays": false,
+      "overlays": [
+        {
+          "type": "label",
+          "text": "12 horas",
+          "color": "#E5482F",
+          "from": [
+            0.5,
+            0.18
+          ],
+          "to": [
+            0.5,
+            0.18
+          ],
+          "position": [
+            -1,
+            -1
+          ],
+          "label_position": [
+            0.5,
+            0.18
+          ]
+        }
+      ],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "어린 영아가 거의 먹지 못하거나 처지는 경우 12시간을 기다리지 않고 더 일찍 진료를 받도록 수정했습니다. 12시간 수유 거부도 여전히 중요한 진료 기준이므로 함께 제시합니다."
+    },
+    {
+      "scene": 6,
+      "corrected_medical_claim": "To encourage feeding during illness, offer small, frequent amounts of formula (e.g., 30-50ml every 30 minutes), tailored to the infant's acceptance.",
+      "corrected_narration": "En lugar de tomas grandes, ofrezca pequeñas cantidades de fórmula con frecuencia, por ejemplo, 30 a 50 mililitros cada 30 minutos, según la aceptación de su bebé.",
+      "caption_chunks": [
+        "En lugar de tomas grandes,",
+        "ofrezca pequeñas cantidades de fórmula con frecuencia,",
+        "por ejemplo, 30 a 50 mililitros cada 30 minutos,",
+        "según la aceptación de su bebé."
+      ],
+      "replace_overlays": true,
+      "overlays": [
+        {
+          "type": "label",
+          "text": "Tomas pequeñas y frecuentes",
+          "color": "#E5482F",
+          "from": [
+            0.5,
+            0.18
+          ],
+          "to": [
+            0.5,
+            0.18
+          ],
+          "position": [
+            -1,
+            -1
+          ],
+          "label_position": [
+            0.5,
+            0.18
+          ]
+        }
+      ],
+      "regenerate_visual": true,
+      "visual_prompt_addendum": "Ensure the visual depicts a caregiver offering small, frequent amounts of formula using an open-rimmed purpose-made dosing cup or a baby bottle, and explicitly avoid any syringes.",
+      "reason_ko": "30-50ml씩 30분마다 수유하는 것이 모든 월령의 영아에게 고정된 기준이 아니라, 아기의 수용도에 맞춰 소량씩 자주 수유하는 것이 중요함을 강조하도록 수정했습니다. 또한, 구강 투여용 주사기 사용을 금지하고 계량컵이나 젖병을 사용하도록 시각적 지시를 추가했습니다."
+    }
+  ],
+  "video_id": "baby-formula-refusal-cold.es",
+  "model": "gemini-2.5-flash",
+  "source_issues": [
+    {
+      "scene": 5,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초: 월령 구분 없이 '12시간 이상 수유 거부 시 진료'를 기준으로 제시하면, 어린 영아가 거의 먹지 못하는 상황을 너무 오래 관찰하게 할 수 있습니다. 어린 월령·평소 대비 섭취 감소·소변·활동성을 함께 보며 거의 못 먹거나 처지면 더 일찍 진료하도록 수정해 주세요. 추가 노트: 8시간 무뇨 등 이미 포함된 탈수 경고는 유지해 주세요. 30~50mL씩 30분마다도 모든 월령의 영아에게 고정 적용하기보다 평소 수유량과 받아먹는 정도에 맞춘 소량·빈번한 수유로 표현해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-13.mp4"
+    },
+    {
+      "scene": 6,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초: 월령 구분 없이 '12시간 이상 수유 거부 시 진료'를 기준으로 제시하면, 어린 영아가 거의 먹지 못하는 상황을 너무 오래 관찰하게 할 수 있습니다. 어린 월령·평소 대비 섭취 감소·소변·활동성을 함께 보며 거의 못 먹거나 처지면 더 일찍 진료하도록 수정해 주세요. 추가 노트: 8시간 무뇨 등 이미 포함된 탈수 경고는 유지해 주세요. 30~50mL씩 30분마다도 모든 월령의 영아에게 고정 적용하기보다 평소 수유량과 받아먹는 정도에 맞춘 소량·빈번한 수유로 표현해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-13.mp4"
+    }
+  ]
+}

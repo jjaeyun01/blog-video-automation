@@ -1,0 +1,10 @@
+{
+  "video_id": "pediatric-tamiflu-dosing-flexibility.es",
+  "finding_valid": false,
+  "safety_severity": "none",
+  "recommended_status": "PASS",
+  "rationale_ko": "영상의 \"다시 복용하기 전에 상담하라\"는 조언은 구토 후 약물 재복용에 대한 복잡하고 약물별로 다른 지침을 고려할 때 안전하고 보수적인 접근 방식입니다. 원문 출처의 \"1시간 이내 구토 시 즉시 재복용\" 지침은 오셀타미비르의 경우 30분 기준을 제시하는 신뢰할 수 있는 의학 정보(예: Medicines for Children)와 상충하며, 불필요한 재복용으로 이어질 수 있어 잠재적으로 안전하지 않다는 전문가 피드백이 있었습니다. 따라서 영상의 조언은 안전을 우선시하며, 원문 출처의 잠재적으로 안전하지 않은 지침을 따르지 않는 것이 적절합니다.",
+  "evidence_ko": "영상 스페인어 음성 및 자막: \"Si el niño vomita tras tomar oseltamivir, anote cuándo y cuánto, y consulte antes de repetir la dosis.\" (아이가 오셀타미비르 복용 후 구토하면, 언제 얼마나 토했는지 기록하고, 다시 복용하기 전에 상담하십시오.) 이는 약물 재복용에 대한 의학적 조언을 구하도록 권장하는 안전한 지침입니다.",
+  "model": "gemini-2.5-flash",
+  "first_audit_verdict": "WARN"
+}

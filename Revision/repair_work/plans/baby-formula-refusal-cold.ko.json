@@ -1,0 +1,52 @@
+{
+  "repairs": [
+    {
+      "scene": 5,
+      "corrected_medical_claim": "Seek immediate medical attention if an infant is lethargic, shows signs of dehydration like no urination for over 8 hours, or refuses feeding for over 12 hours.",
+      "corrected_narration": "아기가 평소보다 처지거나 8시간 이상 소변을 보지 못하는 등 탈수 증상을 보인다면, 12시간이 되지 않았더라도 즉시 진료를 받아야 합니다.",
+      "caption_chunks": [
+        "아기가 평소보다 처지거나",
+        "8시간 이상 소변을 보지 못하는 등 탈수 증상을 보인다면,",
+        "12시간이 되지 않았더라도 즉시 진료를 받아야 합니다."
+      ],
+      "replace_overlays": true,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "월령 구분 없이 '12시간 이상 수유 거부 시 진료'를 기준으로 제시하면 어린 영아가 거의 먹지 못하는 상황을 너무 오래 관찰하게 할 수 있다는 QA 피드백에 따라, 어린 월령·평소 대비 섭취 감소·소변·활동성을 함께 고려하여 거의 못 먹거나 처지면 더 일찍 진료하도록 수정했습니다. 기존의 '12시간' 오버레이는 이러한 수정된 내용과 맞지 않아 제거했습니다."
+    },
+    {
+      "scene": 6,
+      "corrected_medical_claim": "To encourage feeding during illness, offer small, frequent amounts tailored to the infant's usual intake and acceptance.",
+      "corrected_narration": "한 번에 많이 주기보다 아기가 받아먹는 정도에 맞춰 소량씩 자주 수유를 시도해 보세요.",
+      "caption_chunks": [
+        "한 번에 많이 주기보다",
+        "아기가 받아먹는 정도에 맞춰",
+        "소량씩 자주 수유를 시도해 보세요."
+      ],
+      "replace_overlays": true,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "30~50mL씩 30분마다의 고정된 수유 방식이 모든 월령의 영아에게 적용하기 어렵다는 QA 피드백에 따라, 평소 수유량과 받아먹는 정도에 맞춘 소량·빈번한 수유로 표현하도록 수정했습니다. 기존의 '30-50ml / 30분' 오버레이는 이러한 수정된 내용과 맞지 않아 제거했습니다."
+    }
+  ],
+  "video_id": "baby-formula-refusal-cold.ko",
+  "model": "gemini-2.5-flash",
+  "source_issues": [
+    {
+      "scene": 5,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초: 월령 구분 없이 '12시간 이상 수유 거부 시 진료'를 기준으로 제시하면, 어린 영아가 거의 먹지 못하는 상황을 너무 오래 관찰하게 할 수 있습니다. 어린 월령·평소 대비 섭취 감소·소변·활동성을 함께 보며 거의 못 먹거나 처지면 더 일찍 진료하도록 수정해 주세요. 추가 노트: 8시간 무뇨 등 이미 포함된 탈수 경고는 유지해 주세요. 30~50mL씩 30분마다도 모든 월령의 영아에게 고정 적용하기보다 평소 수유량과 받아먹는 정도에 맞춘 소량·빈번한 수유로 표현해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-13.mp4"
+    },
+    {
+      "scene": 6,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초: 월령 구분 없이 '12시간 이상 수유 거부 시 진료'를 기준으로 제시하면, 어린 영아가 거의 먹지 못하는 상황을 너무 오래 관찰하게 할 수 있습니다. 어린 월령·평소 대비 섭취 감소·소변·활동성을 함께 보며 거의 못 먹거나 처지면 더 일찍 진료하도록 수정해 주세요. 추가 노트: 8시간 무뇨 등 이미 포함된 탈수 경고는 유지해 주세요. 30~50mL씩 30분마다도 모든 월령의 영아에게 고정 적용하기보다 평소 수유량과 받아먹는 정도에 맞춘 소량·빈번한 수유로 표현해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-13.mp4"
+    }
+  ]
+}

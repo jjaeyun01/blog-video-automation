@@ -1,0 +1,10 @@
+{
+  "video_id": "baby-enteritis-medicine-stop.en",
+  "finding_valid": false,
+  "safety_severity": "none",
+  "recommended_status": "PASS",
+  "rationale_ko": "영상에서 'Three loose stools alone are not an emergency'라는 문구는 '하루 묽은 변 3회만으로 항상 응급상황이라는 인상도 피하라'는 인간 피드백과 'Three loose stools alone are not always an emergency'라는 판정된 규칙에 부합합니다. 영상은 또한 악화되는 통증, 반복적인 구토, 혈변 또는 탈수와 같은 더 심각한 응급 상황을 명확히 제시하고 있어, 경미한 증상에 대한 과도한 우려를 피하면서도 중요한 위험 신호에 대한 지침을 제공합니다. 따라서 이 특정 발견은 유효하지 않으며, 영상의 지침이 안전하지 않다고 판단할 근거가 없습니다.",
+  "evidence_ko": "영상의 'Three loose stools alone are not an emergency'라는 문구는 인간 피드백과 판정된 규칙에 따라 '무른 변 3회만으로는 항상 응급상황이 아님'을 명확히 합니다. 영상은 또한 '악화되는 통증, 반복적인 구토, 혈변 또는 탈수'와 같은 즉각적인 진료가 필요한 더 심각한 증상들을 명시하고 있습니다.",
+  "model": "gemini-2.5-flash",
+  "first_audit_verdict": "WARN"
+}

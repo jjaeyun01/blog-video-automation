@@ -1,0 +1,117 @@
+{
+  "repairs": [
+    {
+      "scene": 3,
+      "corrected_medical_claim": "고열 후 아이가 평소보다 길게 낮잠을 자면 몸이 회복하기 위한 자연스러운 과정일 수 있습니다. 다만, 평소와 달리 깨우기 어렵거나 반응이 떨어지면 시간과 관계없이 즉시 평가받아야 합니다.",
+      "corrected_narration": "After a fever, a child may sleep longer to recover. But if they are unusually hard to wake or less responsive, seek immediate assessment.",
+      "caption_chunks": [
+        "After a fever, a child may sleep longer to recover.",
+        "But if they are unusually hard to wake or less responsive, seek immediate assessment."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "수면 시간으로 정상 여부를 판단하는 대신, 평소와 달리 깨우기 어렵거나 반응이 떨어지는 경우 즉시 평가받도록 수정했습니다."
+    },
+    {
+      "scene": 5,
+      "corrected_medical_claim": "고열 후 아이가 평소보다 길게 낮잠을 자면 몸이 회복하기 위한 자연스러운 과정일 수 있습니다. 다만, 평소와 달리 깨우기 어렵거나 반응이 떨어지면 시간과 관계없이 즉시 평가받아야 합니다.",
+      "corrected_narration": "After a fever, a child may sleep longer. If they are unusually hard to wake or less responsive, gently rouse them to check their consciousness.",
+      "caption_chunks": [
+        "After a fever, a child may sleep longer.",
+        "If they are unusually hard to wake or less responsive,",
+        "gently rouse them to check their consciousness."
+      ],
+      "replace_overlays": true,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "수면 시간 기준을 제거하고, 평소와 달리 깨우기 어렵거나 반응이 떨어지는 경우에 초점을 맞춰 수정했습니다. 시간 관련 오버레이를 제거했습니다."
+    },
+    {
+      "scene": 6,
+      "corrected_medical_claim": "평소와 달리 깨우기 어렵거나 반응이 떨어지면 아이를 확실하게 깨워 의식을 확인하고, 탈수 예방을 위해 물이라도 조금씩 먹여보시는 것이 좋습니다. 물은 충분히 깨어 안전하게 삼킬 수 있을 때만 먹이도록 안내해야 합니다.",
+      "corrected_narration": "If your child is unusually hard to wake or less responsive, gently rouse them, check consciousness, and offer sips of water only if they are fully awake and can swallow safely.",
+      "caption_chunks": [
+        "If your child is unusually hard to wake or less responsive,",
+        "gently rouse them, check consciousness,",
+        "and offer sips of water only if they are fully awake and can swallow safely."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "수면 시간 기준을 제거하고, 평소와 달리 깨우기 어렵거나 반응이 떨어지는 경우에 초점을 맞춰 수정했습니다. 물은 충분히 깨어 안전하게 삼킬 수 있을 때만 먹이도록 안내를 추가했습니다."
+    },
+    {
+      "scene": 9,
+      "corrected_medical_claim": "강하게 깨워도 전혀 반응이 없는 경우, 호흡이 불규칙하거나 비정상적으로 빠른 경우, 입술이나 얼굴이 창백해지거나 파랗게 변하는 청색증이 나타나는 경우, 평소와 달리 깨우기 어렵고 처지는 경우 즉시 응급실로 가셔야 합니다.",
+      "corrected_narration": "Go to the ER immediately for unresponsiveness, irregular breathing, blue skin, or if your child is unusually hard to wake and lethargic.",
+      "caption_chunks": [
+        "Go to the ER immediately for unresponsiveness,",
+        "irregular breathing, blue skin,",
+        "or if your child is unusually hard to wake and lethargic."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "응급실 방문 기준에서 '6시간 이상'이라는 시간 기준을 제거하고, 평소와 달리 깨우기 어렵고 처지는 경우로 수정하여 판단의 혼란을 방지했습니다."
+    },
+    {
+      "scene": 10,
+      "corrected_medical_claim": "아이가 정상적으로 깨고 반응하지만 기력이 없거나 처짐 증상이 지속된다면, 소아청소년과에 방문하여 다시 진료를 받아보시기를 권장합니다.",
+      "corrected_narration": "If your child wakes and responds normally but still has persistent lethargy or weakness, we recommend visiting your pediatrician for re-examination.",
+      "caption_chunks": [
+        "If your child wakes and responds normally",
+        "but still has persistent lethargy or weakness,",
+        "we recommend visiting your pediatrician for re-examination."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "수면 시간 기준을 제거하고, 정상적으로 깨고 반응하지만 기력이 없거나 처짐 증상이 지속되는 경우에 소아청소년과 방문을 권장하도록 수정하여 회복기 피로와 의식 저하를 구분했습니다."
+    }
+  ],
+  "video_id": "pediatric-fever-sleep.en",
+  "model": "gemini-2.5-flash",
+  "source_issues": [
+    {
+      "scene": 3,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "12–35초의 ‘3–4시간 깊은 잠은 정상, 6시간 가까이 깨지 않으면 확인’과 46–60초의 ‘6시간 이상 처짐/다음 날에도 지속되면 진료’는 근거 있는 안전 판별 기준이 아닙니다. 수면 시간으로 정상 여부를 정하지 말고, 평소와 달리 깨우기 어렵거나 반응이 떨어지면 시간과 관계없이 즉시 평가받도록 고쳐 주세요. 추가 노트: 처음에 무반응 시 응급실을 권하더라도 뒤의 시간 기준이 판단을 혼란스럽게 합니다. 정상적으로 깨고 반응하는 회복기 피로와 의식 저하를 구분하고, 물은 충분히 깨어 안전하게 삼킬 수 있을 때만 먹이도록 안내해 주세요.",
+      "evidence": "Jaeyoon-Lee-0907-set6-English.mp4"
+    },
+    {
+      "scene": 5,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "12–35초의 ‘3–4시간 깊은 잠은 정상, 6시간 가까이 깨지 않으면 확인’과 46–60초의 ‘6시간 이상 처짐/다음 날에도 지속되면 진료’는 근거 있는 안전 판별 기준이 아닙니다. 수면 시간으로 정상 여부를 정하지 말고, 평소와 달리 깨우기 어렵거나 반응이 떨어지면 시간과 관계없이 즉시 평가받도록 고쳐 주세요. 추가 노트: 처음에 무반응 시 응급실을 권하더라도 뒤의 시간 기준이 판단을 혼란스럽게 합니다. 정상적으로 깨고 반응하는 회복기 피로와 의식 저하를 구분하고, 물은 충분히 깨어 안전하게 삼킬 수 있을 때만 먹이도록 안내해 주세요.",
+      "evidence": "Jaeyoon-Lee-0907-set6-English.mp4"
+    },
+    {
+      "scene": 6,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "12–35초의 ‘3–4시간 깊은 잠은 정상, 6시간 가까이 깨지 않으면 확인’과 46–60초의 ‘6시간 이상 처짐/다음 날에도 지속되면 진료’는 근거 있는 안전 판별 기준이 아닙니다. 수면 시간으로 정상 여부를 정하지 말고, 평소와 달리 깨우기 어렵거나 반응이 떨어지면 시간과 관계없이 즉시 평가받도록 고쳐 주세요. 추가 노트: 처음에 무반응 시 응급실을 권하더라도 뒤의 시간 기준이 판단을 혼란스럽게 합니다. 정상적으로 깨고 반응하는 회복기 피로와 의식 저하를 구분하고, 물은 충분히 깨어 안전하게 삼킬 수 있을 때만 먹이도록 안내해 주세요.",
+      "evidence": "Jaeyoon-Lee-0907-set6-English.mp4"
+    },
+    {
+      "scene": 9,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "12–35초의 ‘3–4시간 깊은 잠은 정상, 6시간 가까이 깨지 않으면 확인’과 46–60초의 ‘6시간 이상 처짐/다음 날에도 지속되면 진료’는 근거 있는 안전 판별 기준이 아닙니다. 수면 시간으로 정상 여부를 정하지 말고, 평소와 달리 깨우기 어렵거나 반응이 떨어지면 시간과 관계없이 즉시 평가받도록 고쳐 주세요. 추가 노트: 처음에 무반응 시 응급실을 권하더라도 뒤의 시간 기준이 판단을 혼란스럽게 합니다. 정상적으로 깨고 반응하는 회복기 피로와 의식 저하를 구분하고, 물은 충분히 깨어 안전하게 삼킬 수 있을 때만 먹이도록 안내해 주세요.",
+      "evidence": "Jaeyoon-Lee-0907-set6-English.mp4"
+    },
+    {
+      "scene": 10,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "12–35초의 ‘3–4시간 깊은 잠은 정상, 6시간 가까이 깨지 않으면 확인’과 46–60초의 ‘6시간 이상 처짐/다음 날에도 지속되면 진료’는 근거 있는 안전 판별 기준이 아닙니다. 수면 시간으로 정상 여부를 정하지 말고, 평소와 달리 깨우기 어렵거나 반응이 떨어지면 시간과 관계없이 즉시 평가받도록 고쳐 주세요. 추가 노트: 처음에 무반응 시 응급실을 권하더라도 뒤의 시간 기준이 판단을 혼란스럽게 합니다. 정상적으로 깨고 반응하는 회복기 피로와 의식 저하를 구분하고, 물은 충분히 깨어 안전하게 삼킬 수 있을 때만 먹이도록 안내해 주세요.",
+      "evidence": "Jaeyoon-Lee-0907-set6-English.mp4"
+    }
+  ]
+}

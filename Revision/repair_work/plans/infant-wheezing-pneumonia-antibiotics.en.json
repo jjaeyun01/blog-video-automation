@@ -1,0 +1,126 @@
+{
+  "repairs": [
+    {
+      "scene": 1,
+      "corrected_medical_claim": "오늘 오후부터는 숨을 쉴 때 쇳소리가 나기 시작했고 저녁이 되니 그 소리가 더 심해졌습니다.",
+      "corrected_narration": "If your baby's wheezing starts and worsens, it could signal narrowed airways.",
+      "caption_chunks": [
+        "If your baby's wheezing",
+        "starts and worsens,",
+        "it could signal narrowed airways."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "해당 장면의 내레이션은 쌕쌕거림의 원인을 설명하는 의학적 사실이며, 긴급성에 대한 직접적인 지시를 포함하지 않아 수정이 필요하지 않습니다. 전반적인 긴급성 관련 지적은 다른 장면에 적용됩니다."
+    },
+    {
+      "scene": 4,
+      "corrected_medical_claim": "기도가 좁아지거나 염증이 악화되었을 가능성이 있습니다.",
+      "corrected_narration": "Narrowed or inflamed airways can cause wheezing when your baby breathes.",
+      "caption_chunks": [
+        "Narrowed or inflamed airways",
+        "can cause wheezing",
+        "when your baby breathes."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "해당 장면의 내레이션은 쌕쌕거림의 메커니즘을 설명하는 의학적 사실이며, 긴급성에 대한 직접적인 지시를 포함하지 않아 수정이 필요하지 않습니다. 전반적인 긴급성 관련 지적은 다른 장면에 적용됩니다."
+    },
+    {
+      "scene": 6,
+      "corrected_medical_claim": "쌕쌕거림이 계속되거나 점점 심해진다면, 응급실이나 야간진료를 하는 소아과를 지금 바로 방문하셔야 합니다.",
+      "corrected_narration": "If wheezing continues or worsens, seek prompt evaluation at an ER or night clinic pediatrician.",
+      "caption_chunks": [
+        "If wheezing continues",
+        "or worsens, seek prompt evaluation",
+        "at an ER or night clinic pediatrician."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "악화되는 영아의 호흡음 변화는 신속한 평가가 중요하므로, '오늘 저녁'이라는 표현을 삭제하고 '즉시 평가'를 강조하여 대처 지연 위험을 제거했습니다."
+    },
+    {
+      "scene": 7,
+      "corrected_medical_claim": "병원에 가는 동안의 대처 방법: 아이를 안아서 상체를 세워주고, 목과 가슴 부위의 옷을 느슨하게 풀어주세요. 가습기나 욕실의 수증기를 이용해 실내 습도를 40~60%로 유지해 주세요. 5~10분 간격으로 모유, 분유, 물 등 수분을 소량씩 자주 섭취하게 해주세요.",
+      "corrected_narration": "Maintain indoor humidity at 40 to 60% and offer small amounts of fluids frequently at 5 to 10-minute intervals before your visit.",
+      "caption_chunks": [
+        "Maintain indoor humidity at 40 to 60%",
+        "and offer small amounts of fluids",
+        "frequently at 5 to 10-minute intervals before your visit."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "해당 장면의 내레이션은 병원 방문 중 취할 수 있는 보조적인 조치를 설명하며, 이는 신속한 진료를 대체하는 것이 아니므로 수정이 필요하지 않습니다. 전반적인 긴급성 관련 지적은 다른 장면에 적용됩니다."
+    },
+    {
+      "scene": 9,
+      "corrected_medical_claim": "입술이나 손톱이 파랗게 변하거나, 숨을 쉴 때마다 갈비뼈 아래나 빗장뼈 아래가 쏙쏙 들어가거나, 아이가 축 늘어지고 눈 맞춤을 하지 못한다면 즉시 지역 응급 서비스에 전화하십시오.",
+      "corrected_narration": "If lips or nails turn blue, you see retractions, or the child is lethargic and cannot make eye contact, call local emergency services immediately.",
+      "caption_chunks": [
+        "If lips or nails turn blue,",
+        "you see retractions, or the child is lethargic",
+        "and cannot make eye contact, call local emergency services immediately."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": true,
+      "visual_prompt_addendum": "Show safe infant sleep: baby supine on a firm flat bare crib mattress, with no pillow, wedge, loose blanket, or raised mattress. No unsafe sleep pose.",
+      "reason_ko": "응급 상황 시 증상 설명을 명확히 하고, 배포 국가를 알 수 없는 경우 '911' 대신 '지역 응급 서비스'로 변경하여 보편성을 확보했습니다. 또한, 영아의 안전한 수면 환경을 시각적으로 정확하게 표현하기 위해 베개, 느슨한 침구 등 안전 오류 요소를 제거하도록 시각적 프롬프트를 수정했습니다."
+    }
+  ],
+  "video_id": "infant-wheezing-pneumonia-antibiotics.en",
+  "model": "gemini-2.5-flash",
+  "source_issues": [
+    {
+      "scene": 1,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요. 추가 노트: 47–53초 음성은 ‘call 119 immediately’만 들리고 어떤 증상일 때인지 설명이 빠져 있습니다. 청색증·함몰호흡 조건을 음성에도 복원하고 응급번호는 배포 국가에 맞춰 주세요. 영아 수면 장면의 베개·느슨한 침구도 수정이 필요합니다.",
+      "evidence": "Jaeyoon-Lee-0907-set3-English.mp4"
+    },
+    {
+      "scene": 4,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요. 추가 노트: 47–53초 음성은 ‘call 119 immediately’만 들리고 어떤 증상일 때인지 설명이 빠져 있습니다. 청색증·함몰호흡 조건을 음성에도 복원하고 응급번호는 배포 국가에 맞춰 주세요. 영아 수면 장면의 베개·느슨한 침구도 수정이 필요합니다.",
+      "evidence": "Jaeyoon-Lee-0907-set3-English.mp4"
+    },
+    {
+      "scene": 6,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요. 추가 노트: 47–53초 음성은 ‘call 119 immediately’만 들리고 어떤 증상일 때인지 설명이 빠져 있습니다. 청색증·함몰호흡 조건을 음성에도 복원하고 응급번호는 배포 국가에 맞춰 주세요. 영아 수면 장면의 베개·느슨한 침구도 수정이 필요합니다.",
+      "evidence": "Jaeyoon-Lee-0907-set3-English.mp4"
+    },
+    {
+      "scene": 7,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요. 추가 노트: 47–53초 음성은 ‘call 119 immediately’만 들리고 어떤 증상일 때인지 설명이 빠져 있습니다. 청색증·함몰호흡 조건을 음성에도 복원하고 응급번호는 배포 국가에 맞춰 주세요. 영아 수면 장면의 베개·느슨한 침구도 수정이 필요합니다.",
+      "evidence": "Jaeyoon-Lee-0907-set3-English.mp4"
+    },
+    {
+      "scene": 9,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "29–35초에 악화되는 7개월 영아의 호흡음을 설명하면서 ‘오늘 저녁/tonight/esta noche’ 응급실·야간진료를 권합니다. 마지막의 ‘지금 바로 진료’와 충돌해 대처를 늦출 수 있습니다. 악화 시 지금 평가받도록 통일하고, 심한 호흡곤란·함몰호흡·청색증은 즉시 응급 도움을 요청하도록 고쳐 주세요. 추가 노트: 47–53초 음성은 ‘call 119 immediately’만 들리고 어떤 증상일 때인지 설명이 빠져 있습니다. 청색증·함몰호흡 조건을 음성에도 복원하고 응급번호는 배포 국가에 맞춰 주세요. 영아 수면 장면의 베개·느슨한 침구도 수정이 필요합니다.",
+      "evidence": "Jaeyoon-Lee-0907-set3-English.mp4"
+    },
+    {
+      "scene": 9,
+      "category": "OTHER_VISUAL_ERROR",
+      "severity": "high",
+      "problem_ko": "사람 검토에서 지적된 시각적 안전 오류를 제거해야 합니다.",
+      "visual_prompt_addendum": "Show safe infant sleep: baby supine on a firm flat bare crib mattress, with no pillow, wedge, loose blanket, or raised mattress. No unsafe sleep pose.",
+      "evidence": "Jaeyoon-Lee-0907-set3-English.mp4"
+    }
+  ]
+}

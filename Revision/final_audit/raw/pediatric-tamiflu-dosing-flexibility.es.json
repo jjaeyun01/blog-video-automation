@@ -1,0 +1,340 @@
+{
+  "video_id": "pediatric-tamiflu-dosing-flexibility.es",
+  "language": "es",
+  "overall_verdict": "WARN",
+  "medical_accuracy": "WARN",
+  "source_fidelity": "WARN",
+  "av_integrity": "PASS",
+  "spoken_transcript": "No despierte a su hijo a las 2 AM para administrarle el medicamento para la gripe. El oseltamivir (Tamiflu) se toma dos veces al día, con intervalos de 12 horas, según lo indique su médico o farmacéutico. Si debe cambiar el horario del primer día, no acorte el intervalo por su cuenta; consulte al médico o farmacéutico. El sueño y el descanso adecuados son tan cruciales para la recuperación como el medicamento. Si la primera dosis fue a las dos de la tarde, confirme la hora siguiente con el médico o farmacéutico. Confirme también las tomas del día siguiente dentro del plan completo recetado. Comenzar el medicamento dentro de las primeras 48 horas inhibe la replicación viral eficazmente. Si el niño vomita tras tomar oseltamivir, anote cuándo y cuánto, y consulte antes de repetir la dosis. Fiebre alta persistente por 3 días, dificultad para respirar o empeoramiento requieren atención médica. Si los síntomas empeoran o surgen otros problemas, consulte a su pediatra sin dudarlo.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "PASS",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "PASS",
+    "high_fever_age_context": "PASS",
+    "sleep_vs_lethargy": "PASS",
+    "dehydration_guidance": "NOT_APPLICABLE",
+    "multilingual_integrity": "NOT_APPLICABLE",
+    "evidence_ko": "",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "NOT_APPLICABLE",
+    "drug_specific_redosing": "FAIL",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "NOT_APPLICABLE",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "PASS",
+    "treatment_claim_uncertainty": "PASS",
+    "simultaneous_and_alternating_antipyretics": "NOT_APPLICABLE",
+    "infant_feeding_and_formula": "NOT_APPLICABLE",
+    "medicine_storage_and_restart": "NOT_APPLICABLE",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "NOT_APPLICABLE"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "No despierte a su hijo a las 2 AM para administrarle el medicamento para la gripe.",
+      "speech_complete": true,
+      "visible_caption_transcript": "No despierte a su hijo a las 2 AM para administrarle el medicamento para la gripe.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:06",
+      "spoken_transcript": "El oseltamivir (Tamiflu) se toma dos veces al día, con intervalos de 12 horas, según lo indique su médico o farmacéutico.",
+      "speech_complete": true,
+      "visible_caption_transcript": "El oseltamivir (Tamiflu) se toma dos veces al día, con intervalos de 12 horas, según lo indique su médico o farmacéutico.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:13",
+      "spoken_transcript": "Si debe cambiar el horario del primer día, no acorte el intervalo por su cuenta; consulte al médico o farmacéutico.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Si debe cambiar el horario del primer día, no acorte el intervalo por su cuenta; consulte al médico o farmacéutico.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:19",
+      "spoken_transcript": "El sueño y el descanso adecuados son tan cruciales para la recuperación como el medicamento.",
+      "speech_complete": true,
+      "visible_caption_transcript": "El sueño y el descanso adecuados son tan cruciales para la recuperación como el medicamento.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:25",
+      "spoken_transcript": "Si la primera dosis fue a las dos de la tarde, confirme la hora siguiente con el médico o farmacéutico.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Si la primera dosis fue a las dos de la tarde, confirme la hora siguiente con el médico o farmacéutico.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:31",
+      "spoken_transcript": "Confirme también las tomas del día siguiente dentro del plan completo recetado.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Confirme también las tomas del día siguiente dentro del plan completo recetado.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:37",
+      "spoken_transcript": "Comenzar el medicamento dentro de las primeras 48 horas inhibe la replicación viral eficazmente.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Comenzar el medicamento dentro de las primeras 48 horas inhibe la replicación viral eficazmente.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:43",
+      "spoken_transcript": "Si el niño vomita tras tomar oseltamivir, anote cuándo y cuánto, y consulte antes de repetir la dosis.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Si el niño vomita tras tomar oseltamivir, anote cuándo y cuánto, y consulte antes de repetir la dosis.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:49",
+      "spoken_transcript": "Fiebre alta persistente por 3 días, dificultad para respirar o empeoramiento requieren atención médica.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Fiebre alta persistente por 3 días, dificultad para respirar o empeoramiento requieren atención médica.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:55",
+      "spoken_transcript": "Si los síntomas empeoran o surgen otros problemas, consulte a su pediatra sin dudarlo.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Si los síntomas empeoran o surgen otros problemas, consulte a su pediatra sin dudarlo.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": ""
+    }
+  ],
+  "medication_route_review": [
+    {
+      "timestamp": "00:43",
+      "depicted_item": "Liquid medicine in a dosing cup",
+      "depicted_route": "Oral",
+      "intended_route": "Oral",
+      "is_error": false,
+      "reason_ko": "",
+      "confidence": 1.0
+    }
+  ],
+  "issues": [
+    {
+      "severity": "high",
+      "category": "SOURCE_CONTRADICTION",
+      "timestamp": "00:43",
+      "scene": 8,
+      "evidence": "Spoken audio and visible captions: \"Si el niño vomita tras tomar oseltamivir, anote cuándo y cuánto, y consulte antes de repetir la dosis.\"",
+      "problem_ko": "영상에서 구토 후 약 복용 재개에 대해 \"다시 복용하기 전에 상담하라\"고 조언하지만, 원문 출처는 오셀타미비르 복용 후 1시간 이내 구토 시 \"즉시 1회 용량을 다시 먹여야 한다\"고 명시적으로 지시합니다. 이는 약물별 재복용 지침에 대한 중요한 불일치입니다.",
+      "source_comparison_ko": "원문 출처: \"약을 먹고 1시간 이내에 토했다면 즉시 1회 용량을 다시 먹여야 합니다.\" 영상: \"다시 복용하기 전에 상담하라.\"",
+      "recommended_fix_ko": "영상의 조언을 원문 출처의 지침에 따라 \"오셀타미비르 복용 후 1시간 이내에 구토한 경우 즉시 1회 용량을 다시 복용하십시오. 1시간 이후에 구토했거나 반복적으로 구토하는 경우 의사 또는 약사와 상담하십시오.\"와 같이 수정해야 합니다.",
+      "confidence": 1.0
+    }
+  ],
+  "review_summary_ko": "이 영상은 소아 독감 치료제(타미플루) 복용 지침에 대한 유용한 정보를 제공합니다. 특히 첫날 복용 시간 유연성, 충분한 수면의 중요성, 그리고 약물 복용 시작 시점(48시간 이내)에 대한 지침은 원문 출처와 일치하며 정확합니다. 또한, 고열 지속, 호흡 곤란, 컨디션 악화 시 즉시 의료 도움을 받아야 한다는 경고도 적절하게 전달됩니다. 하지만, 구토 후 약물 재복용 지침에서 원문 출처와 중요한 불일치가 발견되었습니다. 원문은 오셀타미비르 복용 후 1시간 이내 구토 시 즉시 재복용을 지시하는 반면, 영상은 \"다시 복용하기 전에 상담하라\"고 조언하여, 필요한 경우 즉각적인 재복용을 지연시킬 수 있는 위험이 있습니다. 이 부분은 수정이 필요합니다. 전반적으로 시청각적 무결성은 양호하며, 음성, 캡션, 시각 자료 모두 일관되고 명확합니다.",
+  "requires_human_medical_review": true,
+  "limitations_ko": [
+    "구토 후 약물 재복용 지침이 원문 출처와 불일치하여 잠재적으로 안전하지 않은 조언을 제공할 수 있습니다.",
+    "고열에 대한 연령별 구체적인 위험 및 대처 지침이 명시되지 않았습니다."
+  ],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-tamiflu-dosing-flexibility/es/pediatric-tamiflu-dosing-flexibility_ES.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-tamiflu-dosing-flexibility/es/production.snapshot.json",
+    "audited_at": "2026-09-22T06:57:11.706700+00:00",
+    "video_sha256": "a9c330273e9acbffb082f86e522c44e88dde1843439e96e5ca37576ede5aeae9",
+    "snapshot_sha256": "a02d08ff8e74d652ef6f3976f92fdd790406b3816d9cbf39b7753ffdd447fea3",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 21,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "a9c330273e9acbffb082f86e522c44e88dde1843439e96e5ca37576ede5aeae9",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 1,
+          "checks": [
+            "SLEEP_VS_LETHARGY",
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 2,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "TWELVE_HOUR_INTERVAL",
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 4,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "DRUG_SPECIFIC_REDOSING",
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "SLEEP_VS_LETHARGY",
+            "DRUG_SPECIFIC_REDOSING",
+            "CASE_TIMELINE_REASSESSMENT"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [
+        "2",
+        "12",
+        "48",
+        "3"
+      ],
+      "srt_number_tokens": [
+        "2",
+        "12",
+        "48",
+        "3"
+      ],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 5.48,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 10.12,
+          "timeline_seconds": 7,
+          "speed_factor": 1.4457,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 8.08,
+          "timeline_seconds": 6,
+          "speed_factor": 1.3467,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 6.4,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0667,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 7.32,
+          "timeline_seconds": 6,
+          "speed_factor": 1.22,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 5.44,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 7.12,
+          "timeline_seconds": 6,
+          "speed_factor": 1.1867,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 8.8,
+          "timeline_seconds": 6,
+          "speed_factor": 1.4667,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 8.28,
+          "timeline_seconds": 6,
+          "speed_factor": 1.38,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 6.6,
+          "timeline_seconds": 5,
+          "speed_factor": 1.32,
+          "requires_close_listen": true
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

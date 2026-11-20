@@ -1,0 +1,323 @@
+{
+  "video_id": "mycoplasma-pneumonia-fever-reassessment.en",
+  "language": "en",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "PASS",
+  "av_integrity": "PASS",
+  "spoken_transcript": "If fever recurs after Mycoplasma pneumonia discharge, prompt re-evaluation by a specialist is needed, especially if it persists. Mycoplasma pneumonia is an infection with a relatively slow recovery process. Mycoplasma recovery is slow, but is a very long-lasting fever truly normal? Mycoplasma slowly affects lung tissue, which can lead to a prolonged recovery. Persistent or recurrent fever after discharge requires prompt re-evaluation by a specialist. Repeated 38.5°C fever after discharge needs reassessment. If fever persists, a clinician can decide whether further tests are needed. Regular antipyretics, sufficient hydration, and 40 to 60% indoor humidity are important. If fever recurs after discharge, record symptoms and arrange reassessment. Do not take persistent fever lightly; promptly consult your pediatrician for evaluation.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "NOT_APPLICABLE",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "NOT_APPLICABLE",
+    "high_fever_age_context": "NOT_APPLICABLE",
+    "sleep_vs_lethargy": "NOT_APPLICABLE",
+    "dehydration_guidance": "PASS",
+    "multilingual_integrity": "NOT_APPLICABLE",
+    "evidence_ko": "모든 의료 정보가 음성과 캡션에 명확하게 전달되었습니다.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "NOT_APPLICABLE",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "NOT_APPLICABLE",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "PASS",
+    "treatment_claim_uncertainty": "PASS",
+    "simultaneous_and_alternating_antipyretics": "NOT_APPLICABLE",
+    "infant_feeding_and_formula": "NOT_APPLICABLE",
+    "medicine_storage_and_restart": "NOT_APPLICABLE",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "NOT_APPLICABLE"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "If fever recurs after Mycoplasma pneumonia discharge, prompt re-evaluation by a specialist is needed, especially if it persists.",
+      "speech_complete": true,
+      "visible_caption_transcript": "If fever recurs after Mycoplasma pneumonia discharge, prompt re-evaluation by a specialist is needed, especially if it persists.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "달력에 빨간색으로 표시된 날짜들이 나타나고, 중앙의 빨간색 원으로 확대됩니다. 숫자는 없습니다. 음성과 캡션이 일치합니다."
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:07",
+      "spoken_transcript": "Mycoplasma pneumonia is an infection with a relatively slow recovery process.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Mycoplasma pneumonia is an infection with a relatively slow recovery process.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "인간 흉부와 폐가 보입니다. 폐가 부드럽게 움직입니다. 음성과 캡션이 일치합니다."
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:13",
+      "spoken_transcript": "Mycoplasma recovery is slow, but is a very long-lasting fever truly normal?",
+      "speech_complete": true,
+      "visible_caption_transcript": "Mycoplasma recovery is slow, but is a very long-lasting fever truly normal?",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "의인화된 마이코플라즈마 캐릭터 위에 물음표가 나타납니다. 음성과 캡션이 일치합니다."
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:19",
+      "spoken_transcript": "Mycoplasma slowly affects lung tissue, which can lead to a prolonged recovery.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Mycoplasma slowly affects lung tissue, which can lead to a prolonged recovery.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "폐 조직에 달라붙어 있는 마이코플라즈마 캐릭터들이 보입니다. 음성과 캡션이 일치합니다."
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:25",
+      "spoken_transcript": "Persistent or recurrent fever after discharge requires prompt re-evaluation by a specialist.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Persistent or recurrent fever after discharge requires prompt re-evaluation by a specialist.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "디지털 카운터가 빠르게 증가하다가 멈추고, 빨간색 경고 기호가 나타납니다. 음성과 캡션이 일치합니다."
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:31",
+      "spoken_transcript": "Repeated 38.5°C fever after discharge needs reassessment.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Repeated 38.5°C fever after discharge needs reassessment.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "분할 화면: 왼쪽은 아이에게 냉찜질을 해주는 모습, 오른쪽은 진료실 문을 가리키는 모습입니다. 음성과 캡션이 일치합니다."
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:37",
+      "spoken_transcript": "If fever persists, a clinician can decide whether further tests are needed.",
+      "speech_complete": true,
+      "visible_caption_transcript": "If fever persists, a clinician can decide whether further tests are needed.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "의료용 트레이에 흉부 X-레이 이미지가 나타나고, 혈액 샘플 튜브가 놓입니다. 음성과 캡션이 일치합니다."
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:43",
+      "spoken_transcript": "Regular antipyretics, sufficient hydration, and 40 to 60% indoor humidity are important.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Regular antipyretics, sufficient hydration, and 40 to 60% indoor humidity are important.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "아이가 약물 투여 컵으로 액체를 마시고 있습니다. 보호자가 아이를 지지합니다. 음성과 캡션이 일치합니다."
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:49",
+      "spoken_transcript": "If fever recurs after discharge, record symptoms and arrange reassessment.",
+      "speech_complete": true,
+      "visible_caption_transcript": "If fever recurs after discharge, record symptoms and arrange reassessment.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "디지털 체온계가 정상 온도를 표시하다가 빨간색으로 변합니다. 차트에 고열 패턴이 막대 그래프로 표시됩니다. 음성과 캡션이 일치합니다."
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:55",
+      "spoken_transcript": "Do not take persistent fever lightly; promptly consult your pediatrician for evaluation.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Do not take persistent fever lightly; promptly consult your pediatrician for evaluation.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "걱정스러운 표정의 마이코플라즈마 캐릭터가 진료실 문을 배경으로 보입니다. 음성과 캡션이 일치합니다."
+    }
+  ],
+  "medication_route_review": [
+    {
+      "timestamp": "00:43",
+      "depicted_item": "liquid medicine",
+      "depicted_route": "oral, from dosing cup",
+      "intended_route": "oral",
+      "is_error": false,
+      "reason_ko": "적절한 약물 투여 컵을 사용하여 경구 투여를 묘사했습니다.",
+      "confidence": 1.0
+    }
+  ],
+  "issues": [],
+  "review_summary_ko": "이 비디오는 마이코플라즈마 폐렴 퇴원 후 지속되는 발열에 대한 중요한 정보를 정확하고 명확하게 전달합니다. 모든 의학적 주장은 제공된 출처와 일치하며, 시청각 무결성이 높습니다. 약물 투여 장면은 안전 지침을 준수합니다. 전반적으로 의학적 정확성, 출처 충실도 및 시청각 무결성 모두에서 합격입니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/mycoplasma-pneumonia-fever-reassessment/en/mycoplasma-pneumonia-fever-reassessment_EN.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/mycoplasma-pneumonia-fever-reassessment/en/production.snapshot.json",
+    "audited_at": "2026-09-22T06:54:18.543402+00:00",
+    "video_sha256": "11aa7fa85405d24b189b08c1a3ee263dd78c147f3127d06eab6225d7a85eab21",
+    "snapshot_sha256": "2a5c2f106395f030ff976df14f7aa8f230a0001fdc963c3a210d01ca1cd66097",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 30,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "11aa7fa85405d24b189b08c1a3ee263dd78c147f3127d06eab6225d7a85eab21",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 1,
+          "checks": [
+            "CASE_TIMELINE_REASSESSMENT"
+          ]
+        },
+        {
+          "scene": 2,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "CASE_TIMELINE_REASSESSMENT"
+          ]
+        },
+        {
+          "scene": 5,
+          "checks": [
+            "CASE_TIMELINE_REASSESSMENT"
+          ]
+        },
+        {
+          "scene": 6,
+          "checks": [
+            "CASE_TIMELINE_REASSESSMENT"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "CASE_TIMELINE_REASSESSMENT"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [
+        "38.5",
+        "40",
+        "60"
+      ],
+      "srt_number_tokens": [
+        "38.5",
+        "40",
+        "60"
+      ],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 9.84,
+          "timeline_seconds": 7,
+          "speed_factor": 1.4057,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 5.92,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 7.2,
+          "timeline_seconds": 6,
+          "speed_factor": 1.2,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 6.08,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0133,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 7.56,
+          "timeline_seconds": 6,
+          "speed_factor": 1.26,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 6.4,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0667,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 5.44,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 8.24,
+          "timeline_seconds": 6,
+          "speed_factor": 1.3733,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 6.2,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0333,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 6.44,
+          "timeline_seconds": 5,
+          "speed_factor": 1.288,
+          "requires_close_listen": true
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

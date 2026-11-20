@@ -1,0 +1,114 @@
+{
+  "duration_seconds": 60.021029,
+  "width": 1080,
+  "height": 1920,
+  "has_audio": true,
+  "scene_count": 10,
+  "captions_equal_expected_narration": true,
+  "caption_images_checked": 24,
+  "all_caption_image_corners_transparent": true,
+  "video_sha256": "84a64d11218f9287de5e259964248557b7555017e78f2909209bbf48f3d3e898",
+  "reviewer_feedback_focus": [
+    {
+      "scene": 1,
+      "checks": [
+        "CASE_TIMELINE_REASSESSMENT"
+      ]
+    },
+    {
+      "scene": 8,
+      "checks": [
+        "NASAL_IRRIGATION_POSTURE"
+      ]
+    }
+  ],
+  "srt_exists": true,
+  "srt_semantically_expected_by_normalized_text": true,
+  "expected_number_tokens": [
+    "3",
+    "3",
+    "2",
+    "3",
+    "38"
+  ],
+  "srt_number_tokens": [
+    "3",
+    "3",
+    "2",
+    "3",
+    "38"
+  ],
+  "srt_numbers_match_expected": true,
+  "audio_scene_timing": [
+    {
+      "scene": 1,
+      "raw_seconds": 6.16,
+      "timeline_seconds": 6,
+      "speed_factor": 1.0267,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 2,
+      "raw_seconds": 5.56,
+      "timeline_seconds": 6,
+      "speed_factor": 1.0,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 3,
+      "raw_seconds": 5.2,
+      "timeline_seconds": 6,
+      "speed_factor": 1.0,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 4,
+      "raw_seconds": 6.28,
+      "timeline_seconds": 6,
+      "speed_factor": 1.0467,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 5,
+      "raw_seconds": 6.32,
+      "timeline_seconds": 5,
+      "speed_factor": 1.264,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 6,
+      "raw_seconds": 5.72,
+      "timeline_seconds": 4,
+      "speed_factor": 1.43,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 7,
+      "raw_seconds": 11.32,
+      "timeline_seconds": 8,
+      "speed_factor": 1.415,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 8,
+      "raw_seconds": 11.76,
+      "timeline_seconds": 8,
+      "speed_factor": 1.47,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 9,
+      "raw_seconds": 7.76,
+      "timeline_seconds": 6,
+      "speed_factor": 1.2933,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 10,
+      "raw_seconds": 6.6,
+      "timeline_seconds": 5,
+      "speed_factor": 1.32,
+      "requires_close_listen": true
+    }
+  ]
+}

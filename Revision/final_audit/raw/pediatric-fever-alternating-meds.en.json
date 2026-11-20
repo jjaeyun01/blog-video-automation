@@ -1,0 +1,352 @@
+{
+  "video_id": "pediatric-fever-alternating-meds.en",
+  "language": "en",
+  "overall_verdict": "FAIL",
+  "medical_accuracy": "FAIL",
+  "source_fidelity": "FAIL",
+  "av_integrity": "PASS",
+  "spoken_transcript": "Worried when your child's fever doesn't drop after medication? Ibuprofen and acetaminophen are different types of fever reducers. Do not give both fever medicines together or alternate on a fixed schedule. Ask a clinician if discomfort persists. These drugs have different minimum intervals and daily limits. Record every dose and time. Even for a 40-kilogram child, the Tylenol syrup volume depends on the product concentration and directions. Check the active ingredient, concentration, single dose, and daily maximum on the label; ask a pharmacist if unsure. Give Tylenol every 4 to 6 hours, and Brufen every 6 to 8 hours. Give the prescribed liquid medicine slowly in a purpose-made dosing cup. If fever lasts over 48 hours or ear pain worsens, see a pediatrician. If you have concerns or symptoms don't improve, consult your pediatrician.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "PASS",
+    "triage_adequacy": "FAIL",
+    "respiratory_red_flags": "NOT_APPLICABLE",
+    "high_fever_age_context": "NOT_APPLICABLE",
+    "sleep_vs_lethargy": "NOT_APPLICABLE",
+    "dehydration_guidance": "NOT_APPLICABLE",
+    "multilingual_integrity": "NOT_APPLICABLE",
+    "evidence_ko": "원문에서 중이염 치료를 위한 항생제 복용 지침(처방 기간 동안 중단 없이 복용)이 누락되었습니다. 이는 환자의 치료 순응도에 영향을 미쳐 합병증 발생 시 더 시급한 진료가 필요할 수 있습니다.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "PASS",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "NOT_APPLICABLE",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "NOT_APPLICABLE",
+    "treatment_claim_uncertainty": "NOT_APPLICABLE",
+    "simultaneous_and_alternating_antipyretics": "PASS",
+    "infant_feeding_and_formula": "NOT_APPLICABLE",
+    "medicine_storage_and_restart": "NOT_APPLICABLE",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "NOT_APPLICABLE"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "0:00",
+      "spoken_transcript": "Worried when your child's fever doesn't drop after medication?",
+      "speech_complete": true,
+      "visible_caption_transcript": "Worried when your child's fever doesn't drop after medication?",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "아이가 약을 먹고도 열이 떨어지지 않아 걱정하는 상황을 묘사합니다. 오버레이 텍스트는 39.5°C를 표시합니다."
+    },
+    {
+      "scene": 2,
+      "timestamp": "0:06",
+      "spoken_transcript": "Ibuprofen and acetaminophen are different types of fever reducers.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Ibuprofen and acetaminophen are different types of fever reducers.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "이부프로펜과 아세트아미노펜이 다른 종류의 해열제임을 설명합니다. 오버레이 텍스트는 각 약물의 일반명과 성분을 표시합니다."
+    },
+    {
+      "scene": 3,
+      "timestamp": "0:12",
+      "spoken_transcript": "Do not give both fever medicines together or alternate on a fixed schedule. Ask a clinician if discomfort persists.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Do not give both fever medicines together or alternate on a fixed schedule. Ask a clinician if discomfort persists.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "두 가지 해열제를 동시에 주거나 고정된 스케줄로 교차 복용하지 말라고 경고합니다. 불편함이 지속되면 의사에게 문의하라고 조언합니다."
+    },
+    {
+      "scene": 4,
+      "timestamp": "0:18",
+      "spoken_transcript": "These drugs have different minimum intervals and daily limits. Record every dose and time.",
+      "speech_complete": true,
+      "visible_caption_transcript": "These drugs have different minimum intervals and daily limits. Record every dose and time.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "이 약물들은 최소 복용 간격과 일일 최대 복용량이 다르며, 모든 복용량과 시간을 기록해야 한다고 설명합니다."
+    },
+    {
+      "scene": 5,
+      "timestamp": "0:24",
+      "spoken_transcript": "Even for a 40-kilogram child, the Tylenol syrup volume depends on the product concentration and directions.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Even for a 40-kilogram child, the Tylenol syrup volume depends on the product concentration and directions.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "40kg 아이의 타이레놀 시럽 용량이 제품 농도와 지침에 따라 달라진다고 설명합니다. 오버레이는 권장 용량 15mL (480mg, 32mg/mL)를 표시합니다."
+    },
+    {
+      "scene": 6,
+      "timestamp": "0:30",
+      "spoken_transcript": "Check the active ingredient, concentration, single dose, and daily maximum on the label; ask a pharmacist if unsure.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Check the active ingredient, concentration, single dose, and daily maximum on the label; ask a pharmacist if unsure.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "약물 라벨에서 활성 성분, 농도, 1회 복용량, 일일 최대 복용량을 확인하고, 불확실하면 약사에게 문의하라고 조언합니다. 오버레이는 농도와 최대 복용량 확인을 강조합니다."
+    },
+    {
+      "scene": 7,
+      "timestamp": "0:36",
+      "spoken_transcript": "Give Tylenol every 4 to 6 hours, and Brufen every 6 to 8 hours.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Give Tylenol every 4 to 6 hours, and Brufen every 6 to 8 hours.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "타이레놀은 4~6시간마다, 부루펜은 6~8시간마다 복용하라고 안내합니다. 오버레이는 각 약물의 복용 간격을 표시합니다."
+    },
+    {
+      "scene": 8,
+      "timestamp": "0:42",
+      "spoken_transcript": "Give the prescribed liquid medicine slowly in a purpose-made dosing cup.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Give the prescribed liquid medicine slowly in a purpose-made dosing cup.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "처방된 액체 약을 목적에 맞는 계량컵으로 천천히 주라고 안내합니다."
+    },
+    {
+      "scene": 9,
+      "timestamp": "0:48",
+      "spoken_transcript": "If fever lasts over 48 hours or ear pain worsens, see a pediatrician.",
+      "speech_complete": true,
+      "visible_caption_transcript": "If fever lasts over 48 hours or ear pain worsens, see a pediatrician.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "열이 48시간 이상 지속되거나 귀 통증이 악화되면 소아청소년과 의사를 방문하라고 조언합니다. 오버레이는 48시간 이상을 강조합니다."
+    },
+    {
+      "scene": 10,
+      "timestamp": "0:54",
+      "spoken_transcript": "If you have concerns or symptoms don't improve, consult your pediatrician.",
+      "speech_complete": true,
+      "visible_caption_transcript": "If you have concerns or symptoms don't improve, consult your pediatrician.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "우려 사항이 있거나 증상이 호전되지 않으면 소아청소년과 의사와 상담하라고 조언합니다."
+    }
+  ],
+  "medication_route_review": [
+    {
+      "timestamp": "0:24",
+      "depicted_item": "Tylenol syrup",
+      "depicted_route": "Oral (dosing cup)",
+      "intended_route": "Oral (dosing cup)",
+      "is_error": false,
+      "reason_ko": "아이가 목적에 맞는 계량컵으로 시럽을 마시는 모습이 적절하게 묘사되었습니다.",
+      "confidence": 1.0
+    },
+    {
+      "timestamp": "0:42",
+      "depicted_item": "Liquid medicine",
+      "depicted_route": "Oral (dosing cup)",
+      "intended_route": "Oral (dosing cup)",
+      "is_error": false,
+      "reason_ko": "아이가 목적에 맞는 계량컵으로 시럽을 마시는 모습이 적절하게 묘사되었습니다.",
+      "confidence": 1.0
+    }
+  ],
+  "issues": [
+    {
+      "severity": "high",
+      "category": "TRIAGE_OMISSION",
+      "timestamp": "0:00",
+      "scene": 1,
+      "evidence": "The source article states: \"중이염 치료를 위한 항생제는 임의로 중단하지 마시고 처방받은 기간 동안 끝까지 복용해야 합니다.\" (Antibiotics prescribed for otitis media should be taken for the entire prescribed duration and not stopped prematurely.) This crucial instruction is absent from the video's narration and captions, despite the video's context being a child with otitis media.",
+      "problem_ko": "영상에서 중이염 치료를 위한 항생제를 처방받은 기간 동안 끝까지 복용해야 한다는 중요한 지침이 누락되었습니다. 이는 환자가 임의로 항생제 복용을 중단할 위험을 높여 치료 실패나 합병증으로 이어질 수 있습니다.",
+      "source_comparison_ko": "원문에는 \"중이염 치료를 위한 항생제는 임의로 중단하지 마시고 처방받은 기간 동안 끝까지 복용해야 합니다\"라고 명시되어 있으나, 영상에는 해당 내용이 전혀 언급되지 않았습니다.",
+      "recommended_fix_ko": "영상의 내레이션과 캡션에 항생제 복용 지침(예: \"중이염 치료를 위한 항생제는 의사의 지시대로 끝까지 복용해야 합니다.\")을 추가해야 합니다.",
+      "confidence": 1.0
+    }
+  ],
+  "review_summary_ko": "이 영상은 해열제 교차 복용 방법과 주의사항을 잘 설명하고 있지만, 원문에 포함된 중이염 치료를 위한 항생제 복용 지침(처방 기간 동안 중단 없이 복용)이 누락되어 있습니다. 이는 중요한 의료 정보의 누락으로, 환자의 치료 순응도에 영향을 미쳐 잠재적으로 건강에 해를 끼칠 수 있는 높은 심각도의 문제입니다. 따라서 전반적인 평가와 의학적 정확도에서 'FAIL' 판정을 받았습니다.",
+  "requires_human_medical_review": true,
+  "limitations_ko": [
+    "영상은 중이염 치료를 위한 항생제 복용의 중요성(처방 기간 동안 중단 없이 복용)을 언급하지 않습니다."
+  ],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-fever-alternating-meds/en/pediatric-fever-alternating-meds_EN.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-fever-alternating-meds/en/production.snapshot.json",
+    "audited_at": "2026-09-22T06:55:14.013666+00:00",
+    "video_sha256": "14b40ebd1f9b6e2c6de1fb8508275940f1e60402c802d4e91993ea80620e49c1",
+    "snapshot_sha256": "8e540f799ba3fad274135d2c312d39b2ce0f21f3c22da1a352084fd651408f96",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 24,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "14b40ebd1f9b6e2c6de1fb8508275940f1e60402c802d4e91993ea80620e49c1",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 2,
+          "checks": [
+            "MEDICINE_STOP_RESTART"
+          ]
+        },
+        {
+          "scene": 5,
+          "checks": [
+            "DOSE_CONCENTRATION_CONTEXT",
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 6,
+          "checks": [
+            "DOSE_CONCENTRATION_CONTEXT"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "NEW_OR_MIGRATING_PAIN"
+          ]
+        },
+        {
+          "scene": 10,
+          "checks": [
+            "MEDICINE_STOP_RESTART"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [
+        "40",
+        "4",
+        "6",
+        "6",
+        "8",
+        "48"
+      ],
+      "srt_number_tokens": [
+        "40",
+        "4",
+        "6",
+        "6",
+        "8",
+        "48"
+      ],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 4.16,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 5.0,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 8.52,
+          "timeline_seconds": 6,
+          "speed_factor": 1.42,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 7.08,
+          "timeline_seconds": 6,
+          "speed_factor": 1.18,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 7.84,
+          "timeline_seconds": 6,
+          "speed_factor": 1.3067,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 8.84,
+          "timeline_seconds": 6,
+          "speed_factor": 1.4733,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 6.2,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0333,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 5.48,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 6.36,
+          "timeline_seconds": 6,
+          "speed_factor": 1.06,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 5.24,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

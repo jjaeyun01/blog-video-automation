@@ -1,0 +1,59 @@
+{
+  "video_id": "infant-cold-vomiting-feeding.es",
+  "overall_verdict": "FAIL",
+  "reviewer": "Sam",
+  "human_feedback": [
+    {
+      "filename": "Jaeyoon-Lee-week8-Spanish-25.mp4",
+      "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+      "reason_ko": "23~29초: '분유를 평소의 2/3로 줄인다'고만 하여 1회 수유량인지 조제 농도인지 불명확하고, 젖병에 액체를 떨어뜨리는 그림이 혼동을 더합니다. '제품 표시대로 정상 농도로 타고, 1회 먹이는 양을 줄여 더 자주'로 수정하고 용량을 보여주는 그림으로 교체해 주세요. 분유 희석을 명시적으로 지시했다고 단정한 판정은 아닙니다.",
+      "additional_ko": "추가 노트: 4~6시간 대기는 고형식 재개에 관한 문장이므로 '수분을 완전히 끊으라고 했다'는 Gemini 지적은 채택하지 않았습니다. 다만 그동안의 모유/분유·연령에 맞는 수분 공급은 명확히 해 주세요. 세워 안기는 목·몸통을 받치는 자세로 표현하고 3개월 미만 38도는 즉시 진료하도록 보완해 주세요."
+    }
+  ],
+  "issues": [
+    {
+      "scene": 5,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초: '분유를 평소의 2/3로 줄인다'고만 하여 1회 수유량인지 조제 농도인지 불명확하고, 젖병에 액체를 떨어뜨리는 그림이 혼동을 더합니다. '제품 표시대로 정상 농도로 타고, 1회 먹이는 양을 줄여 더 자주'로 수정하고 용량을 보여주는 그림으로 교체해 주세요. 분유 희석을 명시적으로 지시했다고 단정한 판정은 아닙니다. 추가 노트: 4~6시간 대기는 고형식 재개에 관한 문장이므로 '수분을 완전히 끊으라고 했다'는 Gemini 지적은 채택하지 않았습니다. 다만 그동안의 모유/분유·연령에 맞는 수분 공급은 명확히 해 주세요. 세워 안기는 목·몸통을 받치는 자세로 표현하고 3개월 미만 38도는 즉시 진료하도록 보완해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-25.mp4"
+    },
+    {
+      "scene": 5,
+      "category": "OTHER_VISUAL_ERROR",
+      "severity": "high",
+      "problem_ko": "사람 검토에서 지적된 시각적 안전 오류를 제거해야 합니다.",
+      "visual_prompt_addendum": "Show a correctly prepared normal-strength formula bottle; do not show dilution or changing the powder-to-water ratio.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-25.mp4"
+    },
+    {
+      "scene": 6,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초: '분유를 평소의 2/3로 줄인다'고만 하여 1회 수유량인지 조제 농도인지 불명확하고, 젖병에 액체를 떨어뜨리는 그림이 혼동을 더합니다. '제품 표시대로 정상 농도로 타고, 1회 먹이는 양을 줄여 더 자주'로 수정하고 용량을 보여주는 그림으로 교체해 주세요. 분유 희석을 명시적으로 지시했다고 단정한 판정은 아닙니다. 추가 노트: 4~6시간 대기는 고형식 재개에 관한 문장이므로 '수분을 완전히 끊으라고 했다'는 Gemini 지적은 채택하지 않았습니다. 다만 그동안의 모유/분유·연령에 맞는 수분 공급은 명확히 해 주세요. 세워 안기는 목·몸통을 받치는 자세로 표현하고 3개월 미만 38도는 즉시 진료하도록 보완해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-25.mp4"
+    },
+    {
+      "scene": 8,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초: '분유를 평소의 2/3로 줄인다'고만 하여 1회 수유량인지 조제 농도인지 불명확하고, 젖병에 액체를 떨어뜨리는 그림이 혼동을 더합니다. '제품 표시대로 정상 농도로 타고, 1회 먹이는 양을 줄여 더 자주'로 수정하고 용량을 보여주는 그림으로 교체해 주세요. 분유 희석을 명시적으로 지시했다고 단정한 판정은 아닙니다. 추가 노트: 4~6시간 대기는 고형식 재개에 관한 문장이므로 '수분을 완전히 끊으라고 했다'는 Gemini 지적은 채택하지 않았습니다. 다만 그동안의 모유/분유·연령에 맞는 수분 공급은 명확히 해 주세요. 세워 안기는 목·몸통을 받치는 자세로 표현하고 3개월 미만 38도는 즉시 진료하도록 보완해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-25.mp4"
+    },
+    {
+      "scene": 8,
+      "category": "OTHER_VISUAL_ERROR",
+      "severity": "high",
+      "problem_ko": "사람 검토에서 지적된 시각적 안전 오류를 제거해야 합니다.",
+      "visual_prompt_addendum": "Show a caregiver holding an infant upright with head and neck securely supported. Do not show unsupported dangling or unsafe sleep positioning.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-25.mp4"
+    },
+    {
+      "scene": 9,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초: '분유를 평소의 2/3로 줄인다'고만 하여 1회 수유량인지 조제 농도인지 불명확하고, 젖병에 액체를 떨어뜨리는 그림이 혼동을 더합니다. '제품 표시대로 정상 농도로 타고, 1회 먹이는 양을 줄여 더 자주'로 수정하고 용량을 보여주는 그림으로 교체해 주세요. 분유 희석을 명시적으로 지시했다고 단정한 판정은 아닙니다. 추가 노트: 4~6시간 대기는 고형식 재개에 관한 문장이므로 '수분을 완전히 끊으라고 했다'는 Gemini 지적은 채택하지 않았습니다. 다만 그동안의 모유/분유·연령에 맞는 수분 공급은 명확히 해 주세요. 세워 안기는 목·몸통을 받치는 자세로 표현하고 3개월 미만 38도는 즉시 진료하도록 보완해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-25.mp4"
+    }
+  ]
+}

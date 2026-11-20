@@ -1,0 +1,71 @@
+{
+  "repairs": [
+    {
+      "scene": 5,
+      "corrected_medical_claim": "Powdered fever reducer should be mixed with water immediately before administration, or consult a pharmacist for specific product instructions.",
+      "corrected_narration": "Always mix powdered fever reducer with water immediately before use, or consult a pharmacist for specific product instructions.",
+      "caption_chunks": [
+        "Always mix powdered fever reducer with water immediately before use,",
+        "or consult a pharmacist for specific product instructions."
+      ],
+      "replace_overlays": true,
+      "overlays": [],
+      "regenerate_visual": true,
+      "visual_prompt_addendum": "Remove the pre-mixed medicine container and visual timer. Instead, depict a generic, unopened medicine package on a clean surface, with a subtle visual cue emphasizing the importance of reading product-specific instructions or consulting a healthcare professional.",
+      "reason_ko": "기존 콘텐츠는 가루 해열제를 미리 타두는 경우 1~2시간 이내 복용 및 냉장 보관이라는 일반적인 지침을 제시했습니다. 이는 제품 및 제형에 따라 안정성과 보관 방법이 달라 일반화할 수 없는 임의 기준이므로, 해당 지침을 삭제하고 복용 직전에 혼합하거나 약사에게 문의하도록 수정했습니다."
+    },
+    {
+      "scene": 6,
+      "corrected_medical_claim": "Powdered fever reducer should be mixed with water immediately before administration, or consult a pharmacist for specific product instructions.",
+      "corrected_narration": "Always mix powdered fever reducer with water immediately before use, or consult a pharmacist for specific product instructions.",
+      "caption_chunks": [
+        "Always mix powdered fever reducer with water immediately before use,",
+        "or consult a pharmacist for specific product instructions."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": true,
+      "visual_prompt_addendum": "Modify the right path of the split screen to remove visual cues for refrigeration and an opaque container. Instead, the right path should depict a parent consulting a pharmacist or carefully reading a product label for specific instructions, contrasting with the left path showing immediate mixing.",
+      "reason_ko": "기존 콘텐츠는 가루 해열제를 미리 타두는 경우 1~2시간 이내 복용 및 냉장 보관이라는 일반적인 지침을 제시했습니다. 이는 제품 및 제형에 따라 안정성과 보관 방법이 달라 일반화할 수 없는 임의 기준이므로, 해당 지침을 삭제하고 복용 직전에 혼합하거나 약사에게 문의하도록 수정했습니다."
+    },
+    {
+      "scene": 8,
+      "corrected_medical_claim": "Mix powdered medicine with water immediately before administering, following product instructions for water temperature and amount.",
+      "corrected_narration": "Mix powdered medicine with water immediately before use, following product instructions for water temperature and amount. Avoid hot water.",
+      "caption_chunks": [
+        "Mix powdered medicine with water immediately before use,",
+        "following product instructions for water temperature and amount. Avoid hot water."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": true,
+      "visual_prompt_addendum": "Modify the visual to show a caregiver mixing powdered medicine in a small, purpose-made dosing cup with water, ensuring all powder is dissolved and no residue remains. Emphasize following product instructions for water amount and temperature. The child is present but not actively consuming the medicine in this scene.",
+      "reason_ko": "기존 콘텐츠는 가루 해열제를 미지근하거나 실온의 물에 타서 복용하도록 안내했습니다. QA 피드백에 따라 물의 양과 온도 또한 제품 설명서를 따르도록 명확히 하고, 복용 직전 혼합하여 잔여 약이 없도록 하는 과정을 시각적으로 강조하도록 수정했습니다."
+    }
+  ],
+  "video_id": "powdered-fever-reducer-premix.en",
+  "model": "gemini-2.5-flash",
+  "source_issues": [
+    {
+      "scene": 5,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초 전후: 약명·제형 확인 없이 미리 탄 가루 해열제를 '1~2시간 내 복용하고 냉장 보관'하도록 공통 기준을 제시합니다. 제품·조제 구성에 따라 안정성과 보관법이 달라 이 임의 기준을 삭제하고, 복용 직전 혼합하거나 약사에게 해당 약의 방법을 확인하도록 수정해 주세요. 추가 노트: 직전 혼합을 권하는 핵심은 적절합니다. 물의 양과 온도 역시 해당 제품 설명서를 따르고, 한 번에 다 먹을 수 있는 소량에 섞어 남은 약이 없는지 확인하는 장면을 권합니다.",
+      "evidence": "Jaeyoon-Lee-week8-English-18.mp4"
+    },
+    {
+      "scene": 6,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초 전후: 약명·제형 확인 없이 미리 탄 가루 해열제를 '1~2시간 내 복용하고 냉장 보관'하도록 공통 기준을 제시합니다. 제품·조제 구성에 따라 안정성과 보관법이 달라 이 임의 기준을 삭제하고, 복용 직전 혼합하거나 약사에게 해당 약의 방법을 확인하도록 수정해 주세요. 추가 노트: 직전 혼합을 권하는 핵심은 적절합니다. 물의 양과 온도 역시 해당 제품 설명서를 따르고, 한 번에 다 먹을 수 있는 소량에 섞어 남은 약이 없는지 확인하는 장면을 권합니다.",
+      "evidence": "Jaeyoon-Lee-week8-English-18.mp4"
+    },
+    {
+      "scene": 8,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~29초 전후: 약명·제형 확인 없이 미리 탄 가루 해열제를 '1~2시간 내 복용하고 냉장 보관'하도록 공통 기준을 제시합니다. 제품·조제 구성에 따라 안정성과 보관법이 달라 이 임의 기준을 삭제하고, 복용 직전 혼합하거나 약사에게 해당 약의 방법을 확인하도록 수정해 주세요. 추가 노트: 직전 혼합을 권하는 핵심은 적절합니다. 물의 양과 온도 역시 해당 제품 설명서를 따르고, 한 번에 다 먹을 수 있는 소량에 섞어 남은 약이 없는지 확인하는 장면을 권합니다.",
+      "evidence": "Jaeyoon-Lee-week8-English-18.mp4"
+    }
+  ]
+}

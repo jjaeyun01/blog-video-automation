@@ -1,0 +1,156 @@
+{
+  "duration_seconds": 60.021029,
+  "width": 1080,
+  "height": 1920,
+  "has_audio": true,
+  "scene_count": 10,
+  "captions_equal_expected_narration": true,
+  "caption_images_checked": 22,
+  "all_caption_image_corners_transparent": true,
+  "video_sha256": "67491c1c030c702dd0d7bd3c47d67e6dbe0dad31a6e89dbe4464c18677be6d5c",
+  "reviewer_feedback_focus": [
+    {
+      "scene": 1,
+      "checks": [
+        "DEHYDRATION_OR_POOR_INTAKE",
+        "FORMULA_AMOUNT_VS_CONCENTRATION"
+      ]
+    },
+    {
+      "scene": 2,
+      "checks": [
+        "FORMULA_AMOUNT_VS_CONCENTRATION"
+      ]
+    },
+    {
+      "scene": 3,
+      "checks": [
+        "FORMULA_AMOUNT_VS_CONCENTRATION"
+      ]
+    },
+    {
+      "scene": 4,
+      "checks": [
+        "SAFE_SLEEP_AND_SWALLOWING"
+      ]
+    },
+    {
+      "scene": 5,
+      "checks": [
+        "SLEEP_VS_LETHARGY",
+        "TWELVE_HOUR_INTERVAL",
+        "FEED_REFUSAL_WAIT",
+        "FORMULA_AMOUNT_VS_CONCENTRATION"
+      ]
+    },
+    {
+      "scene": 6,
+      "checks": [
+        "FORMULA_AMOUNT_VS_CONCENTRATION"
+      ]
+    },
+    {
+      "scene": 7,
+      "checks": [
+        "DEHYDRATION_OR_POOR_INTAKE"
+      ]
+    },
+    {
+      "scene": 8,
+      "checks": [
+        "FORMULA_AMOUNT_VS_CONCENTRATION",
+        "POWDER_MEDICINE_STORAGE"
+      ]
+    },
+    {
+      "scene": 9,
+      "checks": [
+        "SLEEP_VS_LETHARGY"
+      ]
+    },
+    {
+      "scene": 10,
+      "checks": [
+        "SLEEP_VS_LETHARGY",
+        "FORMULA_AMOUNT_VS_CONCENTRATION"
+      ]
+    }
+  ],
+  "srt_exists": true,
+  "srt_semantically_expected_by_normalized_text": true,
+  "expected_number_tokens": [],
+  "srt_number_tokens": [],
+  "srt_numbers_match_expected": true,
+  "audio_scene_timing": [
+    {
+      "scene": 1,
+      "raw_seconds": 7.16,
+      "timeline_seconds": 6,
+      "speed_factor": 1.1933,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 2,
+      "raw_seconds": 7.08,
+      "timeline_seconds": 5,
+      "speed_factor": 1.416,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 3,
+      "raw_seconds": 5.16,
+      "timeline_seconds": 5,
+      "speed_factor": 1.032,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 4,
+      "raw_seconds": 5.68,
+      "timeline_seconds": 5,
+      "speed_factor": 1.136,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 5,
+      "raw_seconds": 9.76,
+      "timeline_seconds": 7,
+      "speed_factor": 1.3943,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 6,
+      "raw_seconds": 7.32,
+      "timeline_seconds": 9,
+      "speed_factor": 1.0,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 7,
+      "raw_seconds": 8.44,
+      "timeline_seconds": 6,
+      "speed_factor": 1.4067,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 8,
+      "raw_seconds": 6.88,
+      "timeline_seconds": 5,
+      "speed_factor": 1.376,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 9,
+      "raw_seconds": 8.4,
+      "timeline_seconds": 6,
+      "speed_factor": 1.4,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 10,
+      "raw_seconds": 7.8,
+      "timeline_seconds": 6,
+      "speed_factor": 1.3,
+      "requires_close_listen": true
+    }
+  ]
+}

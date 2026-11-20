@@ -1,0 +1,161 @@
+{
+  "duration_seconds": 60.021029,
+  "width": 1080,
+  "height": 1920,
+  "has_audio": true,
+  "scene_count": 10,
+  "captions_equal_expected_narration": true,
+  "caption_images_checked": 30,
+  "all_caption_image_corners_transparent": true,
+  "video_sha256": "057c3e7f955ce1be8960577bba83f32ca599f7fb857dd9f88c6a2c65ebe9c925",
+  "reviewer_feedback_focus": [
+    {
+      "scene": 1,
+      "checks": [
+        "RESPIRATORY_RED_FLAGS",
+        "CROSS_SCENE_URGENCY"
+      ]
+    },
+    {
+      "scene": 2,
+      "checks": [
+        "RESPIRATORY_RED_FLAGS"
+      ]
+    },
+    {
+      "scene": 4,
+      "checks": [
+        "RESPIRATORY_RED_FLAGS"
+      ]
+    },
+    {
+      "scene": 5,
+      "checks": [
+        "CASE_TIMELINE_REASSESSMENT"
+      ]
+    },
+    {
+      "scene": 6,
+      "checks": [
+        "RESPIRATORY_RED_FLAGS",
+        "EMERGENCY_LOCALE"
+      ]
+    },
+    {
+      "scene": 7,
+      "checks": [
+        "FORMULA_AMOUNT_VS_CONCENTRATION"
+      ]
+    },
+    {
+      "scene": 8,
+      "checks": [
+        "RESPIRATORY_RED_FLAGS"
+      ]
+    },
+    {
+      "scene": 9,
+      "checks": [
+        "RESPIRATORY_RED_FLAGS",
+        "SLEEP_VS_LETHARGY",
+        "SAFE_SLEEP_AND_SWALLOWING",
+        "EMERGENCY_LOCALE"
+      ]
+    },
+    {
+      "scene": 10,
+      "checks": [
+        "RESPIRATORY_RED_FLAGS"
+      ]
+    }
+  ],
+  "srt_exists": true,
+  "srt_semantically_expected_by_normalized_text": true,
+  "expected_number_tokens": [
+    "7",
+    "40",
+    "60",
+    "5",
+    "10"
+  ],
+  "srt_number_tokens": [
+    "7",
+    "40",
+    "60",
+    "5",
+    "10"
+  ],
+  "srt_numbers_match_expected": true,
+  "audio_scene_timing": [
+    {
+      "scene": 1,
+      "raw_seconds": 5.92,
+      "timeline_seconds": 6,
+      "speed_factor": 1.0,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 2,
+      "raw_seconds": 7.16,
+      "timeline_seconds": 6,
+      "speed_factor": 1.1933,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 3,
+      "raw_seconds": 7.0,
+      "timeline_seconds": 6,
+      "speed_factor": 1.1667,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 4,
+      "raw_seconds": 5.4,
+      "timeline_seconds": 6,
+      "speed_factor": 1.0,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 5,
+      "raw_seconds": 8.36,
+      "timeline_seconds": 6,
+      "speed_factor": 1.3933,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 6,
+      "raw_seconds": 7.4,
+      "timeline_seconds": 6,
+      "speed_factor": 1.2333,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 7,
+      "raw_seconds": 10.36,
+      "timeline_seconds": 7,
+      "speed_factor": 1.48,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 8,
+      "raw_seconds": 5.16,
+      "timeline_seconds": 4,
+      "speed_factor": 1.29,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 9,
+      "raw_seconds": 11.64,
+      "timeline_seconds": 8,
+      "speed_factor": 1.455,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 10,
+      "raw_seconds": 6.96,
+      "timeline_seconds": 5,
+      "speed_factor": 1.392,
+      "requires_close_listen": true
+    }
+  ]
+}

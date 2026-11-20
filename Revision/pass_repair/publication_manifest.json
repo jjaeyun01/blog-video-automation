@@ -1,0 +1,63 @@
+{
+  "published_at": "2026-09-22T07:58:19.814225+00:00",
+  "entries": [
+    {
+      "video_id": "baby-40c-fever-no-other-symptoms.ko",
+      "video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/baby-40c-fever-no-other-symptoms_KO.mp4",
+      "sha256": "5fbd3c71aba71926d3a2bd80acf5191e810993bcb9d92e65a29fb5d4675ee2ec",
+      "audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/baby-40c-fever-no-other-symptoms.ko.json",
+      "adjudication_reasons": []
+    },
+    {
+      "video_id": "baby-fever-threshold.ko",
+      "video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/baby-fever-threshold_KO.mp4",
+      "sha256": "331cc97e0f2316a89cee9c0aa5f52bcba5a21a1b156e0770ec8e27da50a58731",
+      "audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/baby-fever-threshold.ko.json",
+      "adjudication_reasons": []
+    },
+    {
+      "video_id": "baby-formula-refusal-cold.en",
+      "video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/baby-formula-refusal-cold_EN.mp4",
+      "sha256": "0b2db77ee2e0e5520b40132ce82f705447aa1461891a175468f66e09e502a5a0",
+      "audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/baby-formula-refusal-cold.en.json",
+      "adjudication_reasons": []
+    },
+    {
+      "video_id": "baby-formula-refusal-cold.es",
+      "video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/baby-formula-refusal-cold_ES.mp4",
+      "sha256": "67491c1c030c702dd0d7bd3c47d67e6dbe0dad31a6e89dbe4464c18677be6d5c",
+      "audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/baby-formula-refusal-cold.es.json",
+      "adjudication_reasons": []
+    },
+    {
+      "video_id": "baby-formula-refusal-cold.ko",
+      "video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/baby-formula-refusal-cold_KO.mp4",
+      "sha256": "3c7f4c611603e772a275e2e19efaf8ce7722610a67c8ada986dd60bb8342bdae",
+      "audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/baby-formula-refusal-cold.ko.json",
+      "adjudication_reasons": []
+    },
+    {
+      "video_id": "influenza-a-high-fever-management.ko",
+      "video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/influenza-a-high-fever-management_KO.mp4",
+      "sha256": "1a992002cb3e64bcaf877623654a057eed1704db4daebc7df368b12540000073",
+      "audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/influenza-a-high-fever-management.ko.json",
+      "adjudication_reasons": []
+    },
+    {
+      "video_id": "pediatric-fever-alternating-meds.ko",
+      "video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/pediatric-fever-alternating-meds_KO.mp4",
+      "sha256": "aa867d1c84750848fb0da7699fd03baa9e661a0948898bb5ff2d13157f0128c2",
+      "audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/pediatric-fever-alternating-meds.ko.json",
+      "adjudication_reasons": []
+    },
+    {
+      "video_id": "pediatric-tamiflu-dosing-flexibility.ko",
+      "video": "/Users/jaeyoonlee/FeverCoach/Revision/videos/pediatric-tamiflu-dosing-flexibility_KO.mp4",
+      "sha256": "4b0e84e6afa754ae2aa3fd00f0f23b8371e52df505d5ad7e66a2d47ebae19d2b",
+      "audit": "/Users/jaeyoonlee/FeverCoach/Revision/final_audit/raw/pediatric-tamiflu-dosing-flexibility.ko.json",
+      "adjudication_reasons": [
+        "2차 Gemini: 안전한 약물별 30분 기준"
+      ]
+    }
+  ]
+}

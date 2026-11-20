@@ -1,0 +1,395 @@
+{
+  "schema_version": 1,
+  "slug": "baby-fever-threshold",
+  "title": "아기 열, 38도 이상일 때 소아청소년과 진료가 필요해요",
+  "source": "https://www.fevercoach.us/ko/post/5개월-아기-체온-37-5도-정상-기준",
+  "language": "ko",
+  "character_image": null,
+  "aspect_ratio": "9:16",
+  "resolution": "720p",
+  "fps": 30,
+  "disclaimer": "이 콘텐츠는 정보 제공 목적으로만 제공되며 의학적 조언을 구성하지 않습니다. 건강 관련 문제나 건강 또는 치료와 관련된 결정을 내리기 전에 항상 자격을 갖춘 의료 전문가와 상담하시기 바랍니다.",
+  "metadata": {
+    "multilingual": true,
+    "languages": [
+      "ko",
+      "en",
+      "es"
+    ],
+    "medical_facts": [
+      {
+        "claim": "The normal body temperature range for a 5-month-old baby is 36.5 to 37.5 degrees Celsius.",
+        "numeric_values": [
+          "36.5°C",
+          "37.5°C"
+        ],
+        "safety_qualification": "This range is considered normal; temperatures above this may indicate fever."
+      },
+      {
+        "claim": "A temperature of 38 degrees Celsius or higher is considered a fever in a baby.",
+        "numeric_values": [
+          "38°C"
+        ],
+        "safety_qualification": "This is the medical definition of fever; consult a pediatrician if this threshold is met or exceeded."
+      },
+      {
+        "claim": "Common reasons for a baby's temperature to be slightly elevated include excessive clothing, a warm room, immediately after feeding, or after crying.",
+        "numeric_values": [],
+        "safety_qualification": "These are temporary factors; persistent elevation or other symptoms warrant medical evaluation."
+      },
+      {
+        "claim": "The recommended room temperature for a baby is 22 to 24 degrees Celsius.",
+        "numeric_values": [
+          "22°C",
+          "24°C"
+        ],
+        "safety_qualification": "Maintaining this range helps regulate the baby's body temperature."
+      },
+      {
+        "claim": "Consult a pediatrician if the baby's temperature reaches 38 degrees Celsius or higher, if they are unusually irritable or lethargic, if feeding significantly decreases, or if other symptoms like cough, runny nose, vomiting, or diarrhea are present.",
+        "numeric_values": [
+          "38°C"
+        ],
+        "safety_qualification": "These signs indicate a need for professional medical evaluation, regardless of temperature."
+      }
+    ],
+    "source_excerpt": "의학 감수:\n안상현, MD\n콘텐츠 편집:\n김명찬, MD\n이 게시물은 실제 의료 검토자의 질의응답 경험을 각색한 것입니다. 이 콘텐츠는 정보 제공 목적으로만 제공되며 의학적 조언을 구성하지 않습니다. 건강 관련 문제나 건강 또는 치료와 관련된 결정을 내리기 전에 항상 자격을 갖춘 의료 전문가와 상담하시기 바랍니다.\n질문:\n안녕하세요. 5개월 된 아기를 키우고 있습니다. 아기의 기초체온이 높은 건지 궁금해서 여쭤봅니다. 어릴 때는 안 그랬던 것 같은데, 4개월 무렵부터 아이 몸이 좀 따뜻하다 싶어서 열을 재보면 37.4도에서 37.5도가 나옵니다. 이런 일이 자주 있는데 괜찮은 건가요? 날씨나 주변이 덥다고 해서 이 체온이 자주 나올 수 있는 것인지 궁금합니다.\n답변:\n5개월 아기의 체온이 자주 높게 측정되어 걱정이 많으시겠습니다. 결론부터 말씀드리면 37.4~37.5도는 정상 범위의 상한선에 해당하며, 아직 의학적인 의미의 발열(열이 나는 상태)이라고 보기는 어렵습니다.\n보통 5개월 아기의 정상 체온 범위는 36.5~37.5도입니다. 37.5도까지는 정상으로 간주하며, 38도 이상일 때를 발열로 봅니다. 또한 아기들의 체온은 오후 시간대나 활동 후, 수유 직후에 자연스럽게 약간 상승할 수 있습니다.\n아기의 체온이 다소 높게 측정될 수 있는 흔한 원인은 다음과 같습니다.\n과도한 옷이나 이불: 아기는 어른보다 얇게, 한 겹 정도 적게 입히는 것이 좋습니다.\n실내 온도: 방 온도는 22~24도 정도가 적당합니다. 주변이 덥다면 체온이 일시적으로 오를 수 있습니다.\n측정 시기: 수유 직후나 아기가 심하게 울고 난 직후에는 체온이 높게 나올 수 있습니다.\n측정 부위: 고막(귀) 체온계는 약간 높게, 겨드랑이 체온은 실제보다 약간 낮게 측정되는 경향이 있습니다.\n가정에서는 아기가 평소처럼 잘 먹고 잘 노는지, 손발이 차갑지 않고 적당히 따뜻한지, 옷을 너무 덥게 입히지는 않았는지 점검해 보시길 권장합니다. 생후 4개월 무렵부터 이러한 체온이 지속되었다면, 아기의 평소 기초체온이 약간 높은 편일 가능성도 있습니다. 다른 동반 증상 없이 컨디션이 좋다면 실내 온도와 옷차림 등 환경을 서늘하게 조절해 주시면서 지켜보셔도 괜찮습니다.\n다만, 다음과 같은 경우에는 소아청소년과에 방문하여 진료를 받으셔야 합니다.\n체온이 38도 이상으로 오를 때\n아기가 평소와 다르게 심하게 보채거나 처질 때\n수유량이 눈에 띄게 감소할 때\n기침, 콧물, 구토, 설사 등 다른 증상이 동반될 때\n우선 실내 환경과 아이의 옷차림을 시원하게 조절해 주시고, 만약 발열 기준인 38도를 넘거나 아기의 컨디션이 평소와 다르게 저하된다면 지체 없이 병원에 내원하시어 진찰을 받아보시기 바랍니다.\n아이의 건강을 모니터링할 때 더 명확한 안내와 안심을 위해, FeverCoach 앱이 항상 도움을 드립니다.\nfevercoach.us\nApple App Store\nGoogle Play\n🌐 다른 언어로 보기:\nEnglish\n·\nEspañol",
+    "visual_system": "fevercoach-explainer-v3",
+    "character_mode": "automatic",
+    "character_concept": {
+      "subject": "Soft Swaddle Blanket",
+      "source_basis": "The article advises adjusting clothing and blankets as a common cause of temporary temperature elevation in babies.",
+      "visual_identity": "A rectangular piece of soft, woven fabric, gently folded or wrapped, with a simple, subtle pattern.",
+      "primary_color": "Pale, warm cream",
+      "surface_texture": "Soft, slightly textured woven cotton or muslin"
+    }
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "title": "발열 기준 38도",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "아기 체온이 38도 이상으로 오르면 발열로 간주합니다.",
+      "subtitle": "아기 체온이 38도 이상으로 오르면 발열로 간주합니다.",
+      "prompt": "A modern digital thermometer display, initially showing an unlabeled threshold, rapidly rises to an unlabeled threshold. A subtle, non-text warning icon flashes next to the temperature. The camera slowly tracks right, keeping the thermometer display centered. The thermometer itself remains stationary. Polished semi-stylized 3D medical visualization. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks. FINAL QA REPAIR: Ensure the digital thermometer display remains completely blank, showing no numbers or text. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, thermometer showing units, thermometer showing 'fever', letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "red_flag",
+      "medical_claim": "A temperature of 38 degrees Celsius or higher is considered a fever in a baby.",
+      "asset_prompt": "Clean, semi-stylized 3D rendering of a modern digital thermometer, displaying 38.0 degrees Celsius, with a subtle, non-text warning icon. The background is a soft, out-of-focus nursery. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks. FINAL QA REPAIR: Ensure the digital thermometer display remains completely blank, showing no numbers or text. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "아기 체온이",
+        "38도 이상으로 오르면",
+        "발열로 간주합니다."
+      ],
+      "narrative_role": "hook",
+      "shot_design": {
+        "camera_profile": "lateral_reveal",
+        "beat_one": "0.0-1.5 second establishing shot of a digital thermometer display at an unlabeled threshold",
+        "beat_two": "1.5-4.5 second camera slowly tracks right as the thermometer display rapidly rises to an unlabeled threshold and a warning icon flashes",
+        "payoff_frame": "4.5-6.0 second clear hold on the thermometer displaying an unlabeled threshold with the warning icon",
+        "depth_layers": "Digital thermometer in midground, soft blurred background of a nursery, subtle foreground element like a toy",
+        "overlay_safe_zone": "Top-left quadrant of the screen, clear of the thermometer display",
+        "sound_cues": "Soft electronic beep, gentle rising tone",
+        "transition_out": "Visual fades to a soft, warm light"
+      }
+    },
+    {
+      "index": 2,
+      "title": "정상 체온 범위",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "5개월 아기의 정상 체온은 36.5도에서 37.5도 사이입니다.",
+      "subtitle": "5개월 아기의 정상 체온은 36.5도에서 37.5도 사이입니다.",
+      "prompt": "A sleeping babya completely blank and unmarked surfaces chest, revealing a subtle, glowing internal visualization of the bodya completely blank and unmarked surfaces body remains stationary. Polished semi-stylized 3D medical visualization. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks. FINAL QA REPAIR: Show safe infant sleep only: flat firm bare crib mattress, baby on back, no pillow or loose blanket. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, scary anatomy, exposed organs, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "quantity",
+      "medical_claim": "The normal body temperature range for a 5-month-old baby is 36.5 to 37.5 degrees Celsius.",
+      "asset_prompt": "Clean, semi-stylized 3D rendering of a sleeping babya completely blank and unmarked surfaces core temperature, showing a stable, warm glow. No external clothing visible. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks. FINAL QA REPAIR: Show safe infant sleep only: flat firm bare crib mattress, baby on back, no pillow or loose blanket. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "5개월 아기의 정상 체온은",
+        "36.5도에서 37.5도 사이입니다."
+      ],
+      "narrative_role": "context",
+      "shot_design": {
+        "camera_profile": "macro_dive",
+        "beat_one": "0.0-1.5 second establishing shot of a sleeping baby's torso",
+        "beat_two": "1.5-4.5 second camera slowly dives into the babyan unmarked surfaces core temperature, showing a stable, warm glow within the normal range",
+        "payoff_frame": "4.5-6.0 second clear hold on the internal temperature visualization within the baby's chest",
+        "depth_layers": "Baby's skin in foreground, internal glowing visualization in midground, blurred internal organs in background",
+        "overlay_safe_zone": "Top-right quadrant of the screen, clear of the baby's face",
+        "sound_cues": "Gentle, rhythmic heartbeat, soft ambient hum",
+        "transition_out": "Visual gently zooms out and fades to a neutral background"
+      }
+    },
+    {
+      "index": 3,
+      "title": "37.5도는 정상",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "37.5도까지는 정상 범위이며, 38도부터 발열입니다.",
+      "subtitle": "37.5도까지는 정상 범위이며, 38도부터 발열입니다.",
+      "prompt": "Two modern digital thermometer displays are shown side-by-side. The left display shows an unlabeled threshold with a calm glow, and the right display shows an unlabeled threshold with a slightly more intense glow. The camera slowly tracks left to emphasize the an unlabeled threshold display, then tracks right to emphasize the an unlabeled threshold display. Both thermometers remain stationary. Polished semi-stylized 3D medical visualization. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, thermometer showing units, thermometer showing 'normal' or 'fever', letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "comparison",
+      "medical_claim": "The normal body temperature range for a 5-month-old baby is 36.5 to 37.5 degrees Celsius.",
+      "asset_prompt": "Clean, semi-stylized 3D rendering of two modern digital thermometer displays side-by-side, one showing 37.5 degrees Celsius with a calm glow, the other showing 38.0 degrees Celsius with a slightly more intense glow. No text or units on displays. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "37.5도까지는",
+        "정상 범위이며,",
+        "38도부터 발열입니다."
+      ],
+      "narrative_role": "misconception",
+      "shot_design": {
+        "camera_profile": "comparison_track",
+        "beat_one": "0.0-1.5 second split screen showing two thermometer displays, one at an unlabeled threshold and one at an unlabeled threshold",
+        "beat_two": "1.5-4.5 second camera slowly tracks left, highlighting the an unlabeled threshold display, then tracks right to highlight the an unlabeled threshold display, emphasizing the difference",
+        "payoff_frame": "4.5-6.0 second clear hold on both displays, with a subtle visual distinction (e.g., a calm glow for an unlabeled threshold, a slightly more intense glow for an unlabeled threshold)",
+        "depth_layers": "Two thermometer displays in midground, soft blurred background, subtle foreground elements",
+        "overlay_safe_zone": "Top-center region, between the two displays",
+        "sound_cues": "Two distinct, short tones for each temperature, gentle 'whoosh' as camera tracks",
+        "transition_out": "Visual dissolves to a wider shot of a baby in a room"
+      }
+    },
+    {
+      "index": 4,
+      "title": "체온 상승 원인",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "과도한 옷이나 더운 실내 환경이 체온을 올릴 수 있습니다.",
+      "subtitle": "과도한 옷이나 더운 실내 환경이 체온을 올릴 수 있습니다.",
+      "prompt": "An anthropomorphic Soft Swaddle Blanket character is in a cozy, slightly warm nursery room. The camera drops down to focus on the character, which subtly expands and emits a gentle, warm aura, indicating it's too warm. The room and other objects remain stationary. Polished semi-stylized 3D medical visualization. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, character speaking, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "mechanism",
+      "medical_claim": "Common reasons for a baby's temperature to be slightly elevated include excessive clothing, a warm room, immediately after feeding, or after crying.",
+      "asset_prompt": "Clean, semi-stylized 3D rendering of an anthropomorphic Soft Swaddle Blanket character, looking slightly warm and emitting a gentle, warm aura. It is positioned in a cozy, slightly warm nursery room. No text or symbols. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "과도한 옷이나",
+        "더운 실내 환경이",
+        "체온을 올릴 수 있습니다."
+      ],
+      "narrative_role": "mechanism",
+      "shot_design": {
+        "camera_profile": "top_down_drop",
+        "beat_one": "0.0-1.5 second establishing shot of a cozy, slightly warm nursery room",
+        "beat_two": "1.5-4.5 second camera drops down to focus on the anthropomorphic Soft Swaddle Blanket character, which subtly expands and emits a gentle, warm aura, indicating it's too warm",
+        "payoff_frame": "4.5-6.0 second clear hold on the warm Swaddle Blanket character within the room setting",
+        "depth_layers": "Room elements in background, Swaddle Blanket character in midground, subtle foreground blur",
+        "overlay_safe_zone": "Top-left quadrant of the screen, clear of the character",
+        "sound_cues": "Soft, gentle hum of a heater, subtle rustling fabric sound",
+        "transition_out": "Visual slowly pulls back from the character"
+      }
+    },
+    {
+      "index": 5,
+      "title": "적정 실내 온도",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "아기에게 적절한 실내 온도는 22도에서 24도입니다.",
+      "subtitle": "아기에게 적절한 실내 온도는 22도에서 24도입니다.",
+      "prompt": "A comfortable, well-regulated nursery room. The camera arcs around a modern, clean digital thermostat on the wall. The thermostat display remains blank and stable. The room and thermostat remain stationary. Polished semi-stylized 3D medical visualization. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, thermostat showing units, thermostat showing 'ideal', letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "quantity",
+      "medical_claim": "The recommended room temperature for a baby is 22 to 24 degrees Celsius.",
+      "asset_prompt": "Clean, semi-stylized 3D rendering of a comfortable, well-regulated nursery room. A modern, clean digital thermostat is on the wall, displaying a stable temperature. No numbers or text on the thermostat. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "아기에게 적절한",
+        "실내 온도는",
+        "22도에서 24도입니다."
+      ],
+      "narrative_role": "evidence",
+      "shot_design": {
+        "camera_profile": "parallax_arc",
+        "beat_one": "0.0-1.5 second establishing shot of a comfortable, well-regulated nursery room",
+        "beat_two": "1.5-4.5 second camera arcs around a subtle, clean digital thermostat on the wall, which displays a stable temperature within the ideal range",
+        "payoff_frame": "4.5-6.0 second clear hold on the thermostat display, centered in the frame",
+        "depth_layers": "Room furniture in background, thermostat on wall in midground, subtle foreground plant",
+        "overlay_safe_zone": "Top-right quadrant of the screen, clear of the thermostat display",
+        "sound_cues": "Soft, consistent ambient air sound, gentle click of a thermostat",
+        "transition_out": "Visual smoothly transitions to a scene focusing on a baby"
+      }
+    },
+    {
+      "index": 6,
+      "title": "체온과 컨디션",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "체온이 약간 높아도 아기 컨디션이 좋으면 괜찮을 수 있습니다.",
+      "subtitle": "체온이 약간 높아도 아기 컨디션이 좋으면 괜찮을 수 있습니다.",
+      "prompt": "A split screen shows two babies. On the left, a happy, active baby. On the right, a lethargic, fussy baby. Both have a subtle warm aura around them. The camera slowly tracks right, revealing more detail of the lethargic baby, then tracks left to show the active baby. Both babies remain stationary. Polished semi-stylized 3D medical visualization. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks. FINAL QA REPAIR: Ensure the 'lethargic, fussy baby' on the right clearly appears unwell, contrasting with the 'happy, active baby' on the left. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, baby crying excessively, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "comparison",
+      "medical_claim": "Consult a pediatrician if the baby's temperature reaches 38 degrees Celsius or higher, if they are unusually irritable or lethargic, if feeding significantly decreases, or if other symptoms like cough, runny nose, vomiting, or diarrhea are present.",
+      "asset_prompt": "Clean, semi-stylized 3D rendering of a split screen. On the left, a happy, active baby with a subtle warm aura. On the right, a lethargic, fussy baby with a similar subtle warm aura. No text or symbols. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks. FINAL QA REPAIR: Ensure the 'lethargic, fussy baby' on the right clearly appears unwell, contrasting with the 'happy, active baby' on the left. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "체온이 약간 높아도",
+        "아기 컨디션이 좋으면",
+        "괜찮을 수 있습니다."
+      ],
+      "narrative_role": "decision",
+      "shot_design": {
+        "camera_profile": "lateral_reveal",
+        "beat_one": "0.0-1.5 second split screen showing two babies: one happy and active, one lethargic and fussy, both with a subtle, slightly elevated temperature aura",
+        "beat_two": "1.5-4.5 second camera slowly tracks right, revealing more detail of the lethargic baby, then tracks left to show the active baby, emphasizing the contrast in their condition",
+        "payoff_frame": "4.5-6.0 second clear hold on both babies, highlighting their contrasting states",
+        "depth_layers": "Two baby scenes side-by-side in midground, soft blurred background, subtle foreground elements",
+        "overlay_safe_zone": "Top-center region, between the two baby scenes",
+        "sound_cues": "Gentle baby cooing, soft baby fussing",
+        "transition_out": "Visual fades to a single, calm baby scene"
+      }
+    },
+    {
+      "index": 7,
+      "title": "아기 상태 확인",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "손발 온도만으로 안심하지 말고, 체온과 수유·활력·호흡 상태를 함께 확인하세요.",
+      "subtitle": "손발 온도만으로 안심하지 말고, 체온과 수유·활력·호흡 상태를 함께 확인하세요.",
+      "prompt": "A baby is playing happily. A parenta completely blank and unmarked surfaces forehead, then their hands and feet, assessing warmth and responsiveness. The camera travels closer to show these actions. The baby remains stationary, only the parent's hand moves. Polished semi-stylized 3D medical visualization. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks. FINAL QA REPAIR: Ensure the baby's playing environment is safe, free of pillows, soft bumpers, or loose blankets. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, parent's face visible, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "sequence",
+      "medical_claim": "손발 온도만으로 안심하지 말고, 체온과 수유·활력·호흡 상태를 함께 확인하세요.",
+      "asset_prompt": "Clean, semi-stylized 3D rendering of a baby playing happily. A parenta completely blank and unmarked surfaces forehead, then their hands and feet, assessing warmth. No text or symbols. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks. FINAL QA REPAIR: Ensure the baby's playing environment is safe, free of pillows, soft bumpers, or loose blankets. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "손발 온도만으로 안심하지 말고, 체온과 수유·활력·호흡 상태를 함께 확인하세요."
+      ],
+      "narrative_role": "reassessment",
+      "shot_design": {
+        "camera_profile": "pov_travel",
+        "beat_one": "0.0-1.5 second POV shot from a parent's perspective, looking at a baby playing happily",
+        "beat_two": "1.5-4.5 second camera travels closer, showing a parentan unmarked surfaces forehead, then their hands and feet, assessing warmth and responsiveness",
+        "payoff_frame": "4.5-6.0 second clear hold on the parentan unmarked surfaces warm hand",
+        "depth_layers": "Babyan unmarked surfaces hand in foreground, blurred background of a nursery",
+        "overlay_safe_zone": "Top-left quadrant of the screen, clear of the baby's face",
+        "sound_cues": "Soft baby gurgle, gentle touch sound",
+        "transition_out": "Visual smoothly transitions to a close-up of clothing"
+      }
+    },
+    {
+      "index": 8,
+      "title": "옷차림 조절",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "아기는 환경과 컨디션에 맞춰 적절하게 옷을 입히는 것이 좋습니다.",
+      "subtitle": "아기는 환경과 컨디션에 맞춰 적절하게 옷을 입히는 것이 좋습니다.",
+      "prompt": "A baby is gently wrapped in the anthropomorphic Soft Swaddle Blanket character. The camera drops down as the Swaddle Blanket character is gently loosened and partially unfolded from the baby, revealing the baby dressed more lightly underneath. The baby remains stationary, only the blanket character moves. Polished semi-stylized 3D medical visualization. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks. FINAL QA REPAIR: Show safe infant sleep only: flat firm bare crib mattress, baby on back, no pillow or loose blanket. Show safe infant sleep only: flat firm bare crib mattress, baby on back, no pillow or loose blanket. The baby's clothing is adjusted to be appropriate for the environment, neither over-wrapped nor underdressed. Show a baby dressed appropriately for the environment, not overly bundled, sleeping safely on a flat, firm, bare crib mattress, on their back, without any pillows, loose blankets, or soft bumpers. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, character speaking, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "action",
+      "medical_claim": "It is recommended to dress babies appropriately according to the environment and their condition, avoiding over-wrapping or underdressing.",
+      "asset_prompt": "Clean, semi-stylized 3D rendering of a baby gently wrapped in the anthropomorphic Soft Swaddle Blanket character. The blanket is partially unfolded, revealing the baby dressed more lightly underneath. No text or symbols. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks. FINAL QA REPAIR: Show safe infant sleep only: flat firm bare crib mattress, baby on back, no pillow or loose blanket. Show safe infant sleep only: flat firm bare crib mattress, baby on back, no pillow or loose blanket. The baby's clothing is adjusted to be appropriate for the environment, neither over-wrapped nor underdressed. Show a baby dressed appropriately for the environment, not overly bundled, sleeping safely on a flat, firm, bare crib mattress, on their back, without any pillows, loose blankets, or soft bumpers. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "아기는 환경과 컨디션에 맞춰",
+        "적절하게 옷을 입히는 것이 좋습니다."
+      ],
+      "narrative_role": "action",
+      "shot_design": {
+        "camera_profile": "top_down_drop",
+        "beat_one": "0.0-1.5 second establishing shot of a baby gently wrapped in the anthropomorphic Soft Swaddle Blanket character",
+        "beat_two": "1.5-4.5 second camera drops down as the Swaddle Blanket character is gently loosened and partially unfolded from the baby, revealing the baby dressed more lightly underneath",
+        "payoff_frame": "4.5-6.0 second clear hold on the baby now more lightly dressed, with the partially unfolded Swaddle Blanket character beside them",
+        "depth_layers": "Baby in midground, Swaddle Blanket character in foreground, blurred background of a crib",
+        "overlay_safe_zone": "Top-right quadrant of the screen, clear of the baby",
+        "sound_cues": "Soft fabric rustling, gentle baby sigh",
+        "transition_out": "Visual fades to a more abstract representation of symptoms"
+      }
+    },
+    {
+      "index": 9,
+      "title": "동반 증상 주의",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "보채거나 수유량 감소, 기침 등 다른 증상이 있다면 진료가 필요합니다.",
+      "subtitle": "보채거나 수유량 감소, 기침 등 다른 증상이 있다면 진료가 필요합니다.",
+      "prompt": "A simplified, clean baby outline. The camera pushes into the outline, revealing abstract, non-frightening visual cues for symptoms: a subtle cough animation in the chest, a gentle a completely blank and unmarked surface for runny nose, a a completely blank and unmarked surface for vomiting, and a a completely blank and unmarked surface for diarrhea, appearing sequentially. The baby outline remains stationary. Polished semi-stylized 3D medical visualization. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, gore, frightening anatomy, explicit vomit, explicit diarrhea, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "red_flag",
+      "medical_claim": "Consult a pediatrician if the baby is unusually irritable or lethargic, if feeding significantly decreases, or if other symptoms like cough, runny nose, vomiting, or diarrhea are present.",
+      "asset_prompt": "Clean, semi-stylized 3D rendering of a simplified, non-frightening baby outline. Abstract, non-gore visual cues for symptoms are subtly visible: a cough animation in the chest, a gentle a completely blank and unmarked surface for runny nose, a a completely blank and unmarked surface for vomiting, and a a completely blank and unmarked surface for diarrhea. No text or symbols. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "보채거나 수유량 감소,",
+        "기침 등 다른 증상이 있다면",
+        "진료가 필요합니다."
+      ],
+      "narrative_role": "red_flag",
+      "shot_design": {
+        "camera_profile": "xray_push",
+        "beat_one": "0.0-1.5 second establishing shot of a simplified, clean baby outline",
+        "beat_two": "1.5-4.5 second camera pushes into the outline, revealing abstract, non-frightening visual cues for symptoms: a subtle cough animation in the chest, a gentle an unmarked surface for runny nose, a an unmarked surface for vomiting, and a an unmarked surface for diarrhea, appearing sequentially",
+        "payoff_frame": "4.5-6.0 second clear hold on the baby outline with all symptom cues visible",
+        "depth_layers": "Baby outline in midground, abstract symptom visuals in foreground, soft blurred background",
+        "overlay_safe_zone": "Top-center region, clear of the baby's face",
+        "sound_cues": "Soft, distinct sound for each symptom cue (e.g., gentle cough, subtle drip)",
+        "transition_out": "Visual fades to a calm, reassuring scene"
+      }
+    },
+    {
+      "index": 10,
+      "title": "소아청소년과 진료",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "38도 이상이거나 컨디션이 나쁘면 소아청소년과에 방문하여 진료를 받으세요.",
+      "subtitle": "38도 이상이거나 컨디션이 나쁘면 소아청소년과에 방문하여 진료를 받으세요.",
+      "prompt": "A calm, comfortable baby is in a safe, nurturing environment. The camera slowly pulls back, revealing a subtle visual representation of the an unlabeled threshold threshold in the background. A clear, inviting path leads towards a stylized, friendly pediatrician's office in the distance. The baby and environment remain stationary. Polished semi-stylized 3D medical visualization. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, scary clinic, empty clinic, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "takeaway",
+      "medical_claim": "If the baby's temperature exceeds 38 degrees Celsius or their condition deteriorates, seek immediate medical attention from a pediatrician.",
+      "asset_prompt": "Clean, semi-stylized 3D rendering of a calm, comfortable baby in a safe, nurturing environment. A subtle visual representation of the 38 degrees Celsius threshold is in the background. A clear, inviting path leads towards a stylized, friendly pediatrician's office in the distance. No text or symbols. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "38도 이상이거나",
+        "컨디션이 나쁘면",
+        "소아청소년과에 방문하여 진료를 받으세요."
+      ],
+      "narrative_role": "takeaway",
+      "shot_design": {
+        "camera_profile": "hero_pullback",
+        "beat_one": "0.0-1.5 second close-up on a calm, comfortable baby",
+        "beat_two": "1.5-4.5 second camera slowly pulls back, revealing the baby in a safe, nurturing environment, with a subtle visual representation of the an unlabeled threshold threshold in the background, and a clear, inviting path leading towards a stylized pediatrician's office in the distance",
+        "payoff_frame": "4.5-6.0 second clear hold on the overall scene, emphasizing safety and access to care",
+        "depth_layers": "Baby in foreground, environment with threshold in midground, stylized clinic in background",
+        "overlay_safe_zone": "Top-left quadrant of the screen, clear of the baby's face and clinic",
+        "sound_cues": "Soft, reassuring lullaby melody, gentle ambient sounds of a calm home",
+        "transition_out": "Visual fades to black"
+      }
+    }
+  ]
+}

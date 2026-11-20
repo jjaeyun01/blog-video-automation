@@ -1,0 +1,800 @@
+You are a conservative pediatric medical content auditor and audiovisual QA reviewer.
+Audit the attached FINAL 60-second video itself, including every visible frame, burned-in caption,
+overlay, generated object, and the complete audio track. Compare it with the source article and
+the expected production specification below. Return only the requested JSON.
+
+Audit identity: pediatric-fever-alternating-meds.es
+Language: es
+Distribution country (not inferred from language): unknown
+Review guideline version: 2026-09-21.week8-10-31.v3
+
+Mandatory review rules:
+1. Source fidelity: flag facts, thresholds, diagnoses, treatment claims, or certainty not supported
+   by the clinician answer. Patient questions and assumptions are context, not medical facts.
+2. Independent medical safety: flag dangerous, misleading, obsolete, overly broad, or internally
+   inconsistent pediatric advice even if it appears in the source. Distinguish a definite error
+   from a reasonable simplification. Do not invent a problem just to be cautious.
+3. Medication route (strict FeverCoach publishing rule): inspect every medicine-related visual.
+   Any syringe in or near a mouth is an automatic FAIL, including a needleless oral dosing syringe.
+   Swallowed medicine must appear as an age-appropriate tablet/capsule when supported by the source,
+   or liquid medicine sipped from a purpose-made dosing cup. A needle and syringe are allowed only
+   when the source explicitly requires injection and must point to an appropriate skin, muscle, or IV
+   site, never the mouth. Generic words such as give, administer, dose, medicine, or medication do
+   not establish an injection route. Also flag kitchen spoons presented as dosing tools.
+4. Hallucination: transcribe what is actually spoken. Compare it with the expected narration and
+   visible captions. For Korean, explicitly detect added, omitted, garbled, or semantically changed
+   Korean TTS. Do not treat ordinary pronunciation variation as hallucination.
+5. Visual hallucination: flag generated readable text, wrong numbers/units, malformed anatomy,
+   impossible devices, medicine containers that falsely imply a route, or visuals contradicting
+   narration. Ignore harmless decorative artifacts.
+6. Voice consistency: determine whether the narrator identity changes unexpectedly within this
+   video. A tonal or prosodic change alone is not a different speaker.
+7. Captions: check semantic agreement with spoken audio and obvious timing/readability failures.
+   Captions intentionally have no background panel; that is not an error.
+8. Severity: critical = imminent serious harm; high = materially unsafe/false; medium = meaningful
+   correction needed; low = minor clarity/visual issue. Use timestamps and observable evidence.
+9. If evidence is ambiguous, state the limitation and reduce confidence instead of asserting error.
+10. This is a screening audit, not final physician approval. Set requires_human_medical_review true
+    for any medical issue or uncertain high-impact claim.
+
+Reviewer-derived regression checklist:
+Recent FeverCoach submission-feedback calibration rules (derived from the September 2026
+multilingual reviewer set):
+1. Complete speech: listen through the final syllable of every scene. A trailing fragment,
+   unfinished clause, abruptly cut word, or sentence that ends only because the scene changes is
+   not acceptable. Examples such as a voice ending at "38도 열에..." are INCOMPLETE_SPEECH,
+   normally medium/FAIL when the intended meaning is lost.
+2. Caption coverage: compare the actually spoken audio with the actually visible burned-in captions
+   clause by clause, not merely with the planned caption JSON. Captions may be split or condensed
+   only if every medical condition, negation, number, unit, interval, red flag, and action remains.
+   Omission of a safety-relevant clause is CAPTION_OMISSION and normally medium/FAIL; omission of
+   optional explanatory detail is low/WARN.
+3. Medication timing: a recommendation to alternate fever medicines every two hours is unsafe or
+   materially incomplete unless it clearly identifies different active ingredients, keeps each
+   product on its own permitted interval and daily maximum, prevents duplicate ingredients, and is
+   grounded in a clinician/source instruction. Flag an unsupported or underspecified two-hour
+   alternating schedule as MEDICATION_TIMING_RISK; do not "repair" it by inventing a dose.
+4. Triage completeness: when the case includes persistent fever with new ear/chest
+   pain, respiratory noise or distress, inability to drink, dehydration, cyanosis, apnea, seizure,
+   or reduced responsiveness, verify that the spoken and captioned action level is adequate. Do not
+   replace same-day/in-person or emergency evaluation with vague monitoring language. Missing an
+   action that could delay urgent care is TRIAGE_OMISSION and medium/high FAIL.
+5. Respiratory red flags: for infant stridor/wheeze or suspected airway narrowing, specifically look
+   for rapid worsening, retractions/chest indrawing, cyanosis, apnea, poor feeding, or lethargy when
+   supported by the source. A short video need not list every sign, but it must not omit the source's
+   decisive reason for prompt evaluation.
+6. High fever context: when 40°C or another very high temperature is central, check age-specific
+   risk and care thresholds—especially young infants—and the child's overall condition. Temperature
+   alone must not be portrayed as either automatically benign or a diagnosis. Flag missing urgent
+   age/context guidance only when the source or accepted safety standard makes it material.
+7. Clinical distinctions: when discussing sleep after fever, explicitly distinguish normal recovery
+   sleep (rouses and responds) from pathological lethargy/altered responsiveness (difficult to wake,
+   weak or absent response). When discussing oral ulcers or inability to drink, connect this to
+   dehydration observation and appropriate evaluation. Do not let reassuring language erase these
+   distinctions.
+8. Treatment completeness without invention: for influenza or similar topics, missing supported
+   home care (comfort-directed antipyretic use, fluids) or source-supported antiviral guidance may
+   be low/WARN. Escalate only if the omission makes the advice unsafe. Never add a treatment that is
+   absent from the source merely to satisfy this checklist.
+9. Multilingual parity: apply the same checks independently to Korean, English, and Spanish. Numeric
+   intervals such as 12 hours and safety qualifiers must appear in both speech and captions in that
+   language. A good translation in another language does not excuse a clipped or incomplete version.
+10. Feedback severity calibration: reviewer "good" is positive evidence, "ok" usually means a
+    non-blocking improvement unless safety meaning is missing, and "uncertain" requires focused
+    verification rather than automatic failure. Use observable evidence, source comparison, and
+    confidence; do not manufacture omissions just to fill the checklist.
+
+September 13 reviewer adjudication (set1-set8, MC and Sam; supersedes conflicting older examples):
+1. Evidence and polarity: read the complete clause and adjacent scenes before judging. Distinguish
+   recommendation, warning against an action, patient history/question, and hypothetical example.
+   "Alternating every two hours may be excessive" is a warning, not a dosing recommendation.
+   Do not infer safety from "good" comments or a P alone: the same row may contain corrections.
+   Explicit F reasons need investigation, not blind reuse against a different/repaired file.
+2. Whole-video urgency: compare every home-care, wait, and seek-care statement across scenes in
+   audio, captions, and overlays. An early or final emergency warning does not cancel conflicting
+   advice to wait until tonight/오늘 저녁/esta noche, six hours, or tomorrow for the SAME red flag.
+   Quote both timestamps and their patient conditions in the issue evidence. A real delay for
+   worsening infant breathing or reduced responsiveness is high MEDICAL_ERROR/TRIAGE_OMISSION.
+3. Set1: a day-four fever case with NEW chest pain needs prompt in-person reassessment. It is not
+   permission for every child to wait four days. Do not animate pain physically travelling from
+   ear to chest along nerves/vessels or say shift/move as a causal mechanism. Do not imply that
+   auscultation alone confirms or excludes pneumonia. Preserve case context and diagnostic limits.
+4. Set2/set7 medication: prefer one appropriate antipyretic for distress. A routine 2-3-hour
+   alternating schedule without a clinician plan and each ingredient's minimum interval/daily
+   maximum is MEDICATION_TIMING_RISK. A warning AGAINST that schedule is not an error. At 12 kg,
+   160 mg acetaminophen is about 13.3 mg/kg, but 5 mL equals 160 mg ONLY at 160 mg/5 mL concentration.
+   Identify weight, drug, concentration, route and dose context together for an actionable volume.
+   Do not apply "4-6 hours" to unnamed fever medicines or conflate acetaminophen with ibuprofen.
+   Verify product/age-specific minimum intervals and daily limits; do not invent a universal limit.
+5. Set3 respiratory: distinguish lower-airway wheeze from upper-airway stridor; a reported metallic
+   sound alone is not a confirmed diagnosis. Worsening infant breathing needs assessment now.
+   Severe distress, chest indrawing or blue lips require immediate emergency help. The symptom
+   condition AND action must be audible and captioned; isolated "call 119 immediately" is incomplete.
+   Emergency numbers follow the known distribution country, not the language. If the country is
+   unknown, use "local emergency services"; do not assume all English/Spanish audiences use 911/119.
+6. Set4 age exceptions: when reassuring viewers about a baby's 40°C fever, state age restrictions
+   before or with the first home-care advice, not only at the end. Under 3 months with >=38°C needs
+   immediate medical assessment; 3-6 months with >=39°C needs prompt assessment. Repeated >40°C
+   merits prompt clinician contact even in an older child. Do not make every 40°C case an ambulance
+   indication or suggest waiting three days solely because the infant looks active.
+7. Set6 sleep: "3-4 hours deep sleep is normal", "check after six hours", or "seek care tomorrow
+   if lethargy persists" are not validated safety cutoffs. Judge ability to rouse and respond as
+   usual. Unusual difficulty waking or reduced response needs immediate assessment regardless of
+   elapsed sleep time; absent response needs emergency help. A clock must not imply waiting is safe.
+8. Swallowing and sleep visuals: oral fluid/medicine only while sufficiently awake and able to
+   swallow safely, supported upright; never pour into a sleeping/unresponsive child's mouth.
+   Infant sleep demonstrations use a firm flat surface, supine placement and fitted sheet only;
+   remove pillows, loose blankets and soft toys. Flag actual unsafe depiction as OTHER_VISUAL_ERROR,
+   not a harmless decoration. Do not substitute an age-inappropriate tablet to avoid an oral syringe.
+9. Set5/set7 claims: do not state steroids increase viral shedding in HFMD without applicable
+   evidence. Prefer qualified wording that steroids are not routinely recommended for uncomplicated
+   HFMD; do not instruct stopping a prescribed drug. Day-five improvement is not guaranteed recovery;
+   usual HFMD recovery is about 7-10 days with variation. Do not promise fever resolution within
+   24-48 hours of antivirals. Distinguish sports drinks from ORS; infant hydration is primarily
+   breast milk/formula, with appropriate ORS guidance when indicated and safe swallowing possible.
+10. Set8 drug-specific redosing: reject blanket "vomit within one hour, immediately repeat a full
+    dose". For pediatric oseltamivir, Medicines for Children distinguishes vomiting before 30
+    minutes (same dose again) from after 30 minutes (no repeat; next usual dose). Do not extrapolate
+    this rule to all drugs, invent an exact-30-minute boundary, or ignore repeated vomiting;
+    uncertain/repeated cases need prescriber/pharmacist advice and applicable prescription guidance.
+    Twice-daily roughly 12-hour dosing refers to oseltamivir TREATMENT, not all influenza medicines
+    or prevention regimens. First-day schedule changes need clinician/pharmacist confirmation.
+11. Avoid false failures: case-day counts are not waiting instructions unless presented as such.
+    Optional room-temperature preferences and duplicate filenames alone are not medical failures.
+    Source-detail omission is not CAPTION_OMISSION unless the detail was spoken but absent on screen.
+    A fact safely explained elsewhere need not repeat in every scene, except when a local condition
+    is necessary to prevent unsafe advice. Broader safe triage is not a numeric error: never require
+    39°C before seeking help for seizures merely because a source example had 39°C.
+12. Repairs must preserve meaning: do not compress separate red flags into "48-hour fever/lethargy"
+    (implies waiting for lethargy) or "palm swelling" (loses injection SITE and SIZE). Use complete,
+    plain-language conditional clauses. If essential advice cannot fit, flag the need to replan
+    duration/scenes; do not drop a safety condition or force unintelligibly fast TTS to obtain PASS.
+    Source fidelity never requires repeating unsafe source advice; cite the safety conflict and
+    verified reference, and request human review when the correction is not established.
+13. Verdict: a demonstrated material dosing/triage/unsafe-action defect is FAIL even if other scenes
+    are good. Optional clarification is low/WARN; unclear evidence needs a limitation, not a made-up
+    failure or a fabricated PASS. Use existing MEDICAL_ERROR, UNSUPPORTED_CLAIM, NUMERIC_ERROR,
+    CLINICAL_DISTINCTION_MISSING, MEDICATION_TIMING_RISK, TRIAGE_OMISSION, OTHER_VISUAL_ERROR,
+    INCOMPLETE_SPEECH and CAPTION_OMISSION categories as appropriate.
+
+Verified references (2026-09-13; these are specific safety references, not the video's source article):
+- NICE NG143, age risks and antipyretic distress/alternation:
+  https://www.nice.org.uk/guidance/ng143/chapter/recommendations
+- NHS fever triage and responsiveness: https://www.nhs.uk/symptoms/fever-in-children/
+- Medicines for Children, oseltamivir:
+  https://www.medicinesforchildren.org.uk/medicines/oseltamivir-for-influenza-flu/
+- CDC HFMD recovery: https://www.cdc.gov/hand-foot-mouth/index.html
+- CDC infant sleep: https://www.cdc.gov/sudden-infant-death/sleep-safely/
+- AAP repeated high fever:
+  https://www.healthychildren.org/English/health-issues/conditions/fever/Pages/When-to-Call-the-Pediatrician.aspx
+
+September 21 week8 feedback (60 distinct files, MC/Sam 120 rows, 30 F and 30 P):
+1. Treat each language's actual video/topic as the unit of review. Numbered uploads shift across
+   KO/EN/ES (for example, week8-English-25 is cough while KO/ES-25 are feeding). Never propagate
+   a verdict or repair by set number alone; match the source URL, topic, language and exact media.
+   A P may still request clearer visuals or wording. A clipped spoken sentence is evaluated even
+   when its medical topic received P.
+2. Antipyretics: answer a question about simultaneous dosing explicitly: do not recommend giving
+   acetaminophen and ibuprofen together. Prefer one age-appropriate medicine for discomfort.
+   Only consider alternating for persistent/recurrent distress with each medicine's own minimum
+   interval and daily maximum recorded; do not infer a routine 2-3-hour schedule from fever alone.
+   A 2-3-hour separation is not intrinsically always forbidden. Ibuprofen under 6 months needs
+   clinician direction; ensure that qualifier is preserved in EN as well as KO/ES. "Six hours have
+   passed" alone is not an instruction to dose a comfortable sleeping child. Verify concentration:
+   40 kg + 15 mL of 32 mg/mL acetaminophen = 480 mg (12 mg/kg); 41 kg + 17-24 mL of 12 mg/mL
+   ibuprofen = 204-288 mg (about 5-7 mg/kg). These are case/product examples, not universal mL doses.
+   A more conservative interval is not automatically overdose. Show an age/weight-appropriate child
+   and a purpose-made graduated dosing cup matching the spoken device and volume; do not visually
+   imply the same mL applies to a smaller infant.
+3. Medication handling: a fixed 1-2-hour use window and refrigeration for premixed antipyretic
+   powder cannot be generalized without the drug, formulation and label. Give product/pharmacist
+   instructions instead. Do not tell parents to stop and restart an unidentified prescribed
+   intestinal medicine whenever stools change. Specify the medication and prescribing plan or ask
+   the clinician/pharmacist. Three loose stools alone do not always mean an emergency; distinguish
+   blood, severe pain, dehydration and reduced alertness. Keep the earlier oseltamivir-specific
+   vomit/redose rule; do not replace it with a generic one-hour rule.
+4. Infant feeding: "seek care only after 12 hours refusing feeds" is too broad for a young baby
+   who is taking very little or becoming lethargic. Compare with usual intake, wet diapers,
+   activity and age; advise earlier evaluation for almost no intake or concerning appearance.
+   Do not prescribe 30-50 mL every 30 minutes across all infant ages. If formula amount is reduced
+   for a vomiting baby, explicitly mean a smaller amount PER FEED while mixing at the NORMAL LABEL
+   CONCENTRATION; never suggest reducing powder concentration. Show a prepared normal-concentration
+   feed and smaller serving, not mysterious liquid drops diluting a bottle. A pause in solids is
+   not a pause in breast milk/formula or age-appropriate hydration. Support head and trunk upright
+   while feeding. Keep age-specific fever exceptions, especially under 3 months with >=38°C.
+5. Infant sleep and thermoregulation: do not teach "one layer less than an adult" as a universal
+   fever rule. Avoid over-wrapping or underdressing according to environment and child's condition.
+   Warm hands/feet alone do not prove normal circulation or general safety. For infants, no pillows,
+   soft bumpers or loose blankets; a raised pillow can be depicted only for an older child when
+   appropriate. Do not claim an actual suffocation event without evidence.
+6. Nasal irrigation: never demonstrate a bottle aimed into the nose of a child lying flat with head
+   tilted back. If an older cooperative child uses an age-appropriate rinse, show them leaning
+   forward over a sink and following product/clinician instructions. Distinguish infant saline
+   drops/gentle suction from bottle irrigation. Rinse solution requires sterile/distilled or
+   previously boiled and cooled water; device hygiene matters. CT is clinician-selected, not a
+   routine test for every prolonged stuffy nose. Do not infer actual aspiration from a bad pose.
+7. Infection and follow-up: RSV can worsen without fever and "2-3 days passed" is not a safety
+   guarantee. New fever or yellow mucus alone does not prove bacterial infection. After treated
+   pneumonia, 10 days and 3 weeks may be CASE HISTORY, never universal wait-until deadlines for
+   re-evaluation or automatic X-ray/blood tests. New/persistent fever or worsening breathing,
+   intake or activity needs earlier assessment. Conversely, routine follow-up X-ray is often not
+   needed after uncomplicated clinical recovery, with clinician-selected exceptions; do not cancel
+   a prescribed test. Mycoplasma symptoms can appear 1-4 weeks after exposure; exposure alone
+   does not justify preventive antibiotics, and not every mild infection needs antibiotics. A dry
+   cough alone is not diagnostic. Do not label every 38°C reading "high fever".
+8. Imaging and home care: a persistent scalp bump is not automatically a hematoma, nor does every
+   bruise vanish in one week. Distinguish scalp/subperiosteal from intracranial bleeding in visuals.
+   A humidifier needs cleaning. Antibiotics do not directly suppress cough but may improve cough
+   when treating a relevant bacterial cause. Avoid guaranteed fever resolution 24-48 hours after
+   antiviral treatment and sports drinks presented as equivalent to ORS.
+9. Adjudication: quote the scene's literal narration and show how the visual changes its meaning.
+   Ambiguous "reduce formula to two-thirds" plus apparent bottle dilution merits a safety fix;
+   do not claim it explicitly instructed dilution unless it did. A 4-6-hour wait for SOLIDS is not
+   necessarily fluid fasting. A conservative dose interval is not automatically overdose. Do not
+   invent harm (aspiration, hypothermia, suffocation) that was not shown. Correct the unsafe
+   ambiguity while preserving all already-correct red flags and cross-language qualifications.
+
+Clinical references checked 2026-09-21:
+- NICE fever/antipyretics: https://www.nice.org.uk/guidance/ng143/chapter/recommendations
+- AAP ibuprofen under 6 months:
+  https://www.healthychildren.org/English/safety-prevention/at-home/medication-safety/Pages/Ibuprofen-for-Fever-and-Pain.aspx
+- CDC infant formula instructions:
+  https://www.cdc.gov/infant-toddler-nutrition/formula-feeding/preparation-and-storage.html
+- FDA nasal rinsing water and age-appropriate use:
+  https://www.fda.gov/consumers/consumer-updates/rinsing-your-sinuses-neti-pots-safe
+- CDC RSV infants: https://www.cdc.gov/rsv/infants-young-children/index.html
+- CDC Mycoplasma: https://www.cdc.gov/mycoplasma/about/index.html
+- Medicines for Children powder preparations:
+  https://www.medicinesforchildren.org.uk/advice-guides/giving-medicines/how-to-give-medicines-granules-and-powders/
+
+Before choosing the verdict, fill every calibration_checks field. Use NOT_APPLICABLE only when the
+topic is absent. Judge the actual final audio and burned-in captions—not just the expected JSON.
+For caption coverage, compare every spoken medical clause, negation, number, interval, red flag, and
+recommended action with what actually appears on screen. A clipped or unfinished spoken sentence is
+INCOMPLETE_SPEECH. A missing safety-relevant caption clause is CAPTION_OMISSION. Unsupported two-hour
+alternating antipyretic advice is MEDICATION_TIMING_RISK. Missing care urgency that could delay
+evaluation is TRIAGE_OMISSION.
+
+Mandatory scene-by-scene audiovisual pass:
+- Return exactly ten scene_av_checks entries, one for each scene in chronological order.
+- Transcribe what is actually audible and what is actually visible; never copy the expected text
+  into these fields unless you confirmed it in the final video.
+- Listen through each scene transition. Mark speech_complete false for a cut-off final syllable,
+  unfinished grammar, abandoned clause, abrupt edit, or missing end of the planned sentence.
+- caption_covers_speech is false when any spoken medical condition, negation, number, unit, interval,
+  red flag, uncertainty qualifier, or recommended action is absent from the visible captions.
+- numbers_and_units_match requires spoken audio, visible captions, and expected narration to agree.
+  Check 2 versus 12, ranges, decimals, °C, hours, days, kilograms, and milliliters carefully.
+- declared_language_only is false for unintended Korean in English/Spanish, unintended English or
+  Spanish in Korean, garbled phonemes, encoding artifacts, or a mid-video language switch.
+- caption_timing_readable is false for captions that appear too late, vanish before their words are
+  spoken, overlap the next clause, are clipped off-screen, or fail to appear at all.
+
+SOURCE ARTICLE (Korean clinician-reviewed content):
+Source: https://www.fevercoach.us/ko/post/40kg-타이레놀-시럽-용량-교차복용
+
+Source excerpt:
+의학 감수:
+안상현, MD
+콘텐츠 편집:
+김명찬, MD
+이 게시물은 실제 의료 검토자의 질의응답 경험을 각색한 것입니다. 이 콘텐츠는 정보 제공 목적으로만 제공되며 의학적 조언을 구성하지 않습니다. 건강 관련 문제나 건강 또는 치료와 관련된 결정을 내리기 전에 항상 자격을 갖춘 의료 전문가와 상담하시기 바랍니다.
+질문:
+아이가 중이염으로 항생제와 약을 먹고 있습니다. 병원에서 처방해주신 부루펜 계열 해열제를 먹였는데 열이 안 떨어져서요. 평소에는 알약을 먹는데 지금 집에 타이레놀 알약이 없고 시럽(물약)만 있습니다. 지금 바로 타이레놀 시럽으로 추가 복용(교차 복용)을 해도 될까요? 아이 체중이 40kg인데 용량을 어느 정도 먹이면 될지 궁금합니다.
+답변:
+안녕하세요. 아이가 중이염 치료 중인데 열이 내리지 않아 걱정이 많으시겠습니다.
+결론부터 말씀드리면, 부루펜 복용 후 열이 떨어지지 않는다면 타이레놀 추가 복용(교차 복용)이 가능합니다. 부루펜(이부프로펜/덱시부프로펜)과 타이레놀(아세트아미노펜)은 서로 다른 해열제 성분이므로, 마지막 부루펜 복용 후에도 열이 지속된다면 타이레놀을 먹이실 수 있습니다.
+40kg 아이의 타이레놀 시럽 권장 용량
+• 필요 성분량: 400~600mg
+• 타이레놀 시럽(32mg/mL 농도 기준): 12.5~19mL
+• 권장 복용량: 15mL (480mg)
+• 복용 간격: 4~6시간 간격 (하루 최대 5회까지만 복용 가능)
+정확한 투약을 위해 약국에서 받은 투약용 주사기나 계량컵을 사용하여 용량을 맞춰주시기 바랍니다.
+⚠️ 복용 시 주의 및 확인사항
+가지고 계신 해열제 병에 '아세트아미노펜 32mg/mL'라고 표시되어 있는지 농도를 반드시 확인해 주세요.
+처방받은 부루펜 계열 약과 교대로 주셔도 되지만, 같은 성분인 부루펜은 다음 복용까지 최소 6~8시간의 간격을 유지하셔야 합니다.
+마지막으로, 중이염 치료를 위한 항생제는 임의로 중단하지 마시고 처방받은 기간 동안 끝까지 복용해야 합니다. 해열제를 교차 복용했음에도 열이 48시간 이상 지속되거나 아이가 호소하는 귀 통증이 더 심해진다면, 정확한 귀 상태와 발열 원인 평가를 위해 소아청소년과에 방문하여 재진료를 받으시길 권장합니다.
+아이의 건강을 모니터링할 때 더 명확한 안내와 안심을 위해, FeverCoach 앱이 항상 도움을 드립니다.
+fevercoach.us
+Apple App Store
+Google Play
+🌐 다른 언어로 보기:
+English
+·
+Español
+
+Source-grounded facts:
+[
+  {
+    "claim": "If fever persists after administering Brufen (ibuprofen/dexibuprofen), Tylenol (acetaminophen) can be given as an additional or alternating medication, as they contain different active ingredients.",
+    "numeric_values": [],
+    "safety_qualification": "This applies when the fever persists despite the initial medication."
+  },
+  {
+    "claim": "For a child weighing 40kg, the recommended dose of Tylenol syrup (at a 32mg/mL concentration) is 15mL, which corresponds to 480mg of acetaminophen.",
+    "numeric_values": [
+      "40kg",
+      "32mg/mL",
+      "15mL",
+      "480mg"
+    ],
+    "safety_qualification": "Always confirm the acetaminophen concentration on the specific medicine bottle. The effective dose range is 400-600mg (12.5-19mL)."
+  },
+  {
+    "claim": "Tylenol (acetaminophen) can be administered every 4 to 6 hours, with a maximum of 5 doses per day.",
+    "numeric_values": [
+      "4 hours",
+      "6 hours",
+      "5 doses"
+    ],
+    "safety_qualification": "Ensure proper dosing intervals are maintained."
+  },
+  {
+    "claim": "When alternating with Brufen (ibuprofen/dexibuprofen), ensure a minimum interval of 6 to 8 hours between doses of Brufen itself.",
+    "numeric_values": [
+      "6 hours",
+      "8 hours"
+    ],
+    "safety_qualification": "This interval applies to doses of the same active ingredient (Brufen)."
+  },
+  {
+    "claim": "Antibiotics prescribed for otitis media should be taken for the entire prescribed duration and not stopped prematurely.",
+    "numeric_values": [],
+    "safety_qualification": "Discontinuing antibiotics early can lead to incomplete treatment."
+  },
+  {
+    "claim": "Consult a pediatrician if fever persists for more than 48 hours despite alternating antipyretics, or if the child's ear pain worsens.",
+    "numeric_values": [
+      "48 hours"
+    ],
+    "safety_qualification": "These are signs that require professional medical evaluation."
+  },
+  {
+    "claim": "Use a dosing syringe or measuring cup provided by the pharmacy for accurate medication administration.",
+    "numeric_values": [],
+    "safety_qualification": "Accurate measurement is crucial for safe and effective dosing."
+  }
+]
+
+EXPECTED PRODUCTION SPECIFICATION:
+[
+  {
+    "scene": 1,
+    "time_seconds": [
+      0,
+      6
+    ],
+    "narration": "¿Preocupado si la fiebre de su hijo no baja después de la medicación?",
+    "caption_chunks": [
+      "¿Preocupado si la fiebre de su hijo",
+      "no baja después de la medicación?"
+    ],
+    "medical_claim": "Fever may persist despite initial antipyretic medication.",
+    "visual_prompt": "A childa completely blank and unmarked surfaces slightly flushed forehead in the background, looking uncomfortable. The child's hand and thermometer remain mostly stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+    "overlays": [
+      {
+        "type": "label",
+        "from": [
+          0.04,
+          0.06
+        ],
+        "to": [
+          0.04,
+          0.06
+        ],
+        "label_position": [
+          0.5,
+          0.68
+        ],
+        "color": "#E5482F",
+        "text": "39.5°C"
+      }
+    ]
+  },
+  {
+    "scene": 2,
+    "time_seconds": [
+      6,
+      12
+    ],
+    "narration": "Ibuprofeno y paracetamol son tipos diferentes de antifebriles.",
+    "caption_chunks": [
+      "Ibuprofeno y paracetamol son",
+      "tipos diferentes de antifebriles."
+    ],
+    "medical_claim": "Ibuprofen (Brufen) and acetaminophen (Tylenol) are different types of fever reducers.",
+    "visual_prompt": "A translucent amber medicine syrup bottle stands in the midground. A distinctively shaped blue medicine bottle slides in from the left and stops beside the amber bottle. Both bottles remain stationary after sliding. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+    "overlays": [
+      {
+        "type": "label",
+        "from": [
+          0.04,
+          0.06
+        ],
+        "to": [
+          0.04,
+          0.06
+        ],
+        "label_position": [
+          0.25,
+          0.68
+        ],
+        "color": "#007BFF",
+        "text": "Tylenol (Paracetamol)"
+      },
+      {
+        "type": "label",
+        "from": [
+          0.04,
+          0.06
+        ],
+        "to": [
+          0.04,
+          0.06
+        ],
+        "label_position": [
+          0.75,
+          0.68
+        ],
+        "color": "#007BFF",
+        "text": "Brufen (Ibuprofeno)"
+      }
+    ]
+  },
+  {
+    "scene": 3,
+    "time_seconds": [
+      12,
+      18
+    ],
+    "narration": "No administre ambos antipiréticos juntos ni los alterne por horario fijo. Consulte si persiste el malestar.",
+    "caption_chunks": [
+      "No administre ambos antipiréticos juntos ni los alterne por horario fijo. Consulte si persiste el malestar."
+    ],
+    "medical_claim": "No administre ambos antipiréticos juntos ni los alterne por horario fijo. Consulte si persiste el malestar.",
+    "visual_prompt": "Two distinct medicine syrup bottles, one amber and one blue, stand slightly separated. A stylized, glowing question mark materializes and hovers between them. The camera slowly arcs around the bottles and question mark. The bottles remain stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+    "overlays": []
+  },
+  {
+    "scene": 4,
+    "time_seconds": [
+      18,
+      24
+    ],
+    "narration": "Cada fármaco tiene un intervalo mínimo y un límite diario distinto; anote cada dosis y hora.",
+    "caption_chunks": [
+      "Cada fármaco tiene un intervalo mínimo y un límite diario distinto; anote cada dosis y hora."
+    ],
+    "medical_claim": "Cada fármaco tiene un intervalo mínimo y un límite diario distinto; anote cada dosis y hora.",
+    "visual_prompt": "A stylized, transparent human torso. Two distinct, colored energy pathways (blue and amber) animate simultaneously, originating from the mouth area and traveling to different, simplified internal target areas, both resulting in a subtle a completely blank and unmarked surface effect. The torso remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+    "overlays": []
+  },
+  {
+    "scene": 5,
+    "time_seconds": [
+      24,
+      30
+    ],
+    "narration": "Incluso con 40 kilos, el volumen de jarabe de Tylenol depende de la concentración y las indicaciones del producto.",
+    "caption_chunks": [
+      "Incluso con 40 kilos, el volumen de jarabe de Tylenol depende de la concentración y las indicaciones del producto."
+    ],
+    "medical_claim": "Incluso con 40 kilos, el volumen de jarabe de Tylenol depende de la concentración y las indicaciones del producto.",
+    "visual_prompt": "Vertical 9:16 polished semi-stylized 3D pediatric medical scene about Dosis de Tylenol para Niño de 40kg. A calm upright child holds a small purpose-made translucent medicine dosing cup with a small amount of amber liquid. The child lifts the open cup to the lips, takes one gentle sip, lowers it, and swallows comfortably. A caregiver supports the child without holding any dosing implement. The medicine bottle remains closed on a distant table. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth. Keep every child fully clothed and the mood reassuring. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+    "overlays": [
+      {
+        "type": "label",
+        "text": "15mL (32mg/mL)",
+        "color": "#007BFF",
+        "from": [
+          0.04,
+          0.06
+        ],
+        "to": [
+          0.04,
+          0.06
+        ],
+        "label_position": [
+          0.75,
+          0.68
+        ]
+      }
+    ]
+  },
+  {
+    "scene": 6,
+    "time_seconds": [
+      30,
+      36
+    ],
+    "narration": "Revise principio activo, concentración, dosis y máximo diario; ante dudas, consulte al farmacéutico.",
+    "caption_chunks": [
+      "Revise principio activo, concentración, dosis y máximo diario; ante dudas, consulte al farmacéutico."
+    ],
+    "medical_claim": "Revise principio activo, concentración, dosis y máximo diario; ante dudas, consulte al farmacéutico.",
+    "visual_prompt": "The character (a translucent amber medicine syrup bottle) stands on a counter, its blank label facing the camera. A finger gently taps the blank label area, and the camera slowly zooms in on this area. The bottle remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+    "overlays": [
+      {
+        "type": "label",
+        "from": [
+          0.04,
+          0.06
+        ],
+        "to": [
+          0.04,
+          0.06
+        ],
+        "label_position": [
+          0.5,
+          0.68
+        ],
+        "color": "#E5482F",
+        "text": "Verificar 32mg/mL"
+      }
+    ]
+  },
+  {
+    "scene": 7,
+    "time_seconds": [
+      36,
+      42
+    ],
+    "narration": "Dé Tylenol cada 4 a 6 horas, y Brufen cada 6 a 8 horas.",
+    "caption_chunks": [
+      "Dé Tylenol cada 4 a 6 horas,",
+      "y Brufen cada 6 a 8 horas."
+    ],
+    "medical_claim": "Tylenol can be given every 4-6 hours, while Brufen needs 6-8 hours between doses.",
+    "visual_prompt": "Two stylized, blank clock faces, one with an amber border and one with a blue border, are presented side-by-side. On the amber clock, a segment from 4 to an unlabeled interval illuminates. Simultaneously, on the blue clock, a segment from 6 to an unlabeled interval illuminates. The camera tracks smoothly between the two clocks. The clocks remain stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+    "overlays": [
+      {
+        "type": "label",
+        "from": [
+          0.04,
+          0.06
+        ],
+        "to": [
+          0.04,
+          0.06
+        ],
+        "label_position": [
+          0.25,
+          0.68
+        ],
+        "color": "#007BFF",
+        "text": "Intervalo de 4-6 horas"
+      },
+      {
+        "type": "label",
+        "from": [
+          0.04,
+          0.06
+        ],
+        "to": [
+          0.04,
+          0.06
+        ],
+        "label_position": [
+          0.75,
+          0.68
+        ],
+        "color": "#007BFF",
+        "text": "Intervalo de 6-8 horas"
+      }
+    ]
+  },
+  {
+    "scene": 8,
+    "time_seconds": [
+      42,
+      48
+    ],
+    "narration": "Dé el medicamento líquido indicado lentamente en un vaso dosificador.",
+    "caption_chunks": [
+      "Dé el medicamento líquido indicado lentamente en un vaso dosificador."
+    ],
+    "medical_claim": "Para un jarabe oral, siente al niño y mida con un vasito dosificador abierto. Nunca introduzca una vaso dosificador específico en la boca.",
+    "visual_prompt": "Vertical 9:16 polished semi-stylized 3D pediatric medical scene about Administración Correcta. A calm upright child holds a small purpose-made translucent medicine dosing cup with a small amount of amber liquid. The child lifts the open cup to the lips, takes one gentle sip, lowers it, and swallows comfortably. A caregiver supports the child without holding any dosing implement. The medicine bottle remains closed on a distant table. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth. Keep every child fully clothed and the mood reassuring. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+    "overlays": []
+  },
+  {
+    "scene": 9,
+    "time_seconds": [
+      48,
+      54
+    ],
+    "narration": "Si la fiebre dura más de 48 horas o el dolor de oído empeora, vea a un pediatra.",
+    "caption_chunks": [
+      "Si la fiebre dura más de 48 horas",
+      "o el dolor de oído empeora,",
+      "vea a un pediatra."
+    ],
+    "medical_claim": "Consult a pediatrician if fever persists for over 48 hours or ear pain worsens.",
+    "visual_prompt": "A stylized calendar page with the current day marked. The camera smoothly travels across the calendar, highlighting two consecutive days with a subtle red glow. Then, the view transitions to a stylized, transparent ear, where a subtle, pulsing red glow appears within the middle ear area. The calendar and ear remain stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+    "overlays": [
+      {
+        "type": "label",
+        "from": [
+          0.04,
+          0.06
+        ],
+        "to": [
+          0.04,
+          0.06
+        ],
+        "label_position": [
+          0.75,
+          0.68
+        ],
+        "color": "#E5482F",
+        "text": "Más de 48 horas"
+      }
+    ]
+  },
+  {
+    "scene": 10,
+    "time_seconds": [
+      54,
+      60
+    ],
+    "narration": "Si tiene inquietudes o los síntomas no mejoran, consulte a su pediatra.",
+    "caption_chunks": [
+      "Si tiene inquietudes",
+      "o los síntomas no mejoran,",
+      "consulte a su pediatra."
+    ],
+    "medical_claim": "Always consult your pediatrician for persistent concerns or worsening symptoms.",
+    "visual_prompt": "The character (a translucent amber medicine syrup bottle) stands confidently. A stylized, friendly clinic icon (a building with a cross) slides in from the right and stops next to the character. The character subtly turns to face the clinic icon. The clinic icon remains stationary after sliding. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+    "overlays": []
+  }
+]
+
+DETERMINISTIC LOCAL MEDIA CHECKS:
+{
+  "duration_seconds": 60.021029,
+  "width": 1080,
+  "height": 1920,
+  "has_audio": true,
+  "scene_count": 10,
+  "captions_equal_expected_narration": true,
+  "caption_images_checked": 25,
+  "all_caption_image_corners_transparent": true,
+  "video_sha256": "0f738d55566c432dd85f790b384305e97b07bb55242ebbb1a23a753a3068061c",
+  "reviewer_feedback_focus": [
+    {
+      "scene": 2,
+      "checks": [
+        "MEDICINE_STOP_RESTART"
+      ]
+    },
+    {
+      "scene": 5,
+      "checks": [
+        "DOSE_CONCENTRATION_CONTEXT",
+        "SAFE_SLEEP_AND_SWALLOWING"
+      ]
+    },
+    {
+      "scene": 6,
+      "checks": [
+        "DOSE_CONCENTRATION_CONTEXT"
+      ]
+    },
+    {
+      "scene": 8,
+      "checks": [
+        "SAFE_SLEEP_AND_SWALLOWING"
+      ]
+    },
+    {
+      "scene": 9,
+      "checks": [
+        "NEW_OR_MIGRATING_PAIN"
+      ]
+    },
+    {
+      "scene": 10,
+      "checks": [
+        "MEDICINE_STOP_RESTART"
+      ]
+    }
+  ],
+  "srt_exists": true,
+  "srt_semantically_expected_by_normalized_text": true,
+  "expected_number_tokens": [
+    "40",
+    "4",
+    "6",
+    "6",
+    "8",
+    "48"
+  ],
+  "srt_number_tokens": [
+    "40",
+    "4",
+    "6",
+    "6",
+    "8",
+    "48"
+  ],
+  "srt_numbers_match_expected": true,
+  "audio_scene_timing": [
+    {
+      "scene": 1,
+      "raw_seconds": 4.88,
+      "timeline_seconds": 6,
+      "speed_factor": 1.0,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 2,
+      "raw_seconds": 4.68,
+      "timeline_seconds": 6,
+      "speed_factor": 1.0,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 3,
+      "raw_seconds": 8.64,
+      "timeline_seconds": 6,
+      "speed_factor": 1.44,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 4,
+      "raw_seconds": 7.76,
+      "timeline_seconds": 6,
+      "speed_factor": 1.2933,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 5,
+      "raw_seconds": 8.28,
+      "timeline_seconds": 6,
+      "speed_factor": 1.38,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 6,
+      "raw_seconds": 8.92,
+      "timeline_seconds": 6,
+      "speed_factor": 1.4867,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 7,
+      "raw_seconds": 6.6,
+      "timeline_seconds": 6,
+      "speed_factor": 1.1,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 8,
+      "raw_seconds": 5.92,
+      "timeline_seconds": 6,
+      "speed_factor": 1.0,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 9,
+      "raw_seconds": 6.84,
+      "timeline_seconds": 6,
+      "speed_factor": 1.14,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 10,
+      "raw_seconds": 5.4,
+      "timeline_seconds": 6,
+      "speed_factor": 1.0,
+      "requires_close_listen": false
+    }
+  ]
+}
+
+
+This is an exhaustive regression run prompted by real reviewer feedback. Do not return PASS until
+you have independently watched and listened to all ten scenes. The scene_av_checks array is an
+evidence log: use the actual audible and visible wording. Recheck the last second of every scene for
+clipped speech and compare safety-critical caption clauses word-for-word in meaning. If the media is
+too unclear to verify a field, record the limitation and use WARN rather than assuming it passed.

@@ -1,0 +1,37 @@
+{
+  "video_id": "persistent-nasal-congestion-reassessment.ko",
+  "overall_verdict": "FAIL",
+  "reviewer": "Sam",
+  "human_feedback": [
+    {
+      "filename": "Jaeyoon-Lee-week8-Korean-22.mp4",
+      "feedback_file": "/Users/jaeyoonlee/.codex/attachments/d02c228f-9558-42b8-9d3a-513da01c814d/pasted-text.txt",
+      "reason_ko": "41~48초: 아이가 등을 대고 누워 머리를 뒤로 젖힌 상태에서 코에 세척병을 대는 시연입니다. 보호자가 따라 하기 쉬운 술기 장면이므로, 협조 가능한 아이가 세면대 쪽으로 몸을 기울이고 제품·의료진 지시에 맞춰 세척하는 자세로 교체해 주세요. 어린 영아의 점적·흡인과 병을 이용한 세척도 구별해야 합니다.",
+      "additional_ko": "추가 노트: 장기 코막힘의 원인을 재평가하자는 메시지는 적절합니다. 적절한 멸균/증류수 또는 끓여 식힌 물로 준비한 식염수와 기구 위생을 안내해 주세요. CT는 필요 시 의료진이 결정하며 일률적으로 시행하는 검사가 아닙니다. 영상만으로 실제 압력이나 흡인성 폐렴 발생을 단정하지 않았습니다."
+    }
+  ],
+  "issues": [
+    {
+      "scene": 7,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "41~48초: 아이가 등을 대고 누워 머리를 뒤로 젖힌 상태에서 코에 세척병을 대는 시연입니다. 보호자가 따라 하기 쉬운 술기 장면이므로, 협조 가능한 아이가 세면대 쪽으로 몸을 기울이고 제품·의료진 지시에 맞춰 세척하는 자세로 교체해 주세요. 어린 영아의 점적·흡인과 병을 이용한 세척도 구별해야 합니다. 추가 노트: 장기 코막힘의 원인을 재평가하자는 메시지는 적절합니다. 적절한 멸균/증류수 또는 끓여 식힌 물로 준비한 식염수와 기구 위생을 안내해 주세요. CT는 필요 시 의료진이 결정하며 일률적으로 시행하는 검사가 아닙니다. 영상만으로 실제 압력이나 흡인성 폐렴 발생을 단정하지 않았습니다.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-22.mp4"
+    },
+    {
+      "scene": 8,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "41~48초: 아이가 등을 대고 누워 머리를 뒤로 젖힌 상태에서 코에 세척병을 대는 시연입니다. 보호자가 따라 하기 쉬운 술기 장면이므로, 협조 가능한 아이가 세면대 쪽으로 몸을 기울이고 제품·의료진 지시에 맞춰 세척하는 자세로 교체해 주세요. 어린 영아의 점적·흡인과 병을 이용한 세척도 구별해야 합니다. 추가 노트: 장기 코막힘의 원인을 재평가하자는 메시지는 적절합니다. 적절한 멸균/증류수 또는 끓여 식힌 물로 준비한 식염수와 기구 위생을 안내해 주세요. CT는 필요 시 의료진이 결정하며 일률적으로 시행하는 검사가 아닙니다. 영상만으로 실제 압력이나 흡인성 폐렴 발생을 단정하지 않았습니다.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-22.mp4"
+    },
+    {
+      "scene": 8,
+      "category": "OTHER_VISUAL_ERROR",
+      "severity": "high",
+      "problem_ko": "사람 검토에서 지적된 시각적 안전 오류를 제거해야 합니다.",
+      "visual_prompt_addendum": "Show age-appropriate gentle nasal saline care with the child upright and head neutral. Do not tilt the head far backward or force liquid into the nostril.",
+      "evidence": "Jaeyoon-Lee-week8-Korean-22.mp4"
+    }
+  ]
+}

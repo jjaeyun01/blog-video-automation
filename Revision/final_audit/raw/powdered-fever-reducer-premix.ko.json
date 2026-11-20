@@ -1,0 +1,318 @@
+{
+  "video_id": "powdered-fever-reducer-premix.ko",
+  "language": "ko",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "PASS",
+  "av_integrity": "PASS",
+  "spoken_transcript": "가루 해열제를 미리 물에 타두면 약효가 떨어지거나 변질될 수 있습니다. 가루약은 조제 받은 포장 그대로 보관하는 것이 가장 좋습니다. 미리 타두면 가루가 가라앉아 농도가 불균일해져 정확한 용량 투여가 어렵습니다. 물에 녹은 약 성분은 시간이 지나면서 빛, 온도, 공기에 의해 변질될 위험이 있습니다. 가루 해열제는 복용 직전에 타서 바로 먹이는 것이 가장 좋으며, 부득이한 경우 약사에게 확인하세요. 가루 해열제는 복용 직전에 타서 바로 먹이는 것이 가장 좋으며, 부득이한 경우 약사에게 확인하세요. 약 복용 후에도 아이의 컨디션을 지속적으로 모니터링하는 것이 중요합니다. 복용 직전에 미지근하거나 실온의 물에 타서 바로 먹이는 것이 가장 좋습니다. 올바른 복용 후에도 열이 지속되거나 아이의 컨디션이 저하되면 진료를 받으세요. 약효와 아이의 안전을 위해 가급적 복용 직전에 조제하고, 필요시 소아청소년과 진료를 받으세요.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "PASS",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "NOT_APPLICABLE",
+    "high_fever_age_context": "NOT_APPLICABLE",
+    "sleep_vs_lethargy": "PASS",
+    "dehydration_guidance": "NOT_APPLICABLE",
+    "multilingual_integrity": "PASS",
+    "evidence_ko": "영상은 가루 해열제를 복용 직전에 타서 바로 먹이는 것이 가장 좋다고 강조하며, 부득이한 경우 약사에게 확인하라고 안내합니다. 이는 출처의 핵심 권고와 일치합니다. 출처에 명시된 '미리 타두어야 하는 상황'에 대한 구체적인 지침(1-2시간 이내 복용, 냉장 보관, 불투명 용기, 흔들어 섞기)은 영상의 내레이션에서 '약사에게 확인'으로 간략화되었으나, 이는 안전을 위한 적절한 조치로 판단됩니다. 약사에게 확인하라는 지침은 안전한 복용을 위한 추가적인 조언으로 볼 수 있습니다.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "PASS",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "NOT_APPLICABLE",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "PASS",
+    "treatment_claim_uncertainty": "NOT_APPLICABLE",
+    "simultaneous_and_alternating_antipyretics": "NOT_APPLICABLE",
+    "infant_feeding_and_formula": "NOT_APPLICABLE",
+    "medicine_storage_and_restart": "PASS",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "NOT_APPLICABLE",
+    "cross_language_topic_identity": "NOT_APPLICABLE"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "가루 해열제를 미리 물에 타두면 약효가 떨어지거나 변질될 수 있습니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "가루 해열제를 미리 물에 타두면 약효가 떨어지거나 변질될 수 있습니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "텍스트와 음성 일치. 가루가 물에 타지고 가라앉는 모습이 명확하게 표현됨."
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:06",
+      "spoken_transcript": "가루약은 조제 받은 포장 그대로 보관하는 것이 가장 좋습니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "가루약은 조제 받은 포장 그대로 보관하는 것이 가장 좋습니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "텍스트와 음성 일치. 가루약이 포장된 상태로 보관되는 모습이 잘 표현됨."
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:12",
+      "spoken_transcript": "미리 타두면 가루가 가라앉아 농도가 불균일해져 정확한 용량 투여가 어렵습니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "미리 타두면 가루가 가라앉아 농도가 불균일해져 정확한 용량 투여가 어렵습니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "텍스트와 음성 일치. 미리 탄 약의 농도 불균일 문제가 시각적으로 잘 표현됨."
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:18",
+      "spoken_transcript": "물에 녹은 약 성분은 시간이 지나면서 빛, 온도, 공기에 의해 변질될 위험이 있습니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "물에 녹은 약 성분은 시간이 지나면서 빛, 온도, 공기에 의해 변질될 위험이 있습니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "텍스트와 음성 일치. 약 성분이 변질되는 위험이 시각적으로 잘 표현됨."
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:24",
+      "spoken_transcript": "가루 해열제는 복용 직전에 타서 바로 먹이는 것이 가장 좋으며, 부득이한 경우 약사에게 확인하세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "가루 해열제는 복용 직전에 타서 바로 먹이는 것이 가장 좋으며, 부득이한 경우 약사에게 확인하세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "텍스트와 음성 일치. 약사에게 확인하라는 메시지가 아이콘으로 잘 표현됨."
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:30",
+      "spoken_transcript": "가루 해열제는 복용 직전에 타서 바로 먹이는 것이 가장 좋으며, 부득이한 경우 약사에게 확인하세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "가루 해열제는 복용 직전에 타서 바로 먹이는 것이 가장 좋으며, 부득이한 경우 약사에게 확인하세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "텍스트와 음성 일치. 즉시 복용과 약사 상담의 두 가지 상황이 시각적으로 잘 대비됨."
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:36",
+      "spoken_transcript": "약 복용 후에도 아이의 컨디션을 지속적으로 모니터링하는 것이 중요합니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "약 복용 후에도 아이의 컨디션을 지속적으로 모니터링하는 것이 중요합니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "텍스트와 음성 일치. 아이의 컨디션을 모니터링하는 중요성이 잘 표현됨."
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:42",
+      "spoken_transcript": "복용 직전에 미지근하거나 실온의 물에 타서 바로 먹이는 것이 가장 좋습니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "복용 직전에 미지근하거나 실온의 물에 타서 바로 먹이는 것이 가장 좋습니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "텍스트와 음성 일치. 미지근한 물에 타서 바로 먹이는 과정이 시각적으로 잘 표현됨."
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:47",
+      "spoken_transcript": "올바른 복용 후에도 열이 지속되거나 아이의 컨디션이 저하되면 진료를 받으세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "올바른 복용 후에도 열이 지속되거나 아이의 컨디션이 저하되면 진료를 받으세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "텍스트와 음성 일치. 아이의 컨디션 저하 시 진료를 받아야 함을 시각적으로 표현."
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:53",
+      "spoken_transcript": "약효와 아이의 안전을 위해 가급적 복용 직전에 조제하고, 필요시 소아청소년과 진료를 받으세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "약효와 아이의 안전을 위해 가급적 복용 직전에 조제하고, 필요시 소아청소년과 진료를 받으세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "텍스트와 음성 일치. 약효와 안전을 위한 조제법과 소아청소년과 진료 권고가 잘 표현됨."
+    }
+  ],
+  "medication_route_review": [],
+  "issues": [],
+  "review_summary_ko": "이 영상은 가루 해열제를 복용 직전에 물에 타서 바로 먹이는 것이 가장 좋다는 핵심 메시지를 명확하게 전달합니다. 미리 타두면 약효가 떨어지거나 변질될 수 있으며, 농도 불균일 문제가 발생할 수 있다는 의학적 근거를 시각적으로 잘 설명합니다. 부득이한 경우 약사에게 확인하라는 안전 지침도 포함되어 있습니다. 전반적으로 의료적 정확성, 출처 충실도, 시청각 무결성 모두 우수하며, 아동의 안전한 약 복용을 위한 중요한 정보를 제공합니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/powdered-fever-reducer-premix/ko/powdered-fever-reducer-premix_KO.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/powdered-fever-reducer-premix/ko/production.snapshot.json",
+    "audited_at": "2026-09-22T06:58:14.170663+00:00",
+    "video_sha256": "e8b723df2d6c302cb6c9f53e5d66044363ef1a89741b5fd32471dca08ba9aac2",
+    "snapshot_sha256": "a18eecf4598bc80af62c1bf5e426339be6b574c9c73f07d9439c87304eca82cf",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 20,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "e8b723df2d6c302cb6c9f53e5d66044363ef1a89741b5fd32471dca08ba9aac2",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 1,
+          "checks": [
+            "POWDER_MEDICINE_STORAGE"
+          ]
+        },
+        {
+          "scene": 2,
+          "checks": [
+            "POWDER_MEDICINE_STORAGE"
+          ]
+        },
+        {
+          "scene": 3,
+          "checks": [
+            "DOSE_CONCENTRATION_CONTEXT",
+            "POWDER_MEDICINE_STORAGE"
+          ]
+        },
+        {
+          "scene": 4,
+          "checks": [
+            "POWDER_MEDICINE_STORAGE"
+          ]
+        },
+        {
+          "scene": 5,
+          "checks": [
+            "POWDER_MEDICINE_STORAGE"
+          ]
+        },
+        {
+          "scene": 6,
+          "checks": [
+            "POWDER_MEDICINE_STORAGE"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING",
+            "POWDER_MEDICINE_STORAGE"
+          ]
+        },
+        {
+          "scene": 10,
+          "checks": [
+            "POWDER_MEDICINE_STORAGE"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [],
+      "srt_number_tokens": [],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 6.16,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0267,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 5.72,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 7.76,
+          "timeline_seconds": 6,
+          "speed_factor": 1.2933,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 8.64,
+          "timeline_seconds": 6,
+          "speed_factor": 1.44,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 8.48,
+          "timeline_seconds": 6,
+          "speed_factor": 1.4133,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 8.56,
+          "timeline_seconds": 6,
+          "speed_factor": 1.4267,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 6.12,
+          "timeline_seconds": 6,
+          "speed_factor": 1.02,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 7.12,
+          "timeline_seconds": 5,
+          "speed_factor": 1.424,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 7.36,
+          "timeline_seconds": 6,
+          "speed_factor": 1.2267,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 9.08,
+          "timeline_seconds": 7,
+          "speed_factor": 1.2971,
+          "requires_close_listen": true
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

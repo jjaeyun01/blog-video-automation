@@ -1,0 +1,95 @@
+Independently adjudicate a disputed finding from a pediatric short's first Gemini audit.
+Be conservative, but do not amplify a false-positive accusation. Judge the *specific finding*,
+not whether the whole video is perfect. A finding about omitted content needs proof that the
+omission creates a materially unsafe instruction in this topic. A source article may itself contain
+unsafe advice; independent safety takes priority. If the supplied transcript is insufficient to
+verify an audiovisual claim, recommend WARN. Respond in Korean using the JSON schema.
+
+VIDEO ID: baby-enteritis-medicine-stop.ko
+ACTUAL FINAL SCRIPT:
+Scene 1: 아이가 나아지면 약을 언제 끊을 수 있을까요?
+Scene 2: 처방받으신 포리부틴드라이시럽은 위장관 운동을 조절하는 약입니다.
+Scene 3: 증상 호전은 좋지만, 면밀한 관찰이 중요합니다.
+Scene 4: 장 운동의 자연스러운 수축을 부드럽게 조절합니다.
+Scene 5: 증상이 나아져도 처방약 중단 여부는 처방한 의료진이나 약사에게 먼저 확인하세요.
+Scene 6: 변이 정상이고 복통이 없어도, 남은 약의 복용 계획을 의료진과 확인하세요.
+Scene 7: 복통이나 설사가 다시 생기면 약을 임의로 재시작하지 말고 의료진에게 문의하세요.
+Scene 8: 정해진 양의 액상 약은 전용 계량컵으로 천천히 복용하게 하세요.
+Scene 9: 심해지는 복통, 반복 구토, 혈변 또는 탈수 징후가 있으면 진료를 받으세요. 묽은 변 세 번만으로 응급은 아닙니다.
+Scene 10: 아이를 잘 관찰하고 궁금한 점은 소아과 의사에게 진료받으세요.
+FIRST AUDIT FINDINGS:
+[
+  {
+    "severity": "low",
+    "category": "SOURCE_CONTRADICTION",
+    "timestamp": "0:30",
+    "scene": 6,
+    "evidence": "음성: '변이 정상이고 복통이 없어도, 남은 약의 복용 계획을 의료진과 확인하세요.' 출처: '정상적인 변을 보고 복통이 없다면 약을 계속 중단하셔도 됩니다.'",
+    "problem_ko": "증상이 호전되어 정상 변을 보고 복통이 없을 경우, 출처는 약 복용을 계속 중단해도 된다고 명시하지만, 영상은 남은 약의 복용 계획을 의료진과 확인하라고 권고합니다.",
+    "source_comparison_ko": "출처는 약 중단을 지속할 수 있다고 하지만, 영상은 의료진과의 확인을 권장하여 더 보수적인 접근을 취합니다.",
+    "recommended_fix_ko": "출처의 내용에 더 가깝게 '변이 정상이고 복통이 없다면 약을 계속 중단하셔도 됩니다.'로 수정하거나, 영상의 보수적인 접근을 유지할 경우 출처와 다름을 명확히 인지해야 합니다. 현재 영상의 내용은 의학적으로 안전합니다.",
+    "confidence": 0.9
+  },
+  {
+    "severity": "low",
+    "category": "SOURCE_CONTRADICTION",
+    "timestamp": "0:36",
+    "scene": 7,
+    "evidence": "음성: '복통이나 설사가 다시 생기면 약을 임의로 재시작하지 말고 의료진에게 문의하세요.' 출처: '만약 복통이나 설사 증상이 다시 재발한다면, 월요일 병원 진료 전까지 남은 약을 다시 복용시키시면 됩니다.'",
+    "problem_ko": "복통이나 설사가 재발할 경우, 출처는 월요일 병원 진료 전까지 남은 약을 다시 복용시키라고 명시하지만, 영상은 임의로 재시작하지 말고 의료진에게 문의하라고 권고합니다.",
+    "source_comparison_ko": "출처는 특정 상황에서 약 재복용을 지시하지만, 영상은 의료진에게 문의하도록 하여 더 보수적인 접근을 취합니다.",
+    "recommended_fix_ko": "출처의 내용에 더 가깝게 '복통이나 설사가 다시 생기면 월요일 병원 진료 전까지 남은 약을 다시 복용시키세요.'로 수정하거나, 영상의 보수적인 접근을 유지할 경우 출처와 다름을 명확히 인지해야 합니다. 현재 영상의 내용은 의학적으로 안전합니다.",
+    "confidence": 0.9
+  }
+]
+HUMAN FAIL FEEDBACK THAT MOTIVATED THE REVISION:
+23~41초: 약명·성분·처방 조건을 밝히지 않은 채 좋아지면 중단하고 복통/설사가 재발하면 다음 진료까지 다시 먹이도록 지시합니다. '장운동 조절약' 전체에 같은 중단·재개법을 적용할 수 없습니다. 해당 약과 처방 계획을 명시하고 재발 시 임의 재투약보다 처방의·약사에게 확인하도록 수정해 주세요. 추가 노트: 하루 묽은 변 3회만으로 항상 응급상황이라는 인상도 피하고 혈변, 심한 통증, 탈수, 의식/활동 저하 등과 구분해 주세요. 관찰 중 악화 시 진료 안내는 유지해 주세요.
+SOURCE ARTICLE EXCERPT:
+의학 감수:
+안상현, MD
+콘텐츠 편집:
+김명찬, MD
+이 게시물은 실제 의료 검토자의 질의응답 경험을 각색한 것입니다. 이 콘텐츠는 정보 제공 목적으로만 제공되며 의학적 조언을 구성하지 않습니다. 건강 관련 문제나 건강 또는 치료와 관련된 결정을 내리기 전에 항상 자격을 갖춘 의료 전문가와 상담하시기 바랍니다.
+질문:
+선생님 안녕하세요. 아이가 지난주 수요일 밤부터 장염 증상이 있어, 토요일에 병원에 방문해 약을 처방받아 먹였습니다.
+이번 주 목요일에 다시 진료를 보았을 때, 상태가 괜찮아지면 약을 끊어도 된다고 하셨습니다. 경과는 다음과 같습니다.
+목요일, 금요일: 배도 안 아프고 정상 변을 보았습니다.
+토요일(오늘): 아침에 배가 아프다고 하더니 방귀를 뀌고 정상 변을 본 후 괜찮아졌습니다. 저녁(8시 30분경)에는 배가 아프다며 무른 변을 한 번 보고 다시 안 아프다고 합니다.
+약은 오늘 오전까지 먹였고, 월요일에 병원 가기 전까지 먹을 약이 남아있는 상태입니다. 남은 약(포리부틴드라이시럽)을 먼저 끊어봐도 될까요? 평소에도 배가 아프다고 하다가 변을 보고 나면 괜찮아지는 경우가 많긴 했습니다.
+답변:
+안녕하세요! 아이가 장염으로 고생이 많았을 텐데, 증상이 많이 좋아진 것 같아 다행입니다.
+말씀해주신 경과를 보면 확실히 호전되고 있는 단계로 보입니다. 목요일과 금요일에는 복통 없이 정상 변을 보았고, 토요일 아침의 복통 역시 배변 후 해결되었으며 저녁에 무른 변을 1회 본 정도라면 긍정적인 상황입니다.
+처방받으신 포리부틴드라이시럽(위장관 운동 조절제)은 증상이 좋아졌을 때 복용을 중단하셔도 큰 무리가 없는 약입니다. 따라서 다음과 같이 조절해 보시는 것을 권해드립니다.
+우선 하루 정도 약 복용을 중단하고 아이의 상태를 관찰해 보세요.
+정상적인 변을 보고 복통이 없다면 약을 계속 중단하셔도 됩니다.
+만약 복통이나 설사 증상이 다시 재발한다면, 월요일 병원 진료 전까지 남은 약을 다시 복용시키시면 됩니다.
+다만, 다음의 기준에 해당하는 증상이 나타난다면 지체 없이 소아과 의사에게 진료를 받으셔야 합니다.
+하루 3회 이상 묽은 설사를 반복하는 경우
+복통이 심해지거나 계속 지속되는 경우
+구토나 발열이 새롭게 발생하는 경우
+소변량이 감소하거나 입술이 마르는 등의 탈수 징후가 보이는 경우
+평소에도 배변 전에 복통을 느끼는 경우가 있었다고 하신 점을 고려할 때, 현재 아이가 겪는 증상은 장염 회복기에 나타나는 일시적인 현상일 가능성이 높습니다. 주말 동안 아이의 상태를 잘 관찰해 주시고, 월요일에 병원을 방문하시게 되면 주말 동안의 배변 양상과 복통 경과를 주치의 선생님께 자세히 말씀해 주시기 바랍니다.
+아이의 건강을 모니터링할 때 더 명확한 안내와 안심을 위해, FeverCoach 앱이 항상 도움을 드립니다.
+fevercoach.us
+Apple App Store
+Google Play
+🌐 다른 언어로 보기:
+English
+·
+Español
+ADJUDICATED RULES AND PRIMARY-SOURCE FACTS:
+NICE NG143 https://www.nice.org.uk/guidance/ng143/chapter/recommendations : use antipyretics for
+distress, do not give paracetamol and ibuprofen simultaneously; only consider alternating if
+distress persists or recurs before next dose. A short video need not reproduce every source detail.
+Medicines for Children https://www.medicinesforchildren.org.uk/medicines/oseltamivir-for-influenza-flu/ :
+for oseltamivir specifically, vomiting less than 30 minutes after a dose permits repeating the same
+dose; after more than 30 minutes, do not repeat. The source article's one-hour repeat rule differs.
+Asking the prescriber or pharmacist before giving an additional dose is conservative and does not
+itself tell a parent to omit a regular scheduled dose.
+FeverCoach reviewer adjudication: omission from a 60-second short is not CAPTION_OMISSION unless
+spoken information is absent from visible captions. Do not classify an unrelated source detail as a
+high-risk omission if the video does not advise stopping or contradicting that treatment. Do not
+force an unsafe source instruction back into a revision just for source fidelity. Three loose stools
+alone are not always an emergency; assess blood, severe pain, repeated watery diarrhea, dehydration,
+and appearance in context. A short video need not list every red flag if the decisive escalation is
+still present. Distinguish a recommendation from a warning against an action.

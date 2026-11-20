@@ -1,0 +1,373 @@
+{
+  "video_id": "pediatric-fever-sleep.es",
+  "language": "es",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "WARN",
+  "av_integrity": "PASS",
+  "spoken_transcript": "Si su hijo no responde al intentar despertarlo enérgicamente, vaya a urgencias de inmediato. Dormir más tras fiebre alta puede ser parte de la recuperación. Después de la fiebre, el sueño prolongado puede ser normal para la recuperación, pero observe si es inusualmente difícil de despertar o si su respuesta es reducida. Verifique la respiración regular, el color normal de la cara y los labios, y una postura natural. Si su hijo está inusualmente difícil de despertar o su respuesta es reducida, evalúelo de inmediato. Si cuesta despertarlo, busque atención urgente. Dé líquidos solo cuando esté completamente alerta. Ofrezca agua y no suspenda antibióticos recetados sin consejo médico. Dé los medicamentos recetados exactamente como se indicaron. Vaya a urgencias por falta de respuesta, respiración irregular, piel azul o letargo severo. Si el letargo persiste o le preocupa después de un sueño adecuado, consulte a su pediatra para un reexamen.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "NOT_APPLICABLE",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "PASS",
+    "high_fever_age_context": "NOT_APPLICABLE",
+    "sleep_vs_lethargy": "PASS",
+    "dehydration_guidance": "PASS",
+    "multilingual_integrity": "NOT_APPLICABLE",
+    "evidence_ko": "비디오는 '깨우기 어렵거나 반응이 감소하면 즉시 평가'하도록 권고하여, 출처의 '6시간 가까이 깨지 않는다면 깨워 물을 먹여보라'는 지침보다 더 보수적이고 안전한 조언을 제공합니다. 이는 소아과 지침에 부합합니다.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "NOT_APPLICABLE",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "PASS",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "NOT_APPLICABLE",
+    "treatment_claim_uncertainty": "NOT_APPLICABLE",
+    "simultaneous_and_alternating_antipyretics": "NOT_APPLICABLE",
+    "infant_feeding_and_formula": "NOT_APPLICABLE",
+    "medicine_storage_and_restart": "PASS",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "NOT_APPLICABLE"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "Si su hijo no responde al intentar despertarlo enérgicamente, vaya a urgencias de inmediato.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Si su hijo no responde al intentar despertarlo enérgicamente, vaya a urgencias de inmediato.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 예상과 일치합니다. 시각 자료는 잠든 아이를 보여줍니다."
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:06",
+      "spoken_transcript": "Dormir más tras fiebre alta puede ser parte de la recuperación.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Dormir más tras fiebre alta puede ser parte de la recuperación.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 예상과 일치합니다. 시각 자료는 X-레이 스타일의 내부 장기를 보여줍니다."
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:10",
+      "spoken_transcript": "Después de la fiebre, el sueño prolongado puede ser normal para la recuperación, pero observe si es inusualmente difícil de despertar o si su respuesta es reducida.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Después de la fiebre, el sueño prolongado puede ser normal para la recuperación, pero observe si es inusualmente difícil de despertar o si su respuesta es reducida.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 예상과 일치합니다. 시각 자료는 두 명의 잠든 아이를 보여주며, 한 명은 약간의 불편함을 나타냅니다."
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:19",
+      "spoken_transcript": "Verifique la respiración regular, el color normal de la cara y los labios, y una postura natural.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Verifique la respiración regular, el color normal de la cara y los labios, y una postura natural.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 예상과 일치합니다. 시각 자료는 잠든 아이의 얼굴 클로즈업을 보여줍니다."
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:24",
+      "spoken_transcript": "Si su hijo está inusualmente difícil de despertar o su respuesta es reducida, evalúelo de inmediato.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Si su hijo está inusualmente difícil de despertar o su respuesta es reducida, evalúelo de inmediato.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 예상과 일치합니다. 시각 자료는 부모가 잠든 아이의 반응을 확인하는 모습을 보여줍니다."
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:30",
+      "spoken_transcript": "Si cuesta despertarlo, busque atención urgente. Dé líquidos solo cuando esté completamente alerta.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Si cuesta despertarlo, busque atención urgente. Dé líquidos solo cuando esté completamente alerta.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 예상과 일치합니다. 시각 자료는 부모가 깨어난 아이에게 물을 주는 모습을 보여줍니다. 아이는 안전하게 앉아 있습니다."
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:38",
+      "spoken_transcript": "Ofrezca agua y no suspenda antibióticos recetados sin consejo médico.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Ofrezca agua y no suspenda antibióticos recetados sin consejo médico.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 예상과 일치합니다. 시각 자료는 아이가 물을 마시고 처방된 약병이 옆에 있는 모습을 보여줍니다."
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:42",
+      "spoken_transcript": "Dé los medicamentos recetados exactamente como se indicaron.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Dé los medicamentos recetados exactamente como se indicaron.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 예상과 일치합니다. 시각 자료는 부모가 아이에게 계량컵으로 액체 약을 주는 모습을 보여줍니다. 아이는 안전하게 앉아 있습니다."
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:46",
+      "spoken_transcript": "Vaya a urgencias por falta de respuesta, respiración irregular, piel azul o letargo severo.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Vaya a urgencias por falta de respuesta, respiración irregular, piel azul o letargo severo.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 예상과 일치합니다. 시각 자료는 잠든 아이와 X-레이 스타일의 파란 입술 및 폐를 보여줍니다."
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:54",
+      "spoken_transcript": "Si el letargo persiste o le preocupa después de un sueño adecuado, consulte a su pediatra para un reexamen.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Si el letargo persiste o le preocupa después de un sueño adecuado, consulte a su pediatra para un reexamen.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 예상과 일치합니다. 시각 자료는 부모가 잠든 아이를 확인한 후 소아과 대기실에 있는 모습을 보여줍니다."
+    }
+  ],
+  "medication_route_review": [
+    {
+      "timestamp": "00:30",
+      "depicted_item": "agua",
+      "depicted_route": "oral (cup)",
+      "intended_route": "oral (cup)",
+      "is_error": false,
+      "reason_ko": "아이가 깨어 있고 똑바로 앉아 컵으로 물을 마시는 모습이 안전하게 묘사되었습니다.",
+      "confidence": 1.0
+    },
+    {
+      "timestamp": "00:38",
+      "depicted_item": "agua",
+      "depicted_route": "oral (cup)",
+      "intended_route": "oral (cup)",
+      "is_error": false,
+      "reason_ko": "아이가 깨어 있고 똑바로 앉아 컵으로 물을 마시는 모습이 안전하게 묘사되었습니다.",
+      "confidence": 1.0
+    },
+    {
+      "timestamp": "00:42",
+      "depicted_item": "medicamento recetado (líquido)",
+      "depicted_route": "oral (dosing cup)",
+      "intended_route": "oral (dosing cup)",
+      "is_error": false,
+      "reason_ko": "아이가 깨어 있고 똑바로 앉아 계량컵으로 액체 약을 마시는 모습이 안전하게 묘사되었습니다.",
+      "confidence": 1.0
+    }
+  ],
+  "issues": [],
+  "review_summary_ko": "이 비디오는 스페인어로 된 소아과 발열 및 수면 관련 콘텐츠입니다. 전반적으로 의학적으로 정확하고 시청각적으로 완전합니다. 특히, 출처에서 제시된 '고열 후 3-4시간의 깊은 잠은 정상'이라는 문구를 생략하고, '깨우기 어렵거나 반응이 감소하면 즉시 평가'하도록 권고하여, 소아과 안전 지침에 따라 응급 상황에 대한 조언을 강화했습니다. 이는 출처 충실도 측면에서는 차이가 있지만, 의학적 정확도와 환자 안전 측면에서는 긍정적인 개선입니다. 약물 투여 방식(컵 사용) 및 수면 자세(유아 아님)는 적절하게 묘사되었습니다. 전반적으로 안전하고 신뢰할 수 있는 콘텐츠입니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [
+    "비디오는 출처에서 언급된 '고열 후 3-4시간 정도의 깊은 잠은 정상적'이라는 정보를 생략했습니다. 이는 안전을 위해 대처 지침을 강화한 것으로 판단됩니다.",
+    "비디오는 '깨우기 어렵거나 반응이 감소하면 즉시 평가'하도록 권고하여, 출처의 '6시간 가까이 깨지 않는다면 깨워 물을 먹여보라'는 지침보다 더 보수적이고 즉각적인 조언을 제공합니다. 이는 안전을 위한 긍정적인 변경입니다."
+  ],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-fever-sleep/es/pediatric-fever-sleep_ES.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-fever-sleep/es/production.snapshot.json",
+    "audited_at": "2026-09-22T06:56:15.900646+00:00",
+    "video_sha256": "16bd9356ead9ad38fe0b4fc052b775d61e788856efca58cde0e5c9b08bf0379f",
+    "snapshot_sha256": "201a733f57a8e1ccaeda74ea265de8ab036dd68c6e9490e28ede41482fb32aba",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 24,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "16bd9356ead9ad38fe0b4fc052b775d61e788856efca58cde0e5c9b08bf0379f",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 1,
+          "checks": [
+            "SLEEP_VS_LETHARGY",
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 2,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING",
+            "CASE_TIMELINE_REASSESSMENT"
+          ]
+        },
+        {
+          "scene": 3,
+          "checks": [
+            "SLEEP_VS_LETHARGY",
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 4,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 5,
+          "checks": [
+            "SLEEP_VS_LETHARGY",
+            "CROSS_SCENE_URGENCY",
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 6,
+          "checks": [
+            "SLEEP_VS_LETHARGY",
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 7,
+          "checks": [
+            "DEHYDRATION_OR_POOR_INTAKE",
+            "MEDICINE_STOP_RESTART"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING",
+            "MEDICINE_STOP_RESTART"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "SLEEP_VS_LETHARGY",
+            "CROSS_SCENE_URGENCY",
+            "EMERGENCY_LOCALE",
+            "CASE_TIMELINE_REASSESSMENT"
+          ]
+        },
+        {
+          "scene": 10,
+          "checks": [
+            "CROSS_SCENE_URGENCY",
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [],
+      "srt_number_tokens": [],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 6.84,
+          "timeline_seconds": 6,
+          "speed_factor": 1.14,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 4.68,
+          "timeline_seconds": 4,
+          "speed_factor": 1.17,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 11.84,
+          "timeline_seconds": 9,
+          "speed_factor": 1.3156,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 7.32,
+          "timeline_seconds": 5,
+          "speed_factor": 1.464,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 7.72,
+          "timeline_seconds": 6,
+          "speed_factor": 1.2867,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 8.2,
+          "timeline_seconds": 8,
+          "speed_factor": 1.025,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 5.8,
+          "timeline_seconds": 4,
+          "speed_factor": 1.45,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 4.76,
+          "timeline_seconds": 4,
+          "speed_factor": 1.19,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 8.68,
+          "timeline_seconds": 8,
+          "speed_factor": 1.085,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 7.84,
+          "timeline_seconds": 6,
+          "speed_factor": 1.3067,
+          "requires_close_listen": true
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

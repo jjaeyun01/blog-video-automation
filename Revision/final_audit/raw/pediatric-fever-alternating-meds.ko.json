@@ -1,0 +1,327 @@
+{
+  "video_id": "pediatric-fever-alternating-meds.ko",
+  "language": "ko",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "PASS",
+  "av_integrity": "PASS",
+  "spoken_transcript": "해열제를 먹여도 아이의 열이 계속된다면 걱정되시죠? 부루펜과 타이레놀은 서로 다른 성분의 해열제입니다. 동시·정기 교차 복용은 피하고, 계속 불편하면 의료진과 상의하세요. 약마다 투여 간격과 하루 최대량이 달라요. 복용 시간을 기록하세요. 40킬로 아이도 시럽 용량은 제품 농도와 처방에 따르세요. 성분·농도·1회량·하루 최대량을 확인하고, 모르면 약사에게 물으세요. 타이레놀은 4~6시간, 부루펜은 6~8시간 간격입니다. 정해진 양의 액상 약은 전용 계량컵으로 천천히 복용하게 하세요. 열이 48시간 이상 지속되거나 귀 통증이 심해지면 진료를 받으세요. 증상이 낫지 않으면 진료받으세요.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "PASS",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "NOT_APPLICABLE",
+    "high_fever_age_context": "NOT_APPLICABLE",
+    "sleep_vs_lethargy": "NOT_APPLICABLE",
+    "dehydration_guidance": "NOT_APPLICABLE",
+    "multilingual_integrity": "PASS",
+    "evidence_ko": "",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "PASS",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "NOT_APPLICABLE",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "NOT_APPLICABLE",
+    "treatment_claim_uncertainty": "NOT_APPLICABLE",
+    "simultaneous_and_alternating_antipyretics": "PASS",
+    "infant_feeding_and_formula": "NOT_APPLICABLE",
+    "medicine_storage_and_restart": "NOT_APPLICABLE",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "NOT_APPLICABLE"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "해열제를 먹여도 아이의 열이 계속된다면 걱정되시죠?",
+      "speech_complete": true,
+      "visible_caption_transcript": "해열제를 먹여도 아이의 열이 계속된다면 걱정되시죠?",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 예상과 일치합니다. 오버레이 '39.5°C'가 정확하게 표시됩니다."
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:06",
+      "spoken_transcript": "부루펜과 타이레놀은 서로 다른 성분의 해열제입니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "부루펜과 타이레놀은 서로 다른 성분의 해열제입니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 예상과 일치합니다. 오버레이 '타이레놀 (아세트아미노펜)'과 '부루펜 (이부프로펜)'이 정확하게 표시됩니다."
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:12",
+      "spoken_transcript": "동시·정기 교차 복용은 피하고, 계속 불편하면 의료진과 상의하세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "동시·정기 교차 복용은 피하고, 계속 불편하면 의료진과 상의하세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 예상과 일치합니다. 동시 또는 정기적인 교차 복용을 피하라는 안전 메시지가 명확합니다."
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:19",
+      "spoken_transcript": "약마다 투여 간격과 하루 최대량이 달라요. 복용 시간을 기록하세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "약마다 투여 간격과 하루 최대량이 달라요. 복용 시간을 기록하세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 예상과 일치합니다. 약물별 투여 간격 및 최대량 확인과 복용 시간 기록의 중요성을 강조합니다."
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:25",
+      "spoken_transcript": "40킬로 아이도 시럽 용량은 제품 농도와 처방에 따르세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "40킬로 아이도 시럽 용량은 제품 농도와 처방에 따르세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 예상과 일치합니다. 오버레이 '15mL'가 정확하게 표시됩니다. 아이가 계량컵으로 약을 복용하는 모습이 안전하게 묘사되었습니다."
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:31",
+      "spoken_transcript": "성분·농도·1회량·하루 최대량을 확인하고, 모르면 약사에게 물으세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "성분·농도·1회량·하루 최대량을 확인하고, 모르면 약사에게 물으세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 예상과 일치합니다. 오버레이 '32mg/mL 확인'이 정확하게 표시됩니다. 약물 정보 확인의 중요성을 강조합니다."
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:38",
+      "spoken_transcript": "타이레놀은 4~6시간, 부루펜은 6~8시간 간격입니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "타이레놀은 4~6시간, 부루펜은 6~8시간 간격입니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 예상과 일치합니다. 오버레이 '4-6시간 간격'과 '6-8시간 간격'이 정확하게 표시됩니다. 각 약물의 정확한 복용 간격을 안내합니다."
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:44",
+      "spoken_transcript": "정해진 양의 액상 약은 전용 계량컵으로 천천히 복용하게 하세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "정해진 양의 액상 약은 전용 계량컵으로 천천히 복용하게 하세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 예상과 일치합니다. 아이가 계량컵으로 약을 복용하는 모습이 안전하게 묘사되었습니다."
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:50",
+      "spoken_transcript": "열이 48시간 이상 지속되거나 귀 통증이 심해지면 진료를 받으세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "열이 48시간 이상 지속되거나 귀 통증이 심해지면 진료를 받으세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 예상과 일치합니다. 오버레이 '48시간 이상'이 정확하게 표시됩니다. 의료진 방문이 필요한 상황에 대한 명확한 안내를 제공합니다."
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:56",
+      "spoken_transcript": "증상이 낫지 않으면 진료받으세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "증상이 낫지 않으면 진료받으세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 예상과 일치합니다. 증상 지속 시 의료진 방문에 대한 일반적인 권고입니다."
+    }
+  ],
+  "medication_route_review": [],
+  "issues": [],
+  "review_summary_ko": "이 영상은 소아 발열 시 해열제 교차 복용에 대한 명확하고 의학적으로 정확한 지침을 제공합니다. 용량, 농도, 복용 간격의 중요성을 강조하며, 의료진 방문이 필요한 위험 신호에 대해서도 잘 안내하고 있습니다. 모든 시각 및 청각 요소는 일관되고 안전합니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-fever-alternating-meds/ko/pediatric-fever-alternating-meds_KO.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-fever-alternating-meds/ko/production.snapshot.json",
+    "audited_at": "2026-09-22T07:43:01.537938+00:00",
+    "video_sha256": "aa867d1c84750848fb0da7699fd03baa9e661a0948898bb5ff2d13157f0128c2",
+    "snapshot_sha256": "7ccce40134e29e6e68b95ae0c1325fbf50030bd8923179659b83ea62b1cc36c8",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 28,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "aa867d1c84750848fb0da7699fd03baa9e661a0948898bb5ff2d13157f0128c2",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 2,
+          "checks": [
+            "MEDICINE_STOP_RESTART"
+          ]
+        },
+        {
+          "scene": 5,
+          "checks": [
+            "DOSE_CONCENTRATION_CONTEXT",
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 6,
+          "checks": [
+            "DOSE_CONCENTRATION_CONTEXT"
+          ]
+        },
+        {
+          "scene": 7,
+          "checks": [
+            "CROSS_SCENE_URGENCY"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "NEW_OR_MIGRATING_PAIN"
+          ]
+        },
+        {
+          "scene": 10,
+          "checks": [
+            "MEDICINE_STOP_RESTART"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [
+        "40",
+        "1",
+        "4",
+        "6",
+        "6",
+        "8",
+        "48"
+      ],
+      "srt_number_tokens": [
+        "40",
+        "1",
+        "4",
+        "6",
+        "6",
+        "8",
+        "48"
+      ],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 5.28,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 5.12,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 6.44,
+          "timeline_seconds": 7,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 6.44,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0733,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 4.92,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 8.08,
+          "timeline_seconds": 7,
+          "speed_factor": 1.1543,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 6.44,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0733,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 6.2,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0333,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 6.44,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0733,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 3.16,
+          "timeline_seconds": 4,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

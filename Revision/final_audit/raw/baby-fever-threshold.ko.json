@@ -1,0 +1,327 @@
+{
+  "video_id": "baby-fever-threshold.ko",
+  "language": "ko",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "PASS",
+  "av_integrity": "PASS",
+  "spoken_transcript": "아기 체온이 38도 이상으로 오르면 발열로 간주합니다. 5개월 아기의 정상 체온은 36.5도에서 37.5도 사이입니다. 37.5도까지는 정상 범위이며, 38도부터 발열입니다. 과도한 옷이나 더운 실내 환경이 체온을 올릴 수 있습니다. 아기에게 적절한 실내 온도는 22도에서 24도입니다. 체온이 약간 높아도 아기 컨디션이 좋으면 괜찮을 수 있습니다. 손발만 보지 말고 체온, 수유, 활력, 호흡을 확인하세요. 아기는 환경과 컨디션에 맞춰 적절하게 옷을 입히는 것이 좋습니다. 보채거나 수유량 감소, 기침 등 다른 증상이 있다면 진료가 필요합니다. 38도 이상이거나 컨디션이 나쁘면 소아청소년과에 방문하여 진료를 받으세요.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "NOT_APPLICABLE",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "PASS",
+    "high_fever_age_context": "PASS",
+    "sleep_vs_lethargy": "PASS",
+    "dehydration_guidance": "PASS",
+    "multilingual_integrity": "NOT_APPLICABLE",
+    "evidence_ko": "모든 캘리브레이션 체크 항목이 영상 내용과 소스에 부합하며 안전 지침을 준수합니다.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "NOT_APPLICABLE",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "NOT_APPLICABLE",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "PASS",
+    "treatment_claim_uncertainty": "NOT_APPLICABLE",
+    "simultaneous_and_alternating_antipyretics": "NOT_APPLICABLE",
+    "infant_feeding_and_formula": "PASS",
+    "medicine_storage_and_restart": "NOT_APPLICABLE",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "NOT_APPLICABLE"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "아기 체온이 38도 이상으로 오르면 발열로 간주합니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "아기 체온이38도 이상으로 오르면발열로 간주합니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성, 자막, 시각 자료 모두 소스 내용과 일치하며, 온도계 디스플레이는 사양에 따라 비어 있습니다."
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:06",
+      "spoken_transcript": "5개월 아기의 정상 체온은 36.5도에서 37.5도 사이입니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "5개월 아기의 정상 체온은36.5도에서 37.5도 사이입니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성, 자막, 시각 자료 모두 소스 내용과 일치하며, 안전한 수면 환경이 묘사되었습니다."
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:12",
+      "spoken_transcript": "37.5도까지는 정상 범위이며, 38도부터 발열입니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "37.5도까지는정상 범위이며,38도부터 발열입니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성, 자막, 시각 자료 모두 소스 내용과 일치하며, 온도계 디스플레이는 사양에 따라 비어 있습니다."
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:18",
+      "spoken_transcript": "과도한 옷이나 더운 실내 환경이 체온을 올릴 수 있습니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "과도한 옷이나더운 실내 환경이체온을 올릴 수 있습니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성, 자막, 시각 자료 모두 소스 내용과 일치합니다."
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:24",
+      "spoken_transcript": "아기에게 적절한 실내 온도는 22도에서 24도입니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "아기에게 적절한실내 온도는22도에서 24도입니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성, 자막, 시각 자료 모두 소스 내용과 일치하며, 온도 조절기 디스플레이는 사양에 따라 비어 있습니다."
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:30",
+      "spoken_transcript": "체온이 약간 높아도 아기 컨디션이 좋으면 괜찮을 수 있습니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "체온이 약간 높아도아기 컨디션이 좋으면괜찮을 수 있습니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성, 자막, 시각 자료 모두 소스 내용과 일치하며, 아기의 컨디션 차이가 명확하게 묘사되었습니다."
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:36",
+      "spoken_transcript": "손발만 보지 말고 체온, 수유, 활력, 호흡을 확인하세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "손발만 보지 말고 체온, 수유, 활력, 호흡을 확인하세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성, 자막, 시각 자료 모두 소스 내용과 일치하며, 안전한 환경이 묘사되었습니다."
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:42",
+      "spoken_transcript": "아기는 환경과 컨디션에 맞춰 적절하게 옷을 입히는 것이 좋습니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "아기는 환경과 컨디션에 맞춰적절하게 옷을 입히는 것이 좋습니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성, 자막, 시각 자료 모두 소스 내용과 일치하며, 안전한 수면 환경과 적절한 옷차림이 묘사되었습니다."
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:48",
+      "spoken_transcript": "보채거나 수유량 감소, 기침 등 다른 증상이 있다면 진료가 필요합니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "보채거나 수유량 감소,기침 등 다른 증상이 있다면진료가 필요합니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성, 자막, 시각 자료 모두 소스 내용과 일치하며, 증상에 대한 시각적 묘사는 추상적이고 위협적이지 않습니다."
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:54",
+      "spoken_transcript": "38도 이상이거나 컨디션이 나쁘면 소아청소년과에 방문하여 진료를 받으세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "38도 이상이거나컨디션이 나쁘면소아청소년과에 방문하여 진료를 받으세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성, 자막, 시각 자료 모두 소스 내용과 일치하며, 소아청소년과 방문 권고가 명확합니다."
+    }
+  ],
+  "medication_route_review": [],
+  "issues": [],
+  "review_summary_ko": "본 영상은 5개월 아기의 정상 체온 범위, 발열 기준, 체온 상승의 일반적인 원인, 그리고 소아청소년과 진료가 필요한 경우에 대해 명확하고 정확하게 설명합니다. 음성, 자막, 시각 자료 모두 소스 내용과 일치하며, 의학적 안전 지침을 잘 준수하고 있습니다. 특히 안전한 아기 수면 환경과 체온 조절을 위한 옷차림에 대한 시각적 지침이 적절하게 표현되었습니다. 약물 관련 내용은 포함되어 있지 않습니다. 전반적으로 아기 발열에 대한 부모의 우려를 해소하고 적절한 대처법을 안내하는 데 효과적입니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-fever-threshold/ko/baby-fever-threshold_KO.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-fever-threshold/ko/production.snapshot.json",
+    "audited_at": "2026-09-22T07:40:22.824770+00:00",
+    "video_sha256": "331cc97e0f2316a89cee9c0aa5f52bcba5a21a1b156e0770ec8e27da50a58731",
+    "snapshot_sha256": "dc50481a990d978d3d478aa8d12b4a369685d785890dc87b484cd7a9c7077788",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 27,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "331cc97e0f2316a89cee9c0aa5f52bcba5a21a1b156e0770ec8e27da50a58731",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 2,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 4,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 6,
+          "checks": [
+            "SLEEP_VS_LETHARGY",
+            "DRUG_SPECIFIC_REDOSING"
+          ]
+        },
+        {
+          "scene": 7,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "SLEEP_VS_LETHARGY",
+            "DRUG_SPECIFIC_REDOSING"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [
+        "38",
+        "5",
+        "36.5",
+        "37.5",
+        "37.5",
+        "38",
+        "22",
+        "24",
+        "38"
+      ],
+      "srt_number_tokens": [
+        "38",
+        "5",
+        "36.5",
+        "37.5",
+        "37.5",
+        "38",
+        "22",
+        "24",
+        "38"
+      ],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 5.36,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 6.4,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0667,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 5.52,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 4.92,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 5.72,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 5.72,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 6.48,
+          "timeline_seconds": 6,
+          "speed_factor": 1.08,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 5.64,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 6.92,
+          "timeline_seconds": 6,
+          "speed_factor": 1.1533,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 7.24,
+          "timeline_seconds": 6,
+          "speed_factor": 1.2067,
+          "requires_close_listen": false
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

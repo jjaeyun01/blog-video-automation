@@ -1,0 +1,118 @@
+{
+  "repairs": [
+    {
+      "scene": 1,
+      "corrected_medical_claim": "New or persistent fever after pneumonia treatment requires earlier re-evaluation based on the child's condition (respiration, intake, activity), and immediate medical attention if it worsens.",
+      "corrected_narration": "Si la fiebre reaparece o persiste tras el alta, reevalúe antes si empeoran los síntomas respiratorios, la ingesta o la actividad.",
+      "caption_chunks": [
+        "Si la fiebre reaparece o persiste tras el alta,",
+        "reevalúe antes si empeoran los síntomas",
+        "respiratorios, la ingesta o la actividad."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "La narración original podría malinterpretarse como un criterio de espera. Se ha modificado para enfatizar la reevaluación temprana basada en el empeoramiento de los síntomas respiratorios, la ingesta o la actividad, en lugar de un período fijo de 10 días, según la retroalimentación de QA."
+    },
+    {
+      "scene": 5,
+      "corrected_medical_claim": "New or persistent fever after pneumonia treatment requires earlier re-evaluation based on the child's condition (respiration, intake, activity), and immediate medical attention if it worsens.",
+      "corrected_narration": "Si la fiebre reaparece o persiste tras el alta, reevalúe antes si empeoran los síntomas respiratorios, la ingesta o la actividad.",
+      "caption_chunks": [
+        "Si la fiebre reaparece o persiste tras el alta,",
+        "reevalúe antes si empeoran los síntomas",
+        "respiratorios, la ingesta o la actividad."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "La narración original podría malinterpretarse como un criterio de espera. Se ha modificado para enfatizar la reevaluación temprana basada en el empeoramiento de los síntomas respiratorios, la ingesta o la actividad, en lugar de un período fijo de 10 días, según la retroalimentación de QA."
+    },
+    {
+      "scene": 6,
+      "corrected_medical_claim": "A persistent fever of 38.5°C in the morning and evening suggests worsening pneumonia or a new co-infection, requiring medical evaluation.",
+      "corrected_narration": "Una fiebre de 38.5°C por la mañana y noche puede indicar empeoramiento o nueva infección, requiriendo evaluación.",
+      "caption_chunks": [
+        "Una fiebre de 38.5°C",
+        "por la mañana y noche puede indicar",
+        "empeoramiento o nueva infección, requiriendo evaluación."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "La narración original, aunque correcta, se ha ajustado para enfatizar explícitamente la necesidad de evaluación médica ante un patrón de fiebre de 38.5°C por la mañana y noche, en línea con la retroalimentación de QA para evitar cualquier implicación de espera."
+    },
+    {
+      "scene": 7,
+      "corrected_medical_claim": "If fever has persisted for a prolonged period, such as 3 weeks from the initial onset of Mycoplasma symptoms, a specialist will determine if additional tests like a chest X-ray or blood test are needed.",
+      "corrected_narration": "Si la fiebre persiste por un período prolongado, como 3 semanas, un especialista determinará si se necesitan pruebas adicionales.",
+      "caption_chunks": [
+        "Si la fiebre persiste por un período prolongado,",
+        "como 3 semanas, un especialista determinará",
+        "si se necesitan pruebas adicionales."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "La narración original podría malinterpretarse como un criterio de espera o una regla general para realizar pruebas. Se ha modificado para aclarar que la duración de 3 semanas es un ejemplo de un período prolongado y que la necesidad de pruebas adicionales es determinada por un especialista, en línea con la retroalimentación de QA."
+    },
+    {
+      "scene": 9,
+      "corrected_medical_claim": "A persistent fever of 38.5°C that repeats daily can indicate worsening pneumonia or a new co-infection, requiring symptom recording and specialist consultation.",
+      "corrected_narration": "Una fiebre de 38.5°C que se repite a diario puede indicar empeoramiento o nueva infección. Registre los síntomas y consulte a un especialista.",
+      "caption_chunks": [
+        "Una fiebre de 38.5°C que se repite a diario",
+        "puede indicar empeoramiento o nueva infección.",
+        "Registre los síntomas y consulte a un especialista."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "La narración original se ha ajustado para vincular directamente el patrón de fiebre de 38.5°C con la posibilidad de empeoramiento o nueva infección, y para enfatizar la necesidad de registrar los síntomas y consultar a un especialista, en línea con la retroalimentación de QA para evitar cualquier implicación de espera."
+    }
+  ],
+  "video_id": "mycoplasma-pneumonia-fever-reassessment.es",
+  "model": "gemini-2.5-flash",
+  "source_issues": [
+    {
+      "scene": 1,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "도입 및 23~41초: 퇴원 후 10일 시점의 발열, 3주 발열 후 X-ray/혈액검사를 강조해 그때까지 기다려도 되는 기준으로 오해할 수 있습니다. 폐렴 치료 후 새로 나거나 지속되는 발열은 경과와 호흡·섭취·활동 상태에 따라 더 일찍 재평가하고, 악화 시 즉시 진료하도록 바꿔 주세요. 검사 종류와 시점은 진찰 결과로 결정해야 합니다. 추가 노트: 10일/3주는 특정 사례의 경과라면 그 점을 명시하고 일반적인 대기 기준으로 제시하지 마세요. 모든 아이에게 일정 시간이 지나면 X-ray와 혈액검사를 의무적으로 하라는 수정도 적절하지 않습니다. 해열제는 고정 시간표보다 불편감과 약별 용법에 맞춰 사용하도록 해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-29.mp4"
+    },
+    {
+      "scene": 5,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "도입 및 23~41초: 퇴원 후 10일 시점의 발열, 3주 발열 후 X-ray/혈액검사를 강조해 그때까지 기다려도 되는 기준으로 오해할 수 있습니다. 폐렴 치료 후 새로 나거나 지속되는 발열은 경과와 호흡·섭취·활동 상태에 따라 더 일찍 재평가하고, 악화 시 즉시 진료하도록 바꿔 주세요. 검사 종류와 시점은 진찰 결과로 결정해야 합니다. 추가 노트: 10일/3주는 특정 사례의 경과라면 그 점을 명시하고 일반적인 대기 기준으로 제시하지 마세요. 모든 아이에게 일정 시간이 지나면 X-ray와 혈액검사를 의무적으로 하라는 수정도 적절하지 않습니다. 해열제는 고정 시간표보다 불편감과 약별 용법에 맞춰 사용하도록 해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-29.mp4"
+    },
+    {
+      "scene": 6,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "도입 및 23~41초: 퇴원 후 10일 시점의 발열, 3주 발열 후 X-ray/혈액검사를 강조해 그때까지 기다려도 되는 기준으로 오해할 수 있습니다. 폐렴 치료 후 새로 나거나 지속되는 발열은 경과와 호흡·섭취·활동 상태에 따라 더 일찍 재평가하고, 악화 시 즉시 진료하도록 바꿔 주세요. 검사 종류와 시점은 진찰 결과로 결정해야 합니다. 추가 노트: 10일/3주는 특정 사례의 경과라면 그 점을 명시하고 일반적인 대기 기준으로 제시하지 마세요. 모든 아이에게 일정 시간이 지나면 X-ray와 혈액검사를 의무적으로 하라는 수정도 적절하지 않습니다. 해열제는 고정 시간표보다 불편감과 약별 용법에 맞춰 사용하도록 해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-29.mp4"
+    },
+    {
+      "scene": 7,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "도입 및 23~41초: 퇴원 후 10일 시점의 발열, 3주 발열 후 X-ray/혈액검사를 강조해 그때까지 기다려도 되는 기준으로 오해할 수 있습니다. 폐렴 치료 후 새로 나거나 지속되는 발열은 경과와 호흡·섭취·활동 상태에 따라 더 일찍 재평가하고, 악화 시 즉시 진료하도록 바꿔 주세요. 검사 종류와 시점은 진찰 결과로 결정해야 합니다. 추가 노트: 10일/3주는 특정 사례의 경과라면 그 점을 명시하고 일반적인 대기 기준으로 제시하지 마세요. 모든 아이에게 일정 시간이 지나면 X-ray와 혈액검사를 의무적으로 하라는 수정도 적절하지 않습니다. 해열제는 고정 시간표보다 불편감과 약별 용법에 맞춰 사용하도록 해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-29.mp4"
+    },
+    {
+      "scene": 9,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "도입 및 23~41초: 퇴원 후 10일 시점의 발열, 3주 발열 후 X-ray/혈액검사를 강조해 그때까지 기다려도 되는 기준으로 오해할 수 있습니다. 폐렴 치료 후 새로 나거나 지속되는 발열은 경과와 호흡·섭취·활동 상태에 따라 더 일찍 재평가하고, 악화 시 즉시 진료하도록 바꿔 주세요. 검사 종류와 시점은 진찰 결과로 결정해야 합니다. 추가 노트: 10일/3주는 특정 사례의 경과라면 그 점을 명시하고 일반적인 대기 기준으로 제시하지 마세요. 모든 아이에게 일정 시간이 지나면 X-ray와 혈액검사를 의무적으로 하라는 수정도 적절하지 않습니다. 해열제는 고정 시간표보다 불편감과 약별 용법에 맞춰 사용하도록 해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-29.mp4"
+    }
+  ]
+}

@@ -1,0 +1,355 @@
+{
+  "video_id": "influenza-a-high-fever-management.es",
+  "language": "es",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "PASS",
+  "av_integrity": "PASS",
+  "spoken_transcript": "La influenza A se caracteriza típicamente por fiebre alta. Este virus causa fiebre alta y malestar. La fiebre puede no bajar bien durante las primeras 24 a 48 horas, incluso con antipiréticos. El antiviral no garantiza que la fiebre baje en 24 a 48 horas. Tras iniciar el tratamiento, siga observando el estado general y la hidratación del niño. Use primero un solo antipirético si hay malestar. Alterne solo con un plan médico que indique dosis e intervalos; consulte antes de dar ibuprofeno a menores de seis meses. Mantenga la temperatura ambiente a 24 a 26°C y vista a su hijo con ropa ligera. Ante riesgo de deshidratación, ofrezca solución de rehidratación oral en pequeñas cantidades. La bebida deportiva no la sustituye. Emergencias: dificultad respiratoria, dolor de pecho, conciencia alterada, convulsión febril o 8 horas sin orinar. Si los síntomas no mejoran o su hijo está letárgico, consulte a su pediatra sin demora.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "PASS",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "PASS",
+    "high_fever_age_context": "PASS",
+    "sleep_vs_lethargy": "PASS",
+    "dehydration_guidance": "PASS",
+    "multilingual_integrity": "NOT_APPLICABLE",
+    "evidence_ko": "모든 음성, 캡션, 오버레이 텍스트가 소스 및 안전 지침과 일치합니다. 약물 투여 경로 시각 자료는 안전 지침을 준수합니다.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "NOT_APPLICABLE",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "PASS",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "NOT_APPLICABLE",
+    "treatment_claim_uncertainty": "PASS",
+    "simultaneous_and_alternating_antipyretics": "PASS",
+    "infant_feeding_and_formula": "NOT_APPLICABLE",
+    "medicine_storage_and_restart": "NOT_APPLICABLE",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "NOT_APPLICABLE"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "La influenza A se caracteriza típicamente por fiebre alta.",
+      "speech_complete": true,
+      "visible_caption_transcript": "La influenza A se caracteriza típicamente por fiebre alta.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 소스와 일치하며, 오버레이 텍스트(39.7°C)도 정확합니다."
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:04",
+      "spoken_transcript": "Este virus causa fiebre alta y malestar.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Este virus causa fiebre alta y malestar.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 소스와 일치하며, 시각 자료도 적절합니다."
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:09",
+      "spoken_transcript": "La fiebre puede no bajar bien durante las primeras 24 a 48 horas, incluso con antipiréticos.",
+      "speech_complete": true,
+      "visible_caption_transcript": "La fiebre puede no bajar bien durante las primeras 24 a 48 horas, incluso con antipiréticos.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 소스와 일치하며, 시각 자료는 경구 투여를 정확하게 묘사합니다."
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:15",
+      "spoken_transcript": "El antiviral no garantiza que la fiebre baje en 24 a 48 horas.",
+      "speech_complete": true,
+      "visible_caption_transcript": "El antiviral no garantiza que la fiebre baje en 24 a 48 horas.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 소스와 일치하며, 시각 자료도 적절합니다."
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:20",
+      "spoken_transcript": "Tras iniciar el tratamiento, siga observando el estado general y la hidratación del niño.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Tras iniciar el tratamiento, siga observando el estado general y la hidratación del niño.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 소스와 일치하며, 오버레이 텍스트('24 horas ~ 48 horas')도 정확합니다."
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:25",
+      "spoken_transcript": "Use primero un solo antipirético si hay malestar. Alterne solo con un plan médico que indique dosis e intervalos; consulte antes de dar ibuprofeno a menores de seis meses.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Use primero un solo antipirético si hay malestar. Alterne solo con un plan médico que indique dosis e intervalos; consulte antes de dar ibuprofeno a menores de seis meses.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 소스와 일치하며, 시각 자료는 경구 투여를 정확하게 묘사합니다. '6개월 미만 영아에게 이부프로펜 투여 전 의사와 상담'이라는 중요한 안전 정보가 포함되어 있습니다."
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:34",
+      "spoken_transcript": "Mantenga la temperatura ambiente a 24 a 26°C y vista a su hijo con ropa ligera.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Mantenga la temperatura ambiente a 24 a 26°C y vista a su hijo con ropa ligera.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 소스와 일치하며, 오버레이 텍스트('24°C ~ 26°C')도 정확합니다."
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:40",
+      "spoken_transcript": "Ante riesgo de deshidratación, ofrezca solución de rehidratación oral en pequeñas cantidades. La bebida deportiva no la sustituye.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Ante riesgo de deshidratación, ofrezca solución de rehidratación oral en pequeñas cantidades. La bebida deportiva no la sustituye.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 소스와 일치하며, 오버레이 텍스트('10 minutos ~ 15 minutos')도 정확합니다. 스포츠 음료가 경구 수액을 대체할 수 없다는 중요한 정보가 포함되어 있습니다."
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:47",
+      "spoken_transcript": "Emergencias: dificultad respiratoria, dolor de pecho, conciencia alterada, convulsión febril o 8 horas sin orinar.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Emergencias: dificultad respiratoria, dolor de pecho, conciencia alterada, convulsión febril o 8 horas sin orinar.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 소스와 일치하며, 오버레이 텍스트('Más de 8 horas')도 정확합니다. 응급 상황에 대한 명확한 지침이 제공됩니다."
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:55",
+      "spoken_transcript": "Si los síntomas no mejoran o su hijo está letárgico, consulte a su pediatra sin demora.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Si los síntomas no mejoran o su hijo está letárgico, consulte a su pediatra sin demora.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 소스와 일치하며, 시각 자료도 적절합니다."
+    }
+  ],
+  "medication_route_review": [
+    {
+      "timestamp": "00:09",
+      "depicted_item": "Liquid medicine",
+      "depicted_route": "Oral (dosing cup)",
+      "intended_route": "Oral",
+      "is_error": false,
+      "reason_ko": "아이가 약물 투여 컵으로 액체 약을 마시는 모습이 안전하고 적절하게 묘사되었습니다.",
+      "confidence": 1.0
+    },
+    {
+      "timestamp": "00:25",
+      "depicted_item": "Liquid medicine",
+      "depicted_route": "Oral (dosing cup)",
+      "intended_route": "Oral",
+      "is_error": false,
+      "reason_ko": "아이가 약물 투여 컵으로 액체 약을 마시는 모습이 안전하고 적절하게 묘사되었습니다.",
+      "confidence": 1.0
+    }
+  ],
+  "issues": [],
+  "review_summary_ko": "이 비디오는 A형 독감과 관련된 고열 관리에 대한 스페인어 콘텐츠입니다. 음성, 캡션, 오버레이 텍스트 및 시각 자료 모두 소스 기사의 내용과 일치하며, 소아과 의료 안전 지침을 준수합니다. 해열제 교차 복용에 대한 지침은 의사의 지시와 6개월 미만 영아에 대한 이부프로펜 사용 주의사항을 명확히 언급하여 안전하게 전달됩니다. 탈수 예방 및 응급 상황에 대한 명확한 지침도 포함되어 있습니다. 약물 투여 경로는 적절한 컵을 사용하여 안전하게 묘사되었습니다. 전반적으로 의료적 정확성, 소스 충실도 및 AV 무결성 측면에서 모두 합격입니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/influenza-a-high-fever-management/es/influenza-a-high-fever-management_ES.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/influenza-a-high-fever-management/es/production.snapshot.json",
+    "audited_at": "2026-09-22T06:53:48.085919+00:00",
+    "video_sha256": "79af8fdcbb1a5fb408d5d16e5f5209c2782bc1ab97aaf4b3883980b382e9bdb3",
+    "snapshot_sha256": "4dae535b20a887402b43421f09c0410535cf3a4561bf2f348bd437ff31baf50f",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 29,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "79af8fdcbb1a5fb408d5d16e5f5209c2782bc1ab97aaf4b3883980b382e9bdb3",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 1,
+          "checks": [
+            "CASE_TIMELINE_REASSESSMENT"
+          ]
+        },
+        {
+          "scene": 2,
+          "checks": [
+            "CASE_TIMELINE_REASSESSMENT"
+          ]
+        },
+        {
+          "scene": 3,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 4,
+          "checks": [
+            "TREATMENT_CLAIM_UNCERTAINTY"
+          ]
+        },
+        {
+          "scene": 6,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "DEHYDRATION_OR_POOR_INTAKE",
+            "TREATMENT_CLAIM_UNCERTAINTY"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "DEHYDRATION_OR_POOR_INTAKE",
+            "NEW_OR_MIGRATING_PAIN",
+            "EMERGENCY_LOCALE"
+          ]
+        },
+        {
+          "scene": 10,
+          "checks": [
+            "SLEEP_VS_LETHARGY"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [
+        "24",
+        "48",
+        "24",
+        "48",
+        "24",
+        "26",
+        "8"
+      ],
+      "srt_number_tokens": [
+        "24",
+        "48",
+        "24",
+        "48",
+        "24",
+        "26",
+        "8"
+      ],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 4.76,
+          "timeline_seconds": 4,
+          "speed_factor": 1.19,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 3.6,
+          "timeline_seconds": 5,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 8.12,
+          "timeline_seconds": 6,
+          "speed_factor": 1.3533,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 6.24,
+          "timeline_seconds": 5,
+          "speed_factor": 1.248,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 6.2,
+          "timeline_seconds": 5,
+          "speed_factor": 1.24,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 13.08,
+          "timeline_seconds": 9,
+          "speed_factor": 1.4533,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 7.88,
+          "timeline_seconds": 6,
+          "speed_factor": 1.3133,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 9.76,
+          "timeline_seconds": 7,
+          "speed_factor": 1.3943,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 10.96,
+          "timeline_seconds": 8,
+          "speed_factor": 1.37,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 6.64,
+          "timeline_seconds": 5,
+          "speed_factor": 1.328,
+          "requires_close_listen": true
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

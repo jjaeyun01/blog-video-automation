@@ -1,0 +1,339 @@
+{
+  "video_id": "infant-wheezing-pneumonia-antibiotics.en",
+  "language": "en",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "PASS",
+  "av_integrity": "PASS",
+  "spoken_transcript": "If your baby's wheezing starts and worsens, it could signal narrowed airways. A 7-month-old's narrow airways mean symptoms can worsen fast; quick assessment is vital. Antibiotics only work for bacterial infections, not viral colds or bronchiolitis. Narrowed or inflamed airways can cause wheezing when your baby breathes. Doctors use auscultation and oxygen saturation to diagnose bronchiolitis, croup, or pneumonia. If wheezing continues or worsens, seek prompt evaluation at an ER or night clinic pediatrician. Maintain indoor humidity at 40 to 60% and offer small amounts of fluids frequently at 5 to 10-minute intervals before your visit. Hold your baby upright and loosen clothing around their neck and chest. If lips or nails turn blue, you see retractions, or the child is lethargic and cannot make eye contact, call local emergency services immediately. Changes in breathing need quick action. Seek a pediatrician's evaluation right away.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "NOT_APPLICABLE",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "PASS",
+    "high_fever_age_context": "NOT_APPLICABLE",
+    "sleep_vs_lethargy": "PASS",
+    "dehydration_guidance": "PASS",
+    "multilingual_integrity": "PASS",
+    "evidence_ko": "영상은 한국어 원문 내용을 영어로 정확하게 전달하며, 의학적 조언과 안전 지침을 충실히 따릅니다.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "NOT_APPLICABLE",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "PASS",
+    "emergency_locale": "PASS",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "PASS",
+    "treatment_claim_uncertainty": "PASS",
+    "simultaneous_and_alternating_antipyretics": "NOT_APPLICABLE",
+    "infant_feeding_and_formula": "NOT_APPLICABLE",
+    "medicine_storage_and_restart": "NOT_APPLICABLE",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "PASS"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "If your baby's wheezing starts and worsens, it could signal narrowed airways.",
+      "speech_complete": true,
+      "visible_caption_transcript": "If your baby's wheezing starts and worsens, it could signal narrowed airways.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "아기 쌕쌕거림이 시작되고 악화되면 기도 협착을 나타낼 수 있다고 설명합니다."
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:06",
+      "spoken_transcript": "A 7-month-old's narrow airways mean symptoms can worsen fast; quick assessment is vital.",
+      "speech_complete": true,
+      "visible_caption_transcript": "A 7-month-old's narrow airways mean symptoms can worsen fast; quick assessment is vital.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "7개월 영아의 좁은 기도로 인해 증상이 빠르게 악화될 수 있으며, 빠른 평가가 중요하다고 설명합니다."
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:12",
+      "spoken_transcript": "Antibiotics only work for bacterial infections, not viral colds or bronchiolitis.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Antibiotics only work for bacterial infections, not viral colds or bronchiolitis.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "항생제는 세균 감염에만 효과가 있으며, 바이러스성 감기나 세기관지염에는 효과가 없다고 설명합니다."
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:18",
+      "spoken_transcript": "Narrowed or inflamed airways can cause wheezing when your baby breathes.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Narrowed or inflamed airways can cause wheezing when your baby breathes.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "좁아지거나 염증이 생긴 기도가 아기가 숨 쉴 때 쌕쌕거림을 유발할 수 있다고 설명합니다."
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:24",
+      "spoken_transcript": "Doctors use auscultation and oxygen saturation to diagnose bronchiolitis, croup, or pneumonia.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Doctors use auscultation and oxygen saturation to diagnose bronchiolitis, croup, or pneumonia.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "의사가 청진과 산소포화도 측정을 통해 세기관지염, 크룹, 폐렴을 진단한다고 설명합니다."
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:30",
+      "spoken_transcript": "If wheezing continues or worsens, seek prompt evaluation at an ER or night clinic pediatrician.",
+      "speech_complete": true,
+      "visible_caption_transcript": "If wheezing continues or worsens, seek prompt evaluation at an ER or night clinic pediatrician.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "쌕쌕거림이 계속되거나 악화되면 응급실이나 야간 진료 소아과에서 즉시 평가를 받아야 한다고 안내합니다."
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:36",
+      "spoken_transcript": "Maintain indoor humidity at 40 to 60% and offer small amounts of fluids frequently at 5 to 10-minute intervals before your visit.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Maintain indoor humidity at 40 to 60% and offer small amounts of fluids frequently at 5 to 10-minute intervals before your visit.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "실내 습도를 40~60%로 유지하고, 병원 방문 전 5~10분 간격으로 소량의 수분을 자주 섭취하게 하라고 안내합니다."
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:43",
+      "spoken_transcript": "Hold your baby upright and loosen clothing around their neck and chest.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Hold your baby upright and loosen clothing around their neck and chest.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "아기를 똑바로 안고 목과 가슴 주변의 옷을 느슨하게 해주라고 안내합니다."
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:47",
+      "spoken_transcript": "If lips or nails turn blue, you see retractions, or the child is lethargic and cannot make eye contact, call local emergency services immediately.",
+      "speech_complete": true,
+      "visible_caption_transcript": "If lips or nails turn blue, you see retractions, or the child is lethargic and cannot make eye contact, call local emergency services immediately.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "입술이나 손톱이 파랗게 변하거나, 함몰 호흡이 보이거나, 아이가 축 늘어져 눈 맞춤을 하지 못하면 즉시 지역 응급 서비스에 전화하라고 경고합니다."
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:55",
+      "spoken_transcript": "Changes in breathing need quick action. Seek a pediatrician's evaluation right away.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Changes in breathing need quick action. Seek a pediatrician's evaluation right away.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "호흡 변화에는 빠른 조치가 필요하며, 즉시 소아과 의사의 진찰을 받으라고 권장합니다."
+    }
+  ],
+  "medication_route_review": [],
+  "issues": [],
+  "review_summary_ko": "이 영상은 영아의 쌕쌕거림과 호흡기 증상에 대한 중요한 의학 정보를 정확하고 명확하게 전달합니다. 원문 내용에 충실하며, 안전 지침과 응급 상황 대처법을 잘 설명하고 있습니다. 시청각적 요소와 자막도 일관성 있고 이해하기 쉽습니다. 전반적으로 높은 품질의 콘텐츠입니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/infant-wheezing-pneumonia-antibiotics/en/infant-wheezing-pneumonia-antibiotics_EN.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/infant-wheezing-pneumonia-antibiotics/en/production.snapshot.json",
+    "audited_at": "2026-09-22T06:52:53.614435+00:00",
+    "video_sha256": "057c3e7f955ce1be8960577bba83f32ca599f7fb857dd9f88c6a2c65ebe9c925",
+    "snapshot_sha256": "482efe3891d89fd7bed415c73c41a9d4c3ba232b762af893175de96d75d8bfbb",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 30,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "057c3e7f955ce1be8960577bba83f32ca599f7fb857dd9f88c6a2c65ebe9c925",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 1,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "CROSS_SCENE_URGENCY"
+          ]
+        },
+        {
+          "scene": 2,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS"
+          ]
+        },
+        {
+          "scene": 4,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS"
+          ]
+        },
+        {
+          "scene": 5,
+          "checks": [
+            "CASE_TIMELINE_REASSESSMENT"
+          ]
+        },
+        {
+          "scene": 6,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "EMERGENCY_LOCALE"
+          ]
+        },
+        {
+          "scene": 7,
+          "checks": [
+            "FORMULA_AMOUNT_VS_CONCENTRATION"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "SLEEP_VS_LETHARGY",
+            "SAFE_SLEEP_AND_SWALLOWING",
+            "EMERGENCY_LOCALE"
+          ]
+        },
+        {
+          "scene": 10,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [
+        "7",
+        "40",
+        "60",
+        "5",
+        "10"
+      ],
+      "srt_number_tokens": [
+        "7",
+        "40",
+        "60",
+        "5",
+        "10"
+      ],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 5.92,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 7.16,
+          "timeline_seconds": 6,
+          "speed_factor": 1.1933,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 7.0,
+          "timeline_seconds": 6,
+          "speed_factor": 1.1667,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 5.4,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 8.36,
+          "timeline_seconds": 6,
+          "speed_factor": 1.3933,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 7.4,
+          "timeline_seconds": 6,
+          "speed_factor": 1.2333,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 10.36,
+          "timeline_seconds": 7,
+          "speed_factor": 1.48,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 5.16,
+          "timeline_seconds": 4,
+          "speed_factor": 1.29,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 11.64,
+          "timeline_seconds": 8,
+          "speed_factor": 1.455,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 6.96,
+          "timeline_seconds": 5,
+          "speed_factor": 1.392,
+          "requires_close_listen": true
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

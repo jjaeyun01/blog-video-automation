@@ -1,0 +1,338 @@
+{
+  "video_id": "baby-formula-refusal-cold.en",
+  "language": "en",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "PASS",
+  "av_integrity": "PASS",
+  "spoken_transcript": "When a baby refuses formula, reduced intake needs attention and can lead to dehydration. Colds often reduce a baby's appetite, but reduced intake requires attention. How long can a baby go without feeding before it becomes a concern? A severe cough can make a baby's throat sore, making swallowing painful. Seek medical help if a young infant refuses feeding for many hours, has not urinated in 8 hours, is lethargic, or shows signs of dehydration. Instead of large feeds, offer small amounts more often, adjusted to your baby's usual intake and what they can accept. Check for dehydration: no wet diaper in eight hours, dry lips, or no tears when crying. Warm formula to body temperature, or use a spoon or cup if the bottle is refused. Urgent signs: no wet diaper for eight hours, lethargy, very dry lips, or sunken eyes. If your baby shows these urgent signs or concerns persist, consult your pediatrician immediately.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "NOT_APPLICABLE",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "NOT_APPLICABLE",
+    "high_fever_age_context": "NOT_APPLICABLE",
+    "sleep_vs_lethargy": "PASS",
+    "dehydration_guidance": "PASS",
+    "multilingual_integrity": "PASS",
+    "evidence_ko": "영상 내용, 음성, 캡션 모두 소스 내용과 일치하며 의학적으로 정확합니다. 특히, 어린 영아의 수유 거부 시 '여러 시간'이라는 표현은 소스의 '12시간 이상'이라는 구체적인 기준을 일반화한 것이지만, 다른 긴급 징후와 함께 제시되어 조기 진료의 중요성을 강조하므로 안전성에는 문제가 없습니다.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "NOT_APPLICABLE",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "PASS",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "PASS",
+    "treatment_claim_uncertainty": "PASS",
+    "simultaneous_and_alternating_antipyretics": "NOT_APPLICABLE",
+    "infant_feeding_and_formula": "PASS",
+    "medicine_storage_and_restart": "NOT_APPLICABLE",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "PASS"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00 - 00:06",
+      "spoken_transcript": "When a baby refuses formula, reduced intake needs attention and can lead to dehydration.",
+      "speech_complete": true,
+      "visible_caption_transcript": "When a baby refuses formula, reduced intake needs attention and can lead to dehydration.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "아기가 분유를 거부할 때 섭취량 감소는 주의가 필요하며 탈수로 이어질 수 있다는 내용입니다. 음성 및 캡션 모두 정확합니다."
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:06 - 00:12",
+      "spoken_transcript": "Colds often reduce a baby's appetite, but reduced intake requires attention.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Colds often reduce a baby's appetite, but reduced intake requires attention.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "감기는 아기의 식욕을 감소시키지만, 섭취량 감소는 주의가 필요하다는 내용입니다. 음성 및 캡션 모두 정확합니다."
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:12 - 00:18",
+      "spoken_transcript": "How long can a baby go without feeding before it becomes a concern?",
+      "speech_complete": true,
+      "visible_caption_transcript": "How long can a baby go without feeding before it becomes a concern?",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "아기가 수유 없이 얼마나 오래 버틸 수 있는지에 대한 질문입니다. 음성 및 캡션 모두 정확합니다."
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:18 - 00:24",
+      "spoken_transcript": "A severe cough can make a baby's throat sore, making swallowing painful.",
+      "speech_complete": true,
+      "visible_caption_transcript": "A severe cough can make a baby's throat sore, making swallowing painful.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "심한 기침이 아기의 목을 아프게 하여 삼키기 어렵게 만들 수 있다는 내용입니다. 음성 및 캡션 모두 정확합니다."
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:24 - 00:32",
+      "spoken_transcript": "Seek medical help if a young infant refuses feeding for many hours, has not urinated in 8 hours, is lethargic, or shows signs of dehydration.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Seek medical help if a young infant refuses feeding for many hours, has not urinated in 8 hours, is lethargic, or shows signs of dehydration.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "어린 영아가 여러 시간 수유를 거부하거나, 8시간 동안 소변을 보지 않거나, 무기력하거나, 탈수 징후를 보이면 의료 도움을 받으라는 내용입니다. 음성 및 캡션 모두 정확합니다."
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:32 - 00:38",
+      "spoken_transcript": "Instead of large feeds, offer small amounts more often, adjusted to your baby's usual intake and what they can accept.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Instead of large feeds, offer small amounts more often, adjusted to your baby's usual intake and what they can accept.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "많은 양 대신 소량의 분유를 더 자주 제공하되, 아기의 평소 섭취량과 받아들일 수 있는 양에 맞춰 조절하라는 내용입니다. 음성 및 캡션 모두 정확합니다."
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:38 - 00:44",
+      "spoken_transcript": "Check for dehydration: no wet diaper in eight hours, dry lips, or no tears when crying.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Check for dehydration: no wet diaper in eight hours, dry lips, or no tears when crying.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "탈수 징후 확인: 8시간 동안 젖은 기저귀 없음, 마른 입술, 울 때 눈물 없음. 음성 및 캡션 모두 정확합니다."
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:44 - 00:49",
+      "spoken_transcript": "Warm formula to body temperature, or use a spoon or cup if the bottle is refused.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Warm formula to body temperature, or use a spoon or cup if the bottle is refused.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "분유를 체온 정도로 따뜻하게 데우거나, 젖병을 거부하면 숟가락이나 컵을 사용하라는 내용입니다. 음성 및 캡션 모두 정확합니다."
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:49 - 00:55",
+      "spoken_transcript": "Urgent signs: no wet diaper for eight hours, lethargy, very dry lips, or sunken eyes.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Urgent signs: no wet diaper for eight hours, lethargy, very dry lips, or sunken eyes.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "긴급 징후: 8시간 동안 젖은 기저귀 없음, 무기력, 매우 마른 입술, 함몰된 눈. 음성 및 캡션 모두 정확합니다."
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:55 - 01:00",
+      "spoken_transcript": "If your baby shows these urgent signs or concerns persist, consult your pediatrician immediately.",
+      "speech_complete": true,
+      "visible_caption_transcript": "If your baby shows these urgent signs or concerns persist, consult your pediatrician immediately.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "아기가 이러한 긴급 징후를 보이거나 우려가 지속되면 즉시 소아과 의사와 상담하라는 내용입니다. 음성 및 캡션 모두 정확합니다."
+    }
+  ],
+  "medication_route_review": [],
+  "issues": [],
+  "review_summary_ko": "이 영상은 아기가 분유를 거부할 때의 주의사항과 탈수 징후, 그리고 의료 도움을 받아야 할 긴급 상황에 대해 설명합니다. 음성, 캡션, 시각 자료 모두 소스 내용에 충실하며 의학적으로 정확합니다. 특히, 어린 영아의 수유 거부 시 '여러 시간'이라는 표현은 소스의 '12시간 이상'이라는 구체적인 기준을 일반화한 것이지만, 다른 긴급 징후와 함께 제시되어 조기 진료의 중요성을 강조하므로 안전성에는 문제가 없습니다. 전반적으로 잘 제작된 영상입니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-formula-refusal-cold/en/baby-formula-refusal-cold_EN.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-formula-refusal-cold/en/production.snapshot.json",
+    "audited_at": "2026-09-22T07:57:28.287628+00:00",
+    "video_sha256": "0b2db77ee2e0e5520b40132ce82f705447aa1461891a175468f66e09e502a5a0",
+    "snapshot_sha256": "78f921634e59cbabe8d2d7131e83fb47981066a2f614ecf22be663c62dfd1678",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 20,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "0b2db77ee2e0e5520b40132ce82f705447aa1461891a175468f66e09e502a5a0",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 1,
+          "checks": [
+            "DEHYDRATION_OR_POOR_INTAKE",
+            "FORMULA_AMOUNT_VS_CONCENTRATION"
+          ]
+        },
+        {
+          "scene": 2,
+          "checks": [
+            "FORMULA_AMOUNT_VS_CONCENTRATION"
+          ]
+        },
+        {
+          "scene": 3,
+          "checks": [
+            "FORMULA_AMOUNT_VS_CONCENTRATION"
+          ]
+        },
+        {
+          "scene": 4,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 5,
+          "checks": [
+            "SLEEP_VS_LETHARGY",
+            "DEHYDRATION_OR_POOR_INTAKE",
+            "TWELVE_HOUR_INTERVAL",
+            "FEED_REFUSAL_WAIT"
+          ]
+        },
+        {
+          "scene": 6,
+          "checks": [
+            "FORMULA_AMOUNT_VS_CONCENTRATION"
+          ]
+        },
+        {
+          "scene": 7,
+          "checks": [
+            "DEHYDRATION_OR_POOR_INTAKE"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "FORMULA_AMOUNT_VS_CONCENTRATION",
+            "POWDER_MEDICINE_STORAGE"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "SLEEP_VS_LETHARGY"
+          ]
+        },
+        {
+          "scene": 10,
+          "checks": [
+            "SLEEP_VS_LETHARGY",
+            "FORMULA_AMOUNT_VS_CONCENTRATION"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [
+        "8"
+      ],
+      "srt_number_tokens": [
+        "8"
+      ],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 7.08,
+          "timeline_seconds": 6,
+          "speed_factor": 1.18,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 6.12,
+          "timeline_seconds": 6,
+          "speed_factor": 1.02,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 4.68,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 5.56,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 11.0,
+          "timeline_seconds": 8,
+          "speed_factor": 1.375,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 8.68,
+          "timeline_seconds": 6,
+          "speed_factor": 1.4467,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 7.88,
+          "timeline_seconds": 6,
+          "speed_factor": 1.3133,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 6.68,
+          "timeline_seconds": 5,
+          "speed_factor": 1.336,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 8.76,
+          "timeline_seconds": 6,
+          "speed_factor": 1.46,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 7.32,
+          "timeline_seconds": 5,
+          "speed_factor": 1.464,
+          "requires_close_listen": true
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

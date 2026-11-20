@@ -1,0 +1,10 @@
+{
+  "video_id": "baby-enteritis-medicine-stop.ko",
+  "finding_valid": false,
+  "safety_severity": "none",
+  "recommended_status": "PASS",
+  "rationale_ko": "영상의 내용은 증상 호전 시 약 중단 여부를 의료진과 확인하도록 권고하여 출처보다 더 보수적이고 안전한 접근 방식을 취합니다. 이는 의학적으로 안전하며, 환자 안전을 최우선으로 하는 지침에 부합합니다. 출처와의 불일치가 안전 문제를 야기하지 않으므로 유효한 문제로 간주하지 않습니다.",
+  "evidence_ko": "영상: \"변이 정상이고 복통이 없어도, 남은 약의 복용 계획을 의료진과 확인하세요.\" 출처: \"정상적인 변을 보고 복통이 없다면 약을 계속 중단하셔도 됩니다.\" 영상의 권고는 의료진의 판단을 구하도록 하여 더 안전합니다.",
+  "model": "gemini-2.5-flash",
+  "first_audit_verdict": "WARN"
+}

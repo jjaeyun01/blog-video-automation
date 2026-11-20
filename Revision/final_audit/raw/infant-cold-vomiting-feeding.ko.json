@@ -1,0 +1,350 @@
+{
+  "video_id": "infant-cold-vomiting-feeding.ko",
+  "language": "ko",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "PASS",
+  "av_integrity": "PASS",
+  "spoken_transcript": "계속 토하고 수분 섭취가 안 되면 즉시 진료가 필요해요. 바이러스 감기는 아기 위장을 자극해 구토를 유발할 수 있어요. 아플 때 이유식, 분유, 쌀죽 중 무엇을 먹여야 할까요? 분유는 아픈 아기에게 수분과 칼로리를 제공해요. 분유는 제품 표시대로 정상 농도로 타고, 1회 먹이는 양을 평소의 3분의 2로 줄여 자주 먹여주세요. 토한 뒤에도 분유나 모유를 소량씩 자주 주세요. 4~6시간 쉬는 것은 이유식 이야기이며 수분 수유를 중단하라는 뜻이 아닙니다. 아이가 축 늘어지거나 눈 맞춤이 안 되면 위험 신호예요. 구토 후 30분 정도 아기의 목과 몸통을 받쳐 상체를 세워 안아주세요. 38°C 이상 발열이 지속되면 진료가 필요해요. 증상이 악화되면 지체 없이 소아청소년과 진료를 받으세요.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "NOT_APPLICABLE",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "NOT_APPLICABLE",
+    "high_fever_age_context": "PASS",
+    "sleep_vs_lethargy": "PASS",
+    "dehydration_guidance": "PASS",
+    "multilingual_integrity": "NOT_APPLICABLE",
+    "evidence_ko": "비디오의 모든 의학적 조언은 제공된 출처와 일치하며 소아과 안전 지침에 부합합니다. 음성, 캡션, 시각 자료 모두 일관되고 정확합니다.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "PASS",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "NOT_APPLICABLE",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "PASS",
+    "treatment_claim_uncertainty": "PASS",
+    "simultaneous_and_alternating_antipyretics": "NOT_APPLICABLE",
+    "infant_feeding_and_formula": "PASS",
+    "medicine_storage_and_restart": "NOT_APPLICABLE",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "NOT_APPLICABLE"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "계속 토하고 수분 섭취가 안 되면 즉시 진료가 필요해요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "계속 토하고수분 섭취가 안 되면즉시 진료가 필요해요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션 일치. 영상은 구토 및 수분 섭취 불가 상황을 잘 표현함."
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:06",
+      "spoken_transcript": "바이러스 감기는 아기 위장을 자극해 구토를 유발할 수 있어요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "바이러스 감기는아기 위장을 자극해구토를 유발할 수 있어요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션 일치. 바이러스 감기로 인한 구토 유발 메커니즘을 시각적으로 잘 설명함."
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:12",
+      "spoken_transcript": "아플 때 이유식, 분유, 쌀죽 중 무엇을 먹여야 할까요?",
+      "speech_complete": true,
+      "visible_caption_transcript": "아플 때 이유식,분유, 쌀죽 중무엇을 먹여야 할까요?",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션 일치. 아플 때 수유 선택에 대한 질문을 명확히 제시함."
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:18",
+      "spoken_transcript": "분유는 아픈 아기에게 수분과 칼로리를 제공해요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "분유는 아픈 아기에게수분과 칼로리를제공해요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션 일치. 분유의 수분 및 칼로리 제공 기능을 시각적으로 잘 표현함."
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:24",
+      "spoken_transcript": "분유는 제품 표시대로 정상 농도로 타고, 1회 먹이는 양을 평소의 3분의 2로 줄여 자주 먹여주세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "분유는 제품 표시대로 정상 농도로 타고,1회 먹이는 양을 평소의 3분의 2로 줄여자주 먹여주세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션 일치. 분유 농도 및 수유량 조절 지침을 명확히 전달함. 영상은 희석을 암시하지 않고 정상 농도 유지 및 양 조절을 시각화함."
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:30",
+      "spoken_transcript": "토한 뒤에도 분유나 모유를 소량씩 자주 주세요. 4~6시간 쉬는 것은 이유식 이야기이며 수분 수유를 중단하라는 뜻이 아닙니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "토한 뒤에도 분유나 모유를 소량씩 자주 주세요. 4~6시간 쉬는 것은 이유식 이야기이며 수분 수유를 중단하라는 뜻이 아닙니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션 일치. 구토 후 수분 섭취의 중요성과 이유식 휴식 시간의 구분을 명확히 설명함."
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:38",
+      "spoken_transcript": "아이가 축 늘어지거나 눈 맞춤이 안 되면 위험 신호예요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "아이가 축 늘어지거나눈 맞춤이 안 되면위험 신호예요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션 일치. 무기력증 및 눈 맞춤 불가 시 위험 신호임을 강조함."
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:44",
+      "spoken_transcript": "구토 후 30분 정도 아기의 목과 몸통을 받쳐 상체를 세워 안아주세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "구토 후 30분 정도아기의 목과 몸통을 받쳐상체를 세워 안아주세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션 일치. 구토 후 아기를 안는 자세에 대한 지침을 제공함."
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:50",
+      "spoken_transcript": "38°C 이상 발열이 지속되면 진료가 필요해요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "38°C 이상 발열이지속되면진료가 필요해요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션 일치. 38°C 이상 발열 지속 시 진료 필요성을 강조함."
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:55",
+      "spoken_transcript": "증상이 악화되면 지체 없이 소아청소년과 진료를 받으세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "증상이 악화되면지체 없이소아청소년과 진료를 받으세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션 일치. 증상 악화 시 즉시 소아청소년과 진료를 권고함."
+    }
+  ],
+  "medication_route_review": [],
+  "issues": [],
+  "review_summary_ko": "이 비디오는 7개월 아기의 감기, 구토, 수유에 대한 정보를 제공합니다. 모든 의학적 조언은 제공된 출처와 일치하며 소아과 안전 지침에 부합합니다. 음성, 캡션, 시각 자료 모두 일관되고 정확합니다. 특히, 구토 후 수분 섭취의 중요성, 분유 농도 및 수유량 조절, 이유식 휴식 시간의 구분, 위험 신호(무기력증, 눈 맞춤 불가, 38°C 이상 발열 지속)에 대한 명확한 지침이 잘 전달되었습니다. 전반적으로 높은 품질의 콘텐츠입니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/infant-cold-vomiting-feeding/ko/infant-cold-vomiting-feeding_KO.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/infant-cold-vomiting-feeding/ko/production.snapshot.json",
+    "audited_at": "2026-09-22T06:52:00.135955+00:00",
+    "video_sha256": "849fd46dafc318795c7d370b3e0b8ea607429d8ef7a2a219e8167abafc5c7a58",
+    "snapshot_sha256": "515868db0cf0c8f7a857af5993cb6baa7dbc3239a1fd96727d4c19e749e7ad09",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 30,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "849fd46dafc318795c7d370b3e0b8ea607429d8ef7a2a219e8167abafc5c7a58",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 1,
+          "checks": [
+            "DEHYDRATION_OR_POOR_INTAKE",
+            "DRUG_SPECIFIC_REDOSING"
+          ]
+        },
+        {
+          "scene": 2,
+          "checks": [
+            "DRUG_SPECIFIC_REDOSING"
+          ]
+        },
+        {
+          "scene": 3,
+          "checks": [
+            "FORMULA_AMOUNT_VS_CONCENTRATION"
+          ]
+        },
+        {
+          "scene": 4,
+          "checks": [
+            "FORMULA_AMOUNT_VS_CONCENTRATION"
+          ]
+        },
+        {
+          "scene": 5,
+          "checks": [
+            "DOSE_CONCENTRATION_CONTEXT",
+            "FORMULA_AMOUNT_VS_CONCENTRATION",
+            "POWDER_MEDICINE_STORAGE"
+          ]
+        },
+        {
+          "scene": 6,
+          "checks": [
+            "CROSS_SCENE_URGENCY",
+            "FORMULA_AMOUNT_VS_CONCENTRATION",
+            "MEDICINE_STOP_RESTART"
+          ]
+        },
+        {
+          "scene": 7,
+          "checks": [
+            "SLEEP_VS_LETHARGY"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "DRUG_SPECIFIC_REDOSING"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "MEDICINE_STOP_RESTART"
+          ]
+        },
+        {
+          "scene": 10,
+          "checks": [
+            "DRUG_SPECIFIC_REDOSING"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [
+        "1",
+        "3",
+        "2",
+        "4",
+        "6",
+        "30",
+        "38"
+      ],
+      "srt_number_tokens": [
+        "1",
+        "3",
+        "2",
+        "4",
+        "6",
+        "30",
+        "38"
+      ],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 5.0,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 5.36,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 6.28,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0467,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 4.48,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 8.92,
+          "timeline_seconds": 6,
+          "speed_factor": 1.4867,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 11.84,
+          "timeline_seconds": 8,
+          "speed_factor": 1.48,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 5.24,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 7.16,
+          "timeline_seconds": 6,
+          "speed_factor": 1.1933,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 4.36,
+          "timeline_seconds": 5,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 5.12,
+          "timeline_seconds": 5,
+          "speed_factor": 1.024,
+          "requires_close_listen": false
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

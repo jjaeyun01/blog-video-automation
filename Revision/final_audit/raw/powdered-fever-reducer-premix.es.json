@@ -1,0 +1,312 @@
+{
+  "video_id": "powdered-fever-reducer-premix.es",
+  "language": "es",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "PASS",
+  "av_integrity": "PASS",
+  "spoken_transcript": "Premezclar el antipirético en polvo con agua puede reducir su eficacia o alterarlo. El medicamento en polvo debe guardarse en su empaque original hasta justo antes de usarlo. Premezclar puede hacer que el polvo se asiente, causando una concentración desigual y dosis inexactas. Los ingredientes disueltos en agua pueden degradarse con el tiempo por la luz, temperatura y aire. Si es inevitable premezclar, siga las instrucciones del producto o consulte a un farmacéutico. Idealmente, prepare el medicamento justo antes de usar. Si no, siga las instrucciones del producto o consulte a un farmacéutico. Es importante monitorear continuamente el estado de su hijo después de administrar el medicamento. Mezcle con agua tibia o a temperatura ambiente justo antes de usar. Evite el agua caliente. Si la fiebre persiste o el estado de su hijo empeora tras la dosis correcta, consulte a un pediatra. Para una eficacia y seguridad óptimas, prepare el medicamento justo antes de usar y consulte a un pediatra si surgen dudas.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "NOT_APPLICABLE",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "NOT_APPLICABLE",
+    "high_fever_age_context": "NOT_APPLICABLE",
+    "sleep_vs_lethargy": "NOT_APPLICABLE",
+    "dehydration_guidance": "NOT_APPLICABLE",
+    "multilingual_integrity": "PASS",
+    "evidence_ko": "모든 음성 문장이 완전하게 전달되었고, 캡션이 음성 내용을 정확히 반영하며, 의학적 조언의 적절성이 확인되었습니다.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "PASS",
+    "drug_specific_redosing": "NOT_APPLICABLE",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "NOT_APPLICABLE",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "PASS",
+    "treatment_claim_uncertainty": "PASS",
+    "simultaneous_and_alternating_antipyretics": "NOT_APPLICABLE",
+    "infant_feeding_and_formula": "NOT_APPLICABLE",
+    "medicine_storage_and_restart": "PASS",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "PASS"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "Premezclar el antipirético en polvo con agua puede reducir su eficacia o alterarlo.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Premezclar el antipirético en polvo con agua puede reducir su eficacia o alterarlo.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 일치하며, 캡션 가독성 양호. 시각적으로 가루약이 물에 섞여 가라앉는 모습이 묘사됨."
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:06",
+      "spoken_transcript": "El medicamento en polvo debe guardarse en su empaque original hasta justo antes de usarlo.",
+      "speech_complete": true,
+      "visible_caption_transcript": "El medicamento en polvo debe guardarse en su empaque original hasta justo antes de usarlo.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 일치하며, 캡션 가독성 양호. 가루약 캐릭터가 포장지에서 살짝 보이는 모습이 묘사됨."
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:12",
+      "spoken_transcript": "Premezclar puede hacer que el polvo se asiente, causando una concentración desigual y dosis inexactas.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Premezclar puede hacer que el polvo se asiente, causando una concentración desigual y dosis inexactas.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 일치하며, 캡션 가독성 양호. 미리 섞은 약과 바로 섞은 약의 농도 불균일이 시각적으로 묘사됨."
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:18",
+      "spoken_transcript": "Los ingredientes disueltos en agua pueden degradarse con el tiempo por la luz, temperatura y aire.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Los ingredientes disueltos en agua pueden degradarse con el tiempo por la luz, temperatura y aire.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 일치하며, 캡션 가독성 양호. 물에 녹은 약 성분이 분해되는 모습이 캐릭터를 통해 묘사됨."
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:24",
+      "spoken_transcript": "Si es inevitable premezclar, siga las instrucciones del producto o consulte a un farmacéutico.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Si es inevitable premezclar, siga las instrucciones del producto o consulte a un farmacéutico.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 일치하며, 캡션 가독성 양호. 약사 아이콘과 물음표가 나타나 약사 상담의 중요성을 시각적으로 표현함."
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:30",
+      "spoken_transcript": "Idealmente, prepare el medicamento justo antes de usar. Si no, siga las instrucciones del producto o consulte a un farmacéutico.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Idealmente, prepare el medicamento justo antes de usar. Si no, siga las instrucciones del producto o consulte a un farmacéutico.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 일치하며, 캡션 가독성 양호. 즉시 조제하는 경우와 약사 상담을 하는 경우를 분할 화면으로 묘사함."
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:37",
+      "spoken_transcript": "Es importante monitorear continuamente el estado de su hijo después de administrar el medicamento.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Es importante monitorear continuamente el estado de su hijo después de administrar el medicamento.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 일치하며, 캡션 가독성 양호. 아이의 상태를 지속적으로 모니터링하는 모습이 묘사됨."
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:42",
+      "spoken_transcript": "Mezcle con agua tibia o a temperatura ambiente justo antes de usar. Evite el agua caliente.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Mezcle con agua tibia o a temperatura ambiente justo antes de usar. Evite el agua caliente.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 일치하며, 캡션 가독성 양호. 보호자가 아이 앞에서 가루약을 물에 섞는 모습이 묘사됨."
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:48",
+      "spoken_transcript": "Si la fiebre persiste o el estado de su hijo empeora tras la dosis correcta, consulte a un pediatra.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Si la fiebre persiste o el estado de su hijo empeora tras la dosis correcta, consulte a un pediatra.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 일치하며, 캡션 가독성 양호. 아이가 불편해하는 모습이 묘사됨."
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:53",
+      "spoken_transcript": "Para una eficacia y seguridad óptimas, prepare el medicamento justo antes de usar y consulte a un pediatra si surgen dudas.",
+      "speech_complete": true,
+      "visible_caption_transcript": "Para una eficacia y seguridad óptimas, prepare el medicamento justo antes de usar y consulte a un pediatra si surgen dudas.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "음성 및 캡션이 일치하며, 캡션 가독성 양호. 약 캐릭터가 활기찬 모습으로 소아과 진료실로 향하는 모습이 묘사됨."
+    }
+  ],
+  "medication_route_review": [],
+  "issues": [],
+  "review_summary_ko": "이 영상은 가루 해열제를 미리 물에 타두는 것의 위험성과 올바른 복용 및 보관 방법을 설명합니다. 음성, 캡션, 시각적 요소 모두 일관되고 정확하며, 의학적 내용도 안전하고 신뢰할 수 있습니다. 모든 검토 기준을 충족하여 'PASS'로 평가합니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/powdered-fever-reducer-premix/es/powdered-fever-reducer-premix_ES.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/powdered-fever-reducer-premix/es/production.snapshot.json",
+    "audited_at": "2026-09-22T06:58:38.141271+00:00",
+    "video_sha256": "0c1539fd04546d5e7ab9d5d6f443d5dd4b8c24fc30eaf6c50d73c1022948b41e",
+    "snapshot_sha256": "a18957022daafe0f882a5810daa5a5c1870ea2a7397fdb3d36abfed44c8969c1",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 20,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "0c1539fd04546d5e7ab9d5d6f443d5dd4b8c24fc30eaf6c50d73c1022948b41e",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 1,
+          "checks": [
+            "POWDER_MEDICINE_STORAGE"
+          ]
+        },
+        {
+          "scene": 2,
+          "checks": [
+            "POWDER_MEDICINE_STORAGE"
+          ]
+        },
+        {
+          "scene": 3,
+          "checks": [
+            "DOSE_CONCENTRATION_CONTEXT",
+            "POWDER_MEDICINE_STORAGE"
+          ]
+        },
+        {
+          "scene": 4,
+          "checks": [
+            "POWDER_MEDICINE_STORAGE"
+          ]
+        },
+        {
+          "scene": 6,
+          "checks": [
+            "POWDER_MEDICINE_STORAGE"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING",
+            "POWDER_MEDICINE_STORAGE"
+          ]
+        },
+        {
+          "scene": 10,
+          "checks": [
+            "POWDER_MEDICINE_STORAGE"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [],
+      "srt_number_tokens": [],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 6.0,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 6.4,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0667,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 7.28,
+          "timeline_seconds": 6,
+          "speed_factor": 1.2133,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 7.2,
+          "timeline_seconds": 6,
+          "speed_factor": 1.2,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 7.72,
+          "timeline_seconds": 6,
+          "speed_factor": 1.2867,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 9.64,
+          "timeline_seconds": 7,
+          "speed_factor": 1.3771,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 6.64,
+          "timeline_seconds": 5,
+          "speed_factor": 1.328,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 7.68,
+          "timeline_seconds": 6,
+          "speed_factor": 1.28,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 7.4,
+          "timeline_seconds": 5,
+          "speed_factor": 1.48,
+          "requires_close_listen": true
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 9.08,
+          "timeline_seconds": 7,
+          "speed_factor": 1.2971,
+          "requires_close_listen": true
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

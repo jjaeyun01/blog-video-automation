@@ -1,0 +1,80 @@
+Independently adjudicate a disputed finding from a pediatric short's first Gemini audit.
+Be conservative, but do not amplify a false-positive accusation. Judge the *specific finding*,
+not whether the whole video is perfect. A finding about omitted content needs proof that the
+omission creates a materially unsafe instruction in this topic. A source article may itself contain
+unsafe advice; independent safety takes priority. If the supplied transcript is insufficient to
+verify an audiovisual claim, recommend WARN. Respond in Korean using the JSON schema.
+
+VIDEO ID: pediatric-fever-alternating-meds.en
+ACTUAL FINAL SCRIPT:
+Scene 1: Worried when your child's fever doesn't drop after medication?
+Scene 2: Ibuprofen and acetaminophen are different types of fever reducers.
+Scene 3: Do not give both fever medicines together or alternate on a fixed schedule. Ask a clinician if discomfort persists.
+Scene 4: These drugs have different minimum intervals and daily limits. Record every dose and time.
+Scene 5: Even for a 40-kilogram child, the Tylenol syrup volume depends on the product concentration and directions.
+Scene 6: Check the active ingredient, concentration, single dose, and daily maximum on the label; ask a pharmacist if unsure.
+Scene 7: Give Tylenol every 4 to 6 hours, and Brufen every 6 to 8 hours.
+Scene 8: Give the prescribed liquid medicine slowly in a purpose-made dosing cup.
+Scene 9: If fever lasts over 48 hours or ear pain worsens, see a pediatrician.
+Scene 10: If you have concerns or symptoms don't improve, consult your pediatrician.
+FIRST AUDIT FINDINGS:
+[
+  {
+    "severity": "high",
+    "category": "TRIAGE_OMISSION",
+    "timestamp": "0:00",
+    "scene": 1,
+    "evidence": "The source article states: \"중이염 치료를 위한 항생제는 임의로 중단하지 마시고 처방받은 기간 동안 끝까지 복용해야 합니다.\" (Antibiotics prescribed for otitis media should be taken for the entire prescribed duration and not stopped prematurely.) This crucial instruction is absent from the video's narration and captions, despite the video's context being a child with otitis media.",
+    "problem_ko": "영상에서 중이염 치료를 위한 항생제를 처방받은 기간 동안 끝까지 복용해야 한다는 중요한 지침이 누락되었습니다. 이는 환자가 임의로 항생제 복용을 중단할 위험을 높여 치료 실패나 합병증으로 이어질 수 있습니다.",
+    "source_comparison_ko": "원문에는 \"중이염 치료를 위한 항생제는 임의로 중단하지 마시고 처방받은 기간 동안 끝까지 복용해야 합니다\"라고 명시되어 있으나, 영상에는 해당 내용이 전혀 언급되지 않았습니다.",
+    "recommended_fix_ko": "영상의 내레이션과 캡션에 항생제 복용 지침(예: \"중이염 치료를 위한 항생제는 의사의 지시대로 끝까지 복용해야 합니다.\")을 추가해야 합니다.",
+    "confidence": 1.0
+  }
+]
+HUMAN FAIL FEEDBACK THAT MOTIVATED THE REVISION:
+11~23초: '함께 또는 번갈아 먹여도 되나요?'라는 질문 뒤에 작용 방식이 다르다는 설명만 있어, 동시 복용을 허용하는 것으로 오해할 수 있습니다. 두 약 동시 투여는 권하지 않으며, 단일제를 우선하고 교차복용은 지속되는 불편감·약별 간격/최대량을 확인한 계획에 한하도록 명확히 답해 주세요. 추가 노트: 40kg에 Tylenol 15mL는 32mg/mL 제품이라면 480mg(12mg/kg)로 계산상 과량은 아닙니다. 농도를 읽기 쉽게 함께 표시하고, 제품별 최대량도 확인하도록 해 주세요. 계량컵과 경구용 주사기의 사용 설명·그림을 혼동하지 않게 맞춰 주세요.
+SOURCE ARTICLE EXCERPT:
+의학 감수:
+안상현, MD
+콘텐츠 편집:
+김명찬, MD
+이 게시물은 실제 의료 검토자의 질의응답 경험을 각색한 것입니다. 이 콘텐츠는 정보 제공 목적으로만 제공되며 의학적 조언을 구성하지 않습니다. 건강 관련 문제나 건강 또는 치료와 관련된 결정을 내리기 전에 항상 자격을 갖춘 의료 전문가와 상담하시기 바랍니다.
+질문:
+아이가 중이염으로 항생제와 약을 먹고 있습니다. 병원에서 처방해주신 부루펜 계열 해열제를 먹였는데 열이 안 떨어져서요. 평소에는 알약을 먹는데 지금 집에 타이레놀 알약이 없고 시럽(물약)만 있습니다. 지금 바로 타이레놀 시럽으로 추가 복용(교차 복용)을 해도 될까요? 아이 체중이 40kg인데 용량을 어느 정도 먹이면 될지 궁금합니다.
+답변:
+안녕하세요. 아이가 중이염 치료 중인데 열이 내리지 않아 걱정이 많으시겠습니다.
+결론부터 말씀드리면, 부루펜 복용 후 열이 떨어지지 않는다면 타이레놀 추가 복용(교차 복용)이 가능합니다. 부루펜(이부프로펜/덱시부프로펜)과 타이레놀(아세트아미노펜)은 서로 다른 해열제 성분이므로, 마지막 부루펜 복용 후에도 열이 지속된다면 타이레놀을 먹이실 수 있습니다.
+40kg 아이의 타이레놀 시럽 권장 용량
+• 필요 성분량: 400~600mg
+• 타이레놀 시럽(32mg/mL 농도 기준): 12.5~19mL
+• 권장 복용량: 15mL (480mg)
+• 복용 간격: 4~6시간 간격 (하루 최대 5회까지만 복용 가능)
+정확한 투약을 위해 약국에서 받은 투약용 주사기나 계량컵을 사용하여 용량을 맞춰주시기 바랍니다.
+⚠️ 복용 시 주의 및 확인사항
+가지고 계신 해열제 병에 '아세트아미노펜 32mg/mL'라고 표시되어 있는지 농도를 반드시 확인해 주세요.
+처방받은 부루펜 계열 약과 교대로 주셔도 되지만, 같은 성분인 부루펜은 다음 복용까지 최소 6~8시간의 간격을 유지하셔야 합니다.
+마지막으로, 중이염 치료를 위한 항생제는 임의로 중단하지 마시고 처방받은 기간 동안 끝까지 복용해야 합니다. 해열제를 교차 복용했음에도 열이 48시간 이상 지속되거나 아이가 호소하는 귀 통증이 더 심해진다면, 정확한 귀 상태와 발열 원인 평가를 위해 소아청소년과에 방문하여 재진료를 받으시길 권장합니다.
+아이의 건강을 모니터링할 때 더 명확한 안내와 안심을 위해, FeverCoach 앱이 항상 도움을 드립니다.
+fevercoach.us
+Apple App Store
+Google Play
+🌐 다른 언어로 보기:
+English
+·
+Español
+ADJUDICATED RULES AND PRIMARY-SOURCE FACTS:
+NICE NG143 https://www.nice.org.uk/guidance/ng143/chapter/recommendations : use antipyretics for
+distress, do not give paracetamol and ibuprofen simultaneously; only consider alternating if
+distress persists or recurs before next dose. A short video need not reproduce every source detail.
+Medicines for Children https://www.medicinesforchildren.org.uk/medicines/oseltamivir-for-influenza-flu/ :
+for oseltamivir specifically, vomiting less than 30 minutes after a dose permits repeating the same
+dose; after more than 30 minutes, do not repeat. The source article's one-hour repeat rule differs.
+Asking the prescriber or pharmacist before giving an additional dose is conservative and does not
+itself tell a parent to omit a regular scheduled dose.
+FeverCoach reviewer adjudication: omission from a 60-second short is not CAPTION_OMISSION unless
+spoken information is absent from visible captions. Do not classify an unrelated source detail as a
+high-risk omission if the video does not advise stopping or contradicting that treatment. Do not
+force an unsafe source instruction back into a revision just for source fidelity. Three loose stools
+alone are not always an emergency; assess blood, severe pain, repeated watery diarrhea, dehydration,
+and appearance in context. A short video need not list every red flag if the decisive escalation is
+still present. Distinguish a recommendation from a warning against an action.

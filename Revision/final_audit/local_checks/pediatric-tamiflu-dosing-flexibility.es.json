@@ -1,0 +1,137 @@
+{
+  "duration_seconds": 60.021029,
+  "width": 1080,
+  "height": 1920,
+  "has_audio": true,
+  "scene_count": 10,
+  "captions_equal_expected_narration": true,
+  "caption_images_checked": 21,
+  "all_caption_image_corners_transparent": true,
+  "video_sha256": "a9c330273e9acbffb082f86e522c44e88dde1843439e96e5ca37576ede5aeae9",
+  "reviewer_feedback_focus": [
+    {
+      "scene": 1,
+      "checks": [
+        "SLEEP_VS_LETHARGY",
+        "SAFE_SLEEP_AND_SWALLOWING"
+      ]
+    },
+    {
+      "scene": 2,
+      "checks": [
+        "RESPIRATORY_RED_FLAGS",
+        "TWELVE_HOUR_INTERVAL",
+        "SAFE_SLEEP_AND_SWALLOWING"
+      ]
+    },
+    {
+      "scene": 4,
+      "checks": [
+        "SAFE_SLEEP_AND_SWALLOWING"
+      ]
+    },
+    {
+      "scene": 8,
+      "checks": [
+        "DRUG_SPECIFIC_REDOSING",
+        "SAFE_SLEEP_AND_SWALLOWING"
+      ]
+    },
+    {
+      "scene": 9,
+      "checks": [
+        "RESPIRATORY_RED_FLAGS",
+        "SLEEP_VS_LETHARGY",
+        "DRUG_SPECIFIC_REDOSING",
+        "CASE_TIMELINE_REASSESSMENT"
+      ]
+    }
+  ],
+  "srt_exists": true,
+  "srt_semantically_expected_by_normalized_text": true,
+  "expected_number_tokens": [
+    "2",
+    "12",
+    "48",
+    "3"
+  ],
+  "srt_number_tokens": [
+    "2",
+    "12",
+    "48",
+    "3"
+  ],
+  "srt_numbers_match_expected": true,
+  "audio_scene_timing": [
+    {
+      "scene": 1,
+      "raw_seconds": 5.48,
+      "timeline_seconds": 6,
+      "speed_factor": 1.0,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 2,
+      "raw_seconds": 10.12,
+      "timeline_seconds": 7,
+      "speed_factor": 1.4457,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 3,
+      "raw_seconds": 8.08,
+      "timeline_seconds": 6,
+      "speed_factor": 1.3467,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 4,
+      "raw_seconds": 6.4,
+      "timeline_seconds": 6,
+      "speed_factor": 1.0667,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 5,
+      "raw_seconds": 7.32,
+      "timeline_seconds": 6,
+      "speed_factor": 1.22,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 6,
+      "raw_seconds": 5.44,
+      "timeline_seconds": 6,
+      "speed_factor": 1.0,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 7,
+      "raw_seconds": 7.12,
+      "timeline_seconds": 6,
+      "speed_factor": 1.1867,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 8,
+      "raw_seconds": 8.8,
+      "timeline_seconds": 6,
+      "speed_factor": 1.4667,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 9,
+      "raw_seconds": 8.28,
+      "timeline_seconds": 6,
+      "speed_factor": 1.38,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 10,
+      "raw_seconds": 6.6,
+      "timeline_seconds": 5,
+      "speed_factor": 1.32,
+      "requires_close_listen": true
+    }
+  ]
+}

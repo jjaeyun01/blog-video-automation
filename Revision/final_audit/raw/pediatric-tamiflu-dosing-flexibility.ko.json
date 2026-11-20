@@ -1,0 +1,348 @@
+{
+  "video_id": "pediatric-tamiflu-dosing-flexibility.ko",
+  "language": "ko",
+  "overall_verdict": "PASS",
+  "medical_accuracy": "PASS",
+  "source_fidelity": "WARN",
+  "av_integrity": "PASS",
+  "spoken_transcript": "아이 독감약 복용을 위해 새벽 2시에 억지로 깨우지 마세요. 타미플루는 보통 하루 두 번, 약 12시간 간격으로 먹습니다. 첫날 간격을 임의로 줄이지 말고 의료진과 상의하세요. 독감 회복에는 충분한 수면과 휴식도 약만큼 중요합니다. 오후 2시 첫 복용 뒤에는 다음 시간을 의료진에게 확인하세요. 다음 날 복용 시각도 처방받은 전체 일정에 맞추어 의료진과 확인하세요. 증상 시작 48시간 안에 치료를 시작하는 게 좋습니다. 먹고 30분 안에 토하면 같은 용량을 다시 주고, 그 뒤면 다음 복용까지 기다리세요. 또 토하면 문의하세요. 고열이 3일 넘거나 숨차면 진료받으세요. 증상이 심해지면 소아청소년과 진료를 받으세요.",
+  "expected_narration_matches_audio": true,
+  "visible_captions_match_audio": true,
+  "speaker_voice_consistent": true,
+  "korean_hallucination_detected": false,
+  "unexpected_generated_text_detected": false,
+  "calibration_checks": {
+    "speech_completion": "PASS",
+    "caption_clause_coverage": "PASS",
+    "medication_timing": "PASS",
+    "triage_adequacy": "PASS",
+    "respiratory_red_flags": "PASS",
+    "high_fever_age_context": "NOT_APPLICABLE",
+    "sleep_vs_lethargy": "PASS",
+    "dehydration_guidance": "NOT_APPLICABLE",
+    "multilingual_integrity": "NOT_APPLICABLE",
+    "evidence_ko": "Scene 8의 구토 시 재복용 시간(30분)은 소스(1시간)와 다르지만, 오셀타미비르(타미플루)에 대한 Medicines for Children 가이드라인과 더 일치하여 의학적으로 더 안전합니다.",
+    "recommendation_vs_warning": "PASS",
+    "cross_scene_urgency": "PASS",
+    "dose_concentration_context": "NOT_APPLICABLE",
+    "drug_specific_redosing": "PASS",
+    "respiratory_sound_distinction": "NOT_APPLICABLE",
+    "emergency_locale": "NOT_APPLICABLE",
+    "safe_sleep_and_swallowing": "PASS",
+    "mechanism_and_diagnostic_limits": "NOT_APPLICABLE",
+    "treatment_claim_uncertainty": "NOT_APPLICABLE",
+    "simultaneous_and_alternating_antipyretics": "NOT_APPLICABLE",
+    "infant_feeding_and_formula": "NOT_APPLICABLE",
+    "medicine_storage_and_restart": "NOT_APPLICABLE",
+    "age_appropriate_nasal_care": "NOT_APPLICABLE",
+    "case_timeline_vs_wait_instruction": "PASS",
+    "cross_language_topic_identity": "NOT_APPLICABLE"
+  },
+  "scene_av_checks": [
+    {
+      "scene": 1,
+      "timestamp": "00:00",
+      "spoken_transcript": "아이 독감약 복용을 위해 새벽 2시에 억지로 깨우지 마세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "아이 독감약 복용을 위해 새벽 2시에 억지로 깨우지 마세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "시계 화면에 '새벽 2시' 텍스트가 표시됩니다."
+    },
+    {
+      "scene": 2,
+      "timestamp": "00:06",
+      "spoken_transcript": "타미플루는 보통 하루 두 번, 약 12시간 간격으로 먹습니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "타미플루는 보통 하루 두 번, 약 12시간 간격으로 먹습니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "특이사항 없음."
+    },
+    {
+      "scene": 3,
+      "timestamp": "00:12",
+      "spoken_transcript": "첫날 간격을 임의로 줄이지 말고 의료진과 상의하세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "첫날 간격을 임의로 줄이지 말고 의료진과 상의하세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "타임라인에 표시된 시간과 텍스트 오버레이가 일치합니다."
+    },
+    {
+      "scene": 4,
+      "timestamp": "00:18",
+      "spoken_transcript": "독감 회복에는 충분한 수면과 휴식도 약만큼 중요합니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "독감 회복에는 충분한 수면과 휴식도 약만큼 중요합니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "특이사항 없음."
+    },
+    {
+      "scene": 5,
+      "timestamp": "00:23",
+      "spoken_transcript": "오후 2시 첫 복용 뒤에는 다음 시간을 의료진에게 확인하세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "오후 2시 첫 복용 뒤에는 다음 시간을 의료진에게 확인하세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "시계와 오버레이 텍스트가 복용 간격을 명확하게 보여줍니다."
+    },
+    {
+      "scene": 6,
+      "timestamp": "00:28",
+      "spoken_transcript": "다음 날 복용 시각도 처방받은 전체 일정에 맞추어 의료진과 확인하세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "다음 날 복용 시각도 처방받은 전체 일정에 맞추어 의료진과 확인하세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "특이사항 없음."
+    },
+    {
+      "scene": 7,
+      "timestamp": "00:34",
+      "spoken_transcript": "증상 시작 48시간 안에 치료를 시작하는 게 좋습니다.",
+      "speech_complete": true,
+      "visible_caption_transcript": "증상 시작 48시간 안에 치료를 시작하는 게 좋습니다.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "특이사항 없음."
+    },
+    {
+      "scene": 8,
+      "timestamp": "00:40",
+      "spoken_transcript": "먹고 30분 안에 토하면 같은 용량을 다시 주고, 그 뒤면 다음 복용까지 기다리세요. 또 토하면 문의하세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "먹고 30분 안에 토하면 같은 용량을 다시 주고, 그 뒤면 다음 복용까지 기다리세요. 또 토하면 문의하세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "아이가 계량컵으로 약을 복용하는 모습이 안전하고 적절하게 묘사되었습니다."
+    },
+    {
+      "scene": 9,
+      "timestamp": "00:50",
+      "spoken_transcript": "고열이 3일 넘거나 숨차면 진료받으세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "고열이 3일 넘거나 숨차면 진료받으세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "시각적 요소가 고열, 호흡 곤란, 약 거부, 무기력 등 진료가 필요한 상황을 잘 나타냅니다."
+    },
+    {
+      "scene": 10,
+      "timestamp": "00:55",
+      "spoken_transcript": "증상이 심해지면 소아청소년과 진료를 받으세요.",
+      "speech_complete": true,
+      "visible_caption_transcript": "증상이 심해지면 소아청소년과 진료를 받으세요.",
+      "caption_covers_speech": true,
+      "numbers_and_units_match": true,
+      "declared_language_only": true,
+      "caption_timing_readable": true,
+      "findings_ko": "특이사항 없음."
+    }
+  ],
+  "medication_route_review": [
+    {
+      "timestamp": "00:40",
+      "depicted_item": "Liquid medicine in a dosing cup",
+      "depicted_route": "Oral",
+      "intended_route": "Oral",
+      "is_error": false,
+      "reason_ko": "목적에 맞는 계량컵을 사용하여 경구 복용하는 모습이 적절하게 묘사되었습니다.",
+      "confidence": 1.0
+    }
+  ],
+  "issues": [
+    {
+      "severity": "low",
+      "category": "SOURCE_CONTRADICTION",
+      "timestamp": "00:40",
+      "scene": 8,
+      "evidence": "영상 내 음성 및 자막: '먹고 30분 안에 토하면 같은 용량을 다시 주고'.",
+      "problem_ko": "구토 시 약 재복용 기준 시간이 소스(1시간 이내)와 다릅니다.",
+      "source_comparison_ko": "소스에는 '약을 먹고 1시간 이내에 토했다면 즉시 1회 용량을 다시 먹여야 합니다'라고 명시되어 있습니다.",
+      "recommended_fix_ko": "소스 내용과 일치시키거나, 오셀타미비르에 대한 최신 의학적 가이드라인(예: Medicines for Children)을 명확히 인용하여 30분 기준을 설명하는 것이 좋습니다.",
+      "confidence": 1.0
+    }
+  ],
+  "review_summary_ko": "이 영상은 독감약(타미플루) 복용 시 아이를 새벽에 깨우지 않고 첫날 복용 간격을 유동적으로 조절할 수 있다는 점을 명확히 안내합니다. 또한, 충분한 수면과 휴식의 중요성, 증상 시작 48시간 이내 치료 시작의 중요성, 구토 시 재복용 지침, 그리고 고열 지속이나 호흡 곤란 등 병원 진료가 필요한 경우를 잘 설명하고 있습니다. 전반적으로 의학적 정확성과 시청각 무결성이 우수합니다. 다만, 구토 시 재복용 기준 시간이 소스 문서와 30분 대 1시간으로 차이가 있으나, 이는 오셀타미비르에 대한 최신 의학적 가이드라인과 더 부합하여 의학적으로는 더 안전한 정보로 판단됩니다.",
+  "requires_human_medical_review": false,
+  "limitations_ko": [
+    "소스 문서와 구토 시 약 재복용 기준 시간(30분 vs 1시간)이 다릅니다. 이는 오셀타미비르에 대한 최신 의학적 가이드라인과 더 부합하여 의학적으로는 더 안전한 정보입니다."
+  ],
+  "audit_metadata": {
+    "model": "gemini-2.5-flash",
+    "video": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-tamiflu-dosing-flexibility/ko/pediatric-tamiflu-dosing-flexibility_KO.mp4",
+    "snapshot": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-tamiflu-dosing-flexibility/ko/production.snapshot.json",
+    "audited_at": "2026-09-22T07:44:01.039114+00:00",
+    "video_sha256": "4b0e84e6afa754ae2aa3fd00f0f23b8371e52df505d5ad7e66a2d47ebae19d2b",
+    "snapshot_sha256": "548044688d54c77425e44cdb40b5ee49e3fc44e210bec907e1d83c208ff7ea78",
+    "review_guideline_version": "2026-09-21.week8-10-31.v3",
+    "local_check": {
+      "duration_seconds": 60.021029,
+      "width": 1080,
+      "height": 1920,
+      "has_audio": true,
+      "scene_count": 10,
+      "captions_equal_expected_narration": true,
+      "caption_images_checked": 21,
+      "all_caption_image_corners_transparent": true,
+      "video_sha256": "4b0e84e6afa754ae2aa3fd00f0f23b8371e52df505d5ad7e66a2d47ebae19d2b",
+      "reviewer_feedback_focus": [
+        {
+          "scene": 1,
+          "checks": [
+            "SLEEP_VS_LETHARGY",
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 2,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "TWELVE_HOUR_INTERVAL",
+            "FEED_REFUSAL_WAIT"
+          ]
+        },
+        {
+          "scene": 4,
+          "checks": [
+            "SAFE_SLEEP_AND_SWALLOWING"
+          ]
+        },
+        {
+          "scene": 6,
+          "checks": [
+            "CROSS_SCENE_URGENCY"
+          ]
+        },
+        {
+          "scene": 8,
+          "checks": [
+            "DRUG_SPECIFIC_REDOSING",
+            "SAFE_SLEEP_AND_SWALLOWING",
+            "MEDICINE_STOP_RESTART"
+          ]
+        },
+        {
+          "scene": 9,
+          "checks": [
+            "RESPIRATORY_RED_FLAGS",
+            "SLEEP_VS_LETHARGY"
+          ]
+        }
+      ],
+      "srt_exists": true,
+      "srt_semantically_expected_by_normalized_text": true,
+      "expected_number_tokens": [
+        "2",
+        "12",
+        "2",
+        "48",
+        "30",
+        "3"
+      ],
+      "srt_number_tokens": [
+        "2",
+        "12",
+        "2",
+        "48",
+        "30",
+        "3"
+      ],
+      "srt_numbers_match_expected": true,
+      "audio_scene_timing": [
+        {
+          "scene": 1,
+          "raw_seconds": 5.44,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 2,
+          "raw_seconds": 5.84,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 3,
+          "raw_seconds": 5.24,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 4,
+          "raw_seconds": 5.6,
+          "timeline_seconds": 5,
+          "speed_factor": 1.12,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 5,
+          "raw_seconds": 5.44,
+          "timeline_seconds": 5,
+          "speed_factor": 1.088,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 6,
+          "raw_seconds": 6.24,
+          "timeline_seconds": 6,
+          "speed_factor": 1.04,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 7,
+          "raw_seconds": 5.04,
+          "timeline_seconds": 6,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 8,
+          "raw_seconds": 10.2,
+          "timeline_seconds": 10,
+          "speed_factor": 1.02,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 9,
+          "raw_seconds": 4.6,
+          "timeline_seconds": 5,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        },
+        {
+          "scene": 10,
+          "raw_seconds": 4.68,
+          "timeline_seconds": 5,
+          "speed_factor": 1.0,
+          "requires_close_listen": false
+        }
+      ]
+    },
+    "review_basis": "September 13 MC/Sam set1-set8 adjudication (25 filenames, 50 reviews)"
+  }
+}

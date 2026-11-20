@@ -1,0 +1,777 @@
+You are a conservative pediatric medical content auditor and audiovisual QA reviewer.
+Audit the attached FINAL 60-second video itself, including every visible frame, burned-in caption,
+overlay, generated object, and the complete audio track. Compare it with the source article and
+the expected production specification below. Return only the requested JSON.
+
+Audit identity: influenza-a-high-fever-management.es
+Language: es
+Distribution country (not inferred from language): unknown
+Review guideline version: 2026-09-21.week8-10-31.v3
+
+Mandatory review rules:
+1. Source fidelity: flag facts, thresholds, diagnoses, treatment claims, or certainty not supported
+   by the clinician answer. Patient questions and assumptions are context, not medical facts.
+2. Independent medical safety: flag dangerous, misleading, obsolete, overly broad, or internally
+   inconsistent pediatric advice even if it appears in the source. Distinguish a definite error
+   from a reasonable simplification. Do not invent a problem just to be cautious.
+3. Medication route (strict FeverCoach publishing rule): inspect every medicine-related visual.
+   Any syringe in or near a mouth is an automatic FAIL, including a needleless oral dosing syringe.
+   Swallowed medicine must appear as an age-appropriate tablet/capsule when supported by the source,
+   or liquid medicine sipped from a purpose-made dosing cup. A needle and syringe are allowed only
+   when the source explicitly requires injection and must point to an appropriate skin, muscle, or IV
+   site, never the mouth. Generic words such as give, administer, dose, medicine, or medication do
+   not establish an injection route. Also flag kitchen spoons presented as dosing tools.
+4. Hallucination: transcribe what is actually spoken. Compare it with the expected narration and
+   visible captions. For Korean, explicitly detect added, omitted, garbled, or semantically changed
+   Korean TTS. Do not treat ordinary pronunciation variation as hallucination.
+5. Visual hallucination: flag generated readable text, wrong numbers/units, malformed anatomy,
+   impossible devices, medicine containers that falsely imply a route, or visuals contradicting
+   narration. Ignore harmless decorative artifacts.
+6. Voice consistency: determine whether the narrator identity changes unexpectedly within this
+   video. A tonal or prosodic change alone is not a different speaker.
+7. Captions: check semantic agreement with spoken audio and obvious timing/readability failures.
+   Captions intentionally have no background panel; that is not an error.
+8. Severity: critical = imminent serious harm; high = materially unsafe/false; medium = meaningful
+   correction needed; low = minor clarity/visual issue. Use timestamps and observable evidence.
+9. If evidence is ambiguous, state the limitation and reduce confidence instead of asserting error.
+10. This is a screening audit, not final physician approval. Set requires_human_medical_review true
+    for any medical issue or uncertain high-impact claim.
+
+Reviewer-derived regression checklist:
+Recent FeverCoach submission-feedback calibration rules (derived from the September 2026
+multilingual reviewer set):
+1. Complete speech: listen through the final syllable of every scene. A trailing fragment,
+   unfinished clause, abruptly cut word, or sentence that ends only because the scene changes is
+   not acceptable. Examples such as a voice ending at "38도 열에..." are INCOMPLETE_SPEECH,
+   normally medium/FAIL when the intended meaning is lost.
+2. Caption coverage: compare the actually spoken audio with the actually visible burned-in captions
+   clause by clause, not merely with the planned caption JSON. Captions may be split or condensed
+   only if every medical condition, negation, number, unit, interval, red flag, and action remains.
+   Omission of a safety-relevant clause is CAPTION_OMISSION and normally medium/FAIL; omission of
+   optional explanatory detail is low/WARN.
+3. Medication timing: a recommendation to alternate fever medicines every two hours is unsafe or
+   materially incomplete unless it clearly identifies different active ingredients, keeps each
+   product on its own permitted interval and daily maximum, prevents duplicate ingredients, and is
+   grounded in a clinician/source instruction. Flag an unsupported or underspecified two-hour
+   alternating schedule as MEDICATION_TIMING_RISK; do not "repair" it by inventing a dose.
+4. Triage completeness: when the case includes persistent fever with new ear/chest
+   pain, respiratory noise or distress, inability to drink, dehydration, cyanosis, apnea, seizure,
+   or reduced responsiveness, verify that the spoken and captioned action level is adequate. Do not
+   replace same-day/in-person or emergency evaluation with vague monitoring language. Missing an
+   action that could delay urgent care is TRIAGE_OMISSION and medium/high FAIL.
+5. Respiratory red flags: for infant stridor/wheeze or suspected airway narrowing, specifically look
+   for rapid worsening, retractions/chest indrawing, cyanosis, apnea, poor feeding, or lethargy when
+   supported by the source. A short video need not list every sign, but it must not omit the source's
+   decisive reason for prompt evaluation.
+6. High fever context: when 40°C or another very high temperature is central, check age-specific
+   risk and care thresholds—especially young infants—and the child's overall condition. Temperature
+   alone must not be portrayed as either automatically benign or a diagnosis. Flag missing urgent
+   age/context guidance only when the source or accepted safety standard makes it material.
+7. Clinical distinctions: when discussing sleep after fever, explicitly distinguish normal recovery
+   sleep (rouses and responds) from pathological lethargy/altered responsiveness (difficult to wake,
+   weak or absent response). When discussing oral ulcers or inability to drink, connect this to
+   dehydration observation and appropriate evaluation. Do not let reassuring language erase these
+   distinctions.
+8. Treatment completeness without invention: for influenza or similar topics, missing supported
+   home care (comfort-directed antipyretic use, fluids) or source-supported antiviral guidance may
+   be low/WARN. Escalate only if the omission makes the advice unsafe. Never add a treatment that is
+   absent from the source merely to satisfy this checklist.
+9. Multilingual parity: apply the same checks independently to Korean, English, and Spanish. Numeric
+   intervals such as 12 hours and safety qualifiers must appear in both speech and captions in that
+   language. A good translation in another language does not excuse a clipped or incomplete version.
+10. Feedback severity calibration: reviewer "good" is positive evidence, "ok" usually means a
+    non-blocking improvement unless safety meaning is missing, and "uncertain" requires focused
+    verification rather than automatic failure. Use observable evidence, source comparison, and
+    confidence; do not manufacture omissions just to fill the checklist.
+
+September 13 reviewer adjudication (set1-set8, MC and Sam; supersedes conflicting older examples):
+1. Evidence and polarity: read the complete clause and adjacent scenes before judging. Distinguish
+   recommendation, warning against an action, patient history/question, and hypothetical example.
+   "Alternating every two hours may be excessive" is a warning, not a dosing recommendation.
+   Do not infer safety from "good" comments or a P alone: the same row may contain corrections.
+   Explicit F reasons need investigation, not blind reuse against a different/repaired file.
+2. Whole-video urgency: compare every home-care, wait, and seek-care statement across scenes in
+   audio, captions, and overlays. An early or final emergency warning does not cancel conflicting
+   advice to wait until tonight/오늘 저녁/esta noche, six hours, or tomorrow for the SAME red flag.
+   Quote both timestamps and their patient conditions in the issue evidence. A real delay for
+   worsening infant breathing or reduced responsiveness is high MEDICAL_ERROR/TRIAGE_OMISSION.
+3. Set1: a day-four fever case with NEW chest pain needs prompt in-person reassessment. It is not
+   permission for every child to wait four days. Do not animate pain physically travelling from
+   ear to chest along nerves/vessels or say shift/move as a causal mechanism. Do not imply that
+   auscultation alone confirms or excludes pneumonia. Preserve case context and diagnostic limits.
+4. Set2/set7 medication: prefer one appropriate antipyretic for distress. A routine 2-3-hour
+   alternating schedule without a clinician plan and each ingredient's minimum interval/daily
+   maximum is MEDICATION_TIMING_RISK. A warning AGAINST that schedule is not an error. At 12 kg,
+   160 mg acetaminophen is about 13.3 mg/kg, but 5 mL equals 160 mg ONLY at 160 mg/5 mL concentration.
+   Identify weight, drug, concentration, route and dose context together for an actionable volume.
+   Do not apply "4-6 hours" to unnamed fever medicines or conflate acetaminophen with ibuprofen.
+   Verify product/age-specific minimum intervals and daily limits; do not invent a universal limit.
+5. Set3 respiratory: distinguish lower-airway wheeze from upper-airway stridor; a reported metallic
+   sound alone is not a confirmed diagnosis. Worsening infant breathing needs assessment now.
+   Severe distress, chest indrawing or blue lips require immediate emergency help. The symptom
+   condition AND action must be audible and captioned; isolated "call 119 immediately" is incomplete.
+   Emergency numbers follow the known distribution country, not the language. If the country is
+   unknown, use "local emergency services"; do not assume all English/Spanish audiences use 911/119.
+6. Set4 age exceptions: when reassuring viewers about a baby's 40°C fever, state age restrictions
+   before or with the first home-care advice, not only at the end. Under 3 months with >=38°C needs
+   immediate medical assessment; 3-6 months with >=39°C needs prompt assessment. Repeated >40°C
+   merits prompt clinician contact even in an older child. Do not make every 40°C case an ambulance
+   indication or suggest waiting three days solely because the infant looks active.
+7. Set6 sleep: "3-4 hours deep sleep is normal", "check after six hours", or "seek care tomorrow
+   if lethargy persists" are not validated safety cutoffs. Judge ability to rouse and respond as
+   usual. Unusual difficulty waking or reduced response needs immediate assessment regardless of
+   elapsed sleep time; absent response needs emergency help. A clock must not imply waiting is safe.
+8. Swallowing and sleep visuals: oral fluid/medicine only while sufficiently awake and able to
+   swallow safely, supported upright; never pour into a sleeping/unresponsive child's mouth.
+   Infant sleep demonstrations use a firm flat surface, supine placement and fitted sheet only;
+   remove pillows, loose blankets and soft toys. Flag actual unsafe depiction as OTHER_VISUAL_ERROR,
+   not a harmless decoration. Do not substitute an age-inappropriate tablet to avoid an oral syringe.
+9. Set5/set7 claims: do not state steroids increase viral shedding in HFMD without applicable
+   evidence. Prefer qualified wording that steroids are not routinely recommended for uncomplicated
+   HFMD; do not instruct stopping a prescribed drug. Day-five improvement is not guaranteed recovery;
+   usual HFMD recovery is about 7-10 days with variation. Do not promise fever resolution within
+   24-48 hours of antivirals. Distinguish sports drinks from ORS; infant hydration is primarily
+   breast milk/formula, with appropriate ORS guidance when indicated and safe swallowing possible.
+10. Set8 drug-specific redosing: reject blanket "vomit within one hour, immediately repeat a full
+    dose". For pediatric oseltamivir, Medicines for Children distinguishes vomiting before 30
+    minutes (same dose again) from after 30 minutes (no repeat; next usual dose). Do not extrapolate
+    this rule to all drugs, invent an exact-30-minute boundary, or ignore repeated vomiting;
+    uncertain/repeated cases need prescriber/pharmacist advice and applicable prescription guidance.
+    Twice-daily roughly 12-hour dosing refers to oseltamivir TREATMENT, not all influenza medicines
+    or prevention regimens. First-day schedule changes need clinician/pharmacist confirmation.
+11. Avoid false failures: case-day counts are not waiting instructions unless presented as such.
+    Optional room-temperature preferences and duplicate filenames alone are not medical failures.
+    Source-detail omission is not CAPTION_OMISSION unless the detail was spoken but absent on screen.
+    A fact safely explained elsewhere need not repeat in every scene, except when a local condition
+    is necessary to prevent unsafe advice. Broader safe triage is not a numeric error: never require
+    39°C before seeking help for seizures merely because a source example had 39°C.
+12. Repairs must preserve meaning: do not compress separate red flags into "48-hour fever/lethargy"
+    (implies waiting for lethargy) or "palm swelling" (loses injection SITE and SIZE). Use complete,
+    plain-language conditional clauses. If essential advice cannot fit, flag the need to replan
+    duration/scenes; do not drop a safety condition or force unintelligibly fast TTS to obtain PASS.
+    Source fidelity never requires repeating unsafe source advice; cite the safety conflict and
+    verified reference, and request human review when the correction is not established.
+13. Verdict: a demonstrated material dosing/triage/unsafe-action defect is FAIL even if other scenes
+    are good. Optional clarification is low/WARN; unclear evidence needs a limitation, not a made-up
+    failure or a fabricated PASS. Use existing MEDICAL_ERROR, UNSUPPORTED_CLAIM, NUMERIC_ERROR,
+    CLINICAL_DISTINCTION_MISSING, MEDICATION_TIMING_RISK, TRIAGE_OMISSION, OTHER_VISUAL_ERROR,
+    INCOMPLETE_SPEECH and CAPTION_OMISSION categories as appropriate.
+
+Verified references (2026-09-13; these are specific safety references, not the video's source article):
+- NICE NG143, age risks and antipyretic distress/alternation:
+  https://www.nice.org.uk/guidance/ng143/chapter/recommendations
+- NHS fever triage and responsiveness: https://www.nhs.uk/symptoms/fever-in-children/
+- Medicines for Children, oseltamivir:
+  https://www.medicinesforchildren.org.uk/medicines/oseltamivir-for-influenza-flu/
+- CDC HFMD recovery: https://www.cdc.gov/hand-foot-mouth/index.html
+- CDC infant sleep: https://www.cdc.gov/sudden-infant-death/sleep-safely/
+- AAP repeated high fever:
+  https://www.healthychildren.org/English/health-issues/conditions/fever/Pages/When-to-Call-the-Pediatrician.aspx
+
+September 21 week8 feedback (60 distinct files, MC/Sam 120 rows, 30 F and 30 P):
+1. Treat each language's actual video/topic as the unit of review. Numbered uploads shift across
+   KO/EN/ES (for example, week8-English-25 is cough while KO/ES-25 are feeding). Never propagate
+   a verdict or repair by set number alone; match the source URL, topic, language and exact media.
+   A P may still request clearer visuals or wording. A clipped spoken sentence is evaluated even
+   when its medical topic received P.
+2. Antipyretics: answer a question about simultaneous dosing explicitly: do not recommend giving
+   acetaminophen and ibuprofen together. Prefer one age-appropriate medicine for discomfort.
+   Only consider alternating for persistent/recurrent distress with each medicine's own minimum
+   interval and daily maximum recorded; do not infer a routine 2-3-hour schedule from fever alone.
+   A 2-3-hour separation is not intrinsically always forbidden. Ibuprofen under 6 months needs
+   clinician direction; ensure that qualifier is preserved in EN as well as KO/ES. "Six hours have
+   passed" alone is not an instruction to dose a comfortable sleeping child. Verify concentration:
+   40 kg + 15 mL of 32 mg/mL acetaminophen = 480 mg (12 mg/kg); 41 kg + 17-24 mL of 12 mg/mL
+   ibuprofen = 204-288 mg (about 5-7 mg/kg). These are case/product examples, not universal mL doses.
+   A more conservative interval is not automatically overdose. Show an age/weight-appropriate child
+   and a purpose-made graduated dosing cup matching the spoken device and volume; do not visually
+   imply the same mL applies to a smaller infant.
+3. Medication handling: a fixed 1-2-hour use window and refrigeration for premixed antipyretic
+   powder cannot be generalized without the drug, formulation and label. Give product/pharmacist
+   instructions instead. Do not tell parents to stop and restart an unidentified prescribed
+   intestinal medicine whenever stools change. Specify the medication and prescribing plan or ask
+   the clinician/pharmacist. Three loose stools alone do not always mean an emergency; distinguish
+   blood, severe pain, dehydration and reduced alertness. Keep the earlier oseltamivir-specific
+   vomit/redose rule; do not replace it with a generic one-hour rule.
+4. Infant feeding: "seek care only after 12 hours refusing feeds" is too broad for a young baby
+   who is taking very little or becoming lethargic. Compare with usual intake, wet diapers,
+   activity and age; advise earlier evaluation for almost no intake or concerning appearance.
+   Do not prescribe 30-50 mL every 30 minutes across all infant ages. If formula amount is reduced
+   for a vomiting baby, explicitly mean a smaller amount PER FEED while mixing at the NORMAL LABEL
+   CONCENTRATION; never suggest reducing powder concentration. Show a prepared normal-concentration
+   feed and smaller serving, not mysterious liquid drops diluting a bottle. A pause in solids is
+   not a pause in breast milk/formula or age-appropriate hydration. Support head and trunk upright
+   while feeding. Keep age-specific fever exceptions, especially under 3 months with >=38°C.
+5. Infant sleep and thermoregulation: do not teach "one layer less than an adult" as a universal
+   fever rule. Avoid over-wrapping or underdressing according to environment and child's condition.
+   Warm hands/feet alone do not prove normal circulation or general safety. For infants, no pillows,
+   soft bumpers or loose blankets; a raised pillow can be depicted only for an older child when
+   appropriate. Do not claim an actual suffocation event without evidence.
+6. Nasal irrigation: never demonstrate a bottle aimed into the nose of a child lying flat with head
+   tilted back. If an older cooperative child uses an age-appropriate rinse, show them leaning
+   forward over a sink and following product/clinician instructions. Distinguish infant saline
+   drops/gentle suction from bottle irrigation. Rinse solution requires sterile/distilled or
+   previously boiled and cooled water; device hygiene matters. CT is clinician-selected, not a
+   routine test for every prolonged stuffy nose. Do not infer actual aspiration from a bad pose.
+7. Infection and follow-up: RSV can worsen without fever and "2-3 days passed" is not a safety
+   guarantee. New fever or yellow mucus alone does not prove bacterial infection. After treated
+   pneumonia, 10 days and 3 weeks may be CASE HISTORY, never universal wait-until deadlines for
+   re-evaluation or automatic X-ray/blood tests. New/persistent fever or worsening breathing,
+   intake or activity needs earlier assessment. Conversely, routine follow-up X-ray is often not
+   needed after uncomplicated clinical recovery, with clinician-selected exceptions; do not cancel
+   a prescribed test. Mycoplasma symptoms can appear 1-4 weeks after exposure; exposure alone
+   does not justify preventive antibiotics, and not every mild infection needs antibiotics. A dry
+   cough alone is not diagnostic. Do not label every 38°C reading "high fever".
+8. Imaging and home care: a persistent scalp bump is not automatically a hematoma, nor does every
+   bruise vanish in one week. Distinguish scalp/subperiosteal from intracranial bleeding in visuals.
+   A humidifier needs cleaning. Antibiotics do not directly suppress cough but may improve cough
+   when treating a relevant bacterial cause. Avoid guaranteed fever resolution 24-48 hours after
+   antiviral treatment and sports drinks presented as equivalent to ORS.
+9. Adjudication: quote the scene's literal narration and show how the visual changes its meaning.
+   Ambiguous "reduce formula to two-thirds" plus apparent bottle dilution merits a safety fix;
+   do not claim it explicitly instructed dilution unless it did. A 4-6-hour wait for SOLIDS is not
+   necessarily fluid fasting. A conservative dose interval is not automatically overdose. Do not
+   invent harm (aspiration, hypothermia, suffocation) that was not shown. Correct the unsafe
+   ambiguity while preserving all already-correct red flags and cross-language qualifications.
+
+Clinical references checked 2026-09-21:
+- NICE fever/antipyretics: https://www.nice.org.uk/guidance/ng143/chapter/recommendations
+- AAP ibuprofen under 6 months:
+  https://www.healthychildren.org/English/safety-prevention/at-home/medication-safety/Pages/Ibuprofen-for-Fever-and-Pain.aspx
+- CDC infant formula instructions:
+  https://www.cdc.gov/infant-toddler-nutrition/formula-feeding/preparation-and-storage.html
+- FDA nasal rinsing water and age-appropriate use:
+  https://www.fda.gov/consumers/consumer-updates/rinsing-your-sinuses-neti-pots-safe
+- CDC RSV infants: https://www.cdc.gov/rsv/infants-young-children/index.html
+- CDC Mycoplasma: https://www.cdc.gov/mycoplasma/about/index.html
+- Medicines for Children powder preparations:
+  https://www.medicinesforchildren.org.uk/advice-guides/giving-medicines/how-to-give-medicines-granules-and-powders/
+
+Before choosing the verdict, fill every calibration_checks field. Use NOT_APPLICABLE only when the
+topic is absent. Judge the actual final audio and burned-in captions—not just the expected JSON.
+For caption coverage, compare every spoken medical clause, negation, number, interval, red flag, and
+recommended action with what actually appears on screen. A clipped or unfinished spoken sentence is
+INCOMPLETE_SPEECH. A missing safety-relevant caption clause is CAPTION_OMISSION. Unsupported two-hour
+alternating antipyretic advice is MEDICATION_TIMING_RISK. Missing care urgency that could delay
+evaluation is TRIAGE_OMISSION.
+
+Mandatory scene-by-scene audiovisual pass:
+- Return exactly ten scene_av_checks entries, one for each scene in chronological order.
+- Transcribe what is actually audible and what is actually visible; never copy the expected text
+  into these fields unless you confirmed it in the final video.
+- Listen through each scene transition. Mark speech_complete false for a cut-off final syllable,
+  unfinished grammar, abandoned clause, abrupt edit, or missing end of the planned sentence.
+- caption_covers_speech is false when any spoken medical condition, negation, number, unit, interval,
+  red flag, uncertainty qualifier, or recommended action is absent from the visible captions.
+- numbers_and_units_match requires spoken audio, visible captions, and expected narration to agree.
+  Check 2 versus 12, ranges, decimals, °C, hours, days, kilograms, and milliliters carefully.
+- declared_language_only is false for unintended Korean in English/Spanish, unintended English or
+  Spanish in Korean, garbled phonemes, encoding artifacts, or a mid-video language switch.
+- caption_timing_readable is false for captions that appear too late, vanish before their words are
+  spoken, overlap the next clause, are clipped off-screen, or fail to appear at all.
+
+SOURCE ARTICLE (Korean clinician-reviewed content):
+Source: https://www.fevercoach.us/ko/post/a형-독감-고열-해열제-대처법
+
+Source excerpt:
+의학 감수:
+안상현, MD
+콘텐츠 편집:
+김명찬, MD
+이 게시물은 실제 의료 검토자의 질의응답 경험을 각색한 것입니다. 이 콘텐츠는 정보 제공 목적으로만 제공되며 의학적 조언을 구성하지 않습니다. 건강 관련 문제나 건강 또는 치료와 관련된 결정을 내리기 전에 항상 자격을 갖춘 의료 전문가와 상담하시기 바랍니다.
+질문:
+오늘 아이가 병원에서 A형 독감 진단을 받았습니다. 처방받은 해열제와 1회 복용하는 독감 약을 받아왔는데, 열이 너무 심하게 나서 우선 해열제부터 먹였습니다. 하지만 열이 떨어지기는커녕 39.7도에서 39.9도까지 계속 오르기만 해서 너무 무서운 마음에 결국 독감 약도 먹였습니다. 독감 때문에 열이 이렇게 안 떨어질 수도 있는 건가요? 어떻게 대처해야 하는지 궁금합니다.
+답변:
+A형 독감 진단을 받은 아이가 고열로 힘들어해서 많이 걱정되셨겠습니다.
+우선 독감 약을 먹이신 것은 아주 잘하셨습니다. 독감의 경우 해열제를 복용하더라도 처음 24~48시간 동안은 열이 잘 떨어지지 않는 것이 일반적입니다. 특히 A형 독감은 고열이 동반되는 것이 특징입니다.
+처방받으신 독감 약을 복용하신 후 24~48시간 이내에 서서히 열이 떨어지기 시작할 것입니다. 그 전까지는 아래의 방법으로 아이의 열을 조절하고 편안해지도록 돕는 것에 집중해 주시기 바랍니다.
+[현재 가정에서 할 수 있는 대처 방법]
+• 해열제 교차 복용: 아세트아미노펜(타이레놀 등) 복용 후에도 열이 떨어지지 않는다면, 2~3시간 뒤에 이부프로펜이나 덱시부프로펜(부루펜 등) 성분의 해열제를 교차로 먹이실 수 있습니다. (단, 생후 6개월 이상인 경우에만 가능합니다.)
+• 충분한 수분 섭취: 고열로 인한 탈수를 막기 위해 10~15분 간격으로 물이나 이온 음료를 조금씩 마시게 해주세요.
+• 가벼운 옷차림: 얇은 옷을 한 겹만 입혀 열이 원활하게 발산되도록 해주세요.
+• 시원한 환경 유지: 실내 온도는 24~26도 정도로 쾌적하게 유지하는 것이 좋습니다.
+다만, 아이에게 다음의 증상이 나타난다면 지체하지 마시고 즉시 응급실로 방문하셔야 합니다.
+[응급실 방문이 필요한 응급 증상]
+• 호흡 곤란이 있거나 가슴 통증을 호소할 때
+• 의식이 흐려지거나 불러도 대답을 잘 하지 못할 때
+• 8시간 이상 소변을 보지 않는 등 심한 탈수 징후가 있을 때
+• 열성 경련을 일으킬 때
+독감으로 인한 고열은 며칠간 지속될 수 있으니, 안내해 드린 대처법을 따르시면서 아이의 상태를 주의 깊게 지켜보시기 바랍니다. 만약 시간이 지나도 증상이 호전되지 않거나 아이가 너무 처진다면, 지체하지 마시고 다시 소아청소년과에 방문하여 진료를 받으시길 권장합니다.
+아이의 건강을 모니터링할 때 더 명확한 안내와 안심을 위해, FeverCoach 앱이 항상 도움을 드립니다.
+fevercoach.us
+Apple App Store
+Google Play
+🌐 다른 언어로 보기:
+English
+·
+Español
+
+Source-grounded facts:
+[
+  {
+    "claim": "Influenza A is characterized by high fever.",
+    "numeric_values": [],
+    "safety_qualification": ""
+  },
+  {
+    "claim": "Even with antipyretics, fever may not drop well for the first 24-48 hours after an influenza A diagnosis.",
+    "numeric_values": [
+      "24 hours",
+      "48 hours"
+    ],
+    "safety_qualification": ""
+  },
+  {
+    "claim": "After taking prescribed antiviral medication for influenza, fever will gradually start to drop within 24-48 hours.",
+    "numeric_values": [
+      "24 hours",
+      "48 hours"
+    ],
+    "safety_qualification": ""
+  },
+  {
+    "claim": "If fever does not drop after acetaminophen, ibuprofen or dexibuprofen can be alternated 2-3 hours later.",
+    "numeric_values": [
+      "2 hours",
+      "3 hours"
+    ],
+    "safety_qualification": "Only for infants 6 months or older."
+  },
+  {
+    "claim": "To prevent dehydration from high fever, offer small sips of water or ion drinks every 10-15 minutes.",
+    "numeric_values": [
+      "10 minutes",
+      "15 minutes"
+    ],
+    "safety_qualification": ""
+  },
+  {
+    "claim": "Maintain a cool indoor environment, ideally 24-26°C, and dress the child in light clothing to help dissipate heat.",
+    "numeric_values": [
+      "24°C",
+      "26°C"
+    ],
+    "safety_qualification": ""
+  },
+  {
+    "claim": "Seek immediate emergency care for symptoms such as respiratory distress, chest pain, altered consciousness, severe dehydration (e.g., no urination for 8+ hours), or febrile seizures.",
+    "numeric_values": [
+      "8 hours"
+    ],
+    "safety_qualification": "Immediate emergency care required."
+  },
+  {
+    "claim": "If symptoms do not improve or the child becomes too lethargic, consult a pediatrician without delay.",
+    "numeric_values": [],
+    "safety_qualification": "Consult a pediatrician."
+  }
+]
+
+EXPECTED PRODUCTION SPECIFICATION:
+[
+  {
+    "scene": 1,
+    "time_seconds": [
+      0,
+      4
+    ],
+    "narration": "La influenza A se caracteriza típicamente por fiebre alta.",
+    "caption_chunks": [
+      "La influenza A se caracteriza",
+      "típicamente por fiebre alta."
+    ],
+    "medical_claim": "Influenza A is characterized by high fever.",
+    "visual_prompt": "A digital thermometer's display, initially showing a normal temperature, slowly rises to a high fever reading. The camera slowly dives closer, focusing on the rising numbers until it settles on a high temperature reading. The thermometer body remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+    "overlays": [
+      {
+        "type": "label",
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ],
+        "label_position": [
+          0.5,
+          0.25
+        ],
+        "color": "#E5482F",
+        "text": "39.7°C"
+      }
+    ]
+  },
+  {
+    "scene": 2,
+    "time_seconds": [
+      4,
+      9
+    ],
+    "narration": "Este virus causa fiebre alta y malestar.",
+    "caption_chunks": [
+      "Este virus causa fiebre alta y malestar."
+    ],
+    "medical_claim": "Influenza A is characterized by high fever.",
+    "visual_prompt": "A stylized, spherical Influenza A virus particle with distinct surface spikes slowly rotates. The camera arcs around the virus particle, revealing its spiky surface. The background remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+    "overlays": []
+  },
+  {
+    "scene": 3,
+    "time_seconds": [
+      9,
+      15
+    ],
+    "narration": "La fiebre puede no bajar bien durante las primeras 24 a 48 horas, incluso con antipiréticos.",
+    "caption_chunks": [
+      "La fiebre puede no bajar bien",
+      "durante las primeras 24 a 48 horas,",
+      "incluso con antipiréticos."
+    ],
+    "medical_claim": "Even with antipyretics, fever may not drop well for the first 24-48 hours after an influenza A diagnosis.",
+    "visual_prompt": "Vertical 9:16 polished semi-stylized 3D pediatric medical scene about Mito del Antipirético. A calm upright child holds a small purpose-made translucent medicine dosing cup with a small amount of amber liquid. The child lifts the open cup to the lips, takes one gentle sip, lowers it, and swallows comfortably. A caregiver supports the child without holding any dosing implement. The medicine bottle remains closed on a distant table. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth. Keep every child fully clothed and the mood reassuring. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth.",
+    "overlays": []
+  },
+  {
+    "scene": 4,
+    "time_seconds": [
+      15,
+      20
+    ],
+    "narration": "El antiviral no garantiza que la fiebre baje en 24 a 48 horas.",
+    "caption_chunks": [
+      "El antiviral no garantiza que la fiebre baje en 24 a 48 horas."
+    ],
+    "medical_claim": "El antiviral no garantiza que la fiebre baje en 24 a 48 horas.",
+    "visual_prompt": "A stylized Influenza A virus particle (character) appears agitated. A stylized, glowing antiviral medicine particle enters the frame and interacts with the virus character, causing it to visibly calm down and shrink slightly. The background remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+    "overlays": []
+  },
+  {
+    "scene": 5,
+    "time_seconds": [
+      20,
+      25
+    ],
+    "narration": "Tras iniciar el tratamiento, siga observando el estado general y la hidratación del niño.",
+    "caption_chunks": [
+      "Tras iniciar el tratamiento, siga observando el estado general y la hidratación del niño."
+    ],
+    "medical_claim": "Tras iniciar el tratamiento, siga observando el estado general y la hidratación del niño.",
+    "visual_prompt": "A stylized timeline with clear markings for hours appears. A marker on the timeline moves from a starting point, indicating the passage of time, and settles within a specific range. The timeline remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+    "overlays": [
+      {
+        "type": "dimension",
+        "from": [
+          0.25,
+          0.5
+        ],
+        "to": [
+          0.75,
+          0.5
+        ],
+        "label_position": [
+          0.5,
+          0.25
+        ],
+        "color": "#E5482F",
+        "text": "24 horas ~ 48 horas"
+      }
+    ]
+  },
+  {
+    "scene": 6,
+    "time_seconds": [
+      25,
+      34
+    ],
+    "narration": "Use primero un solo antipirético si hay malestar. Alterne solo con un plan médico que indique dosis e intervalos; consulte antes de dar ibuprofeno a menores de seis meses.",
+    "caption_chunks": [
+      "Use primero un solo antipirético si hay malestar. Alterne solo con un plan médico que indique dosis e intervalos; consulte antes de dar ibuprofeno a menores de seis meses."
+    ],
+    "medical_claim": "Use primero un solo antipirético si hay malestar. Alterne solo con un plan médico que indique dosis e intervalos; consulte antes de dar ibuprofeno a menores de seis meses.",
+    "visual_prompt": "Vertical 9:16 polished semi-stylized 3D pediatric medical scene about Alternar Antipiréticos. A calm upright child holds a small purpose-made translucent medicine dosing cup with a small amount of amber liquid. The child lifts the open cup to the lips, takes one gentle sip, lowers it, and swallows comfortably. A caregiver supports the child without holding any dosing implement. The medicine bottle remains closed on a distant table. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth. Keep every child fully clothed and the mood reassuring. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+    "overlays": []
+  },
+  {
+    "scene": 7,
+    "time_seconds": [
+      34,
+      40
+    ],
+    "narration": "Mantenga la temperatura ambiente a 24 a 26°C y vista a su hijo con ropa ligera.",
+    "caption_chunks": [
+      "Mantenga la temperatura ambiente a",
+      "24 a 26°C y vista a su hijo",
+      "con ropa ligera."
+    ],
+    "medical_claim": "Maintain a cool indoor environment, ideally 24-26°C, and dress the child in light clothing to help dissipate heat.",
+    "visual_prompt": "A comfortable child's room with a digital thermostat on the wall. The camera smoothly pans laterally, revealing a child wearing light, thin clothing, then the thermostat displaying a comfortable temperature range. The room and child remain stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+    "overlays": [
+      {
+        "type": "label",
+        "from": [
+          0.75,
+          0.35
+        ],
+        "to": [
+          0.75,
+          0.35
+        ],
+        "label_position": [
+          0.75,
+          0.25
+        ],
+        "color": "#007BFF",
+        "text": "24°C ~ 26°C"
+      }
+    ]
+  },
+  {
+    "scene": 8,
+    "time_seconds": [
+      40,
+      47
+    ],
+    "narration": "Ante riesgo de deshidratación, ofrezca solución de rehidratación oral en pequeñas cantidades. La bebida deportiva no la sustituye.",
+    "caption_chunks": [
+      "Ante riesgo de deshidratación, ofrezca solución de rehidratación oral en pequeñas cantidades. La bebida deportiva no la sustituye."
+    ],
+    "medical_claim": "Ante riesgo de deshidratación, ofrezca solución de rehidratación oral en pequeñas cantidades. La bebida deportiva no la sustituye.",
+    "visual_prompt": "A childa completely blank and unmarked surfaces body and background remain stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+    "overlays": [
+      {
+        "type": "label",
+        "from": [
+          0.25,
+          0.35
+        ],
+        "to": [
+          0.25,
+          0.35
+        ],
+        "label_position": [
+          0.25,
+          0.25
+        ],
+        "color": "#007BFF",
+        "text": "10 minutos ~ 15 minutos"
+      }
+    ]
+  },
+  {
+    "scene": 9,
+    "time_seconds": [
+      47,
+      55
+    ],
+    "narration": "Emergencias: dificultad respiratoria, dolor de pecho, conciencia alterada, convulsión febril o 8 horas sin orinar.",
+    "caption_chunks": [
+      "Emergencias: dificultad respiratoria, dolor de pecho,",
+      "conciencia alterada, convulsión febril o 8 horas sin orinar."
+    ],
+    "medical_claim": "Seek immediate emergency care for symptoms such as respiratory distress, chest pain, altered consciousness, severe dehydration (e.g., no urination for 8+ hours), or febrile seizures.",
+    "visual_prompt": "A subtle, abstract visual of a child's chest rising and falling rapidly. The camera travels through a series of abstract, unsettling visuals: a blurred, unresponsive face, a dry, cracked lip, and a stylized clock hand pointing to an extended duration. The background remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+    "overlays": [
+      {
+        "type": "label",
+        "from": [
+          0.5,
+          0.5
+        ],
+        "to": [
+          0.5,
+          0.5
+        ],
+        "label_position": [
+          0.5,
+          0.25
+        ],
+        "color": "#E5482F",
+        "text": "Más de 8 horas"
+      }
+    ]
+  },
+  {
+    "scene": 10,
+    "time_seconds": [
+      55,
+      60
+    ],
+    "narration": "Si los síntomas no mejoran o su hijo está letárgico, consulte a su pediatra sin demora.",
+    "caption_chunks": [
+      "Si los síntomas no mejoran",
+      "o su hijo está letárgico,",
+      "consulte a su pediatra sin demora."
+    ],
+    "medical_claim": "If symptoms do not improve or the child becomes too lethargic, consult a pediatrician without delay.",
+    "visual_prompt": "A small, inactive Influenza A virus character slowly drifts away. The camera pulls back to reveal a child looking calm and comfortable, then further back to show a stylized, welcoming pediatrician's office. The child, parent, and office remain stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+    "overlays": []
+  }
+]
+
+DETERMINISTIC LOCAL MEDIA CHECKS:
+{
+  "duration_seconds": 60.021029,
+  "width": 1080,
+  "height": 1920,
+  "has_audio": true,
+  "scene_count": 10,
+  "captions_equal_expected_narration": true,
+  "caption_images_checked": 29,
+  "all_caption_image_corners_transparent": true,
+  "video_sha256": "79af8fdcbb1a5fb408d5d16e5f5209c2782bc1ab97aaf4b3883980b382e9bdb3",
+  "reviewer_feedback_focus": [
+    {
+      "scene": 1,
+      "checks": [
+        "CASE_TIMELINE_REASSESSMENT"
+      ]
+    },
+    {
+      "scene": 2,
+      "checks": [
+        "CASE_TIMELINE_REASSESSMENT"
+      ]
+    },
+    {
+      "scene": 3,
+      "checks": [
+        "SAFE_SLEEP_AND_SWALLOWING"
+      ]
+    },
+    {
+      "scene": 4,
+      "checks": [
+        "TREATMENT_CLAIM_UNCERTAINTY"
+      ]
+    },
+    {
+      "scene": 6,
+      "checks": [
+        "SAFE_SLEEP_AND_SWALLOWING"
+      ]
+    },
+    {
+      "scene": 8,
+      "checks": [
+        "DEHYDRATION_OR_POOR_INTAKE",
+        "TREATMENT_CLAIM_UNCERTAINTY"
+      ]
+    },
+    {
+      "scene": 9,
+      "checks": [
+        "RESPIRATORY_RED_FLAGS",
+        "DEHYDRATION_OR_POOR_INTAKE",
+        "NEW_OR_MIGRATING_PAIN",
+        "EMERGENCY_LOCALE"
+      ]
+    },
+    {
+      "scene": 10,
+      "checks": [
+        "SLEEP_VS_LETHARGY"
+      ]
+    }
+  ],
+  "srt_exists": true,
+  "srt_semantically_expected_by_normalized_text": true,
+  "expected_number_tokens": [
+    "24",
+    "48",
+    "24",
+    "48",
+    "24",
+    "26",
+    "8"
+  ],
+  "srt_number_tokens": [
+    "24",
+    "48",
+    "24",
+    "48",
+    "24",
+    "26",
+    "8"
+  ],
+  "srt_numbers_match_expected": true,
+  "audio_scene_timing": [
+    {
+      "scene": 1,
+      "raw_seconds": 4.76,
+      "timeline_seconds": 4,
+      "speed_factor": 1.19,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 2,
+      "raw_seconds": 3.6,
+      "timeline_seconds": 5,
+      "speed_factor": 1.0,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 3,
+      "raw_seconds": 8.12,
+      "timeline_seconds": 6,
+      "speed_factor": 1.3533,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 4,
+      "raw_seconds": 6.24,
+      "timeline_seconds": 5,
+      "speed_factor": 1.248,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 5,
+      "raw_seconds": 6.2,
+      "timeline_seconds": 5,
+      "speed_factor": 1.24,
+      "requires_close_listen": false
+    },
+    {
+      "scene": 6,
+      "raw_seconds": 13.08,
+      "timeline_seconds": 9,
+      "speed_factor": 1.4533,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 7,
+      "raw_seconds": 7.88,
+      "timeline_seconds": 6,
+      "speed_factor": 1.3133,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 8,
+      "raw_seconds": 9.76,
+      "timeline_seconds": 7,
+      "speed_factor": 1.3943,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 9,
+      "raw_seconds": 10.96,
+      "timeline_seconds": 8,
+      "speed_factor": 1.37,
+      "requires_close_listen": true
+    },
+    {
+      "scene": 10,
+      "raw_seconds": 6.64,
+      "timeline_seconds": 5,
+      "speed_factor": 1.328,
+      "requires_close_listen": true
+    }
+  ]
+}
+
+
+This is an exhaustive regression run prompted by real reviewer feedback. Do not return PASS until
+you have independently watched and listened to all ten scenes. The scene_av_checks array is an
+evidence log: use the actual audible and visible wording. Recheck the last second of every scene for
+clipped speech and compare safety-critical caption clauses word-for-word in meaning. If the media is
+too unclear to verify a field, record the limitation and use WARN rather than assuming it passed.

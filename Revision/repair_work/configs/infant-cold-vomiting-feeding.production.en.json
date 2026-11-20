@@ -1,0 +1,476 @@
+{
+  "schema_version": 1,
+  "slug": "infant-cold-vomiting-feeding",
+  "title": "Infant Cold & Vomiting: Feeding Guide",
+  "source": "https://www.fevercoach.us/ko/post/7개월-아기-코감기-구토-이유식",
+  "language": "en",
+  "character_image": null,
+  "aspect_ratio": "9:16",
+  "resolution": "720p",
+  "fps": 30,
+  "disclaimer": "This content is for informational purposes only and does not constitute medical advice. Always consult a qualified healthcare professional before making any health-related decisions or decisions about your health or treatment.",
+  "metadata": {
+    "multilingual": true,
+    "languages": [
+      "ko",
+      "en",
+      "es"
+    ],
+    "medical_facts": [
+      {
+        "claim": "When a 7-month-old baby has a cold with runny nose, fever, and occasional vomiting, it may indicate a viral cold irritating the stomach.",
+        "numeric_values": [],
+        "safety_qualification": "This is a possibility, and symptoms should be monitored."
+      },
+      {
+        "claim": "For a sick baby, prioritize formula by reducing the amount per feeding to two-thirds of the usual volume, but increase the feeding frequency.",
+        "numeric_values": [
+          "2/3"
+        ],
+        "safety_qualification": "This approach helps provide both hydration and calories safely."
+      },
+      {
+        "claim": "After a baby vomits, rest the stomach for 4 to 6 hours. If the baby then shows a desire to eat, start with small amounts of diluted baby food.",
+        "numeric_values": [
+          "4 hours",
+          "6 hours"
+        ],
+        "safety_qualification": "Observe the baby's willingness to eat and start with small, easily digestible portions."
+      },
+      {
+        "claim": "Rice porridge (mi-eum) is acceptable, but formula is generally safer as it provides both hydration and calories, making a 'formula-centric + small amount of diluted porridge' approach recommended.",
+        "numeric_values": [],
+        "safety_qualification": "Formula should be the primary focus for fluid and calorie intake."
+      },
+      {
+        "claim": "After vomiting, hold the baby upright for about 30 minutes and do not lay them down immediately.",
+        "numeric_values": [
+          "30 minutes"
+        ],
+        "safety_qualification": "This helps prevent further vomiting and discomfort."
+      },
+      {
+        "claim": "Seek pediatric consultation immediately if the baby continuously vomits and cannot take any fluids, shows difficulty breathing (e.g., intercostal retractions), becomes lethargic, has poor eye contact, or has a persistent fever above 38°C.",
+        "numeric_values": [
+          "38°C"
+        ],
+        "safety_qualification": "These are urgent warning signs requiring professional medical evaluation."
+      }
+    ],
+    "source_excerpt": "의학 감수:\n안상현, MD\n콘텐츠 편집:\n김명찬, MD\n이 게시물은 실제 의료 검토자의 질의응답 경험을 각색한 것입니다. 이 콘텐츠는 정보 제공 목적으로만 제공되며 의학적 조언을 구성하지 않습니다. 건강 관련 문제나 건강 또는 치료와 관련된 결정을 내리기 전에 항상 자격을 갖춘 의료 전문가와 상담하시기 바랍니다.\n질문:\n7개월 된 아기가 코감기에 걸려 콧물이 심하고 열이 오르락내리락합니다. 게다가 가끔 한 번씩 토를 하기도 하는데, 낮에 먹었던 것을 저녁에 토하더라고요. 이럴 때 먹는 것을 어떻게 해야 할지 고민입니다. 원래 먹이던 이유식을 그대로 먹여도 될까요, 아니면 분유만 먹여야 할까요? 그것도 아니면 쌀죽만 끓여 먹이는 것이 좋을까요?\n답변:\n7개월 아기가 열이 나고 구토까지 해서 많이 걱정되시겠습니다.\n[현재 상황]\n콧물과 발열이 있으면서 낮에 먹은 것을 저녁에 토했다면, 바이러스 감기로 인해 위장에 자극이 더해졌을 가능성이 있습니다.\n[먹이는 방법]\n분유 우선: 한 번에 먹이는 양을 평소의 3분의 2 정도로 줄이고, 대신 먹이는 횟수를 늘려 자주 조금씩 수유해 주세요.\n이유식: 토한 직후 4~6시간 정도는 위장을 쉬게 해주고, 그 이후에 아이가 먹고 싶어 하면 평소보다 묽게 만들어 소량으로 시작해 보세요.\n쌀죽(미음)도 좋지만, 분유가 수분과 칼로리를 함께 공급해주므로 '분유 중심 + 묽은 죽 소량'으로 먹이시는 것이 상대적으로 안전합니다.\n토한 직후에는 30분 정도 상체를 세워 안아주시고 바로 눕히지 마세요.\n[병원 진료가 필요한 신호]\n다음 중 하나라도 해당된다면 지체하지 말고 소아청소년과 진료를 받으셔야 합니다.\n8시간 이상 소변을 보지 않는 경우 (기저귀가 계속 말라 있을 때)\n계속 토해서 수분 섭취조차 전혀 안 되는 경우\n숨쉬기 힘들어하거나 숨 쉴 때마다 갈비뼈 아래가 쑥쑥 들어가는 경우\n아이가 축 늘어지고 눈 맞춤을 잘하지 못하는 경우\n38°C 이상의 발열이 지속되는 경우\n[가정 내 관리 방법]\n수유 전이나 잠들기 전에 생리식염수로 코를 세척하고 콧물 흡입기로 콧물을 가볍게 빼주세요.\n매트리스 아래에 수건을 덧대어 아이의 상체를 약간 높여서 재워주시면 호흡에 도움이 됩니다.\n해열제는 아이가 열 때문에 힘들어하고 불편해할 때만 체중에 맞는 정확한 용량으로 복용시키세요.\n실내 습도는 40~60%로 적절하게 유지해 주세요.\n오늘은 분유를 소량씩 자주 주시면서 묽은 죽을 조금씩 먹이는 것으로 시작해 보시고, 구토 증상이 호전되면 내일부터 평소 먹이던 이유식으로 천천히 돌아가 보시기 바랍니다. 만약 구토나 발열 증상이 호전되지 않거나 아이의 컨디션이 저하된다면, 지체 없이 소아청소년과에 방문하여 의사의 진찰을 받으시길 권장합니다.\n아이의 건강을 모니터링할 때 더 명확한 안내와 안심을 위해, FeverCoach 앱이 항상 도움을 드립니다.\nfevercoach.us\nApple App Store\nGoogle Play\n🌐 다른 언어로 보기:\nEnglish\n·\nEspañol",
+    "visual_system": "fevercoach-explainer-v3",
+    "character_mode": "automatic",
+    "character_concept": {
+      "subject": "baby bottle",
+      "source_basis": "Formula is prioritized for hydration and calories when an infant is sick and vomiting, making the baby bottle a central feeding tool.",
+      "visual_identity": "A classic, clean baby bottle shape with a clear body and a soft, pliable nipple.",
+      "primary_color": "pale blue",
+      "surface_texture": "smooth, translucent plastic"
+    }
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "title": "Continuous Vomiting",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Continuous vomiting and inability to drink require urgent care.",
+      "subtitle": "Continuous vomiting and inability to drink require urgent care.",
+      "prompt": "A clean, semi-stylized 3D rendering of a baby bottle, full of a pale blue liquid, tilted as if pouring. The liquid rapidly empties from the bottle. The bottle remains stationary, only the liquid moves. No labels or text. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "red_flag",
+      "medical_claim": "Continuous vomiting and inability to take any fluids require urgent medical attention.",
+      "asset_prompt": "A clean, semi-stylized 3D rendering of a baby bottle, full of a pale blue liquid, tilted as if pouring. No labels or text. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "Continuous vomiting",
+        "and inability to drink",
+        "require urgent care."
+      ],
+      "narrative_role": "hook",
+      "shot_design": {
+        "camera_profile": "macro_dive",
+        "beat_one": "0.0-1.5 second establishing shot of a baby bottle, full of liquid.",
+        "beat_two": "1.5-4.5 second camera dives into the bottle, then pulls back as the liquid rapidly empties, simulating continuous vomiting.",
+        "payoff_frame": "4.5-6.0 second hold on the nearly empty, tilted bottle, emphasizing fluid loss.",
+        "depth_layers": "Foreground: rapidly emptying liquid. Midground: baby bottle. Background: soft, out-of-focus nursery wall.",
+        "overlay_safe_zone": "upper left quadrant",
+        "sound_cues": "gentle gurgle, soft splash",
+        "transition_out": "bottle fades to a soft, anatomical cross-section"
+      }
+    },
+    {
+      "index": 2,
+      "title": "Viral Cold & Stomach",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "A viral cold can irritate a baby's stomach, causing vomiting.",
+      "subtitle": "A viral cold can irritate a baby's stomach, causing vomiting.",
+      "prompt": "A clean, semi-stylized 3D rendering of an infant's torso in an X-ray view, showing the stomach and lower esophagus with a subtle, mild redness. A small, pale blue anthropomorphic baby bottle character with a worried expression stands to the side, observing the stomach. The stomach lining subtly pulses with a mild, soft redness. The character and torso remain stationary. No labels or text. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "location",
+      "medical_claim": "A viral cold can irritate a baby's stomach, causing vomiting.",
+      "asset_prompt": "A clean, semi-stylized 3D rendering of an infant's torso in an X-ray view, showing the stomach and lower esophagus with a subtle, mild redness. A small, pale blue anthropomorphic baby bottle character with a worried expression stands to the side, observing the stomach. No labels or text. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "A viral cold can irritate",
+        "a baby's stomach,",
+        "causing vomiting."
+      ],
+      "narrative_role": "context",
+      "shot_design": {
+        "camera_profile": "xray_push",
+        "beat_one": "0.0-1.5 second establishing shot of a stylized infant's torso, showing a transparent skin layer.",
+        "beat_two": "1.5-4.5 second camera pushes into an X-ray view, revealing the upper respiratory system with gentle mucus flow and a slightly irritated stomach lining. A small, worried baby bottle character observes the stomach from the side.",
+        "payoff_frame": "4.5-6.0 second hold on the stomach and lower esophagus, showing mild irritation.",
+        "depth_layers": "Foreground: transparent skin. Midground: internal organs (stomach, esophagus). Background: blurred anatomical context.",
+        "overlay_safe_zone": "upper right quadrant",
+        "sound_cues": "soft internal gurgle, gentle whoosh",
+        "transition_out": "anatomical view dissolves into a comparison of objects"
+      }
+    },
+    {
+      "index": 3,
+      "title": "Feeding Choices",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Should you offer baby food, formula, or just rice porridge?",
+      "subtitle": "Should you offer baby food, formula, or just rice porridge?",
+      "prompt": "Three distinct, clean, semi-stylized 3D renderings of blank, unlabelled containers: a baby food jar, a formula can, and a small bowl of rice porridge. Arranged in a line on a clean surface. Each container gently rotates on its axis. The camera tracks laterally across them. No text or branding. The surface remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "comparison",
+      "medical_claim": "Parents often wonder whether to feed baby food, formula, or rice porridge when a baby is sick.",
+      "asset_prompt": "Three distinct, clean, semi-stylized 3D renderings of blank, unlabelled containers: a baby food jar, a formula can, and a small bowl of rice porridge. Arranged in a line on a clean surface. No text or branding. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "Should you offer baby food,",
+        "formula, or just",
+        "rice porridge?"
+      ],
+      "narrative_role": "misconception",
+      "shot_design": {
+        "camera_profile": "comparison_track",
+        "beat_one": "0.0-1.5 second establishing shot of three distinct, blank containers (baby food jar, formula can, rice porridge bowl) arranged in a line.",
+        "beat_two": "1.5-4.5 second camera smoothly tracks laterally, highlighting each container in sequence, as they gently rotate to show all sides.",
+        "payoff_frame": "4.5-6.0 second hold on the three containers, centered and clearly visible.",
+        "depth_layers": "Foreground: subtle reflections on container surfaces. Midground: the three containers. Background: soft, clean kitchen counter.",
+        "overlay_safe_zone": "upper center",
+        "sound_cues": "gentle click, soft hum",
+        "transition_out": "containers fade, focusing on a single bottle"
+      }
+    },
+    {
+      "index": 4,
+      "title": "Formula's Importance",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Formula provides vital hydration and calories for sick babies.",
+      "subtitle": "Formula provides vital hydration and calories for sick babies.",
+      "prompt": "A clean, semi-stylized 3D rendering of a baby bottle filled with pale blue liquid. Inside the liquid, subtle, stylized icons representing water droplets and energy sparks gently swirl and then are absorbed into the bottle's inner surface. The bottle remains stationary. No labels or text. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "mechanism",
+      "medical_claim": "Formula provides vital hydration and calories for sick babies.",
+      "asset_prompt": "A clean, semi-stylized 3D rendering of a baby bottle filled with pale blue liquid. Inside the liquid, subtle, stylized icons representing water droplets and energy sparks are visible. No labels or text. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "Formula provides vital",
+        "hydration and calories",
+        "for sick babies."
+      ],
+      "narrative_role": "mechanism",
+      "shot_design": {
+        "camera_profile": "pov_travel",
+        "beat_one": "0.0-1.5 second establishing shot of a baby bottle filled with pale blue liquid.",
+        "beat_two": "1.5-4.5 second camera travels into the liquid, showing stylized an unmarked surface (water droplet icons) and an unmarked surface (energy spark icons) elements gently swirling and then being absorbed into the bottle's inner surface.",
+        "payoff_frame": "4.5-6.0 second hold on the inner surface of the bottle, showing a subtle glow of absorbed nutrients.",
+        "depth_layers": "Foreground: swirling hydration/calorie elements. Midground: inner bottle wall. Background: outer bottle wall, blurred.",
+        "overlay_safe_zone": "upper right quadrant",
+        "sound_cues": "soft bubbling, gentle chime",
+        "transition_out": "inner bottle view zooms out to show the full bottle"
+      }
+    },
+    {
+      "index": 5,
+      "title": "Formula Quantity & Frequency",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Mix formula to normal concentration, reduce the amount per feeding to two-thirds, and feed more frequently.",
+      "subtitle": "Mix formula to normal concentration, reduce the amount per feeding to two-thirds, and feed more frequently.",
+      "prompt": "A clean, semi-stylized 3D rendering of a baby bottle with a clear liquid level. The liquid level visibly decreases from full to the two-thirds mark. Then, small, frequent drops of liquid appear to enter the bottle from above. The bottle remains stationary. No labels or text. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks. FINAL QA REPAIR: Show a correctly prepared normal-strength formula bottle; do not show dilution or changing the powder-to-water ratio. Show a correctly prepared normal-strength formula bottle; do not show dilution or changing the powder-to-water ratio. The liquid level should visibly decrease from full to the two-thirds mark, and then small, frequent feeds should be indicated without implying dilution. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "quantity",
+      "medical_claim": "For a sick baby, mix formula to normal concentration, reduce the amount per feeding to two-thirds of the usual volume, and increase the feeding frequency.",
+      "asset_prompt": "A clean, semi-stylized 3D rendering of a baby bottle with a clear liquid level at two-thirds full. A subtle, transparent line indicates the a completely blank and unmarked surface full level. No labels or text. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks. FINAL QA REPAIR: Show a correctly prepared normal-strength formula bottle; do not show dilution or changing the powder-to-water ratio. Show a correctly prepared normal-strength formula bottle; do not show dilution or changing the powder-to-water ratio. The liquid level should visibly decrease from full to the two-thirds mark, and then small, frequent feeds should be indicated without implying dilution. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [
+        {
+          "type": "dimension",
+          "from": [
+            0.25,
+            0.6
+          ],
+          "to": [
+            0.75,
+            0.6
+          ],
+          "label_position": [
+            0.5,
+            0.68
+          ],
+          "color": "#E5482F",
+          "text": "2/3"
+        }
+      ],
+      "caption_chunks": [
+        "Mix formula to normal",
+        "concentration, reduce the",
+        "amount per feeding to",
+        "two-thirds, and feed",
+        "more frequently."
+      ],
+      "narrative_role": "evidence",
+      "shot_design": {
+        "camera_profile": "top_down_drop",
+        "beat_one": "0.0-1.5 second establishing shot of a baby bottle, full, with a clear an unmarked surface fill line.",
+        "beat_two": "1.5-4.5 second camera drops down, showing the liquid level visibly decreasing to the two-thirds mark. Then, a visual cue of increased frequency appears (e.g., small, frequent drops entering the bottle from above).",
+        "payoff_frame": "4.5-6.0 second hold on the bottle with the liquid at the two-thirds mark, and a subtle, continuous flow of small drops.",
+        "depth_layers": "Foreground: small, frequent drops. Midground: baby bottle with liquid level. Background: soft, clean surface.",
+        "overlay_safe_zone": "upper center",
+        "sound_cues": "gentle pour, soft drip",
+        "transition_out": "bottle fades to a clock face"
+      }
+    },
+    {
+      "index": 6,
+      "title": "When to Start Solids",
+      "mode": "i2v",
+      "timeline_seconds": 8,
+      "generation_seconds": 6,
+      "narration": "After vomiting, keep offering small frequent formula or breast-milk feeds. The 4-to-6-hour pause applies to solids, not fluids.",
+      "subtitle": "After vomiting, keep offering small frequent formula or breast-milk feeds. The 4-to-6-hour pause applies to solids, not fluids.",
+      "prompt": "A clean, semi-stylized 3D rendering of a blank clock face with a segment from 4 to an unlabeled interval highlighted. Next to it, a small, shallow bowl containing a very diluted, pale yellow baby food gently appears. The clock and bowl remain stationary. No numbers or text. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "sequence",
+      "medical_claim": "After vomiting, keep offering small frequent formula or breast-milk feeds. The 4-to-6-hour pause applies to solids, not fluids.",
+      "asset_prompt": "A clean, semi-stylized 3D rendering of a blank clock face with a segment from 4 to an unlabeled interval highlighted. Next to it, a small, shallow bowl containing a very diluted, pale yellow baby food. No numbers or text. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [
+        {
+          "type": "label",
+          "from": [
+            0.5,
+            0.68
+          ],
+          "to": [
+            0.5,
+            0.68
+          ],
+          "label_position": [
+            0.5,
+            0.68
+          ],
+          "color": "#E5482F",
+          "text": "4-6 hours"
+        }
+      ],
+      "caption_chunks": [
+        "After vomiting, keep offering small frequent formula or breast-milk feeds. The 4-to-6-hour pause applies to solids, not fluids."
+      ],
+      "narrative_role": "decision",
+      "shot_design": {
+        "camera_profile": "parallax_arc",
+        "beat_one": "0.0-1.5 second establishing shot of a blank, stylized clock face, indicating elapsed time.",
+        "beat_two": "1.5-4.5 second camera arcs around the clock face, highlighting a 4-6 hour segment. Then, a small, diluted bowl of baby food gently appears next to the clock, indicating the next step.",
+        "payoff_frame": "4.5-6.0 second hold on the clock with the highlighted segment and the bowl of diluted baby food.",
+        "depth_layers": "Foreground: subtle clock hands. Midground: clock face and bowl. Background: soft, blurred background.",
+        "overlay_safe_zone": "upper right quadrant",
+        "sound_cues": "soft ticking, gentle 'ding'",
+        "transition_out": "clock and bowl fade, focusing on a baby's face"
+      }
+    },
+    {
+      "index": 7,
+      "title": "Lethargy Warning",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Lethargy or poor eye contact are serious warning signs.",
+      "subtitle": "Lethargy or poor eye contact are serious warning signs.",
+      "prompt": "A clean, semi-stylized 3D rendering of an infanta completely blank and unmarked surfaces expression gradually becomes still and unresponsive, eyes losing focus and becoming dull. The infant's head remains stationary. No text or labels. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, scary, frightening, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "red_flag",
+      "medical_claim": "Lethargy or poor eye contact are serious warning signs.",
+      "asset_prompt": "A clean, semi-stylized 3D rendering of an infant's face, with a dull, unfocused gaze, showing signs of lethargy. No text or labels. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "Lethargy or poor",
+        "eye contact are",
+        "serious warning signs."
+      ],
+      "narrative_role": "reassessment",
+      "shot_design": {
+        "camera_profile": "hero_pullback",
+        "beat_one": "0.0-1.5 second close-up on a stylized infant's face, initially alert with clear eye contact.",
+        "beat_two": "1.5-4.5 second camera slowly pulls back as the infant's expression gradually becomes still and unresponsive, eyes losing focus and becoming dull.",
+        "payoff_frame": "4.5-6.0 second hold on the infant's lethargic face, emphasizing the lack of responsiveness.",
+        "depth_layers": "Foreground: infantan unmarked surfaces upper body. Background: soft, blurred blanket.",
+        "overlay_safe_zone": "upper center",
+        "sound_cues": "soft, fading breath; gentle, worried sigh",
+        "transition_out": "infant's face fades to a scene of care"
+      }
+    },
+    {
+      "index": 8,
+      "title": "Post-Vomit Positioning",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "Hold your baby upright, supporting their head and trunk, for 30 minutes after vomiting.",
+      "subtitle": "Hold your baby upright, supporting their head and trunk, for 30 minutes after vomiting.",
+      "prompt": "A calm seated caregiver continues to hold a seven-month-old baby upright against their chest. The caregiver's arms securely support the baby's bottom, trunk, upper back, head and neck throughout the shot. The baby's legs rest on the caregiver's lap. Gentle breathing and a slow camera push-in only. Do not place the baby on a table, leave the baby standing, or remove supporting hands. No bottle, medicine, timer, text or numbers.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "sequence",
+      "medical_claim": "After vomiting, hold the baby upright, supporting their head and trunk, for about 30 minutes and do not lay them down immediately.",
+      "asset_prompt": "A fully dressed caregiver sits securely in a chair holding a fully clothed seven-month-old infant upright against the caregiver's chest after feeding. One forearm supports the baby's bottom and trunk; the other hand gently supports the baby's upper back, head and neck. The baby's legs rest on the caregiver's lap. Both caregiver and infant are clearly visible from waist up. No standing infant, table, bottle, medicine, cup, timer, text or numbers. Calm warm pediatric educational 3D illustration, portrait 9:16.",
+      "include_character": false,
+      "overlays": [
+        {
+          "type": "label",
+          "from": [
+            0.5,
+            0.68
+          ],
+          "to": [
+            0.5,
+            0.68
+          ],
+          "label_position": [
+            0.5,
+            0.68
+          ],
+          "color": "#E5482F",
+          "text": "30 minutes"
+        }
+      ],
+      "caption_chunks": [
+        "Hold your baby upright,",
+        "supporting their head",
+        "and trunk, for 30",
+        "minutes after vomiting."
+      ],
+      "narrative_role": "action",
+      "shot_design": {
+        "camera_profile": "lateral_reveal",
+        "beat_one": "Caregiver seated with baby upright against chest, fully supported.",
+        "beat_two": "Slow camera move reveals secure arm and hand support around trunk, upper back, head and neck.",
+        "payoff_frame": "Baby remains calmly held upright on caregiver's lap.",
+        "depth_layers": "Foreground: caregiver supporting arm. Midground: supported baby. Background: soft neutral room.",
+        "overlay_safe_zone": "upper right quadrant",
+        "sound_cues": "none",
+        "transition_out": "gentle fade"
+      }
+    },
+    {
+      "index": 9,
+      "title": "Persistent Fever",
+      "mode": "i2v",
+      "timeline_seconds": 5,
+      "generation_seconds": 6,
+      "narration": "A persistent fever above 38°C needs medical attention.",
+      "subtitle": "A persistent fever above 38°C needs medical attention.",
+      "prompt": "A clean, semi-stylized 3D rendering of a blank digital thermometer display. The temperature reading on the display steadily rises and then stops at an unlabeled threshold, followed by a subtle red warning glow around the display. The thermometer remains stationary. No numbers or text. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "red_flag",
+      "medical_claim": "Seek pediatric consultation immediately if the baby continuously vomits and cannot take any fluids, shows difficulty breathing (e.g., intercostal retractions), becomes lethargic, has poor eye contact, or has a persistent fever above 38°C.",
+      "asset_prompt": "A clean, semi-stylized 3D rendering of a blank digital thermometer display, showing a subtle red warning glow around it. No numbers or text. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [
+        {
+          "type": "label",
+          "from": [
+            0.5,
+            0.68
+          ],
+          "to": [
+            0.5,
+            0.68
+          ],
+          "label_position": [
+            0.5,
+            0.68
+          ],
+          "color": "#E5482F",
+          "text": "38°C"
+        }
+      ],
+      "caption_chunks": [
+        "A persistent fever",
+        "above 38°C needs",
+        "medical attention."
+      ],
+      "narrative_role": "red_flag",
+      "shot_design": {
+        "camera_profile": "top_down_drop",
+        "beat_one": "0.0-1.5 second establishing shot of a blank digital thermometer display.",
+        "beat_two": "1.5-4.5 second camera drops down, showing the temperature reading on the blank display steadily rising and then stopping at an unlabeled threshold, followed by a subtle red warning glow around the display.",
+        "payoff_frame": "4.5-6.0 second hold on the thermometer display showing an unlabeled threshold with the red glow.",
+        "depth_layers": "Foreground: red warning glow. Midground: thermometer display. Background: blurred thermometer body.",
+        "overlay_safe_zone": "upper center",
+        "sound_cues": "soft 'beep', rising tone",
+        "transition_out": "thermometer fades to the character"
+      }
+    },
+    {
+      "index": 10,
+      "title": "Pediatric Consultation",
+      "mode": "i2v",
+      "timeline_seconds": 5,
+      "generation_seconds": 6,
+      "narration": "If symptoms worsen, consult your pediatrician without delay.",
+      "subtitle": "If symptoms worsen, consult your pediatrician without delay.",
+      "prompt": "A clean, semi-stylized 3D rendering of the pale blue anthropomorphic baby bottle character, looking reassuring, with one hand gently gesturing towards a stylized, clean medical cross symbol. The character's hand moves to point towards the symbol. The character and symbol remain stationary otherwise. No labels or text. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, extra limbs, character redesign, subtitles, watermark, voice, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "hook",
+      "medical_claim": "If symptoms worsen, or if vomiting or fever doesn't improve, consult your pediatrician without delay.",
+      "asset_prompt": "A clean, semi-stylized 3D rendering of the pale blue anthropomorphic baby bottle character, looking reassuring, with one hand gently gesturing towards a stylized, clean medical cross symbol. No labels or text. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "If symptoms worsen,",
+        "consult your pediatrician",
+        "without delay."
+      ],
+      "narrative_role": "takeaway",
+      "shot_design": {
+        "camera_profile": "parallax_arc",
+        "beat_one": "0.0-1.5 second establishing shot of the baby bottle character, looking reassuring.",
+        "beat_two": "1.5-4.5 second camera arcs around the character as it gestures towards a stylized, clean medical cross or clinic symbol, emphasizing seeking professional help.",
+        "payoff_frame": "4.5-6.0 second hold on the character and the medical symbol, clearly visible.",
+        "depth_layers": "Foreground: character's hand. Midground: character and medical symbol. Background: soft, reassuring light.",
+        "overlay_safe_zone": "upper left quadrant",
+        "sound_cues": "gentle 'whoosh', soft chime",
+        "transition_out": "fade to black"
+      }
+    }
+  ]
+}

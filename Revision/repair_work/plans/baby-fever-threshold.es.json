@@ -1,0 +1,91 @@
+{
+  "repairs": [
+    {
+      "scene": 2,
+      "corrected_medical_claim": "The normal body temperature range for a 5-month-old baby is 36.5 to 37.5 degrees Celsius.",
+      "corrected_narration": "A los 5 meses, la temperatura normal va de 36.5 a 37.5 grados.",
+      "caption_chunks": [
+        "A los 5 meses, la temperatura normal",
+        "va de 36.5 a 37.5 grados."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": true,
+      "visual_prompt_addendum": "Show safe infant sleep only: flat firm bare crib mattress, baby on back, no pillow or loose blanket.",
+      "reason_ko": "시각적 안전 오류: 아기 주변의 베개, 푹신한 둘레, 느슨한 이불 장면을 안전한 수면 환경으로 교체해야 합니다."
+    },
+    {
+      "scene": 7,
+      "corrected_medical_claim": "In this case, if the baby is eating well, playing well, their hands and feet are warm, and there are no other accompanying symptoms, it suggests a good overall condition.",
+      "corrected_narration": "Verifique si su bebé come y juega bien, si sus manos y pies están tibios y si no tiene otros síntomas.",
+      "caption_chunks": [
+        "Verifique si su bebé come",
+        "y juega bien, si sus manos",
+        "y pies están tibios y si",
+        "no tiene otros síntomas."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "의학적 오류: 손발의 온도만으로 전신 상태가 안전하다고 판단하지 않도록 보완해야 합니다. 다른 동반 증상 여부도 확인하도록 수정했습니다."
+    },
+    {
+      "scene": 8,
+      "corrected_medical_claim": "It is recommended to adjust the baby's clothing according to the environment and their condition, avoiding over-wrapping or underdressing.",
+      "corrected_narration": "Ajuste la ropa de su bebé según el ambiente y su condición, evitando abrigarlo o desabrigarlo en exceso.",
+      "caption_chunks": [
+        "Ajuste la ropa de su bebé",
+        "según el ambiente y su condición,",
+        "evitando abrigarlo o desabrigarlo",
+        "en exceso."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": true,
+      "visual_prompt_addendum": "Show safe infant sleep only: flat firm bare crib mattress, baby on back, no pillow or loose blanket.",
+      "reason_ko": "의학적 오류 및 시각적 안전 오류: '어른보다 한 겹 적게'라는 옷차림 원칙이 부정확하여 환경과 아기 상태에 맞춰 조절하도록 수정했습니다. 또한, 아기 주변의 베개, 푹신한 둘레, 느슨한 이불 장면을 안전한 수면 환경으로 교체해야 합니다."
+    }
+  ],
+  "video_id": "baby-fever-threshold.es",
+  "model": "gemini-2.5-flash",
+  "source_issues": [
+    {
+      "scene": 2,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "41~47초 전후: '어른보다 한 겹 적게'를 영아의 일반적 옷차림 원칙으로 제시하는 것은 부정확합니다. 환경과 아기 상태에 맞춰 과도하게 싸거나 벗기지 않도록 바꿔 주세요. 5개월 아기 주변의 베개·푹신한 둘레·느슨한 이불 장면도 안전한 수면 환경으로 교체가 필요합니다. 추가 노트: 38도 이상 발열 및 상태 악화 시 진료 안내는 적절합니다. 손발의 온도만으로 전신 상태가 안전하다고 판단하지 않도록 보완해 주세요. 실제 저체온증이나 질식이 발생했다는 지적은 아닙니다.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-15.mp4"
+    },
+    {
+      "scene": 2,
+      "category": "OTHER_VISUAL_ERROR",
+      "severity": "high",
+      "problem_ko": "사람 검토에서 지적된 시각적 안전 오류를 제거해야 합니다.",
+      "visual_prompt_addendum": "Show safe infant sleep only: flat firm bare crib mattress, baby on back, no pillow or loose blanket.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-15.mp4"
+    },
+    {
+      "scene": 7,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "41~47초 전후: '어른보다 한 겹 적게'를 영아의 일반적 옷차림 원칙으로 제시하는 것은 부정확합니다. 환경과 아기 상태에 맞춰 과도하게 싸거나 벗기지 않도록 바꿔 주세요. 5개월 아기 주변의 베개·푹신한 둘레·느슨한 이불 장면도 안전한 수면 환경으로 교체가 필요합니다. 추가 노트: 38도 이상 발열 및 상태 악화 시 진료 안내는 적절합니다. 손발의 온도만으로 전신 상태가 안전하다고 판단하지 않도록 보완해 주세요. 실제 저체온증이나 질식이 발생했다는 지적은 아닙니다.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-15.mp4"
+    },
+    {
+      "scene": 8,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "41~47초 전후: '어른보다 한 겹 적게'를 영아의 일반적 옷차림 원칙으로 제시하는 것은 부정확합니다. 환경과 아기 상태에 맞춰 과도하게 싸거나 벗기지 않도록 바꿔 주세요. 5개월 아기 주변의 베개·푹신한 둘레·느슨한 이불 장면도 안전한 수면 환경으로 교체가 필요합니다. 추가 노트: 38도 이상 발열 및 상태 악화 시 진료 안내는 적절합니다. 손발의 온도만으로 전신 상태가 안전하다고 판단하지 않도록 보완해 주세요. 실제 저체온증이나 질식이 발생했다는 지적은 아닙니다.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-15.mp4"
+    },
+    {
+      "scene": 8,
+      "category": "OTHER_VISUAL_ERROR",
+      "severity": "high",
+      "problem_ko": "사람 검토에서 지적된 시각적 안전 오류를 제거해야 합니다.",
+      "visual_prompt_addendum": "Show safe infant sleep only: flat firm bare crib mattress, baby on back, no pillow or loose blanket.",
+      "evidence": "Jaeyoon-Lee-week8-Spanish-15.mp4"
+    }
+  ]
+}

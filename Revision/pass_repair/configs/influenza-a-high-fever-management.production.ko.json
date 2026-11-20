@@ -1,0 +1,531 @@
+{
+  "schema_version": 1,
+  "slug": "influenza-a-high-fever-management",
+  "title": "A형 독감 고열, 해열제로 안 떨어질 때 대처법",
+  "source": "https://www.fevercoach.us/ko/post/a형-독감-고열-해열제-대처법",
+  "language": "ko",
+  "character_image": null,
+  "aspect_ratio": "9:16",
+  "resolution": "720p",
+  "fps": 30,
+  "disclaimer": "이 콘텐츠는 정보 제공 목적으로만 제공되며 의학적 조언을 구성하지 않습니다. 건강 관련 문제나 건강 또는 치료와 관련된 결정을 내리기 전에 항상 자격을 갖춘 의료 전문가와 상담하시기 바랍니다.",
+  "metadata": {
+    "multilingual": true,
+    "languages": [
+      "ko",
+      "en",
+      "es"
+    ],
+    "medical_facts": [
+      {
+        "claim": "Influenza A is characterized by high fever.",
+        "numeric_values": [],
+        "safety_qualification": ""
+      },
+      {
+        "claim": "Even with antipyretics, fever may not drop well for the first 24-48 hours after an influenza A diagnosis.",
+        "numeric_values": [
+          "24 hours",
+          "48 hours"
+        ],
+        "safety_qualification": ""
+      },
+      {
+        "claim": "After taking prescribed antiviral medication for influenza, fever will gradually start to drop within 24-48 hours.",
+        "numeric_values": [
+          "24 hours",
+          "48 hours"
+        ],
+        "safety_qualification": ""
+      },
+      {
+        "claim": "If fever does not drop after acetaminophen, ibuprofen or dexibuprofen can be alternated 2-3 hours later.",
+        "numeric_values": [
+          "2 hours",
+          "3 hours"
+        ],
+        "safety_qualification": "Only for infants 6 months or older."
+      },
+      {
+        "claim": "To prevent dehydration from high fever, offer small sips of water or ion drinks every 10-15 minutes.",
+        "numeric_values": [
+          "10 minutes",
+          "15 minutes"
+        ],
+        "safety_qualification": ""
+      },
+      {
+        "claim": "Maintain a cool indoor environment, ideally 24-26°C, and dress the child in light clothing to help dissipate heat.",
+        "numeric_values": [
+          "24°C",
+          "26°C"
+        ],
+        "safety_qualification": ""
+      },
+      {
+        "claim": "Seek immediate emergency care for symptoms such as respiratory distress, chest pain, altered consciousness, severe dehydration (e.g., no urination for 8+ hours), or febrile seizures.",
+        "numeric_values": [
+          "8 hours"
+        ],
+        "safety_qualification": "Immediate emergency care required."
+      },
+      {
+        "claim": "If symptoms do not improve or the child becomes too lethargic, consult a pediatrician without delay.",
+        "numeric_values": [],
+        "safety_qualification": "Consult a pediatrician."
+      }
+    ],
+    "source_excerpt": "의학 감수:\n안상현, MD\n콘텐츠 편집:\n김명찬, MD\n이 게시물은 실제 의료 검토자의 질의응답 경험을 각색한 것입니다. 이 콘텐츠는 정보 제공 목적으로만 제공되며 의학적 조언을 구성하지 않습니다. 건강 관련 문제나 건강 또는 치료와 관련된 결정을 내리기 전에 항상 자격을 갖춘 의료 전문가와 상담하시기 바랍니다.\n질문:\n오늘 아이가 병원에서 A형 독감 진단을 받았습니다. 처방받은 해열제와 1회 복용하는 독감 약을 받아왔는데, 열이 너무 심하게 나서 우선 해열제부터 먹였습니다. 하지만 열이 떨어지기는커녕 39.7도에서 39.9도까지 계속 오르기만 해서 너무 무서운 마음에 결국 독감 약도 먹였습니다. 독감 때문에 열이 이렇게 안 떨어질 수도 있는 건가요? 어떻게 대처해야 하는지 궁금합니다.\n답변:\nA형 독감 진단을 받은 아이가 고열로 힘들어해서 많이 걱정되셨겠습니다.\n우선 독감 약을 먹이신 것은 아주 잘하셨습니다. 독감의 경우 해열제를 복용하더라도 처음 24~48시간 동안은 열이 잘 떨어지지 않는 것이 일반적입니다. 특히 A형 독감은 고열이 동반되는 것이 특징입니다.\n처방받으신 독감 약을 복용하신 후 24~48시간 이내에 서서히 열이 떨어지기 시작할 것입니다. 그 전까지는 아래의 방법으로 아이의 열을 조절하고 편안해지도록 돕는 것에 집중해 주시기 바랍니다.\n[현재 가정에서 할 수 있는 대처 방법]\n• 해열제 교차 복용: 아세트아미노펜(타이레놀 등) 복용 후에도 열이 떨어지지 않는다면, 2~3시간 뒤에 이부프로펜이나 덱시부프로펜(부루펜 등) 성분의 해열제를 교차로 먹이실 수 있습니다. (단, 생후 6개월 이상인 경우에만 가능합니다.)\n• 충분한 수분 섭취: 고열로 인한 탈수를 막기 위해 10~15분 간격으로 물이나 이온 음료를 조금씩 마시게 해주세요.\n• 가벼운 옷차림: 얇은 옷을 한 겹만 입혀 열이 원활하게 발산되도록 해주세요.\n• 시원한 환경 유지: 실내 온도는 24~26도 정도로 쾌적하게 유지하는 것이 좋습니다.\n다만, 아이에게 다음의 증상이 나타난다면 지체하지 마시고 즉시 응급실로 방문하셔야 합니다.\n[응급실 방문이 필요한 응급 증상]\n• 호흡 곤란이 있거나 가슴 통증을 호소할 때\n• 의식이 흐려지거나 불러도 대답을 잘 하지 못할 때\n• 8시간 이상 소변을 보지 않는 등 심한 탈수 징후가 있을 때\n• 열성 경련을 일으킬 때\n독감으로 인한 고열은 며칠간 지속될 수 있으니, 안내해 드린 대처법을 따르시면서 아이의 상태를 주의 깊게 지켜보시기 바랍니다. 만약 시간이 지나도 증상이 호전되지 않거나 아이가 너무 처진다면, 지체하지 마시고 다시 소아청소년과에 방문하여 진료를 받으시길 권장합니다.\n아이의 건강을 모니터링할 때 더 명확한 안내와 안심을 위해, FeverCoach 앱이 항상 도움을 드립니다.\nfevercoach.us\nApple App Store\nGoogle Play\n🌐 다른 언어로 보기:\nEnglish\n·\nEspañol",
+    "visual_system": "fevercoach-explainer-v3",
+    "character_mode": "automatic",
+    "character_concept": {
+      "subject": "Influenza A virus particle",
+      "source_basis": "The article focuses on managing high fever specifically caused by Influenza A, making the virus the central pathogen.",
+      "visual_identity": "A spherical, slightly oval shape, covered with distinct, short, club-like surface proteins (hemagglutinin and neuraminidase spikes). It should appear as a stylized, microscopic pathogen.",
+      "primary_color": "Muted orange",
+      "surface_texture": "Slightly rough, membrane-like surface with visible, distinct spiky protrusions."
+    }
+  },
+  "scenes": [
+    {
+      "index": 1,
+      "title": "독감 고열의 특징",
+      "mode": "i2v",
+      "timeline_seconds": 4,
+      "generation_seconds": 6,
+      "narration": "A형 독감은 고열을 동반하는 것이 특징입니다.",
+      "subtitle": "A형 독감은 고열을 동반하는 것이 특징입니다.",
+      "prompt": "A digital thermometer's display, initially showing a normal temperature, slowly rises to a high fever reading. The camera slowly dives closer, focusing on the rising numbers until it settles on a high temperature reading. The thermometer body remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, subtitles, watermark, voice, extra limbs, character redesign, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "quantity",
+      "medical_claim": "Influenza A is characterized by high fever.",
+      "asset_prompt": "A clean, modern digital thermometer showing a high temperature, with a clear, uncluttered display. Vertical 9:16 aspect ratio. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [
+        {
+          "type": "label",
+          "from": [
+            0.5,
+            0.5
+          ],
+          "to": [
+            0.5,
+            0.5
+          ],
+          "label_position": [
+            0.5,
+            0.25
+          ],
+          "color": "#E5482F",
+          "text": "39.7°C"
+        }
+      ],
+      "caption_chunks": [
+        "A형 독감은",
+        "고열을 동반하는 것이 특징입니다."
+      ],
+      "narrative_role": "hook",
+      "shot_design": {
+        "camera_profile": "macro_dive",
+        "beat_one": "0.0-1.5 second establishing camera move: A digital thermometer's display, initially showing a normal temperature, begins to rise.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: The camera slowly dives closer, focusing on the rising numbers until it settles on a high temperature reading.",
+        "payoff_frame": "4.5-6.0 second clear final hold: A stable close-up on the thermometer display showing a high fever reading.",
+        "depth_layers": "Clear foreground of the thermometer display, midground of the thermometer body, and a softly blurred background.",
+        "overlay_safe_zone": "Upper left quadrant, clear of the thermometer display.",
+        "sound_cues": "Soft electronic beep, gentle rising tone.",
+        "transition_out": "The thermometer display fades to black, hinting at a microscopic view."
+      }
+    },
+    {
+      "index": 2,
+      "title": "A형 독감 바이러스",
+      "mode": "i2v",
+      "timeline_seconds": 4,
+      "generation_seconds": 6,
+      "narration": "독감 바이러스는 아이를 힘들게 합니다.",
+      "subtitle": "독감 바이러스는 아이를 힘들게 합니다.",
+      "prompt": "A stylized, spherical Influenza A virus particle with distinct surface spikes slowly rotates. The camera arcs around the virus particle, revealing its spiky surface. The background remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, subtitles, watermark, voice, extra limbs, character redesign, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "location",
+      "medical_claim": "Influenza A is characterized by high fever.",
+      "asset_prompt": "A stylized, spherical Influenza A virus particle with distinct surface spikes, against a softly blurred microscopic background. Vertical 9:16 aspect ratio. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "독감 바이러스는",
+        "아이를 힘들게 합니다."
+      ],
+      "narrative_role": "context",
+      "shot_design": {
+        "camera_profile": "parallax_arc",
+        "beat_one": "0.0-1.5 second establishing camera move: A stylized Influenza A virus particle (character) appears, slowly rotating.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: The camera arcs around the virus particle, revealing its spiky surface and distinct shape, emphasizing its presence.",
+        "payoff_frame": "4.5-6.0 second clear final hold: The virus particle holds a stable, slightly menacing pose, centered in the frame.",
+        "depth_layers": "Foreground of subtle atmospheric particles, midground of the prominent virus character, and a soft, abstract background of cellular structures.",
+        "overlay_safe_zone": "Upper right quadrant, clear of the character.",
+        "sound_cues": "Subtle, low hum, faint biological pulse.",
+        "transition_out": "The virus character begins to recede slightly, hinting at its interaction with the body."
+      }
+    },
+    {
+      "index": 3,
+      "title": "해열제 효과의 오해",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "해열제를 먹여도 처음 24~48시간은 열이 잘 안 떨어질 수 있습니다.",
+      "subtitle": "해열제를 먹여도 처음 24~48시간은 열이 잘 안 떨어질 수 있습니다.",
+      "prompt": "Vertical 9:16 polished semi-stylized 3D pediatric medical scene about 해열제 효과의 오해. A calm upright child holds a small purpose-made translucent medicine dosing cup with a small amount of amber liquid. The child lifts the open cup to the lips, takes one gentle sip, lowers it, and swallows comfortably. A caregiver supports the child without holding any dosing implement. The medicine bottle remains closed on a distant table. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth. Keep every child fully clothed and the mood reassuring. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, subtitles, watermark, voice, extra limbs, character redesign, letters, digits, units, arrows, lip-sync, syringe, oral syringe, dosing syringe, plunger, needle, dropper, pipette, tube at mouth, medicine applicator at mouth",
+      "image": null,
+      "visual_type": "sequence",
+      "medical_claim": "Even with antipyretics, fever may not drop well for the first 24-48 hours after an influenza A diagnosis.",
+      "asset_prompt": "Clean text-free vertical 9:16 reference image for 해열제 효과의 오해. An upright fully clothed child holds a small purpose-made translucent medicine dosing cup containing a little amber liquid. The cup is below the chin and clearly cup-shaped with a wide open rim. The caregiver's hands are empty. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth. Soft clinical daylight, reassuring 3D illustration. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [],
+      "caption_chunks": [
+        "해열제를 먹여도 처음 24~48시간은 열이",
+        "잘 안 떨어질 수 있습니다."
+      ],
+      "narrative_role": "misconception",
+      "shot_design": {
+        "camera_profile": "pov_travel",
+        "beat_one": "0.0-1.5 seconds: establish a calm, fully clothed upright child and caregiver.",
+        "beat_two": "1.5-4.5 seconds: the child independently lifts a wide open-rimmed medicine dosing cup, takes one small sip, and lowers it. The caregiver's hands remain empty.",
+        "payoff_frame": "4.5-6.0 seconds: hold on the child comfortable beside the lowered cup.",
+        "depth_layers": "Cup in foreground, child in midground, softly blurred room behind.",
+        "overlay_safe_zone": "Upper left quadrant remains visually quiet.",
+        "sound_cues": "Soft cup movement and one gentle swallow; no dialogue.",
+        "transition_out": "Slow reassuring pullback."
+      }
+    },
+    {
+      "index": 4,
+      "title": "독감 약의 작용",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "독감약을 먹어도 열이 24~48시간 안에 반드시 떨어지는 것은 아니에요.",
+      "subtitle": "독감약을 먹어도 열이 24~48시간 안에 반드시 떨어지는 것은 아니에요.",
+      "prompt": "A stylized Influenza A virus particle (character) appears agitated. A stylized, glowing antiviral medicine particle enters the frame and interacts with the virus character, causing it to visibly calm down and shrink slightly. The background remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, subtitles, watermark, voice, extra limbs, character redesign, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "mechanism",
+      "medical_claim": "독감약을 먹어도 열이 24~48시간 안에 반드시 떨어지는 것은 아니에요.",
+      "asset_prompt": "A stylized Influenza A virus particle (character) appearing agitated, with a small, glowing antiviral medicine particle nearby. Vertical 9:16 aspect ratio. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "독감약을 먹어도 열이 24~48시간 안에 반드시 떨어지는 것은 아니에요."
+      ],
+      "narrative_role": "mechanism",
+      "shot_design": {
+        "camera_profile": "xray_push",
+        "beat_one": "0.0-1.5 second establishing camera move: The Influenza A virus character is shown, appearing agitated.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: A stylized, glowing antiviral medicine particle enters the frame and interacts with the virus character, causing it to visibly calm down and shrink slightly.",
+        "payoff_frame": "4.5-6.0 second clear final hold: The virus character is noticeably smaller and less agitated, with the medicine particle still present.",
+        "depth_layers": "Foreground of subtle energy effects, midground of the virus character and medicine particle, and a dark, abstract background.",
+        "overlay_safe_zone": "Upper right quadrant, clear of the interaction.",
+        "sound_cues": "Soft, calming hum, gentle fizzing sound.",
+        "transition_out": "The scene gently fades, implying a gradual process."
+      }
+    },
+    {
+      "index": 5,
+      "title": "열이 떨어지는 시점",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "약을 시작한 뒤에도 아이의 전반적인 상태와 수분 섭취를 계속 살펴보세요.",
+      "subtitle": "약을 시작한 뒤에도 아이의 전반적인 상태와 수분 섭취를 계속 살펴보세요.",
+      "prompt": "A stylized timeline with clear markings for hours appears. A marker on the timeline moves from a starting point, indicating the passage of time, and settles within a specific range. The timeline remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, subtitles, watermark, voice, extra limbs, character redesign, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "quantity",
+      "medical_claim": "약을 시작한 뒤에도 아이의 전반적인 상태와 수분 섭취를 계속 살펴보세요.",
+      "asset_prompt": "A clean, stylized timeline with clear markings for hours, with a marker at the beginning. Vertical 9:16 aspect ratio. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [
+        {
+          "type": "dimension",
+          "from": [
+            0.25,
+            0.5
+          ],
+          "to": [
+            0.75,
+            0.5
+          ],
+          "label_position": [
+            0.5,
+            0.25
+          ],
+          "color": "#E5482F",
+          "text": "24시간 ~ 48시간"
+        }
+      ],
+      "caption_chunks": [
+        "약을 시작한 뒤에도 아이의 전반적인 상태와 수분 섭취를 계속 살펴보세요."
+      ],
+      "narrative_role": "evidence",
+      "shot_design": {
+        "camera_profile": "top_down_drop",
+        "beat_one": "0.0-1.5 second establishing camera move: A stylized clock face or timeline appears from above.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: A marker on the timeline moves from a starting point, indicating the passage of time, and settles within a specific range.",
+        "payoff_frame": "4.5-6.0 second clear final hold: The marker clearly indicates the 24-48 hour range on the timeline.",
+        "depth_layers": "Foreground of the moving marker, midground of the timeline, and a clean, light background.",
+        "overlay_safe_zone": "Upper center, clear of the timeline.",
+        "sound_cues": "Soft ticking sound, gentle chime.",
+        "transition_out": "The timeline expands horizontally, leading to a comparison."
+      }
+    },
+    {
+      "index": 6,
+      "title": "해열제 교차 복용",
+      "mode": "i2v",
+      "timeline_seconds": 8,
+      "generation_seconds": 6,
+      "narration": "불편할 때 해열제 한 종류를 우선 쓰세요. 교차 복용은 의료진과 정한 약별 간격과 용량을 기록하며 하세요.",
+      "subtitle": "불편할 때 해열제 한 종류를 우선 쓰세요. 교차 복용은 의료진과 정한 약별 간격과 용량을 기록하며 하세요.",
+      "prompt": "Vertical 9:16 polished semi-stylized 3D pediatric medical scene about 해열제 교차 복용. A calm upright child holds a small purpose-made translucent medicine dosing cup with a small amount of amber liquid. The child lifts the open cup to the lips, takes one gentle sip, lowers it, and swallows comfortably. A caregiver supports the child without holding any dosing implement. The medicine bottle remains closed on a distant table. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth. Keep every child fully clothed and the mood reassuring. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, subtitles, watermark, voice, extra limbs, character redesign, letters, digits, units, arrows, lip-sync, syringe, oral syringe, dosing syringe, plunger, needle, dropper, pipette, tube at mouth, medicine applicator at mouth, syringe, oral syringe, dosing syringe, plunger, needle, dropper, pipette, tube at mouth, medicine applicator at mouth, syringe, oral syringe, dosing syringe, plunger, needle, dropper, pipette, tube at mouth, medicine applicator at mouth",
+      "image": null,
+      "visual_type": "comparison",
+      "medical_claim": "불편할 때 해열제 한 종류를 우선 쓰세요. 교차 복용은 의료진과 정한 약별 간격과 용량을 기록하며 하세요.",
+      "asset_prompt": "Clean text-free vertical 9:16 reference image for 해열제 교차 복용. An upright fully clothed child holds a small purpose-made translucent medicine dosing cup containing a little amber liquid. The cup is below the chin and clearly cup-shaped with a wide open rim. The caregiver's hands are empty. Absolute route lock: the open-rimmed cup is the only dosing implement in the frame. No tube-shaped, plunger-style, needle-like, dropper-style, or pipette-style object or character appears. Nothing except the wide cup rim approaches the mouth. Soft clinical daylight, reassuring 3D illustration. All screens, containers, cups, clocks, calendars, charts, and signs stay completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [
+        {
+          "type": "label",
+          "from": [
+            0.25,
+            0.35
+          ],
+          "to": [
+            0.25,
+            0.35
+          ],
+          "label_position": [
+            0.25,
+            0.25
+          ],
+          "color": "#007BFF",
+          "text": "아세트아미노펜"
+        },
+        {
+          "type": "label",
+          "from": [
+            0.75,
+            0.35
+          ],
+          "to": [
+            0.75,
+            0.35
+          ],
+          "label_position": [
+            0.75,
+            0.25
+          ],
+          "color": "#007BFF",
+          "text": "이부프로펜"
+        }
+      ],
+      "caption_chunks": [
+        "불편할 때 해열제 한 종류를 우선 쓰세요. 교차 복용은 의료진과 정한 약별 간격과 용량을 기록하며 하세요."
+      ],
+      "narrative_role": "decision",
+      "shot_design": {
+        "camera_profile": "comparison_track",
+        "beat_one": "0.0-1.5 seconds: establish a calm, fully clothed upright child and caregiver.",
+        "beat_two": "1.5-4.5 seconds: the child independently lifts a wide open-rimmed medicine dosing cup, takes one small sip, and lowers it. The caregiver's hands remain empty.",
+        "payoff_frame": "4.5-6.0 seconds: hold on the child comfortable beside the lowered cup.",
+        "depth_layers": "Cup in foreground, child in midground, softly blurred room behind.",
+        "overlay_safe_zone": "Upper left quadrant remains visually quiet.",
+        "sound_cues": "Soft cup movement and one gentle swallow; no dialogue.",
+        "transition_out": "Slow reassuring pullback."
+      }
+    },
+    {
+      "index": 7,
+      "title": "가정 내 열 관리",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "실내 온도를 24~26도로 유지하고 얇은 옷을 입혀주세요.",
+      "subtitle": "실내 온도를 24~26도로 유지하고 얇은 옷을 입혀주세요.",
+      "prompt": "A comfortable child's room with a digital thermostat on the wall. The camera smoothly pans laterally, revealing a child wearing light, thin clothing, then the thermostat displaying a comfortable temperature range. The room and child remain stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, subtitles, watermark, voice, extra limbs, character redesign, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "sequence",
+      "medical_claim": "Maintain a cool indoor environment, ideally 24-26°C, and dress the child in light clothing to help dissipate heat.",
+      "asset_prompt": "A comfortable child's room with a digital thermostat on the wall, showing a blank display. A child in light clothing is in the background. Vertical 9:16 aspect ratio. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [
+        {
+          "type": "label",
+          "from": [
+            0.75,
+            0.35
+          ],
+          "to": [
+            0.75,
+            0.35
+          ],
+          "label_position": [
+            0.75,
+            0.25
+          ],
+          "color": "#007BFF",
+          "text": "24°C ~ 26°C"
+        }
+      ],
+      "caption_chunks": [
+        "실내 온도를 24~26도로 유지하고 얇은 옷을 입혀주세요."
+      ],
+      "narrative_role": "reassessment",
+      "shot_design": {
+        "camera_profile": "lateral_reveal",
+        "beat_one": "0.0-1.5 second establishing camera move: A room with a window showing a comfortable indoor temperature.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: The camera smoothly pans laterally, revealing a child wearing light, thin clothing, then a digital thermostat displaying a comfortable temperature range.",
+        "payoff_frame": "4.5-6.0 second clear final hold: The thermostat clearly shows the ideal temperature range, with the child in light clothing in the background.",
+        "depth_layers": "Foreground of the thermostat, midground of the child, and a softly lit room background.",
+        "overlay_safe_zone": "Upper right quadrant, clear of the thermostat.",
+        "sound_cues": "Soft whir of an air vent, gentle rustle of fabric.",
+        "transition_out": "The scene gently blurs, focusing on the next action."
+      }
+    },
+    {
+      "index": 8,
+      "title": "충분한 수분 섭취",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "탈수가 걱정되면 경구수액제를 조금씩 주세요. 스포츠음료는 같은 대안이 아닙니다.",
+      "subtitle": "탈수가 걱정되면 경구수액제를 조금씩 주세요. 스포츠음료는 같은 대안이 아닙니다.",
+      "prompt": "A childa completely blank and unmarked surfaces body and background remain stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, subtitles, watermark, voice, extra limbs, character redesign, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "sequence",
+      "medical_claim": "탈수가 걱정되면 경구수액제를 조금씩 주세요. 스포츠음료는 같은 대안이 아닙니다.",
+      "asset_prompt": "A child's hand holding a small, clear cup with water, positioned near their mouth. Vertical 9:16 aspect ratio. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [
+        {
+          "type": "label",
+          "from": [
+            0.25,
+            0.35
+          ],
+          "to": [
+            0.25,
+            0.35
+          ],
+          "label_position": [
+            0.25,
+            0.25
+          ],
+          "color": "#007BFF",
+          "text": "10분 ~ 15분"
+        }
+      ],
+      "caption_chunks": [
+        "탈수가 걱정되면 경구수액제를 조금씩 주세요. 스포츠음료는 같은 대안이 아닙니다."
+      ],
+      "narrative_role": "action",
+      "shot_design": {
+        "camera_profile": "macro_dive",
+        "beat_one": "0.0-1.5 second establishing camera move: A small, child-friendly cup with water is shown.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: The camera slowly dives closer as a child's hand gently brings the cup to their lips, taking a small sip, then lowering it. This action repeats once more.",
+        "payoff_frame": "4.5-6.0 second clear final hold: The cup is held steadily, with a few drops of water visible, emphasizing small sips.",
+        "depth_layers": "Foreground of the cup and childan unmarked surfaces face, and a soft, comforting background.",
+        "overlay_safe_zone": "Upper left quadrant, clear of the child's face.",
+        "sound_cues": "Gentle sipping sound, soft clink of the cup.",
+        "transition_out": "The cup blurs, hinting at the passage of short intervals."
+      }
+    },
+    {
+      "index": 9,
+      "title": "응급실 방문 증상",
+      "mode": "i2v",
+      "timeline_seconds": 8,
+      "generation_seconds": 6,
+      "narration": "호흡 곤란·가슴 통증·열성 경련·의식 저하·8시간 넘게 소변이 없으면 응급실로 가세요.",
+      "subtitle": "호흡 곤란·가슴 통증·열성 경련·의식 저하·8시간 넘게 소변이 없으면 응급실로 가세요.",
+      "prompt": "A subtle, abstract visual of a child's chest rising and falling rapidly. The camera travels through a series of abstract, unsettling visuals: a blurred, unresponsive face, a dry, cracked lip, and a stylized clock hand pointing to an extended duration. The background remains stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, subtitles, watermark, voice, extra limbs, character redesign, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "red_flag",
+      "medical_claim": "호흡 곤란·가슴 통증·열성 경련·의식 저하·8시간 넘게 소변이 없으면 응급실로 가세요.",
+      "asset_prompt": "Abstract, unsettling visuals representing labored breathing, an unresponsive face, and severe dehydration, leading to a stark warning symbol. Vertical 9:16 aspect ratio. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": false,
+      "overlays": [
+        {
+          "type": "label",
+          "from": [
+            0.5,
+            0.5
+          ],
+          "to": [
+            0.5,
+            0.5
+          ],
+          "label_position": [
+            0.5,
+            0.25
+          ],
+          "color": "#E5482F",
+          "text": "8시간 이상"
+        }
+      ],
+      "caption_chunks": [
+        "호흡 곤란·가슴 통증·열성 경련·의식 저하·8시간 넘게 소변이 없으면 응급실로 가세요."
+      ],
+      "narrative_role": "red_flag",
+      "shot_design": {
+        "camera_profile": "pov_travel",
+        "beat_one": "0.0-1.5 second establishing camera move: A subtle, abstract visual of a child's chest rising and falling rapidly, indicating labored breathing.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: The camera travels through a series of abstract, unsettling visuals: a blurred, unresponsive face, a dry, cracked lip, and a stylized clock hand pointing to an extended duration.",
+        "payoff_frame": "4.5-6.0 second clear final hold: A stark, red-tinted visual of a warning symbol, emphasizing urgency.",
+        "depth_layers": "Foreground of abstract distress visuals, midground of the warning symbol, and a dark, blurred background.",
+        "overlay_safe_zone": "Upper center, clear of the warning symbol.",
+        "sound_cues": "Urgent, low pulse, sharp, short alert tone.",
+        "transition_out": "The warning symbol flashes briefly, then fades to black."
+      }
+    },
+    {
+      "index": 10,
+      "title": "소아청소년과 진료",
+      "mode": "i2v",
+      "timeline_seconds": 6,
+      "generation_seconds": 6,
+      "narration": "증상이 호전되지 않거나 아이가 처지면 소아청소년과 진료를 받으세요.",
+      "subtitle": "증상이 호전되지 않거나 아이가 처지면 소아청소년과 진료를 받으세요.",
+      "prompt": "A small, inactive Influenza A virus character slowly drifts away. The camera pulls back to reveal a child looking calm and comfortable, then further back to show a stylized, welcoming pediatrician's office. The child, parent, and office remain stationary. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "negative_prompt": "text, numbers, labels, dialogue, logo, deformation, subtitles, watermark, voice, extra limbs, character redesign, letters, digits, units, arrows, lip-sync",
+      "image": null,
+      "visual_type": "takeaway",
+      "medical_claim": "If symptoms do not improve or the child becomes too lethargic, consult a pediatrician without delay.",
+      "asset_prompt": "A small, inactive Influenza A virus particle drifting away. A calm child and parent are in a stylized, welcoming pediatrician's office. Vertical 9:16 aspect ratio. All screens, calendars, charts, medicine containers, clock faces, and signs remain completely blank and unmarked. Render no text, letters, digits, numbers, units, labels, arrows, captions, typographic symbols, logos, or watermarks.",
+      "include_character": true,
+      "overlays": [],
+      "caption_chunks": [
+        "증상이 호전되지 않거나",
+        "아이가 처지면",
+        "소아청소년과 진료를 받으세요."
+      ],
+      "narrative_role": "takeaway",
+      "shot_design": {
+        "camera_profile": "hero_pullback",
+        "beat_one": "0.0-1.5 second establishing camera move: The Influenza A virus character, now much smaller and less active, slowly drifts away.",
+        "beat_two": "1.5-4.5 second subject-focused camera move and action: The camera pulls back to reveal a child looking calm and comfortable, then further back to show a stylized, welcoming pediatrician's office.",
+        "payoff_frame": "4.5-6.0 second clear final hold: A clear, inviting view of a pediatrician's office, with the child and a parent looking reassured.",
+        "depth_layers": "Foreground of the receding virus, midground of the child, and background of the pediatrician's office.",
+        "overlay_safe_zone": "Upper left quadrant, clear of the office entrance.",
+        "sound_cues": "Soft, reassuring melody, gentle closing door sound.",
+        "transition_out": "The scene gently fades to black, concluding the explainer."
+      }
+    }
+  ]
+}

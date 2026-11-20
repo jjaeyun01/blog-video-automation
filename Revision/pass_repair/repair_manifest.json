@@ -1,0 +1,171 @@
+{
+  "targets": [
+    "baby-40c-fever-no-other-symptoms.ko",
+    "baby-fever-threshold.ko",
+    "baby-formula-refusal-cold.en",
+    "baby-formula-refusal-cold.es",
+    "baby-formula-refusal-cold.ko",
+    "influenza-a-high-fever-management.ko",
+    "pediatric-fever-alternating-meds.ko",
+    "pediatric-tamiflu-dosing-flexibility.ko"
+  ],
+  "prepared": {
+    "baby-40c-fever-no-other-symptoms": {
+      "configs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/pass_repair/configs/baby-40c-fever-no-other-symptoms.production.ko.json",
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/pass_repair/configs/baby-40c-fever-no-other-symptoms.production.en.json",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/pass_repair/configs/baby-40c-fever-no-other-symptoms.production.es.json"
+      },
+      "failed_languages": [
+        "ko"
+      ],
+      "copy_scenes": {
+        "ko": [
+          5,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "visual_scenes": []
+    },
+    "baby-fever-threshold": {
+      "configs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/pass_repair/configs/baby-fever-threshold.production.ko.json",
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/pass_repair/configs/baby-fever-threshold.production.en.json",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/pass_repair/configs/baby-fever-threshold.production.es.json"
+      },
+      "failed_languages": [
+        "ko"
+      ],
+      "copy_scenes": {
+        "ko": [
+          7
+        ]
+      },
+      "visual_scenes": []
+    },
+    "baby-formula-refusal-cold": {
+      "configs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/pass_repair/configs/baby-formula-refusal-cold.production.ko.json",
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/pass_repair/configs/baby-formula-refusal-cold.production.en.json",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/pass_repair/configs/baby-formula-refusal-cold.production.es.json"
+      },
+      "failed_languages": [
+        "ko",
+        "en",
+        "es"
+      ],
+      "copy_scenes": {
+        "ko": [],
+        "es": [
+          6
+        ]
+      },
+      "visual_scenes": [
+        5,
+        6
+      ]
+    },
+    "influenza-a-high-fever-management": {
+      "configs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/pass_repair/configs/influenza-a-high-fever-management.production.ko.json",
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/pass_repair/configs/influenza-a-high-fever-management.production.en.json",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/pass_repair/configs/influenza-a-high-fever-management.production.es.json"
+      },
+      "failed_languages": [
+        "ko"
+      ],
+      "copy_scenes": {
+        "ko": [
+          9
+        ]
+      },
+      "visual_scenes": []
+    },
+    "pediatric-fever-alternating-meds": {
+      "configs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/pass_repair/configs/pediatric-fever-alternating-meds.production.ko.json",
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/pass_repair/configs/pediatric-fever-alternating-meds.production.en.json",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/pass_repair/configs/pediatric-fever-alternating-meds.production.es.json"
+      },
+      "failed_languages": [
+        "ko"
+      ],
+      "copy_scenes": {
+        "ko": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          10
+        ]
+      },
+      "visual_scenes": []
+    },
+    "pediatric-tamiflu-dosing-flexibility": {
+      "configs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/pass_repair/configs/pediatric-tamiflu-dosing-flexibility.production.ko.json",
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/pass_repair/configs/pediatric-tamiflu-dosing-flexibility.production.en.json",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/pass_repair/configs/pediatric-tamiflu-dosing-flexibility.production.es.json"
+      },
+      "failed_languages": [
+        "ko"
+      ],
+      "copy_scenes": {
+        "ko": [
+          2,
+          3,
+          5,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "visual_scenes": []
+    }
+  },
+  "results": {
+    "baby-40c-fever-no-other-symptoms": {
+      "status": "REBUILT",
+      "outputs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-40c-fever-no-other-symptoms/ko/baby-40c-fever-no-other-symptoms_KO.mp4"
+      }
+    },
+    "baby-fever-threshold": {
+      "status": "REBUILT",
+      "outputs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-fever-threshold/ko/baby-fever-threshold_KO.mp4"
+      }
+    },
+    "influenza-a-high-fever-management": {
+      "status": "REBUILT",
+      "outputs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/influenza-a-high-fever-management/ko/influenza-a-high-fever-management_KO.mp4"
+      }
+    },
+    "pediatric-fever-alternating-meds": {
+      "status": "REBUILT",
+      "outputs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-fever-alternating-meds/ko/pediatric-fever-alternating-meds_KO.mp4"
+      }
+    },
+    "pediatric-tamiflu-dosing-flexibility": {
+      "status": "REBUILT",
+      "outputs": {
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/pediatric-tamiflu-dosing-flexibility/ko/pediatric-tamiflu-dosing-flexibility_KO.mp4"
+      }
+    },
+    "baby-formula-refusal-cold": {
+      "status": "REBUILT",
+      "outputs": {
+        "en": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-formula-refusal-cold/en/baby-formula-refusal-cold_EN.mp4",
+        "es": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-formula-refusal-cold/es/baby-formula-refusal-cold_ES.mp4",
+        "ko": "/Users/jaeyoonlee/FeverCoach/Revision/work_jobs/baby-formula-refusal-cold/ko/baby-formula-refusal-cold_KO.mp4"
+      }
+    }
+  }
+}

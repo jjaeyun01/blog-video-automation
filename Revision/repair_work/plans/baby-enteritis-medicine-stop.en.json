@@ -1,0 +1,113 @@
+{
+  "repairs": [
+    {
+      "scene": 2,
+      "corrected_medical_claim": "Foributin Dry Syrup is a gastrointestinal motility regulator.",
+      "corrected_narration": "Foributin Dry Syrup helps regulate the digestive tract's movement.",
+      "caption_chunks": [
+        "Foributin Dry Syrup helps regulate",
+        "the digestive tract's movement."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "약명 없이 '이 약'으로 지칭하여 일반적인 장운동 조절제에 대한 설명으로 오해될 수 있어, 특정 약물인 '포리부틴드라이시럽'임을 명시하도록 수정했습니다."
+    },
+    {
+      "scene": 5,
+      "corrected_medical_claim": "In this specific case, stopping Foributin Dry Syrup for about a day to observe the child's condition is recommended.",
+      "corrected_narration": "In this case, observe for about one day after stopping Foributin Dry Syrup.",
+      "caption_chunks": [
+        "In this case, observe for",
+        "about one day after stopping Foributin Dry Syrup."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "약명 없이 '약'으로 지칭하여 일반적인 약물 중단 지침으로 오해될 수 있어, 특정 약물인 '포리부틴드라이시럽'임을 명시하도록 수정했습니다."
+    },
+    {
+      "scene": 6,
+      "corrected_medical_claim": "If normal stool and no abdominal pain persist after stopping Foributin Dry Syrup, it can remain discontinued.",
+      "corrected_narration": "If normal stools and no pain continue, you can keep Foributin Dry Syrup stopped.",
+      "caption_chunks": [
+        "If normal stools and no pain continue,",
+        "you can keep Foributin Dry Syrup stopped."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "약명 없이 '약'으로 지칭하여 일반적인 약물 중단 지침으로 오해될 수 있어, 특정 약물인 '포리부틴드라이시럽'임을 명시하도록 수정했습니다."
+    },
+    {
+      "scene": 7,
+      "corrected_medical_claim": "If abdominal pain or diarrhea symptoms recur after stopping Foributin Dry Syrup, resume the remaining medication until the next scheduled hospital visit.",
+      "corrected_narration": "If pain or diarrhea returns, resume Foributin Dry Syrup until your next visit.",
+      "caption_chunks": [
+        "If pain or diarrhea returns,",
+        "resume Foributin Dry Syrup until your next visit."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "약명 없이 '약'으로 지칭하여 일반적인 약물 재개 지침으로 오해될 수 있어, 특정 약물인 '포리부틴드라이시럽'임을 명시하도록 수정했습니다."
+    },
+    {
+      "scene": 9,
+      "corrected_medical_claim": "Seek immediate pediatric consultation if a child experiences repeated watery diarrhea 3 or more times a day, worsening/persistent abdominal pain, new vomiting/fever, or dehydration signs.",
+      "corrected_narration": "Urgent signs: 3+ watery stools daily, worsening pain, new fever, or dehydration.",
+      "caption_chunks": [
+        "Urgent signs: 3+ watery stools daily,",
+        "worsening pain, new fever, or dehydration."
+      ],
+      "replace_overlays": false,
+      "overlays": [],
+      "regenerate_visual": false,
+      "visual_prompt_addendum": "",
+      "reason_ko": "기존 내러티브와 의료 주장은 출처에 명시된 '하루 3회 이상 묽은 설사 반복', '복통 악화 또는 지속', '새로운 구토나 발열', '탈수 징후' 등 여러 긴급 징후를 포괄적으로 다루고 있습니다. 따라서 '하루 3회 묽은 변'이 단독으로 항상 응급상황이라는 오해를 줄 수 있다는 QA 피드백은 이미 다른 심각한 증상들과 함께 제시되어 충분히 구분된다고 판단하여 변경하지 않았습니다. 혈변이나 의식/활동 저하 등은 현재 제공된 출처 기반 사실에 포함되어 있지 않아 추가할 수 없습니다."
+    }
+  ],
+  "video_id": "baby-enteritis-medicine-stop.en",
+  "model": "gemini-2.5-flash",
+  "source_issues": [
+    {
+      "scene": 2,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~41초: 약명·성분·처방 조건을 밝히지 않은 채 좋아지면 중단하고 복통/설사가 재발하면 다음 진료까지 다시 먹이도록 지시합니다. '장운동 조절약' 전체에 같은 중단·재개법을 적용할 수 없습니다. 해당 약과 처방 계획을 명시하고 재발 시 임의 재투약보다 처방의·약사에게 확인하도록 수정해 주세요. 추가 노트: 하루 묽은 변 3회만으로 항상 응급상황이라는 인상도 피하고 혈변, 심한 통증, 탈수, 의식/활동 저하 등과 구분해 주세요. 관찰 중 악화 시 진료 안내는 유지해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-English-21.mp4"
+    },
+    {
+      "scene": 5,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~41초: 약명·성분·처방 조건을 밝히지 않은 채 좋아지면 중단하고 복통/설사가 재발하면 다음 진료까지 다시 먹이도록 지시합니다. '장운동 조절약' 전체에 같은 중단·재개법을 적용할 수 없습니다. 해당 약과 처방 계획을 명시하고 재발 시 임의 재투약보다 처방의·약사에게 확인하도록 수정해 주세요. 추가 노트: 하루 묽은 변 3회만으로 항상 응급상황이라는 인상도 피하고 혈변, 심한 통증, 탈수, 의식/활동 저하 등과 구분해 주세요. 관찰 중 악화 시 진료 안내는 유지해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-English-21.mp4"
+    },
+    {
+      "scene": 6,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~41초: 약명·성분·처방 조건을 밝히지 않은 채 좋아지면 중단하고 복통/설사가 재발하면 다음 진료까지 다시 먹이도록 지시합니다. '장운동 조절약' 전체에 같은 중단·재개법을 적용할 수 없습니다. 해당 약과 처방 계획을 명시하고 재발 시 임의 재투약보다 처방의·약사에게 확인하도록 수정해 주세요. 추가 노트: 하루 묽은 변 3회만으로 항상 응급상황이라는 인상도 피하고 혈변, 심한 통증, 탈수, 의식/활동 저하 등과 구분해 주세요. 관찰 중 악화 시 진료 안내는 유지해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-English-21.mp4"
+    },
+    {
+      "scene": 7,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~41초: 약명·성분·처방 조건을 밝히지 않은 채 좋아지면 중단하고 복통/설사가 재발하면 다음 진료까지 다시 먹이도록 지시합니다. '장운동 조절약' 전체에 같은 중단·재개법을 적용할 수 없습니다. 해당 약과 처방 계획을 명시하고 재발 시 임의 재투약보다 처방의·약사에게 확인하도록 수정해 주세요. 추가 노트: 하루 묽은 변 3회만으로 항상 응급상황이라는 인상도 피하고 혈변, 심한 통증, 탈수, 의식/활동 저하 등과 구분해 주세요. 관찰 중 악화 시 진료 안내는 유지해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-English-21.mp4"
+    },
+    {
+      "scene": 9,
+      "category": "MEDICAL_ERROR",
+      "severity": "high",
+      "problem_ko": "23~41초: 약명·성분·처방 조건을 밝히지 않은 채 좋아지면 중단하고 복통/설사가 재발하면 다음 진료까지 다시 먹이도록 지시합니다. '장운동 조절약' 전체에 같은 중단·재개법을 적용할 수 없습니다. 해당 약과 처방 계획을 명시하고 재발 시 임의 재투약보다 처방의·약사에게 확인하도록 수정해 주세요. 추가 노트: 하루 묽은 변 3회만으로 항상 응급상황이라는 인상도 피하고 혈변, 심한 통증, 탈수, 의식/활동 저하 등과 구분해 주세요. 관찰 중 악화 시 진료 안내는 유지해 주세요.",
+      "evidence": "Jaeyoon-Lee-week8-English-21.mp4"
+    }
+  ]
+}
